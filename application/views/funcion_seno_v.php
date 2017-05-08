@@ -1,0 +1,8 @@
+        <div>
+          <h3>Funcion seno</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis finibus rutrum. Suspendisse libero nibh, blandit sit amet efficitur eget, suscipit quis dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec nec mi accumsan, fermentum turpis sed, pretium sapien. Vivamus vulputate sed tellus a elementum. Integer nec faucibus enim. Sed vel cursus augue. Maecenas venenatis at nisi et rhoncus. Phasellus augue augue, convallis et ultricies vitae, pretium sit amet purus.</p>
+          <p>Nullam sollicitudin leo id metus consectetur, at volutpat lectus pellentesque. Vestibulum cursus diam in mattis tristique. Vivamus volutpat finibus molestie. Etiam vel interdum mauris. Curabitur venenatis massa in volutpat aliquet. Ut iaculis ipsum urna, a facilisis arcu vestibulum vitae. Donec varius, nisi a commodo hendrerit, quam ipsum suscipit tellus, non euismod arcu lacus quis ipsum. Phasellus ornare volutpat tortor sed elementum.</p>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.geogebra.org/material/iframe/id/gmEX4agh/width/1902/height/924/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" allowfullscreen=""></iframe>
+        </div>
