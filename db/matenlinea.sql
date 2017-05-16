@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `mathonline`.`user` (
   `name` VARCHAR(250) NULL,
   `last_name` VARCHAR(250) NULL,
   `sex` INT NULL COMMENT '1.- Hombre\n2.- Mujer',
-  `year_bithday` INT NULL,
+  `year_birthday` INT NULL,
   `id_unit_uam` INT NOT NULL,
   `email` VARCHAR(250) NOT NULL,
   `uam_identifier` VARCHAR(15) NULL,
