@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	function index(){
 		$this->load->view('header/head_v');
-		$this->load->view('header/menu_v');
+		//$this->load->view('header/menu_v');
 		$this->load->view('funcion_seno_v');
 		$this->load->view('footer/footer_v');
 	}

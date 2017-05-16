@@ -12,7 +12,19 @@
     <script src="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
   </head> 
   <body>
-
+      <div class="col-sm-12">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <a href="<?php echo base_url();?>">
+            <img src="<?php echo base_url()?>statics/img/logo_mate.png">
+          </a>
+        </div>
+        <div class="col-sm-9">
+          <div class="titEntrenador">
+            <h3>Mi Entrenador Personal en Matemáticas</h3>
+          </div>
+        </div>
+      </div>  
+      
 
 
 
