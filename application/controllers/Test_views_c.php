@@ -2,6 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Test_views_c extends CI_Controller {
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('Registro_usuario_m');
+		
+	}
 
 	/**
 	 * Index Page for this controller.
@@ -19,8 +25,10 @@ class Test_views_c extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	function index(){
+		$unidades = $this->Registro_usuario_m->obtener_unidades_uam();
+		$datos = array('unidades' => $unidades );
 		$this->load->view('header/head_v');
-		$this->load->view('Registro_usuario_v');
+		$this->load->view('Registro_usuario_v', $datos);
 		$this->load->view('footer/footer_v');
 	}
 }
