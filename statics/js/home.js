@@ -11,7 +11,7 @@ function recover_pass(){
 	var username_user = $('#username_user').val().trim();
 	var msjerror='';
 	var msjSuccess='';
-	var alert='';
+
 	if(validarEmail(username_user)){
 	    var url = base_url + 'Home_c/recover_pass';
 		$.ajax({	    
@@ -24,21 +24,21 @@ function recover_pass(){
 				msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
 				$("#error_valid_form").html(msjSuccess);	       		
 		    },
-		    error: function(jqXHR, textStatus, errorThrown){
+		    error: function(jqXHR, textStatus, errorThrown,data){
 	             if (jqXHR.status === 0) {
-	                alert('Not connect: Verify Network.');
+	                console.log('Not connect: Verify Network.');
 	                } else if (jqXHR.status == 404) {
-	                    alert('Requested page not found [404]');
+	                    console.log('Requested page not found [404]');
 	                } else if (jqXHR.status == 500) {
-	                    alert('Internal Server Error [500].');
+	                    console.log('Internal Server Error [500].');
 	                } else if (textStatus === 'parsererror') {
-	                    alert('Requested JSON parse failed.');
+	                    console.log('Requested JSON parse failed.');
 	                } else if (textStatus === 'timeout') {
-	                    alert('Time out error.');
+	                    console.log('Time out error.');
 	                } else if (textStatus === 'abort') {
-	                    alert('Ajax request aborted.');
+	                    console.log('Ajax request aborted.');
 	                } else {
-	                    alert('Uncaught Error: ' + jqXHR.responseText);
+	                    console.log('Uncaught Error: ' + jqXHR.responseText);
 	                }
 	                    console.log(data+"--Error al cargar el contenido Url: "+url);              
 	            }	    
