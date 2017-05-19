@@ -75,16 +75,43 @@
 			}
 		}
 		
+		/**
+		 * Descripcion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Tipo Descripcion
+		 * @param NA
+		 * @version 1.0
+		 */
+		public function cuenta_activa_email($email)
+		{
+			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('email', $email)->GET();
+			$estatus = $usuario->row_array();
+			
+			if ($estatus['status'] == 1) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+		}
 		
+		/**
+		 * Descripcion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Tipo Descripcion
+		 * @param NA
+		 * @version 1.0
+		 */
 		public function recuperar_pass($email= NULL)
 		{
 			if ($email != NULL) {
 				$password = $this->db->SELECT('password')->FROM('user')->WHERE('email', $email)->GET();
-				if ($password->num_rows() === 1) {
+				if ($password->num_rows() === 1 AND $this->cuenta_activa_email($email) == TRUE) {
 					$pass = $password->row_array();
 					return $pass['password'];
 				} else {
-					return 'El correo electronico no esta registrado';
+					return FALSE;
 				}
 			} else {
 				return NULL;
