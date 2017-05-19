@@ -2,7 +2,8 @@
 	
 	class Registro_usuario_m extends CI_Model {
 			
-		public function __construct() {
+		public function __construct()
+		{
 			parent::__construct();
 		}
 		
@@ -10,7 +11,7 @@
 		 * Obtiene el listado de las unidades de la UAM
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return NA
+		 * @return Array Arreglo con las unidades de la UAM, FALSE si no existe ningun registro
 		 * @param NA
 		 * @version 1.0
 		 */
@@ -28,30 +29,33 @@
 		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Boolean TRUE si la cuenta fue activada correctamente ó FALSE si la cuenta no existe
-		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
+		 * @return Boolean TRUE si la cuenta fue activada correctamente o FALSE si la cuenta no existe o ya esta activa.
+		 * @param Int $id_usuario Identificador del usuario con el que se guardarón sus datos de registro.
 		 * @version 1.0
 		 */
 		public function activar_cuenta($id_usuario = NULL)
 		{
-			if ($id_usuario!=NULL) {
-				$datos = array('status'=> 1);
-				$activacion = $this->db->update('user', $datos, array('id_user' => $id_usuario));
-				if ($this->db->affected_rows()===1) {
-					return "Cuenta activada XD";
+			if ($id_usuario != NULL) {
+				$existe = $this->existe_usuario($id_usuario);
+				$estatus = $this->estatus_cuenta($id_usuario);
+				if ($existe == TRUE and $estatus == TRUE) {
+					$datos = array('status'=> 1);
+					$activacion = $this->db->update('user', $datos, array('id_user' => $id_usuario));
+					return TRUE;
 				} else {
-					return "Error el id del usuario no existe";
+					return FALSE;
 				}
 			} else {
 				return "El id del usuario no puede ser nulo";
 			}
 		}
 		
+		
 		/**
-		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
+		 * Guarda los datos recabados del formulario de registro.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Boolean TRUE si la cuenta fue activada correctamente ó FALSE si la cuenta no existe
+		 * @return INT Identificar asignado al nuevo usuario o NULL si ocurrio un problema en el registro a la base de datos.
 		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
 		 * @version 1.0
 		 */
@@ -72,12 +76,51 @@
 		}
 		
 		
+		/**
+		 * Verifica que exista el registro del usuario en la base de datos
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Boolean TRUE si existe el usuario, FALSE si no existe el usuario.
+		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
+		 * @version 1.0
+		 */
+		public function existe_usuario($id_usuario)
+		{
+			$existe = $this->db->SELECT('*')->FROM('user')->WHERE('id_user', $id_usuario)->GET();
+			if ($existe->num_rows() === 1) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+		}
+		
+		/**
+		 * Verifica el estado (activa o inactiva) de la cuenta del usuario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Boolean TRUE si la cuenta esta inactiva, FALSE si esta activa.
+		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
+		 * @version 1.0
+		 */
+		public function estatus_cuenta($id_usuario)
+		{
+			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('id_user', $id_usuario)->GET();
+			$estatus = $usuario->row_array();
+			
+			if ($estatus['status'] == 0) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+		}
+		
+		
 		private function _setUsuario($usuario)
 		{
 			$set_usuario = array();
 			
 			if (isset($usuario['username'])) {
-				$set_usuario['username'] = $usuario['username'];
+				$set_usuario['username'] =  $usuario['username'];
 			};
 			if (isset($usuario['password'])) {
 				$set_usuario['password'] = $usuario['password'];

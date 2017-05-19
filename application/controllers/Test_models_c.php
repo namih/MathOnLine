@@ -5,6 +5,7 @@
 		public function __construct() {
 			parent::__construct();
 			$this->load->model("Registro_usuario_m");
+			$this->load->model("Modelo_inicio_m");
         }
 		
 		/**
@@ -18,14 +19,12 @@
 		public function lista_uam()
 		{
 			$uamis = $this->Registro_usuario_m->obtener_unidades_uam();
-			echo "<pre>";
 			print_r($uamis);
-			echo "<pre>";
 		}
 		
 		public function activar()
 		{
-			$id_usuario = 1;
+			$id_usuario = 2;
 			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
 			echo $activacion;
 		}
@@ -43,7 +42,7 @@
 							'sex' => 1,
 							'year_birthday' => 1985,
 							'id_unit_uam' => 4,
-							'email' => 'nightlightmx@gmail.com',
+							'email' =>'NightlightMX@gmail.com',
 							'uam_identifier' => '204214807',
 							'is_student' => TRUE,
 							'is_employed' => TRUE,
@@ -53,5 +52,13 @@
 			$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
 			
 			echo $id_usuario;
+		}
+		
+		public function login()
+		{
+			$login = array('username' => 'NightlIGhtmx', 'password' => 'qwerty2017');
+			$validar = $this->Modelo_inicio_m->iniciar_sesion($login);
+			echo $validar;
+			
 		}
 }
