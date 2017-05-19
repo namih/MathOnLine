@@ -12,6 +12,7 @@
     <script src="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
   </head> 
   <body>
+    <header style="padding: 5px;">
       <div class="col-sm-12">
         <div class="col-sm-3 col-md-3 col-lg-2">
           <a href="<?php echo base_url();?>">
@@ -23,14 +24,8 @@
             <h3>Mi Entrenador Personal en Matemáticas</h3>
           </div>
         </div>
+      </div>
+      <div class="col-md-12">  
+          <hr style="height: 1px; border: 0; color: #666; background-color: #008c00;">
       </div>  
-      
-
-
-
-
-  
-
-  
-
-
+    </header> 
