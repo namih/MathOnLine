@@ -33,7 +33,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mathonline`.`user` (
   `id_user` INT NOT NULL AUTO_INCREMENT,
-  `username` VARCHAR(250) NOT NULL,
+  `user_name` VARCHAR(250) NOT NULL,
   `password` VARCHAR(25) NOT NULL,
   `type_user` INT NOT NULL COMMENT '1.- Administrador\n2.- Profesor\n3.- Alumno',
   `name` VARCHAR(250) NULL,
