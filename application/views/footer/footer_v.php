@@ -16,7 +16,7 @@
                     <div class="col-lg-12">
                       <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="email del usuario">
+                          <input type="text" name="email-user" id="email_user" tabindex="1" class="form-control" placeholder="email del usuario">
                         </div>
                       </form>
                     </div>

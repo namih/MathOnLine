@@ -79,17 +79,18 @@
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-lg-12">
-                      <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="username-user" id="username-user" tabindex="1" class="form-control" placeholder="email del usuario">
+                          <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="email del usuario">
                         </div>
                         <div class="form-group">
-                          <input type="password-user" name="password-user" id="password-user" tabindex="2" class="form-control" placeholder="contraseña">
+                          <input type="password" name="password-user" id="password_user" tabindex="2" class="form-control" placeholder="contraseña">
+                        </div>
+                        <div class="col-lg-12" id="error_valid_form">
                         </div>
                         <div class="form-group">
                           <div class="row">
                             <div class="col-sm-12" align="center">
-                              <button class="btn btn-success">Iniciar</button>
+                              <button class="btn btn-success" onclick="login_user();">Iniciar</button>
                             </div>
                           </div>
                         </div>
@@ -102,7 +103,6 @@
                             </div>
                           </div>
                         </div>
-                      </form>
                     </div>
                   </div>
                 </div>
