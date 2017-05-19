@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	
-	class Modelo_inicio_m extends CI_Model {
+	class Home_m extends CI_Model {
 			
 		public function __construct()
 		{
@@ -73,6 +73,23 @@
 			} else {
 				return FALSE;
 			}
+		}
+		
+		
+		public function recuperar_pass($email= NULL)
+		{
+			if ($email != NULL) {
+				$password = $this->db->SELECT('password')->FROM('user')->WHERE('email', $email)->GET();
+				if ($password->num_rows() === 1) {
+					$pass = $password->row_array();
+					return $pass['password'];
+				} else {
+					return 'El correo electronico no esta registrado';
+				}
+			} else {
+				return NULL;
+			}
+			
 		}
 }
 
