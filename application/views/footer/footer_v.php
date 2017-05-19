@@ -16,15 +16,19 @@
                     <div class="col-lg-12">
                       <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="username-user" id="username-user" tabindex="1" class="form-control" placeholder="email del usuario">
+                          <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="email del usuario">
                         </div>
                       </form>
+                    </div>
+                  </div> 
+                  <div class="row">
+                    <div class="col-lg-12" id="error_valid_form">
                     </div>
                   </div>                  
                 </div>
               </div>
               <div align="center">
-                <button type="button" class="btn btn-success" data-dismiss="modal">Enviar contraseña</button>
+                <button type="button" onclick="recover_pass();" class="btn btn-success">Enviar contraseña</button>
               </div>
             </div>      
           </div>
@@ -51,5 +55,6 @@
           </div>
         </div>
       </footer>
+      <script src="<?php echo base_url() ?>statics/js/home.js"></script>
   </body>
 </html> 

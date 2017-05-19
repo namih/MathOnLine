@@ -12,6 +12,7 @@
     <script src="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
   </head> 
   <body>
+    <script>var base_url ='<?php echo base_url();?>';</script>
     <header style="padding: 5px;">
       <div class="col-sm-12">
         <div class="col-sm-3 col-md-3 col-lg-2">
