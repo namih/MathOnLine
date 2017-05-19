@@ -57,14 +57,14 @@
               </div>
 
               <!-- Left and right controls -->
-              <a class="left carousel-control" href="#temaMes" data-slide="prev">
+              <!--<a class="left carousel-control" href="#temaMes" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Anterior</span>
               </a>
               <a class="right carousel-control" href="#temaMes" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Siguiente</span>
-              </a>
+              </a>-->
             </div>                     
           </div>
           <div class="col-md-4">
