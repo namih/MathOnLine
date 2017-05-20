@@ -5,6 +5,7 @@ class Home_c extends CI_Controller
 {
     public function __construct()
     {
+		parent::__construct();
         $this->load->model('Home_m');
     }
 
@@ -26,11 +27,12 @@ class Home_c extends CI_Controller
             $pass = $this->Home_m->recuperar_pass($email);
             if($pass == 0){
                 $error_recover_pass = "El correo electronico no esta registrado";
-                return $error_recover_pass;
+                echo $error_recover_pass;
             }else{
                 /*aqui mandas correo para enviar el password*/
-                return "SU password fue enviado a su correo";
+                echo "Su password fue enviado a su correo";
             }
         }
+        return;
     }
 }
