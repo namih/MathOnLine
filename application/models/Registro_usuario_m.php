@@ -46,7 +46,7 @@
 					return FALSE;
 				}
 			} else {
-				return "El id del usuario no puede ser nulo";
+				return NULL;
 			}
 		}
 		
@@ -112,6 +112,52 @@
 			} else {
 				return FALSE;
 			}
+		}
+		
+		/**
+		 * Valida que el nombre de usuario este disponible
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Boolean TRUE si el nombre de usuario existe, FALSE no existe.
+		 * @param String $nombre_usuario Nombre de usuario que se desea registrar.
+		 * @version 1.0
+		 */
+		public function validar_usuario($nombre_usuario = NULL)
+		{
+			if ($nombre_usuario!=NULL) {
+				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('user_name', $nombre_usuario)->GET();
+				if ($existe->num_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		
+		/**
+		 * Valida que el correo no se haya registrado con anterioridad.
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Boolean TRUE si el correo existe ya, FALSE si no esta registrado.
+		 * @param String $email Correo electronico que se desea registrar.
+		 * @version 1.0
+		 */
+		public function validar_correo($email = NULL)
+		{
+			if ($email!=NULL) {
+				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('email', $email)->GET();
+				if ($existe->num_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+			
 		}
 		
 		
