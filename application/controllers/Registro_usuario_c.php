@@ -5,6 +5,7 @@ class Registro_usuario_c extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this -> load -> model('Registro_usuario_m');
+		//$this->load->library('email');
 	}
 	
 	/**
@@ -47,9 +48,15 @@ class Registro_usuario_c extends CI_Controller {
 	*/
 	
 	public function registrar_usuario() {
-		$registro = $this -> input -> post('datos');
+		date_default_timezone_set('America/Mexico_City');
+		$format = 'Y-m-d h:i:s';
 		
-		$valida_usuario=$this->Registro_usuario_m->existe_usuario($registro['username']);
+		$registro = $this -> input -> post('datos');
+		$registro['type_user']=2;
+		$registro['registration_date']=date($format);
+		
+		
+		$valida_usuario=$this->Registro_usuario_m->existe_usuario($registro['user_name']);
 		$valida_correo=$this->Registro_usuario_m->validar_correo($registro['email']);
 		
 		if($valida_usuario == TRUE){
@@ -60,9 +67,55 @@ class Registro_usuario_c extends CI_Controller {
 		}
 		if($valida_usuario == FALSE && $valida_correo == FALSE){
 			$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-			return $id_registro;
+			//return $id_registro;
+			if ($id_registro != null) {
+				return $this->envio_email($id_registro,$registro['user_name']);
+			} else {
+				return false;
+			}
+			
 		}	
 	}
+	
+	/**
+	*Funcion para enviar un correo al usuario para la activacion de la cuenta
+	*
+	* 	
+	* @author Cecilia Hernandez Vasquez 
+	* @param id_usuario identificador con el que se registro en la base datos, $usuario nombre de usuario
+	* @return TRUE si el envio fue exitoso FALSE en caso contrario.
+	* @version 1.0
+	*/
+	function envio_email($id_usuario,$usuario){
+		
+		$usuario=123;
+		$configuracion = $this->conf_email->configuracion_email();
+	    
+		$datos = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
+						   'usuario' =>$usuario);
+		
+		echo "<pre>"; 
+		print_r(base_url().'Registro_usuario_c?id_usuario='.$usuario);
+		echo "</pre>";
+		$this->email->initialize($configuracion);
+		   
+	   $this->email->from('Bienvenido a matematicas .....');
+	   $this->email->to('ceciferch@gmail.com');
+	   $this->email->subject('Activacion de la cuenta Mathonline');
+	   $this->email->message('Hola mathonline'.base_url().'/Registro_usuario_c'.$usuario); //$datos enviar a vista
+	   
+	   if($this->email->send()){
+           return TRUE;
+            echo "Email enviado correctamente";
+        }else{
+          	return FALSE;
+			echo "No se a enviado el email";
+        }
+	}
+	
+	
+	
+	
 	
 	/**
 	* Funcion que actuaiza el estatus de la cuenta
