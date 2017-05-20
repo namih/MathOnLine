@@ -1,3 +1,9 @@
 .titEntrenador{
 	margin-top: 75px;
 }
+.tema_mes{
+	min-height: 400px; max-height: 400px; overflow-y:auto; margin-bottom: 50px;
+}
+.tema_footer{
+	min-height: 300px; max-height: 300px; overflow-y:auto;
+}
