@@ -61,17 +61,15 @@
 		 */
 		public function registrar_usuario($usuario = NULL)
 		{
-			if ($usuario !=NULL) {
-				$this->db->SET(
-					$this->_setUsuario($usuario)
-				)
-				->INSERT('user');
+			if ($usuario != NULL) {
+				$this->db->SET($this->_setUsuario($usuario))->INSERT('user');
 				if ($this->db->affected_rows() === 1) {
 					return $this->db->insert_id();
+				} else {
+					return FALSE;
 				}
-			return NULL;
 			} else {
-				return FALSE;
+				return NULL;
 			}
 		}
 		
@@ -136,7 +134,6 @@
 			}
 		}
 		
-		
 		/**
 		 * Valida que el correo no se haya registrado con anterioridad.
 		 * 
@@ -159,7 +156,6 @@
 			}
 			
 		}
-		
 		
 		private function _setUsuario($usuario)
 		{
@@ -204,7 +200,6 @@
 			if (isset($usuario['registration_date'])) {
 				$set_usuario['registration_date'] = $usuario['registration_date'];
 			};
-			
 			
 			return $set_usuario;
 		}
