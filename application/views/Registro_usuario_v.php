@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container">
 	<h3>REGISTRO</h3>
 	<h5>*Campos Obligatorios</h5>
 	<div class="row">
@@ -71,7 +71,7 @@
 			<!-- <p></p>
 			<p></p> -->
 			<div class="form-group col-md-6  col-xs-12">
-				<button type="button" onclick="validar_email()" class="btn btn-primary">Registrar</button>
+				<button type="button" onclick="registrar()" class="btn btn-primary">Registrar</button>
 				<button type="button" class="btn btn-danger">Cancelar</button>
 			</div>
 		</div>

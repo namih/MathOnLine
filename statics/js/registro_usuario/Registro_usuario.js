@@ -1,4 +1,5 @@
-/**
+/**document.getElementById('msj_correo').style.display='inline';
+		 document.getElementById('correo').style.borderColor = "red";
 * La función password verifica que las contraseñas sean del mismo tamaño así como
 * los mismos caracteres
 *
@@ -33,9 +34,9 @@ function comparar_contrasenia () {
 	var contraseña2 = document.getElementById('rpwd').value;
 	
 	if (contraseña1 == contraseña2) {
-		alert('Las contraseñas coinciden');
+		return true;
 	} else {
-		alert('Las contraseñas no coinciden');
+		return false;
 	};
 }
 
@@ -45,13 +46,66 @@ function validar_email() {
 	
   var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
   	if(valueForm.search(patron)==0){
-  		alert('ok');
-		
+  		return true;
 	}
 	else{
-		 document.getElementById('msj_correo').style.display='inline';
-		 document.getElementById('correo').style.borderColor = "red";
-		 // document.getElementById('correo').style.border = "solid";
-		
+		 return false;
 	}
+}
+
+function registrar () {
+  var usuario = document.getElementById('usr').value;
+  var contrasenia1 = document.getElementById('pwd').value;
+  var contrasenia2 = document.getElementById('rpwd').value;
+  var email = document.getElementById('correo').value;
+  var nombre = document.getElementById('name').value;
+  var apellidos = document.getElementById('last').value;
+  var nacimiento = document.getElementById('anio').value;
+  var sexo = document.getElementById('sexo').value;
+  var unidad = document.getElementById('uam').value;
+  var matricula = document.getElementById('mat').value;
+  var estudia = document.getElementById('estudia').value;
+  var trabaja = document.getElementById('trabaja').value;
+  
+  var datos ={
+		user_name:usuario,
+		password:contrasenia1,
+		name:nombre,
+		last_name:apellidos,
+		sex:sexo,
+		year_birthday:nacimiento,
+		id_unit_uam:unidad,
+		email:email,
+		uam_identifier:matricula,	
+		is_student:estudia,
+		is_employeed:trabaja
+	};
+	
+	var validar_pwd = comparar_contrasenia();
+	var validar_correo = validar_email();
+	
+	if (validar_pwd == true && validar_correo ==true) {
+		$.ajax({
+		type:'post',
+		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/registrar_usuario",
+		data: {datos:datos},
+		datatype: 'json',
+		cache: false,
+		success: function() {
+			alert('success');
+		},
+		error: function() {
+			alert('failure');
+		}
+	});
+	} else{
+		alert('error');
+	};
+	
+	
+	
+	
+	
+	
+	
 }
