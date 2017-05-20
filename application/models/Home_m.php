@@ -8,14 +8,14 @@
 		}
 		
 		/**
-		 * Descripcion
+		 * Verifica que el nombre de usuario y contraseña sean correctas y que la cuenta este activa.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Tipo Descripcion
-		 * @param NA
+		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
+		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
 		 * @version 1.0
 		 */
-		public function iniciar_sesion($credencial= NULL)
+		public function iniciar_sesion($credencial = NULL)
 		{
 			if ($credencial!=NULL) {
 				if ($this->existe_usuario($credencial['username']) == TRUE) {
@@ -23,31 +23,30 @@
 						$where = "username = '".$credencial['username']."' AND password = '".$credencial['password']."'";
 						$login = $this->db->SELECT('*')->FROM('user')->WHERE($where)->GET();
 						if ($login->num_rows() === 1) {
-							return 'ACCESO CONCEDIDO';
+							return 1;
 						} else {
-							return 'ACCESO DENEGADO: PASSWORD INCORRECTO';
+							return 3;
 						}
 					} else {
-						return "La cuenta del usuario no esta activada";
+						return 4;
 					}
-					
 				} else {
-					return "El nombre de usuario no existe";
+					return 2;
 				}
 			}
 		}
 		
 		/**
-		 * Descripcion
+		 * Verifica que el nombre de usuario exista en la base de datos.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Tipo Descripcion
-		 * @param NA
+		 * @return BOOL TRUE si existe en el nombre de usuario FALSE si no existe.
+		 * @param String $user_name Nombre de usuario 
 		 * @version 1.0
 		 */
-		public function existe_usuario($username)
+		public function existe_usuario($user_name)
 		{
-			$existe = $this->db->SELECT('*')->FROM('user')->WHERE('username',$username)->GET();
+			$existe = $this->db->SELECT('*')->FROM('user')->WHERE('user_name',$user_name)->GET();
 			if ($existe->num_rows() === 1) {
 				return TRUE;
 			} else {
@@ -56,16 +55,16 @@
 		}
 		
 		/**
-		 * Descripcion
+		 * Verifica que el estatus de la cuenta este activa por nombre de usuario.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Tipo Descripcion
-		 * @param NA
+		 * @return BOOL TRUE si la cuenta esta activada y FALSE si la cuenta esta inactiva
+		 * @param String $user_name Nombre de usuario
 		 * @version 1.0
 		 */
-		public function cuenta_activa($usarname)
+		public function cuenta_activa($user_name)
 		{
-			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('username', $usarname)->GET();
+			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('user_name', $user_name)->GET();
 			$estatus = $usuario->row_array();
 			
 			if ($estatus['status'] == 1) {
@@ -76,11 +75,11 @@
 		}
 		
 		/**
-		 * Descripcion
+		 * Verifica que el estatus de la cuenta este activa por correo electronico.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Tipo Descripcion
-		 * @param NA
+		 * @return BOOL TRUE si la cuenta esta activada y FALSE si la cuenta esta inactiva
+		 * @param String $email Cuenta de correo electrónico del usuario.
 		 * @version 1.0
 		 */
 		public function cuenta_activa_email($email)
@@ -96,14 +95,14 @@
 		}
 		
 		/**
-		 * Descripcion
+		 * Obtiene la contraseña registrada por el usuario unicamente si la cuenta esta activa.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return Tipo Descripcion
-		 * @param NA
+		 * @return STRING Contraseña dada por el usuario en su registro.
+		 * @param String $email Cuenta de correo electrónico del usuario.
 		 * @version 1.0
 		 */
-		public function recuperar_pass($email= NULL)
+		public function recuperar_pass($email = NULL)
 		{
 			if ($email != NULL) {
 				$password = $this->db->SELECT('password')->FROM('user')->WHERE('email', $email)->GET();
@@ -115,10 +114,32 @@
 				}
 			} else {
 				return NULL;
-			}
-			
+			}	
 		}
+		
+		/**
+		 * Obtiene los temas del mes del actual, anterior y siguiente.
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array Información de los temas de mes actual, anterior y siguiente.
+		 * @param String $email Cuenta de correo electrónico del usuario.
+		 * @version 1.0
+		 */
+		public function tema_mes($mes = NULL)
+		{
+			if ($mes != NULL) {
+				$temas = $this->SELECT('*')->FROM('monthly_theme')->WHERE($mes['anterior'])->WHERE($mes['actual'])->WHERE($mes['siguiente'])->GET();
+				if ($temas->result-array() > 0) {
+					return $temas->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
 }
 
-/* End of file Modelo_inicio_m.php */
+/* End of file Home_m.php */
 /* Location: ./application/models/Modelo_inicio_m.php */

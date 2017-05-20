@@ -61,4 +61,12 @@
 			echo $validar;
 			
 		}
+		
+		public function verificar()
+		{
+			$datos = array('username' => 'nightlightmx', 'email'=> 'nightlightmx@gmail.com');
+			$existen = $this->Registro_usuario_m->usuario_email($datos);
+			
+			echo $existen;
+		}
 }
