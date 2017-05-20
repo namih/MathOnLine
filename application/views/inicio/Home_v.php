@@ -14,7 +14,7 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item">
-                  <div class="panel panel-success"  align="center" style="min-height: 400px; max-height: 400px; overflow-y:auto;">
+                  <div class="panel panel-success"  align="center" style="min-height: 400px; max-height: 400px; overflow-y:auto; margin-bottom: 50px;">
                     <div class="panel-heading">Abril</div>
                     <div class="panel-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque bibendum felis, eget tristique libero dapibus eu. Curabitur vitae fermentum lorem. Donec porttitor velit non tortor luctus, faucibus efficitur odio lobortis. Proin nisl nulla, aliquam ac blandit at, commodo semper ipsum. Fusce dignissim, quam quis finibus consequat, libero libero hendrerit nisl, et finibus arcu enim a risus. Morbi a enim nec justo finibus pellentesque. Fusce imperdiet tortor eu sodales scelerisque. Nunc gravida dui id magna finibus accumsan. Phasellus iaculis elit sit amet mauris elementum, sed suscipit justo aliquet. Nam ultricies vitae urna sit amet sagittis.<br><br>
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="item active">
-                  <div class="panel panel-success"  align="center" style="min-height: 400px; max-height: 400px; overflow-y:auto;">
+                  <div class="panel panel-success"  align="center" style="min-height: 400px; max-height: 400px; overflow-y:auto; margin-bottom: 50px;">
                     <div class="panel-heading">Mayo</div>
                     <div class="panel-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque bibendum felis, eget tristique libero dapibus eu. Curabitur vitae fermentum lorem. Donec porttitor velit non tortor luctus, faucibus efficitur odio lobortis. Proin nisl nulla, aliquam ac blandit at, commodo semper ipsum. Fusce dignissim, quam quis finibus consequat, libero libero hendrerit nisl, et finibus arcu enim a risus. Morbi a enim nec justo finibus pellentesque. Fusce imperdiet tortor eu sodales scelerisque. Nunc gravida dui id magna finibus accumsan. Phasellus iaculis elit sit amet mauris elementum, sed suscipit justo aliquet. Nam ultricies vitae urna sit amet sagittis.<br><br>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="item">
-                  <div class="panel panel-success"  style="min-height: 400px; max-height: 400px; overflow-y:auto;">
+                  <div class="panel panel-success"  style="min-height: 400px; max-height: 400px; overflow-y:auto; margin-bottom: 50px;">
                     <div class="panel-heading" align="center">Junio</div>
                     <div class="panel-body">
                     Nulla gravida luctus dui quis tempus. Nunc maximus orci vitae est porttitor, in mattis mi semper. Integer hendrerit porta erat id ultricies. Aenean a turpis id urna vestibulum sollicitudin. Donec eget leo interdum, hendrerit nunc ornare, sollicitudin massa. Donec felis tortor, faucibus non quam id, sollicitudin maximus risus. Nunc arcu lectus, scelerisque sit amet nisl a, mattis placerat libero. Phasellus sagittis dictum diam eu sollicitudin. Vestibulum vehicula in nibh sed gravida. Vivamus vestibulum sed tellus a tempus. Quisque fermentum odio vitae nisl pharetra fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec consequat tincidunt facilisis. Curabitur quis libero luctus, efficitur sapien ut, finibus lacus. Nullam ut sem magna. Pellentesque vulputate, diam a dictum suscipit, magna lacus posuere massa, vehicula dignissim elit libero tristique ex.
