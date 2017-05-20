@@ -161,8 +161,8 @@
 		{
 			$set_usuario = array();
 			
-			if (isset($usuario['username'])) {
-				$set_usuario['username'] =  $usuario['username'];
+			if (isset($usuario['user_name'])) {
+				$set_usuario['user_name'] =  $usuario['user_name'];
 			};
 			if (isset($usuario['password'])) {
 				$set_usuario['password'] = $usuario['password'];
