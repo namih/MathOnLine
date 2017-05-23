@@ -51,9 +51,9 @@ class Registro_usuario_c extends CI_Controller {
 		$valida_usuario=$this->Registro_usuario_m->existe_usuario($username['user_name']);
 		
 		if ($valida_usuario == TRUE) {
-			echo "SI";
-		} else {
 			echo "NO";
+		} else {
+			echo "SI";
 		}	
 	}		
 	
@@ -70,9 +70,9 @@ class Registro_usuario_c extends CI_Controller {
 		$valida_correo=$this->Registro_usuario_m->validar_correo($correo_user['email']);
 		
 		if ($valida_correo == TRUE) {
-			echo "SI";
-		} else {
 			echo "NO";
+		} else {
+			echo "SI";
 		}	
 	}		
 	
