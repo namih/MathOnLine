@@ -10,7 +10,7 @@
 		<div>
 			<div align="left">
 				<h2 style="font-family:Helvetica"><img width="80px" src="http://turing.izt.uam.mx/tester/mate1.jpg" >
-				<span style="position: absolute; margin-top: 26px;">Solicitud de recuperación de contraseña</span>
+				<label style="position: absolute; margin-top: 26px;">Solicitud de recuperación de contraseña</label>
 				</h2>
 			</div>
 			<div>
