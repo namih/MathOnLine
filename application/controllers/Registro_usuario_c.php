@@ -37,6 +37,45 @@ class Registro_usuario_c extends CI_Controller {
 			return $uamis;
 		}
 	
+		
+	/**
+	 * Funcion para validar si el nombre de usuario ya se encuentra en registrado
+	 * @author Cecilia Hernandez Vasquez
+	 * @return 	NA
+	 * @param NA
+	 * @version 1.0
+	 */	
+	public function nombre_usuario_disponible(){
+		$username = $this->input->post('datos');
+		
+		$valida_usuario=$this->Registro_usuario_m->existe_usuario($username['user_name']);
+		
+		if ($valida_usuario == TRUE) {
+			echo "SI";
+		} else {
+			echo "NO";
+		}	
+	}		
+	
+	/**
+	 * Funcion para validar si el nombre de usuario ya se encuentra en registrado
+	 * @author Cecilia Hernandez Vasquez
+	 * @return 	NA
+	 * @param NA
+	 * @version 1.0
+	 */	
+	public function correo_usuario_disponible(){
+		$correo_user = $this->input->post('datos');
+		
+		$valida_correo=$this->Registro_usuario_m->validar_correo($correo_user['email']);
+		
+		if ($valida_correo == TRUE) {
+			echo "SI";
+		} else {
+			echo "NO";
+		}	
+	}		
+	
 	/**
 	*Funcion para registrar los datos del usuario 
 	*
@@ -46,7 +85,6 @@ class Registro_usuario_c extends CI_Controller {
 	* @return id_usuario si el registro se realizo, en otro caso un msj de acuerdo si existe registro del nombre del usuario o email
 	* @version 1.0
 	*/
-	
 	public function registrar_usuario() {
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
@@ -55,26 +93,13 @@ class Registro_usuario_c extends CI_Controller {
 		$registro['type_user']=2;
 		$registro['registration_date']=date($format);
 		
-		
-		$valida_usuario=$this->Registro_usuario_m->existe_usuario($registro['user_name']);
-		$valida_correo=$this->Registro_usuario_m->validar_correo($registro['email']);
-		
-		if($valida_usuario == TRUE){
-			return "El nombre de usuario ya se encuentra registrado";
-		}
-		if($valida_correo == TRUE){
-			return "El correo ya se encuentra registrado";
-		}
-		if($valida_usuario == FALSE && $valida_correo == FALSE){
 			$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
 			//return $id_registro;
 			if ($id_registro != null) {
 				return $this->envio_email($id_registro,$registro['user_name']);
 			} else {
 				return false;
-			}
-			
-		}	
+			}	
 	}
 	
 	/**
