@@ -105,10 +105,11 @@
 		public function recuperar_pass($email = NULL)
 		{
 			if ($email != NULL) {
-				$password = $this->db->SELECT('password')->FROM('user')->WHERE('email', $email)->GET();
+				$password = $this->db->SELECT('user_name, password')->FROM('user')->WHERE('email', $email)->GET();
 				if ($password->num_rows() === 1 AND $this->cuenta_activa_email($email) == TRUE) {
-					$pass = $password->row_array();
-					return $pass['password'];
+					$data = $password->row_array();
+					$datos = array('user_name' => $data['user_name'], 'password'=>$data['password']);
+					return $datos;
 				} else {
 					return FALSE;
 				}

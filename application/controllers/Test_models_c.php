@@ -4,8 +4,8 @@
 			
 		public function __construct() {
 			parent::__construct();
-			// $this->load->model("Registro_usuario_m");
-			// $this->load->model("Home_m");
+			$this->load->model("Registro_usuario_m");
+			$this->load->model("Home_m");
 			$this->load->library('email');
         }
 		
@@ -25,7 +25,7 @@
 		
 		public function activar()
 		{
-			$id_usuario = 2;
+			$id_usuario = 1;
 			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
 			echo $activacion;
 		}
@@ -33,20 +33,40 @@
 		public function registrar()
 		{
 			
-			for ($i=1; $i < 75000; $i++) { 
-				date_default_timezone_set('America/Mexico_City');
+			// for ($i=1; $i < 75000; $i++) { 
+				// date_default_timezone_set('America/Mexico_City');
+				// $format = 'Y-m-d h:i:s';
+				// $usuario = array(
+								// 'user_name' => 'usuario_'.$i,
+								// 'password' => 'qwerty2017',
+								// 'type_user' => 2,
+								// 'name' => 'Cesar_'.$i,
+								// 'last_name' => 'Padilla',
+								// 'sex' => 1,
+								// 'year_birthday' => 1985,
+								// 'id_unit_uam' => 4,
+								// 'email' =>'correo'.$i.'@gmail.com',
+								// 'uam_identifier' => '20421480'.$i,
+								// 'is_student' => TRUE,
+								// 'is_employed' => TRUE,
+								// 'registration_date' => date($format)
+								 // );
+// 				
+				// $id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
+			// }
+			date_default_timezone_set('America/Mexico_City');
 				$format = 'Y-m-d h:i:s';
 				$usuario = array(
-								'user_name' => 'usuario_'.$i,
-								'password' => 'qwerty2017',
+								'user_name' => 'JCesarCBI',
+								'password' => 'JiU8Lp19O0',
 								'type_user' => 2,
-								'name' => 'Cesar_'.$i,
+								'name' => 'Cesar',
 								'last_name' => 'Padilla',
 								'sex' => 1,
 								'year_birthday' => 1985,
 								'id_unit_uam' => 4,
-								'email' =>'correo'.$i.'@gmail.com',
-								'uam_identifier' => '20421480'.$i,
+								'email' =>'nightlightmx@gmail.com',
+								'uam_identifier' => '20421480',
 								'is_student' => TRUE,
 								'is_employed' => TRUE,
 								'registration_date' => date($format)
@@ -54,8 +74,9 @@
 				
 				$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
 				
-				
-			}
+				echo $id_usuario;
+			
+			
 		}
 		
 		public function login()
@@ -121,5 +142,26 @@
 				echo 'SI';
 			}
 			
+		}
+		
+		public function recuperar()
+		{
+			$email = 'nightlightmx@gmail.com';
+			
+			$data = $this->Home_m->recuperar_pass($email);
+			
+			$configuracion = $this->conf_email->configuracion_email();
+					
+			$this->email->initialize($configuracion);
+			
+			$this->email->from('Mate en Linea');
+			$this->email->to($email);
+			$this->email->subject('Registro de lacontraseña');
+			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
+			if ($this->email->send()) {
+				echo "Correo enviado";
+			} else {
+				echo "Error al enviar el correo";
+			}
 		}
 }
