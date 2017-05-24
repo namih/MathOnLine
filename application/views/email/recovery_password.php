@@ -2,18 +2,14 @@
 	<div align="center">
 		
 		<div style="width: 600px">
-		<div style="background-color: #57A519">
-			<div align="center">
-				<img style="border:100px; margin-top: 15px;" width="25%" src="http://turing.izt.uam.mx/tester/variacion6IztInv.png" >
-			</div>
-		</div>
-		<div>
 			<div align="left">
-				<h2 style="font-family:Helvetica"><img width="80px" src="http://turing.izt.uam.mx/tester/mate1.jpg" >
-				<label style="position: absolute; margin-top: 26px;">Solicitud de recuperación de contraseña</label>
-				</h2>
+				<div><img width="80px" src="http://turing.izt.uam.mx/tester/mate1.jpg" >
+				</div>
 			</div>
+		<div>
+
 			<div>
+				<h2 style="font-family:Helvetica">Solicitud de recuperación de contraseña</h2><br>
 				<p align="justify" style="font-family:Helvetica">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<div>
 					<br />
@@ -24,9 +20,9 @@
 				</div>
 			</div>
 		</div>
-		<div style="background-color: #A6ACAF">
-			<p align="center" style="font-family:Helvetica; color: #FFFFFF"> <small>@2009 División de CBI UAM-I Todos los derechos reservados</small> </p>
-			<p align="center" style="font-family:Helvetica; color: #FFFFFF"> <small>UAM Iztapalapa</small> </p>
+		<div style="background-color: #A6ACAF;">
+		<label  align="left" style="font-family:Helvetica; color: #FFFFFF"> <small>@2009 División de CBI UAM-I Todos los derechos reservados UAM Iztapalapa</small> </label>
+		<img style="margin-top: 15px;" width="25%" src="http://turing.izt.uam.mx/tester/variacion6IztInv.png" >
 		</div>
 	</div>
 	</div>
