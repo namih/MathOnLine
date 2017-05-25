@@ -126,18 +126,23 @@
 		 * @param String $email Cuenta de correo electrónico del usuario.
 		 * @version 1.0
 		 */
-		public function tema_mes($mes = NULL)
+		public function tema_mes($mes)
 		{
 			if ($mes != NULL) {
-				$temas = $this->SELECT('*')->FROM('monthly_theme')->WHERE($mes['anterior'])->WHERE($mes['actual'])->WHERE($mes['siguiente'])->GET();
-				if ($temas->result-array() > 0) {
+				$temas = $this->db	->SELECT('*')
+									->FROM('monthly_theme')
+									->WHERE('mounth', $mes['anterior'])
+									->OR_WHERE('mounth', $mes['actual'])
+									->OR_WHERE('mounth', $mes['siguiente'])
+									->GET();
+				if ($temas->num_rows() > 0) {
 					return $temas->result_array();
 				} else {
 					return FALSE;
 				}
 			} else {
 				return NULL;
-			}
+			}				
 		}
 		
 }

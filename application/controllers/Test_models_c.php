@@ -164,4 +164,15 @@
 				echo "Error al enviar el correo";
 			}
 		}
+		
+		public function tema_mes_inicio()
+		{
+			$meses = array('anterior' => 4, 'actual' => 5, 'siguiente' => 6);
+			
+			$mostrar = $this->Home_m->tema_mes($meses);
+			
+			echo "<pre>";
+			print_r($mostrar);
+			echo "<pre>";
+		}
 }
