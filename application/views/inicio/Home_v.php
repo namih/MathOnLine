@@ -76,41 +76,49 @@
                     <hr>
                   </div>
                 </div>
+                
                 <div class="panel-body">
                   <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                          <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="email del usuario">
-                        </div>
-                        <div class="form-group">
-                          <input type="password" name="password-user" id="password_user" tabindex="2" class="form-control" placeholder="contraseña">
-                        </div>
-                        <div class="col-lg-12" id="error_valid_form">
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-sm-12" align="center">
-                              <button class="btn btn-success" onclick="login_user();">Iniciar</button>
-                            </div>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="col-md-4 col-sm-4" align="center"><img width="50%" height="90px" src="statics/img/iniciar_session/people-145129_1280.png"/></div>
+                          <div class="col-md-8 col-sm-8">
+                              <div class="form-group">
+                                <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="nombre del usuario">
+                              </div>
+                              <div class="form-group">
+                                <input type="password" name="password-user" id="password_user" tabindex="2" class="form-control" placeholder="contraseña">
+                              </div>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="text-center">
-                                <a href="#" data-toggle="modal" data-target="#recuperaPassModal">Recuperar contraseña</a>
+                        <div class="col-md-12" id="error_valid_form">
+                        </div>
+                        <div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4">
+                            <div class="form-group">
+                              <div class="row">
+                                <div class="col-sm-12" align="center">
+                                  <button class="btn btn-success" onclick="login_user();">Iniciar</button>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="text-center">
-                                <a href="<?php echo base_url(); ?>registro">Registrar</a>
+                            <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="text-center">
+                                    <a href="#" data-toggle="modal" data-target="#recuperaPassModal">Recuperar contraseña</a>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                            <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="text-center">
+                                    <a href="<?php echo base_url(); ?>registro">Registrar</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                         </div>
                     </div>
                   </div>
