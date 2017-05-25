@@ -21,8 +21,10 @@
 				</div>
 			</div>
 			<div style="background-color: #A6ACAF;" id="footer">
+			<label  align="left" style="font-family:Helvetica; color: #FFFFFF"> <small>@2017 División de CBI UAM-I Todos los derechos reservados UAM Iztapalapa</small></label>
 			<img style="margin-top: 15px;" width="25%" src="http://turing.izt.uam.mx/tester/variacion6IztInv.png" >
 			<!-- <img style="margin-top: 15px;" width="25%" src="<?php echo base_url();?>statics/img/logo_uam/variacion6IztInv.png"> -->
 			</div>
 		</div>
 	</div>
+</html>

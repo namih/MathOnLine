@@ -154,9 +154,9 @@
 					
 			$this->email->initialize($configuracion);
 			
-			$this->email->from('Mate en Linea');
+			$this->email->from('matenlinea.cbi@gmail.com');
 			$this->email->to($email);
-			$this->email->subject('Registro de lacontraseña');
+			$this->email->subject('Recuperación de contraseña');
 			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
 			if ($this->email->send()) {
 				echo "Correo enviado";
