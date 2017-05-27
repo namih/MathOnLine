@@ -3,7 +3,7 @@
 		<div style="width: 600px">
 			<div align="left" id="header">
 				<div>
-					<img width="80px" src="http://turing.izt.uam.mx/tester/matematicas-1.jpg">
+					<img width="80px" src="http://turing.izt.uam.mx/tester/mate1.jpg">
 					<!-- <img width="80px" src="<?php echo base_url();?>statics/img/logo_uam/mate1.jpg"> -->
 				</div>
 			</div>
@@ -17,7 +17,7 @@
 					<p align="left" style="font-family:Helvetica">Nombre de usuario: <strong><?php echo $user_name ?></strong> </p>
 					<p align="left" style="font-family:Helvetica">Su contraseña es: <strong><?php echo $password ?></strong> </p>
 					<br />
-					<p align="justify" style="font-family:Helvetica">Este correo es informativo, favor no responder a esta dirección de correo, ya que no se encuentra habilitada para recibir mensajes.</p>
+					<p align="justify" style="font-family:Helvetica"><small>Este correo es informativo, favor no responder a esta dirección de correo, ya que no se encuentra habilitada para recibir mensajes.</small></p>
 				</div>
 			</div>
 			<div style="background-color: #A6ACAF;" id="footer">

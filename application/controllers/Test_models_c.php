@@ -7,6 +7,7 @@
 			$this->load->model("Registro_usuario_m");
 			$this->load->model("Home_m");
 			$this->load->library('email');
+			$this->load->library('encrypt');
         }
 		
 		/**
@@ -25,7 +26,7 @@
 		
 		public function activar()
 		{
-			$id_usuario = 1;
+			$id_usuario = 2;
 			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
 			echo $activacion;
 		}
@@ -58,7 +59,7 @@
 				$format = 'Y-m-d h:i:s';
 				$usuario = array(
 								'user_name' => 'JCesarCBI',
-								'password' => 'JiU8Lp19O0',
+								'password' => $this->encrypt->encode('JiU8Lp19O0'),
 								'type_user' => 2,
 								'name' => 'Cesar',
 								'last_name' => 'Padilla',
@@ -101,10 +102,17 @@
 			
 		}
 
-		public function email_layaout()
+		public function pass_layaout()
 		{
 			$datos = array('user_name' => "Yo",'password'=>'M1P4ssw0RD' );
 			$this -> load -> view('email/recovery_password', $datos);
+			
+		}
+		
+		public function activacion_layaout()
+		{
+			$datos = array('user_name' => "Yo",'url_activacion'=>'M1P4ssw0RD' );
+			$this -> load -> view('email/activacion_cuenta', $datos);
 			
 		}
 		
@@ -125,8 +133,25 @@
 			} else {
 				echo "Error al enviar el correo";
 			}
+		}
+		
+		public function enviar_activacion()
+		{
+						
+			$data = array('user_name' => "Yo",'url_activacion'=>'M1P4ssw0RD' );
+			$configuracion = $this->conf_email->configuracion_email();
+					
+			$this->email->initialize($configuracion);
 			
-			
+			$this->email->from('mate');
+			$this->email->to('jcesarcbi@gmail.com');
+			$this->email->subject('Activación cuenta');
+			$this->email->message($this->load->view('email/activacion_cuenta', $data, TRUE));
+			if ($this->email->send()) {
+				echo "Correo enviado";
+			} else {
+				echo "Error al enviar el correo";
+			}
 		}
 		
 		public function nombre_usuario_disponible()
@@ -163,6 +188,19 @@
 			} else {
 				echo "Error al enviar el correo";
 			}
+		}
+		
+		public function recuperar_password()
+		{
+			$email = 'nightlightmx@gmail.com';
+			
+			$data = $this->Home_m->recuperar_pass($email);
+			
+			
+			$pass = $this->encrypt->decode($data['password']);
+			
+			echo $pass;
+			
 		}
 		
 		public function tema_mes_inicio()
