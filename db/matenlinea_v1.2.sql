@@ -346,7 +346,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `mathonline`;
-INSERT INTO `mathonline`.`user` (`id_user`, `user_name`, `password`, `type_user`, `name`, `last_name`, `sex`, `year_birthday`, `email`, `id_degree`, `uam_identifier`, `is_student`, `is_employed`, `registration_date`, `status`) VALUES (1, 'AdminMatEnLinea', '4dM1n@17', 1, 'Administrador', 'Mate en línea', NULL, NULL, 'matenlinea.cbi@gmail.com', DEFAULT, 'NULL', NULL, NULL, '2017-05-01 00:00:00', 1);
+INSERT INTO `mathonline`.`user` (`id_user`, `user_name`, `password`, `type_user`, `name`, `last_name`, `sex`, `year_birthday`, `email`, `id_degree`, `uam_identifier`, `is_student`, `is_employed`, `registration_date`, `status`) VALUES (1, 'AdminMatEnLinea', '4dM1n@17', 1, 'Administrador', 'Mate en línea', NULL, NULL, 'matenlinea.cbi@gmail.com', 1, 'NULL', NULL, NULL, '2017-05-01 00:00:00', 1);
 
 COMMIT;
 
