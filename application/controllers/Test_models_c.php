@@ -24,6 +24,15 @@
 			print_r($uamis);
 		}
 		
+		public function lista_lic()
+		{
+			$unidad = 4;
+			$lic = $this->Registro_usuario_m->obtener_licenciaturas($unidad);
+			echo "<pre>";
+			print_r($lic);
+			echo "<pre>";
+		}
+		
 		public function activar()
 		{
 			$id_usuario = 2;

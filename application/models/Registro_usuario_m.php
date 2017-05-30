@@ -26,6 +26,31 @@
 		}
 		
 		/**
+		 * Obtiene el listado las licenciaturas por unidad UAM
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array Arreglo con las licenciaturas por unidad de la UAM, FALSE si no existe ningun registro
+		 * @param Int $unidad Identificador de la unidad UAM
+		 * @version 1.0
+		 */
+		public function obtener_licenciaturas($unidad = NULL)
+		{
+			if ($unidad != NULL) {
+				$licenciaturas = $this->db->SELECT('*')->FROM('degree')->WHERE('id_unit_uam',$unidad)->GET();
+				if (!empty($licenciaturas)) {
+					return $licenciaturas->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+			
+			
+			
+		}
+		
+		/**
 		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
@@ -182,8 +207,8 @@
 			if (isset($usuario['year_birthday'])) {
 				$set_usuario['year_birthday'] = $usuario['year_birthday'];
 			};
-			if (isset($usuario['id_unit_uam'])) {
-				$set_usuario['id_unit_uam'] = $usuario['id_unit_uam'];
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
 			};
 			if (isset($usuario['email'])) {
 				$set_usuario['email'] = $usuario['email'];
