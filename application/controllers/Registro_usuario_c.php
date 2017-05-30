@@ -48,7 +48,7 @@ class Registro_usuario_c extends CI_Controller {
 	public function nombre_usuario_disponible(){
 		$username = $this->input->post('datos');
 		
-		$valida_usuario=$this->Registro_usuario_m->existe_usuario($username['user_name']);
+		$valida_usuario=$this->Registro_usuario_m->validar_usuario($username['user_name']);
 		
 		if ($valida_usuario == TRUE) {
 			echo "NO";
