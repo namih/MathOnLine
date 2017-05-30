@@ -4,8 +4,9 @@ class Registro_usuario_c extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this -> load -> model('Registro_usuario_m');
-		//$this->load->library('email');
+		$this->load->library('encrypt');
+			$this -> load -> model('Registro_usuario_m');
+			//$this->load->library('email');
 	}
 	
 	/**
@@ -90,8 +91,10 @@ class Registro_usuario_c extends CI_Controller {
 		$format = 'Y-m-d h:i:s';
 		
 		$registro = $this -> input -> post('datos');
-		$registro['type_user']=2;
+		$registro['type_user']=3;
 		$registro['registration_date']=date($format);
+		$encrypted = $this->encrypt->encode($registro['password']);
+		$registro['password']=$encrypted;
 		
 			$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
 			//return $id_registro;
