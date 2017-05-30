@@ -111,7 +111,7 @@
 		
 		public function activacion_layaout()
 		{
-			$datos = array('user_name' => "Yo",'url_activacion'=>'M1P4ssw0RD' );
+			$datos = array('user_name' => "Yo",'url'=>'http://www.crunchyroll.com/' );
 			$this -> load -> view('email/activacion_cuenta', $datos);
 			
 		}
@@ -138,7 +138,7 @@
 		public function enviar_activacion()
 		{
 						
-			$data = array('user_name' => "Yo",'url_activacion'=>'M1P4ssw0RD' );
+			$data = array('user_name' => "Yo", 'url' => 'http://www.crunchyroll.com/' );
 			$configuracion = $this->conf_email->configuracion_email();
 					
 			$this->email->initialize($configuracion);
@@ -147,6 +147,25 @@
 			$this->email->to('jcesarcbi@gmail.com');
 			$this->email->subject('Activación cuenta');
 			$this->email->message($this->load->view('email/activacion_cuenta', $data, TRUE));
+			if ($this->email->send()) {
+				echo "Correo enviado";
+			} else {
+				echo "Error al enviar el correo";
+			}
+		}
+		
+		public function enviar_password()
+		{
+						
+			$data = array('user_name' => "Yo", 'password' => '3sTE-EsM1_P@ssWoRd' );
+			$configuracion = $this->conf_email->configuracion_email();
+					
+			$this->email->initialize($configuracion);
+			
+			$this->email->from('mate');
+			$this->email->to('jcesarcbi@gmail.com');
+			$this->email->subject('Activación cuenta');
+			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
 			if ($this->email->send()) {
 				echo "Correo enviado";
 			} else {
