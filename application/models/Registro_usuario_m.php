@@ -148,7 +148,7 @@
 		public function validar_usuario($nombre_usuario = NULL)
 		{
 			if ($nombre_usuario!=NULL) {
-				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('user_name', $nombre_usuario)->GET();
+				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('user_name', $nombre_usuario)->WHERE('status', 1)->GET();
 				if ($existe->num_rows() === 1) {
 					return TRUE;
 				} else {
@@ -170,7 +170,7 @@
 		public function validar_correo($email = NULL)
 		{
 			if ($email!=NULL) {
-				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('email', $email)->GET();
+				$existe = $this->db->SELECT('*')->FROM('user')->WHERE('email', $email)->WHERE('status', 1)->GET();
 				if ($existe->num_rows() === 1) {
 					return TRUE;
 				} else {

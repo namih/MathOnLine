@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+	error_reporting(E_ERROR);
+
 	class Test_models_c extends CI_Controller {
 			
 		public function __construct() {
@@ -41,8 +43,7 @@
 		}
 		
 		public function registrar()
-		{
-			
+		{			
 			// for ($i=1; $i < 75000; $i++) { 
 				// date_default_timezone_set('America/Mexico_City');
 				// $format = 'Y-m-d h:i:s';
@@ -67,16 +68,16 @@
 			date_default_timezone_set('America/Mexico_City');
 				$format = 'Y-m-d h:i:s';
 				$usuario = array(
-								'user_name' => 'JCesarCBI',
+								'user_name' => 'NightlightMX',
 								'password' => $this->encrypt->encode('JiU8Lp19O0'),
-								'type_user' => 2,
+								'type_user' => 3,
 								'name' => 'Cesar',
 								'last_name' => 'Padilla',
 								'sex' => 1,
 								'year_birthday' => 1985,
-								'id_unit_uam' => 4,
+								'id_degree' => 36,
 								'email' =>'nightlightmx@gmail.com',
-								'uam_identifier' => '20421480',
+								'uam_identifier' => '204214807',
 								'is_student' => TRUE,
 								'is_employed' => TRUE,
 								'registration_date' => date($format)
