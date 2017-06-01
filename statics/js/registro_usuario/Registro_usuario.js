@@ -26,6 +26,15 @@ function seleccion () {
 		estudia.checked = true;
 	};
 }
+/**
+* La función seleccion permite escoger la unidad uam a la que pertenece y con la elección se auto-chequeala opción "estudia",
+* se habilita la caja de texto correspondiente a "Matricula" y de acorde a la unidad uam seleccionada en el desplegable de carreras se muestran las que son impartidas en la unidad.
+*
+* @author María del Carmen Chávez Conde
+* @param NA
+* @return  Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 
 function seleccionar_unidad () {
 	var unidades = document.getElementById('uam').value;
@@ -36,39 +45,46 @@ function seleccionar_unidad () {
 		matricula.disabled = true;
 		licenciatura.disabled = true;
 		matricula.value = '';
+		licenciatura.value = 0;
 		estudia.checked = false;
 	} else if(unidades == 1){
 		
 		matricula.disabled = true;
 		licenciatura.disabled = true;
 		matricula.value = '';
+		
 		estudia.checked = false;
 	}else{
 		matricula.disabled = false;
-		licenciatura.disabled = false;
+		licenciatura.disabled = false ;
 		estudia.checked = true;
-	};
-	if(unidades != 0){
+		
+		$('#carrera').empty();
 		var datos = {'unidad':unidades};
 		$.ajax({
 		type:'post',
-		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/registrar_usuario",
+		url: "http://localhost/MathOnLine/index.php/Test_models_c/lista_lic",
 		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
-		success: function() {
+		success: function(respuesta) {
+			var lista_lic = JSON.parse(respuesta);
 			var carreras = document.getElementById('carrera');
-			var option = document.createElement('option');
-			option.text = 'hola';
-			carreras.add(option);
-			
+			for (var i=0; i < lista_lic.length; i++) {
+			  var option = document.createElement('option');
+			  option.innerHTML = lista_lic[i];
+			  option.text = lista_lic[i]['degree'];
+			  option.value = lista_lic[i]['id_degree'];
+			  carreras.appendChild(option);
+			};
+				
 		},
 		error: function() {
 			alert('failure');
 		}
 	});
-	}
-  
+	};
+	
 }
 /**
 * La función comparar_contrasenia verifica que las contraseñas sean del mismo tamaño así como
@@ -129,7 +145,7 @@ function registrar () {
   var apellidos = document.getElementById('last').value;
   var nacimiento = document.getElementById('anio').value;
   var sexo = document.getElementById('sexo').value;
-  var unidad = document.getElementById('uam').value;
+  var carrera = document.getElementById('carrera').value;
   var matricula = document.getElementById('mat').value;
   var estudia = document.getElementById('estudia').value;
   var trabaja = document.getElementById('trabaja').value;
@@ -141,7 +157,7 @@ function registrar () {
 		last_name:apellidos,
 		sex:sexo,
 		year_birthday:nacimiento,
-		id_unit_uam:unidad,
+		id_degree:carrera,
 		email:email,
 		uam_identifier:matricula,	
 		is_student:estudia,
@@ -151,23 +167,53 @@ function registrar () {
 	var validar_pwd = comparar_contrasenia();
 	var validar_correo = validar_email();
 	
-	if (validar_pwd == true && validar_correo ==true) {
-		$.ajax({
-		type:'post',
-		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/registrar_usuario",
-		data: {datos:datos},
-		datatype: 'json',
-		cache: false,
-		success: function() {
-			alert('success');
-		},
-		error: function() {
-			alert('failure');
-		}
-	});
-	} else{
-		alert('error');
-	};
+	if (nacimiento == '' ) {
+		var anio_vacio = document.getElementById("error_vacio_anio");
+		anio_vacio.className += " has-warning";
+		document.getElementById("error_anio").style.display= 'inline';
+	} 
+	 if (email == '') {
+		var correo_vacio = document.getElementById("email");
+		correo_vacio.className += " has-warning";
+		document.getElementById("error_vacio_email").style.display= 'inline';
+	}
+	  if(contrasenia1 == ''){
+	 	var pwd_vacio = document.getElementById("error_pwd1");
+		pwd_vacio.className += " has-warning";
+		document.getElementById("error_vacio_pwd1").style.display= 'inblock';
+	 }
+	  if(contrasenia2 == ''){
+	 	var pwd2_vacio = document.getElementById("error_pwd2");
+		pwd2_vacio.className += " has-warning";
+		document.getElementById("error_vacio_pwd2").style.display= 'inline';
+	 }
+	 
+	 if(usuario == ''){
+	 	var usr = document.getElementById("usuario");
+		usr.className += " has-warning";
+		document.getElementById("error_user").style.display= 'inline';
+	 }
+	 ;
+	
+	
+
+	// if (validar_pwd == true && validar_correo ==true) {
+		// $.ajax({
+		// type:'post',
+		// url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/registrar_usuario",
+		// data: {datos:datos},
+		// datatype: 'json',
+		// cache: false,
+		// success: function() {
+			// alert('success');
+		// },
+		// error: function() {
+			// alert('failure');
+		// }
+	// });
+	// } else{
+		// alert('error');
+	// };
 }
 /**
 * La función registrar manda al controlador Registro_usuario_c los datos que ingresó la persona que desea registrarse

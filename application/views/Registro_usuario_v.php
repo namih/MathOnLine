@@ -16,15 +16,20 @@
 			<div class="form-group has-feedback col-md-6  col-xs-12" id="usuario">
 				<input onblur="validar_username()" type="text" class="form-control" id="usr" placeholder="Nombre de Usuario*">
 				<span id="error_username" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
+				<span id="error_user" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 			</div>
 		</div>
 		
-		<div class="form-group col-md-6  col-xs-12">
+		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd1">
 			<input type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
+			<span id="error_vacio_pwd1" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
+
 			
 		</div>
-		<div class="form-group col-md-6  col-xs-12">
+		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd2">
 			<input type="password" class="form-control" id="rpwd" placeholder="Repetir Contraseña*">
+			<span id="error_vacio_pwd2" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
+
 		</div>
 		
 		
@@ -33,7 +38,10 @@
 			<div class="form-group has-feedback col-md-6  col-xs-12" id="email">
 				<input onblur="validar_correo()" type="email" class="form-control" id="correo" placeholder="Correo Electrónico*" requiered>
 				<span id="error_email" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
+				<span id="error_vacio_email" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
+
 			</div>
+			
 		</div>
 			
 			
@@ -48,8 +56,10 @@
 			<input type="text" class="form-control" id="last" placeholder="Apellidos">
 		</div>
 		
-		<div class="form-group col-md-6  col-xs-12">
+		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_vacio_anio">
 			<input type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
+			<span id="error_anio" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
+
 		</div>
 		<div class="form-group col-md-6 col-xs-12">
 					<select class="form-control" id="sexo">
