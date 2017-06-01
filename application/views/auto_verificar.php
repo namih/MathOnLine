@@ -28,9 +28,56 @@
 				<div class="form-group" id="correo">
 				  <label for="pwd">Email:</label>
 				  <input type="password" class="form-control" id="email">
-				</div> 
+				</div>
+				<div class="form-group">
+					<button onclick="licenciaturas()" type="button" class="btn btn-default">Cargar Licenciaturas UAM Iztapalapa</button>
+				</div>
+				 <div class="form-group">
+				 	<label for="sel1">Select list:</label>
+				 	<select onchange="id_carrera()" class="form-control" id="sel1">
+				 		<option>Licenciatura</option>
+				 	</select>
+				 </div>
+				 <div id="display">
+				 	
+				 </div>
         </div>
         <script>
+        
+        	function id_carrera () {
+			  var seleccion = document.getElementById('sel1');
+			  alert(seleccion.value);
+			}
+        	        
+        	function licenciaturas () {
+        		var datos = {unidad:4};
+        		$.ajax({
+        			type:'post',
+					url: "http://localhost/MathOnLine/index.php/Test_models_c/lista_lic",
+					data: {datos:datos},
+					datatype: 'json',
+					cache: false,
+					success: function(msj) {  
+						var json = JSON.parse(msj);
+						var sel = document.getElementById('sel1');
+						for(var i = 0; i < json.length; i++) {
+						    var opt = document.createElement('option');
+						    opt.innerHTML = json[i];
+						    opt.text = json[i]['degree'];
+						    opt.value = json[i]['id_degree'];
+						    sel.appendChild(opt);
+						}
+					},
+					error: function(msj) {
+						alert('Failure: '+msj);
+					}
+				});
+			}
+        
+        
+        
+        
+        
         	function usuario () {
         		document.getElementById('user').style.borderColor = '';
         		document.getElementById("error").style.display= 'none';

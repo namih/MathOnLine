@@ -36,7 +36,7 @@
 		public function obtener_licenciaturas($unidad = NULL)
 		{
 			if ($unidad != NULL) {
-				$licenciaturas = $this->db->SELECT('*')->FROM('degree')->WHERE('id_unit_uam',$unidad)->GET();
+				$licenciaturas = $this->db->SELECT('id_degree, degree')->FROM('degree')->WHERE('id_unit_uam',$unidad)->GET();
 				if (!empty($licenciaturas)) {
 					return $licenciaturas->result_array();
 				} else {

@@ -28,11 +28,12 @@
 		
 		public function lista_lic()
 		{
-			$unidad = 4;
-			$lic = $this->Registro_usuario_m->obtener_licenciaturas($unidad);
-			echo "<pre>";
-			print_r($lic);
-			echo "<pre>";
+			$unidad = $this -> input -> post('datos');
+			$uam = $unidad['unidad'];
+			
+			$lic = $this->Registro_usuario_m->obtener_licenciaturas($uam);
+			
+			echo json_encode($lic);
 		}
 		
 		public function activar()
