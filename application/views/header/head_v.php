@@ -17,7 +17,7 @@
       <div class="col-sm-12">
         <div class="col-sm-3 col-md-3 col-lg-2">
           <a href="<?php echo base_url();?>">
-            <img src="statics/img/logo_mate.png">
+            <img width="80%" src="statics/img/logo_matenlinea/mate1.jpg">
           </a>
         </div>
         <div class="col-sm-9">

@@ -81,7 +81,7 @@
                   <div class="row">
                       <div class="row">
                         <div class="col-md-12 col-sm-12">
-                          <div class="col-md-4 col-sm-4" align="center"><img width="50%" height="90px" src="statics/img/iniciar_session/people-145129_1280.png"/></div>
+                          <div class="col-md-4 col-sm-4" align="center"><img class="img-responsive" width="75%" src="statics/img/iniciar_session/people-145129_1280.png"/></div>
                           <div class="col-md-8 col-sm-8">
                               <div class="form-group">
                                 <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="nombre del usuario">
@@ -153,10 +153,10 @@
              <div class="panel panel-success tema_footer"  align="center">
                 <div class="panel-heading">Calendario UAM</div>
                 <div class="panel-body">
-                <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0"><img width="100%" height="200px" src="<?php echo base_url();?>statics/img/cal_uam.png" alt="Calendario escolar UAM 2016-2017" title="Calendario escolar UAM 2016-2017" width="920" height="778" align="absmiddle"></div>
+                <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0"><img class="img-responsive" width="55%" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM 2016-2017" title="Calendario escolar UAM 2016-2017" width="920" height="778" align="absmiddle"></div>
                 <div id="buton_descarga" class="col-sm-12">
-                  <button>Descargar Word</button>
-                  <button>Descargar PDF</button>
+                  <a class="btn btn-success" href="statics/files/calendario_uam.doc">Descargar Word</a>
+                  <a class="btn btn-success" href="statics/files/calendario_uam.pdf" target="_blanc">Descargar PDF</a>
                 </div>
                 </div>
               </div>                
