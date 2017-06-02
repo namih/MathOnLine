@@ -106,6 +106,27 @@ class Registro_usuario_c extends CI_Controller {
 	}
 	
 	/**
+	*Funcion para obtener los datos de la 
+	*
+	* 	
+	* @author Cecilia Hernandez Vasquez 
+	* @param 
+	* @return regresa un arreglo con las licenciaturas ligadas a la unidad.
+	* @version 1.0
+	*/
+	public function oobtener_licenciatua(){
+		
+		$datos = $this -> input -> post('datos');
+		$id_unidad = $datos['unidad'];
+		$licenciatura = $this->Registro_usuario_m->obtener_licenciaturas($id_unidad);	
+		if ($licenciatura == FALSE) {
+			echo "La unidad seleccionada no cuenta con licenciaturas";
+		} else {
+			echo json_encode($licenciatura);
+		}
+	}
+	
+	/**
 	*Funcion para enviar un correo al usuario para la activacion de la cuenta
 	*
 	* 	
