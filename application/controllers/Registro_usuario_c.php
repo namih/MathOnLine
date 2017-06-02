@@ -114,7 +114,7 @@ class Registro_usuario_c extends CI_Controller {
 	* @return regresa un arreglo con las licenciaturas ligadas a la unidad.
 	* @version 1.0
 	*/
-	public function oobtener_licenciatua(){
+	public function obtener_licenciatura(){
 		
 		$datos = $this -> input -> post('datos');
 		$id_unidad = $datos['unidad'];
