@@ -5,7 +5,9 @@
 		public function __construct()
 		{
 			parent::__construct();
+			$this->load->library('encrypt');
 		}
+		
 		
 		/**
 		 * Verifica que el nombre de usuario y contraseña sean correctas y que la cuenta este activa.
@@ -17,24 +19,29 @@
 		 */
 		public function iniciar_sesion($credencial = NULL)
 		{
-			if ($credencial!=NULL) {
-				if ($this->existe_usuario($credencial['user_name']) == TRUE) {
-					if ($this->cuenta_activa($credencial['user:_name']) == TRUE) {
-						$where = "user_name = '".$credencial['user_name']."' AND password = '".$credencial['password']."'";
-						$login = $this->db->SELECT('*')->FROM('user')->WHERE($where)->GET();
-						if ($login->num_rows() === 1) {
-							return 1;
+			if ($credencial != NULL) {
+				$usuario = $this->db->SELECT('*')->FROM('user')->WHERE('user_name', $credencial['user_name'])->GET();
+				if ($usuario->num_rows() === 1) {
+					$datos = $usuario->result_array();
+					if ($datos[0]['status'] == 1) {
+						$pass_decode = $this->encrypt->decode($datos[0]['password']);
+						if ($pass_decode == $credencial['password']) {
+							return $usuario->result_array();
 						} else {
 							return 3;
 						}
 					} else {
 						return 4;
 					}
+					
 				} else {
 					return 2;
 				}
+			} else {
+				return NULL;
 			}
 		}
+		
 		
 		/**
 		 * Verifica que el nombre de usuario exista en la base de datos.

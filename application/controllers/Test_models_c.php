@@ -12,6 +12,17 @@
 			$this->load->library('encrypt');
         }
 		
+		
+		public function login()
+		{
+			$credencial = array('user_name' => 'NightlightMX', 'password'=>'JiU8Lp19O0');
+			
+			$acceso = $this->Home_m->iniciar_sesion($credencial);
+			
+			print_r($acceso);
+			
+		}
+		
 		/**
 		 * Controlador para testear los modelos creados
 		 * 
@@ -85,19 +96,13 @@
 								 );
 				
 				$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
-				
+								
 				echo $id_usuario;
 			
 			
 		}
 		
-		public function login()
-		{
-			$login = array('username' => 'NightlIGhtmx', 'password' => 'qwerty2017');
-			$validar = $this->Modelo_inicio_m->iniciar_sesion($login);
-			echo $validar;
-			
-		}
+		
 		
 		public function verificar()
 		{
@@ -231,6 +236,18 @@
 			
 			echo $pass;
 			
+		}
+		
+		public function password()
+		{
+			$pass = 'CfE4Se@R5';
+			$pass_encode = $this->encrypt->encode($pass);
+			
+			echo $pass_encode;
+			
+			$pass_decode = $this->encrypt->decode($pass_encode);
+			
+			echo $pass_decode;
 		}
 		
 		public function tema_mes_inicio()
