@@ -18,9 +18,9 @@
 		public function iniciar_sesion($credencial = NULL)
 		{
 			if ($credencial!=NULL) {
-				if ($this->existe_usuario($credencial['username']) == TRUE) {
-					if ($this->cuenta_activa($credencial['username']) == TRUE) {
-						$where = "username = '".$credencial['username']."' AND password = '".$credencial['password']."'";
+				if ($this->existe_usuario($credencial['user_name']) == TRUE) {
+					if ($this->cuenta_activa($credencial['user:_name']) == TRUE) {
+						$where = "user_name = '".$credencial['user_name']."' AND password = '".$credencial['password']."'";
 						$login = $this->db->SELECT('*')->FROM('user')->WHERE($where)->GET();
 						if ($login->num_rows() === 1) {
 							return 1;
