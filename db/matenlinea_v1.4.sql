@@ -387,8 +387,8 @@ INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `sta
 INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (14, 3, 'Semejanza', 0);
 INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (15, 3, 'Trigonometría', 1);
 INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (16, 4, 'Plano cartesiano', 1);
-INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (16, 4, 'Rectas y ecuaciones lineales', 1);
-INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (17, 4, 'Cónicas', 0);
+INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (17, 4, 'Rectas y ecuaciones lineales', 1);
+INSERT INTO `mathonline`.`subtopic` (`id_subtopic`, `id_theme`, `subtopic`, `status`) VALUES (18, 4, 'Cónicas', 0);
 
 COMMIT;
 
