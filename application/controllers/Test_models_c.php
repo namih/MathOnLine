@@ -6,46 +6,15 @@
 			
 		public function __construct() {
 			parent::__construct();
+			$this->load->model("Home_student_m");
+			$this->load->model("Home_admin_m");
 			$this->load->model("Registro_usuario_m");
 			$this->load->model("Home_m");
 			$this->load->library('email');
 			$this->load->library('encrypt');
+			$this->load->library('etiquetas');
         }
 		
-		
-		public function login()
-		{
-			$credencial = array('user_name' => 'NightlightMX', 'password'=>'JiU8Lp19O0');
-			
-			$acceso = $this->Home_m->iniciar_sesion($credencial);
-			
-			print_r($acceso);
-			
-		}
-		
-		/**
-		 * Controlador para testear los modelos creados
-		 * 
-		 * @author Julio Cesar Padilla Dorantes
-		 * @return NA
-		 * @param NA
-		 * @version 1.0
-		 */
-		public function lista_uam()
-		{
-			$uamis = $this->Registro_usuario_m->obtener_unidades_uam();
-			print_r($uamis);
-		}
-		
-		public function lista_lic()
-		{
-			$unidad = $this -> input -> post('datos');
-			$uam = $unidad['unidad'];
-			
-			$lic = $this->Registro_usuario_m->obtener_licenciaturas($uam);
-			
-			echo json_encode($lic);
-		}
 		
 		public function activar()
 		{
@@ -54,210 +23,93 @@
 			echo $activacion;
 		}
 		
+		
 		public function registrar()
-		{			
-			// for ($i=1; $i < 75000; $i++) { 
-				// date_default_timezone_set('America/Mexico_City');
-				// $format = 'Y-m-d h:i:s';
-				// $usuario = array(
-								// 'user_name' => 'usuario_'.$i,
-								// 'password' => 'qwerty2017',
-								// 'type_user' => 2,
-								// 'name' => 'Cesar_'.$i,
-								// 'last_name' => 'Padilla',
-								// 'sex' => 1,
-								// 'year_birthday' => 1985,
-								// 'id_unit_uam' => 4,
-								// 'email' =>'correo'.$i.'@gmail.com',
-								// 'uam_identifier' => '20421480'.$i,
-								// 'is_student' => TRUE,
-								// 'is_employed' => TRUE,
-								// 'registration_date' => date($format)
-								 // );
-// 				
-				// $id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
-			// }
+		{
 			date_default_timezone_set('America/Mexico_City');
-				$format = 'Y-m-d h:i:s';
-				$usuario = array(
-								'user_name' => 'NightlightMX',
-								'password' => $this->encrypt->encode('JiU8Lp19O0'),
-								'type_user' => 3,
-								'name' => 'Cesar',
-								'last_name' => 'Padilla',
-								'sex' => 1,
-								'year_birthday' => 1985,
-								'id_degree' => 36,
-								'email' =>'nightlightmx@gmail.com',
-								'uam_identifier' => '204214807',
-								'is_student' => TRUE,
-								'is_employed' => TRUE,
-								'registration_date' => date($format)
-								 );
+			$format = 'Y-m-d h:i:s';
+			$usuario = array(
+				'user_name' => 'NightlightMX',
+				'password' => $this->encrypt->encode('JiU8Lp19O0'),
+				'type_user' => 3,
+				'name' => 'Cesar',
+				'last_name' => 'Padilla',
+				'sex' => 1,
+				'year_birthday' => 1985,
+				'id_degree' => 36,
+				'email' =>'nightlightmx@gmail.com',
+				'uam_identifier' => '204214807',
+				'is_student' => TRUE,
+				'is_employed' => TRUE,
+				'registration_date' => date($format)
+			);
+			
+			$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);				
+			echo $id_usuario;
+			echo "<br>";
+			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
+			echo $activacion;
+		}
+		
+		
+		public function tutoriales()
+		{
+			$tutoriales = $this->Home_student_m->lista_tutoriales();
+			echo "<pre>";
+			print_r($tutoriales);
+			echo "<pre>";
+		}
+		
+		
+		public function tutorial_rnd()
+		{
+			for ($i=0; $i < 31; $i++) {
 				
-				$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);
-								
-				echo $id_usuario;
+				$inicio = strtotime('2017-05-01 00:00:00');
+				$fin = strtotime('2017-05-31 23:59:59');
+				$int= mt_rand($inicio,$fin);
+				$date_rnd = date("Y-m-d H:i:s",$int);
+				
+				$tutorial = array('id_user' => 2,
+						'id_tutorial' => rand(1, 26),
+						'time_finish' => rand(600, 1800),
+						'tutorial_date' => $date_rnd			
+						);
 			
+				$guardar = $this->Home_student_m->registro_tutorial($tutorial);
 			
-		}
-		
-		
-		
-		public function verificar()
-		{
-			$datos = array('username' => 'nightlightmx', 'email'=> 'nightlightmx@gmail.com');
-			$existen = $this->Registro_usuario_m->usuario_email($datos);
-			
-			echo $existen;
-		}
-
-		public function auto_verificar()
-		{
-			$this -> load -> view('auto_verificar');
-			
-		}
-
-		public function pass_layaout()
-		{
-			$datos = array('user_name' => "Yo",'password'=>'M1P4ssw0RD' );
-			$this -> load -> view('email/recovery_password', $datos);
-			
-		}
-		
-		public function activacion_layaout()
-		{
-			$datos = array('user_name' => "Yo",'url'=>'http://www.crunchyroll.com/' );
-			$this -> load -> view('email/activacion_cuenta', $datos);
-			
-		}
-		
-		
-		public function enviar_correo()
-		{
-			$data = array('user_name' => "Yo",'password'=>'M1P4ssw0RD' );
-			$configuracion = $this->conf_email->configuracion_email();
-					
-			$this->email->initialize($configuracion);
-			
-			$this->email->from('mate');
-			$this->email->to('jcesarcbi@gmail.com');
-			$this->email->subject('Registro de lacontraseña');
-			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
-			if ($this->email->send()) {
-				echo "Correo enviado";
-			} else {
-				echo "Error al enviar el correo";
+				echo $guardar;
+				echo "<br>";
 			}
 		}
 		
-		public function enviar_activacion()
+		public function pass_encrypt()
 		{
-						
-			$data = array('user_name' => "Yo", 'url' => 'http://www.crunchyroll.com/' );
-			$configuracion = $this->conf_email->configuracion_email();
-					
-			$this->email->initialize($configuracion);
+			$pass = '4dM1n@2017';
 			
-			$this->email->from('mate');
-			$this->email->to('jcesarcbi@gmail.com');
-			$this->email->subject('Activación cuenta');
-			$this->email->message($this->load->view('email/activacion_cuenta', $data, TRUE));
-			if ($this->email->send()) {
-				echo "Correo enviado";
-			} else {
-				echo "Error al enviar el correo";
-			}
-		}
-		
-		public function enviar_password()
-		{
-						
-			$data = array('user_name' => "Yo", 'password' => '3sTE-EsM1_P@ssWoRd' );
-			$configuracion = $this->conf_email->configuracion_email();
-					
-			$this->email->initialize($configuracion);
-			
-			$this->email->from('mate');
-			$this->email->to('jcesarcbi@gmail.com');
-			$this->email->subject('Activación cuenta');
-			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
-			if ($this->email->send()) {
-				echo "Correo enviado";
-			} else {
-				echo "Error al enviar el correo";
-			}
-		}
-		
-		public function nombre_usuario_disponible()
-		{
-			$pre_registro = $this -> input -> post('datos');
-			$usuario = $pre_registro['user_name'];
-			
-			$valida = $this->Registro_usuario_m->validar_usuario($usuario);
-			
-			if ($valida == TRUE) {
-				echo 'NO';
-			} else {
-				echo 'SI';
-			}
-			
-		}
-		
-		public function recuperar()
-		{
-			$email = 'nightlightmx@gmail.com';
-			
-			$data = $this->Home_m->recuperar_pass($email);
-			
-			$configuracion = $this->conf_email->configuracion_email();
-					
-			$this->email->initialize($configuracion);
-			
-			$this->email->from('matenlinea.cbi@gmail.com');
-			$this->email->to($email);
-			$this->email->subject('Recuperación de contraseña');
-			$this->email->message($this->load->view('email/recovery_password', $data, TRUE));
-			if ($this->email->send()) {
-				echo "Correo enviado";
-			} else {
-				echo "Error al enviar el correo";
-			}
-		}
-		
-		public function recuperar_password()
-		{
-			$email = 'nightlightmx@gmail.com';
-			
-			$data = $this->Home_m->recuperar_pass($email);
-			
-			
-			$pass = $this->encrypt->decode($data['password']);
-			
-			echo $pass;
-			
-		}
-		
-		public function password()
-		{
-			$pass = 'CfE4Se@R5';
 			$pass_encode = $this->encrypt->encode($pass);
 			
 			echo $pass_encode;
-			
-			$pass_decode = $this->encrypt->decode($pass_encode);
-			
-			echo $pass_decode;
 		}
 		
-		public function tema_mes_inicio()
+		public function tuto_usuario()
 		{
-			$meses = array('anterior' => 4, 'actual' => 5, 'siguiente' => 6);
-			
-			$mostrar = $this->Home_m->tema_mes($meses);
-			
+			$id_user = 2;
+			$terminados = $this->Home_student_m->tutoriales_usuario($id_user);
 			echo "<pre>";
-			print_r($mostrar);
+			print_r($terminados);
 			echo "<pre>";
 		}
+		
+		public function temas()
+		{
+			$temas = $this->Home_admin_m->lista_tema_mes();
+			
+			
+			$datos['temas'] = $temas;
+			$this->load->view('header/head_v');
+			$this -> load -> view('auto_verificar',$datos);
+			$this->load->view('footer/footer_v');	
+		}
+
 }

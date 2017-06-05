@@ -16,101 +16,90 @@
     </head>  
     <body>  
         <header>  
-            <h1>Verificación en OnBlur</h1>
+            <h1>Vista para pruebas</h1>
         </header>  
         <div class="container">
-        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        	  <div class="form-group has-feedback col-md-6  col-xs-12" id="usuario">
-				  <label for="usr">Nombre de usuario</label>
-				  <input onblur="usuario()" type="text" class="form-control" id="user">
-				  <span id="error" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
-				</div>
-				<div class="form-group" id="correo">
-				  <label for="pwd">Email:</label>
-				  <input type="password" class="form-control" id="email">
-				</div>
-				<div class="form-group">
-					<button onclick="licenciaturas()" type="button" class="btn btn-default">Cargar Licenciaturas UAM Iztapalapa</button>
-				</div>
-				 <div class="form-group">
-				 	<label for="sel1">Select list:</label>
-				 	<select onchange="id_carrera()" class="form-control" id="sel1">
-				 		<option>Licenciatura</option>
-				 	</select>
-				 </div>
-				 <div id="display">
-				 	
-				 </div>
+        	<div class="col-md-6 col-xs-12">
+        		<h3>Temas</h3>
+        		<table class="table">
+        			<thead>
+        				<tr>
+        					<th>Mes</th>
+        					<th>Titulo</th>
+        					<th>Editar</th>
+        				</tr>
+        			</thead>
+        			<tbody>
+        				<?php for ($i=0; $i < count($temas); $i++) { ?>
+							<tr>
+								<td> <?php echo $temas[$i]['mounth'] ?> </td>
+								<td> <?php echo $temas[$i]['title'] ?> </td>
+								<td> <a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> </a> </td>
+							</tr>
+						<?php }  
+        				
+        				?>
+	        		</tbody>
+	        	</table>
+        	</div>
+        	<div class="col-md-6 col-xs-12" align="center">
+        		<h3>Calendario escolar</h3>
+        		<img class="img-responsive" width="75%" src="http://www.uam.mx/calendario/cal_2016-2017_ses401.png" />
+        		<form method="post" enctype="multipart/form-data">
+            <label for="file">Filename:</label>
+            <input type="file" name="file1" id="file1" /> 
+            <br />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+        <?php 
+        
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+	$target_dir = "statics/files/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        echo "File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        echo "File is not an image.";
+        $uploadOk = 0;
+    }
+}
+// Check if file already exists
+if (file_exists($target_file)) {
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
+}
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+// Allow certain file formats
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
+} else {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
+         ?>
+        	</div>
+ 
         </div>
-        <script>
         
-        	function id_carrera () {
-			  var seleccion = document.getElementById('sel1');
-			  alert(seleccion.value);
-			}
-        	        
-        	function licenciaturas () {
-        		var datos = {unidad:4};
-        		$.ajax({
-        			type:'post',
-					url: "http://localhost/MathOnLine/index.php/Test_models_c/lista_lic",
-					data: {datos:datos},
-					datatype: 'json',
-					cache: false,
-					success: function(msj) {  
-						var json = JSON.parse(msj);
-						var sel = document.getElementById('sel1');
-						for(var i = 0; i < json.length; i++) {
-						    var opt = document.createElement('option');
-						    opt.innerHTML = json[i];
-						    opt.text = json[i]['degree'];
-						    opt.value = json[i]['id_degree'];
-						    sel.appendChild(opt);
-						}
-					},
-					error: function(msj) {
-						alert('Failure: '+msj);
-					}
-				});
-			}
-        
-        
-        
-        
-        
-        	function usuario () {
-        		document.getElementById('user').style.borderColor = '';
-        		document.getElementById("error").style.display= 'none';
-        		
-			  var nombre_usuario = document.getElementById('user').value;
-			  
-			  var datos = {user_name: nombre_usuario}
-			  
-			  if (nombre_usuario != '') {
-			  	$.ajax({
-					type:'post',
-					url: "http://localhost/MathOnLine/index.php/Test_models_c/nombre_usuario_disponible",
-					data: {datos:datos},
-					datatype: 'json',
-					cache: false,
-					success: function(msj) {
-						if (msj == 'SI') {
-							document.getElementById('user').style.borderColor = 'green';
-						} else{
-							var usuario = document.getElementById("usuario");
-							usuario.className += " has-error";
-							document.getElementById("error").style.display= 'inline';
-							document.getElementById('user').value = '';
-							document.getElementById('user').placeholder = 'Nombre de usuario invalido';
-						};
-					},
-					error: function(msj) {
-						alert('Failure: '+msj);
-					}
-				});
-			  };
-			}
-        </script>
         <footer>  
             <h2>FOOTER</h2>  
             <p>Aqui todo el contenido del footer</p>  
