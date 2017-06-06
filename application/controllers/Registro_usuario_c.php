@@ -20,8 +20,8 @@ class Registro_usuario_c extends CI_Controller {
 	*/
 	
 	public function index() {
-		$datos['unidades'] = $this->lista_uam();
 		$this->load->view('header/head_v');
+		$datos['unidades'] = $this->lista_uam();
 		$this -> load -> view('Registro_usuario_v',$datos);
 		$this->load->view('footer/footer_v');		
 	}
@@ -90,8 +90,9 @@ class Registro_usuario_c extends CI_Controller {
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
 		
+		$type_user =$this->etiquetas->cat_type_user;
 		$registro = $this -> input -> post('datos');
-		$registro['type_user']=3;
+		$registro['type_user']= $type_user['Alumno'];
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
@@ -115,7 +116,6 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/
 	public function obtener_licenciatura(){
-		
 		$datos = $this -> input -> post('datos');
 		$id_unidad = $datos['unidad'];
 		$licenciatura = $this->Registro_usuario_m->obtener_licenciaturas($id_unidad);	
