@@ -1,3 +1,6 @@
+div#MainContent{
+	min-height: 870px;
+}
 .titEntrenador{
 	margin-top: 75px;
 }

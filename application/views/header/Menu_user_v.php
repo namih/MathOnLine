@@ -14,11 +14,12 @@
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="dropdown">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="#">Tutoriales</a></li>
+          <li><a href="#">Pruebas de evaluación</a></li>
+          <li><a href="#">Material complementario</a></li>
+          <li><a href="#">Estadísticas</a></li>
+          <!--<li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Action</a></li>
@@ -29,9 +30,9 @@
               <li><a href="#">Separated link</a></li>
               <li><a href="#">One more separated link</a></li>
             </ul>
-          </li>
+          </li>-->
           <li class="dropdown" id="log-user">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img width="35px" src="statics/img/iniciar_session/people-145129_1280.png"/></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img width="35px" src="statics/img/iniciar_session/people-145129_1280.png"/>Mimis</a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Consultar perfil</a></li>
               <li><a href="#">Cerrar sesión</a></li>
