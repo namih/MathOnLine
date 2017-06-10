@@ -63,7 +63,7 @@ function seleccionar_unidad () {
 		var datos = {'unidad':unidades};
 		$.ajax({
 		type:'post',
-		url: "http://localhost/MathOnLine/index.php/Test_models_c/lista_lic",
+		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/obtener_licenciatura",
 		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
@@ -180,7 +180,7 @@ function registrar () {
 	  if(contrasenia1 == ''){
 	 	var pwd_vacio = document.getElementById("error_pwd1");
 		pwd_vacio.className += " has-warning";
-		document.getElementById("error_vacio_pwd1").style.display= 'inblock';
+		document.getElementById("error_vacio_pwd1").style.display= 'inline';
 	 }
 	  if(contrasenia2 == ''){
 	 	var pwd2_vacio = document.getElementById("error_pwd2");

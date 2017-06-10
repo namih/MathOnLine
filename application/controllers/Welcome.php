@@ -23,4 +23,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('inicio/Home_v');
 		$this->load->view('footer/Footer_v');
 	}
+
+	function log_user(){
+        $datos=array();
+        $this->load->view('header/head_v');
+        $this->load->view('header/Menu_user_v', $datos);
+        $this->load->view('login/Sesion_user_v', $datos);
+        $this->load->view('footer/footer_v');
+    }
 }
