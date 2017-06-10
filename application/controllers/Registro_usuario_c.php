@@ -151,7 +151,7 @@ class Registro_usuario_c extends CI_Controller {
 	   $this->email->from('Bienvenido a matematicas .....');
 	   $this->email->to($email);
 	   $this->email->subject('Activacion de la cuenta Mathonline');
-	   $this->email->message($this -> load -> view('/email/activacion_cuenta',$datos_email)); //$datos enviar a vista
+	   $this->email->message($this -> load -> view('/email/activacion_cuenta',$datos_email,TRUE)); //$datos enviar a vista
 	   
 	   if($this->email->send()){
            return TRUE;
