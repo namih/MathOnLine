@@ -140,8 +140,8 @@ class Registro_usuario_c extends CI_Controller {
 		$usuario=123;
 		$configuracion = $this->conf_email->configuracion_email();
 	    
-		$datos = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
-						   'usuario' =>$usuario);
+		$datos_email = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
+						   'user_name' =>$usuario);
 		
 		echo "<pre>"; 
 		print_r(base_url().'Registro_usuario_c?id_usuario='.$usuario);
@@ -151,7 +151,7 @@ class Registro_usuario_c extends CI_Controller {
 	   $this->email->from('Bienvenido a matematicas .....');
 	   $this->email->to('ceciferch@gmail.com');
 	   $this->email->subject('Activacion de la cuenta Mathonline');
-	   $this->email->message('Hola mathonline'.base_url().'/Registro_usuario_c'.$usuario); //$datos enviar a vista
+	   $this->email->message($this -> load -> view('activacion_cuenta',$datos_email)); //$datos enviar a vista
 	   
 	   if($this->email->send()){
            return TRUE;
