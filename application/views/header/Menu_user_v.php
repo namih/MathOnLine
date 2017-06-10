@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="statics/img/logo_matenlinea/mate1.jpg" alt="Dispute Bills">
+        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>statics/img/logo_matenlinea/mate1.jpg" alt="Dispute Bills">
         </a>
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
@@ -32,7 +32,7 @@
             </ul>
           </li>-->
           <li class="dropdown" id="log-user">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img width="35px" src="statics/img/iniciar_session/people-145129_1280.png"/>Mimis</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img width="35px" src="<?php echo base_url(); ?>statics/img/iniciar_session/people-145129_1280.png"/>Mimis</a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Consultar perfil</a></li>
               <li><a href="#">Cerrar sesión</a></li>
