@@ -26,15 +26,6 @@
 		}
 		
 		/**
-		 * Obtiene el listado las licenciaturas por unidad UAM
-		 * 
-		 * @author Julio Cesar Padilla Dorantes
-		 * @return Array Arreglo con las licenciaturas por unidad de la UAM, FALSE si no existe ningun registro
-		 * @param Int $unidad Identificador de la unidad UAM
-		 * @version 1.0
-		 */
-		
-		/**
 		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
