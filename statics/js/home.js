@@ -20,10 +20,16 @@ function login_user(){
 	       	data: {'username-user':username_user,'password-user':password_user},
 	       	type: 'POST',
 	       	success: function(data){
-	       		msjError=data;
-				msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
-				msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
-				$("#error_valid_form").html(msjSuccess);	       		
+	       		if(Number(data)==1){
+		           window.location.replace(base+'Home_student_c/tutorial_by_user_id'); 
+	          	}else{
+	        	   alert('error_usuario');
+	        	}
+		/*
+		          msjError=data;
+		    msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
+		    msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
+		    $("#error_valid_form").html(msjSuccess);          */	       		
 		    },
 		    error: function(jqXHR, textStatus, errorThrown,data){
 	             if (jqXHR.status === 0) {

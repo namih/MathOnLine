@@ -11,10 +11,10 @@ class Home_c extends CI_Controller
     }
 
     public function index(){
-        $themes = $this->get_theme_month();
         echo "<pre>";
         print_r($this->session);
         echo "</pre>";
+        $themes = $this->get_theme_month();
         $datos=Array(
             'temas' => $themes
         );
@@ -78,22 +78,17 @@ class Home_c extends CI_Controller
     }
 
     public function login(){
-        echo "entro";
         $credencial['user_name'] = $this->input->post('username-user');
         $credencial['password'] = $this->input->post('password-user');
-        //$credencial['password'] = $this->encrypt->encode($this->input->post('password-user'));
         $user = $this->Home_m->iniciar_sesion($credencial);
         if(isset($user[0]['id_user'])){
             $data_session = array(
-                "logged_in" => true,
+                "logged_in" => TRUE,
                 "user_id" => $user[0]["id_user"],
-                "type_user" => $user[0]["type_user"]
+                "type_user" => $user[0]["type_user"],
             );
-            $this->session->set_userdata("logged_in", true);
-            $this->session->set_userdata("user_id", $user[0]["id_user"]);
-            $this->session->set_userdata("type_user", $user[0]["type_user"]);
-            //$this->session->set_userdata($data_session);
-            print_r($this->session);
+            $this->session->set_userdata($data_session);
+            return TRUE;
         }else{
             switch ($user){
                 case 2:
@@ -119,4 +114,8 @@ class Home_c extends CI_Controller
         return $this->encrypt->decode($pass);
     }
 
+    public function logout(){
+        echo "sesion cerrada";
+        $this->session->sess_destroy();
+    }
 }

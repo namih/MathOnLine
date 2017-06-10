@@ -7,7 +7,6 @@ class Home_student_c extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Home_student_m');
-        $this->load->library('session');
     }
 
     public function get_all_tutorial(){
@@ -16,7 +15,7 @@ class Home_student_c extends CI_Controller
 
     public function tutorial_by_user_id(){
         echo "<pre>";
-        print_r($this->session->flashdata);
+        print_r($this->session->all_userdata());
         echo "</pre>";
     }
 }
