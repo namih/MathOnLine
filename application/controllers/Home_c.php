@@ -19,7 +19,7 @@ class Home_c extends CI_Controller
             'temas' => $themes
         );
         $this->load->view('header/head_v');
-        $this->load->view('inicio/Home_v', $datos);
+        //$this->load->view('inicio/Home_v', $datos);
         $this->load->view('footer/footer_v');
     }
 
