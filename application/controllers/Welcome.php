@@ -18,17 +18,53 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct()
+    {
+		parent::__construct();
+        $this->load->model('Home_m');
+        $this->load->library('encrypt');
+    }
+
 	function index(){
+		
+		$themes = $this->get_theme_month();
+        $datos['themes'] = $themes;
+        
 		$this->load->view('header/Head_v');
-		$this->load->view('inicio/Home_v');
+		$this->load->view('inicio/Home_v', $datos);
 		$this->load->view('footer/Footer_v');
 	}
 
-	function log_user(){
-        $datos=array();
-        $this->load->view('header/head_v');
-        $this->load->view('header/Menu_user_v', $datos);
-        $this->load->view('login/Sesion_user_v', $datos);
-        $this->load->view('footer/footer_v');
+
+    /**
+     * Descripcion
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return Los temas en casi de que no se hayan encontrado temas se retorna false
+     * @param -
+     * @version 1.0
+     */
+    public function get_theme_month(){
+        $mes['actual'] = date('n');
+        $months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        if($mes['actual'] == 12){
+            $mes['siguiente'] = 1;
+        }else{
+            $mes['siguiente'] = $mes['actual'] + 1;
+        }
+        if($mes['actual'] == 1){
+            $mes['anterior'] = 12;
+        }else{
+            $mes['anterior'] = $mes['actual'] - 1;
+        }
+        $themes = $this->Home_m->tema_mes($mes);
+
+        if($themes!=false){
+            for($i=0; $i<count($themes); $i++){
+                $themes[$i]['mes'] = $months[$themes[$i]['mounth']-1];
+            }
+        }
+        return $themes;
     }
 }

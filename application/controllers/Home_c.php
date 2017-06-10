@@ -10,18 +10,11 @@ class Home_c extends CI_Controller
         $this->load->library('encrypt');
     }
 
-    public function index(){
-        echo "<pre>";
-        print_r($this->session);
-        echo "</pre>";
-        $themes = $this->get_theme_month();
-        $datos=Array(
-            'temas' => $themes
-        );
+    /*public function index(){
         $this->load->view('header/head_v');
-        $this->load->view('inicio/Home_v', $datos);
+        $this->load->view('inicio/Home_v');
         $this->load->view('footer/footer_v');
-    }
+    }*/
 
     /**
      * Descripcion
@@ -46,36 +39,6 @@ class Home_c extends CI_Controller
         return;
     }
 
-    /**
-     * Descripcion
-     *
-     * @author Osvaldo Gómez Alvarez
-     * @return Los temas en casi de que no se hayan encontrado temas se retorna false
-     * @param -
-     * @version 1.0
-     */
-    public function get_theme_month(){
-        $mes['actual'] = date('n');
-        $months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-        if($mes['actual'] == 12){
-            $mes['siguiente'] = 1;
-        }else{
-            $mes['siguiente'] = $mes['actual'] + 1;
-        }
-        if($mes['actual'] == 1){
-            $mes['anterior'] = 12;
-        }else{
-            $mes['anterior'] = $mes['actual'] - 1;
-        }
-        $themes = $this->Home_m->tema_mes($mes);
-
-        if($themes!=false){
-            for($i=0; $i<count($themes); $i++){
-                $themes[$i]['mes'] = $months[$themes[$i]['mounth']-1];
-            }
-        }
-        return $themes;
-    }
 
     public function login(){
         $credencial['user_name'] = $this->input->post('username-user');
@@ -88,17 +51,17 @@ class Home_c extends CI_Controller
                 "type_user" => $user[0]["type_user"],
             );
             $this->session->set_userdata($data_session);
-            return TRUE;
+            $this->goHomeUser($user);
         }else{
             switch ($user){
                 case 2:
-                    print_r("No existe el usuario");
+                    echo "<script type='text/javascript'> alert('No existe el usuario'); history.go(-1)</script>";
                     break;
                 case 3:
-                    print_r("No existe");
+                    echo "<script type='text/javascript'> alert('No existe'); history.go(-1)</script>";
                     break;
                 case 4:
-                    print_r("Cuenta inactiva");
+                    echo "<script type='text/javascript'> alert('Cuenta inactiva'); history.go(-1)</script>";                    
             }
         }
     }
@@ -117,5 +80,66 @@ class Home_c extends CI_Controller
     public function logout(){
         echo "sesion cerrada";
         $this->session->sess_destroy();
+    }
+
+    private function goHomeUser($user){
+        $datos["user_log"] = $user;
+        //Todo lo siguiente se tiene que mandar en el arreglo de datos
+        //traer temas todos
+        //traer los temas cubiertos por el usuario
+        //formar un arreglo de la siguiente forma:
+        /*
+            -tema
+                --Subtemas
+                    ---Tutoriales
+
+            En tutorial necesitamos :
+            -id
+            -Nombre
+            -Concluido (0,1) (0 cuando el usuario no ah realizado el tutorial, 1 cuando si)
+
+        El arreglo global se llamara $temas
+        */
+
+        $temas = array(
+            "nombre" => "Tema 1",
+            "Subtemas" => array(
+                [
+                    "nombre" => "Sub tema 1"
+                    "tutoriales" => array(
+                        [
+                            "id" => 1,
+                            "nombre" => "tutorial 1",
+                            "concluido" => 0,
+                        ]
+                        [
+                            "id" => 2,
+                            "nombre" => "tutorial 2",
+                            "concluido" => 1,
+                        ]
+                    )
+                ],
+
+                [
+                    "nombre" => "Sub tema 2"
+                    "tutoriales" => array(
+                        [
+                            "id" => 3,
+                            "nombre" => "tutorial 3",
+                            "concluido" => 0,
+                        ],
+                        [
+                            "id" => 4,
+                            "nombre" => "tutorial 4",
+                            "concluido" => 1,
+                        ]
+                    )
+                ]
+            )
+        );
+        $this->load->view('header/head_v');
+        $this->load->view('header/Menu_user_v', $datos);
+        $this->load->view('login/Sesion_user_v', $datos);
+        $this->load->view('footer/footer_v');
     }
 }
