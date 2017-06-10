@@ -63,7 +63,7 @@ function seleccionar_unidad () {
 		var datos = {'unidad':unidades};
 		$.ajax({
 		type:'post',
-		url: "http://localhost/MathOnLine/index.php/Test_models_c/lista_lic",
+		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/obtener_licenciatura",
 		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
