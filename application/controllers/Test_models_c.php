@@ -111,5 +111,17 @@
 			$this -> load -> view('auto_verificar',$datos);
 			$this->load->view('footer/footer_v');	
 		}
+		
+		public function editor_tema()
+		{
+			$temas = $this->Home_admin_m->lista_tema_mes();
+			
+			
+			$datos['temas'] = $temas;
+			
+			// $this->load->view('header/head_v');
+			$this->load->view('editor_tema_mes_v',$datos);
+			// $this->load->view('footer/footer_v');	
+		}
 
 }
