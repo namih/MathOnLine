@@ -53,23 +53,6 @@ Además, ahora que se ha demostrado que "no hace falta todo un cerebro para hace
         )
 );*/
 ?>
-    <header style="padding: 5px;">
-      <div class="col-sm-12">
-        <div class="col-sm-3 col-md-3 col-lg-2">
-          <a href="<?php echo base_url();?>">
-            <img width="80%" src="statics/img/logo_matenlinea/mate1.jpg">
-          </a>
-        </div>
-        <div class="col-sm-9">
-          <div class="titEntrenador">
-            <h3>Mi Entrenador Personal en Matemáticas</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12">  
-          <hr style="height: 1px; border: 0; color: #666; background-color: #008c00;">
-      </div>  
-    </header> 
     <div id="contentInicio">
       <div class="col-md-12"><br>
         <div class="row">
