@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="statics/css/style_user.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/style_user.css">
 <div  class="col-md-12 example3" id="nav">
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
