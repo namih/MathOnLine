@@ -180,7 +180,7 @@ function registrar () {
 	  if(contrasenia1 == ''){
 	 	var pwd_vacio = document.getElementById("error_pwd1");
 		pwd_vacio.className += " has-warning";
-		document.getElementById("error_vacio_pwd1").style.display= 'inblock';
+		document.getElementById("error_vacio_pwd1").style.display= 'inline';
 	 }
 	  if(contrasenia2 == ''){
 	 	var pwd2_vacio = document.getElementById("error_pwd2");
