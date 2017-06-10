@@ -12,6 +12,9 @@ class Home_c extends CI_Controller
 
     public function index(){
         $themes = $this->get_theme_month();
+        echo "<pre>";
+        print_r($this->session);
+        echo "</pre>";
         $datos=Array(
             'temas' => $themes
         );
@@ -75,18 +78,24 @@ class Home_c extends CI_Controller
     }
 
     public function login(){
-        $credencial['username'] = $this->input->post('username-user');
+        echo "entro";
+        $credencial['user_name'] = $this->input->post('username-user');
         $credencial['password'] = $this->input->post('password-user');
         //$credencial['password'] = $this->encrypt->encode($this->input->post('password-user'));
-        $login = $this->Home_m->iniciar_sesion($credencial);
-        if($login == 1){
+        $user = $this->Home_m->iniciar_sesion($credencial);
+        if(isset($user[0]['id_user'])){
             $data_session = array(
-                "logged_in" => true
+                "logged_in" => true,
+                "user_id" => $user[0]["id_user"],
+                "type_user" => $user[0]["type_user"]
             );
-            $this->session->set_userdata($data_session);
-            print_r($login);
+            $this->session->set_userdata("logged_in", true);
+            $this->session->set_userdata("user_id", $user[0]["id_user"]);
+            $this->session->set_userdata("type_user", $user[0]["type_user"]);
+            //$this->session->set_userdata($data_session);
+            print_r($this->session);
         }else{
-            switch ($login){
+            switch ($user){
                 case 2:
                     print_r("No existe el usuario");
                     break;
@@ -100,11 +109,14 @@ class Home_c extends CI_Controller
     }
 
     public function prueba_decode(){
-        $pass = $this->encrypt->encode("123");
-        print_r($this->decode_pass($pass));
+        $pass = $this->encrypt->encode("root");
+        print_r($pass );
+        echo "<br>";
+        print_r($this->decode_pass("1rxKMj42HBeT3HHYpzQnU9pAL0jsG7mpegAjmCmTWK+eN55P0jcpebohu52R7lAPMMI+CSVX3wg0kGXRc4Gbeg=="));
     }
 
     private function decode_pass($pass){
         return $this->encrypt->decode($pass);
     }
+
 }
