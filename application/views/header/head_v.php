@@ -17,7 +17,7 @@
       <div class="col-sm-12">
         <div class="col-sm-3 col-md-3 col-lg-2">
           <a href="<?php echo base_url();?>">
-            <img width="80%" src="statics/img/logo_matenlinea/mate1.jpg">
+            <img width="80%" src="<?php echo base_url(); ?>statics/img/logo_matenlinea/mate1.jpg">
           </a>
         </div>
         <div class="col-sm-9">
@@ -27,6 +27,6 @@
         </div>
       </div>
       <div class="col-md-12">  
-          <hr style="height: 1px; border: 0; color: #666; background-color: #008c00;">
+          <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
       </div>  
     </header>     
