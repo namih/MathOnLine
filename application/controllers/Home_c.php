@@ -7,14 +7,15 @@ class Home_c extends CI_Controller
     {
 		parent::__construct();
         $this->load->model('Home_m');
+        $this->load->model('Home_student_m');
         $this->load->library('encrypt');
     }
 
-    /*public function index(){
+    public function index(){
         $this->load->view('header/head_v');
         $this->load->view('inicio/Home_v');
         $this->load->view('footer/footer_v');
-    }*/
+    }
 
     /**
      * Descripcion
@@ -82,8 +83,56 @@ class Home_c extends CI_Controller
         $this->session->sess_destroy();
     }
 
+    public function ver(){
+        echo "<pre>";
+        print_r($this->session->userdata("user_id"));
+        echo "</pre>";
+    }
+
     private function goHomeUser($user){
         $datos["user_log"] = $user;
+
+        $all_themes = $this->Home_student_m->lista_tutoriales();
+        $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
+
+        if(count($all_themes)>0){
+            $aux_theme = $all_themes[0]["theme"];
+        }
+
+        $themes_user = array();
+        $i = 0;
+        $j = 0;
+        $themes_user[$i]["nombre"] = $aux_theme;
+        $aux_theme = $all_themes[0]["theme"];
+        $aux_subtopic = $all_themes[0]["subtopic"];
+        foreach ($all_themes as $theme){
+            if($theme["theme"] == $aux_theme){
+
+                $themes_user[$i]["subtemas"][] = array(
+                    "nombre"=>$theme["subtopic"],
+                    "tutoriales" => array()
+                );
+                if($theme["subtopic"] == $aux_subtopic){
+                    $themes_user[$i]["subtemas"][] = array(
+                        "id" => $theme["id_tutorial"],
+                        "nombre" => $theme["theme"]
+                    );
+
+                }else{
+                    $aux_subtopic = $theme["subtopic"];
+                }
+            }else{
+                $i++;
+                $aux_theme = $theme["theme"];
+                $themes_user[$i]["tema"] = $aux_theme;
+            }
+        }
+
+        echo "<pre>";
+        print_r($all_themes);
+        echo "</pre>";
+
+
         //Todo lo siguiente se tiene que mandar en el arreglo de datos
         //traer temas todos
         //traer los temas cubiertos por el usuario
@@ -105,23 +154,23 @@ class Home_c extends CI_Controller
             "nombre" => "Tema 1",
             "Subtemas" => array(
                 [
-                    "nombre" => "Sub tema 1"
+                    "nombre" => "Sub tema 1",
                     "tutoriales" => array(
                         [
                             "id" => 1,
                             "nombre" => "tutorial 1",
                             "concluido" => 0,
-                        ]
+                        ],
                         [
                             "id" => 2,
                             "nombre" => "tutorial 2",
-                            "concluido" => 1,
+                            "concluido" => 1
                         ]
                     )
                 ],
 
                 [
-                    "nombre" => "Sub tema 2"
+                    "nombre" => "Sub tema 2",
                     "tutoriales" => array(
                         [
                             "id" => 3,
@@ -131,7 +180,7 @@ class Home_c extends CI_Controller
                         [
                             "id" => 4,
                             "nombre" => "tutorial 4",
-                            "concluido" => 1,
+                            "concluido" => 1
                         ]
                     )
                 ]
