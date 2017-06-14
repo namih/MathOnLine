@@ -137,7 +137,6 @@ class Registro_usuario_c extends CI_Controller {
 	*/
 	function envio_email($id_usuario,$usuario,$email){
 		
-		$usuario=123;
 		$configuracion = $this->conf_email->configuracion_email();
 	    
 		$datos_email = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
