@@ -88,9 +88,14 @@
 					<input type="text" class="form-control" id="mat" placeholder="Matrícula" disabled>
 				</div>
 				<div class="form-group checkbox col-md-6  col-xs-12">
-      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="estudia" >Estudia</label>
+      				<label class="col-md-6  col-xs-6"><input onclick="test()" type="checkbox" value="" id="estudia" >Estudia</label>
       				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="trabaja">Trabaja</label>
     			</div>
+    			<script>
+    			function test () {
+				  alert(document.getElementById('estudia').checked)
+				}
+    			</script>
     			<div class="input-group col-lg-12 col-md-12 col-xs-12">
 			
 					<div class="form-group col-md-6  col-xs-12">

@@ -29,7 +29,7 @@
 			date_default_timezone_set('America/Mexico_City');
 			$format = 'Y-m-d h:i:s';
 			$usuario = array(
-				'user_name' => 'NightlightMX',
+				'user_name' => 'NightlightCDMX',
 				'password' => $this->encrypt->encode('JiU8Lp19O0'),
 				'type_user' => 3,
 				'name' => 'Cesar',
@@ -37,10 +37,10 @@
 				'sex' => 1,
 				'year_birthday' => 1985,
 				'id_degree' => 36,
-				'email' =>'nightlightmx@gmail.com',
+				'email' =>'jcesarcbi@gmail.com',
 				'uam_identifier' => '204214807',
 				'is_student' => TRUE,
-				'is_employed' => TRUE,
+				'is_employed' => FALSE,
 				'registration_date' => date($format)
 			);
 			
@@ -122,6 +122,13 @@
 			// $this->load->view('header/head_v');
 			$this->load->view('editor_tema_mes_v',$datos);
 			// $this->load->view('footer/footer_v');	
+		}
+		
+		
+		public function etiquetas()
+		{
+			$test = $this->etiquetas->type_user();
+			print_r($test);
 		}
 
 }

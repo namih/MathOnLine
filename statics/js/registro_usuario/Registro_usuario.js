@@ -162,7 +162,7 @@ function registrar () {
 		email:email,
 		uam_identifier:matricula,	
 		is_student:estudia,
-		is_employeed:trabaja
+		is_employed:trabaja
 	};
 	
 	var validar_pwd = comparar_contrasenia();
@@ -205,7 +205,8 @@ function registrar () {
 		datatype: 'json',
 		cache: false,
 		success: function() {
-			$('#Registro').modal('toggle');
+			// $('#Registro').modal('toggle');
+			alert('ok');
 		},
 		error: function() {
 			alert('failure');
