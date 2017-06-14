@@ -90,7 +90,7 @@ class Registro_usuario_c extends CI_Controller {
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
 		
-		$type_user =$this->etiquetas->cat_type_user;
+		$type_user =$this->Etiquetas->cat_type_user;
 		$registro = $this -> input -> post('datos');
 		$registro['type_user']= $type_user['Alumno'];
 		$registro['registration_date']=date($format);

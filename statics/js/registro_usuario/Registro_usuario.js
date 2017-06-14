@@ -148,8 +148,8 @@ function registrar () {
   var sexo = document.getElementById('sexo').value;
   var carrera = document.getElementById('carrera').value;
   var matricula = document.getElementById('mat').value;
-  var estudia = document.getElementById('estudia').value;
-  var trabaja = document.getElementById('trabaja').value;
+  var estudia = document.getElementById('estudia').checked;
+  var trabaja = document.getElementById('trabaja').checked;
   
   var datos ={
 		user_name:usuario,
@@ -271,7 +271,7 @@ function validar_correo () {
     document.getElementById("error_email").style.display= 'none';
 	
 	var correo = document.getElementById('correo').value;
-	var datos = {email:user};
+	var datos = {email:correo};
   	if(correo != ''){
   		var url_correo = base_url + 'Registro_usuario_c/correo_usuario_disponible';
   		$.ajax({
