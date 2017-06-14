@@ -205,8 +205,7 @@ function registrar () {
 		datatype: 'json',
 		cache: false,
 		success: function() {
-			// $('#Registro').modal('toggle');
-			alert('ok');
+			$('#Registro').modal('toggle');
 		},
 		error: function() {
 			alert('failure');
