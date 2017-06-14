@@ -1,12 +1,12 @@
 <?php
 
-class Registro_usuario_c extends CI_Controller {
+error_reporting(E_ERROR);
 
+class Registro_usuario_c extends CI_Controller {
+	
 	public function __construct() {
 		parent::__construct();
-		$this->load->library('encrypt');
 			$this -> load -> model('Registro_usuario_m');
-			//$this->load->library('email');
 	}
 	
 	/**
@@ -87,23 +87,25 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/
 	public function registrar_usuario() {
+		
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
 		
-		$type_user =$this->etiquetas->cat_type_user;
-		$registro = $this -> input -> post('datos');
+		$type_user = $this->etiquetas->type_user();
+		$registro = $this->input->post('datos');		
 		$registro['type_user']= $type_user['Alumno'];
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
+				
+		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
 		
-			$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-			//return $id_registro;
-			if ($id_registro != null) {
-				return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
-			} else {
-				return false;
-			}	
+		//return $id_registro;
+		if ($id_registro != null) {
+			return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
+		} else {
+			return false;
+		}	
 	}
 	
 	/**
@@ -137,7 +139,6 @@ class Registro_usuario_c extends CI_Controller {
 	*/
 	function envio_email($id_usuario,$usuario,$email){
 		
-		$usuario=123;
 		$configuracion = $this->conf_email->configuracion_email();
 	    
 		$datos_email = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,

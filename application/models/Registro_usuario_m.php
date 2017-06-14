@@ -217,10 +217,10 @@
 				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
 			};
 			if (isset($usuario['is_student'])) {
-				$set_usuario['is_student'] = $usuario['is_student'];
+				$set_usuario['is_student'] = filter_var($usuario['is_student'], FILTER_VALIDATE_BOOLEAN);
 			};
 			if (isset($usuario['is_employed'])) {
-				$set_usuario['is_employed'] = $usuario['is_employed'];
+				$set_usuario['is_employed'] = filter_var($usuario['is_employed'], FILTER_VALIDATE_BOOLEAN);
 			};
 			if (isset($usuario['registration_date'])) {
 				$set_usuario['registration_date'] = $usuario['registration_date'];
