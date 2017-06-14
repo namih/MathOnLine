@@ -44,7 +44,7 @@
 									<table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
 										<tr>
 											<td height="70" style="padding: 0 20px 20px 0;">
-												<img class="fix" src="http://turing.izt.uam.mx/tester/mate1.jpg" width="90" height="90" border="0" alt="" />
+												<img class="fix" src="/statics/img/logo_matenlinea/mate1.jpg" width="90" height="90" border="0" alt="" />
 											</td>
 										</tr>
 									</table>
@@ -99,7 +99,7 @@
 									<table width="115" align="left" border="0" cellpadding="0" cellspacing="0">  
 										<tr>
 											<td height="115" style="padding: 0 20px 20px 0;">
-												<img class="fix" src="http://turing.izt.uam.mx/tester/on_sm.png" width="115" height="115" border="0" alt="" />
+												<img class="fix" src="/statics/img/email/on.png" width="115" height="115" border="0" alt="" />
 											</td>
 										</tr>
 									</table>
@@ -153,7 +153,7 @@
 													<tr>
 														<td width="37" style="text-align: center; padding: 0 10px 0 10px;">
 															<a href="http://www.izt.uam.mx/">
-																<img src="http://turing.izt.uam.mx/tester/variacion6Izt.png" width="150" height="150" alt="UAM" border="0" />
+																<img src="/statics/img/logo_uam/variacion6Izt.png" width="150" height="150" alt="UAM" border="0" />
 															</a>
 														</td>
 													</tr>
