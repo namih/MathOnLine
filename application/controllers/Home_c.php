@@ -28,19 +28,55 @@ class Home_c extends CI_Controller
     public function recover_pass(){
         $email = $this->input->post('email-user');
         if($email != null){
-            $pass = $this->Home_m->recuperar_pass($email);
-            if($pass == 0){
+            $user = $this->Home_m->recuperar_pass($email);
+            if($user == 0){
                 $error_recover_pass = "El correo electronico no esta registrado";
                 echo $error_recover_pass;
             }else{
-                /*aqui mandas correo para enviar el password*/
-                echo "Su password fue enviado a su correo";
+                $user["password"] = $this->decode_pass($user["password"]);
+                $email = $this->send_email($email, $user);
+                if($email){
+                    echo "Su informacion fue enviada a su correo";
+                }else{
+                    echo "No se a enviado el email, intente mas tarde";
+                }
             }
         }
         return;
     }
 
+    /**
+     * Descripcion
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return true o false
+     * @param Via post, se recibe el email y la informacion del usuario para recuperar contraseña
+     * @version 1.0
+     */
+    function send_email($email, $user){
 
+        $configuracion = $this->conf_email->configuracion_email();
+        $this->email->initialize($configuracion);
+        $this->email->from('Mate en linea');
+        $this->email->to($email);
+        $this->email->subject('Recuperar contraseña');
+        $this->email->message("Su usuario es: ".$user["user_name"]."<br>Su contraseña es: ".$user["password"]);
+
+        if($this->email->send()){
+            return TRUE;
+        }else{
+            return FALSE;
+        }
+    }
+
+    /**
+     * Descripcion
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return Error o te muestra la vista de estudiante en sesion
+     * @param Via post, se recibe user_name y password
+     * @version 1.0
+     */
     public function login(){
         $credencial['user_name'] = $this->input->post('username-user');
         $credencial['password'] = $this->input->post('password-user');
@@ -67,125 +103,87 @@ class Home_c extends CI_Controller
         }
     }
 
-    public function prueba_decode(){
-        $pass = $this->encrypt->encode("root");
-        print_r($pass );
-        echo "<br>";
-        print_r($this->decode_pass("1rxKMj42HBeT3HHYpzQnU9pAL0jsG7mpegAjmCmTWK+eN55P0jcpebohu52R7lAPMMI+CSVX3wg0kGXRc4Gbeg=="));
-    }
-
+    /**
+     * Descripcion
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return Password decodificado
+     * @param Recibe password
+     * @version 1.0
+     */
     private function decode_pass($pass){
         return $this->encrypt->decode($pass);
     }
 
+    /**
+     * Destruye la sesion
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return
+     * @param
+     * @version 1.0
+     */
     public function logout(){
         echo "sesion cerrada";
         $this->session->sess_destroy();
     }
 
-    public function ver(){
-        echo "<pre>";
-        print_r($this->session->userdata("user_id"));
-        echo "</pre>";
-    }
 
+    /**
+     * carga la vista del usuario
+     *
+     * @author Osvaldo Gómez Alvarez
+     * @return La vista del usuario
+     * @param Recibe un arreglo que contiene la informacion del usuario
+     * @version 1.0
+     */
     private function goHomeUser($user){
         $datos["user_log"] = $user;
-
         $all_themes = $this->Home_student_m->lista_tutoriales();
         $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
-
-        if(count($all_themes)>0){
-            $aux_theme = $all_themes[0]["theme"];
-        }
-
-        $themes_user = array();
         $i = 0;
-        $j = 0;
-        $themes_user[$i]["nombre"] = $aux_theme;
-        $aux_theme = $all_themes[0]["theme"];
-        $aux_subtopic = $all_themes[0]["subtopic"];
+        $aux_theme = "";
+        $aux_subtopic = "";
+        $aux_tutorial = "";
+        $themes_aux = array();
         foreach ($all_themes as $theme){
-            if($theme["theme"] == $aux_theme){
-
-                $themes_user[$i]["subtemas"][] = array(
-                    "nombre"=>$theme["subtopic"],
-                    "tutoriales" => array()
-                );
-                if($theme["subtopic"] == $aux_subtopic){
-                    $themes_user[$i]["subtemas"][] = array(
-                        "id" => $theme["id_tutorial"],
-                        "nombre" => $theme["theme"]
-                    );
-
-                }else{
-                    $aux_subtopic = $theme["subtopic"];
-                }
-            }else{
-                $i++;
+            if($theme["theme"] != $aux_theme){
                 $aux_theme = $theme["theme"];
-                $themes_user[$i]["tema"] = $aux_theme;
+                $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
+                $themes_aux[] = array(
+                    "nombre" => $all_themes[$key_theme]["theme"],
+                    "id_tema" => $all_themes[$key_theme]["id_theme"]
+                );
+                $i = count($themes_aux) - 1;
+            }
+            if($theme["subtopic"] != $aux_subtopic){
+                $aux_subtopic = $theme["subtopic"];
+                $key_subtopic = array_search($aux_subtopic, array_column($all_themes, 'subtopic'));
+                $themes_aux[$i]["subtemas"][] = array(
+                    "nombre" => $all_themes[$key_subtopic]["subtopic"],
+                    "id_subtema" => $all_themes[$key_theme]["id_subtopic"]
+                );
+                $j = count($themes_aux[$i]["subtemas"]) - 1 ;
+
+            }
+            if($theme["tutorial"] != $aux_tutorial){
+                $aux_tutorial = $theme["tutorial"];
+                $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
+
+                $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
+                $concluido = 0;
+
+                if(is_int($ket_tutorial_studen)){
+                    $concluido = 1;
+                }
+                $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
+                    "nombre" => $all_themes[$key_tutorial]["tutorial"],
+                    "id" => $all_themes[$key_theme]["id_tutorial"],
+                    "concluido" => $concluido
+                );
             }
         }
-
-        echo "<pre>";
-        print_r($all_themes);
-        echo "</pre>";
-
-
-        //Todo lo siguiente se tiene que mandar en el arreglo de datos
-        //traer temas todos
-        //traer los temas cubiertos por el usuario
-        //formar un arreglo de la siguiente forma:
-        /*
-            -tema
-                --Subtemas
-                    ---Tutoriales
-
-            En tutorial necesitamos :
-            -id
-            -Nombre
-            -Concluido (0,1) (0 cuando el usuario no ah realizado el tutorial, 1 cuando si)
-
-        El arreglo global se llamara $temas
-        */
-
-        $temas = array(
-            "nombre" => "Tema 1",
-            "Subtemas" => array(
-                [
-                    "nombre" => "Sub tema 1",
-                    "tutoriales" => array(
-                        [
-                            "id" => 1,
-                            "nombre" => "tutorial 1",
-                            "concluido" => 0,
-                        ],
-                        [
-                            "id" => 2,
-                            "nombre" => "tutorial 2",
-                            "concluido" => 1
-                        ]
-                    )
-                ],
-
-                [
-                    "nombre" => "Sub tema 2",
-                    "tutoriales" => array(
-                        [
-                            "id" => 3,
-                            "nombre" => "tutorial 3",
-                            "concluido" => 0,
-                        ],
-                        [
-                            "id" => 4,
-                            "nombre" => "tutorial 4",
-                            "concluido" => 1
-                        ]
-                    )
-                ]
-            )
-        );
+        $datos["temas"] = $themes_aux;
         $this->load->view('header/head_v');
         $this->load->view('header/Menu_user_v', $datos);
         $this->load->view('login/Sesion_user_v', $datos);
