@@ -127,11 +127,15 @@
                 <div class="panel-heading">Calendario escolar</div>
                 <div class="panel-body">
                   <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0">
-                    <img class="img-responsive" width="55%" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM 2016-2017" title="Calendario escolar UAM 2016-2017" width="920" height="778" align="absmiddle">
+                    <img class="calendario img-responsive" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM" title="Calendario escolar UAM" align="absmiddle">
                   </div>
-                  <div id="buton_descarga" class="col-sm-12 form-group">
-                    <a class="btn btn-success btn-block" href="statics/files/calendario_uam.doc">Descargar Word</a>
-                    <a class="btn btn-success btn-block" href="statics/files/calendario_uam.pdf" target="_blanc">Descargar PDF</a>
+                  <div id="buton_descarga" class="col-sm-12 col-md-12">
+                    <div id="buton_descarga" class="col-sm-12 col-md-6 form-group">
+                      <a class="btn btn-success btn-block" href="statics/files/calendario_uam.doc">Descargar Word</a>
+                    </div>
+                    <div id="buton_descarga" class="col-sm-12 col-md-6 form-group">
+                      <a class="btn btn-success btn-block" href="statics/files/calendario_uam.pdf" target="_blanc">Descargar PDF</a>
+                    </div>
                   </div>
                 </div>
               </div>                

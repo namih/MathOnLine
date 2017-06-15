@@ -1,20 +1,49 @@
-@media (max-width: 767px) { /*col-xm-*/
+@media (max-width: 491px) { /*col-xm-*/
   .imagen-xs {
     width: 100%;
   }
+  .calendario {
+    width: 65%;
+  }
   .titEntrenador {
-    margin-top: 0px;
-    font-size: 15px !important;
-    padding: 0px;
+    margin-top: 5px;
+    font-size: 18px !important;
+    padding: 5px;
   }
   .titEntrenador h3 {
-    margin-top: 8px;
+    margin-top: 18px;
   }
   .img-login {
     width: 40%;
   }
   #contentInicio {
-    margin-top: 100px;
+    margin-top: 30%;
+  }
+  .navbar-green{
+    margin-top: 90px !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) { /*col-xm-*/
+  .imagen-xs {
+    width: 70%;
+  }
+  .calendario {
+    width: 65%;
+  }
+  .titEntrenador {
+    margin-top: 5px;
+    font-size: 18px !important;
+    padding: 5px;
+  }
+  .titEntrenador h3 {
+    margin-top: 18px;
+  }
+  .img-login {
+    width: 40%;
+  }
+  #contentInicio {
+    margin-top: 30%;
   }
   .navbar-green{
     margin-top: 90px !important;
@@ -23,6 +52,10 @@
 @media (min-width: 768px) and (max-width: 991px) {/*col-sm- */
   .img-login {
     width: 35%;
+  }
+
+  .calendario {
+    width: 80%;
   }
   .imagen-xs {
     width: 70%;
@@ -45,10 +78,30 @@
   .titEntrenador h3 {
     font-size: 40px;
   }
+  .titEntrenador {
+    margin-top: 10px;
+    padding: 10px;
+  }   
+
+  .calendario {
+    width: 40%;
+  }
+
+  .imagen-xs {
+    width: 50%;
+  } 
 }
 @media (min-width: 1200px) {/*col-lg-*/
   .titEntrenador h3 {
     font-size: 40px;
+  }
+
+  .calendario {
+    width: 40%;
+  }
+
+  .imagen-xs {
+    width: 70%;
   }
 }
 /*
