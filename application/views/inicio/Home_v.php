@@ -1,3 +1,6 @@
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+          <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
+      </div> 
     <div id="contentInicio">
       <div class="col-md-12"><br>
         <div class="row">
@@ -45,12 +48,12 @@
                   </div>
                 </div>
                 <!--$_SERVER['DOCUMENT_ROOT'].str_replace('//','/',dirname($_SERVER['SCRIPT_NAME']).'/')-->
-                <form method="post" role="form" action="<?php echo base_url('home_c/login') ?>">
+                <form method="post" role="form" action="<?php echo base_url('home_c/login'); ?>">
                   <div class="panel-body">
                     <div class="row">
                         <div class="row">
                           <div class="col-md-12 col-sm-12">
-                            <div class="col-md-4 col-sm-4" align="center"><img class="img-responsive" width="75%" src="statics/img/iniciar_session/people-145129_1280.png"/></div>
+                            <div class="col-md-4 col-sm-4" align="center"><img class="img-login img-responsive" width="75%" src="<?php echo base_url(); ?>statics/img/iniciar_session/people-145129_1280.png"/></div>
                             <div class="col-md-8 col-sm-8">
                                 <div class="form-group">
                                   <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="nombre del usuario">
@@ -121,13 +124,15 @@
             </div>            
             <div class="col-md-4">
              <div class="panel panel-success tema_footer"  align="center">
-                <div class="panel-heading">Calendario UAM</div>
+                <div class="panel-heading">Calendario escolar</div>
                 <div class="panel-body">
-                <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0"><img class="img-responsive" width="55%" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM 2016-2017" title="Calendario escolar UAM 2016-2017" width="920" height="778" align="absmiddle"></div>
-                <div id="buton_descarga" class="col-sm-12">
-                  <a class="btn btn-success" href="statics/files/calendario_uam.doc">Descargar Word</a>
-                  <a class="btn btn-success" href="statics/files/calendario_uam.pdf" target="_blanc">Descargar PDF</a>
-                </div>
+                  <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0">
+                    <img class="img-responsive" width="55%" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM 2016-2017" title="Calendario escolar UAM 2016-2017" width="920" height="778" align="absmiddle">
+                  </div>
+                  <div id="buton_descarga" class="col-sm-12 form-group">
+                    <a class="btn btn-success btn-block" href="statics/files/calendario_uam.doc">Descargar Word</a>
+                    <a class="btn btn-success btn-block" href="statics/files/calendario_uam.pdf" target="_blanc">Descargar PDF</a>
+                  </div>
                 </div>
               </div>                
             </div>

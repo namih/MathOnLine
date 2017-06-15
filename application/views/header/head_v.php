@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mate en línea</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>statics/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/style_user.css">
@@ -15,7 +16,7 @@
   <body>
     <script>var base_url ='<?php echo base_url();?>';</script>
     <header style="padding: 5px;">
-      <div class="col-sm-12">
+      <div class="col-xm-12 col-sm-12">
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
           <a href="<?php echo base_url();?>">
             <img class="imagen-xs" width="80%" src="<?php echo base_url(); ?>statics/img/logo_matenlinea/mate1.jpg">
@@ -26,8 +27,5 @@
             <h3>Mi Entrenador Personal en Matemáticas</h3>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
-          <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
-      </div>  
+      </div> 
     </header>     
