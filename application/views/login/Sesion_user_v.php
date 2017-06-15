@@ -5,7 +5,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
               <center><h1>BIENVENIDO</h1></center>
               <div >
-                <img class="img-responsive" width="25%" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
+                <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
               </div><br>
               <div>
                 <h1><?php echo $user_log[0]['user_name']; ?></h1>
@@ -59,7 +59,7 @@
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
                 <center><h1>BIENVENIDO</h1></center>
                 <div >
-                  <img class="img-responsive" width="25%" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
+                  <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
                 </div><br>
                 <div>
                   <h1><?php echo $user_log[0]['user_name']; ?></h1>

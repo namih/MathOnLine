@@ -13,8 +13,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Inicio</a></li>
-              <li><a href="#">Tutoriales</a></li>
+              <li class="active"><a href="#">Tutoriales</a></li>
               <li><a href="#">Pruebas de evaluación</a></li>
               <li><a href="#">Material complementario</a></li>
               <li><a href="#">Estadísticas</a></li>
