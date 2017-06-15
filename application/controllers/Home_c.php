@@ -146,6 +146,9 @@ class Home_c extends CI_Controller
         $aux_subtopic = "";
         $aux_tutorial = "";
         $themes_aux = array();
+        if(count($themes_student)>0){
+            $themes_student = array();
+        }   
         foreach ($all_themes as $theme){
             if($theme["theme"] != $aux_theme){
                 $aux_theme = $theme["theme"];
@@ -161,7 +164,7 @@ class Home_c extends CI_Controller
                 $key_subtopic = array_search($aux_subtopic, array_column($all_themes, 'subtopic'));
                 $themes_aux[$i]["subtemas"][] = array(
                     "nombre" => $all_themes[$key_subtopic]["subtopic"],
-                    "id_subtema" => $all_themes[$key_theme]["id_subtopic"]
+                    "id_subtema" => $all_themes[$key_subtopic]["id_subtopic"]
                 );
                 $j = count($themes_aux[$i]["subtemas"]) - 1 ;
 
@@ -169,6 +172,7 @@ class Home_c extends CI_Controller
             if($theme["tutorial"] != $aux_tutorial){
                 $aux_tutorial = $theme["tutorial"];
                 $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
+
 
                 $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
                 $concluido = 0;
@@ -178,11 +182,12 @@ class Home_c extends CI_Controller
                 }
                 $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
                     "nombre" => $all_themes[$key_tutorial]["tutorial"],
-                    "id" => $all_themes[$key_theme]["id_tutorial"],
+                    "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
                     "concluido" => $concluido
                 );
             }
         }
+       
         $datos["temas"] = $themes_aux;
         $this->load->view('header/head_v');
         $this->load->view('header/Menu_user_v', $datos);
