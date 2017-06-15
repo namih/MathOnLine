@@ -195,6 +195,9 @@
 			if (isset($usuario['type_user'])) {
 				$set_usuario['type_user'] = $usuario['type_user'];
 			};
+			if (isset($usuario['id_avatar'])) {
+				$set_usuario['id_avatar'] = $usuario['id_avatar'];
+			};
 			if (isset($usuario['name'])) {
 				$set_usuario['name'] = $usuario['name'];
 			};

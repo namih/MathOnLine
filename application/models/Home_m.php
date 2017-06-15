@@ -20,7 +20,12 @@
 		public function iniciar_sesion($credencial = NULL)
 		{
 			if ($credencial != NULL) {
-				$usuario = $this->db->SELECT('*')->FROM('user')->WHERE('user_name', $credencial['user_name'])->GET();
+				$usuario = $this->db
+								->SELECT('user.id_user, user.user_name, user.password, user.type_user, avatar.id_avatar, avatar.location, user.name, user.last_name, user.sex, user.year_birthday, user.email, user.id_degree, user.uam_identifier, user.is_student, user.is_employed, user.registration_date, user.status')
+								->FROM('user')
+								->JOIN('avatar', 'avatar.id_avatar = user.id_avatar')
+								->WHERE('user.user_name', $credencial['user_name'])
+								->GET();
 				if ($usuario->num_rows() === 1) {
 					$datos = $usuario->result_array();
 					if ($datos[0]['status'] == 1) {

@@ -26,12 +26,18 @@
 		
 		public function registrar()
 		{
+			
+			$male = array(2,4,6,10,11,12,13,16,17,19,21,24,25,27,29);
+			$female = array(1,3,4,5,7,8,9,14,15,18,20,22,23,26,28,30);
+			
+			
 			date_default_timezone_set('America/Mexico_City');
 			$format = 'Y-m-d h:i:s';
 			$usuario = array(
 				'user_name' => 'NightlightCDMX',
 				'password' => $this->encrypt->encode('JiU8Lp19O0'),
 				'type_user' => 3,
+				'id_avatar' => rand(1, 30),
 				'name' => 'Cesar',
 				'last_name' => 'Padilla',
 				'sex' => 1,
@@ -129,6 +135,18 @@
 		{
 			$test = $this->etiquetas->type_user();
 			print_r($test);
+		}
+		
+		public function datos_sesion()
+		{
+			$credencial = array('user_name' => 'NightlightCDMX', 'password' => 'JiU8Lp19O0');
+			
+			$datos = $this->Home_m->iniciar_sesion($credencial);
+			
+			echo "<pre>";
+			print_r($datos);
+			echo "<pre>";
+			
 		}
 
 }
