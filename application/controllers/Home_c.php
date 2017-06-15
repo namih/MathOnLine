@@ -182,7 +182,7 @@ class Home_c extends CI_Controller
                 }
                 $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
                     "nombre" => $all_themes[$key_tutorial]["tutorial"],
-                    "id" => $all_themes[$key_tutorial]["id_tutorial"],
+                    "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
                     "concluido" => $concluido
                 );
             }
