@@ -1,5 +1,5 @@
     <?php // echo '<pre>'; print_r($user_log); print_r($temas); ?>
-    <div id="MainContent">
+    <div id="menu_tutoriales">
       <div class="col-md-12">
           <div class="col-xs-12 visible-xs">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
@@ -93,58 +93,4 @@
           </div>      
       </div>
     </div>
-
-    <script>
-    $('.tema').each(function() {
-        this.onclick = function(e){
-            var aMenu =$(this).children("a").first();
-            var elDelClick=$(e.target).parent();
-            var uno = this;
-            var isActive = $(this).hasClass('active');
-            var btn = $(this).children("a").first();//menu padre
-            var menu = $(this).children(".treeview-menu").first();
-            $('section#menuEvaluacion li[name="liAdminEval"]').each(function() {
-                var padre = $(this).children("a").first();//menu padre
-                var menuHijo = $(this).children(".treeview-menu").first();
-
-                var dos = this;
-                if(uno==dos){//al que le dí click
-                    if (isActive) {//si está activo se deben revisar las opciones interiores
-                        //Slide up to close menu
-                        if (aMenu[0] == elDelClick[0]){//si se hizo click sobre el titulo del menú se debe ocultar el contenido pero si se hace click rn algun sub-menu, no se oculta
-                            menu.slideUp();
-                            isActive = false;
-                            btn.children(".fa-angle-down").first().removeClass("fa-angle-down").addClass("fa-angle-left");
-                            btn.parent("li").removeClass("active");
-                        }
-                    } else { //si no esta activo se abre el menu y se pone la clase active
-                            //Slide down to open menu
-                        menu.slideDown();
-                        isActive = true;
-                        btn.children(".fa-angle-left").first().removeClass("fa-angle-left").addClass("fa-angle-down");
-                        btn.parent("li").addClass("active");
-                    }
-                }else{//las opciones no clickeadas se oculta el menú y se desactivan
-                    menuHijo.slideUp();
-                    padre.children(".fa-angle-down").first().removeClass("fa-angle-down").addClass("fa-angle-left");
-                    padre.parent("li").removeClass("active");
-                }
-
-            });
-        }
-    });
-
-
-      /*  $('section#menuEvaluacion li li[name="liE"]').each(function(e) {
-            this.onclick = function(){
-            var elDelClick = this;
-            var optionPadre = $(this).parent();
-
-            $('section#menuEvaluacion li li[name="liE"]').each(function(){
-                this.removeAttribute('class', 'active');
-            });
-            elDelClick.setAttribute('class', 'active'); 
-            }
-        });*/
-
-</script>
+  </div><!-- cierra el div #user_main_content que inicia despues del menú-->

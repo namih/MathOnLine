@@ -1,17 +1,16 @@
 @media (max-width: 491px) { /*col-xm-*/
   .imagen-xs {
-    width: 100%;
+    width: 90%;
   }
   .calendario {
     width: 65%;
   }
   .titEntrenador {
     margin-top: 5px;
-    font-size: 18px !important;
     padding: 5px;
   }
   .titEntrenador h3 {
-    margin-top: 18px;
+    margin-top: 10px !important;
   }
   .img-login {
     width: 40%;
@@ -29,7 +28,7 @@
     width: 70%;
   }
   .calendario {
-    width: 65%;
+    width: 40%;
   }
   .titEntrenador {
     margin-top: 5px;
@@ -55,7 +54,7 @@
   }
 
   .calendario {
-    width: 80%;
+    width: 65%;
   }
   .imagen-xs {
     width: 70%;

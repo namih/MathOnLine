@@ -1,0 +1,1 @@
+<h1>Esta es la vista que muestra el perfil del usuario</h1>
