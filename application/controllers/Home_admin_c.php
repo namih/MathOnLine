@@ -40,5 +40,36 @@ class Home_admin_c extends CI_Controller {
 	}
 
 	
+	/**
+	 * 
+	 * @author Cecilia Hernandez Vasquez
+	 * @return lista con los temas del mes
+	 * @param NA
+	 * @version 1.0
+	 */
+	
+	public function editor_tema(){
+		
+		$temas = $this->Home_admin_m->lista_tema_mes();
+		$datos['temas'] = $temas;
+		$this->load->view('Editor_tema_mes_v',$datos);	
+	}
+	
+	/**
+	 * 
+	 * @author Cecilia Hernandez Vasquez
+	 * @return lista con los temas del mes
+	 * @param NA
+	 * @version 1.0
+	 */
+	
+	public function update_tema(){
+		
+		$editor = $this->input->post('editor');
+		$update_editor=$this->Home_admin_m->update_tema($editor);
+		
+	}
+		
+	
 	
 }
