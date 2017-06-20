@@ -115,13 +115,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Registro exitoso</h4>
+        <h4 class="modal-title">Registro completado</h4>
       </div>
       <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Tu registro en Mate en Línea se a completado de forma satisfactoria. No obstante, para poder acceder debes inicalmnete <strong>activar tu cuenta.</strong> Para ello, hemos remitido a tu correo electrónico un enlace con el que podrás hacerlo.</p>
       </div>
       <div class="modal-footer">
-        <a class="btn" href="<?php echo base_url(); ?>">Aceptar</a>
+      	<a href="<?php echo base_url(); ?>" class="btn btn-success" role="button">Aceptar</a>
       </div>
     </div>
 

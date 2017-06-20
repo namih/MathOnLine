@@ -172,5 +172,12 @@
 			print_r($biblio);
 			echo "<pre>";
 		}
+		
+		public function activacion_ok()
+		{
+			$this->load->view('header/head_v');
+			$this->load->view('Activacion_exitosa_v');
+			$this->load->view('footer/footer_v');
+		}
 
 }
