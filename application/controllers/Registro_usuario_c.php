@@ -97,10 +97,14 @@ class Registro_usuario_c extends CI_Controller {
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-				
+		$avatar = $this->etiquetas->type_avatar();
+		if ($registro['sex'] === 2) { 
+			$registro['id_avatar'] = $avatar['female'][array_rand($avatar['female'], 1)];
+		} else {
+			$registro['id_avatar'] = $avatar['male'][array_rand($avatar['male'], 1)];
+		}		
 		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-		
-		//return $id_registro;
+
 		if ($id_registro != null) {
 			return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
 		} else {
@@ -109,9 +113,7 @@ class Registro_usuario_c extends CI_Controller {
 	}
 	
 	/**
-	*Funcion para obtener los datos de la 
-	*
-	* 	
+	*Funcion para obtener los datos de las licenciaturas
 	* @author Cecilia Hernandez Vasquez 
 	* @param 
 	* @return regresa un arreglo con las licenciaturas ligadas a la unidad.
