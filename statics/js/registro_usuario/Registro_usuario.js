@@ -96,17 +96,30 @@ function seleccionar_unidad () {
 * @return TRUE cuando los strings coinciden, FALSE si los strings no coinciden. Formato: [* @return tipo comentario]
 * @version Versión actual del elemento
 */
-
 function comparar_contrasenia () {
-	var contraseña1 = document.getElementById('pwd').value;
-	var contraseña2 = document.getElementById('rpwd').value;
+	var contrasenia1 = document.getElementById('pwd').value;
+	var contrasenia2 = document.getElementById('rpwd').value;
 	
-	if (contraseña1 == contraseña2) {
-		return true;
-	} else {
-		return false;
-	};
+	if(contrasenia1 != ""){
+		if(contrasenia2 == contrasenia1){
+			return true;
+		}else{
+			contrasenia1 = "";
+			document.getElementById('pwd').placeholder='Las contraseñas no coinciden';
+			contrasenia2 = "";;
+		}
+	}
 }
+// function comparar_contrasenia () {
+	// var contraseña1 = document.getElementById('pwd').value;
+	// var contraseña2 = document.getElementById('rpwd').value;
+// 	
+	// if (contraseña1 == contraseña2) {
+		// return true;
+	// } else {
+		// return false;
+	// };
+// }
 
 /**
 * La función validar_email verifica que el correo electrónico con el que se registró el usuario

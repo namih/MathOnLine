@@ -21,13 +21,13 @@
 		</div>
 		
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd1">
-			<input type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
+			<input  type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
 			<span id="error_vacio_pwd1" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
 			
 		</div>
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd2">
-			<input type="password" class="form-control" id="rpwd" placeholder="Repetir Contraseña*">
+			<input onblur="comparar_contrasenia()" type="password" class="form-control" id="rpwd" placeholder="Repetir Contraseña*">
 			<span id="error_vacio_pwd2" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
 		</div>
