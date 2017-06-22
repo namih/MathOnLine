@@ -104,22 +104,16 @@ function comparar_contrasenia () {
 		if(contrasenia2 == contrasenia1){
 			return true;
 		}else{
-			contrasenia1 = "";
-			document.getElementById('pwd').placeholder='Las contraseñas no coinciden';
-			contrasenia2 = "";;
+			document.getElementById('pwd').value = "";
+			document.getElementById('rpwd').value = "";
+			document.getElementById('pwd').placeholder = "Las contraseñas no coinciden";
+			document.getElementById('pwd').focus();;
 		}
+	}else{
+		return false;
 	}
 }
-// function comparar_contrasenia () {
-	// var contraseña1 = document.getElementById('pwd').value;
-	// var contraseña2 = document.getElementById('rpwd').value;
-// 	
-	// if (contraseña1 == contraseña2) {
-		// return true;
-	// } else {
-		// return false;
-	// };
-// }
+
 
 /**
 * La función validar_email verifica que el correo electrónico con el que se registró el usuario
@@ -164,6 +158,13 @@ function registrar () {
   var estudia = document.getElementById('estudia').checked;
   var trabaja = document.getElementById('trabaja').checked;
   
+  var bandera_usuario = 1;
+  var bandera_pass = 1;
+  var bandera_email = 1;
+  var bandera_anio = 1;
+  var bandera_sexo = 1;
+  
+  
   var datos ={
 		user_name:usuario,
 		password:contrasenia1,
@@ -185,31 +186,48 @@ function registrar () {
 		var anio_vacio = document.getElementById("error_vacio_anio");
 		anio_vacio.className += " has-warning";
 		document.getElementById("error_anio").style.display= 'inline';
+		bandera_anio = 0;
 	} 
 	 if (email == '') {
 		var correo_vacio = document.getElementById("email");
 		correo_vacio.className += " has-warning";
 		document.getElementById("error_vacio_email").style.display= 'inline';
+		bandera_email = 0;
 	}
 	  if(contrasenia1 == ''){
 	 	var pwd_vacio = document.getElementById("error_pwd1");
 		pwd_vacio.className += " has-warning";
 		document.getElementById("error_vacio_pwd1").style.display= 'inline';
+		bandera_pass = 0;
 	 }
 	  if(contrasenia2 == ''){
 	 	var pwd2_vacio = document.getElementById("error_pwd2");
 		pwd2_vacio.className += " has-warning";
 		document.getElementById("error_vacio_pwd2").style.display= 'inline';
+		bandera_pass = 0;
 	 }
 	 
 	 if(usuario == ''){
 	 	var usr = document.getElementById("usuario");
 		usr.className += " has-warning";
 		document.getElementById("error_user").style.display= 'inline';
+		bandera_usuario = 0;
 	 }
-	 ;
+	 if (sexo == 0) {
+	 	var sex = document.getElementById("sex");
+		sex.className += " has-warning";
+		bandera_sexo = 0;
+	 };
 	
-	if (validar_pwd == true && validar_correo ==true) {
+	if (
+		validar_pwd == true && 
+		validar_correo == true && 
+		bandera_anio == 1 &&
+		bandera_email == 1 &&
+		bandera_usuario == 1 &&
+		bandera_sexo == 1 &&
+		bandera_pass == 1) {
+		
 		var url_registro = base_url + 'Registro_usuario_c/registrar_usuario';
 		$.ajax({
 		type:'post',
@@ -225,7 +243,8 @@ function registrar () {
 		}
 	});
 	} else{
-		alert('error');
+		//return false;
+		alert(':(');
 	};
 }
 
@@ -312,4 +331,38 @@ function validar_correo () {
   		
   	}
 }
+ function es_numero (numero) {
+  if (!/^([0-9])*$/.test(numero)) {
+  	return false;
+  };
+}
   
+function validar_anio () {
+	var anio = document.getElementById('anio');
+	var anio_long = document.getElementById('anio').value;
+	if (anio_long.length != 4) {
+		anio.value = "";
+		document.getElementById('anio').placeholder = "0000";
+		document.getElementById('anio').focus();
+	} else {
+		var valor = es_numero(anio.value);
+		if (valor == false) {
+			anio.value = "";
+			document.getElementById('anio').placeholder = "0000";
+			document.getElementById('anio').focus();
+		};
+	};
+	  
+}  
+
+function validar_matricula () {
+	var matricula = document.getElementById('mat');
+	var valor = es_numero(matricula.value);
+		if (valor == false) {
+			matricula.value = "";
+			document.getElementById('mat').placeholder = "Sólo números";
+			document.getElementById('mat').focus();
+		};
+	
+	  
+}  

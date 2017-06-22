@@ -57,16 +57,15 @@
 		</div>
 		
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_vacio_anio">
-			<input type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
+			<input onblur="validar_anio()" type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
 			<span id="error_anio" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
 		</div>
-		<div class="form-group col-md-6 col-xs-12">
+		<div class="form-group has-feedback col-md-6 col-xs-12" id="sex">
 					<select class="form-control" id="sexo">
-						<option>Sexo</option>
+						<option value="0">Sexo*</option>
 						<option value="1">Hombre</option>
 						<option value="2">Mujer</option>
-						
 					</select>
 				</div>
 				<div class="form-group col-md-6 col-xs-12">
@@ -85,17 +84,13 @@
 					</select>
 				</div>
 				<div class="form-group col-md-6  col-xs-12">
-					<input type="text" class="form-control" id="mat" placeholder="Matrícula" disabled>
+					<input onblur="validar_matricula()" type="text" class="form-control" id="mat" placeholder="Matrícula" disabled>
 				</div>
 				<div class="form-group checkbox col-md-6  col-xs-12">
-      				<label class="col-md-6  col-xs-6"><input onclick="test()" type="checkbox" value="" id="estudia" >Estudia</label>
+      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="estudia" >Estudia</label>
       				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="trabaja">Trabaja</label>
     			</div>
-    			<script>
-    			function test () {
-				  alert(document.getElementById('estudia').checked)
-				}
-    			</script>
+    			
     			<div class="input-group col-lg-12 col-md-12 col-xs-12">
 			
 					<div class="form-group col-md-6  col-xs-12">
@@ -118,7 +113,7 @@
         <h4 class="modal-title">Registro completado</h4>
       </div>
       <div class="modal-body">
-        <p>Tu registro en Mate en Línea se a completado de forma satisfactoria. No obstante, para poder acceder debes inicalmnete <strong>activar tu cuenta.</strong> Para ello, hemos remitido a tu correo electrónico un enlace con el que podrás hacerlo.</p>
+        <p>Tu registro en Mate en Línea se a completado de forma satisfactoria. No obstante, para poder acceder debes inicialmente <strong>activar tu cuenta.</strong> Para ello, hemos remitido a tu correo electrónico un enlace con el que podrás hacerlo.</p>
       </div>
       <div class="modal-footer">
       	<a href="<?php echo base_url(); ?>" class="btn btn-success" role="button">Aceptar</a>
