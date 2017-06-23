@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-	error_reporting(E_ERROR);
+	// error_reporting(E_ERROR);
 
 	class Test_models_c extends CI_Controller {
 			
@@ -64,6 +64,19 @@
 			echo $activacion;
 		}
 		
+		
+		public function id_avatar()
+		{
+			$genero = 2;
+			$ids = $this->Registro_usuario_m->obtener_id_avatar($genero);
+			echo "<pre>";
+			print_r($ids);
+			echo "<pre>";
+			
+			$avatar = $ids[array_rand($ids, 1)];
+			echo $avatar['id_avatar'];
+			
+		}
 		
 		public function tutoriales()
 		{

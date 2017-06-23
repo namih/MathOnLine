@@ -26,6 +26,29 @@
 		}
 		
 		/**
+		 * Obtiene los identificadores de los avatares Masculinos
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array Arreglo con los id's de los avatares, FALSE si no existe ningun registro
+		 * @param NA
+		 * @version 1.0
+		 */
+		public function obtener_id_avatar($genero = NULL)
+		{
+			if ($genero != NULL) {
+				$avatar = $this->db->SELECT('id_avatar')->FROM('avatar')->WHERE('gender', $genero)->GET();
+				if (!empty($avatar)) {
+					return $avatar->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		
+		/**
 		 * Obtiene el listado las licenciaturas por unidad UAM
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
