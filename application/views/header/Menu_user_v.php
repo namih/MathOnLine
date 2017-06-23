@@ -13,14 +13,14 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Tutoriales</a></li>
+              <li><a href="#">Tutoriales</a></li>
               <li><a href="#">Pruebas de evaluación</a></li>
-              <li><a href="#" onclick="loadContent('');" >Material complementario</a></li>
+              <li><a href="#" onclick="loadContent('<?php echo base_url(); ?>Home_student_c/material_complementario');" >Material complementario</a></li>
               <li><a href="#">Estadísticas</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"> </span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#" onclick="loadContent('/<?php echo $user_log[0]['id_user']; ?>');"><span class="glyphicon glyphicon-user"> </span> Consultar perfil</a></li>
+                  <li><a href="#" onclick="loadContent('<?php echo base_url(); ?>Home_student_c/perfil_usuario/<?php echo $user_log[0]['id_user']; ?>');"><span class="glyphicon glyphicon-user"> </span> Consultar perfil</a></li>
                   <li><a href="<?php echo base_url();?>/logout"><span class="glyphicon glyphicon-log-in"> </span> Cerrar sesión</a></li>
                 </ul>
               </li>
@@ -29,5 +29,7 @@
         </div><!--/.container-fluid -->
       </nav> 
 </div>
-<div id="section_main_content">
+<div id="section_main_content" style="min-height: 890px;">
     <?php //echo '<pre>'; print_r($user_log); print_r($temas); ?>
+
+ 

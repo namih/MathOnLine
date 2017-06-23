@@ -111,3 +111,10 @@
                   .list-group-submenu {
                     margin-left:10px;
                   }*/
+
+
+
+/*Estilos para contenido de la página de un usuario*/                  
+.link:hover{
+  background-color: #f1fced;
+}
