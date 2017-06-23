@@ -18,4 +18,12 @@ class Home_student_c extends CI_Controller
         print_r($this->session->all_userdata());
         echo "</pre>";
     }
+
+    public function perfil_usuario(){
+
+    }
+
+    public function material_complementario(){
+        
+    }
 }

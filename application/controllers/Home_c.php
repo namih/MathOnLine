@@ -126,6 +126,7 @@ class Home_c extends CI_Controller
     public function logout(){
         echo "sesion cerrada";
         $this->session->sess_destroy();
+        redirect(base_url(), 'refresh');
     }
 
 
