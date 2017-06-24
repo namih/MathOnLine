@@ -101,7 +101,6 @@ class Registro_usuario_c extends CI_Controller {
 		$avatar = $id_avatar [array_rand($id_avatar,1)];
 		$registro['id_avatar']=$avatar['id_avatar'];
 		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-
 		if ($id_registro != null) {
 			return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
 		} else {
