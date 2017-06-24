@@ -48,7 +48,7 @@
                   </div>
                 </div>
                 <!--$_SERVER['DOCUMENT_ROOT'].str_replace('//','/',dirname($_SERVER['SCRIPT_NAME']).'/')-->
-                <form method="post" role="form" action="<?php echo base_url('login'); ?>">
+                <form method="post" if="form_login" role="form" action="<?php echo base_url('login'); ?>">
                   <div class="panel-body">
                     <div class="row">
                         <div class="row">

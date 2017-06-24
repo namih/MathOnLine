@@ -34,10 +34,21 @@ class Home_c extends CI_Controller
                 echo $error_recover_pass;
             }else{
                 $user["password"] = $this->decode_pass($user["password"]);
-                $email = $this->send_email($email, $user);
-                if($email){
+                //$email = $this->send_email($email, $user);
+                $datos_email = array(
+                    "user_name" => $user["user_name"],
+                    "password" => $user["password"]
+                );
+                $this->email->from('Bienvenido a matematicas .....');
+                $this->email->to($email);
+                $this->email->subject('Activacion de la cuenta Mathonline');
+                $this->email->message($this -> load -> view('/email/recovery_password',$datos_email,TRUE)); //$datos enviar a vista
+
+                if($this->email->send()){
+                   return TRUE;
                     echo "Su informacion fue enviada a su correo";
                 }else{
+                    return FALSE;
                     echo "No se a enviado el email, intente mas tarde";
                 }
             }
@@ -86,19 +97,21 @@ class Home_c extends CI_Controller
                 "logged_in" => TRUE,
                 "user_id" => $user[0]["id_user"],
                 "type_user" => $user[0]["type_user"],
+                "user" => $user[0]
             );
             $this->session->set_userdata($data_session);
-            $this->goHomeUser($user);
+            //$this->goHomeUser($user);
+            echo 1;
         }else{
             switch ($user){
                 case 2:
-                    echo "<script type='text/javascript'> alert('No existe el usuario'); history.go(-1)</script>";
+                    echo "No existe el usuario";
                     break;
                 case 3:
-                    echo "<script type='text/javascript'> alert('No existe'); history.go(-1)</script>";
+                    echo "No existe";
                     break;
                 case 4:
-                    echo "<script type='text/javascript'> alert('Cuenta inactiva'); history.go(-1)</script>";                    
+                    echo "Cuenta inactiva";                    
             }
         }
     }
@@ -138,8 +151,8 @@ class Home_c extends CI_Controller
      * @param Recibe un arreglo que contiene la informacion del usuario
      * @version 1.0
      */
-    private function goHomeUser($user){
-        $datos["user_log"] = $user;
+    public function goHomeUser(){
+        $datos["user_log"][0] = $this->session->userdata('user');
         $all_themes = $this->Home_student_m->lista_tutoriales();
         $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
         $i = 0;

@@ -168,3 +168,20 @@ function validarEmail( email ) {
     }
     return valido;
 }
+
+
+$('form').on('submit',function(e){
+    e.preventDefault();
+    $.ajax({
+        type     : "POST",
+        cache    : false,
+        url      : $(this).attr('action'),
+        data     : $(this).serialize(),
+        success  : function(data) {
+        	if(data == 1){
+        		$(location).attr('href', 'home_c/goHomeUser');
+        	}
+        }
+    });
+
+});
