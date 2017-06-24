@@ -1,12 +1,12 @@
 <?php
 
-class Registro_usuario_c extends CI_Controller {
+error_reporting(E_ERROR);
 
+class Registro_usuario_c extends CI_Controller {
+	
 	public function __construct() {
 		parent::__construct();
-		$this->load->library('encrypt');
 			$this -> load -> model('Registro_usuario_m');
-			//$this->load->library('email');
 	}
 	
 	/**
@@ -19,7 +19,7 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/
 	
-	public function index() {
+	function index() {
 		$this->load->view('header/head_v');
 		$datos['unidades'] = $this->lista_uam();
 		$this -> load -> view('Registro_usuario_v',$datos);
@@ -33,7 +33,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */
-		public function lista_uam(){
+	function lista_uam(){
 			$uamis = $this->Registro_usuario_m->obtener_unidades_uam();
 			return $uamis;
 		}
@@ -46,7 +46,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */	
-	public function nombre_usuario_disponible(){
+	function nombre_usuario_disponible(){
 		$username = $this->input->post('datos');
 		
 		$valida_usuario=$this->Registro_usuario_m->validar_usuario($username['user_name']);
@@ -65,7 +65,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */	
-	public function correo_usuario_disponible(){
+	function correo_usuario_disponible(){
 		$correo_user = $this->input->post('datos');
 		
 		$valida_correo=$this->Registro_usuario_m->validar_correo($correo_user['email']);
@@ -86,36 +86,36 @@ class Registro_usuario_c extends CI_Controller {
 	* @return id_usuario si el registro se realizo, en otro caso un msj de acuerdo si existe registro del nombre del usuario o email
 	* @version 1.0
 	*/
-	public function registrar_usuario() {
+	function registrar_usuario() {
+		
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
 		
-		$type_user =$this->etiquetas->cat_type_user;
-		$registro = $this -> input -> post('datos');
+		$type_user = $this->etiquetas->type_user();
+		$registro = $this->input->post('datos');		
 		$registro['type_user']= $type_user['Alumno'];
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-		
-			$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-			//return $id_registro;
-			if ($id_registro != null) {
-				return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
-			} else {
-				return false;
-			}	
+		$id_avatar = $this->Registro_usuario_m->obtener_id_avatar($registro['sex']);
+		$avatar = $id_avatar [array_rand($id_avatar,1)];
+		$registro['id_avatar']=$avatar['id_avatar'];
+		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
+		if ($id_registro != null) {
+			return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
+		} else {
+			return false;
+		}	
 	}
 	
 	/**
-	*Funcion para obtener los datos de la 
-	*
-	* 	
+	*Funcion para obtener los datos de las licenciaturas
 	* @author Cecilia Hernandez Vasquez 
 	* @param 
 	* @return regresa un arreglo con las licenciaturas ligadas a la unidad.
 	* @version 1.0
 	*/
-	public function obtener_licenciatura(){
+	function obtener_licenciatura(){
 		$datos = $this -> input -> post('datos');
 		$id_unidad = $datos['unidad'];
 		$licenciatura = $this->Registro_usuario_m->obtener_licenciaturas($id_unidad);	
@@ -137,7 +137,6 @@ class Registro_usuario_c extends CI_Controller {
 	*/
 	function envio_email($id_usuario,$usuario,$email){
 		
-		$usuario=123;
 		$configuracion = $this->conf_email->configuracion_email();
 	    
 		$datos_email = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
@@ -176,9 +175,14 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/	
 	
-	public function activar_cuenta(){
+	function activar_cuenta(){
 		$id_usuario = $_GET["id_usuario"]; 
 		$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
+		if ($activacion == TRUE){
+			$this->load->view('header/head_v');
+			$this -> load -> view('Activacion_exitosa_v');
+			$this->load->view('footer/footer_v');	
+		}
 		return $activacion;
 	}
 

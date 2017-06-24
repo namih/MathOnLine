@@ -1,5 +1,42 @@
 
 /**
+ * mainContent: actualiza contenido del div principal con ajax
+ *
+ * @author Nohemí Domínguez López
+ * @return 
+ * @param 
+ * @version MathOnline V1.0
+ */
+function loadContent(ruta) {
+	$.ajax({	    
+       	url: ruta,	    
+       	data: {},
+       	type: 'POST',
+       	success: function(data){
+       		$('#section_main_content').html(data);
+	    },
+	    error: function(jqXHR, textStatus, errorThrown,data){
+             if (jqXHR.status === 0) {
+                console.log('Not connect: Verify Network.');
+                } else if (jqXHR.status == 404) {
+                    console.log('Requested page not found [404]');
+                } else if (jqXHR.status == 500) {
+                    console.log('Internal Server Error [500].');
+                } else if (textStatus === 'parsererror') {
+                    console.log('Requested JSON parse failed.');
+                } else if (textStatus === 'timeout') {
+                    console.log('Time out error.');
+                } else if (textStatus === 'abort') {
+                    console.log('Ajax request aborted.');
+                } else {
+                    console.log('Uncaught Error: ' + jqXHR.responseText);
+                }
+                console.log(data+"--Error al cargar el contenido Url: "+url);              
+            }	    
+    });
+}
+
+/**
  * login_user: recupera los datos para realizar el login del usuario
  *
  * @author Nohemí Domínguez López

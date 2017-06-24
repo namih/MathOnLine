@@ -41,7 +41,7 @@
 		 */
 		public function lista_tutoriales()
 		{
-			$tutoriales = $this->db	->SELECT('tutorial.id_tutorial, theme.theme, subtopic.subtopic, tutorial.tutorial, tutorial.status')
+			$tutoriales = $this->db	->SELECT('tutorial.id_tutorial, subtopic.id_subtopic, theme.id_theme, theme.theme, subtopic.subtopic, tutorial.tutorial, tutorial.status')
 									->FROM('tutorial')
 									->JOIN('subtopic', 'subtopic.id_subtopic = tutorial.id_subtopic')
 									->JOIN('theme', 'theme.id_theme = subtopic.id_theme')

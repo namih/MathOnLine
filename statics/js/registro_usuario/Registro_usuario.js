@@ -61,9 +61,10 @@ function seleccionar_unidad () {
 		
 		$('#carrera').empty();
 		var datos = {'unidad':unidades};
+		var url_lic = base_url + 'Registro_usuario_c/obtener_licenciatura';
 		$.ajax({
 		type:'post',
-		url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/obtener_licenciatura",
+		url: url_lic,
 		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
@@ -95,17 +96,24 @@ function seleccionar_unidad () {
 * @return TRUE cuando los strings coinciden, FALSE si los strings no coinciden. Formato: [* @return tipo comentario]
 * @version Versión actual del elemento
 */
-
 function comparar_contrasenia () {
-	var contraseña1 = document.getElementById('pwd').value;
-	var contraseña2 = document.getElementById('rpwd').value;
+	var contrasenia1 = document.getElementById('pwd').value;
+	var contrasenia2 = document.getElementById('rpwd').value;
 	
-	if (contraseña1 == contraseña2) {
-		return true;
-	} else {
+	if(contrasenia1 != ""){
+		if(contrasenia2 == contrasenia1){
+			return true;
+		}else{
+			document.getElementById('pwd').value = "";
+			document.getElementById('rpwd').value = "";
+			document.getElementById('pwd').placeholder = "Las contraseñas no coinciden";
+			document.getElementById('pwd').focus();;
+		}
+	}else{
 		return false;
-	};
+	}
 }
+
 
 /**
 * La función validar_email verifica que el correo electrónico con el que se registró el usuario
@@ -147,8 +155,15 @@ function registrar () {
   var sexo = document.getElementById('sexo').value;
   var carrera = document.getElementById('carrera').value;
   var matricula = document.getElementById('mat').value;
-  var estudia = document.getElementById('estudia').value;
-  var trabaja = document.getElementById('trabaja').value;
+  var estudia = document.getElementById('estudia').checked;
+  var trabaja = document.getElementById('trabaja').checked;
+  
+  var bandera_usuario = 1;
+  var bandera_pass = 1;
+  var bandera_email = 1;
+  var bandera_anio = 1;
+  var bandera_sexo = 1;
+  
   
   var datos ={
 		user_name:usuario,
@@ -161,7 +176,7 @@ function registrar () {
 		email:email,
 		uam_identifier:matricula,	
 		is_student:estudia,
-		is_employeed:trabaja
+		is_employed:trabaja
 	};
 	
 	var validar_pwd = comparar_contrasenia();
@@ -171,50 +186,69 @@ function registrar () {
 		var anio_vacio = document.getElementById("error_vacio_anio");
 		anio_vacio.className += " has-warning";
 		document.getElementById("error_anio").style.display= 'inline';
+		bandera_anio = 0;
 	} 
 	 if (email == '') {
 		var correo_vacio = document.getElementById("email");
 		correo_vacio.className += " has-warning";
 		document.getElementById("error_vacio_email").style.display= 'inline';
+		bandera_email = 0;
 	}
 	  if(contrasenia1 == ''){
 	 	var pwd_vacio = document.getElementById("error_pwd1");
 		pwd_vacio.className += " has-warning";
 		document.getElementById("error_vacio_pwd1").style.display= 'inline';
+		bandera_pass = 0;
 	 }
 	  if(contrasenia2 == ''){
 	 	var pwd2_vacio = document.getElementById("error_pwd2");
 		pwd2_vacio.className += " has-warning";
 		document.getElementById("error_vacio_pwd2").style.display= 'inline';
+		bandera_pass = 0;
 	 }
 	 
 	 if(usuario == ''){
 	 	var usr = document.getElementById("usuario");
 		usr.className += " has-warning";
 		document.getElementById("error_user").style.display= 'inline';
+		bandera_usuario = 0;
 	 }
-	 ;
+	 if (sexo == 0) {
+	 	var sex = document.getElementById("sex");
+		sex.className += " has-warning";
+		bandera_sexo = 0;
+	 };
 	
-	
-
-	// if (validar_pwd == true && validar_correo ==true) {
-		// $.ajax({
-		// type:'post',
-		// url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/registrar_usuario",
-		// data: {datos:datos},
-		// datatype: 'json',
-		// cache: false,
-		// success: function() {
-			// alert('success');
-		// },
-		// error: function() {
-			// alert('failure');
-		// }
-	// });
-	// } else{
-		// alert('error');
-	// };
+	if (
+		validar_pwd == true && 
+		validar_correo == true && 
+		bandera_anio == 1 &&
+		bandera_email == 1 &&
+		bandera_usuario == 1 &&
+		bandera_sexo == 1 &&
+		bandera_pass == 1) {
+		
+		var url_registro = base_url + 'Registro_usuario_c/registrar_usuario';
+		$.ajax({
+		type:'post',
+		url: url_registro,
+		data: {datos:datos},
+		datatype: 'json',
+		cache: false,
+		success: function() {
+			$('#Registro').modal('toggle');
+		},
+		error: function() {
+			alert('failure');
+		}
+	});
+	} else{
+		//return false;
+		alert(':(');
+	};
 }
+
+
 /**
 * La función registrar manda al controlador Registro_usuario_c los datos que ingresó la persona que desea registrarse
 *@author María del Carmen Chávez Conde
@@ -229,9 +263,10 @@ function validar_username() {
 	var user = document.getElementById('usr').value;
 	var datos = {user_name:user};
   	if(user != ''){
+  		var url_usuario = base_url + 'Registro_usuario_c/nombre_usuario_disponible';
   		$.ajax({
   			type:'post',
-					url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/nombre_usuario_disponible",
+					url: url_usuario,
 					data: {datos:datos},
 					datatype: 'json',
 					cache: false,
@@ -247,7 +282,7 @@ function validar_username() {
 						};
 					},
 					error: function(msj) {
-						alert('Failure: '+msj);
+						alert('Failure: '+ msj);
 					}
 				});
   			
@@ -267,18 +302,19 @@ function validar_correo () {
 	document.getElementById('correo').style.borderColor = '';
     document.getElementById("error_email").style.display= 'none';
 	
-	var user = document.getElementById('correo').value;
-	var datos = {email:user};
-  	if(user != ''){
+	var correo = document.getElementById('correo').value;
+	var datos = {email:correo};
+  	if(correo != ''){
+  		var url_correo = base_url + 'Registro_usuario_c/correo_usuario_disponible';
   		$.ajax({
   			type:'post',
-					url: "http://localhost/MathOnLine/index.php/Registro_usuario_c/correo_usuario_disponible",
+					url: url_correo,
 					data: {datos:datos},
 					datatype: 'json',
 					cache: false,
 					success: function(msj) {
 						if (msj == 'SI') {
-							document.getElementById('usr').style.borderColor = 'green';
+							document.getElementById('correo').style.borderColor = 'green';
 						} else{
 							var usuario = document.getElementById("email");
 							usuario.className += " has-error";
@@ -288,11 +324,45 @@ function validar_correo () {
 						};
 					},
 					error: function(msj) {
-						alert('Failure: '+msj);
+						alert('Failure: '+ msj);
 					}
 				});
   			
   		
   	}
 }
+ function es_numero (numero) {
+  if (!/^([0-9])*$/.test(numero)) {
+  	return false;
+  };
+}
   
+function validar_anio () {
+	var anio = document.getElementById('anio');
+	var anio_long = document.getElementById('anio').value;
+	if (anio_long.length != 4) {
+		anio.value = "";
+		document.getElementById('anio').placeholder = "0000";
+		document.getElementById('anio').focus();
+	} else {
+		var valor = es_numero(anio.value);
+		if (valor == false) {
+			anio.value = "";
+			document.getElementById('anio').placeholder = "0000";
+			document.getElementById('anio').focus();
+		};
+	};
+	  
+}  
+
+function validar_matricula () {
+	var matricula = document.getElementById('mat');
+	var valor = es_numero(matricula.value);
+		if (valor == false) {
+			matricula.value = "";
+			document.getElementById('mat').placeholder = "Sólo números";
+			document.getElementById('mat').focus();
+		};
+	
+	  
+}  

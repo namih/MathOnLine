@@ -60,6 +60,9 @@
 						</textarea>
 					</div>
 					
+					<!-- Indica una acción exitosa o positiva -->
+					<button onclick="get_text()" type="button" class="btn btn-success">Get Texto</button>
+					
 				</div>  
 			</div>
 			
@@ -74,7 +77,14 @@
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.0/js/froala_editor.pkgd.min.js"></script>
 			
 			<!-- Initialize the editor. -->
-			<script> $(function() { $('textarea').froalaEditor() }); </script>
+			<script>
+				$(function() { $('textarea').froalaEditor() }); 
+				
+				function get_text () {
+				  var passToServer = $('textarea').val();
+				  alert(passToServer);
+				}
+			</script>
  
 			<footer>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
