@@ -19,7 +19,7 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/
 	
-	public function index() {
+	function index() {
 		$this->load->view('header/head_v');
 		$datos['unidades'] = $this->lista_uam();
 		$this -> load -> view('Registro_usuario_v',$datos);
@@ -33,7 +33,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */
-		public function lista_uam(){
+	function lista_uam(){
 			$uamis = $this->Registro_usuario_m->obtener_unidades_uam();
 			return $uamis;
 		}
@@ -46,7 +46,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */	
-	public function nombre_usuario_disponible(){
+	function nombre_usuario_disponible(){
 		$username = $this->input->post('datos');
 		
 		$valida_usuario=$this->Registro_usuario_m->validar_usuario($username['user_name']);
@@ -65,7 +65,7 @@ class Registro_usuario_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */	
-	public function correo_usuario_disponible(){
+	function correo_usuario_disponible(){
 		$correo_user = $this->input->post('datos');
 		
 		$valida_correo=$this->Registro_usuario_m->validar_correo($correo_user['email']);
@@ -86,7 +86,7 @@ class Registro_usuario_c extends CI_Controller {
 	* @return id_usuario si el registro se realizo, en otro caso un msj de acuerdo si existe registro del nombre del usuario o email
 	* @version 1.0
 	*/
-	public function registrar_usuario() {
+	function registrar_usuario() {
 		
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
@@ -97,14 +97,10 @@ class Registro_usuario_c extends CI_Controller {
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-		$avatar = $this->etiquetas->type_avatar();
-		if ($registro['sex'] === 2) { 
-			$registro['id_avatar'] = $avatar['female'][array_rand($avatar['female'], 1)];
-		} else {
-			$registro['id_avatar'] = $avatar['male'][array_rand($avatar['male'], 1)];
-		}		
+		$id_avatar = $this->Registro_usuario_m->obtener_id_avatar($registro['sex']);
+		$avatar = $id_avatar [array_rand($id_avatar,1)];
+		$registro['id_avatar']=$avatar['id_avatar'];
 		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
-
 		if ($id_registro != null) {
 			return $this->envio_email($id_registro,$registro['user_name'],$registro['email']);
 		} else {
@@ -119,7 +115,7 @@ class Registro_usuario_c extends CI_Controller {
 	* @return regresa un arreglo con las licenciaturas ligadas a la unidad.
 	* @version 1.0
 	*/
-	public function obtener_licenciatura(){
+	function obtener_licenciatura(){
 		$datos = $this -> input -> post('datos');
 		$id_unidad = $datos['unidad'];
 		$licenciatura = $this->Registro_usuario_m->obtener_licenciaturas($id_unidad);	
@@ -179,9 +175,14 @@ class Registro_usuario_c extends CI_Controller {
 	* @version 1.0
 	*/	
 	
-	public function activar_cuenta(){
+	function activar_cuenta(){
 		$id_usuario = $_GET["id_usuario"]; 
 		$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
+		if ($activacion == TRUE){
+			$this->load->view('header/head_v');
+			$this -> load -> view('Activacion_exitosa_v');
+			$this->load->view('footer/footer_v');	
+		}
 		return $activacion;
 	}
 
