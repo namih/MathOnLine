@@ -97,12 +97,9 @@ class Registro_usuario_c extends CI_Controller {
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-		$avatar = $this->etiquetas->type_avatar();
-		if ($registro['sex'] === 2) { 
-			$registro['id_avatar'] = $avatar['female'][array_rand($avatar['female'], 1)];
-		} else {
-			$registro['id_avatar'] = $avatar['male'][array_rand($avatar['male'], 1)];
-		}		
+		$id_avatar = $this->Registro_usuario_m->obtener_id_avatar($registro['sex']);
+		$avatar = $id_avatar [array_rand($id_avatar,1)];
+		$registro['id_avatar']=$avatar['id_avatar'];
 		$id_registro = $this->Registro_usuario_m->registrar_usuario($registro);
 
 		if ($id_registro != null) {
