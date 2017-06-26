@@ -46,13 +46,14 @@
                   <h4 class="modal-title">Contacto</h4>
                 </div>
               </div>
+              <form action="application/controllers/enviar_correo_c.php" method="post">
               <div class="modal-body">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-lg-12">
                       <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="email-user" id="email_user" tabindex="1" class="form-control" placeholder="Correo electrónico">
+                          <input type="text" name="email-user" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico">
                           <br/>
                           <textarea type="text" class="form-control" rows="8" id="comentario" placeholder="Comentario"></textarea>
                         </div>
@@ -68,6 +69,7 @@
               <div align="center">
                 <button type="button" onclick="" class="btn btn-success">Enviar</button>
               </div>
+              </form>
             </div>      
           </div>
         </div>
