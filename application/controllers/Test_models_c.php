@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-	// error_reporting(E_ERROR);
+	error_reporting(E_ERROR);
 
 	class Test_models_c extends CI_Controller {
 			
@@ -10,6 +10,7 @@
 			$this->load->model("Home_admin_m");
 			$this->load->model("Registro_usuario_m");
 			$this->load->model("Complementary_material_m");
+			$this->load->model("Perfil_usuario_m");
 			$this->load->model("Home_m");
 			$this->load->library('email');
 			$this->load->library('encrypt');
@@ -31,34 +32,30 @@
 			date_default_timezone_set('America/Mexico_City');
 			$format = 'Y-m-d h:i:s';
 			$usuario = array(
-				'user_name' => 'Sisbyte',
+				'user_name' => 'NightlightMX',
 				'password' => $this->encrypt->encode('JiU8Lp19O0'),
 				'type_user' => 3,
-				'name' => 'Cesar',
-				'last_name' => 'Padilla',
+				'name' => 'Julio Cesar',
+				'last_name' => 'Padilla Dorantes',
 				'sex' => 1,
 				'year_birthday' => 1985,
 				'id_degree' => 36,
-				'email' =>'sisbyte@gmail.com',
+				'email' =>'nightlightmx@gmail.com',
 				'uam_identifier' => '204214807',
 				'is_student' => TRUE,
 				'is_employed' => TRUE,
 				'registration_date' => date($format)
 			);
 			
-			$avatar = $this->etiquetas->type_avatar();
+			$ids = $this->Registro_usuario_m->obtener_id_avatar($usuario['sex']);
+			
+			$avatar = $ids[array_rand($ids, 1)];
 									
-			if ($usuario['sex'] === 1) {
-				$usuario['id_avatar'] = $avatar['male'][array_rand($avatar['male'], 1)];
-			} else {
-				$usuario['id_avatar'] = $avatar['female'][array_rand($avatar['female'], 1)];
-			}
+			$usuario['id_avatar'] = $avatar['id_avatar'];
 			
 			
 			$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);				
 			echo $id_usuario;
-			echo "<br>";
-			echo $usuario['id_avatar'];
 			echo "<br>";
 			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
 			echo $activacion;
@@ -191,6 +188,16 @@
 			$this->load->view('header/head_v');
 			$this->load->view('Activacion_exitosa_v');
 			$this->load->view('footer/footer_v');
+			}
+
+		public function perfil()
+		{
+			$id_user = 2;
+			$perfil = $this->Perfil_usuario_m->datos_usuario($id_user);
+			
+			echo "<pre>";
+			print_r($perfil);
+			echo "<pre>";
 		}
 
 }
