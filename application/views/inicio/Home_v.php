@@ -104,7 +104,7 @@
           <div class="col-md-12">
             <div class="col-md-4">
              <div class="panel panel-success tema_footer"  align="center">
-                <div class="panel-heading">Pregunta de la semana</div>
+                <div class="panel-heading"><b>Pregunta de la semana</b></div>
                 <div class="panel-body">
                   ¿Para ser genio hay que estar loco?<br><br>
                   Pues sí. La evidencia científica vincula a los maniaco-depresivos y bipolares con la creatividad y un alto coeficiente intelectual. Un estudio realizado por expertos del Instituto de Psiquiatría de King`s College de Londres y el Instituto Karolinska en Estocolmo concluye que los estudiantes con... <a href="#">Ver mas</a>
@@ -113,18 +113,27 @@
             </div>
             <div class="col-md-4">
              <div class="panel panel-success tema_footer"  align="center">
-                <div class="panel-heading">Que es mate en linea?</div>
+                <div class="panel-heading"><b>¿Qué es Mate en Línea?</b></div>
                 <div class="panel-body">
-                  <p>Y, viéndole don Quijote de aquella manera, con muestras de tanta tristeza, le dijo: Sábete, Sancho, que no es un hombre más que otro si no hace más que otro.<br><br>
+                  <p align="justify"> 
+                    Es una plataforma electrónica diseñada para apoyarte en los temas de <b>números, álgebra, geometría/trigonometría y geometría analítica</b>, que te ayudará a elevar tu nivel de competencia, ahora que inicias una carrera universitaria.<br><br>
 
-                  Todas estas borrascas que nos suceden son señales de que presto ha de serenar el tiempo y han de sucedernos bien las cosas; porque no es posible que el mal ni el bien sean durables, y de aquí se sigue que, habiendo durado mucho el mal, el bien está ya cerca.<br>
+                    En esencia, te ofrece <b>tutoriales y pruebas de evaluación</b> para que los tomes a tu ritmo y de la manera que juzgues más conveniente. Nadie supervisa tu desempeño. Nadie revisa tus resultados. Eres tú, exclusivamente tú, el o la que sabe cuánto has recorrido y qué resultados has obtenido.<br><br>
+
+                    <b>Mate en Línea</b> también tiene otras secciones, como son <b>tema del mes</b>, la <b>pregunta semanal</b>, <b>material complementario</b>, diseñadas para que tu participación en el portal sea divertida y obtengas el mayor provecho.<br><br>
+
+                    Los <b>tutoriales</b> son cortos para que repases aquellos temas de matemáticas acerca de los cuales tengas dudas. Puedes cursar estos <b>tutoriales</b> tantas veces como lo desees, resolviendo distintos ejercicios hasta que te sientas seguro.<br><br> 
+
+                    Una vez que domines uno de los temas, puedes tomar las <b>pruebas de evaluación</b>, que son pruebas de 15 preguntas, siempre distintas, cuyo resultado únicamente tú conocerás. Las puedes tomar cuantas veces lo desees y te van a servir para ver cómo está tu nivel de matemáticas comparado con el resto de la población UAM.<br><br>
+
+                     Dentro de <b>Mate en Línea</b> existen ligas en las cuales iras accediendo en cuanto vayas avanzando dentro de los <b>tutoriales y pruebas de evaluación</b>. Estas ligas se verán reflejadas en tu perfil adornando tu avatar de usuario con uno de los siguientes emblemas:<br><br>
                   </p>
                 </div>
               </div>               
             </div>            
             <div class="col-md-4">
              <div class="panel panel-success tema_footer"  align="center">
-                <div class="panel-heading">Calendario escolar</div>
+                <div class="panel-heading"><b>Calendario escolar</b></div>
                 <div class="panel-body">
                   <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0">
                     <img class="calendario img-responsive" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM" title="Calendario escolar UAM" align="absmiddle">

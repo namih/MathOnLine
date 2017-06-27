@@ -86,9 +86,8 @@
           </div>
           <div class="col-sm-4 col-md-4">
             <div style="margin-left: 20px;">
-              <label>@2017 División de CBI UAM-I Todos los derechos reservados<br> Contactanos 
-              	<a href="#" data-toggle="modal" data-target="#contacto"> 
-              		<span class="glyphicon glyphicon-envelope"></span> </a> 
+              <label>@2017 División de CBI UAM-I Todos los derechos reservados<br>  
+              	<a href="#" data-toggle="modal" data-target="#contacto" style="text-decoration: none; color: #000000;"><i class="fa fa-envelope" aria-hidden="true"></i> Contactanos</a> 
               </label>
             </div>
           </div>
