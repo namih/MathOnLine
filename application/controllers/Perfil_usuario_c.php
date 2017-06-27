@@ -6,6 +6,7 @@
     public function __construct()
     {
 		parent::__construct();
+		$this->load->model('Perfil_usuario_m');
     }
 	public function perfil_usuario($id_user = null)
 	{
