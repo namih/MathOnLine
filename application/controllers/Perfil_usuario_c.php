@@ -10,7 +10,7 @@
     }
 	public function perfil_usuario($id_user = null)
 	{
-		if ($id_usuario != null){
+		if ($id_user != null){
 			$perfil = $this->Perfil_usuario_m->datos_usuario($id_user);
 			return $perfil;
 		} else {
