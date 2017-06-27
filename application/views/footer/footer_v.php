@@ -27,8 +27,9 @@
                   </div>                  
                 </div>
               </div>
+              <div align="center" id="error_recover_pass"></div>
               <div align="center">
-                <button type="button" onclick="recover_pass();" class="btn btn-success">Enviar contraseña</button>
+                <button type="button" onclick="recover_pass();" class="btn btn-success">Enviar contraseña</button><br><br>
               </div>
             </div>      
           </div>
