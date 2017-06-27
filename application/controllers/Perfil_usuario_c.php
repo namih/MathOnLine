@@ -11,9 +11,10 @@
 	{
 		if ($id_usuario != null){
 			$perfil = $this->Perfil_usuario_m->datos_usuario($id_user);
+			return $perfil;
+		} else {
+			return false;
 		}
-		
-		else{ return false;}
 	}
     }
 ?>
