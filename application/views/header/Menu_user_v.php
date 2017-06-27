@@ -20,7 +20,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"> </span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#" onclick="loadContent('<?php echo base_url(); ?>Home_student_c/perfil_usuario/<?php echo $user_log[0]['id_user']; ?>');"><span class="glyphicon glyphicon-user"> </span> Consultar perfil</a></li>
+                  <li><a href="#" onclick="loadContent('<?php echo base_url(); ?>Perfil_usuario_c/Perfil_usuario/<?php echo $user_log[0]['id_user']; ?>');"><span class="glyphicon glyphicon-user"> </span> Consultar perfil</a></li>
                   <li><a href="<?php echo base_url();?>/logout"><span class="glyphicon glyphicon-log-in"> </span> Cerrar sesión</a></li>
                 </ul>
               </li>
