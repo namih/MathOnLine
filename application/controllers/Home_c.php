@@ -33,23 +33,25 @@ class Home_c extends CI_Controller
                 $error_recover_pass = "El correo electronico no esta registrado";
                 echo $error_recover_pass;
             }else{
+                echo "entro";
                 $user["password"] = $this->decode_pass($user["password"]);
                 //$email = $this->send_email($email, $user);
                 $datos_email = array(
                     "user_name" => $user["user_name"],
                     "password" => $user["password"]
                 );
-                $this->email->from('Bienvenido a matematicas .....');
+                $configuracion = $this->conf_email->configuracion_email();
+                $this->email->initialize($configuracion);
+                $this->email->from('Recuperacion de contraseña');
                 $this->email->to($email);
                 $this->email->subject('Activacion de la cuenta Mathonline');
-                $this->email->message($this -> load -> view('/email/recovery_password',$datos_email,TRUE)); //$datos enviar a vista
-
+                $this->email->message($this->load->view('/email/recovery_password',$datos_email,TRUE)); //$datos enviar a vista
                 if($this->email->send()){
-                   return TRUE;
                     echo "Su informacion fue enviada a su correo";
+                    return TRUE;
                 }else{
-                    return FALSE;
                     echo "No se a enviado el email, intente mas tarde";
+                    return FALSE;
                 }
             }
         }
@@ -188,7 +190,11 @@ class Home_c extends CI_Controller
                 $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
 
 
-                $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
+                if(count($themes_student)>0){
+                    $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
+                }else{
+                    $ket_tutorial_studen = null;
+                }
                 $concluido = 0;
 
                 if(is_int($ket_tutorial_studen)){
