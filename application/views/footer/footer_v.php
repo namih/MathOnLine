@@ -68,7 +68,7 @@
                 </div>
               </div>
               <div align="center">
-                <button type="button" onclick="" class="btn btn-success">Enviar</button>
+                <button type="button" onclick="enviar_contacto()" class="btn btn-success">Enviar</button>
               </div>
               </form>
             </div>      
@@ -100,5 +100,6 @@
         </div>
       </footer>
       <script src="<?php echo base_url() ?>statics/js/home.js"></script>
+      <script src="<?php echo base_url() ?>statics/js/contacto.js"></script>
   </body>
 </html> 
