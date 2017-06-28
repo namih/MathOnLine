@@ -1,4 +1,4 @@
-<?php //echo '<pre>'; print_r($user_log); ?>
+<?php echo '<pre>'; print_r($perfil); ?>
 	  <div class="col-md-10 col-md-offset-1">
 	    <div class="panel panel-success"  align="center">
 	      <div class="panel-heading">Mi perfil</div>
