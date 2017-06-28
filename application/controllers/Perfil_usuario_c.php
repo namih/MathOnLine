@@ -11,9 +11,9 @@
 	public function Perfil_usuario($id_user = null)
 	{
 		if ($id_user != null){
-			$datos['perfil'] = $this->Perfil_usuario_m->datos_usuario($id_user);
+			$datos['user_log'] = $this->Perfil_usuario_m->datos_usuario($id_user);
 		} else {
-			$datos['perfil']= false;
+			$datos['user_log']= false;
 		}
 
 		$this->load->view('usuarios/Perfil_v', $datos);
