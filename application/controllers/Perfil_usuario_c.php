@@ -8,21 +8,15 @@
 		parent::__construct();
 		$this->load->model('Perfil_usuario_m');
     }
-	public function perfil_usuario($id_user = null){
-
-		$datos=array();
+	public function perfil_usuario($id_user = null)
+	{
 		if ($id_user != null){
 			$perfil = $this->Perfil_usuario_m->datos_usuario($id_user);
-			$datos['user_log']=$perfil;/*Aqui solo los datos del usuario, la lista de avatares disponibles que sea separada por favor*/
+			return $perfil;
 		} else {
-			$datos['user_log']= false;
+			return false;
 		}
-
-		$datos['avatar_list'] = array();/*Aqui colocar lo que regrese la consulta de avatares de acuerdo al genero del usuario logueado*/
-
-		$this->load->view('usuarios/Perfil_v', $datos);/* lo que se regresa debe ser la vista no el arreglo con los datos*/
+		
 	}
-
-
-}/* END controller*/
+    }
 ?>
