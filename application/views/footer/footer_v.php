@@ -16,7 +16,7 @@
                     <div class="col-lg-12">
                       <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="email-user" id="email_user" tabindex="1" class="form-control" placeholder="email del usuario">
+                          <input type="text" name="email-user" id="email_user" tabindex="1" class="form-control" placeholder="Email del usuario">
                         </div>
                       </form>
                     </div>
@@ -27,8 +27,9 @@
                   </div>                  
                 </div>
               </div>
+              <div align="center" id="error_recover_pass"></div>
               <div align="center">
-                <button type="button" onclick="recover_pass();" class="btn btn-success">Enviar contraseña</button>
+                <button type="button" onclick="recover_pass();" class="btn btn-success">Enviar contraseña</button><br><br>
               </div>
             </div>      
           </div>
@@ -67,7 +68,7 @@
                 </div>
               </div>
               <div align="center">
-                <button type="button" onclick="" class="btn btn-success">Enviar</button>
+                <button type="button" onclick="enviar_contacto()" class="btn btn-success">Enviar</button>
               </div>
               </form>
             </div>      
@@ -85,9 +86,8 @@
           </div>
           <div class="col-sm-4 col-md-4">
             <div style="margin-left: 20px;">
-              <label>@2017 División de CBI UAM-I Todos los derechos reservados<br> Contactanos 
-              	<a href="#" data-toggle="modal" data-target="#contacto"> 
-              		<span class="glyphicon glyphicon-envelope"></span> </a> 
+              <label>@2017 División de CBI UAM-I Todos los derechos reservados<br>  
+              	<a href="#" data-toggle="modal" data-target="#contacto" style="text-decoration: none; color: #000000;"><i class="fa fa-envelope" aria-hidden="true"></i> Contactanos</a> 
               </label>
             </div>
           </div>
@@ -100,5 +100,6 @@
         </div>
       </footer>
       <script src="<?php echo base_url() ?>statics/js/home.js"></script>
+      <script src="<?php echo base_url() ?>statics/js/contacto.js"></script>
   </body>
 </html> 

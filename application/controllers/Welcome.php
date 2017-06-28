@@ -31,9 +31,9 @@ class Welcome extends CI_Controller {
 		$themes = $this->get_theme_month();
         $datos['themes'] = $themes;
         
-		$this->load->view('header/Head_v');
+		$this->load->view('header/head_v');
 		$this->load->view('inicio/Home_v', $datos);
-		$this->load->view('footer/Footer_v');
+		$this->load->view('footer/footer_v');
 	}
 
 

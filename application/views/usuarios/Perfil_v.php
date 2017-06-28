@@ -43,8 +43,8 @@
 	        </div><br>
 	        <div class="col-md-12" id="avatares" style="display: none">
 	        	<hr>
-	          <?php if(isset($avatar) && $avatar!=false){
-	            foreach ($avatar as $key => $value) { ?>
+	          <?php if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){
+	            foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
 	              <div class="col-md-1" align="center"><br>
 	                <input type="radio" name="avatar" value="<?php echo $key; ?>" class="avatar" /><img id="img_avatar_<?php echo $key; ?>" class="img-responsive" src="<?php echo base_url().$value['location']; ?>"/>
 	                <label><?php echo $value['name']; ?></label>

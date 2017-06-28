@@ -117,9 +117,9 @@ function recover_pass(){
 	       	type: 'POST',
 	       	success: function(data){
 	       		msjError=data;
-				msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
+				msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban fa-2x"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
 				msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
-				$("#error_valid_form").html(msjSuccess);	       		
+				$("#error_recover_pass").html(msjSuccess);	       		
 		    },
 		    error: function(jqXHR, textStatus, errorThrown,data){
 	             if (jqXHR.status === 0) {
@@ -144,7 +144,7 @@ function recover_pass(){
 		msjError="Debe ingresar un correo válido.";
 		msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
 		msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
-		$("#error_valid_form").html(msjSuccess);
+		$("#error_recover_pass").html(msjSuccess);
 	}
 	
 
@@ -171,17 +171,52 @@ function validarEmail( email ) {
 
 
 $('form').on('submit',function(e){
-    e.preventDefault();
+	e.preventDefault();
     $.ajax({
         type     : "POST",
         cache    : false,
         url      : $(this).attr('action'),
         data     : $(this).serialize(),
         success  : function(data) {
-        	if(data == 1){
+       		if(Number(data)==1){
         		$(location).attr('href', 'home_c/goHomeUser');
-        	}
-        }
-    });
+          	}else{
+				var username_user = $('#username_user').val().trim();
+				var password_user = $('#password_user').val().trim();
+				var msjerror='';
+				var msjSuccess='';
 
+				if(username_user!='' && password_user!=''){
+	        	   	msjError=data;
+				    msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
+				    msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
+				    $("#error_valid_form").html(msjSuccess);
+				}else{
+					msjError="Debe ingresar un usuario y contraseña.";
+					msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-ban"></i><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>'+msjError+'</div>';
+					msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);</script>';
+					$("#error_valid_form").html(msjSuccess);
+				}	
+        	}
+
+        },
+	    error: function(jqXHR, textStatus, errorThrown,data){
+             if (jqXHR.status === 0) {
+                console.log('Not connect: Verify Network.');
+                } else if (jqXHR.status == 404) {
+                    console.log('Requested page not found [404]');
+                } else if (jqXHR.status == 500) {
+                    console.log('Internal Server Error [500].');
+                } else if (textStatus === 'parsererror') {
+                    console.log('Requested JSON parse failed.');
+                } else if (textStatus === 'timeout') {
+                    console.log('Time out error.');
+                } else if (textStatus === 'abort') {
+                    console.log('Ajax request aborted.');
+                } else {
+                    console.log('Uncaught Error: ' + jqXHR.responseText);
+                }
+                    console.log(data+"--Error al cargar el contenido Url: "+url);              
+            }
+    });
 });

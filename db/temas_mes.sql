@@ -16,7 +16,7 @@ VALUES
 Según Plinio, "al reconstruir el intercambio de mensajes durante el atentado, nuestro sistema obtuvo los nombres de tres posibles sospechosos, uno de los cuales resultó ser el autor intelectual de los ataques, según la investigación oficial". El algoritmo también se puede emplear para encontrar la fuente primaria de una enfermedad infecciosa, como el cólera. En ese caso, los investigadores usaron la modelización de redes fluviales y redes de transporte humano para hallar el lugar donde aparecieron los primeros casos de infección.
 El método también sería útil para responder a ataques terroristas, como el ataque con gas sarín en 1995, en el metro de Tokio, en el que el gas venenoso en los túneles subterráneos de la ciudad mató a 13 personas, e hirió a cerca de 1.000. "Nuestro algoritmo no necesitaría detectores en todas las estaciones, ya que una muestra sería suficiente para identificar rápidamente el origen del ataque", señala Pinto.
 Además, con este método se puede encontrar la fuente de todo tipo de rumores que circulan en una red, con un número limitado de miembros de dicha red. Así, suponiendo que alguien encuentra un rumor acerca de sí mismo, que se ha propagado en Facebook, y que se ha enviado a 500 personas, a sus amigos o, incluso, a amigos de sus amigos, se podría encontrar a la persona que inició el rumor. Este método también puede utilizarse para identificar el origen de un mensaje de spam, o de un virus de ordenador, utilizando solo un número limitado de sensores dentro de la red.',
-'/statics/tema_mes/imagen_1.png',
+'/statics/img/tema_mes/enero.jpg',
 NULL,
 1);
 
@@ -40,7 +40,7 @@ Con su inmensa fortuna dejó la orden en su testamento de premiar a las personas
 Cada año se otorga este premio para las categorías de física, química, medicina, economía, literatura y paz. A los galardonados los elige un selecto comité formado por personalidades y organizaciones de prestigio, que tras realizar una exclusiva criba entre cientos de candidatos propuestos también por diferentes organizaciones, deciden quienes son los que más han contribuido el año anterior en cada área.
 Desde 1901 se llevan otorgando estos galardones, pero los matemáticos no trabajan sin reconocimiento, de eso se encargó John C. Fields. El canadiense puso el dinero para que esta disciplina obtuviera su merecido prestigio. Esta tarea la empezó en 1936 otorgando dos medallas, que posteriormente pasaron a ser cuatro.
 Se entregan cada cuatro años de forma que coincidan con los congresos internacionales de matemáticas, dónde se da a conocer el nombre de los afortunados. El único requisito que deben de tener estos genios aspirantes al premio es ser menor de 40 años a día 1 de enero del año del congreso. Quién decide en este caso quienes son los merecedores del premio es la Unión Internacional de Matemáticas.',
-'/statics/tema_mes/imagen_2.png',
+'/statics/img/tema_mes/febrero.jpg',
 NULL,
 1);
 
@@ -62,7 +62,7 @@ VALUES
 A lo largo del día los seguidores del número Pi se reunirán para comentar anécdotas en torno a este número e intercambiarse postales y tartas conmemorativas. Se han desarrollado aplicaciones informáticas que calculan con exactitud la edad de una persona en años Pi y otras personas se reúnen para recitar todos los dígitos que se saben de memoria. Además, debido a que las primeras seis cifras de la constante son 3,14159, el momento álgido de la celebración se produce a la 1:59 horas.
 La Cámara de Representantes de Estados Unidos aprobó en el año 2009 la celebración del día de Pi e instó a que colegios e institutos realicen actividades y animen a sus alumnos a estudiar matemáticas.
 Otro día señalado en el calendario de los amantes de las matemáticas y del número Pi es el 22 de julio de cada año. La fracción 22/7 tiene como resultado 3,142857... un número muy cercano al valor real de pi. Es por ello que cada 22 de julio se celebre el "Día de Aproximación a Pi".',
-'/statics/tema_mes/imagen_3.png',
+'/statics/img/tema_mes/marzo.jpg',
 NULL,
 1);
 
@@ -87,7 +87,7 @@ Además, la eterna rivalidad de los Sith y Jedi también ofrece sus estadística
 “Para poner un poco de orden en este bosque masivo de datos, hemos basado nuestro enfoque en el análisis de redes. En otras palabras, todas las conexiones que tiene un personaje con el resto de ellos. Usando estas referencias cruzadas, hemos sido capaces de determinar con precisión el período de tiempo del personaje casi sin excepción, a pesar de que esta información no se proporciona directamente en los libros o las películas”, afirma Xavier Bresson, coautor del estudio.
 El logro de este programa informático es que traza conexiones en la masa de datos no organizados disponibles en Internet y los algoritmos desarrollados por los investigadores de LTS2 ofrecen datos muy precisos que pueden ser cuantificados, ordenados y, por supuesto, sencillos de leer.
 Según los expertos, “este método podría ser útil para llenar los vacíos de conocimiento que permanecen en la investigación histórica y sociológica y en numerosos campos científicos también”.',
-'/statics/tema_mes/imagen_4.png',
+'/statics/img/tema_mes/abril.jpg',
 NULL,
 1);
 
@@ -113,7 +113,7 @@ Contar con los dedos, no comprender cómo resolver problemas aritméticos, no re
 4. Controla la ansiedad ante las matemáticas: Según relatan Sharifah N. S. Wahid y sus colaboradores (2014), el rendimiento matemático de un grupo de estudiantes universitarios era menor cuanto mayor era su nivel de ansiedad ante las matemáticas. Los autores destacan la importancia de motivar a los estudiantes y desarrollar su autoconfianza en relación a esta materia.
 5. Juega al ajedrez: Parece ser, según una reciente revisión científica publicada en Frontiers in Psychology (2014) que jugar al ajedrez podría ser una buena forma de estimular algunas de esas funciones mentales que también se ponen en marcha en las tareas matemáticas, como la comprensión, la capacidad de análisis o el razonamiento inductivo.
 Sabemos que no es fácil pero también que no es imposible ser mejor en matemáticas, así que ponte en marcha y sobre todo, no pierdas los nervios en el camino.',
-'/statics/tema_mes/imagen_5.png',
+'/statics/img/tema_mes/mayo.jpg',
 NULL,
 1);
 
@@ -142,7 +142,7 @@ VALUES
 8. El número de teclas de función de la mayoría de los teclados de ordenador es 12 (F1 a F12).
 9. El escritor norteamericano F. Emerson Andrews fundó el 5 de abril de 1944 The Duodecimal Society con el objetivo de investigar y educar "en la ciencia matemática, con especial dedicación al uso de la Base Doce de numeración, en matemáticas, pesos y medidas". En su publicación periódica, bautizada como The Duodecimal Bulletin, difundían las virtudes de este sistema de numeración.
 10. Un total de 12 astronautas han caminado hasta ahora sobre la Luna. Los primeros pisaron el satélite en 1969 y los últimos astronautas pusieron un pie en la superficie lunar en 1972. Todos ellos formaron parte de alguna de las seis misiones Apolo de la NASA.',
-'/statics/tema_mes/imagen_6.png',
+'/statics/img/tema_mes/junio.jpg',
 NULL,
 1);
 
@@ -163,7 +163,7 @@ VALUES
 'Los cambios en la concentración de calcio dentro de los espermatozoides controlan a qué velocidad baten estas células sus colas (flagelos) para navegar en dirección al óvulo, su destino final. Y estos cambios en los niveles de calcio se producen, precisamente, cuando los óvulos secretan determinadas sustancias. Científicos del Instituto Max Planck de Alemania, con la participación del investigador español Luis Álvarez, acaban de demostrar que durante este proceso los espermatozoides realizan cálculos muy complejos, que implican "medir las tasas de cambio a lo largo del tiempo, es decir, cómo de rápido o de lento cambia la concentración de calcio que entra en la célula". Expresado en lenguaje matemático, podría decirse que los espermatozoides no miden valores absolutos, sino que calculan la derivada temporal de la concentración de calcio.
 La investigación se ha centrado en analizar espermatozoides de diferentes especies marinas usando luz láser estroboscópica -similar a la que se utiliza en las discotecas-. Sin embargo, los científicos sospechan que el esperma de otras especies, incluidos los seres humanos, podría comportarse de la misma manera.
 Además, ahora que se ha demostrado que "no hace falta todo un cerebro para hacer operaciones matemáticas", es posible que la extraordinaria capacidad de cálculo detectada en los espermatozoides se aplique a otros mensajeros químicos intracelulares que controlan diferentes funciones vitales en distintas células del organismo. "Esto es solo el principio", adelantan los autores de la investigación.',
-'/statics/tema_mes/imagen_7.png',
+'/statics/img/tema_mes/julio.jpg',
 NULL,
 1);
 
@@ -184,7 +184,7 @@ VALUES
 '¿Por qué rompen las parejas a pesar de prometerse amor eterno? José Manuel Rey, profesor del Departamento de Análisis Económico de la Universidad Complutense de Madrid, ha elaborado un modelo matemático basado en la segunda ley de la termodinámica y en las ecuaciones de control óptimo utilizadas habitualmente por los ingenieros de la NASA para explicar por qué se terminan las relaciones sentimentales.
 Los expertos están de acuerdo en la existencia de una especie de la segunda ley de la termodinámica de las relaciones de pareja, según la cual hace falta un cierto esfuerzo para mantenerse juntos, según explica Rey en un artículo publicado en la revista PLos One. Según sus resultados, mantener el amor a largo plazo "es algo muy costoso y, con excepciones, casi imposible". "El dicho popular de que el amor no es suficiente se cumple y sugiere que la "erosión" de las relaciones debe prevenirse de algún modo".
 Las relaciones duraderas son aquellas en las que se mantiene el equilibrio, de modo que ambos miembros se esfuerzan, sin descuidar en ningún momento la relación a pesar de que ?la dinámica de las cosas, la inercia, hace que uno tienda a relajarse y a esforzarse cada vez menos?. Además, según el investigador, el esfuerzo es siempre mayor del que uno puede prever al principio de la relación. Eso explica lo que él llama la "paradoja del fracaso", es decir, por qué muchas personas se casan enamoradas y comprometidas a vivir juntas para siempre pero no lo consiguen. El modelo matemático es bastante desalentador, "especialmente si lo aplicamos a la sociedad en la que vivimos, en la que prevalecen las políticas de poco esfuerzo y mucha recompensa", concluye Rey.',
-'/statics/tema_mes/imagen_8.png',
+'/statics/img/tema_mes/agosto.jpg',
 NULL,
 1);
 
@@ -205,7 +205,7 @@ VALUES
 'Un número narcisista es aquel que es igual a la suma de cada uno de sus dígitos elevados a la "n" potencia (donde "n" es el número de cifras del número). La metáfora de su nombre alude a lo mucho que parecen "quererse a sí mismos" estas cifras. Por ejemplo, el 153 es un número narcisista puesto que 13 + 53 + 33 = 1 + 125 + 27 = 153. Los primeros números narcisistas son: 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208, 9474 y 54748.
 El número narcisista más grande que se conoce se obtiene elevando cada uno de sus dígitos a la potencia 39 y sumando los resultados: 115.132.219.018.763.992.565.095.597.973.971.522.401.
 Por cierto, que el número narcisista 153 tiene más particularidades, por ejemplo que el binario que corresponde a 153 es el capicúa 10011001.',
-'/statics/tema_mes/imagen_9.png',
+'/statics/img/tema_mes/septiembre.jpg',
 NULL,
 1);
 
@@ -228,7 +228,7 @@ El estudio, publicado en la revista Plos One, destaca que el fútbol, a diferenc
 A partir de esta técnica, los investigadores desarrollaron un software que permite registrar pases acertados, así como las combinaciones de pases que terminan con un disparo a la portería, independientemente de si su resultado es un gol o no. "Un gol no es sólo cuestión de la técnica, sino también de suerte", ha explicado Amaral, al tiempo que ha aclarado que, como resultado final, el programa calcula el nivel de profesionalidad tanto de todo el equipo como de cada uno de sus jugadores.
 Analizando de esta forma los partidos de la Copa de Europa 2008, los científicos elaboraron una clasificación de las selecciones que coincidió con el resultado del torneo. Amaral quiere utilizar ahora su algoritmo para evaluar la actuación de los equipos nacionales en el Mundial de Fútbol que se disputa estos días en Sudáfrica.
 El algoritmo desarrollado también permite analizar el trabajo en equipo en otros ámbitos, como la investigación, la creatividad artística o la actividad empresarial.',
-'/statics/tema_mes/imagen_10.png',
+'/statics/img/tema_mes/octubre.jpg',
 NULL,
 1);
 
@@ -248,7 +248,7 @@ VALUES
 'Los números pueden cambiar tu vida',
 'En Los números pueden cambiar tu vida (Ediciones B, 19 Euros), Graham Tattersall ha rescatado las matemáticas de las aulas y las ha utilizado para explicar (y cuantificar) algunos de los misterios cotidianos: cuán rico es tu vocabulario, si los muertos superan a los vivos en número, cuán fuerte es una mosca o con qué rapidez se mueve una flatulencia, entre otros ejemplos.
 Todo esto explicado de tal modo que el lector podrá ejercitar el cerebro y, a la vez, impresionar a sus amigos. Y es que según Tattersall, la fórmula "matemáticas + vida = felicidad" realmente funciona.',
-'/statics/tema_mes/imagen_11.png',
+'/statics/img/tema_mes/noviembre.jpg',
 NULL,
 1);
 
@@ -268,6 +268,6 @@ VALUES
 '¿Existe una fórmula matemática para el árbol de Navidad perfecto?',
 'Sí, según acaban de demostrar estudiantes de la Universidad de Sheffield (Reino Unido), que han desarrollado una calculadora que estima en base a cuatro fórmulas matemáticas cuántas bolas, espumillón y luces se necesitan para decorar de manera óptima el árbol de Navidad. Así, por ejemplo, el número de bolas que deberían adornar un árbol de 180 centímetros de altura sería 37, a lo que se sumarían 565 centímetros de luces navideñas y 919 centímetros de espumillón. En cuanto al tamaño que debería tener la estrella que lo corona, se calcula dividiendo la altura del árbol en centímetros por 10.
 "Esperamos que nuestras fórmulas permitan que la Navidad sea más fácil para todos", aseguran sus creadores. Además de para uso doméstico, la aplicacion también permite calcular la decoración que requieren los grandes árboles navideños que se colocan en las plazas de las ciudades en estas fechas. Por ejemplo, el de la Plaza Trafalgar (Londres), con 21 metros de altura, necesitaría 433 bolas para lucir "perfecto".',
-'/statics/tema_mes/imagen_12.png',
+'/statics/img/tema_mes/diciembre.jpg',
 NULL,
 1);
