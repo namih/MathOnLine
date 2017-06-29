@@ -33,26 +33,25 @@ class Home_c extends CI_Controller
                 $error_recover_pass = "El correo electronico no esta registrado";
                 echo $error_recover_pass;
             }else{
-                echo "entro";
-                $user["password"] = $this->decode_pass($user["password"]);
-                //$email = $this->send_email($email, $user);
+            	$user["password"] = $this->decode_pass($user["password"]);
+               
                 $datos_email = array(
                     "user_name" => $user["user_name"],
                     "password" => $user["password"]
                 );
                 $configuracion = $this->conf_email->configuracion_email();
                 $this->email->initialize($configuracion);
-                $this->email->from('Recuperacion de contraseña');
+                
+                $this->email->from('Mate en Linea');
                 $this->email->to($email);
-                $this->email->subject('Activacion de la cuenta Mathonline');
-                $this->email->message($this->load->view('/email/recovery_password',$datos_email,TRUE)); //$datos enviar a vista
-                if($this->email->send()){
-                    echo "Su informacion fue enviada a su correo";
-                    return TRUE;
-                }else{
-                    echo "No se a enviado el email, intente mas tarde";
-                    return FALSE;
-                }
+                $this->email->subject('Recuperar password');
+                $this->email->message($this->load->view('/email/recovery_password',$datos_email,TRUE));
+                
+                if($this->email->send()) {
+                	echo '  Su informacion fue enviada a su correo';
+				} else {
+					echo '  No se a enviado el email, intente mas tarde';
+				}
             }
         }
         return;
