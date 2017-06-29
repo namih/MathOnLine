@@ -97,6 +97,13 @@ function seleccionar_unidad () {
 * @version Versión actual del elemento
 */
 function comparar_contrasenia () {
+	document.getElementById("error_vacio_pwd1").style.display= 'none';
+	document.getElementById("error_vacio_pwd2").style.display= 'none';
+	var pass1 = document.getElementById("error_pwd1");
+	pass1.classList.remove("has-warning");
+	var pass2 = document.getElementById("error_pwd2");
+	pass2.classList.remove("has-warning");
+	
 	var contrasenia1 = document.getElementById('pwd').value;
 	var contrasenia2 = document.getElementById('rpwd').value;
 	
@@ -157,6 +164,10 @@ function registrar () {
   var matricula = document.getElementById('mat').value;
   var estudia = document.getElementById('estudia').checked;
   var trabaja = document.getElementById('trabaja').checked;
+  var unidad = document.getElementById('uam').value;
+  if (unidad == 0) {
+  	carrera = 1;
+  } else{};
   
   var bandera_usuario = 1;
   var bandera_pass = 1;
@@ -189,7 +200,7 @@ function registrar () {
 		bandera_anio = 0;
 	} 
 	 if (email == '') {
-		var correo_vacio = document.getElementById("email");
+	 	var correo_vacio = document.getElementById("email");
 		correo_vacio.className += " has-warning";
 		document.getElementById("error_vacio_email").style.display= 'inline';
 		bandera_email = 0;
@@ -243,8 +254,8 @@ function registrar () {
 		}
 	});
 	} else{
-		//return false;
-		alert(':(');
+		return false;
+		
 	};
 }
 
@@ -273,6 +284,7 @@ function validar_username() {
 					success: function(msj) {
 						if (msj == 'SI') {
 							document.getElementById('usr').style.borderColor = 'green';
+							document.getElementById("error_user").style.display= 'none';
 						} else{
 							var usuario = document.getElementById("usuario");
 							usuario.className += " has-error";
@@ -315,6 +327,7 @@ function validar_correo () {
 					success: function(msj) {
 						if (msj == 'SI') {
 							document.getElementById('correo').style.borderColor = 'green';
+							document.getElementById("error_vacio_email").style.display= 'none';
 						} else{
 							var usuario = document.getElementById("email");
 							usuario.className += " has-error";
@@ -338,7 +351,10 @@ function validar_correo () {
 }
   
 function validar_anio () {
+	document.getElementById("error_anio").style.display= 'none';
+	var anio_error = document.getElementById('error_vacio_anio');
 	var anio = document.getElementById('anio');
+	anio_error.classList.remove("has-warning");
 	var anio_long = document.getElementById('anio').value;
 	if (anio_long.length != 4) {
 		anio.value = "";
@@ -366,3 +382,9 @@ function validar_matricula () {
 	
 	  
 }  
+
+function validar_sex () {
+  
+	var sex_error = document.getElementById('sex');
+	sex_error.classList.remove("has-warning");
+}

@@ -62,7 +62,7 @@
 
 		</div>
 		<div class="form-group has-feedback col-md-6 col-xs-12" id="sex">
-					<select class="form-control" id="sexo">
+					<select onblur="validar_sex()" class="form-control" id="sexo">
 						<option value="0">Sexo*</option>
 						<option value="1">Hombre</option>
 						<option value="2">Mujer</option>
