@@ -26,6 +26,28 @@
 		}
 		
 		/**
+		 * Obtiene los identificadores de los avatares Masculinos
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array Arreglo con los id's de los avatares, FALSE si no existe ningun registro
+		 * @param NA
+		 * @version 1.0
+		 */
+		public function obtener_id_avatar($genero = NULL)
+		{
+			if ($genero != NULL) {
+				$avatar = $this->db->SELECT('id_avatar')->FROM('avatar')->WHERE('gender', $genero)->GET();
+				if (!empty($avatar)) {
+					return $avatar->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
 		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
@@ -59,7 +81,7 @@
 		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
 		 * @version 1.0
 		 */
-		public function registrar_usuario($usuario = NULL)
+		public function registrar_consejo($usuario = NULL)
 		{
 			if ($usuario != NULL) {
 				$this->db->SET($this->_setUsuario($usuario))->INSERT('user');
@@ -170,6 +192,9 @@
 			if (isset($usuario['type_user'])) {
 				$set_usuario['type_user'] = $usuario['type_user'];
 			};
+			if (isset($usuario['id_avatar'])) {
+				$set_usuario['id_avatar'] = $usuario['id_avatar'];
+			};
 			if (isset($usuario['name'])) {
 				$set_usuario['name'] = $usuario['name'];
 			};
@@ -179,16 +204,33 @@
 			if (isset($usuario['email'])) {
 				$set_usuario['email'] = $usuario['email'];
 			};
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
 			if (isset($usuario['uam_identifier'])) {
 				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
 			};
 			if (isset($usuario['registration_date'])) {
 				$set_usuario['registration_date'] = $usuario['registration_date'];
 			};
+			if (isset($usuario['status'])) {
+				$set_usuario['status'] = $usuario['status'];
+			};
+			
 			
 			return $set_usuario;
 		}
 }
+
+
+
+
+
+
+
+
+
+
 
 /* End of file Registro_usuario_m.php */
 /* Location: ./application/models/Registro_usuario_m.php */

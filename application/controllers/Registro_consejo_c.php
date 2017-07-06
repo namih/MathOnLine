@@ -86,24 +86,26 @@ class Registro_consejo_c extends CI_Controller {
 	* @return id_usuario si el registro se realizo, en otro caso un msj de acuerdo si existe registro del nombre del usuario o email
 	* @version 1.0
 	*/
-	public function registrar_usuario() {
+	public function registrar_consejo() {
+		
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
 		
-		$type_user =$this->etiquetas->cat_type_user;
+		$type_user = $this->etiquetas->type_user();
 		$registro = $this -> input -> post('datos');
 		$registro['type_user']= $type_user['CCC'];
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-		
-			$id_registro = $this->Registro_consejo_m->registrar_usuario($registro);
-			//return $id_registro;
-			if ($id_registro != null) {
-				return $this->envio_email($id_registro,$registro['user_name']);
-			} else {
-				return false;
-			}	
+		$registro['id_avatar']=24;
+		$registro['id_degree'] = 1;
+		$registro['status'] = 1;
+		$id_registro = $this->Registro_consejo_m->registrar_consejo($registro);
+		if ($id_registro != null) {
+			return $this->envio_email($id_registro,$registro['user_name'],$registro['correo']);
+		} else {
+			return false;
+		}	
 	}
 	
 	/**
@@ -115,13 +117,12 @@ class Registro_consejo_c extends CI_Controller {
 	* @return TRUE si el envio fue exitoso FALSE en caso contrario.
 	* @version 1.0
 	*/
-	function envio_email($id_usuario,$usuario){
-		
-		$usuario=123;
+	function envio_email($id_usuario,$usuario,$email){
+
 		$configuracion = $this->conf_email->configuracion_email();
 	    
-		$datos = array('url' =>  base_url().'Registro_consejo_c/activar_cuenta?id_usuario='.$id_usuario,
-						   'usuario' =>$usuario);
+		$datos_email = array('url' =>  base_url().'Registro_consejo_c/activar_cuenta?id_usuario='.$id_usuario,
+						   'user_name' =>$usuario);
 		
 		echo "<pre>"; 
 		print_r(base_url().'Registro_consejo_c?id_usuario='.$usuario);
@@ -129,9 +130,9 @@ class Registro_consejo_c extends CI_Controller {
 		$this->email->initialize($configuracion);
 		   
 	   $this->email->from('Bienvenido a matematicas .....');
-	   $this->email->to('ceciferch@gmail.com');
+	   $this->email->to($email);
 	   $this->email->subject('Activacion de la cuenta Mathonline');
-	   $this->email->message('Hola mathonline'.base_url().'/Registro_usuario_c'.$usuario); //$datos enviar a vista
+	   $this->email->message($this -> load -> view('/email/activacion_cuenta',$datos_email,TRUE)); //$datos enviar a vista
 	   
 	   if($this->email->send()){
            return TRUE;
@@ -156,10 +157,14 @@ class Registro_consejo_c extends CI_Controller {
 	* @version 1.0
 	*/	
 	
-	public function activar_cuenta(){
+	function activar_cuenta(){
 		$id_usuario = $_GET["id_usuario"]; 
-		$activacion = $this->Registro_consejo_m->activar_cuenta($id_usuario);
+		$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
+		if ($activacion == TRUE){
+			$this->load->view('header/head_v');
+			$this -> load -> view('Activacion_exitosa_v');
+			$this->load->view('footer/footer_v');	
+		}
 		return $activacion;
 	}
-
 }
