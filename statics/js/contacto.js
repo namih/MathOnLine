@@ -1,8 +1,12 @@
 function enviar_contacto() {
+	
   var email = document.getElementById('email').value;
   var comentario = document.getElementById('comentario').value;
-  
   var datos = {email:email, comentario:comentario};
+  
+  var validacion = validar_email();
+  
+  if(validacion == true){
   
   if (comentario != "") {
   	var url = base_url + 'Contacto_c/correo_contacto';
@@ -37,4 +41,25 @@ function enviar_contacto() {
   } else{
   	alert("XD");
   };
+  }
+}
+
+function validar_email() {
+	var valor = document.getElementById('email');
+	valueForm=valor.value;
+	
+  var patron = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  var patron_latino = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,4}))$/;
+  var patron_oficial = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  			  
+  //if(valueForm.search(patron)==0){
+  if(valueForm.search(patron_latino)==0){
+  //if(valueForm.search(patron_oficial)==0){
+		alert("OK");
+  		return true;
+	}
+	else{
+		alert("NO");
+		return false;
+	}
 }
