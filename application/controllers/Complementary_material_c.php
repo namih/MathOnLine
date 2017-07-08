@@ -13,7 +13,10 @@ class Complementary_material_c  extends CI_Controller
     public function index(){
        $datos['bibliografia'] = $this ->bibliografia();
 	   $datos['link'] = $this ->links();
-	   $this->load->model('Complementary_material_v',$datos);
+	   //$this->load->model('Complementary_material_v',$datos);
+	   $this->load->view('header/head_v');
+		$this->load->view('/usuarios/Material_complementario_v',$datos);
+    	$this->load->view('footer/footer_v');
     }
 	
 	/**
@@ -43,9 +46,6 @@ class Complementary_material_c  extends CI_Controller
 			return $links;
 			
 		}
-		
-		
-	
 
 }
 
