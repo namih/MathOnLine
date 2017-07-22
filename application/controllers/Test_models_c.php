@@ -108,11 +108,16 @@
 		
 		public function pass_encrypt()
 		{
-			$pass = '4dM1n@2017';
+			$pass = '123456';
 			
 			$pass_encode = $this->encrypt->encode($pass);
 			
 			echo $pass_encode;
+			
+			date_default_timezone_set('America/Mexico_City');
+			$format = 'Y-m-d h:i:s';
+			
+			echo date($format);
 		}
 		
 		public function tuto_usuario()
@@ -186,7 +191,7 @@
 		public function activacion_ok()
 		{
 			$this->load->view('header/head_v');
-			$this->load->view('Activacion_exitosa_v');
+			$this->load->view('Activacion_exitosa_v', $datos);
 			$this->load->view('footer/footer_v');
 			}
 
@@ -199,5 +204,17 @@
 			print_r($perfil);
 			echo "<pre>";
 		}
+		
+		public function evaluacion()
+		{
+			$datos = array('question' => '¿Cuál es el valor del ángulo RPS en la siguiente figura? <img src="../statics/img/evaluacion/geom_trigonom/Img_3_2_1_10_1.bmp" class="img-responsive"> ',
+							'r1'=>'',
+							'r2'=>'',
+							'r3'=>'',
+							'r4'=>'',);
+			$this->load->view('header/head_v');
+			$this->load->view('evaluacion', $datos);
+			$this->load->view('footer/footer_v');
+			}
 
 }
