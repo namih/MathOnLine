@@ -24,10 +24,9 @@
                         <div class="panel-heading" align="center"><?php echo $value['mes']; ?></div>
                         <div class="panel-body">
                           <h3><?php echo $value['title']; ?> </h3><br><br>
-                          <p>
-                            <img src="<?php echo $value['image']; ?>"/>
-                          </p>
-                          <p>
+                          <img class="img-responsive" style="max-height: 200px; max-width: 80%; " src="<?php echo base_url().$value['image']; ?>"/>
+                          <br><br>
+                          <p style="text-transform: capitalize; text-indent: 20px;">
                             <?php echo $value['description']; ?> 
                           </p>
                         </div>
