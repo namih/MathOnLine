@@ -152,3 +152,50 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div id="recuperaPassModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Recuperar contraseña</h4>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form id="login-form">
+                      <div class="form-group">
+                        <input type="text" name="email-user" id="email_user" tabindex="1" class="form-control" placeholder="Email del usuario" onKeyDown="return tab_btn(event,'envia_pass');" autofocus>
+                      </div>
+                    </form>
+                  </div>
+                </div> 
+                <div class="row">
+                  <div class="col-lg-12" id="error_valid_form">
+                  </div>
+                </div>                  
+              </div>
+            </div>
+            <div align="center" id="error_recover_pass"></div>
+            <div align="center">
+              <button type="button" id="envia_pass" onclick="recover_pass();" class="btn btn-success" onKeyDown="return tab_btn(event,'email_user');">Enviar contraseña</button><br><br>
+            </div>
+          </div>      
+        </div>
+      </div>
+      <script type="text/javascript">
+        function tab_btn(event,element){
+            var t = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+            if (t == 9){
+                $('#'+element).focus();
+                return false;
+              }
+              return true;
+          }
+      </script>
+    </div>    
