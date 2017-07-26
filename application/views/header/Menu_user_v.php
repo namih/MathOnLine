@@ -19,7 +19,7 @@
                       <li class="<?php if(trim($datosMenu['clase'])!=''){ echo trim($datosMenu['clase']); };?>"><a href="<?php if(trim($datosMenu['href'])==''){ echo '#'; }else { echo trim($datosMenu['href']); };?>" <?php if(trim($datosMenu['onclick'])!=''){ echo 'onclick="loadContent(\''.base_url().$datosMenu['onclick'].'\');"'; }  ?> ><?php echo $datosMenu['nombre']; ?></a></li>
                     <?php }else{ ?>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"> </span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $datosMenu['nombre']; ?></a>
                         <ul class="dropdown-menu" role="menu">
                           <?php foreach ($datosMenu['submenu'] as $idSubMenu => $dtsSubMenu) { ?>
                             <li><a href="<?php if(trim($dtsSubMenu['href'])==''){ echo '#'; }else { echo trim($dtsSubMenu['href']); };?>" <?php if(trim($dtsSubMenu['onclick'])!=''){ echo 'onclick="loadContent(\''.base_url().$dtsSubMenu['onclick'].'\');"'; }  ?> ><?php echo $dtsSubMenu['nombre']; ?></a></li>

@@ -51,7 +51,7 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					5=>array(
-						'nombre'=>'Usuario',
+						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -100,7 +100,7 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					5=>array(
-						'nombre'=>'Usuario',
+						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -149,7 +149,7 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					5=>array(
-						'nombre'=>'Usuario',
+						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
