@@ -17,5 +17,143 @@ class Etiquetas{
 				'female' => array(1,3,4,5,7,8,9,14,15,18,20,22,23,26,28,30));
 		return $type;
 	}
+	
+	function menu_user($idUser){
+		$menu_user = array(
+				//admin
+				1 => array(
+					1=>array(
+						'nombre'=>'Elemento 1',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					2=>array(
+						'nombre'=>'Elemento 2',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					3=>array(
+						'nombre'=>'Elemento 3',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					4=>array(
+						'nombre'=>'Elemento n',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					5=>array(
+						'nombre'=>'Usuario',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array(
+								1=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'href'=>'',
+									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+								),
+								2=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'href'=>'logout',
+									'onclick'=>''
+								),
+							)
+						),					
+					), 
+				//consejo
+				2 => array(
+					1=>array(
+						'nombre'=>'Elemento 1',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					2=>array(
+						'nombre'=>'Elemento 2',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					3=>array(
+						'nombre'=>'Elemento 3',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					4=>array(
+						'nombre'=>'Elemento n',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					5=>array(
+						'nombre'=>'Usuario',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array(
+								1=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'href'=>'',
+									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+								),
+								2=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'href'=>'logout',
+									'onclick'=>''
+								),
+							)
+						),					
+					), 
+				//usuario gral (alumno)
+				3 => array(
+					1=>array(
+						'nombre'=>'Tutoriales',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					2=>array(
+						'nombre'=>'Evaluacines',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					3=>array(
+						'nombre'=>'Material complementario',
+						'href'=>'',
+						'onclick'=>'Home_student_c/material_complementario',
+						'submenu'=>array()
+						),
+					4=>array(
+						'nombre'=>'Estadísticas',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array()
+						),
+					5=>array(
+						'nombre'=>'Usuario',
+						'href'=>'',
+						'onclick'=>'',
+						'submenu'=>array(
+								1=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'href'=>'',
+									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+								),
+								2=>array(
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'href'=>'logout',
+									'onclick'=>''
+								),
+							)
+						),
+					), 
+		);
+		return $menu_user;
+	}
 }
 ?>

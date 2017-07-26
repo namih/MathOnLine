@@ -154,6 +154,9 @@ class Home_c extends CI_Controller
      */
     public function goHomeUser(){
         $datos["user_log"][0] = $this->session->userdata('user');
+        $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+
         $all_themes = $this->Home_student_m->lista_tutoriales();
         $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
         $i = 0;
