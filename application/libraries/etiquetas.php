@@ -26,30 +26,35 @@ class Etiquetas{
 						'nombre'=>'Elemento 1',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					2=>array(
 						'nombre'=>'Elemento 2',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
 						'nombre'=>'Elemento 3',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
 						'nombre'=>'Elemento n',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					5=>array(
 						'nombre'=>'Usuario',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
@@ -70,30 +75,35 @@ class Etiquetas{
 						'nombre'=>'Elemento 1',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					2=>array(
 						'nombre'=>'Elemento 2',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
 						'nombre'=>'Elemento 3',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
 						'nombre'=>'Elemento n',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					5=>array(
 						'nombre'=>'Usuario',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
@@ -114,30 +124,35 @@ class Etiquetas{
 						'nombre'=>'Tutoriales',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'active',
 						'submenu'=>array()
 						),
 					2=>array(
 						'nombre'=>'Evaluacines',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
 						'nombre'=>'Material complementario',
 						'href'=>'',
 						'onclick'=>'Home_student_c/material_complementario',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
 						'nombre'=>'Estadísticas',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					5=>array(
 						'nombre'=>'Usuario',
 						'href'=>'',
 						'onclick'=>'',
+						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
