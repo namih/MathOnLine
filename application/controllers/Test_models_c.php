@@ -12,6 +12,7 @@
 			$this->load->model("Complementary_material_m");
 			$this->load->model("Perfil_usuario_m");
 			$this->load->model("Home_m");
+			$this->load->model("Evaluation_m");
 			$this->load->library('email');
 			$this->load->library('encrypt');
 			$this->load->library('etiquetas');
@@ -204,17 +205,18 @@
 			print_r($perfil);
 			echo "<pre>";
 		}
+				
 		
 		public function evaluacion()
 		{
-			$datos = array('question' => '¿Cuál es el valor del ángulo RPS en la siguiente figura? <img src="../statics/img/evaluacion/geom_trigonom/Img_3_2_1_10_1.bmp" class="img-responsive"> ',
-							'r1'=>'',
-							'r2'=>'',
-							'r3'=>'',
-							'r4'=>'',);
-			$this->load->view('header/head_v');
-			$this->load->view('evaluacion', $datos);
-			$this->load->view('footer/footer_v');
-			}
+			$id_tema = 1;
+			$evaluacion = $this->Evaluation_m->evaluacion($id_tema);
+			
+			echo "<pre>";
+			print_r($evaluacion);
+			echo "<pre>";
+			
+			
+		}
 
 }

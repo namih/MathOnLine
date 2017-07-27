@@ -43,7 +43,9 @@
 		{
 			if ($id_tema!=NULL) {
 				$subtemas = $this->lista_subtemas($id_tema);
-				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->WHERE($subtemas)->GET();
+				print_r($subtemas);
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->WHERE($subtemas[0])->GET();
+				print_r($this->db->last_query());
 				if ($evaluacion->num_rows() > 0) {
 					return $evaluacion->result_array();
 				} else {
