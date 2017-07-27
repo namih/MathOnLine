@@ -23,8 +23,8 @@
                       <div class="panel panel-success tema_mes"  align="center">
                         <div class="panel-heading" align="center"><?php echo $value['mes']; ?></div>
                         <div class="panel-body">
-                          <div id="titulo" style="background-image: url('<?php echo base_url().$value['image']; ?>'); background-repeat: no-repeat; background-size: cover; opacity: 0.8;"><br>
-                            <h3 style="background-color: #000000; opacity: 0.7; padding: 12px; color: #FFFFFF; font-weight: bold;"><?php echo $value['title']; ?> </h3><br><br>
+                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$value['image']; ?>');"><br>
+                            <h3 class="titulo_tema"><?php echo $value['title']; ?> </h3><br><br>
                             <!--<img class="img-responsive" style="max-height: 200px; max-width: 80%; " src="<?php echo base_url().$value['image']; ?>"/>-->
                           </div>
                           <br><br>
