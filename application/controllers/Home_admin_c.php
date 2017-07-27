@@ -23,7 +23,7 @@ class Home_admin_c extends CI_Controller {
 	function index(){
 		$datos['temas'] = $this->tema_mes();
 		$this->load->view('header/head_v');
-		$this->load->view('inicio/Home_v',$datos);
+		$this->load->view('administrador/Login_admin_v',$datos);
 		$this->load->view('footer/footer_v');
 	}
 	
