@@ -19,7 +19,7 @@
 
 	<body>
 		<header>
-			<h1>Login_admin_v</h1>
+			
 		</header>
 		<div class="container">
 			<div class="col-md-6 col-xs-12">
@@ -35,6 +35,10 @@
     				<tbody>
       					
     				</tbody>
+    					<?php for ($i=0;$i < count($temas);$i++){ ?>
+    						
+    					<?php }
+					?>
   				</table>
 			</div>	
 		</div>
