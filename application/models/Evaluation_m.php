@@ -9,11 +9,11 @@
 		
 		
 		/**
-		 * Descripcion
+		 * Obtiene los identificadores de los subtemas relacionados al tema del cual se desea hacer una evaluación
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
-		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
+		 * @return Array lista de identificadores de subtemas del tema solicitado
+		 * @param Int Identificador del tema
 		 * @version 1.0
 		 */
 		public function lista_subtemas($id_tema)
@@ -21,7 +21,13 @@
 			if ($id_tema!=NULL) {
 				$subtemas = $this->db->SELECT('id_subtopic')->FROM('subtopic')->WHERE('id_theme', $id_tema)->GET();
 				if ($subtemas->num_rows() > 0) {
-					return $subtemas->result_array();
+					$id_subtema = array();
+					foreach ($subtemas->result_array() as $key1 => $value1) {
+						foreach ($value1 as $key2 => $value2) {
+							array_push($id_subtema, $value2);
+						}
+					}
+				return $id_subtema;					
 				} else {
 					return FALSE;
 				}
@@ -32,20 +38,18 @@
 		
 		
 		/**
-		 * Descripcion
+		 * Obtiene todas las preguntas relacionadas al tema solicitado de todos los subtemas
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
-		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
 		 * @version 1.0
 		 */
 		public function evaluacion($id_tema)
 		{
 			if ($id_tema!=NULL) {
 				$subtemas = $this->lista_subtemas($id_tema);
-				print_r($subtemas);
-				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->OR_WHERE_IN($subtemas[0])->GET();
-				print_r($this->db->last_query());
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->or_where_in('id_subtopic',$subtemas)->GET();
 				if ($evaluacion->num_rows() > 0) {
 					return $evaluacion->result_array();
 				} else {
