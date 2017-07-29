@@ -9,7 +9,7 @@
         <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Optional themeeeeeeeeee -->
+		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 		<!-- Latest compiled and minified JavaScript -->
@@ -51,7 +51,7 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<h2>Calendario Escolar</h2>
-				<img class="img-responsive" src="../statics/img/calendario_uam/calendario_uam.png"/>
+				<img class="img-responsive" src="statics/img/calendario_uam/calendario_uam.png"/>
 				<div class="input-file-wrapper">
         			<form enctype="multipart/form-data" class="formulario">
         				<input name="archivo" type="file" id="imagen" accept="image/*"/>
@@ -59,6 +59,34 @@
 				</div>
 				<button onclick="subir_imagen()" type="button" class="btn btn-primary">Subir archivos</button>
 				<script type="text/javascript" charset="utf-8">
+				function subir_imagen () {
+					
+					var datos = [];
+					
+					var formData1 = new FormData($(".formulario_img")[0]);
+					var formData2 = new FormData($(".formulario_pdf")[0]);
+					var formData3 = new FormData($(".formulario_word")[0]);
+					datos.push("formulario_img");
+					datos.push("formulario_pdf");
+					datos.push("formulario_word");	
+					$.ajax({
+						url: base_url+'/test_models_c/guardar_imagen',
+						type: 'POST',
+						data: datos,
+						async:false,
+						cache: false,
+						contentType: false,
+						processData: false,
+						success: function(data){
+							alert('Archivo guardado '+data);
+							return data;
+								
+							},
+							error: function(){
+								console.log("Error to upload the image");
+							}
+						});
+					}
 			</div>	
 		</div>
 	</body>
