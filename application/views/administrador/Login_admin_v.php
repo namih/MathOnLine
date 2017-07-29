@@ -52,12 +52,13 @@
 			<div class="col-md-6 col-xs-12">
 				<h2>Calendario Escolar</h2>
 				<img class="img-responsive" src="../statics/img/calendario_uam/calendario_uam.png"/>
-				<form method="post" enctype="multipart/form-data">
-					<label for="file">Nombre del Archivo:</label>
-            		<input type="file" name="file1" id="file1" /> 
-            		<br />
-            		<input type="submit" name="subir" value="Subir" />
-        		</form>
+				<div class="input-file-wrapper">
+        			<form enctype="multipart/form-data" class="formulario">
+        				<input name="archivo" type="file" id="imagen" accept="image/*"/>
+					</form>
+				</div>
+				<button onclick="subir_imagen()" type="button" class="btn btn-primary">Subir archivos</button>
+				<script type="text/javascript" charset="utf-8">
 			</div>	
 		</div>
 	</body>
