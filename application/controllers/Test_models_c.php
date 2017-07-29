@@ -225,7 +225,7 @@
 		if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
 			
 			if(empty($_FILES['archivo']) || $_FILES['archivo']['name']==null){
-				echo "";
+				echo "No seleccionaste archivo";
 			} else {
 								
 				//obtener la extension del archivo
