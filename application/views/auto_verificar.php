@@ -57,6 +57,7 @@
         				<input name="archivo" type="file" id="imagen" accept="application/docx"/>
 					</form>
 				</div>
+				<p>*Debe de subir los 3 archivos png,pdf y dox*</p>
 				<button onclick="subir_imagen()" type="button" class="btn btn-primary">Subir archivos</button>
 				<script type="text/javascript" charset="utf-8">
 					function subir_imagen () {

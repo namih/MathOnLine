@@ -35,7 +35,7 @@ class Home_admin_c extends CI_Controller {
 	 * @version 1.0
 	 */
 	public function tema_mes(){
-		$temas = $this->Home_admin_m->lista_tema_mes();
+		$temas = $this->Home_admin_m->tema_mes();
 		return $temas;
 	}
 

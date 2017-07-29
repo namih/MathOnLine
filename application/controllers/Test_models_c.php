@@ -132,7 +132,9 @@
 		
 		public function temas()
 		{
-			$temas = $this->Home_admin_m->lista_tema_mes();
+			$temas = $this->Home_admin_m->tema_mes();
+			
+			
 			
 			
 			$datos['temas'] = $temas;
@@ -143,14 +145,14 @@
 		
 		public function editor_tema()
 		{
-			$temas = $this->Home_admin_m->lista_tema_mes();
+			$temas = $this->Home_admin_m->tema_mes();
 			
 			
 			$datos['temas'] = $temas;
 			
-			// $this->load->view('header/head_v');
+			$this->load->view('header/head_v');
 			$this->load->view('editor_tema_mes_v',$datos);
-			// $this->load->view('footer/footer_v');	
+			$this->load->view('footer/footer_v');	
 		}
 		
 		
@@ -251,6 +253,14 @@
 		}else{
 			throw new Exception("Error Processing Request", 1);
 		}
-	}	
+	}
+
+	public function actualizar_tema()
+	{
+		$tema = $this->input->post('datos');
+		$actualizar = $this->Home_admin_m->actualizar_tema($tema);
+		
+		echo $tema;
+	}
 
 }
