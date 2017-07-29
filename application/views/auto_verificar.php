@@ -47,6 +47,16 @@
         				<input name="archivo" type="file" id="imagen" accept="image/*"/>
 					</form>
 				</div>
+				<div class="input-file-wrapper">
+        			<form enctype="multipart/form-data" class="formulario">
+        				<input name="archivo" type="file" id="imagen" accept="application/pdf"/>
+					</form>
+				</div>
+				<div class="input-file-wrapper">
+        			<form enctype="multipart/form-data" class="formulario">
+        				<input name="archivo" type="file" id="imagen" accept="application/docx"/>
+					</form>
+				</div>
 				<button onclick="subir_imagen()" type="button" class="btn btn-primary">Subir archivos</button>
 				<script type="text/javascript" charset="utf-8">
 					function subir_imagen () {
@@ -62,6 +72,7 @@
 							processData: false,
 							success: function(data){
 								alert('Archivo guardado '+data);
+								return data;
 								
 							},
 							error: function(){
