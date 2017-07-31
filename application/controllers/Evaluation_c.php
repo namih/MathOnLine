@@ -66,7 +66,7 @@ class Evaluation_c extends CI_Controller
                 $max--;
                 $position = rand ($min, $max);
                 $max++;
-                $evaluation[] = $this->questions[$position];
+                $evaluation[] = $this->custom_question($this->questions[$position]);
                 array_splice($this->questions, $position, 1);
                 $min = $max;
                 $subtopic = $aux_subtopic;
@@ -93,9 +93,30 @@ class Evaluation_c extends CI_Controller
     private function complete_evaluation($evaluation, $dif){
         while($dif > 0){
             $position = rand (0, count($this->questions)-1);
-            $evaluation[] = $this->questions[$position];
+            $evaluation[] = $this->custom_question($this->questions[$position]);
             $dif--;
         }
         return $evaluation;
+    }
+
+    private function custom_question($question){
+        $question_custom = [];
+        $i = 0;
+        foreach ($question as $key => $value){
+            if($key == "correct_answer"){
+                $question_custom["answers"][$i]["description"] = $value;
+                $question_custom["answers"][$i]["key"] = $key;
+                $question_custom["answers"][$i]["is_correct"] = 1;
+                $i++;
+            }elseif ($key == "wrong_answer_a" || $key == "wrong_answer_b" || $key == "wrong_answer_c"){
+                $question_custom["answers"][$i]["description"] = $value;
+                $question_custom["answers"][$i]["key"] = $key;
+                $question_custom["answers"][$i]["is_correct"] = 0;
+                $i++;
+            }else{
+                $question_custom[$key] = $value;
+            }
+        }
+        return $question_custom;
     }
 }
