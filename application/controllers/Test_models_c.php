@@ -222,12 +222,13 @@
 		}
 		
 		public function guardar_imagen()
-	{
+		{
 		//comprobamos que sea una petición ajax
 		if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest'){
 			
 			if(empty($_FILES['archivo']) || $_FILES['archivo']['name']==null){
 				echo "No seleccionaste archivo";
+				print_r($_FILES);
 			} else {
 								
 				//obtener la extension del archivo
@@ -242,7 +243,7 @@
 				//comprobamos si existe un directorio para subir el archivo
 				//si no es así, lo creamos
 				if(!is_dir("/statics/img/calendario_uam/")) 
-				mkdir("/statics/img/calendario_uam/", 0777);
+					mkdir("/statics/img/calendario_uam/", 0777);
 				
 				//comprobamos si el archivo ha subido
 				if ($file && move_uploaded_file($_FILES['archivo']['tmp_name'],"statics/img/calendario_uam/".$archivo_renombrado)) {
@@ -254,7 +255,27 @@
 			throw new Exception("Error Processing Request", 1);
 		}
 	}
-
+public function guardar()
+{
+	$ruta = "statics/img/calendario_uam/";
+	$mensaje = "";
+	foreach ($_FILES as $key) {
+		if ($key['error'] == UPLOAD_ERR_OK) {
+			$Nombre_Original = $key['name'];
+			$Temporal = $key['tmp_name'];
+			$destino = $ruta.$Nombre_Original;
+			
+			move_uploaded_file($Temporal, $destino);
+		}
+		if ($key['error'] == '') { 
+			$mensaje = "archivo subido";
+		}
+		if ($key['error'] != '') { 
+			$mensaje = "error".$key['error'];
+		}
+	}
+	echo $mensaje;
+}
 	public function actualizar_tema()
 	{
 		$tema = $this->input->post('datos');
