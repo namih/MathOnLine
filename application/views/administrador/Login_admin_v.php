@@ -51,37 +51,28 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<h2>Calendario Escolar</h2>
-				<img class="img-responsive" src="../statics/img/calendario_uam/calendario_uam.png"/>
+				<img class="img-responsive" src="statics/img/calendario_uam/calendario_uam.png"/>
 				<div class="input-file-wrapper">
         			<form enctype="multipart/form-data" class="formulario">
-        				<input name="archivo" type="file" id="imagen" accept="image/*"/>
+        				<input name="archivo" type="file" multiple="multiple" id="archivos" />
 					</form>
 				</div>
-				<div class="input-file-wrapper">
-        			<form enctype="multipart/form-data" class="formulario">
-        				<input name="archivo" type="file" id="pdf" accept="application/pdf"/>
-					</form>
-				</div>
-				<div class="input-file-wrapper">
-        			<form enctype="multipart/form-data" class="formulario">
-        				<input name="archivo" type="file" id="doc" accept="application/docx"/>
-					</form>
-				</div>
+				
 				<p class="text-info">NOTA: Es necesario cargar los tres archivos imagen, pdf, docx</p>
 				<button onclick="cargar_imagen()" type="button" class="btn btn-primary">Subir archivos</button>
 				<script type="text/javascript" charset="utf-8">
 				function cargar_imagen () {
 					
-					var archivos = [];
+					var archivos = document.getElementById("archivos");
+					var archivo = archivos.files;
 					
-					var formData1 = new FormData($(".formulario_img")[0]);
-					var formData2 = new FormData($(".formulario_pdf")[0]);
-					var formData3 = new FormData($(".formulario_word")[0]);
-					archivos.push("formulario_img");
-					archivos.push("formulario_pdf");
-					archivos.push("formulario_word");	
+					var archivos = new FormData();
+					
+					for (var i=0; i < archivo.length; i++) {
+					  archivos.append('archivo'+i, archivo[i]);
+					};	
 					$.ajax({
-						url: base_url+'/test_models_c/guardar_imagen',
+						url: base_url+'/test_models_c/guardar',
 						type: 'POST',
 						data: archivos,
 						async:false,
@@ -98,7 +89,9 @@
 							}
 						});
 					}
+					</script>
 			</div>	
 		</div>
 	</body>
 </html>
+
