@@ -257,7 +257,7 @@
 	}
 public function guardar()
 {
-	$ruta = "/statics/img/calendario_uam/";
+	$ruta = "statics/img/calendario_uam/";
 	$mensaje = "";
 	foreach ($_FILES as $key) {
 		if ($key['error'] == UPLOAD_ERR_OK) {
