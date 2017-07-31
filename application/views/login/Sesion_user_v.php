@@ -15,7 +15,7 @@
           <div class="col-xs-12 visible-xs">
             <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; "><br>
           </div>                   
-          <div class="col-md-8">       
+          <div class="col-md-8" id="opcion_menu">       
             <div class="container-fluid">
               <center>
                 <h1>Tutoriales</h1>

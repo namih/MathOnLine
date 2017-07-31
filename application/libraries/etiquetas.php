@@ -123,14 +123,14 @@ class Etiquetas{
 					1=>array(
 						'nombre'=>'Tutoriales',
 						'href'=>'',
-						'onclick'=>'',
+						'onclick'=>'onclick="loadOptionMenu(\''.base_url().'Aux_mimi_c/carga_tutoriales\');"',
 						'clase'=>'active',
 						'submenu'=>array()
 						),
 					2=>array(
 						'nombre'=>'Evaluacines',
 						'href'=>'',
-						'onclick'=>'',
+						'onclick'=>'onclick="loadOptionMenu(\''.base_url().'Aux_mimi_c/carga_panel_evaluaciones\');"',
 						'clase'=>'',
 						'submenu'=>array()
 						),
