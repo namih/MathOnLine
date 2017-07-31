@@ -164,7 +164,7 @@ class Home_c extends CI_Controller
         $aux_subtopic = "";
         $aux_tutorial = "";
         $themes_aux = array();
-        if(count($themes_student)>0){
+        if(count($themes_student)<=0){
             $themes_student = array();
         }   
         foreach ($all_themes as $theme){
@@ -185,12 +185,10 @@ class Home_c extends CI_Controller
                     "id_subtema" => $all_themes[$key_subtopic]["id_subtopic"]
                 );
                 $j = count($themes_aux[$i]["subtemas"]) - 1 ;
-
             }
             if($theme["tutorial"] != $aux_tutorial){
                 $aux_tutorial = $theme["tutorial"];
                 $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
-
 
                 if(count($themes_student)>0){
                     $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
