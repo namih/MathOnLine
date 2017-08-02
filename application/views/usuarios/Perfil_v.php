@@ -1,38 +1,21 @@
 <?php //echo '<pre>'; print_r($user_log); ?>
+	  <center><h1 style="color:#ffffff;">&nbsp;</h1></center>
 	  <div class="col-md-10 col-md-offset-1">
 	    <div class="panel panel-success"  align="center">
 	      <div class="panel-heading">Mi perfil</div>
 	      <div class="panel-body">
-	        <div class="col-md-10 col-md-offset-1">
-	          <?php $avatar=array(
-	            1=>array(
-	              'name'=>'farmer',
-	              'location'=>'/statics/img/avatar/airhostess.png'
-	              ),
-	            2=>array(
-	              'name'=>'alien',
-	              'location'=>'/statics/img/avatar/alien.png'
-	              ),
-	            3=>array(
-	              'name'=>'alieness',
-	              'location'=>'/statics/img/avatar/alieness.png'
-	              ),
-	            4=>array(
-	              'name'=>'aphrodite',
-	              'location'=>'/statics/img/avatar/aphrodite.png'
-	              ),
-	          ); ?>
+	        <div class="col-md-12">
 	          <center><h2 style="text-decoration: underline;"><?php echo $user_log[0]['user_name']; ?></h2></center>
 	          <input type="hidden" name="id_user" id="id_user" value="<?php echo $user_log[0]['id_user']; ?>">
-	          <div class="col-md-3" align="right">
-	            <div class="col-sm-12 col-md-12 col-lg-12 form-group" id="user_avatar" align="center">
+	          <div class="col-xm-12 col-sm-12 col-md-12 col-lg-3 col-xl-3" align="right">
+	            <div class="col-sm-12 col-md-12 col-lg-12" id="user_avatar" align="center">
 	              <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
 	            </div>
-	            <div class="col-sm-12 col-md-12 col-lg-12 form-group" id="cambia_avatar" align="center">
-	              <a class="btn btn-success btn-block" href="#" onclick="$('#avatares').show();">Cambiar avatar</a>
+	            <div class="col-sm-12 col-md-12 col-lg-12" id="cambia_avatar" align="center">
+	              <a class="btn btn-success" href="#" onclick="$('#avatares').show();"><span>Cambiar avatar</span></a>
 	            </div>
 	          </div><br>
-	          <div class="col-md-9" align="left"><br> 
+	          <div class="col-xm-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" align="left"><br> 
 	            <ul style="list-style: circle; font-size: 20px;">
 	              <li><label class="for">Nombre: </label> <span> <?php echo $user_log[0]['name'].' '.$user_log[0]['last_name']; ?></span></li>
 	              <li><label>Sexo: </label> <span> <?php echo $user_log[0]['sex']; ?></span></li>
@@ -45,7 +28,7 @@
 	        	<hr>
 	          <?php if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){
 	            foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
-	              <div class="col-md-1" align="center"><br>
+	              <div class="col-xm-6 col-sm-4 col-md-4 col-lg-2 col-xl-2" align="center"><br>
 	                <input type="radio" name="avatar" value="<?php echo $key; ?>" class="avatar" /><img id="img_avatar_<?php echo $key; ?>" class="img-responsive" src="<?php echo base_url().$value['location']; ?>"/>
 	                <label><?php echo $value['name']; ?></label>
 	              </div>

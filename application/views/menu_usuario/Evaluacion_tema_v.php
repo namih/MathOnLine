@@ -1,4 +1,5 @@
             <div class="container-fluid">
+              <center><h1 style="color:#ffffff;">&nbsp;</h1></center>
               <div id="all_tutorial" class="col-lg-12">
                 <div id="main_evaluacion">
       				    <div class="panel panel-success">

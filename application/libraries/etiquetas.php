@@ -157,7 +157,7 @@ class Etiquetas{
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
 									'href'=>'',
-									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+									'onclick'=>'onclick="loadOptionMenu(\''.base_url().'Perfil_usuario_c/Perfil_usuario/'.$idUser.'\');"'
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
