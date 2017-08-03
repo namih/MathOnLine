@@ -1,4 +1,6 @@
+
             <div class="container-fluid">
+              <center><h1 style="color:#ffffff;">&nbsp;</h1></center>
               <div id="all_tutorial" class="col-lg-12">
                 <div id="main_evaluacion">
       				    <div class="panel panel-success">
@@ -9,15 +11,15 @@
       				      </div>
       				      <div class="panel-body">
       						  <form action="/action_page.php">
-      		                    <?php if(isset($preguntas) && $preguntas!=false){ 
-      		                      foreach ($preguntas as $key => $datos) { ?>
-      							    <div class="form-group" id="preg_<?php echo $datos['id_evaluacion']; ?>">
+      		                    <?php if(isset($preguntas_evaluacion) && $preguntas_evaluacion!=false){ 
+      		                      foreach ($preguntas_evaluacion as $key => $datos) { ?>
+      							    <div class="form-group" id="preg_<?php echo $datos['id_evaluation']; ?>">
       							      <label><?php echo $datos['question']; ?></label>
       							    </div>
       							    <div class="checkbox" id="respuestas">
       							    	<ul style="list-style: lower-latin;">
       								    	<?php foreach ($datos['answers'] as $llave => $valor) { ?>
-      								      		<input type="radio" name="remember"><label><li style="font-weight: bold;"><span style="font-weight: normal;"><?php echo $valor['descripcion']; ?></span></li></label><br>
+      								      		<input type="radio" name="remember"><label><li style="font-weight: bold;"><span style="font-weight: normal;"><?php echo $valor['description']; ?></span></li></label><br>
       								    	<?php } ?>
       							    	</ul>
       							    	<br>
