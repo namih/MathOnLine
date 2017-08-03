@@ -283,5 +283,17 @@ public function guardar()
 		
 		echo $tema;
 	}
+	
+	public function editar_tema()
+	{
+		$id_tema = $_GET["id_tema"]; 
+		$tema = $this->Home_admin_m->tema_mes($id_tema);
+		
+		
+		
+		$this->load->view('header/head_v');
+			$this->load->view('editor_tema_mes_v',$tema);
+			$this->load->view('footer/footer_v');
+	}
 
 }

@@ -11,13 +11,13 @@
 		<div class="col-md-12">
 			<div class="form-group col-md-6">
 				<label for="usr">Titulo:</label>
-				<input type="text" class="form-control" id="usr" value="<? echo $temas[6]['title']  ?>">
+				<input type="text" class="form-control" id="usr" value="<?php echo $title ?>">
 			</div>
 		</div>
 		<div class="col-md-12">
 			<label for="usr">Descripción:</label>
 			<div id="summernote">
-				<? echo $temas[6]['description']  ?>
+				<?php echo $description ?>
 			</div>
 			<script>
 				$(document).ready(function() {
