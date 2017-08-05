@@ -8,7 +8,10 @@
             line-height: 34px;
             text-align: center;
         }</style>
-<div class="container">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+  <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
+</div> 
+<div class="container" style="margin-top:15%;">
 	<h3>REGISTRO</h3>
 	<h5>*Campos Obligatorios</h5>
 	<div class="row">
