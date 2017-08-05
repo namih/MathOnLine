@@ -71,30 +71,44 @@ class Aux_mimi_c extends CI_Controller
 	}
 
 	function carga_panel_evaluaciones(){
-        $all_themes = $this->Home_student_m->lista_tutoriales();
-        $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
+		$login = $this->session->userdata('logged_in');
+        if($login != null && $login == true){
+		    $datos["user_log"][0] = $this->session->userdata('user');
+		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
-        $i = 0;
-        $aux_theme = "";
-        $aux_subtopic = "";
-        $aux_tutorial = "";
-        $themes_aux = array();
-        if(count($themes_student)>0){
-            $themes_student = array();
-        }   
-        foreach ($all_themes as $theme){
-            if($theme["theme"] != $aux_theme){
-                $aux_theme = $theme["theme"];
-                $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
-                $themes_aux[] = array(
-                    "nombre" => $all_themes[$key_theme]["theme"],
-                    "id_tema" => $all_themes[$key_theme]["id_theme"]
-                );
-                $i = count($themes_aux) - 1;
-            }
-        }      
-        $datos["temas"] = $themes_aux;
-		$this->load->view('menu_usuario/Panel_evaluaciones_v', $datos);
+
+	        $all_themes = $this->Home_student_m->lista_tutoriales();
+	        $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
+
+	        $i = 0;
+	        $aux_theme = "";
+	        $aux_subtopic = "";
+	        $aux_tutorial = "";
+	        $themes_aux = array();
+	        if(count($themes_student)>0){
+	            $themes_student = array();
+	        }   
+	        foreach ($all_themes as $theme){
+	            if($theme["theme"] != $aux_theme){
+	                $aux_theme = $theme["theme"];
+	                $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
+	                $themes_aux[] = array(
+	                    "nombre" => $all_themes[$key_theme]["theme"],
+	                    "id_tema" => $all_themes[$key_theme]["id_theme"]
+	                );
+	                $i = count($themes_aux) - 1;
+	            }
+	        }      
+	        $datos["temas"] = $themes_aux;
+
+		    $this->load->view('header/head_v');
+		    $this->load->view('header/Menu_user_v', $datos);
+			$this->load->view('menu_usuario/Panel_evaluaciones_v', $datos);	    	
+	    	$this->load->view('footer/footer_v');
+	    }else{
+	    	redirect(base_url());
+	    }
 	
 	}
 
