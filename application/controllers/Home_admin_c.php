@@ -36,9 +36,20 @@ class Home_admin_c extends CI_Controller {
 	 */
 	public function tema_mes(){
 		$temas = $this->Home_admin_m->tema_mes();
+		foreach ($variable as $key => $value) {
+			
+		}
 		return $temas;
+		//regresar arreglo con nombre del mes *ueva columna 
 	}
-
+	
+	function actualizarCalendarioEsc(){
+		
+	}
+	
+	function guardarCalendario(){
+		
+	}
 	
 	/**
 	 * 
@@ -49,10 +60,12 @@ class Home_admin_c extends CI_Controller {
 	 */
 	
 	public function editor_tema(){
-		
+		// via url id del mes
+		$id_tema = get['id_tema'];
+		if ()
 		$temas = $this->Home_admin_m->lista_tema_mes();
 		$datos['temas'] = $temas;
-		$this->load->view('Editor_tema_mes_v',$datos);	
+		$this->load->view('administrador/Editor_tema_mes_v',$datos);	
 	}
 	
 	/**
@@ -64,9 +77,9 @@ class Home_admin_c extends CI_Controller {
 	 */
 	
 	public function update_tema(){
-		
+		//reliazar el cambio a este controlaodr para actualizar tema.
 		$editor = $this->input->post('editor');
-		$update_editor=$this->Home_admin_m->update_tema($editor);
+		$update_editor=$this->Home_admin_m->actualizar_tema($tema_mes);
 		
 	}
 		
