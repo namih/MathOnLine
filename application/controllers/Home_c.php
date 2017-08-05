@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
 class Home_c extends CI_Controller
 {
     public function __construct()
@@ -89,6 +89,7 @@ class Home_c extends CI_Controller
      * @param Via post, se recibe user_name y password
      * @version 1.0
      */
+
     public function login(){
         $credencial['user_name'] = $this->input->post('username-user');
         $credencial['password'] = $this->input->post('password-user');
