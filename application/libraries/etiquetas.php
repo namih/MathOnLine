@@ -136,8 +136,8 @@ class Etiquetas{
 						),
 					3=>array(
 						'nombre'=>'Material complementario',
-						'href'=>'',
-						'onclick'=>'Complementary_material_c',
+						'href'=>'Complementary_material_c',
+						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
