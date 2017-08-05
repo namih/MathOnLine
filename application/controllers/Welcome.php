@@ -27,13 +27,17 @@ class Welcome extends CI_Controller {
     }
 
 	function index(){
-		
-		$themes = $this->get_theme_month();
-        $datos['themes'] = $themes;
-        
-		$this->load->view('header/head_v');
-		$this->load->view('inicio/Home_v', $datos);
-		$this->load->view('footer/footer_v');
+		$login = $this->session->userdata('logged_in');
+        if($login != null && $login == true){
+            redirect(base_url("/index.php/home_c/goHomeUser"));
+        }else{
+            $themes = $this->get_theme_month();
+            $datos['themes'] = $themes;
+            
+            $this->load->view('header/head_v');
+            $this->load->view('inicio/Home_v', $datos);
+            $this->load->view('footer/footer_v');
+        }
 	}
 
 

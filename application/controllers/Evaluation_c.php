@@ -80,7 +80,7 @@ class Evaluation_c extends CI_Controller
         }
         $max = count($this->questions)-1;
         $position = rand ($min, $max);
-        $evaluation[] = $this->questions[$position];
+        $evaluation[] = $this->custom_question($this->questions[$position]);
         array_splice($this->questions, $position, 1);
         return $evaluation;
     }
@@ -112,11 +112,13 @@ class Evaluation_c extends CI_Controller
                 $question_custom["answers"][$i]["description"] = $value;
                 $question_custom["answers"][$i]["key"] = $key;
                 $question_custom["answers"][$i]["is_correct"] = 1;
+                shuffle($question_custom["answers"]);
                 $i++;
             }elseif ($key == "wrong_answer_a" || $key == "wrong_answer_b" || $key == "wrong_answer_c"){
                 $question_custom["answers"][$i]["description"] = $value;
                 $question_custom["answers"][$i]["key"] = $key;
                 $question_custom["answers"][$i]["is_correct"] = 0;
+                shuffle($question_custom["answers"]);
                 $i++;
             }else{
                 $question_custom[$key] = $value;
