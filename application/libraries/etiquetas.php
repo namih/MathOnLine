@@ -40,34 +40,41 @@ class Etiquetas{
 				//admin
 				1 => array(
 					1=>array(
-						'nombre'=>'Elemento 1',
+						'nombre'=>'Inicio',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					2=>array(
-						'nombre'=>'Elemento 2',
+						'nombre'=>'Evaluaciones',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
-						'nombre'=>'Elemento 3',
+						'nombre'=>'Alta ccc 3',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
-						'nombre'=>'Elemento n',
+						'nombre'=>'Material Complementario',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					5=>array(
+						'nombre'=>'Estadisticas',
+						'href'=>'',
+						'onclick'=>'',
+						'clase'=>'',
+						'submenu'=>array()
+						),
+					6=>array(
 						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
 						'href'=>'',
 						'onclick'=>'',
@@ -89,28 +96,28 @@ class Etiquetas{
 				//consejo
 				2 => array(
 					1=>array(
-						'nombre'=>'Elemento 1',
+						'nombre'=>'Inicio',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					2=>array(
-						'nombre'=>'Elemento 2',
+						'nombre'=>'Evaluaciones',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
-						'nombre'=>'Elemento 3',
+						'nombre'=>'Material Complementario',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
-						'nombre'=>'Elemento n',
+						'nombre'=>'Estadisticas',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
