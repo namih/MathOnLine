@@ -36,13 +36,20 @@ class Home_admin_c extends CI_Controller {
 	 */
 	public function tema_mes(){
 		$temas = $this->Home_admin_m->tema_mes();
-		foreach ($variable as $key => $value) {
-			
+		$mes = $this->etiquetas->meses();
+		for($i=0;$i<count($temas);$i++){
+			$temas[$i]['mounth'] =$mes[$temas[$i]['mounth']];
 		}
 		return $temas;
-		//regresar arreglo con nombre del mes *ueva columna 
 	}
 	
+	/**
+	 * 
+	 * @author Cecilia Hernandez Vasquez
+	 * @return lista con los temas del mes
+	 * @param NA
+	 * @version 1.0
+	 */
 	function actualizarCalendarioEsc(){
 		
 	}
@@ -61,8 +68,8 @@ class Home_admin_c extends CI_Controller {
 	
 	public function editor_tema(){
 		// via url id del mes
-		$id_tema = get['id_tema'];
-		if ()
+	//	$id_tema = GET_['id_tema'];
+		
 		$temas = $this->Home_admin_m->lista_tema_mes();
 		$datos['temas'] = $temas;
 		$this->load->view('administrador/Editor_tema_mes_v',$datos);	
