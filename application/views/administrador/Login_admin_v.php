@@ -21,7 +21,7 @@
     						<tr>
     							<td> <?php echo $temas[$i]['mounth'] ?></td>
     							<td> <?php echo $temas[$i]['title'] ?></td>
-    							<td> <a href="<?php echo base_url(); ?>Test_models_c/editar_tema?id_tema=<?php echo $temas[$i]['id_monthly_theme'] ?>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
+    							<td> <a href="<?php echo base_url(); ?>Home_admin_c/editor_tema?id_tema=<?php echo $temas[$i]['id_monthly_theme'] ?>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
     						</tr>
     					<?php }
 					?>
