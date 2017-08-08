@@ -101,7 +101,8 @@ class Aux_mimi_c extends CI_Controller
 	            }
 	        }      
 	        $datos["temas"] = $themes_aux;
-
+			
+			$datos['opt_menu_active']='opt_evaluaciones';
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
 			$this->load->view('menu_usuario/Panel_evaluaciones_v', $datos);	    	

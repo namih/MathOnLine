@@ -210,6 +210,8 @@ class Home_c extends CI_Controller
         }
        
         $datos["temas"] = $themes_aux;
+
+        $datos['opt_menu_active']='opt_tutoriales';
         $this->load->view('header/head_v');
         $this->load->view('header/Menu_user_v', $datos);
         $this->load->view('login/Sesion_user_v', $datos);

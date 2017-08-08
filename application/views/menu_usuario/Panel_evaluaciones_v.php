@@ -13,7 +13,7 @@
                       <?php if(isset($temas) && !empty($temas)){ 
                         foreach ($temas as $key => $value) { ?>
                           <div class="col-lg-6">
-                            <a href="#" onclick="loadOptionMenu('<?php echo base_url() ?>Evaluation_c/get_evaluation/<?php echo $value['id_tema']; ?>');">
+                            <a href="<?php echo base_url() ?>Evaluation_c/get_evaluation/<?php echo $value['id_tema']; ?>">
                               <div class="panel panel-info">
                                 <div class="panel-heading" style="background-color: #ffffff !important; min-height: 200px; padding: 40px; ">
                                       <center>
