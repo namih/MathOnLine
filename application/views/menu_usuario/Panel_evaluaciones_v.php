@@ -13,7 +13,7 @@
                       <?php if(isset($temas) && !empty($temas)){ 
                         foreach ($temas as $key => $value) { ?>
                           <div class="col-lg-6">
-                            <a href="#" onclick="if(confirm('¿Desea iniciar la evaluación de este tema?')){ window.location.href='<?php echo base_url() ?>evaluacion_tema/<?php echo $value['id_tema']; ?>'; }" >
+                            <a href="#" onclick="if(confirm('¿Desea iniciar la evaluación de este tema?')){ window.location.href='<?php echo base_url(); ?>evaluacion_tema/<?php echo $value['id_tema']; ?>'; empezarDetener('Empezar'); }" >
                               <div class="panel panel-info">
                                 <div class="panel-heading" style="background-color: #ffffff !important; min-height: 200px; padding: 40px; ">
                                       <center>
