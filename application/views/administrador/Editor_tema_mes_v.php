@@ -4,7 +4,9 @@
 
 <!-- Lenguaje español -->
 <script src="<?php echo base_url(); ?>statics/js/summernote/lang/summernote-es-ES.js"></script>
-
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+  	<hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
+</div> 
 
 <div class="container-fluid">
 	<div class="col-md-12">
