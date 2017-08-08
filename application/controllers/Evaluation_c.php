@@ -27,6 +27,10 @@ class Evaluation_c extends CI_Controller
     public function get_evaluation($id){
         $login = $this->session->userdata('logged_in');
         if($login != null && $login == true){
+            $datos["user_log"][0] = $this->session->userdata('user');
+            $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+            $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+
             $datos['tema_eval']='Nombre del tema';
 
             $this->questions = $this->Evaluation_m->evaluacion($id);
@@ -44,8 +48,12 @@ class Evaluation_c extends CI_Controller
                 $datos['preguntas_evaluacion']= null;
             }
 
+            $datos['opt_menu_active']='opt_evaluaciones';
 
+            $this->load->view('header/head_v');
+            $this->load->view('header/Menu_user_v', $datos);
             $this->load->view('menu_usuario/Evaluacion_tema_v', $datos);
+            $this->load->view('footer/footer_v');
         }else{
             redirect(base_url());
         }

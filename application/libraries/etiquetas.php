@@ -41,6 +41,7 @@ class Etiquetas{
 				1 => array(
 					1=>array(
 						'nombre'=>'Inicio',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -48,6 +49,7 @@ class Etiquetas{
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -55,6 +57,7 @@ class Etiquetas{
 						),
 					3=>array(
 						'nombre'=>'Alta ccc 3',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -62,6 +65,7 @@ class Etiquetas{
 						),
 					4=>array(
 						'nombre'=>'Material Complementario',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -69,6 +73,7 @@ class Etiquetas{
 						),
 					5=>array(
 						'nombre'=>'Estadisticas',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -76,17 +81,20 @@ class Etiquetas{
 						),
 					6=>array(
 						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'id'=>'',
 									'href'=>'',
-									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'id'=>'',
 									'href'=>'logout',
 									'onclick'=>''
 								),
@@ -97,6 +105,7 @@ class Etiquetas{
 				2 => array(
 					1=>array(
 						'nombre'=>'Inicio',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -104,6 +113,7 @@ class Etiquetas{
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -111,6 +121,7 @@ class Etiquetas{
 						),
 					3=>array(
 						'nombre'=>'Material Complementario',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -118,6 +129,7 @@ class Etiquetas{
 						),
 					4=>array(
 						'nombre'=>'Estadisticas',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -125,17 +137,20 @@ class Etiquetas{
 						),
 					5=>array(
 						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
+						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'id'=>'',
 									'href'=>'',
-									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'id'=>'',
 									'href'=>'logout',
 									'onclick'=>''
 								),
@@ -146,27 +161,31 @@ class Etiquetas{
 				3 => array(
 					1=>array(
 						'nombre'=>'Tutoriales',
-						'href'=>base_url(),
+						'id'=>'opt_tutoriales',
+						'href'=>base_url().'tutoriales',
 						'onclick'=>'',
-						'clase'=>'active',
+						'clase'=>'',
 						'submenu'=>array()
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
-						'href'=>base_url().'Aux_mimi_c/carga_panel_evaluaciones',
+						'id'=>'opt_evaluaciones',
+						'href'=>base_url().'evaluaciones',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					3=>array(
 						'nombre'=>'Material complementario',
-						'href'=>base_url().'Complementary_material_c',
+						'id'=>'opt_materiales',
+						'href'=>base_url().'material_complementario',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
 						),
 					4=>array(
 						'nombre'=>'Estadísticas',
+						'id'=>'opt_estadisticas',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -174,17 +193,20 @@ class Etiquetas{
 						),
 					5=>array(
 						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
+						'id'=>'opt_usuario',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
-									'href'=>base_url().'Perfil_usuario_c/Perfil_usuario/'.$idUser,
+									'id'=>'opt_perfil',
+									'href'=>base_url().'perfil_user/'.$idUser,
 									'onclick'=>''
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'id'=>'opt_sesion',
 									'href'=>base_url().'logout',
 									'onclick'=>''
 								),

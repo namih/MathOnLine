@@ -16,9 +16,9 @@
               <ul class="nav navbar-nav navbar-right">
                 <?php foreach ($menu_user as $idMenu => $datosMenu) {
                     if(empty($datosMenu['submenu'])){//si no hay submenu se pinta un link sencillo ?>
-                      <li class="<?php if(trim($datosMenu['clase'])!=''){ echo trim($datosMenu['clase']); };?> mLi"><a href="<?php if(trim($datosMenu['href'])==''){ echo '#'; }else { echo trim($datosMenu['href']); };?>" <?php if(trim($datosMenu['onclick'])!=''){ echo $datosMenu['onclick']; }  ?> ><?php echo $datosMenu['nombre']; ?></a></li>
+                      <li class="<?php if( isset($datosMenu['id']) && isset($opt_menu_active) && $datosMenu['id']==$opt_menu_active ){ echo 'active'; } ?>  <?php if(trim($datosMenu['clase'])!=''){ echo trim($datosMenu['clase']); };?> mLi"><a href="<?php if(trim($datosMenu['href'])==''){ echo '#'; }else { echo trim($datosMenu['href']); };?>" <?php if(trim($datosMenu['onclick'])!=''){ echo $datosMenu['onclick']; }  ?> ><?php echo $datosMenu['nombre']; ?></a></li>
                     <?php }else{ ?>
-                      <li class="dropdown mLi">
+                      <li class="<?php if( isset($datosMenu['id']) && isset($opt_menu_active) && $datosMenu['id']==$opt_menu_active ){ echo 'active'; } ?> dropdown mLi">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $datosMenu['nombre']; ?></a>
                         <ul class="dropdown-menu" role="menu">
                           <?php foreach ($datosMenu['submenu'] as $idSubMenu => $dtsSubMenu) { ?>
