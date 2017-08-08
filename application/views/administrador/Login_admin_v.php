@@ -1,6 +1,9 @@
 		
 		<script src="statics/js/Login_admin/extensiones.js"></script>
 		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+  				<hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
+			</div> 
 			<div class="col-md-6 col-xs-12">
 				<h2>Tema del mes.</h2>
 				<table class="table ">
@@ -16,8 +19,8 @@
     				</tbody>
     					<?php for ($i=0;$i < count($temas);$i++){ ?>
     						<tr>
-    							<td> <?php echo $temas[$i]['title'] ?></td>
     							<td> <?php echo $temas[$i]['mounth'] ?></td>
+    							<td> <?php echo $temas[$i]['title'] ?></td>
     							<td> <a href="<?php echo base_url(); ?>Test_models_c/editar_tema?id_tema=<?php echo $temas[$i]['id_monthly_theme'] ?>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
     						</tr>
     					<?php }
