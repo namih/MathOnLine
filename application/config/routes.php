@@ -55,5 +55,9 @@ $route['translate_uri_dashes'] = FALSE;
 $route['registro'] = 'Registro_usuario_c';
 $route['logout'] = 'Home_c/logout';
 $route['login'] = 'Home_c/login';
-$route['perfil_user/(:any)'] = 'Perfil_usuario_c/Perfil_usuario';
+$route['tutoriales'] = "Home_c/goHomeUser";
+$route['evaluaciones'] = "Aux_mimi_c/carga_panel_evaluaciones";
+$route['material_complementario'] = "Complementary_material_c";
+$route['perfil_user/(:any)'] = 'Perfil_usuario_c/Perfil_usuario/$1';
+$route['evaluacion_tema/(:any)'] = "Evaluation_c/get_evaluation/$1";
 

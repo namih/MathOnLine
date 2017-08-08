@@ -90,7 +90,7 @@ class Etiquetas{
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
 									'id'=>'',
 									'href'=>'',
-									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
@@ -146,7 +146,7 @@ class Etiquetas{
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
 									'id'=>'',
 									'href'=>'',
-									'onclick'=>'Perfil_usuario_c/Perfil_usuario/'.$idUser
+									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
@@ -162,7 +162,7 @@ class Etiquetas{
 					1=>array(
 						'nombre'=>'Tutoriales',
 						'id'=>'opt_tutoriales',
-						'href'=>base_url(),
+						'href'=>base_url().'tutoriales',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
@@ -170,7 +170,7 @@ class Etiquetas{
 					2=>array(
 						'nombre'=>'Evaluaciones',
 						'id'=>'opt_evaluaciones',
-						'href'=>base_url().'Aux_mimi_c/carga_panel_evaluaciones',
+						'href'=>base_url().'evaluaciones',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
@@ -178,7 +178,7 @@ class Etiquetas{
 					3=>array(
 						'nombre'=>'Material complementario',
 						'id'=>'opt_materiales',
-						'href'=>base_url().'Complementary_material_c',
+						'href'=>base_url().'material_complementario',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
@@ -201,7 +201,7 @@ class Etiquetas{
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
 									'id'=>'opt_perfil',
-									'href'=>base_url().'Perfil_usuario_c/Perfil_usuario/'.$idUser,
+									'href'=>base_url().'perfil_user/'.$idUser,
 									'onclick'=>''
 								),
 								2=>array(
