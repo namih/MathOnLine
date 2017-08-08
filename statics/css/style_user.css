@@ -126,3 +126,5 @@
 .titulo_tema{
   background-color: #000000; opacity: 0.7; padding: 12px; color: #FFFFFF; font-weight: bold;
 }
+
+.box_shadow { padding-top: 1px; width: 150px; height: 70px;  box-shadow: 0 0 8px rgba(0, 0, 0, .8); -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8); -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); height: 65px; }
