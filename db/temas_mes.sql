@@ -5,7 +5,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (1,
@@ -17,7 +16,6 @@ Según Plinio, "al reconstruir el intercambio de mensajes durante el atentado, n
 El método también sería útil para responder a ataques terroristas, como el ataque con gas sarín en 1995, en el metro de Tokio, en el que el gas venenoso en los túneles subterráneos de la ciudad mató a 13 personas, e hirió a cerca de 1.000. "Nuestro algoritmo no necesitaría detectores en todas las estaciones, ya que una muestra sería suficiente para identificar rápidamente el origen del ataque", señala Pinto.
 Además, con este método se puede encontrar la fuente de todo tipo de rumores que circulan en una red, con un número limitado de miembros de dicha red. Así, suponiendo que alguien encuentra un rumor acerca de sí mismo, que se ha propagado en Facebook, y que se ha enviado a 500 personas, a sus amigos o, incluso, a amigos de sus amigos, se podría encontrar a la persona que inició el rumor. Este método también puede utilizarse para identificar el origen de un mensaje de spam, o de un virus de ordenador, utilizando solo un número limitado de sensores dentro de la red.',
 '/statics/img/tema_mes/enero.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -27,7 +25,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (2,
@@ -41,7 +38,6 @@ Cada año se otorga este premio para las categorías de física, química, medic
 Desde 1901 se llevan otorgando estos galardones, pero los matemáticos no trabajan sin reconocimiento, de eso se encargó John C. Fields. El canadiense puso el dinero para que esta disciplina obtuviera su merecido prestigio. Esta tarea la empezó en 1936 otorgando dos medallas, que posteriormente pasaron a ser cuatro.
 Se entregan cada cuatro años de forma que coincidan con los congresos internacionales de matemáticas, dónde se da a conocer el nombre de los afortunados. El único requisito que deben de tener estos genios aspirantes al premio es ser menor de 40 años a día 1 de enero del año del congreso. Quién decide en este caso quienes son los merecedores del premio es la Unión Internacional de Matemáticas.',
 '/statics/img/tema_mes/febrero.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -51,7 +47,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (3,
@@ -63,7 +58,6 @@ A lo largo del día los seguidores del número Pi se reunirán para comentar an�
 La Cámara de Representantes de Estados Unidos aprobó en el año 2009 la celebración del día de Pi e instó a que colegios e institutos realicen actividades y animen a sus alumnos a estudiar matemáticas.
 Otro día señalado en el calendario de los amantes de las matemáticas y del número Pi es el 22 de julio de cada año. La fracción 22/7 tiene como resultado 3,142857... un número muy cercano al valor real de pi. Es por ello que cada 22 de julio se celebre el "Día de Aproximación a Pi".',
 '/statics/img/tema_mes/marzo.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -73,7 +67,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (4,
@@ -88,7 +81,6 @@ Además, la eterna rivalidad de los Sith y Jedi también ofrece sus estadística
 El logro de este programa informático es que traza conexiones en la masa de datos no organizados disponibles en Internet y los algoritmos desarrollados por los investigadores de LTS2 ofrecen datos muy precisos que pueden ser cuantificados, ordenados y, por supuesto, sencillos de leer.
 Según los expertos, “este método podría ser útil para llenar los vacíos de conocimiento que permanecen en la investigación histórica y sociológica y en numerosos campos científicos también”.',
 '/statics/img/tema_mes/abril.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -98,7 +90,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (5,
@@ -114,7 +105,6 @@ Contar con los dedos, no comprender cómo resolver problemas aritméticos, no re
 5. Juega al ajedrez: Parece ser, según una reciente revisión científica publicada en Frontiers in Psychology (2014) que jugar al ajedrez podría ser una buena forma de estimular algunas de esas funciones mentales que también se ponen en marcha en las tareas matemáticas, como la comprensión, la capacidad de análisis o el razonamiento inductivo.
 Sabemos que no es fácil pero también que no es imposible ser mejor en matemáticas, así que ponte en marcha y sobre todo, no pierdas los nervios en el camino.',
 '/statics/img/tema_mes/mayo.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -124,7 +114,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (6,
@@ -143,7 +132,6 @@ VALUES
 9. El escritor norteamericano F. Emerson Andrews fundó el 5 de abril de 1944 The Duodecimal Society con el objetivo de investigar y educar "en la ciencia matemática, con especial dedicación al uso de la Base Doce de numeración, en matemáticas, pesos y medidas". En su publicación periódica, bautizada como The Duodecimal Bulletin, difundían las virtudes de este sistema de numeración.
 10. Un total de 12 astronautas han caminado hasta ahora sobre la Luna. Los primeros pisaron el satélite en 1969 y los últimos astronautas pusieron un pie en la superficie lunar en 1972. Todos ellos formaron parte de alguna de las seis misiones Apolo de la NASA.',
 '/statics/img/tema_mes/junio.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -153,7 +141,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (7,
@@ -164,7 +151,6 @@ VALUES
 La investigación se ha centrado en analizar espermatozoides de diferentes especies marinas usando luz láser estroboscópica -similar a la que se utiliza en las discotecas-. Sin embargo, los científicos sospechan que el esperma de otras especies, incluidos los seres humanos, podría comportarse de la misma manera.
 Además, ahora que se ha demostrado que "no hace falta todo un cerebro para hacer operaciones matemáticas", es posible que la extraordinaria capacidad de cálculo detectada en los espermatozoides se aplique a otros mensajeros químicos intracelulares que controlan diferentes funciones vitales en distintas células del organismo. "Esto es solo el principio", adelantan los autores de la investigación.',
 '/statics/img/tema_mes/julio.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -174,7 +160,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (8,
@@ -185,7 +170,6 @@ VALUES
 Los expertos están de acuerdo en la existencia de una especie de la segunda ley de la termodinámica de las relaciones de pareja, según la cual hace falta un cierto esfuerzo para mantenerse juntos, según explica Rey en un artículo publicado en la revista PLos One. Según sus resultados, mantener el amor a largo plazo "es algo muy costoso y, con excepciones, casi imposible". "El dicho popular de que el amor no es suficiente se cumple y sugiere que la "erosión" de las relaciones debe prevenirse de algún modo".
 Las relaciones duraderas son aquellas en las que se mantiene el equilibrio, de modo que ambos miembros se esfuerzan, sin descuidar en ningún momento la relación a pesar de que ?la dinámica de las cosas, la inercia, hace que uno tienda a relajarse y a esforzarse cada vez menos?. Además, según el investigador, el esfuerzo es siempre mayor del que uno puede prever al principio de la relación. Eso explica lo que él llama la "paradoja del fracaso", es decir, por qué muchas personas se casan enamoradas y comprometidas a vivir juntas para siempre pero no lo consiguen. El modelo matemático es bastante desalentador, "especialmente si lo aplicamos a la sociedad en la que vivimos, en la que prevalecen las políticas de poco esfuerzo y mucha recompensa", concluye Rey.',
 '/statics/img/tema_mes/agosto.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -195,7 +179,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (9,
@@ -206,7 +189,6 @@ VALUES
 El número narcisista más grande que se conoce se obtiene elevando cada uno de sus dígitos a la potencia 39 y sumando los resultados: 115.132.219.018.763.992.565.095.597.973.971.522.401.
 Por cierto, que el número narcisista 153 tiene más particularidades, por ejemplo que el binario que corresponde a 153 es el capicúa 10011001.',
 '/statics/img/tema_mes/septiembre.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -216,7 +198,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (10,
@@ -229,7 +210,6 @@ A partir de esta técnica, los investigadores desarrollaron un software que perm
 Analizando de esta forma los partidos de la Copa de Europa 2008, los científicos elaboraron una clasificación de las selecciones que coincidió con el resultado del torneo. Amaral quiere utilizar ahora su algoritmo para evaluar la actuación de los equipos nacionales en el Mundial de Fútbol que se disputa estos días en Sudáfrica.
 El algoritmo desarrollado también permite analizar el trabajo en equipo en otros ámbitos, como la investigación, la creatividad artística o la actividad empresarial.',
 '/statics/img/tema_mes/octubre.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -239,7 +219,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (11,
@@ -249,7 +228,6 @@ VALUES
 'En Los números pueden cambiar tu vida (Ediciones B, 19 Euros), Graham Tattersall ha rescatado las matemáticas de las aulas y las ha utilizado para explicar (y cuantificar) algunos de los misterios cotidianos: cuán rico es tu vocabulario, si los muertos superan a los vivos en número, cuán fuerte es una mosca o con qué rapidez se mueve una flatulencia, entre otros ejemplos.
 Todo esto explicado de tal modo que el lector podrá ejercitar el cerebro y, a la vez, impresionar a sus amigos. Y es que según Tattersall, la fórmula "matemáticas + vida = felicidad" realmente funciona.',
 '/statics/img/tema_mes/noviembre.jpg',
-NULL,
 1);
 
 INSERT INTO `mathonline`.`monthly_theme`
@@ -259,7 +237,6 @@ INSERT INTO `mathonline`.`monthly_theme`
 `title`,
 `description`,
 `image`,
-`url_video`,
 `status`)
 VALUES
 (12,
@@ -269,5 +246,4 @@ VALUES
 'Sí, según acaban de demostrar estudiantes de la Universidad de Sheffield (Reino Unido), que han desarrollado una calculadora que estima en base a cuatro fórmulas matemáticas cuántas bolas, espumillón y luces se necesitan para decorar de manera óptima el árbol de Navidad. Así, por ejemplo, el número de bolas que deberían adornar un árbol de 180 centímetros de altura sería 37, a lo que se sumarían 565 centímetros de luces navideñas y 919 centímetros de espumillón. En cuanto al tamaño que debería tener la estrella que lo corona, se calcula dividiendo la altura del árbol en centímetros por 10.
 "Esperamos que nuestras fórmulas permitan que la Navidad sea más fácil para todos", aseguran sus creadores. Además de para uso doméstico, la aplicacion también permite calcular la decoración que requieren los grandes árboles navideños que se colocan en las plazas de las ciudades en estas fechas. Por ejemplo, el de la Plaza Trafalgar (Londres), con 21 metros de altura, necesitaría 433 bolas para lucir "perfecto".',
 '/statics/img/tema_mes/diciembre.jpg',
-NULL,
 1);
