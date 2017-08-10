@@ -181,6 +181,13 @@ class Aux_mimi_c extends CI_Controller
 	
 	}
 
+
+	function guardar_evaluacion(){
+		$arrayDatos = $_POST['arrayResultado'];
+		echo "<pre>";
+		print_r($arrayDatos);
+	}
+
 }/*END controller*/
 
 
