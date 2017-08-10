@@ -62,6 +62,7 @@ var arrayEvaluacion=[];
     var res = idRespuesta.split("_");
     //console.log(idRespuesta);
     arrayEvaluacion[res[0]]['answer_select']=arrayEvaluacion[res[0]]['answers'][res[1]]['key'];
+    arrayEvaluacion[res[0]]['answer_is_correct']=arrayEvaluacion[res[0]]['answers'][res[1]]['is_correct'];
     console.log(arrayEvaluacion);
   }        
 
