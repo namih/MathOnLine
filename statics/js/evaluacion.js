@@ -81,7 +81,7 @@ var arrayEvaluacion=[];
 
 
       if(form_complete == 1){
-            var url = base_url + 'Aux_mimi_c/guardar_evaluacion';
+            var url = base_url + 'Evaluation_c/get_current_responses';
             $.ajax({        
                 url: url,       
                 data: {arrayResultado:arrayResultado},
