@@ -1,33 +1,5 @@
 	<div class="col-md-10 col-md-offset-1">
-	    <?php $ligas_interes= array(
-	      1 =>array(
-	        'title'=>'consultame' , 
-	        'description'=>'Si entras aqui te vas a encontrar cin cosas interesantes',
-	        'link'=>'www.google.com.mx'
-	        ),
-	      2 =>array(
-	        'title'=>'Este es el link' , 
-	        'description'=>'Este link muestra algo interesante',
-	        'link'=>'www.google.com.mx'
-	        ),
-	    );
-	     $bibliografia= array(
-	      1 =>array(
-	        'title'=>'Titulo del libro' , 
-	        'author'=>'Pepe Pecas',
-	        'place_publication'=>'Lugar de la publicacion',
-	        'editorial'=>'Trillas',
-	        'year'=>'2016'
-	        ),
-	      2 =>array(
-	        'title'=>'Titulo del libro dos' , 
-	        'author'=>'Pepe Pecas dos',
-	        'place_publication'=>'Lugar de la publicacion',
-	        'editorial'=>'Trillas',
-	        'year'=>'2016'
-	        ),
-	    ); ?>
-	    <center><h2>Material complementario</h2></center>
+ 	    <center><h2>Material complementario</h2></center>
 	    <p>En esta sección podras consultar...</p>
 
 	    <ul class="nav nav-tabs">
