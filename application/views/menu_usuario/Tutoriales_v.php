@@ -11,7 +11,9 @@
                         <div class="collapse" id="main_tema_<?php echo $tema['id_tema']; ?>">
                           <?php if(isset($tema['subtemas']) && $tema['subtemas']!=false){ 
                             foreach ($tema['subtemas'] as $llave => $subtema) { ?>
-                              <a href="#subtema_<?php echo $subtema['id_subtema']; ?>" class="subtema list-group-item" data-toggle="collapse" data-parent="#main_tema_<?php echo $subtema['id_subtema']; ?>"><?php echo $subtema['nombre']; ?> <i class="fa fa-caret-down"></i><span class="badge"><?php echo count($subtema['tutoriales']); ?></span></a>
+                              <a href="#subtema_<?php echo $subtema['id_subtema']; ?>" class="subtema list-group-item" data-toggle="collapse" data-parent="#main_tema_<?php echo $subtema['id_subtema']; ?>">
+                                <?php echo $subtema['nombre']; ?> <i class="fa fa-caret-down"></i><span class="badge"><?php echo count($subtema['tutoriales']); ?></span>
+                              </a>
                                 <div class="collapse list-group-submenu" id="subtema_<?php echo $subtema['id_subtema']; ?>">
                                   <?php if(isset($subtema['tutoriales']) && $subtema['tutoriales']!=false){ 
                                     foreach ($subtema['tutoriales'] as $id_tutorial => $dts_tutorial) { ?>

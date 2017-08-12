@@ -20,7 +20,7 @@
                 <?php if(isset($themes) && $themes!=false){ 
                   foreach ($themes as $key => $value) { ?>
                     <div class="item <?php if($key==1) echo "active"; ?>">
-                      <div class="panel panel-success tema_mes"  align="center">
+                      <div class="panel panel-success tema_mes" >
                         <div class="panel-heading" align="center"><?php echo $value['mes']; ?></div>
                         <div class="panel-body">
                           <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$value['image']; ?>');"><br>

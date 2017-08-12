@@ -1,9 +1,6 @@
 		
 		<script src="statics/js/Login_admin/extensiones.js"></script>
 		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
-  				<hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; ">
-			</div> 
 			<div class="col-md-6 col-xs-12">
 				<h2>Tema del mes.</h2>
 				<table class="table ">
