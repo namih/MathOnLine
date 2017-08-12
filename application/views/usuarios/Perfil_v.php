@@ -30,7 +30,6 @@
 	            foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
 	              <div class="col-xm-6 col-sm-4 col-md-4 col-lg-2 col-xl-2" align="center"><br>
 	                <input type="radio" name="avatar" value="<?php echo $key; ?>" class="avatar" /><img id="img_avatar_<?php echo $key; ?>" class="img-responsive" src="<?php echo base_url().$value['location']; ?>"/>
-	                <label><?php echo $value['name']; ?></label>
 	              </div>
 	            <?php } 
 	          } ?>

@@ -14,8 +14,8 @@
 	            <div class="row link">
 	              <div class="col-md-10 col-md-offset-1">
 	                <a href="<?php echo $value['link']; ?>" target="_blanc" style="text-decoration: none;"><h4><?php echo $value['title']; ?></h4>
-	                <p class="col-md-9" align="justify" style="text-decoration: none; color: #000000;"><?php echo $value['description']; ?> </p>
 	                </a>
+	                <p class="col-md-9" align="justify" style="text-decoration: none; color: #000000;"><?php echo $value['description']; ?> </p>
 	              </div>
 	            </div>
 	            <br>
