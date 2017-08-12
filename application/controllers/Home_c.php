@@ -191,7 +191,7 @@ class Home_c extends CI_Controller
                 $aux_tutorial = $theme["tutorial"];
                 $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
 
-                if(count($themes_student)>0){
+                if(count($themes_student)>1){
                     $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
                 }else{
                     $ket_tutorial_studen = null;

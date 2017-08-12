@@ -21,10 +21,26 @@ class Home_admin_c extends CI_Controller {
 	* @version 1.0
 	*/
 	function index(){
-		$datos['temas'] = $this->tema_mes();
-		$this->load->view('header/head_v');
-		$this->load->view('administrador/Login_admin_v',$datos);
-		$this->load->view('footer/footer_v');
+		$login = $this->session->userdata('logged_in');
+        if($login != null && $login == true){     
+        	$type_user = $this->session->userdata('type_user');
+        	if($type_user == 1 || $type_user == 2){
+        		$datos['temas'] = $this->tema_mes();
+				
+				$datos["user_log"][0] = $this->session->userdata('user');
+		        $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+		        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+
+				$this->load->view('header/head_v');
+				$this->load->view('header/Menu_user_v', $datos);
+				$this->load->view('administrador/Login_admin_v',$datos);
+				$this->load->view('footer/footer_v');
+        	}else{
+        		redirect(base_url());
+        	}
+		}else{
+	    	redirect(base_url());
+	    }
 	}
 	
 	/**

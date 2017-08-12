@@ -96,7 +96,10 @@ function login_user(){
 	       	data: {'username-user':username_user,'password-user':password_user},
 	       	type: 'POST',
 	       	success: function(data){
-	       		if(Number(data)==1){
+	       		if(Number(data) == 1 || Number(data) == 2){
+	       			window.location.replace(base+'Home_student_c/tutorial_by_user_id');
+	       		}
+	       		if(Number(data)==3){
 		           window.location.replace(base+'Home_student_c/tutorial_by_user_id'); 
 	          	}else{
 	        	   alert('error_usuario');
@@ -217,7 +220,11 @@ $('form').on('submit',function(e){
         url      : $(this).attr('action'),
         data     : $(this).serialize(),
         success  : function(data) {
-       		if(Number(data)==1){
+
+        	if(Number(data)==1 || Number(data)==2){
+        		$(location).attr('href', 'home_admin_c');
+        	}
+       		else if(Number(data)==3){
         		$(location).attr('href', 'home_c/goHomeUser');
           	}else{
 				var username_user = $('#username_user').val().trim();
