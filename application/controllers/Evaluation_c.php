@@ -137,5 +137,8 @@ class Evaluation_c extends CI_Controller
 
     public function get_current_responses(){
         $responses = $this->input->post('arrayResultado');
+        // id user y id de la evaluacion para obterner score mas alto
+        //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
+        
     }
 }
