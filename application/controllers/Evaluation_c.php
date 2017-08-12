@@ -134,4 +134,8 @@ class Evaluation_c extends CI_Controller
         }
         return $question_custom;
     }
+
+    public function get_current_responses(){
+        $responses = $this->input->post('arrayResultado');
+    }
 }
