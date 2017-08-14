@@ -63,3 +63,12 @@ function validar_email_contaco() {
 		return false;
 	}
 }
+
+function tab_btn(event,element){
+            var t = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+            if (t == 9){
+                $('#'+element).focus();
+                return false;
+              }
+              return true;
+}

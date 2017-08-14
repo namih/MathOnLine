@@ -10,16 +10,15 @@
                   <h4 class="modal-title">Contacto</h4>
                 </div>
               </div>
-              <form action="application/controllers/enviar_correo_c.php" method="post">
               <div class="modal-body">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-lg-12">
                       <form id="login-form">
                         <div class="form-group">
-                          <input type="text" name="email-user" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico">
+                          <input type="text" name="email-user" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" onKeyDown="return tab_btn(event,'comentario');">
                           <br/>
-                          <textarea type="text" class="form-control" rows="8" id="comentario" placeholder="Comentario"></textarea>
+                          <textarea type="text" class="form-control" rows="8" id="comentario" placeholder="Comentario" onKeyDown="return tab_btn(event,'envia_contacto');"></textarea>
                         </div>
                       </form>
                     </div>
@@ -31,7 +30,7 @@
                 </div>
               </div>
               <div align="center">
-                <button type="button" onclick="enviar_contacto()" class="btn btn-success">Enviar</button>
+                <button type="button" id="envia_contacto" onclick="enviar_contacto()" class="btn btn-success" onKeyDown="return tab_btn(event,'email');">Enviar</button>
               </div>
               </form>
             </div>      
