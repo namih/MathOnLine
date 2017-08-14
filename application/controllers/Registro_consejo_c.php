@@ -19,11 +19,31 @@ class Registro_consejo_c extends CI_Controller {
 	* @version 1.0
 	*/
 	
-	public function index() {
-		$datos['unidades'] = $this->lista_uam();
-		$this->load->view('header/head_v');
-		$this -> load -> view('Registro_consejo_v',$datos);
-		$this->load->view('footer/footer_v');		
+	// public function index() {
+		// $datos['unidades'] = $this->lista_uam();
+		// $this->load->view('header/head_v');
+		// $this -> load -> view('administrador/Registro_consejo_v',$datos);
+		// $this->load->view('footer/footer_v');		
+	// }
+	public function index()
+	{
+		$login = $this->session->userdata('logged_in');
+        if($login != null && $login == true){
+		    $datos["user_log"][0] = $this->session->userdata('user');
+		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+
+
+	        
+			
+			$datos['unidades'] = $this->lista_uam();
+		    $this->load->view('header/head_v');
+		    $this->load->view('header/Menu_user_v', $datos);
+			$this->load->view('administrador/Registro_consejo_v',$datos);	    	
+	    	$this->load->view('footer/footer_v');
+	    }else{
+	    	redirect(base_url());
+	    }
 	}
 	
 	/**

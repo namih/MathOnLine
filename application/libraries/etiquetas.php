@@ -42,7 +42,7 @@ class Etiquetas{
 					1=>array(
 						'nombre'=>'Inicio',
 						'id'=>'',
-						'href'=>'',
+						'href'=>base_url().'administrador',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
@@ -56,9 +56,9 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					3=>array(
-						'nombre'=>'Alta ccc 3',
+						'nombre'=>'Alta CCC',
 						'id'=>'',
-						'href'=>'',
+						'href'=>base_url().'administrador_ccc',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
@@ -104,7 +104,7 @@ class Etiquetas{
 				//consejo
 				2 => array(
 					1=>array(
-						'nombre'=>'Inicio',
+						'nombre'=>base_url().'administrador',
 						'id'=>'',
 						'href'=>'',
 						'onclick'=>'',
