@@ -114,11 +114,30 @@ function comparar_contrasenia () {
 			document.getElementById('pwd').value = "";
 			document.getElementById('rpwd').value = "";
 			document.getElementById('pwd').placeholder = "Las contraseñas no coinciden";
-			document.getElementById('pwd').focus();;
+			document.getElementById('pwd').focus();
 		}
 	}else{
 		return false;
 	}
+}
+
+function longitud_contrasenia () {
+	var longi = document.getElementById('pwd').value;
+	var longi_2 = document.getElementById('pwd');
+    var longi_cadena = 8;
+    //alert(longi_cadena);
+    if (longi.length < longi_cadena) {
+   // alert('Tu contraseña debe tener al menos 8 caracteres');
+    // longi_2.value = "";
+    // longi_2.placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+	// longi_2.focus();
+	document.getElementById('pwd').value = "";
+	document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+	//document.getElementById('pwd').select();
+    } else{
+    	alert('Contraseña correcta');
+    };
+    
 }
 
 
@@ -358,13 +377,13 @@ function validar_anio () {
 	var anio_long = document.getElementById('anio').value;
 	if (anio_long.length != 4) {
 		anio.value = "";
-		document.getElementById('anio').placeholder = "0000";
+		document.getElementById('anio').placeholder = "Escribe tu año de nacimiento, Ej: 1942";
 		document.getElementById('anio').focus();
 	} else {
 		var valor = es_numero(anio.value);
 		if (valor == false) {
 			anio.value = "";
-			document.getElementById('anio').placeholder = "0000";
+			document.getElementById('anio').placeholder = "Escribe tu año de nacimiento, Ej: 1942";
 			document.getElementById('anio').focus();
 		};
 	};

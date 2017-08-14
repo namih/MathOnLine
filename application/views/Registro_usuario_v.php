@@ -24,7 +24,7 @@
 		</div>
 		
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd1">
-			<input  type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
+			<input onblur="longitud_contrasenia()" type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
 			<span id="error_vacio_pwd1" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
 			
@@ -105,7 +105,7 @@
 	</div>
 		
 </div>
-
+ 
 <div id="Registro" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
