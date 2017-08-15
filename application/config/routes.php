@@ -62,5 +62,5 @@ $route['perfil_user/(:any)'] = 'Perfil_usuario_c/Perfil_usuario/$1';
 $route['evaluacion_tema/(:any)'] = "Evaluation_c/get_evaluation/$1";
 $route['administrador'] = "Home_admin_c";
 $route['administrador_ccc'] = "Registro_consejo_c";
-$route['administrador_material'] = "Complementary_material_c";
+$route['administrador_material'] = "Complementary_material_c/cargar_administrador";
 

@@ -66,7 +66,7 @@ class Etiquetas{
 					4=>array(
 						'nombre'=>'Material Complementario',
 						'id'=>'',
-						'href'=>'',
+						'href'=>base_url().'administrador_material',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
