@@ -16,15 +16,23 @@
 		 * @param NA
 		 * @version 1.0
 		 */
-		 public function lista_links()
+		 public function lista_links($id_link = NULL)
 		 {
-			 $links = $this->db->SELECT('*')->FROM('links_interest')->WHERE('status', 1)->GET();
-			 
-			 if ($links->num_rows() > 0) {
-				 return $links->result_array();
-			 } else {
-				 return FALSE;
-			 }
+		 	if (!is_null($link)) {
+				$query = $this->db->SELECT('*')->FROM('links_interest')->WHERE('id_links_interest',$id_link)->WHERE('status', 1)->GET();
+				if ($query->num_rows() === 1) {
+					return $query->row_array();
+				} else {
+					return NULL;
+				}
+			} else {
+				$query = $this->db->SELECT('*')->FROM('links_interest')->WHERE('status', 1)->GET();
+				if ($query->num_rows() > 0) {
+					return $query->result_array();
+				} else {
+					return NULL;
+				}
+			}
 		 }
 		 
 		 
@@ -36,21 +44,24 @@
 		 * @param NA
 		 * @version 1.0
 		 */
-		 public function lista_bibliografia()
+		 public function lista_bibliografia($id_bibliography)
 		 {
-			 $biblio = $this->db->SELECT('*')->FROM('bibliography')->WHERE('status', 1)->GET();
-			 
-			 if ($biblio->num_rows() > 0) {
-				 return $biblio->result_array();
-			 } else {
-				 return FALSE;
-			 }
+		 	if (!is_null($id_bibliography)) {
+				$query = $this->db->SELECT('*')->FROM('bibliography')->WHERE('id_bibliography', $id_bibliography)->WHERE('status', 1)->GET();
+				if ($query->num_rows() === 1) {
+					return $query->row_array();
+				} else {
+					return NULL;
+				}
+			} else {
+				$query = $this->db->SELECT('*')->FROM('bibliography')->WHERE('status', 1)->GET();
+				if ($query->num_rows() > 0) {
+					return $query->result_array();
+				} else {
+					return NULL;
+				}
+			}
 		 }
-		 
-		 
-		 
-		 
-		 
 }
 
 /* End of file Home_m.php */
