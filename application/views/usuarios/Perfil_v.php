@@ -18,9 +18,9 @@
 	          <div class="col-xm-12 col-sm-12 col-md-12 col-lg-9 col-xl-9" align="left"><br> 
 	            <ul style="list-style: circle; font-size: 20px;">
 	              <li><label class="for">Nombre: </label> <span> <?php echo $user_log[0]['name'].' '.$user_log[0]['last_name']; ?></span></li>
-	              <li><label>Sexo: </label> <span> <?php echo $user_log[0]['sex']; ?></span></li>
+	              <li><label>Sexo: </label> <span> <?php echo $user_log[0]['perfil_sexo']; ?></span></li>
 	              <li><label>Email: </label> <span> <?php echo $user_log[0]['email']; ?></span></li>
-	              <li><label>Miembro desde: </label> <span> <?php echo $user_log[0]['registration_date']; ?></span></li>
+	              <li><label>Miembro desde: </label> <span> <?php echo $user_log[0]['fecha']; ?></span></li>
 	            </ul> 
 	          </div>
 	        </div><br>
