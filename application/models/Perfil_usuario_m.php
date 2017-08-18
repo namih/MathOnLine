@@ -18,6 +18,15 @@
 								->GET();
 				if ($datos->num_rows() == 1) {
 					$perfil = $datos->result_array();
+					if ($perfil[0]['sex']==1){
+						$perfil[0]['perfil_sexo'] = 'Hombre';
+					}
+					else{
+						$perfil[0]['perfil_sexo'] = 'Mujer';
+					}
+					$fecha = date_create($perfil[0]['registration_date']);
+					$fecha = date_format($fecha, 'd-m-Y');
+					$perfil[0]['fecha'] = $fecha;
 					$avatar = $this->db	->SELECT('*')->FROM('avatar')->WHERE('gender', $perfil[0]['sex'])->GET();
 					if ($avatar->num_rows() > 0) {
 						$avatar_genero = $avatar->result_array();
