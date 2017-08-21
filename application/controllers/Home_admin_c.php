@@ -83,12 +83,11 @@ class Home_admin_c extends CI_Controller {
 	 */
 	
 	public function editor_tema(){
-		// via url id del mes
-	//	$id_tema = GET_['id_tema'];
-		
-		$temas = $this->Home_admin_m->lista_tema_mes();
-		$datos['temas'] = $temas;
-		$this->load->view('administrador/Editor_tema_mes_v',$datos);	
+		$id_tema =  $_GET['id_tema'];
+		$temas = $this->Home_admin_m->tema_mes($id_tema);
+		$this->load->view('header/head_v');
+		$this->load->view('administrador/Editor_tema_mes_v',$temas);
+		$this->load->view('footer/footer_v');
 	}
 	
 	/**
@@ -102,7 +101,14 @@ class Home_admin_c extends CI_Controller {
 	public function update_tema(){
 		//reliazar el cambio a este controlaodr para actualizar tema.
 		$editor = $this->input->post('editor');
-		$update_editor=$this->Home_admin_m->actualizar_tema($tema_mes);
+        $update_editor=$this->Home_admin_m->actualizar_tema($editor);
+		if ($update_editor) {
+			echo "Actualizacion exitosa";
+		} else {
+			echo" Intentar mas tarde"
+			
+		}
+		
 		
 	}
 		
