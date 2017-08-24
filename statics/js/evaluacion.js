@@ -5,9 +5,6 @@ var arrayEvaluacion=[];
      
         function empezarDetener(elemento){
             if(timeout==0){
-                // empezar el cronometro
-                elemento.value="Detener";
-     
                 // Obtenemos el valor actual
                 inicio=new Date().getTime();
      
@@ -17,8 +14,6 @@ var arrayEvaluacion=[];
                 // iniciamos el proceso
                 funcionando();
             }else{
-                // detemer el cronometro
-                elemento.value="Empezar";
                 clearTimeout(timeout);
      
                 // Eliminamos el valor inicial guardado
@@ -46,41 +41,32 @@ var arrayEvaluacion=[];
         function LeadingZero(Time){
             return (Time < 10) ? "0" + Time : + Time;
         }
-     
-        window.onload=function(){
-            if(localStorage.getItem("inicio")!=null){
-                // Si al iniciar el navegador, la variable inicio que se guarda
-                // en la base de datos del navegador tiene valor, cargamos el valor
-                // y iniciamos el proceso.
-                inicio=localStorage.getItem("inicio");
-                document.getElementById("boton").value="Detener";
-                funcionando();
-            }
-        }
+    
 
-  function agregaRespuesta(idRespuesta){
+  function agregaRespuesta(idRespuesta,idPregunta){
+    $("#error_preg_"+idPregunta).empty();
     var res = idRespuesta.split("_");
     //console.log(idRespuesta);
     arrayEvaluacion[res[0]]['answer_select']=arrayEvaluacion[res[0]]['answers'][res[1]]['key'];
     arrayEvaluacion[res[0]]['answer_is_correct']=arrayEvaluacion[res[0]]['answers'][res[1]]['is_correct'];
-    console.log(arrayEvaluacion);
+    //console.log(arrayEvaluacion);
   }        
 
   function evaluarTema() {
-    var form_complete=1;
-    empezarDetener('Detener');
-    var cronometro=$('#crono').text();
-    //var cronometro='01:30:59';
-    var arrayCrono = cronometro.split(":");
-    var tiempo = Number(arrayCrono[0]*3600)+Number(arrayCrono[1]*60)+Number(arrayCrono[2]);
-    //console.log(cronometro);
+      
+    var form_complete=revisarEval();
     var arrayResultado;
-
-    arrayResultado={tiempo:tiempo,evaluacion:arrayEvaluacion};
-    console.log(arrayResultado);
-
-
+    
       if(form_complete == 1){
+            empezarDetener('Detener');
+            var cronometro=$('#crono').text();
+            //var cronometro='01:30:59';
+            var arrayCrono = cronometro.split(":");
+            var tiempo = Number(arrayCrono[0]*3600)+Number(arrayCrono[1]*60)+Number(arrayCrono[2]);
+            //console.log(cronometro);
+
+            arrayResultado={tiempo:tiempo,evaluacion:arrayEvaluacion};
+            //console.log(arrayResultado);
             var url = base_url + 'Evaluation_c/get_current_responses';
             $.ajax({        
                 url: url,       
@@ -112,4 +98,20 @@ var arrayEvaluacion=[];
         console.log("Faltan algunas preguntas por responder");
       };
 
+  }
+
+  function revisarEval(){
+    var completo=1;
+    $("div.pregunta").each(function(){
+        var pregunta = this.id;
+        if($('input:radio[name=answers_'+pregunta+']:checked').val() == undefined ){/*validar si hay respuesta de la pregunta*/
+                texto='Debe seleccionar una respuesta';
+                var msjSuccess = '<div class="alert alert-danger alert-dismissable"><i class="fa fa-warning"></i>¡'+texto+'!</div>';
+                $("#error_"+pregunta).html(msjSuccess);
+                completo=0;
+        }else{
+                $("#error_"+pregunta).empty();
+        }
+    });
+    return completo;
   }
