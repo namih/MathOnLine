@@ -84,4 +84,29 @@
     empezarDetener('Empezar');
   }
 
+/*$(function() {
+ $(document).keydown(function(e){
+  var code = (e.keyCode ? e.keyCode : e.which);
+  if(code == 116) {
+   e.preventDefault();
+   if(confirm('Al recargar la página se perderá la información que no se haya guardado ¿Desea continuar?')){
+      location.reload();
+   }
+  }
+ });
+});*/
+
+
+window.onbeforeunload = function (evt) {
+  var message = 'Al salir de la sección se perderá la información que no se haya guardado ¿Desea continuar?';
+
+  if (typeof evt == 'undefined') {
+    evt = window.event;
+  }
+  if (evt) {
+    evt.returnValue = message;
+  }
+  return message;
+}
+
 </script>            
