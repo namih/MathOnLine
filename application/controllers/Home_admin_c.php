@@ -99,19 +99,14 @@ class Home_admin_c extends CI_Controller {
 	 */
 	
 	public function update_tema(){
-		//reliazar el cambio a este controlaodr para actualizar tema.
+		
 		$editor = $this->input->post('editor');
         $update_editor=$this->Home_admin_m->actualizar_tema($editor);
 		if ($update_editor) {
 			echo "Actualizacion exitosa";
 		} else {
-			echo" Intentar mas tarde"
-			
+			echo" Intentar mas tarde";
 		}
-		
-		
 	}
-		
-	
 	
 }
