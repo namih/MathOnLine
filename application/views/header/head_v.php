@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/style_user.css">
     <script src="<?php echo base_url(); ?>statics/js/jquery-3.2.1.min.js"></script>
-    <script src="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
   </head> 
   <body>
     <script>var base_url ='<?php echo base_url();?>';</script>

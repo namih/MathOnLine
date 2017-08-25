@@ -137,7 +137,7 @@
                 <div class="panel-heading"><b>Calendario escolar</b></div>
                 <div class="panel-body">
                   <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0">
-                    <a href="<?php echo base_url(); ?>statics/img/calendario_uam/calendario_uam.png">  
+                    <a href="#" data-toggle="modal" data-target="#calendarModal" data-keyboard="true">  
                       <img class="calendario img-responsive" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM" title="Calendario escolar UAM" align="absmiddle">
                     </a>
                   </div>
@@ -202,4 +202,27 @@
               return true;
           }
       </script>
-    </div>    
+    </div>
+    <!-- Modal calendar-->
+    <div id="calendarModal" class="modal fade" role="dialog" tabindex='-1'>
+      <div class="modal-dialog" style="width: 80% !important;">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <div style="height: 10px !important;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="panel-body">
+                <div class="row">
+                  <img src="statics/img/calendario_uam/calendario_uam.png" width="100%" height="100%">
+                </div>                  
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+
+    </div>     

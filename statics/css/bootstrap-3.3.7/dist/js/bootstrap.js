@@ -606,12 +606,25 @@ if (typeof jQuery === 'undefined') {
       .removeClass('collapse')
       .addClass('collapsing')[dimension](0)
       .attr('aria-expanded', true)
-
+      //modificacion para temas
+    if($('a[href="#'+this.$element[0].id+'"]')){
+      if( $( $('a[href="#'+this.$element[0].id+'"] i')[0] ).hasClass('fa-angle-double-right') ){
+        $('a[href="#'+this.$element[0].id+'"]').children('i').removeClass('fa fa-angle-double-right')
+        $('a[href="#'+this.$element[0].id+'"]').children('i').addClass('fa fa-angle-double-down')      
+      }else{
+        if( $( $('a[href="#'+this.$element[0].id+'"] i')[0] ).hasClass('fa-chevron-right') ){
+          $('a[href="#'+this.$element[0].id+'"]').children('i').removeClass('fa fa-chevron-right')
+          $('a[href="#'+this.$element[0].id+'"]').children('i').addClass('fa fa-chevron-down')      
+        }
+      }
+    }
+    //fin de las modificaciones para temas
     this.$trigger
       .removeClass('collapsed')
       .attr('aria-expanded', true)
 
     this.transitioning = 1
+
 
     var complete = function () {
       this.$element
@@ -646,6 +659,20 @@ if (typeof jQuery === 'undefined') {
       .addClass('collapsing')
       .removeClass('collapse in')
       .attr('aria-expanded', false)
+
+      //modificacion para temas
+    if($('a[href="#'+this.$element[0].id+'"]')){
+      if( $( $('a[href="#'+this.$element[0].id+'"] i')[0] ).hasClass('fa-angle-double-down') ){
+        $('a[href="#'+this.$element[0].id+'"]').children('i').removeClass('fa fa-angle-double-down');
+        $('a[href="#'+this.$element[0].id+'"]').children('i').addClass('fa fa-angle-double-right');      
+      }else{
+        if( $( $('a[href="#'+this.$element[0].id+'"] i')[0] ).hasClass('fa-chevron-down') ){
+          $('a[href="#'+this.$element[0].id+'"]').children('i').removeClass('fa fa-chevron-down');
+          $('a[href="#'+this.$element[0].id+'"]').children('i').addClass('fa fa-chevron-right');      
+        }
+      }
+    }
+    //fin de las modificaciones para temas
 
     this.$trigger
       .addClass('collapsed')

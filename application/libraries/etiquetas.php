@@ -168,12 +168,37 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					2=>array(
-						'nombre'=>'Evaluaciones',
+						'nombre'=>'Evaluación',
 						'id'=>'opt_evaluaciones',
-						'href'=>base_url().'evaluaciones',
+						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
-						'submenu'=>array()
+						'submenu'=>array(
+								1=>array(
+									'nombre'=>'Números',
+									'id'=>'eval_numeros',
+									'href'=>base_url().'evaluacion_tema/1',
+									'onclick'=>''
+								),
+								2=>array(
+									'nombre'=>'Álgebra',
+									'id'=>'eval_algebra',
+									'href'=>base_url().'evaluacion_tema/2',
+									'onclick'=>''
+								),
+								3=>array(
+									'nombre'=>'Geometría y trigonometría',
+									'id'=>'eval_geom_trig',
+									'href'=>base_url().'evaluacion_tema/3',
+									'onclick'=>''
+								),
+								4=>array(
+									'nombre'=>'Geometría analítica',
+									'id'=>'eval_analitica',
+									'href'=>base_url().'evaluacion_tema/4',
+									'onclick'=>''
+								),
+							)
 						),
 					3=>array(
 						'nombre'=>'Material complementario',
