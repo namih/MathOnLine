@@ -22,7 +22,7 @@
         
 	    $this->load->view('header/head_v');
 	    $this->load->view('header/Menu_user_v', $datos);
-		$this->load->view('usuarios/Perfil_v', $datos);
+		$this->load->view('menu_usuario/Perfil_v', $datos);
     	$this->load->view('footer/footer_v');
 
 	}
