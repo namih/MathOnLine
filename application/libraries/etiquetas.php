@@ -87,13 +87,13 @@ class Etiquetas{
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'nombre'=>'<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Consultar perfil',
 									'id'=>'',
 									'href'=>'',
 									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
 									'id'=>'',
 									'href'=>'logout',
 									'onclick'=>''
@@ -143,13 +143,13 @@ class Etiquetas{
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'nombre'=>'<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Consultar perfil',
 									'id'=>'',
 									'href'=>'',
 									'onclick'=>'perfil_user/'.$idUser
 								),
 								2=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
 									'id'=>'',
 									'href'=>'logout',
 									'onclick'=>''
@@ -224,13 +224,13 @@ class Etiquetas{
 						'clase'=>'',
 						'submenu'=>array(
 								1=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-user"> </span>Consultar perfil',
+									'nombre'=>'<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Consultar perfil',
 									'id'=>'opt_perfil',
 									'href'=>base_url().'perfil_user/'.$idUser,
 									'onclick'=>''
 								),
 								2=>array(
-									'nombre'=>'<span class="glyphicon glyphicon-log-in"> </span>Cerrar sesión',
+									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
 									'id'=>'opt_sesion',
 									'href'=>base_url().'logout',
 									'onclick'=>''
