@@ -18,7 +18,7 @@
 		 */
 		 public function lista_links($id_link = NULL)
 		 {
-		 	if (!is_null($link)) {
+		 	if (!is_null($id_link)) {
 				$query = $this->db->SELECT('*')->FROM('links_interest')->WHERE('id_links_interest',$id_link)->WHERE('status', 1)->GET();
 				if ($query->num_rows() === 1) {
 					return $query->row_array();
@@ -44,7 +44,7 @@
 		 * @param NA
 		 * @version 1.0
 		 */
-		 public function lista_bibliografia($id_bibliography)
+		 public function lista_bibliografia($id_bibliography = NULL)
 		 {
 		 	if (!is_null($id_bibliography)) {
 				$query = $this->db->SELECT('*')->FROM('bibliography')->WHERE('id_bibliography', $id_bibliography)->WHERE('status', 1)->GET();
