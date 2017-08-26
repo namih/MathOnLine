@@ -28,7 +28,7 @@
                             <!--<img class="img-responsive" style="max-height: 200px; max-width: 80%; " src="<?php echo base_url().$value['image']; ?>"/>-->
                           </div>
                           <br><br>
-                          <p style="text-transform: capitalize; text-indent: 20px;">
+                          <p style="text-indent: 20px;">
                             <?php echo $value['description']; ?> 
                           </p>
                         </div>
