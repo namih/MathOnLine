@@ -97,3 +97,42 @@ class Home_admin_c extends CI_Controller {
 	
 	
 }
+
+
+
+
+
+
+public function update_tema(){
+		if ($_FILES!=NULL) {
+		
+			// Aqui va el Codigo faltante para subir la imagen :3
+			
+			$id_tema = $this->input->post('id_monthly_theme');
+			$id_mes = $this->input->post('id_monthly_theme');
+			$titulo = $this->input->post('title');
+			$descripcion = $this->input->post('description');
+			$image = '/statics/img/tema_mes/'.$_FILES['imagen']['name'];
+			
+			$datos = array( 'id_monthly_theme' => $id_tema,
+							'mounth' => $id_mes,
+							'title' => $titulo,
+							'description' => $descripcion,
+							'image' => $image, );
+			
+			$update_editor=$this->Home_admin_m->actualizar_tema($datos);
+			if ($update_editor) {
+				echo "Actualizacion exitosa";
+			} else {
+				echo" Intentar mas tarde";
+			}
+		} else {
+			$editor = $this->input->post('editor');
+			$update_editor=$this->Home_admin_m->actualizar_tema($editor);
+			if ($update_editor) {
+				echo "Actualizacion exitosa";
+			} else {
+				echo" Intentar mas tarde";
+			}
+		}
+	}
