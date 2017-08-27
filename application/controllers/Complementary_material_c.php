@@ -39,6 +39,7 @@ class Complementary_material_c  extends CI_Controller
 	 */	
 	
 	public function bibliografia(){
+	//pARA EDITAR VIA GET.	PARA MANDAR A LLAMAR VISTA  RETURN ECHO
 			$biblio = $this->Complementary_material_m->lista_bibliografia();
 			return $biblio;
 		}
@@ -53,11 +54,15 @@ class Complementary_material_c  extends CI_Controller
 	
 	
 	public function links(){
+		//pARA EDITAR VIA GET.	PARA MANDAR A LLAMAR VISTA RETURN ECHO
 			$links = $this->Complementary_material_m->lista_links();
-			return $links;
+			return $links; 
 			
 		}
-
+	
+	//METODOS PARA ACTUALIZAR LINK Y BIBLIOGRAFIA(CUENTA CON IMAGEN) 
+	
+	//BORRADO LOGICO (ELIMINAR) RETURN TRUE OR FALSE ECHO
 }
 
 

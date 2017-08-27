@@ -66,13 +66,64 @@ class Home_admin_c extends CI_Controller {
 	 * @param NA
 	 * @version 1.0
 	 */
-	function actualizarCalendarioEsc(){
+	function actualizar_calendarioEsc(){
 		
 	}
 	
-	function guardarCalendario(){
+	//guardar_calendario
+	function guardar_calendario(){
+	$ruta = "statics/files/calendario_uam";
+	$mensaje = "";
+	
+	
+	//Validar primero que  se suba el numero correcto de archivos mandar error  en caso de que sea mayor a 3 o menor a 3
+	$total =3;
+	$cont=count($_FILES);
 		
+	if(count($_FILES)< 3){
+		echo "Se requiere un total de 3 archivos,";
 	}
+	
+	if(count($_FILES )>3){
+		echo "EL nùmero de archivos es mayor a 3";
+	}
+	if (count($_FILES )== 3){
+		
+	
+	
+	//echo "<pre>";
+	//print_r($_FILES);
+	//print_r("Archivos:"+count($_FILES ));
+	//echo "</pre>";
+	$i=0;
+	foreach ($_FILES as $key) {
+		if ($key['error'] == UPLOAD_ERR_OK) {
+			$type = explode( '/', $key['type'] );
+			$Nombre_Original = $key['name'];
+			$Temporal = $key['tmp_name'];
+			$destino = $ruta.$Nombre_Original;
+			
+			if(is_uploaded_file($_FILES['archivo'.$i]['tmp_name'])){
+				//echo "true";
+				copy($_FILES['archivo'.$i]['tmp_name'], $ruta.".".$type[1]); 
+				$i++;
+				echo "Se subio el archivo";
+			}
+			//$type[1];
+			
+			//move_uploaded_file($Temporal, $destino);
+		}
+		/*if ($key['error'] == '') { 
+			$mensaje = "archivo subido";
+		}*/
+		if ($key['error'] != '') { 
+			$mensaje = "error".$key['error'];
+		}
+	}
+	echo $mensaje;
+	}
+}
+
 	
 	/**
 	 * 
