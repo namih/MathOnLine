@@ -1,9 +1,5 @@
-
-		<link rel="stylesheet" href="<?php echo base_url(); ?>statics/js/galleriffic-5.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>statics/js/basic.css">
- 
-
 <?php //echo '<pre>'; print_r($user_log); ?>
+		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
 		<center><h1 style="color:#ffffff;">&nbsp;</h1></center>
 		<div class="col-md-10 col-md-offset-1">
 		    <div class="panel panel-success"  align="center">
@@ -46,7 +42,7 @@
 							<div class="input-group col-lg-12 col-md-12 col-xs-12"><br>
 								<div class="form-group has-feedback col-md-6  col-xs-12" id="usuario">
 									<label>Nombre de usuario: </label>
-									<input onblur="validar_username()" type="text" class="form-control" id="usr" placeholder="Nombre de Usuario*">
+									<input onblur="validar_username()" type="text" class="form-control" id="usr" placeholder="Nombre de Usuario*" value="<?php if(isset($user_log[0]['user_name'])) echo $user_log[0]['user_name']; ?>">
 									<span id="error_username" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
 									<span id="error_user" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 								</div>
@@ -64,7 +60,7 @@
 							<div class="input-group col-lg-12 col-md-12 col-xs-12">
 								<div class="form-group has-feedback col-md-6  col-xs-12" id="email">
 									<label>Correo electrónico: </label>
-									<input onblur="validar_correo()" type="email" class="form-control" id="correo" placeholder="Correo Electrónico*" requiered>
+									<input onblur="validar_correo()" type="email" class="form-control" id="correo" placeholder="Correo Electrónico*" requiered value="<?php if(isset($user_log[0]['email'])) echo $user_log[0]['email']; ?>">
 									<span id="error_email" class="glyphicon glyphicon-remove form-control-feedback" style="display: none"></span>
 									<span id="error_vacio_email" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
@@ -72,22 +68,22 @@
 							</div>
 							<div class="form-group col-md-6  col-xs-12">
 								<label>Nombre: </label>
-								<input type="text" class="form-control" id="name" placeholder="Nombre(s)">
+								<input type="text" class="form-control" id="name" placeholder="Nombre(s)" value="<?php if(isset($user_log[0]['name'])) echo $user_log[0]['name']; ?>">
 							</div>
 							<div class="form-group col-md-6  col-xs-12">
 								<label>Apellidos: </label>
-								<input type="text" class="form-control" id="last" placeholder="Apellidos">
+								<input type="text" class="form-control" id="last" placeholder="Apellidos" value="<?php if(isset($user_log[0]['last_name'])) echo $user_log[0]['last_name']; ?>">
 							</div>
 							<div class="form-group has-feedback col-md-6  col-xs-12" id="error_vacio_anio">
 								<label>Año de nacimiento: </label>
-								<input onblur="validar_anio()" type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
+								<input onblur="validar_anio()" type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required value="<?php if(isset($user_log[0]['year_birthday'])) echo $user_log[0]['year_birthday']; ?>">
 								<span id="error_anio" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 							</div>
 							<div class="form-group has-feedback col-md-6 col-xs-12" id="sex">
 								<label>Sexo: </label>
 								<select class="form-control" id="sexo">
-									<option value="1">Hombre</option>
-									<option value="2">Mujer</option>
+									<option value="1" <?php if(isset($user_log[0]['sex']) && $user_log[0]['sex']==1) echo 'selected="selected"' ?> >Hombre</option>
+									<option value="2" <?php if(isset($user_log[0]['sex']) && $user_log[0]['sex']==2) echo 'selected="selected"' ?> >Mujer</option>
 								</select>
 							</div>
 			    			<div class="input-group col-lg-12 col-md-12 col-xs-12">
