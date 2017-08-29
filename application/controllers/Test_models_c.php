@@ -18,18 +18,7 @@
 			$this->load->library('etiquetas');
         }
 		
-		
-		public function activar()
-		{
-			$id_usuario = 2;
-			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
-			echo $activacion;
-		}
-		
-		
-		public function registrar()
-		{
-						
+		public function registrar() {
 			date_default_timezone_set('America/Mexico_City');
 			$format = 'Y-m-d h:i:s';
 			$usuario = array(
@@ -62,51 +51,6 @@
 			echo $activacion;
 		}
 		
-		
-		public function id_avatar()
-		{
-			$genero = 2;
-			$ids = $this->Registro_usuario_m->obtener_id_avatar($genero);
-			echo "<pre>";
-			print_r($ids);
-			echo "<pre>";
-			
-			$avatar = $ids[array_rand($ids, 1)];
-			echo $avatar['id_avatar'];
-			
-		}
-		
-		public function tutoriales()
-		{
-			$tutoriales = $this->Home_student_m->lista_tutoriales();
-			echo "<pre>";
-			print_r($tutoriales);
-			echo "<pre>";
-		}
-		
-		
-		public function tutorial_rnd()
-		{
-			for ($i=0; $i < 5; $i++) {
-				
-				$inicio = strtotime('2017-05-01 00:00:00');
-				$fin = strtotime('2017-05-31 23:59:59');
-				$int= mt_rand($inicio,$fin);
-				$date_rnd = date("Y-m-d H:i:s",$int);
-				
-				$tutorial = array('id_user' => 3,
-						'id_tutorial' => rand(1, 26),
-						'time_finish' => rand(600, 1800),
-						'tutorial_date' => $date_rnd			
-						);
-			
-				$guardar = $this->Home_student_m->registro_tutorial($tutorial);
-			
-				echo $guardar;
-				echo "<br>";
-			}
-		}
-		
 		public function pass_encrypt()
 		{
 			$pass = '123456';
@@ -120,95 +64,7 @@
 			
 			echo date($format);
 		}
-		
-		public function tuto_usuario()
-		{
-			$id_user = 2;
-			$terminados = $this->Home_student_m->tutoriales_usuario($id_user);
-			echo "<pre>";
-			print_r($terminados);
-			echo "<pre>";
-		}
-		
-		public function temas()
-		{
-			$temas = $this->Home_admin_m->tema_mes();
-			
-			
-			
-			
-			$datos['temas'] = $temas;
-			$this->load->view('header/head_v');
-			$this -> load -> view('auto_verificar',$datos);
-			$this->load->view('footer/footer_v');	
-		}
-		
-		public function editor_tema()
-		{
-			$temas = $this->Home_admin_m->tema_mes();
-			
-			
-			$datos['temas'] = $temas;
-			
-			$this->load->view('header/head_v');
-			$this->load->view('editor_tema_mes_v',$datos);
-			$this->load->view('footer/footer_v');	
-		}
-		
-		
-		public function etiquetas()
-		{
-			$test = $this->etiquetas->type_user();
-			print_r($test);
-		}
-		
-		public function datos_sesion()
-		{
-			$credencial = array('user_name' => 'NightlightCDMX', 'password' => 'JiU8Lp19O0');
-			
-			$datos = $this->Home_m->iniciar_sesion($credencial);
-			
-			echo "<pre>";
-			print_r($datos);
-			echo "<pre>";
-			
-		}
-		
-		
-		public function links()
-		{
-			$links = $this->Complementary_material_m->lista_links();
-			echo "<pre>";
-			print_r($links);
-			echo "<pre>";
-		}
-		
-		public function biblio()
-		{
-			$biblio = $this->Complementary_material_m->lista_bibliografia();
-			echo "<pre>";
-			print_r($biblio);
-			echo "<pre>";
-		}
-		
-		public function activacion_ok()
-		{
-			$this->load->view('header/head_v');
-			$this->load->view('Activacion_exitosa_v', $datos);
-			$this->load->view('footer/footer_v');
-			}
 
-		public function perfil()
-		{
-			$id_user = 2;
-			$perfil = $this->Perfil_usuario_m->datos_usuario($id_user);
-			
-			echo "<pre>";
-			print_r($perfil);
-			echo "<pre>";
-		}
-				
-		
 		public function evaluacion()
 		{
 			$id_tema = 1;
@@ -255,45 +111,38 @@
 			throw new Exception("Error Processing Request", 1);
 		}
 	}
-public function guardar()
-{
-	$ruta = "statics/img/calendario_uam/";
-	$mensaje = "";
-	foreach ($_FILES as $key) {
-		if ($key['error'] == UPLOAD_ERR_OK) {
-			$Nombre_Original = $key['name'];
-			$Temporal = $key['tmp_name'];
-			$destino = $ruta.$Nombre_Original;
-			
-			move_uploaded_file($Temporal, $destino);
-		}
-		if ($key['error'] == '') { 
-			$mensaje = "archivo subido";
-		}
-		if ($key['error'] != '') { 
-			$mensaje = "error".$key['error'];
-		}
-	}
-	echo $mensaje;
-}
-	public function actualizar_tema()
+	public function guardar()
 	{
-		$tema = $this->input->post('datos');
-		$actualizar = $this->Home_admin_m->actualizar_tema($tema);
-		
-		echo $tema;
+		$ruta = "statics/img/calendario_uam/";
+		$mensaje = "";
+		foreach ($_FILES as $key) {
+			if ($key['error'] == UPLOAD_ERR_OK) {
+				$Nombre_Original = $key['name'];
+				$Temporal = $key['tmp_name'];
+				$destino = $ruta.$Nombre_Original;
+				
+				move_uploaded_file($Temporal, $destino);
+			}
+			if ($key['error'] == '') { 
+				$mensaje = "archivo subido";
+			}
+			if ($key['error'] != '') { 
+				$mensaje = "error".$key['error'];
+			}
+		}
+		echo $mensaje;
 	}
 	
-	public function editar_tema()
+	public function math()
 	{
-		$id_tema = $_GET["id_tema"]; 
-		$tema = $this->Home_admin_m->tema_mes($id_tema);
-		
-		
+		$datos = array(	'question' => 'Simplifique <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>25</mn></mrow></mfrac></math>',
+						'r1' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfrac></math>',
+						'r2' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>25</mn></mrow></mfrac></math>',
+						'r3' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>',
+						'r4' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>1</mn></math>', );
 		
 		$this->load->view('header/head_v');
-			$this->load->view('editor_tema_mes_v',$tema);
-			$this->load->view('footer/footer_v');
+		$this->load->view('evaluacion',$datos);
+		$this->load->view('footer/footer_v');
 	}
-
 }

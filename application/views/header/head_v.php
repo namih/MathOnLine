@@ -7,7 +7,9 @@
     <title>Mate en línea</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/style_user.css">
     <script src="<?php echo base_url(); ?>statics/js/jquery-3.2.1.min.js"></script>
