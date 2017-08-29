@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     
+    <!-- SCRIPT DE MATHJAX PARA ETIQUETAS MATHML -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
     
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles.css">
