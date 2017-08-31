@@ -16,7 +16,7 @@ INSERT INTO `mathonline`.`user`
 `total_score`,
 `status`)
 VALUES
-('Sisbyte-user',
+('Sb-user',
 '7h/bw3rybOeDkOEPuDQc0E7pqR0LNJvICXvmBWytEKE4GSvN7IhtzsF1JnVY2r0ojjpwwHBjgFj+KLVSOQPQmQ==',
 3,
 27,
@@ -51,7 +51,7 @@ INSERT INTO `mathonline`.`user`
 `total_score`,
 `status`)
 VALUES
-('Sisbyte-admin',
+('Sb-admin',
 '7h/bw3rybOeDkOEPuDQc0E7pqR0LNJvICXvmBWytEKE4GSvN7IhtzsF1JnVY2r0ojjpwwHBjgFj+KLVSOQPQmQ==',
 3,
 27,
@@ -86,7 +86,7 @@ INSERT INTO `mathonline`.`user`
 `total_score`,
 `status`)
 VALUES
-('Sisbyte-ccc',
+('Sb-ccc',
 '7h/bw3rybOeDkOEPuDQc0E7pqR0LNJvICXvmBWytEKE4GSvN7IhtzsF1JnVY2r0ojjpwwHBjgFj+KLVSOQPQmQ==',
 2,
 27,
