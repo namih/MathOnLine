@@ -68,7 +68,7 @@ function cargar_evaluaciones () {
 							    '<tbody>';
 							    for (var i=0; i < lista_evaluacion.length; i++) {
 							    	tabla += '<tr>';
-							    	tabla += '<td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>';
+							    	tabla += '<td><span class="glyphicon glyphicon-trash red" aria-hidden="true"></span></td>';
 							    	tabla += '<td>'+lista_evaluacion[i]['question']+'</td>';
 							    	tabla += '<td>'+lista_evaluacion[i]['points']+'</td>';
 							    	tabla += '<td><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></td>';
