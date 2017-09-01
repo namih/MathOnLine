@@ -60,6 +60,69 @@
 			}
 		}
 		
+		
+		/**
+		 * Obtiene ls lista de los temas del sistema
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de los temas activos
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function temas()
+		{
+			$temas = $this->db->SELECT('*')->FROM('theme')->WHERE('status', 1)->GET();
+			if ($temas->num_rows() > 0) {
+				return $temas->result_array();
+			} else {
+				return FALSE;
+			}
+		}
+		
+		/**
+		 * Obtiene ls lista de los subtemas del sistema
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de los temas activos
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function subtemas($tema)
+		{
+			if ($tema!= NULL) {
+				$subtemas = $this->db->SELECT('*')->FROM('subtopic')->WHERE('status', 1)->WHERE('id_theme', $tema)->GET();
+				if ($subtemas->num_rows() > 0) {
+					return $subtemas->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Obtiene todas las preguntas relacionadas al tema solicitado de todos los subtemas
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function evaluacion_subtema($id_subtema)
+		{
+			if ($id_subtema!=NULL) {
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->where('id_subtopic',$id_subtema)->GET();
+				if ($evaluacion->num_rows() > 0) {
+					return $evaluacion->result_array();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+				
 }
 
 /* End of file Evaluation_m.php */

@@ -53,7 +53,7 @@ INSERT INTO `mathonline`.`user`
 VALUES
 ('Sb-admin',
 '7h/bw3rybOeDkOEPuDQc0E7pqR0LNJvICXvmBWytEKE4GSvN7IhtzsF1JnVY2r0ojjpwwHBjgFj+KLVSOQPQmQ==',
-3,
+1,
 27,
 'Sisbyte Admin',
 'CDMX',
