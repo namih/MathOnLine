@@ -59,14 +59,15 @@ class Complementary_material_c  extends CI_Controller
 	 * @param NA
 	 * @version 1.0
 	 */	
-	 function editor_biblio (){
+	 function editor_biblio ($id_biblio=NULL){
 		$login = $this->session->userdata('logged_in');
-        if($login != null && $login == true){
+		if ($id_biblio != NULL) {
+			if($login != null && $login == true){
 		    $datos["user_log"][0] = $this->session->userdata('user');
 		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	       // $datos['opt_menu_active']='opt_materiales';
-			$biblio = $this->Complementary_material_m->lista_bibliografia(1);
+			$biblio = $this->Complementary_material_m->lista_bibliografia($id_biblio);
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
 			$this->load->view('administrador/Editor_bibliografia_v',$biblio);
@@ -74,7 +75,9 @@ class Complementary_material_c  extends CI_Controller
 	    }else{
 	    	redirect(base_url());
 	    }
-		
+		} else {
+			redirect(base_url());
+		}
 	}
 	
 	
@@ -86,22 +89,25 @@ class Complementary_material_c  extends CI_Controller
 	 * @param NA
 	 * @version 1.0
 	 */	
-	 function editor_links (){
+	 function editor_liga ($link = NULL){
 		$login = $this->session->userdata('logged_in');
-        if($login != null && $login == true){
-		    $datos["user_log"][0] = $this->session->userdata('user');
-		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
-	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
-	       // $datos['opt_menu_active']='opt_materiales';
-			$links = $this->Complementary_material_m->lista_links(1);
-		    $this->load->view('header/head_v');
-		    $this->load->view('header/Menu_user_v', $datos);
-			$this->load->view('administrador/Editor_liga_v',$links);
-	    	$this->load->view('footer/footer_v');
-	    }else{
-	    	redirect(base_url());
-	    }
-		
+		if ($link !=NULL) {
+				if($login != null && $login == true){
+			    $datos["user_log"][0] = $this->session->userdata('user');
+			    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+		        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+		       // $datos['opt_menu_active']='opt_materiales';
+				$links = $this->Complementary_material_m->lista_links($link);
+			    $this->load->view('header/head_v');
+			    $this->load->view('header/Menu_user_v', $datos);
+				$this->load->view('administrador/Editor_liga_v',$links);
+		    	$this->load->view('footer/footer_v');
+		       }else{
+		    		redirect(base_url());
+		       }
+		} else {
+			redirect(base_url());
+		}   
 	}
 	
 	
@@ -163,8 +169,88 @@ class Complementary_material_c  extends CI_Controller
 	 * @version 1.0
 	 */	
 	
-	public function actualizar_biblio(){
-		// con imagen
+	function actualizar_biblio(){
+		if ($_FILES!=NULL) {
+			$ruta = "statics/img/book_image/";
+			$mensaje = "";
+			/*echo "<pre>";
+			print_r($_FILES);
+			echo "</pre>";*/
+			if ($_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
+				//$Nombre_Original = $_FILES['name'];
+				$Temporal = $_FILES['imagen']['tmp_name'];
+				$image = 'statics/img/book_image/'.$_FILES['imagen']['name'];
+
+				move_uploaded_file($Temporal, $image);
+				$id_biblio = $this->input->post('id_bibliography');
+				$titulo =$this->input->post('titulo');
+				$autor = $this->input->post('autor');
+				$editorial = $this->input->post('editorial');
+				$anio = $this->input->post('anio');
+				$pais = $this->input->post('pais');
+				$tema = $this->input->post('tema');
+				
+				
+
+				/*
+				$datos = array( 'id_monthly_theme' => $id_tema,
+								'mounth' => $id_mes,
+								'title' => $titulo,
+								'description' => $descripcion,
+								'image' => '/'.$image, );*/
+				
+				$update_editor=$this->Home_admin_m->actualizar_biblio($datos);
+				if ($update_editor) {
+					echo "Actualizacion exitosa";
+				} else {
+					echo" Intentar mas tarde";
+				}
+			}
+				if ($_FILES['imagen']['error']!= 0) {
+					switch ($_FILES['imagen']['error']) {
+					case UPLOAD_ERR_INI_SIZE:
+						echo  "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+						break;
+
+					case UPLOAD_ERR_FORM_SIZE:
+						echo"El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTML";
+						break;
+
+					case UPLOAD_ERR_PARTIAL:
+						echo"El archivo subido sólo se cargó parcialmente";
+						break;
+
+					case UPLOAD_ERR_NO_FILE:
+						echo"Ningun archivo fue subido";
+					break;
+
+					case UPLOAD_ERR_NO_TMP_DIR:
+						echo"Falta una carpeta temporal";
+					break;							
+
+					case UPLOAD_ERR_CANT_WRITE:
+						echo"Error al escribir el archivo en el disco";
+					break;
+
+					case UPLOAD_ERR_EXTENSION:
+						echo"Archivo de carga detenido por extensión";
+					break;
+
+					default: 
+						echo "Error desconocido en la carga"; 
+						break; 
+					}
+
+				}
+		} else {
+			$editor = $this->input->post('editor');
+			$update_editor=$this->Home_admin_m->actualizar_biblio($editor);
+			if ($update_editor) {
+				echo "Actualizacion exitosa";
+			} else {
+				echo" Intentar mas tarde";
+			}
+		}
 	}
 	
 	/**
@@ -175,7 +261,7 @@ class Complementary_material_c  extends CI_Controller
 	 * @version 1.0
 	 */	
 	
-	public function actualizar_link(){
+  	function actualizar_link(){
 		$id_link = $this->input->post('link');
 		$link = $this->Complementary_material_m->actualizar_link($id_link);
 		if ($id_link) {
@@ -185,6 +271,50 @@ class Complementary_material_c  extends CI_Controller
 		}
 	}
 	
+	
+	/**
+	 * Funcion para eliminar de manera logica el link seleccionado.
+	 * @author Cecilia Hernandez Vasquez
+	 * @return mensaje de error o de exito en caso de que se haya realizado la eliminacion.
+	 * @param NA
+	 * @version 1.0
+	 */	
+	function eliminar_link ($id_link=NULL){
+		if ($id_link != null) {
+			$eliminado = $this->Complementary_material_m->borrar_link($id_link);
+			if ($eliminado) {
+				echo "Se eliminó el registro";
+			} else {
+				echo "No se puede eliminar el registro";
+			}
+			
+		} else {
+			echo "No se puede eliminar el registro";
+		}
+	}
+	
+	
+	/**
+	 * Funcion para eliminar de manera logica el link seleccionado.
+	 * @author Cecilia Hernandez Vasquez
+	 * @return mensaje de error o de exito en caso de que se haya realizado la eliminacion.
+	 * @param NA
+	 * @version 1.0
+	 */	
+	function eliminar_biblio ($biblio=NULL){
+		if ($biblio != null) {
+			$eliminado = $this->Complementary_material_m->borrar_biblio($biblio);
+			if ($eliminado == TRUE) {
+				echo "Se elimino el registro";
+			
+			} else {
+				echo "No se puede eliminar el registro";
+			}
+			
+		} else {
+			echo "No se puede eliminar el registro";
+		}
+	}
 	
 	/**
 	 * Funcion para obtener los links de los temas 
@@ -199,7 +329,7 @@ class Complementary_material_c  extends CI_Controller
 			
 		}
 	
-	FUNCTION bibliografia(){
+	function bibliografia(){
 		$biblio = $this->Complementary_material_m->lista_bibliografia();
 		return $biblio;
 		

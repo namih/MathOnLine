@@ -188,9 +188,9 @@ class Home_admin_c extends CI_Controller {
 		if ($_FILES!=NULL) {
 			$ruta = "statics/img/calendario_uam/";
 			$mensaje = "";
-			echo "<pre>";
+			/*echo "<pre>";
 			print_r($_FILES);
-			echo "</pre>";
+			echo "</pre>";*/
 			if ($_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
 				//$Nombre_Original = $_FILES['name'];
 				$Temporal = $_FILES['imagen']['tmp_name'];
@@ -223,7 +223,7 @@ class Home_admin_c extends CI_Controller {
 						break;
 
 					case UPLOAD_ERR_FORM_SIZE:
-						echo"El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+						echo"El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTML";
 						break;
 
 					case UPLOAD_ERR_PARTIAL:
