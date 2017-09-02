@@ -2,7 +2,7 @@
 		<script src="statics/js/Login_admin/extensiones.js"></script>
 		<div class="container">
 			<div class="col-md-6 col-xs-12">
-				<h2>Tema del mes.</h2>
+				<h2>Tema del mes</h2>
 				<table class="table ">
     				<thead>
       					<tr>
