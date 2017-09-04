@@ -122,6 +122,85 @@
 				return NULL;
 			}
 		}
+		
+		/**
+		 * Guarda la evaluacion realizada por el usuario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function guardar_evaluacion($evaluacion)
+		{
+			if ($evaluacion!=NULL) {
+				$this->db->SET($this->_setEvaluacion($evaluacion))->INSERT('evaluation_test_log');
+				if ($this->db->affected_rows() === 1) {
+					return $this->db->insert_id();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Guarda las respuestas de la evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function guardar_respuestas($respuestas)
+		{
+			if ($respuestas!=NULL) {
+				echo "Aqui guardar las respuestas";
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Actualiza el score total del usuario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function actualiza_escore($score)
+		{
+			if ($score!=NULL) {
+				echo "Aqui actualiza el escore del usuario";
+			} else {
+				return NULL;
+			}
+		}
+		
+		private function _setEvaluacion($evaluacion)
+		{
+			$set_evaluacion = array();
+			
+			if (isset($evaluacion['id_user'])) {
+				$set_evaluacion['id_user'] =  $evaluacion['id_user'];
+			};
+			if (isset($evaluacion['id_theme'])) {
+				$set_evaluacion['id_theme'] =  $evaluacion['id_theme'];
+			};
+			if (isset($evaluacion['time_finish'])) {
+				$set_evaluacion['time_finish'] =  $evaluacion['time_finish'];
+			};
+			if (isset($evaluacion['score'])) {
+				$set_evaluacion['score'] =  $evaluacion['score'];
+			};
+			if (isset($evaluacion['evaluation_date'])) {
+				$set_evaluacion['evaluation_date'] =  $evaluacion['evaluation_date'];
+			};
+			
+			return $set_evaluacion;
+		}
 				
 }
 
