@@ -21,7 +21,7 @@
     							<td> <a href="#"><span id="eliminar" class="glyphicon glyphicon-trash" style="color:red"></span></a></td>
     							<td> <?php echo $ligas_interes[$i]['title'] ?></td>
     							<td> <?php echo $ligas_interes[$i]['link'] ?></td>
-    							<td> <a href="<?php echo base_url(); ?>Complementary_material_c/editor_liga?id_links_interest=<?php echo $ligas_interes[$i]['id_links_interest'] ?>"><span id="edit_link" class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
+    							<td> <a href="<?php echo base_url(); ?>Complementary_material_c/editor_liga/<?php echo $ligas_interes[$i]['id_links_interest'] ?>"><span id="edit_link" class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
     						</tr>
     					<?php }
 					?>
@@ -30,14 +30,7 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<h2>Bibliografía</h2> Agregar nueva bibliografía  <a href="#"><span id="add_biblio" class="glyphicon glyphicon-plus "></span></a>
-				 <br> Agregar imagen <a href="#"> <span id="img-biblio" class="glyphicon glyphicon-plus "></span></a>
 				 
-				 <img width="70%" id="img_titulo" class="img-responsive" src=""/>
-					<div class="input-file-wrapper">
-						<form enctype="multipart/form-data" class="formulario" >
-        					<input type="file"  maxlength="1" accept="image/*" id="img_biblio" />
-						</form>
-					</div>
 				<table class="table ">
     				<thead>
       					<tr>
@@ -55,7 +48,7 @@
     							<td> <a href="#"><span class="glyphicon glyphicon-trash" style="color:red"></span></a></td>
     							<td> <?php echo $bibliografia[$i]['title'] ?></td>
     							<td> <?php echo $bibliografia[$i]['author'] ?></td>
-    							<td> <a href="<?php echo base_url(); ?>Complementary_material_c/editor_biblio?id_bibliography=<?php echo $bibliografia[$i]['id_bibliography'] ?>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
+    							<td> <a href="<?php echo base_url(); ?>Complementary_material_c/editor_biblio/<?php echo $bibliografia[$i]['id_bibliography'] ?>"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>
     						</tr>
     					<?php }
 					?>
