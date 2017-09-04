@@ -89,8 +89,8 @@ class Etiquetas{
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Consultar perfil',
 									'id'=>'',
-									'href'=>'',
-									'onclick'=>'perfil_user/'.$idUser
+									'href'=>base_url().'perfil_user/'.$idUser,
+									'onclick'=>''
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
@@ -145,8 +145,8 @@ class Etiquetas{
 								1=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Consultar perfil',
 									'id'=>'',
-									'href'=>'',
-									'onclick'=>'perfil_user/'.$idUser
+									'href'=>base_url().'perfil_user/'.$idUser,
+									'onclick'=>''
 								),
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
