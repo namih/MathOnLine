@@ -155,8 +155,14 @@
 		 */
 		public function guardar_respuestas($respuestas)
 		{
-			if ($respuestas!=NULL) {
-				echo "Aqui guardar las respuestas";
+			if ($respuestas != NULL) {
+				$num_respuestas = count($respuestas);
+				$inserts = $this->db->insert_batch('evaluation_response', $respuestas);
+				if ($inserts == $num_respuestas) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
 			} else {
 				return NULL;
 			}
@@ -170,10 +176,17 @@
 		 * @param Int Identificador del tema
 		 * @version 1.0
 		 */
-		public function actualiza_escore($score)
+		public function actualiza_escore($update)
 		{
-			if ($score!=NULL) {
-				echo "Aqui actualiza el escore del usuario";
+			if ($update!=NULL) {
+				$data = array('total_score' => $update['total_score'], );
+				$this->db->where('id_user', $update['id_user']);
+				$this->db->update('user', $data);
+				if($this->db->affected_rows() > 0) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
 			} else {
 				return NULL;
 			}

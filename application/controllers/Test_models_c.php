@@ -18,6 +18,50 @@
 			$this->load->library('etiquetas');
         }
 		
+		public function answer()
+		{
+			$data = array(
+					   array(
+					      'id_evaluation_test_log' => 1 ,
+					      'id_evaluation' => 2 ,
+					      'answer' => 'correct_answer'
+					   ),
+					   array(
+					      'id_evaluation_test_log' => 1 ,
+					      'id_evaluation' => 4 ,
+					      'answer' => 'wrong_answer_a'
+					   ),
+					   array(
+					      'id_evaluation_test_log' => 1 ,
+					      'id_evaluation' => 6 ,
+					      'answer' => 'wrong_answer_b'
+					   ),
+					   array(
+					      'id_evaluation_test_log' => 1 ,
+					      'id_evaluation' =>  8,
+					      'answer' => 'correct_answer'
+					   ),
+					);
+					
+			$respuestas = $this->Evaluation_m->guardar_respuestas($data);
+			
+			echo "<pre>";
+			print_r($respuestas);
+			echo "<pre>";
+		}
+		
+		public function update_score()
+		{
+			$data = array('id_user' => 2,
+					      'total_score' => 45);
+					
+			$score = $this->Evaluation_m->actualiza_escore($data);
+			
+			echo "<pre>";
+			print_r($score);
+			echo "<pre>";
+		}
+		
 		public function registrar() {
 			date_default_timezone_set('America/Mexico_City');
 			$format = 'Y-m-d h:i:s';
@@ -73,8 +117,6 @@
 			echo "<pre>";
 			print_r($evaluacion);
 			echo "<pre>";
-			
-			
 		}
 		
 		public function guardar_imagen()
