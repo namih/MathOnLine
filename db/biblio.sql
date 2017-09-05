@@ -1,7 +1,6 @@
 INSERT INTO `mathonline`.`bibliography`
 (`id_bibliography`,
 `id_user`,
-`id_theme`,
 `author`,
 `title`,
 `place_publication`,
@@ -24,7 +23,6 @@ VALUES
 INSERT INTO `mathonline`.`bibliography`
 (`id_bibliography`,
 `id_user`,
-`id_theme`,
 `author`,
 `title`,
 `place_publication`,
@@ -47,7 +45,6 @@ VALUES
 INSERT INTO `mathonline`.`bibliography`
 (`id_bibliography`,
 `id_user`,
-`id_theme`,
 `author`,
 `title`,
 `place_publication`,
@@ -70,7 +67,6 @@ VALUES
 INSERT INTO `mathonline`.`bibliography`
 (`id_bibliography`,
 `id_user`,
-`id_theme`,
 `author`,
 `title`,
 `place_publication`,
