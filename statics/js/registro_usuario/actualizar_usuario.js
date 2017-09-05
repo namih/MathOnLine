@@ -180,6 +180,7 @@ function actualizar() {
   var apellidos = document.getElementById('last').value;
   var nacimiento = document.getElementById('anio').value;
   var sexo = document.getElementById('sexo').value;
+  var avatar = $('#id_avatar_user').val();
   //var avatar = document.getElementById('avatar').src;
   //var avatar = document.getElementById(this.id).value;
   //var carrera = document.getElementById('carrera').value;
@@ -200,7 +201,7 @@ function actualizar() {
   
   
   var datos ={
-  		//id_avatar:avatar,
+  		id_avatar:avatar,
   		id_user:id_usuario,
 		user_name:usuario,
 		password:contrasenia1,
