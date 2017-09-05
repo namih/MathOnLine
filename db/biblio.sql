@@ -11,7 +11,6 @@ INSERT INTO `mathonline`.`bibliography`
 VALUES
 (1,
 1,
-1,
 'Felipe Zaldívar',
 'Fundamentos de álgebra',
 'Mexico',
@@ -33,7 +32,6 @@ INSERT INTO `mathonline`.`bibliography`
 VALUES
 (2,
 1,
-2,
 'Sadler, A. J.; Thorning, D.W.S',
 'Understing pure mathematics',
 'UK',
@@ -55,7 +53,6 @@ INSERT INTO `mathonline`.`bibliography`
 VALUES
 (3,
 1,
-3,
 'Mario Pineda Ruelas',
 'Enteros, aritmética modular y grupos finitos.',
 'Mexico',
@@ -77,7 +74,6 @@ INSERT INTO `mathonline`.`bibliography`
 VALUES
 (4,
 1,
-4,
 'Becerril, R., Reyes, J. G.',
 'Precálculo',
 'Mexico',
