@@ -1,5 +1,10 @@
 <script src="../statics/js/admin_evaluacion.js"></script>
 
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
 <div class="container-fluid">
 	<div class="col-md-12 col-xs-12">
 		<h2>Administrador de evaluaciones</h2>

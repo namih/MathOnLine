@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+
 function cargar_subtema () {
 	var tema = document.getElementById('tema').value;
 	var subtema = document.getElementById('subtema');
@@ -60,9 +64,9 @@ function cargar_evaluaciones () {
 		success: function(respuesta) {
 			
 			var lista_evaluacion = JSON.parse(respuesta);
-			
+						
 			var tabla =	'<div class="table-responsive">'+
-							  '<table class="table">' +
+							  '<table id="example" class="table table-striped table-bordered" width="100%" cellspacing="0">' +
 							    '<thead>' +
 							      '<tr>' +
 							        '<th></th>' +
@@ -86,8 +90,15 @@ function cargar_evaluaciones () {
 							  '</div>';
 			
 			document.getElementById("admin_tabla").innerHTML = tabla;
-			
-			
+			$('#example').DataTable( {
+		        "language": {
+		            "lengthMenu": "Display _MENU_ records per page",
+		            "zeroRecords": "Nothing found - sorry",
+		            "info": "Showing page _PAGE_ of _PAGES_",
+		            "infoEmpty": "No records available",
+		            "infoFiltered": "(filtered from _MAX_ total records)"
+		        }
+		    } );
 		},
 		error: function() {
 			alert('failure');
