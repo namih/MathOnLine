@@ -1,5 +1,6 @@
 <?php //echo '<pre>'; print_r($user_log); ?>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
+		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/actualizar_usuario.js"></script>
 		<center><h1 style="color:#ffffff;">&nbsp;</h1></center>
 		<div class="col-md-10 col-md-offset-1">
 		    <div class="panel panel-success"  align="center">
@@ -88,7 +89,7 @@
 							</div>
 			    			<div class="input-group col-lg-12 col-md-12 col-xs-12">
 								<div class="form-group col-md-6  col-xs-12">
-									<button type="button" onclick="registrar()" class="btn btn-primary">Guardar Cambios</button>
+									<button type="button" onclick="actualizar()" class="btn btn-primary">Guardar Cambios</button>
 									<button type="button" class="btn btn-danger" onclick="$('#infoGral').hide(); $('#cambia_avatar').hide(); $('#info_user').show();">Cancelar</button>
 								</div>
 							</div>							
