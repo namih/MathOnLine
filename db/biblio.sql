@@ -7,6 +7,7 @@ INSERT INTO `mathonline`.`bibliography`
 `place_publication`,
 `editorial`,
 `year`,
+`book_image`,
 `status`)
 VALUES
 (1,
@@ -17,6 +18,7 @@ VALUES
 'Mexico',
 'Fondo de Cultura Económica',
 2005,
+'statics/img/book_image/fundamentos_de_algebra.jpg',
 1);
 
 INSERT INTO `mathonline`.`bibliography`
@@ -28,6 +30,7 @@ INSERT INTO `mathonline`.`bibliography`
 `place_publication`,
 `editorial`,
 `year`,
+`book_image`,
 `status`)
 VALUES
 (2,
@@ -38,6 +41,7 @@ VALUES
 'UK',
 'Oxford University Press',
 1994,
+'statics/img/book_image/understing_pure_mathematics.jpg',
 1);
 
 INSERT INTO `mathonline`.`bibliography`
@@ -49,6 +53,7 @@ INSERT INTO `mathonline`.`bibliography`
 `place_publication`,
 `editorial`,
 `year`,
+`book_image`,
 `status`)
 VALUES
 (3,
@@ -59,6 +64,7 @@ VALUES
 'Mexico',
 'Colección CBI de la Universidad Autónoma Metropolitana-Iztapalapa.',
 2014,
+'statics/img/book_image/enteros_aritmética_modular_grupos_finitos.jpg',
 1);
 
 INSERT INTO `mathonline`.`bibliography`
@@ -70,6 +76,7 @@ INSERT INTO `mathonline`.`bibliography`
 `place_publication`,
 `editorial`,
 `year`,
+`book_image`,
 `status`)
 VALUES
 (4,
@@ -80,4 +87,5 @@ VALUES
 'Mexico',
 'Trillas',
 2011,
+'statics/img/book_image/book_default.png',
 1);
