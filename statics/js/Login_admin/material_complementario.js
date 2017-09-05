@@ -73,3 +73,40 @@ function get_bibliografia () {
 	};
 
 }
+
+
+function get_link() {
+
+	var id_usuario = document.getElementById('id_usuario').textContent;
+	var id_liga = document.getElementById('id_liga').textContent;
+	var titulo = document.getElementById('titulo').value;
+	var descripcion = document.getElementById('descripcion').value;
+	var link = document.getElementById('liga').value;
+
+	var url_update = base_url + '/Complementary_material_c/actualizar_link';
+
+	var datos = {
+		id_user : id_usuario,
+		id_links_interest : id_liga,
+		title : titulo,
+		description : descripcion,
+		link : link
+	};
+
+	$.ajax({
+		type : 'post',
+		url : url_update,
+		data : {
+			link : datos
+		},
+		datatype : 'json',
+		cache : false,
+		success : function(msj) {
+			alert(msj);
+		},
+		error : function(msj) {
+			alert(msj);
+		}
+	});
+
+}
