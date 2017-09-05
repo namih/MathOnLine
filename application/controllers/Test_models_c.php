@@ -18,6 +18,7 @@
 			$this->load->library('etiquetas');
         }
 		
+		
 		public function answer()
 		{
 			$data = array(
@@ -109,13 +110,13 @@
 			echo date($format);
 		}
 
-		public function evaluacion()
+		public function eva()
 		{
 			$id_tema = 1;
-			$evaluacion = $this->Evaluation_m->evaluacion($id_tema);
+			$eva = $this->Evaluation_m->evaluacion($id_tema);
 			
 			echo "<pre>";
-			print_r($evaluacion);
+			print_r($eva);
 			echo "<pre>";
 		}
 		
@@ -181,7 +182,7 @@
 						'r1' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfrac></math>',
 						'r2' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>25</mn></mrow></mfrac></math>',
 						'r3' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>',
-						'r4' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>1</mn></math>', );
+						'r4' => '<img src="../statics/img/evaluacion/geom_trigonom/Img_3_4_1_1_2.bmp" class="img-responsive">', );
 		
 		$this->load->view('header/head_v');
 		$this->load->view('evaluacion',$datos);

@@ -49,9 +49,11 @@
 		{
 			if ($id_tema!=NULL) {
 				$subtemas = $this->lista_subtemas($id_tema);
+				$tema = $this->db->SElECT('*')->FROM('theme')->WHERE('id_theme', $id_tema)->GET();
 				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->or_where_in('id_subtopic',$subtemas)->GET();
 				if ($evaluacion->num_rows() > 0) {
-					return $evaluacion->result_array();
+					$respuesta = array('evaluacion' => $evaluacion->result_array(), 'tema' => $tema->result_array());
+					return $respuesta;
 				} else {
 					return FALSE;
 				}
@@ -112,7 +114,7 @@
 		public function evaluacion_subtema($id_subtema)
 		{
 			if ($id_subtema!=NULL) {
-				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->where('id_subtopic',$id_subtema)->GET();
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->where('id_subtopic',$id_subtema)->WHERE('status', 1)->GET();
 				if ($evaluacion->num_rows() > 0) {
 					return $evaluacion->result_array();
 				} else {
@@ -191,6 +193,30 @@
 				return NULL;
 			}
 		}
+		
+		/**
+		 * Borrado logico (Baja) de una evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return TRUE si el borrado fue correcto, FALSE si ocurrio un error en el borrado
+		 * @param INT Identificador del link
+		 * @version 1.0
+		 */
+		 public function borrar_evaluacion($id_eva)
+		 {
+		 	if (!is_null($id_eva)) {
+		 		$logical_erasure = array('status' => 0);
+				$this->db->where('id_evaluation', $id_eva);
+				$this->db->update('evaluation', $logical_erasure); 
+				if ($this->db->affected_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
 		
 		private function _setEvaluacion($evaluacion)
 		{
