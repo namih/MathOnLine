@@ -9,10 +9,10 @@
 			</div>
 			<div class="form-group has-feedback col-md-6  col-xs-12"  >
 				<label>Imágen del título</label>
-				<img width="70%" id="img_titulo" class="img-responsive" src="../..<?php echo $book_image ?>"/>
+				<img width="55%" id="img_titulo" class="img-responsive" src="../..<?php echo $book_image ?>"/>
 				<div class="input-file-wrapper">
 					<form enctype="multipart/form-data" class="formulario" >
-						<input type="file"  maxlength="1" accept="image/*" id="img_libro" />
+						<input onclick="mostrar_imagen()" type="file"  maxlength="1" accept="image/*" id="img_libro" />
 					</form>
 
 				</div>
@@ -36,7 +36,7 @@
 				<input type="text" class="form-control" id="pais" value="<?php echo $place_publication ?>">
 			</div>
 
-			<div class="form-group col-md-6  col-xs-12">
+			<div class="form-group col-md-12  col-xs-12">
 				<button onclick="get_bibliografia()" type="button" class="btn btn-success">
 					Actualizar
 				</button>

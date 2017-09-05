@@ -1,3 +1,39 @@
+function readURL (input) {
+	if(input.files && input.files[0]){
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$('#img_titulo').attr('src', e.target.result);
+		};
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+
+function mostrar_imagen () {
+	var img_tema = document.getElementById('img_libro');
+	img_tema.addEventListener("change", function() {
+		
+		var file = this.files[0];
+		var img = new Image();
+		var imagen = this;
+		img.onload = function(){
+			
+			URL.revokeObjectURL(this.src);
+			readURL(imagen);
+			
+			
+			
+			document.getElementById("imagen").style.display= 'inline';
+			return false;
+		};
+		
+		var objectURL = URL.createObjectURL(file);
+		
+		console.log('change file', file);
+		console.log('change objectURL', objectURL);
+		img.src = objectURL;
+	});
+}
+
 function get_bibliografia () {
 	
 	var id_usuario = document.getElementById('id_usuario').textContent;
