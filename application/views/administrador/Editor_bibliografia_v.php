@@ -1,3 +1,7 @@
+<h1>
+	
+</h1>
+
 <script src="<?php echo base_url(); ?>statics/js/Login_admin/material_complementario.js"></script>
 <div class="container" style="margin-top:15%;">
 
@@ -9,7 +13,9 @@
 			</div>
 			<div class="form-group has-feedback col-md-6  col-xs-12"  >
 				<label>Imágen del título</label>
-				<img width="55%" id="img_titulo" class="img-responsive" src="../..<?php echo $book_image ?>"/>
+				<img width="25%" id="img_titulo" class="img-responsive" src="<?php echo base_url(); echo $book_image;?>"/>
+				<br />
+				
 				<div class="input-file-wrapper">
 					<form enctype="multipart/form-data" class="formulario" >
 						<input onclick="mostrar_imagen()" type="file"  maxlength="1" accept="image/*" id="img_libro" />

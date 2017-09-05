@@ -123,19 +123,20 @@ function comparar_contrasenia () {
 
 function longitud_contrasenia () {
 	var longi = document.getElementById('pwd').value;
-	var longi_2 = document.getElementById('pwd');
+	var longi_2 = document.getElementById('rpwd');
+	var pwd = document.getElementById('pwd');
     var longi_cadena = 8;
     //alert(longi_cadena);
     if (longi.length < longi_cadena) {
-   // alert('Tu contraseña debe tener al menos 8 caracteres');
-    // longi_2.value = "";
-    // longi_2.placeholder = "Tu contraseña debe tener al menos 8 caracteres";
-	// longi_2.focus();
-	document.getElementById('pwd').value = "";
-	document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
-	//document.getElementById('pwd').select();
+   
+    	longi_2.value = "";
+    	longi_2.placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		longi_2.focus();
+		document.getElementById('pwd').value = "";
+		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		//document.getElementById('pwd').select();
     } else{
-    	alert('Contraseña correcta');
+    	pwd.focus();
     };
     
 }
