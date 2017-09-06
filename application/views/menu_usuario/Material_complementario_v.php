@@ -28,7 +28,7 @@
 	            <div class="row">
 	              <div class="col-md-10 col-md-offset-1" style="border: solid 1px;">
 	                <center><h2 style="text-decoration: underline;"><?php echo $value['title']; ?></h2></center>
-	                <div class="col-md-3" align="right">
+	                <div class="col-md-3" align="right" style="margin-bottom: 10px;">
 	                	<?php if(isset($value['book_image']) && trim($value['book_image'])!=''){ ?>
 	                  		<img class="img-responsive" src="<?php echo base_url().$value['book_image']; ?>">
 	                  	<?php }else{ ?>
