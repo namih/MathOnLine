@@ -29,7 +29,11 @@
 	              <div class="col-md-10 col-md-offset-1" style="border: solid 1px;">
 	                <center><h2 style="text-decoration: underline;"><?php echo $value['title']; ?></h2></center>
 	                <div class="col-md-3" align="right">
-	                  <i class="fa fa-book" aria-hidden="true" style="font-size: 12em; color: #cccccc;"></i>
+	                	<?php if(isset($value['book_image']) && trim($value['book_image'])!=''){ ?>
+	                  		<img class="img-responsive" src="<?php echo base_url().$value['book_image']; ?>">
+	                  	<?php }else{ ?>
+	                  		<i class="fa fa-book" aria-hidden="true" style="font-size: 12em; color: #cccccc;"></i>
+	                  	<?php } ?>	                
 	                </div>
 	                <div class="col-md-9" align="left"><br> 
 	                  <ul style="list-style: circle; font-size: 20px;">
