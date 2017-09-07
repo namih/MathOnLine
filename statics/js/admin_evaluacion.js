@@ -90,6 +90,7 @@ function cargar_evaluaciones () {
 							  '</div>';
 			
 			document.getElementById("admin_tabla").innerHTML = tabla;
+			MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'admin_tabla']);
 			$('#evaluation').DataTable( {
 		        "language": {
 		            "lengthMenu": "Mostrar _MENU_ entradas",
