@@ -65,8 +65,8 @@ function cargar_evaluaciones () {
 			
 			var lista_evaluacion = JSON.parse(respuesta);
 						
-			var tabla =	'<div class="table-responsive">'+
-							  '<table id="example" class="table table-striped table-bordered" width="100%" cellspacing="0">' +
+			var tabla =	'<div>'+
+							  '<table id="evaluation" class="table table-striped" width="100%" cellspacing="0">' +
 							    '<thead>' +
 							      '<tr>' +
 							        '<th></th>' +
@@ -90,13 +90,14 @@ function cargar_evaluaciones () {
 							  '</div>';
 			
 			document.getElementById("admin_tabla").innerHTML = tabla;
-			$('#example').DataTable( {
+			MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'admin_tabla']);
+			$('#evaluation').DataTable( {
 		        "language": {
-		            "lengthMenu": "Display _MENU_ records per page",
-		            "zeroRecords": "Nothing found - sorry",
-		            "info": "Showing page _PAGE_ of _PAGES_",
-		            "infoEmpty": "No records available",
-		            "infoFiltered": "(filtered from _MAX_ total records)"
+		            "lengthMenu": "Mostrar _MENU_ entradas",
+		            "zeroRecords": "Nada encontrado",
+		            "info": "Mostrando página _PAGE_ de _PAGES_",
+		            "infoEmpty": "No hay registros disponibles",
+		            "infoFiltered": "(Filtrado de _MAX_ registros totales)"
 		        }
 		    } );
 		},

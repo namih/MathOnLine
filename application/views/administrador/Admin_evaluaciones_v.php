@@ -8,6 +8,7 @@
 <div class="container-fluid">
 	<div class="col-md-12 col-xs-12">
 		<h2>Administrador de evaluaciones</h2>
+		<h5>Agregar nueva evaluación   <a href="#"><span class="glyphicon glyphicon-plus "></span></a></h5>
 		 <div class="form-group col-md-6 col-xs-12">
 		 	<select onchange="cargar_subtema()" class="form-control" id ="tema">
 		 		<option value="0">Seleccione un tema</option>
