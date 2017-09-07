@@ -50,7 +50,7 @@ class Etiquetas{
 					2=>array(
 						'nombre'=>'Evaluaciones',
 						'id'=>'',
-						'href'=>'',
+						'href'=>base_url().'admin_evaluation_c/administrador',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
