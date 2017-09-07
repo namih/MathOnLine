@@ -53,15 +53,18 @@
 								->WHERE('user.id_user', $usuario['id_user'])
 								->GET()->row();
 								
-			if($user->email==$usuario['email']){
-					//print_r($user);
+				if($user->email==$usuario['email']){
 					$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
-				}
+					$usuario['status']=$user->status;
+					return $usuario;
+					}
 				else {
 					$usuario['status']=0;
 					$this->db->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user',$usuario);
+					return $usuario;
 				}
-			} else {
+			} 
+			else {
 				return NULL;
 			}
 			
