@@ -128,7 +128,7 @@ function get_link() {
 		description : descripcion,
 		link : link
 	};
-
+	
 	$.ajax({
 		type : 'post',
 		url : url_update,
@@ -145,4 +145,26 @@ function get_link() {
 		}
 	});
 
+}
+
+function liga_seleccionada() {
+	$(document).ready(function() {
+		$("#eliminar_l").on("click", function() {
+			var seleccion = $("#liga").is(":checked");
+
+		});
+	});
+}
+
+function bibliografia_seleccionada() {
+	$(document).ready(function() {
+		$("#eliminar_l").on("click", function() {
+			var seleccion = $("#liga").is(":checked");
+
+		});
+	});
+}
+
+function add_link () {
+  
 }
