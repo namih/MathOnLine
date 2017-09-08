@@ -22,7 +22,12 @@
 		</div>
 		<div class="form-group col-md-6  col-xs-12">
 			<button onclick="get_link()" type="button" class="btn btn-success">
-				Actualizar
+				<?php if ($id_links_interest == null) {
+					echo "Agregar";
+				} else {
+					echo "Actualizar";
+				}
+				 ?>
 			</button>
 		</div>
 		<label style="display: none" id="id_usuario"><?php echo $id_user ?>
