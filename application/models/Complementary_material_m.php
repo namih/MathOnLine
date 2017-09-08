@@ -145,7 +145,7 @@
 		 {
 		 	if (!is_null($id_bibliography)) {
 		 		$logical_erasure = array('status' => 0);
-				$this->db->where('id_bibliography', $id_bibliography);
+				$this->db->where_in('id_bibliography', $id_bibliography);
 				$this->db->update('bibliography', $logical_erasure); 
 				if ($this->db->affected_rows() === 1) {
 					return TRUE;
