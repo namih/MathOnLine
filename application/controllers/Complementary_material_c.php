@@ -180,26 +180,31 @@ class Complementary_material_c  extends CI_Controller
 				//$Nombre_Original = $_FILES['name'];
 				$Temporal = $_FILES['imagen']['tmp_name'];
 				$image = 'statics/img/book_image/'.$_FILES['imagen']['name'];
+				
+				
 
 				move_uploaded_file($Temporal, $image);
 				$id_biblio = $this->input->post('id_bibliography');
-				$titulo =$this->input->post('titulo');
-				$autor = $this->input->post('autor');
+				$titulo =$this->input->post('title');
+				$autor = $this->input->post('author');
 				$editorial = $this->input->post('editorial');
-				$anio = $this->input->post('anio');
-				$pais = $this->input->post('pais');
-				$tema = $this->input->post('tema');
+				$anio = $this->input->post('year');
+				$pais = $this->input->post('place_publication');
+				$tema = $this->input->post('id_theme');
 				
 				
 
-				/*
-				$datos = array( 'id_monthly_theme' => $id_tema,
-								'mounth' => $id_mes,
-								'title' => $titulo,
-								'description' => $descripcion,
-								'image' => '/'.$image, );*/
 				
-				$update_editor=$this->Home_admin_m->actualizar_biblio($datos);
+				$datos = array( 'id_bibliography' => $id_biblio,
+								'title' => $titulo,
+								'author' => $autor,
+								'editorial' => $editorial,
+				 				'year' => $anio,
+				     			'place_publication' =>$pais,	
+								'image' => '/'.$image);
+				
+				
+				$update_editor=$this->Complementary_material_m->actualizar_biblio($datos);
 				if ($update_editor) {
 					echo "Actualizacion exitosa";
 				} else {
@@ -244,7 +249,7 @@ class Complementary_material_c  extends CI_Controller
 				}
 		} else {
 			$editor = $this->input->post('editor');
-			$update_editor=$this->Home_admin_m->actualizar_biblio($editor);
+			$update_editor=$this->Complementary_material_m->actualizar_biblio($editor);
 			if ($update_editor) {
 				echo "Actualizacion exitosa";
 			} else {
@@ -264,7 +269,7 @@ class Complementary_material_c  extends CI_Controller
   	function actualizar_link(){
 		$id_link = $this->input->post('link');
 		$link = $this->Complementary_material_m->actualizar_link($id_link);
-		if ($id_link) {
+		if ($link) {
 			echo "Actualizacion exitosa";
 		} else {
 			echo" Intentar mas tarde";
@@ -334,9 +339,6 @@ class Complementary_material_c  extends CI_Controller
 		return $biblio;
 		
 	}
-	//METODOS PARA ACTUALIZAR LINK Y BIBLIOGRAFIA(CUENTA CON IMAGEN) 
-	
-	//BORRADO LOGICO (ELIMINAR) RETURN TRUE OR FALSE ECHO
 }
 
 

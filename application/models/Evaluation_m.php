@@ -49,9 +49,11 @@
 		{
 			if ($id_tema!=NULL) {
 				$subtemas = $this->lista_subtemas($id_tema);
+				$tema = $this->db->SElECT('*')->FROM('theme')->WHERE('id_theme', $id_tema)->GET();
 				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->or_where_in('id_subtopic',$subtemas)->GET();
 				if ($evaluacion->num_rows() > 0) {
-					return $evaluacion->result_array();
+					$respuesta = array('evaluacion' => $evaluacion->result_array(), 'tema' => $tema->result_array());
+					return $respuesta;
 				} else {
 					return FALSE;
 				}
@@ -112,7 +114,7 @@
 		public function evaluacion_subtema($id_subtema)
 		{
 			if ($id_subtema!=NULL) {
-				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->where('id_subtopic',$id_subtema)->GET();
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->where('id_subtopic',$id_subtema)->WHERE('status', 1)->GET();
 				if ($evaluacion->num_rows() > 0) {
 					return $evaluacion->result_array();
 				} else {
@@ -121,6 +123,122 @@
 			} else {
 				return NULL;
 			}
+		}
+		
+		/**
+		 * Guarda la evaluacion realizada por el usuario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function guardar_evaluacion($evaluacion)
+		{
+			if ($evaluacion!=NULL) {
+				$this->db->SET($this->_setEvaluacion($evaluacion))->INSERT('evaluation_test_log');
+				if ($this->db->affected_rows() === 1) {
+					return $this->db->insert_id();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Guarda las respuestas de la evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function guardar_respuestas($respuestas)
+		{
+			if ($respuestas != NULL) {
+				$num_respuestas = count($respuestas);
+				$inserts = $this->db->insert_batch('evaluation_response', $respuestas);
+				if ($inserts == $num_respuestas) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Actualiza el score total del usuario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de preguntas para hacer la evaluación
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function actualiza_escore($update)
+		{
+			if ($update!=NULL) {
+				$data = array('total_score' => $update['total_score'], );
+				$this->db->where('id_user', $update['id_user']);
+				$this->db->update('user', $data);
+				if($this->db->affected_rows() > 0) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Borrado logico (Baja) de una evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return TRUE si el borrado fue correcto, FALSE si ocurrio un error en el borrado
+		 * @param INT Identificador del link
+		 * @version 1.0
+		 */
+		 public function borrar_evaluacion($id_eva)
+		 {
+		 	if (!is_null($id_eva)) {
+		 		$logical_erasure = array('status' => 0);
+				$this->db->where('id_evaluation', $id_eva);
+				$this->db->update('evaluation', $logical_erasure); 
+				if ($this->db->affected_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
+		
+		private function _setEvaluacion($evaluacion)
+		{
+			$set_evaluacion = array();
+			
+			if (isset($evaluacion['id_user'])) {
+				$set_evaluacion['id_user'] =  $evaluacion['id_user'];
+			};
+			if (isset($evaluacion['id_theme'])) {
+				$set_evaluacion['id_theme'] =  $evaluacion['id_theme'];
+			};
+			if (isset($evaluacion['time_finish'])) {
+				$set_evaluacion['time_finish'] =  $evaluacion['time_finish'];
+			};
+			if (isset($evaluacion['score'])) {
+				$set_evaluacion['score'] =  $evaluacion['score'];
+			};
+			if (isset($evaluacion['evaluation_date'])) {
+				$set_evaluacion['evaluation_date'] =  $evaluacion['evaluation_date'];
+			};
+			
+			return $set_evaluacion;
 		}
 				
 }

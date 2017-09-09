@@ -9,7 +9,7 @@
 			$this->load->model("Evaluation_m");
         }
 		
-		public function index()
+		public function administrador()
 		{
 			$login = $this->session->userdata('logged_in');
 	        if($login != null && $login == true){
@@ -51,6 +51,17 @@
 				echo "No existen subtemas para el tema.";
 			} else {
 				echo json_encode($evaluacion);
+			}
+		}
+		
+		public function borrar_evaluacion()
+		{
+			$id_evaluacion= $this->input->post('id');
+			$borrar = $this->Evaluation_m->borrar_evaluacion($id_evaluacion);
+			if ($borrar== TRUE) {
+				echo "Borrado";
+			} else {
+				echo "Error";
 			}
 		}
 }
