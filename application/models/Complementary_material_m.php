@@ -121,9 +121,9 @@
 		 {
 		 	if (!is_null($id_link)) {
 		 		$logical_erasure = array('status' => 0);
-				$this->db->where('id_links_interest', $id_link);
+				$this->db->where_in('id_links_interest', $id_link);
 				$this->db->update('links_interest', $logical_erasure); 
-				if ($this->db->affected_rows() === 1) {
+				if ($this->db->affected_rows() > 0) {
 					return TRUE;
 				} else {
 					return FALSE;
@@ -147,7 +147,7 @@
 		 		$logical_erasure = array('status' => 0);
 				$this->db->where_in('id_bibliography', $id_bibliography);
 				$this->db->update('bibliography', $logical_erasure); 
-				if ($this->db->affected_rows() === 1) {
+				if ($this->db->affected_rows() > 0) {
 					return TRUE;
 				} else {
 					return FALSE;
