@@ -27,6 +27,7 @@
 	</div>
 	<br />
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
+		
 		<div class="form-group">
 		 	<label for="comment">Respuesta correcta:</label>
 		 	<textarea class="form-control" rows="5" id="comment"></textarea>

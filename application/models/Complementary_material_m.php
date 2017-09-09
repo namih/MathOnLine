@@ -227,9 +227,6 @@
 			if (isset($bibliography['id_user'])) {
 				$set_bibliography['id_user'] =  $bibliography['id_user'];
 			};
-			if (isset($bibliography['id_theme'])) {
-				$set_bibliography['id_theme'] =  $bibliography['id_theme'];
-			};
 			if (isset($bibliography['author'])) {
 				$set_bibliography['author'] =  $bibliography['author'];
 			};
