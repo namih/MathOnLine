@@ -242,9 +242,7 @@
 			if (isset($bibliography['year'])) {
 				$set_bibliography['year'] =  $bibliography['year'];
 			};
-			if (isset($bibliography['book_image'])) {
-				$set_bibliography['book_image'] =  $bibliography['book_image'];
-			};
+			
 			
 			return $set_bibliography;
 		}
