@@ -192,9 +192,9 @@
 			if ($bibliography != NULL) {
 				$this->db->SET($this->_setBibliography($bibliography))->INSERT('bibliography');
 				if ($this->db->affected_rows() === 1) {
-					return $bibliography;
+					return TRUE;
 				} else {
-					return $bibliography;
+					return FALSE;
 				}
 			} else {
 				return NULL;
@@ -242,7 +242,9 @@
 			if (isset($bibliography['year'])) {
 				$set_bibliography['year'] =  $bibliography['year'];
 			};
-			
+			if (isset($bibliography['book_image'])) {
+				$set_bibliography['book_image'] =  $bibliography['book_image'];
+			};
 			
 			return $set_bibliography;
 		}
