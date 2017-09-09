@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Evaluation_c extends CI_Controller
 {
     private $questions;
+    private $evaluation = array();
+    private $id_theme;
     public function __construct()
     {
         parent::__construct();
@@ -25,16 +27,18 @@ class Evaluation_c extends CI_Controller
      * @version 1.0
      */
     public function get_evaluation($id){
+        $this->id_theme = $id;
         $login = $this->session->userdata('logged_in');
 
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
-
-            $datos['tema_eval']='Nombre del tema';
-
             $this->questions = $this->Evaluation_m->evaluacion($id);
+            $datos['tema_eval']=$this->questions['tema'][0]['theme'];
+
+            $this->questions = $this->questions['evaluacion'];
+
             if($this->questions != null || $this->questions != false){
                 $evaluation = $this->one_question_by_subtopic();
                 if(count($evaluation)<15){
@@ -50,7 +54,7 @@ class Evaluation_c extends CI_Controller
             }
 
             $datos['opt_menu_active']='opt_evaluaciones';
-
+            //$datos['theme'] =
             $this->load->view('header/head_v');
             $this->load->view('header/Menu_user_v', $datos);
             $this->load->view('menu_usuario/Evaluacion_tema_v', $datos);
@@ -137,10 +141,22 @@ class Evaluation_c extends CI_Controller
     }
 
     public function get_current_responses(){
+
         $responses = $this->input->post('arrayResultado');
-        $time = $responses["tiempo"];
+        $time = $responses['tiempo'];
         $evaluations = $responses["evaluacion"];
         $totals = $this->calculate_results($evaluations);
+        $this->evaluation['id_user'] = $this->session->userdata('user_id');
+        $this->evaluation['id_theme'] = $this->id_theme;
+        $this->evaluation['time_finish'] = $time;
+        $this->evaluation['score'] = $this->session->userdata('score') + $totals;
+        $this->evaluation['evaluation_date'] = date('d-m-Y');
+        $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation['evaluation_date']);
+        if($response_evaluation != FALSE || $response_evaluation != NULL){
+            echo "<pre>";
+            print_r($response_evaluation);
+            echo "</pre>";
+        }
         // id user y id de la evaluacion para obterner score mas alto
         //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
         

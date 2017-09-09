@@ -99,6 +99,7 @@ class Home_c extends CI_Controller
                 "logged_in" => TRUE,
                 "user_id" => $user[0]["id_user"],
                 "type_user" => $user[0]["type_user"],
+                "score" => $user[0]['total_score'],
                 "user" => $user[0]
             );
             $this->session->set_userdata($data_session);
