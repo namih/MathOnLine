@@ -192,9 +192,9 @@
 			if ($bibliography != NULL) {
 				$this->db->SET($this->_setBibliography($bibliography))->INSERT('bibliography');
 				if ($this->db->affected_rows() === 1) {
-					return TRUE;
+					return $bibliography;
 				} else {
-					return FALSE;
+					return $bibliography;
 				}
 			} else {
 				return NULL;
