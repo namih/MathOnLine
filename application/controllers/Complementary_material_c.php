@@ -125,7 +125,7 @@ class Complementary_material_c  extends CI_Controller
 		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	       // $datos['opt_menu_active']='opt_materiales';
-		   	$biblio_vacio = array('id_bibliography' =>null ,'id_user'=>'','author'=>'','title'=>'','place_publication'=>'','editorial'=>'','year'=>'','book_image'=>'statics/img/book_image/book_default.png' );
+		   	$biblio_vacio = array('id_bibliography' =>FALSE ,'id_user'=>$datos["user_log"][0]['id_user'],'author'=>'','title'=>'','place_publication'=>'','editorial'=>'','year'=>'','book_image'=>'statics/img/book_image/book_default.png' );
 			$biblio = $this->Complementary_material_m->lista_bibliografia(1);
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
@@ -151,7 +151,7 @@ class Complementary_material_c  extends CI_Controller
 		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	       // $datos['opt_menu_active']='opt_materiales';
-	       	$vacio_link = array('id_links_interest' => null, 'id_user'=>'','title'=>'','description'=>'','link'=>'');
+	       	$vacio_link = array('id_links_interest' => FALSE, 'id_user'=>$datos["user_log"][0]['id_user'],'title'=>'','description'=>'','link'=>'');
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
 			$this->load->view('administrador/Editor_liga_v',$vacio_link);
@@ -214,16 +214,17 @@ class Complementary_material_c  extends CI_Controller
 				$editorial = $this->input->post('editorial');
 				$anio = $this->input->post('year');
 				$pais = $this->input->post('place_publication');
-				$tema = $this->input->post('id_theme');
+				$id_user = $this->input->post('id_user');
 												
 				$datos = array( 'title' => $titulo,
 								'author' => $autor,
 								'editorial' => $editorial,
+								'id_user' => $id_user,
 				 				'year' => $anio,
 				     			'place_publication' =>$pais,	
-								'image' => '/'.$image);
+								'book_image' => '/'.$image);
 				
-				
+				print_r($datos);
 				$registrar=$this->Complementary_material_m->registrar_biblio($datos);
 				if ($registrar) {
 					echo "Se registro correctamente la bibliografia";
@@ -268,12 +269,15 @@ class Complementary_material_c  extends CI_Controller
 
 				}
 		} else {
-			$biblio = $this->input->post('biblio');
+			$biblio = $this->input->post('editor');
+			$biblio['book_image'] = 'statics/img/book_image/book_default.png';
 			$update_editor=$this->Complementary_material_m->registrar_biblio($biblio);
 			if ($update_editor) {
+				
 				echo "Se registro correctamente la bibliografia";
 			} else {
 				echo" Intentar mas tarde";
+				
 			}
 		}
 	}

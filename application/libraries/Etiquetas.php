@@ -41,7 +41,7 @@ class Etiquetas{
 				1 => array(
 					1=>array(
 						'nombre'=>'Inicio',
-						'id'=>'',
+						'id'=>'opt_admin_inicio',
 						'href'=>base_url().'administrador',
 						'onclick'=>'',
 						'clase'=>'',
@@ -49,7 +49,7 @@ class Etiquetas{
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
-						'id'=>'',
+						'id'=>'opt_admin_evaluaciones',
 						'href'=>base_url().'admin_evaluation_c/administrador',
 						'onclick'=>'',
 						'clase'=>'',
@@ -57,7 +57,7 @@ class Etiquetas{
 						),
 					3=>array(
 						'nombre'=>'Alta CCC',
-						'id'=>'',
+						'id'=>'opt_admin_alta',
 						'href'=>base_url().'administrador_ccc',
 						'onclick'=>'',
 						'clase'=>'',
@@ -65,7 +65,7 @@ class Etiquetas{
 						),
 					4=>array(
 						'nombre'=>'Material Complementario',
-						'id'=>'',
+						'id'=>'opt_admin_material',
 						'href'=>base_url().'administrador_material',
 						'onclick'=>'',
 						'clase'=>'',
@@ -73,7 +73,7 @@ class Etiquetas{
 						),
 					5=>array(
 						'nombre'=>'Estadisticas',
-						'id'=>'',
+						'id'=>'opt_admin_estadisticas',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -105,7 +105,7 @@ class Etiquetas{
 				2 => array(
 					1=>array(
 						'nombre'=>base_url().'administrador',
-						'id'=>'',
+						'id'=>'opt_ccc_inicio',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -113,7 +113,7 @@ class Etiquetas{
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
-						'id'=>'',
+						'id'=>'opt_ccc_evaluaciones',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -121,7 +121,7 @@ class Etiquetas{
 						),
 					3=>array(
 						'nombre'=>'Material Complementario',
-						'id'=>'',
+						'id'=>'opt_ccc_material',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
@@ -129,7 +129,7 @@ class Etiquetas{
 						),
 					4=>array(
 						'nombre'=>'Estadisticas',
-						'id'=>'',
+						'id'=>'opt_ccc_estadisticas',
 						'href'=>'',
 						'onclick'=>'',
 						'clase'=>'',
