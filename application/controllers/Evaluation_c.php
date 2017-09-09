@@ -27,7 +27,7 @@ class Evaluation_c extends CI_Controller
      * @version 1.0
      */
     public function get_evaluation($id){
-        $this->id_theme = $id;
+        $datos['id_theme'] = $id;
         $login = $this->session->userdata('logged_in');
 
         if($login != null && $login == true){
@@ -145,17 +145,47 @@ class Evaluation_c extends CI_Controller
         $responses = $this->input->post('arrayResultado');
         $time = $responses['tiempo'];
         $evaluations = $responses["evaluacion"];
-        $totals = $this->calculate_results($evaluations);
+        $response_calculate = $this->calculate_results($evaluations);
+        $total = $response_calculate['total'];
+        $number_correct = $response_calculate['number_corrects'];
         $this->evaluation['id_user'] = $this->session->userdata('user_id');
-        $this->evaluation['id_theme'] = $this->id_theme;
+        $this->evaluation['id_theme'] = 1;
         $this->evaluation['time_finish'] = $time;
-        $this->evaluation['score'] = $this->session->userdata('score') + $totals;
-        $this->evaluation['evaluation_date'] = date('d-m-Y');
-        $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation['evaluation_date']);
+        $this->evaluation['score'] = $this->session->userdata('score') + $total;
+        $this->evaluation['evaluation_date'] = date('d-m-Y h:i:s');
+        /*echo "<pre>";
+        print_r($responses);
+        echo "</pre>";*/
+        $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation);
+        
         if($response_evaluation != FALSE || $response_evaluation != NULL){
-            echo "<pre>";
-            print_r($response_evaluation);
-            echo "</pre>";
+            foreach ($evaluations as $evaluation) {
+                $data[] = array(
+                        'id_evaluation_test_log' => $response_evaluation ,
+                        'id_evaluation' => $evaluation['id_evaluation'],
+                        'answer' => $evaluation['answer_select']
+                    );  
+            }
+            $response = $this->Evaluation_m->guardar_respuestas($data);
+            if($response){
+                $data = array(
+                    'id_user' => $this->evaluation['id_user'],
+                    'total_score' => $this->evaluation['score']
+                );
+                echo "<pre>";
+                print_r($data);
+                echo "</pre>";
+                $response = $this->Evaluation_m->actualiza_escore($data);
+                
+                if($response){
+                    echo "todo un exito";
+                }else{
+                    
+                    echo "fracaso total :(";
+                }
+            }else{
+                echo "fracaso en guardar respuestas";
+            }
         }
         // id user y id de la evaluacion para obterner score mas alto
         //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
@@ -171,6 +201,7 @@ class Evaluation_c extends CI_Controller
                 $data["number_corrects"]++;
             }
         }
+        return $data;
 
     }
 }
