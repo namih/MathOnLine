@@ -189,7 +189,7 @@
 		 */
 		public function registrar_biblio($bibliography)
 		{
-			if ($link != NULL) {
+			if ($bibliography != NULL) {
 				$this->db->SET($this->_setBibliography($bibliography))->INSERT('bibliography');
 				if ($this->db->affected_rows() === 1) {
 					return TRUE;
