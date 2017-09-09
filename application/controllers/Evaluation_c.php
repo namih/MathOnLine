@@ -26,6 +26,7 @@ class Evaluation_c extends CI_Controller
      */
     public function get_evaluation($id){
         $login = $this->session->userdata('logged_in');
+
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
@@ -137,8 +138,23 @@ class Evaluation_c extends CI_Controller
 
     public function get_current_responses(){
         $responses = $this->input->post('arrayResultado');
+        $time = $responses["tiempo"];
+        $evaluations = $responses["evaluacion"];
+        $totals = $this->calculate_results($evaluations);
         // id user y id de la evaluacion para obterner score mas alto
         //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
         
+    }
+
+    private function calculate_results($evaluations){
+        $data["total"] = 0;
+        $data["number_corrects"] = 0;
+        foreach ($evaluations as $evaluation){
+            if($evaluation["answer_is_correct"]){
+                $data["total"] += $evaluation["points"];
+                $data["number_corrects"]++;
+            }
+        }
+
     }
 }
