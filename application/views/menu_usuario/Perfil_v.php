@@ -1,14 +1,16 @@
 <?php //echo '<pre>'; print_r($user_log); ?>
-<style>.has-feedback .form-control-feedback {
-            position: absolute;
-            top: 0px;
-            right: 15px;
-            display: block;
-            width: 34px;
-            height: 34px;
-            line-height: 34px;
-            text-align: center;
-}</style>
+<style>
+	.has-feedback .form-control-feedback {
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        display: block;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+	}
+</style>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/actualizar_usuario.js"></script>
 		<center><h1 style="color:#ffffff;">&nbsp;</h1></center>
