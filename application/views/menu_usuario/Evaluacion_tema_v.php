@@ -3,7 +3,7 @@
               <center><h1 style="color:#ffffff;">&nbsp;</h1></center>
               <div id="conf_eval">
                 <div>
-                  <p>En esta sección usted realizará la evaluación del tema "xxxx" que consta de 15 preguntas.</p>
+                  <p>En esta sección usted realizará la evaluación del tema "<?php echo $tema_eval; ?>" que consta de 15 preguntas.</p>
                   <p>Al iniciar la evaluación considere que:</p>
                   <ul>
                     <li>No hay limite de tiempo pero se guardará el tiempo que haya tardado en resolver la evaluación.</li>
@@ -30,7 +30,7 @@
       				      <div class="panel-heading" style="background-color: #ffffff !important; min-height: 80px;">
                       <div class=" col-sm-9 col-md-8 col-lg-10">
                           <center>
-                            <h2>Evaluación de <?php echo $tema_eval; ?></h2>
+                            <h2>Evaluación de "<?php echo $tema_eval; ?>"</h2>
                           </center>
                       </div>
                       <div class=" col-sm-3 col-md-4 col-lg-2" align="right">
@@ -78,7 +78,8 @@
 <script type="text/javascript">
   arrayEvaluacion=<?php echo json_encode($preguntas_evaluacion);?>;
   function iniciarEvaluacion(){
-    $('#preguntas_eval').html(preguntas_eval); 
+    $('#preguntas_eval').html(preguntas_eval);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'preguntas_eval']); 
     $('#conf_eval').hide(); 
     $('#preguntas_eval').show(); 
     empezarDetener('Empezar');
