@@ -125,10 +125,11 @@ class Complementary_material_c  extends CI_Controller
 		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	       // $datos['opt_menu_active']='opt_materiales';
+		   	$biblio_vacio = array('id_bibliography' =>FALSE ,'id_user'=>$datos["user_log"][0]['id_user'],'author'=>'','title'=>'','place_publication'=>'','editorial'=>'','year'=>'','book_image'=>'statics/img/book_image/book_default.png' );
 			$biblio = $this->Complementary_material_m->lista_bibliografia(1);
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
-			$this->load->view('administrador/Editor_bibliografia_v');
+			$this->load->view('administrador/Editor_bibliografia_v',$biblio_vacio);
 	    	$this->load->view('footer/footer_v');
 	    }else{
 	    	redirect(base_url());
@@ -150,16 +151,138 @@ class Complementary_material_c  extends CI_Controller
 		    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	       // $datos['opt_menu_active']='opt_materiales';
-			$links = $this->Complementary_material_m->lista_links(1);
+	       	$vacio_link = array('id_links_interest' => FALSE, 'id_user'=>$datos["user_log"][0]['id_user'],'title'=>'','description'=>'','link'=>'');
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);
-			$this->load->view('administrador/Editor_liga_v',$links);
+			$this->load->view('administrador/Editor_liga_v',$vacio_link);
 	    	$this->load->view('footer/footer_v');
 	    }else{
 	    	redirect(base_url());
 	    }
 		
 	}
+	
+	
+	/**
+	 * Funcion para actualizar  las bibliografias almacenadas en BD
+	 * @author Cecilia Hernandez Vasquez
+	 * @return mensaje de error o de exito en caso de que se haya realizado la actualizacion.
+	 * @param NA
+	 * @version 1.0
+	 */	
+	function insertar_link(){
+		$id_link = $this->input->post('link');
+		if ($id_link != null) {
+			$agregar = $this->Complementary_material_m->registrar_link($id_link);
+			if ($agregar == TRUE) {
+				echo "Se registro correctamente el link";
+			
+			} else {
+				echo "No se puedo registrar el link";
+			}
+			
+		} else {
+			echo "No se puedo registrar el link";
+		}
+		
+	}
+	
+	/**
+	 * Funcion para actualizar  las bibliografias almacenadas en BD
+	 * @author Cecilia Hernandez Vasquez
+	 * @return mensaje de error o de exito en caso de que se haya realizado la actualizacion.
+	 * @param NA
+	 * @version 1.0
+	 */	
+	function insertar_biblio(){
+			if ($_FILES!=NULL) {
+			$ruta = "statics/img/book_image/";
+			$mensaje = "";
+			/*echo "<pre>";
+			print_r($_FILES);
+			echo "</pre>";*/
+			if ($_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
+				//$Nombre_Original = $_FILES['name'];
+				$Temporal = $_FILES['imagen']['tmp_name'];
+				$image = 'statics/img/book_image/'.$_FILES['imagen']['name'];
+				
+				
+
+				move_uploaded_file($Temporal, $image);
+				$titulo =$this->input->post('title');
+				$autor = $this->input->post('author');
+				$editorial = $this->input->post('editorial');
+				$anio = $this->input->post('year');
+				$pais = $this->input->post('place_publication');
+				$id_user = $this->input->post('id_user');
+												
+				$datos = array( 'title' => $titulo,
+								'author' => $autor,
+								'editorial' => $editorial,
+								'id_user' => $id_user,
+				 				'year' => $anio,
+				     			'place_publication' =>$pais,	
+								'book_image' => '/'.$image);
+				
+				print_r($datos);
+				$registrar=$this->Complementary_material_m->registrar_biblio($datos);
+				if ($registrar) {
+					echo "Se registro correctamente la bibliografia";
+				} else {
+					echo" Intentar mas tarde";
+				}
+			}
+				if ($_FILES['imagen']['error']!= 0) {
+					switch ($_FILES['imagen']['error']) {
+					case UPLOAD_ERR_INI_SIZE:
+						echo  "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+						break;
+
+					case UPLOAD_ERR_FORM_SIZE:
+						echo"El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTML";
+						break;
+
+					case UPLOAD_ERR_PARTIAL:
+						echo"El archivo subido sólo se cargó parcialmente";
+						break;
+
+					case UPLOAD_ERR_NO_FILE:
+						echo"Ningun archivo fue subido";
+					break;
+
+					case UPLOAD_ERR_NO_TMP_DIR:
+						echo"Falta una carpeta temporal";
+					break;							
+
+					case UPLOAD_ERR_CANT_WRITE:
+						echo"Error al escribir el archivo en el disco";
+					break;
+
+					case UPLOAD_ERR_EXTENSION:
+						echo"Archivo de carga detenido por extensión";
+					break;
+
+					default: 
+						echo "Error desconocido en la carga"; 
+						break; 
+					}
+
+				}
+		} else {
+			$biblio = $this->input->post('editor');
+			$biblio['book_image'] = 'statics/img/book_image/book_default.png';
+			$update_editor=$this->Complementary_material_m->registrar_biblio($biblio);
+			if ($update_editor) {
+				
+				echo "Se registro correctamente la bibliografia";
+			} else {
+				echo" Intentar mas tarde";
+				
+			}
+		}
+	}
+	
+	
 	
 	/**
 	 * Funcion para actualizar  las bibliografias almacenadas en BD
@@ -180,26 +303,31 @@ class Complementary_material_c  extends CI_Controller
 				//$Nombre_Original = $_FILES['name'];
 				$Temporal = $_FILES['imagen']['tmp_name'];
 				$image = 'statics/img/book_image/'.$_FILES['imagen']['name'];
+				
+				
 
 				move_uploaded_file($Temporal, $image);
 				$id_biblio = $this->input->post('id_bibliography');
-				$titulo =$this->input->post('titulo');
-				$autor = $this->input->post('autor');
+				$titulo =$this->input->post('title');
+				$autor = $this->input->post('author');
 				$editorial = $this->input->post('editorial');
-				$anio = $this->input->post('anio');
-				$pais = $this->input->post('pais');
-				$tema = $this->input->post('tema');
+				$anio = $this->input->post('year');
+				$pais = $this->input->post('place_publication');
+				$tema = $this->input->post('id_theme');
 				
 				
 
-				/*
-				$datos = array( 'id_monthly_theme' => $id_tema,
-								'mounth' => $id_mes,
-								'title' => $titulo,
-								'description' => $descripcion,
-								'image' => '/'.$image, );*/
 				
-				$update_editor=$this->Home_admin_m->actualizar_biblio($datos);
+				$datos = array( 'id_bibliography' => $id_biblio,
+								'title' => $titulo,
+								'author' => $autor,
+								'editorial' => $editorial,
+				 				'year' => $anio,
+				     			'place_publication' =>$pais,	
+								'image' => '/'.$image);
+				
+				
+				$update_editor=$this->Complementary_material_m->actualizar_biblio($datos);
 				if ($update_editor) {
 					echo "Actualizacion exitosa";
 				} else {
@@ -244,7 +372,7 @@ class Complementary_material_c  extends CI_Controller
 				}
 		} else {
 			$editor = $this->input->post('editor');
-			$update_editor=$this->Home_admin_m->actualizar_biblio($editor);
+			$update_editor=$this->Complementary_material_m->actualizar_biblio($editor);
 			if ($update_editor) {
 				echo "Actualizacion exitosa";
 			} else {
@@ -264,7 +392,7 @@ class Complementary_material_c  extends CI_Controller
   	function actualizar_link(){
 		$id_link = $this->input->post('link');
 		$link = $this->Complementary_material_m->actualizar_link($id_link);
-		if ($id_link) {
+		if ($link) {
 			echo "Actualizacion exitosa";
 		} else {
 			echo" Intentar mas tarde";
@@ -279,7 +407,8 @@ class Complementary_material_c  extends CI_Controller
 	 * @param NA
 	 * @version 1.0
 	 */	
-	function eliminar_link ($id_link=NULL){
+	function eliminar_link (){
+		$id_link = $this->input->post('link');
 		if ($id_link != null) {
 			$eliminado = $this->Complementary_material_m->borrar_link($id_link);
 			if ($eliminado) {
@@ -301,7 +430,8 @@ class Complementary_material_c  extends CI_Controller
 	 * @param NA
 	 * @version 1.0
 	 */	
-	function eliminar_biblio ($biblio=NULL){
+	function eliminar_biblio (){
+		$biblio = $this->input->post('biblio');
 		if ($biblio != null) {
 			$eliminado = $this->Complementary_material_m->borrar_biblio($biblio);
 			if ($eliminado == TRUE) {
@@ -334,9 +464,6 @@ class Complementary_material_c  extends CI_Controller
 		return $biblio;
 		
 	}
-	//METODOS PARA ACTUALIZAR LINK Y BIBLIOGRAFIA(CUENTA CON IMAGEN) 
-	
-	//BORRADO LOGICO (ELIMINAR) RETURN TRUE OR FALSE ECHO
 }
 
 

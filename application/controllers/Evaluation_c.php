@@ -4,6 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Evaluation_c extends CI_Controller
 {
     private $questions;
+    private $evaluation = array();
+    private $id_theme;
     public function __construct()
     {
         parent::__construct();
@@ -25,15 +27,18 @@ class Evaluation_c extends CI_Controller
      * @version 1.0
      */
     public function get_evaluation($id){
+        $datos['id_theme'] = $id;
         $login = $this->session->userdata('logged_in');
+
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
-
-            $datos['tema_eval']='Nombre del tema';
-
             $this->questions = $this->Evaluation_m->evaluacion($id);
+            $datos['tema_eval']=$this->questions['tema'][0]['theme'];
+
+            $this->questions = $this->questions['evaluacion'];
+
             if($this->questions != null || $this->questions != false){
                 $evaluation = $this->one_question_by_subtopic();
                 if(count($evaluation)<15){
@@ -49,7 +54,7 @@ class Evaluation_c extends CI_Controller
             }
 
             $datos['opt_menu_active']='opt_evaluaciones';
-
+            //$datos['theme'] =
             $this->load->view('header/head_v');
             $this->load->view('header/Menu_user_v', $datos);
             $this->load->view('menu_usuario/Evaluacion_tema_v', $datos);
@@ -136,9 +141,67 @@ class Evaluation_c extends CI_Controller
     }
 
     public function get_current_responses(){
+
         $responses = $this->input->post('arrayResultado');
+        $time = $responses['tiempo'];
+        $evaluations = $responses["evaluacion"];
+        $response_calculate = $this->calculate_results($evaluations);
+        $total = $response_calculate['total'];
+        $number_correct = $response_calculate['number_corrects'];
+        $this->evaluation['id_user'] = $this->session->userdata('user_id');
+        $this->evaluation['id_theme'] = 1;
+        $this->evaluation['time_finish'] = $time;
+        $this->evaluation['score'] = $this->session->userdata('score') + $total;
+        $this->evaluation['evaluation_date'] = date('d-m-Y h:i:s');
+        /*echo "<pre>";
+        print_r($responses);
+        echo "</pre>";*/
+        $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation);
+        
+        if($response_evaluation != FALSE || $response_evaluation != NULL){
+            foreach ($evaluations as $evaluation) {
+                $data[] = array(
+                        'id_evaluation_test_log' => $response_evaluation ,
+                        'id_evaluation' => $evaluation['id_evaluation'],
+                        'answer' => $evaluation['answer_select']
+                    );  
+            }
+            $response = $this->Evaluation_m->guardar_respuestas($data);
+            if($response){
+                $data = array(
+                    'id_user' => $this->evaluation['id_user'],
+                    'total_score' => $this->evaluation['score']
+                );
+                echo "<pre>";
+                print_r($data);
+                echo "</pre>";
+                $response = $this->Evaluation_m->actualiza_escore($data);
+                
+                if($response){
+                    echo "todo un exito";
+                }else{
+                    
+                    echo "fracaso total :(";
+                }
+            }else{
+                echo "fracaso en guardar respuestas";
+            }
+        }
         // id user y id de la evaluacion para obterner score mas alto
         //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
         
+    }
+
+    private function calculate_results($evaluations){
+        $data["total"] = 0;
+        $data["number_corrects"] = 0;
+        foreach ($evaluations as $evaluation){
+            if($evaluation["answer_is_correct"]){
+                $data["total"] += $evaluation["points"];
+                $data["number_corrects"]++;
+            }
+        }
+        return $data;
+
     }
 }

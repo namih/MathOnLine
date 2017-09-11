@@ -121,9 +121,9 @@
 		 {
 		 	if (!is_null($id_link)) {
 		 		$logical_erasure = array('status' => 0);
-				$this->db->where('id_links_interest', $id_link);
+				$this->db->where_in('id_links_interest', $id_link);
 				$this->db->update('links_interest', $logical_erasure); 
-				if ($this->db->affected_rows() === 1) {
+				if ($this->db->affected_rows() > 0) {
 					return TRUE;
 				} else {
 					return FALSE;
@@ -145,9 +145,9 @@
 		 {
 		 	if (!is_null($id_bibliography)) {
 		 		$logical_erasure = array('status' => 0);
-				$this->db->where('id_bibliography', $id_bibliography);
+				$this->db->where_in('id_bibliography', $id_bibliography);
 				$this->db->update('bibliography', $logical_erasure); 
-				if ($this->db->affected_rows() === 1) {
+				if ($this->db->affected_rows() > 0) {
 					return TRUE;
 				} else {
 					return FALSE;
@@ -189,7 +189,7 @@
 		 */
 		public function registrar_biblio($bibliography)
 		{
-			if ($link != NULL) {
+			if ($bibliography != NULL) {
 				$this->db->SET($this->_setBibliography($bibliography))->INSERT('bibliography');
 				if ($this->db->affected_rows() === 1) {
 					return TRUE;
@@ -226,9 +226,6 @@
 			
 			if (isset($bibliography['id_user'])) {
 				$set_bibliography['id_user'] =  $bibliography['id_user'];
-			};
-			if (isset($bibliography['id_theme'])) {
-				$set_bibliography['id_theme'] =  $bibliography['id_theme'];
 			};
 			if (isset($bibliography['author'])) {
 				$set_bibliography['author'] =  $bibliography['author'];

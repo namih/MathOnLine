@@ -16,10 +16,50 @@
 			
 		</div>
 	</div>
+	<br />
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<label>Pregunta</label>
-		<div id="summernote">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>	
+		 <div class="form-group">
+		 	<label for="comment">Pregunta:</label>
+		 	<textarea class="form-control" rows="5" id="comment"></textarea>
+		 </div>
+		 <label class="control-label">Agregar imagenes</label>
+		 <input id="question" type="file" class="file" data-show-preview="false">
+	</div>
+	<br />
+	<div class="input-group col-lg-12 col-md-12 col-xs-12">
+		
+		<div class="form-group">
+		 	<label for="comment">Respuesta correcta:</label>
+		 	<textarea class="form-control" rows="5" id="comment"></textarea>
+		 </div>
+		 <label class="control-label">Agregar imagenes</label>
+		 <input id="correct_answer" type="file" class="file" data-show-preview="false">
+	</div>
+	<br />
+	<div class="input-group col-lg-12 col-md-12 col-xs-12">
+		<div class="form-group">
+		 	<label for="comment">Respuesta incorrecta A:</label>
+		 	<textarea class="form-control" rows="5" id="comment"></textarea>
+		 </div>
+		 <label class="control-label">Agregar imagenes</label>
+		 <input id="wrong_answer_a" type="file" class="file" data-show-preview="false">
+	</div>
+	<br />
+	<div class="input-group col-lg-12 col-md-12 col-xs-12">
+		<div class="form-group">
+		 	<label for="comment">Respuesta incorrecta B:</label>
+		 	<textarea class="form-control" rows="5" id="comment"></textarea>
+		 </div>
+		 <label class="control-label">Agregar imagenes</label>
+		 <input id="wrong_answer_b" type="file" class="file" data-show-preview="false">
+	</div>
+	<br />
+	<div class="input-group col-lg-12 col-md-12 col-xs-12">
+		<div class="form-group">
+		 	<label for="comment">Respuesta incorrecta C:</label>
+		 	<textarea class="form-control" rows="5" id="comment"></textarea>
+		 </div>
+		 <label class="control-label">Agregar imagenes</label>
+		 <input id="wrong_answer_c" type="file" class="file" data-show-preview="false">
 	</div>
 </div>
