@@ -10,6 +10,24 @@
         line-height: 34px;
         text-align: center;
 	}
+	div.paginador {
+	    text-align: center;
+	    margin: 1px 0;
+	}
+	div.paginador span {
+	    display: inline-block;
+	    width: 1.8em;
+	    height: 1.8em;
+	    line-height: 1.8;
+	    text-align: center;
+	    cursor: pointer;
+	    background: #000;
+	    color: #fff;
+	    margin-right: 5px;
+	}
+	div.paginador span.active {
+	    background: #47a43b;
+	}	
 </style>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/actualizar_usuario.js"></script>
@@ -39,14 +57,43 @@
 							<br> 
 							<div class="col-sm-12 col-md-12 col-lg-12" id="cambia_avatar" align="center" style="display: none">
 								<label>Seleccionar nuevo avatar</label>
-								<?php if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){ 
-				                  foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
-					                <div>
+								<?php //if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){ 
+				                  //foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
+								<table class="paginated" style="margin: 5px auto;">
+								    <tbody>
+										<?php $i=0; if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){ 
+								          foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { 
+											if($i%4==0){ ?>
+												<tr>
+								    		<?php } $i++; ?>	
+								    		<td style="padding: 3px;">          
+									            <div align="center">
+											    	<a href="#" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
+											    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0;" class="img-responsive">
+											    	</a>
+											    </div>
+											</td>
+											<?php if($i%4==0){ ?>
+												</tr>
+											<?php }else{
+												if($i == count($user_log[0]['avatares_disponibles'])){
+													for($j=1; $j<=(3-($i%4)); $j++){ ?>
+														<td></td>
+													<?php } ?>
+												</tr>
+												<?php } ?>
+											<?php } ?>				
+								        <?php } }?>    
+
+								               
+								    </tbody>
+								</table>				                  
+					                <!--<div>
 								    	<a href="#" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
 								    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0;" class="img-responsive">
 								    	</a>
-								    </div>
-				                <?php } }?>
+								    </div>-->
+				                <?php// } }?>
 				                <br>
 				            </div>
 							<br>								
@@ -124,3 +171,30 @@
 		    </div>
 	  	</div>
 	</div><!-- cierra el div #user_main_content que inicia despues del menú-->
+
+<script type="text/javascript">
+
+$('table.paginated').each(function() {
+    var currentPage = 0;
+    var numPerPage = 1;
+    var $table = $(this);
+    $table.bind('repaginate', function() {
+        $table.find('tbody tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+    });
+    $table.trigger('repaginate');
+    var numRows = $table.find('tbody tr').length;
+    var numPages = Math.ceil(numRows / numPerPage);
+    var $paginador = $('<div class="paginador"></div>');
+    for (var page = 0; page < numPages; page++) {
+        $('<span class="page-number"></span>').text(page + 1).bind('click', {
+            newPage: page
+        }, function(event) {
+            currentPage = event.data['newPage'];
+            $table.trigger('repaginate');
+            $(this).addClass('active').siblings().removeClass('active');
+        }).appendTo($paginador).addClass('clickable');
+    }
+    $paginador.insertBefore($table).find('span.page-number:first').addClass('active');
+});
+
+</script>
