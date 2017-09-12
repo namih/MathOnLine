@@ -27,6 +27,13 @@
 	}
 	div.paginador span.active {
 	    background: #47a43b;
+	}
+
+	.avr_opt:hover{
+		background: #eeeeee;
+	}
+	.active{
+		background: #c4e5c0;
 	}	
 </style>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
@@ -68,8 +75,8 @@
 								    		<?php } $i++; ?>	
 								    		<td style="padding: 3px;">          
 									            <div align="center">
-											    	<a href="#" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
-											    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0;" class="img-responsive">
+											    	<a href="#id_avatar_user" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
+											    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0; border: solid 1px; padding: 3px;" class="img-responsive avr_opt <?php if($user_log[0]['id_avatar']==$value['id_avatar']) echo "active"; ?>" >
 											    	</a>
 											    </div>
 											</td>
@@ -164,6 +171,8 @@
 			            //console.log(new_avatar);
 			            $('#user_avatar').html('<img class="img-responsive" src="'+new_avatar.src+'"/>');
 			            $('#id_avatar_user').val(this.id);
+			            $('img.avr_opt').removeClass('active');
+			            $('#img_avatar_'+this.id).addClass('active');
 
 			          });
 			        </script>   
