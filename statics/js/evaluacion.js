@@ -1,4 +1,5 @@
 var arrayEvaluacion=[];
+var id_tema=0;
 
         var inicio=0;
         var timeout=0;
@@ -65,8 +66,8 @@ var arrayEvaluacion=[];
             var tiempo = Number(arrayCrono[0]*3600)+Number(arrayCrono[1]*60)+Number(arrayCrono[2]);
             //console.log(cronometro);
 
-            arrayResultado={tiempo:tiempo,evaluacion:arrayEvaluacion};
-            //console.log(arrayResultado);
+            arrayResultado={id_tema:id_tema,tiempo:tiempo,evaluacion:arrayEvaluacion};
+            console.log(arrayResultado);
             var url = base_url + 'Evaluation_c/get_current_responses';
             $.ajax({        
                 url: url,       
