@@ -24,55 +24,7 @@
 				return FALSE;
 			}
 		}
-		
-		/**
-		 * Obtiene los identificadores de los avatares Masculinos
-		 * 
-		 * @author Julio Cesar Padilla Dorantes
-		 * @return Array Arreglo con los id's de los avatares, FALSE si no existe ningun registro
-		 * @param NA
-		 * @version 1.0
-		 */
-		public function obtener_id_avatar($genero = NULL)
-		{
-			if ($genero != NULL) {
-				$avatar = $this->db->SELECT('id_avatar')->FROM('avatar')->WHERE('gender', $genero)->GET();
-				if (!empty($avatar)) {
-					return $avatar->result_array();
-				} else {
-					return FALSE;
-				}
-			} else {
-				return NULL;
-			}
-		}
-		
-		/**
-		 * Actualiza el status del usuario a 1 para quedar activada la cuenta.
-		 * 
-		 * @author Julio Cesar Padilla Dorantes
-		 * @return Boolean TRUE si la cuenta fue activada correctamente o FALSE si la cuenta no existe o ya esta activa.
-		 * @param Int $id_usuario Identificador del usuario con el que se guardarón sus datos de registro.
-		 * @version 1.0
-		 */
-		public function activar_cuenta($id_usuario = NULL)
-		{
-			if ($id_usuario != NULL) {
-				$existe = $this->existe_usuario($id_usuario);
-				$estatus = $this->estatus_cuenta($id_usuario);
-				if ($existe == TRUE and $estatus == TRUE) {
-					$datos = array('status'=> 1);
-					$activacion = $this->db->update('user', $datos, array('id_user' => $id_usuario));
-					return TRUE;
-				} else {
-					return FALSE;
-				}
-			} else {
-				return NULL;
-			}
-		}
-		
-		
+	
 		/**
 		 * Guarda los datos recabados del formulario de registro.
 		 * 
@@ -113,27 +65,7 @@
 				return FALSE;
 			}
 		}
-		
-		/**
-		 * Verifica el estado (activa o inactiva) de la cuenta del usuario
-		 * 
-		 * @author Julio Cesar Padilla Dorantes
-		 * @return Boolean TRUE si la cuenta esta inactiva, FALSE si esta activa.
-		 * @param Int $id_usuario Id del usuario con el que se guardaron sus datos de registro
-		 * @version 1.0
-		 */
-		public function estatus_cuenta($id_usuario)
-		{
-			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('id_user', $id_usuario)->GET();
-			$estatus = $usuario->row_array();
-			
-			if ($estatus['status'] == 0) {
-				return TRUE;
-			} else {
-				return FALSE;
-			}
-		}
-		
+				
 		/**
 		 * Valida que el nombre de usuario este disponible
 		 * 

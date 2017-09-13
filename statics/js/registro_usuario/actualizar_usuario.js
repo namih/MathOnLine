@@ -1,61 +1,4 @@
 /**
-* La función comparar_contrasenia verifica que las contraseñas sean del mismo tamaño así como
-* los mismos caracteres
-*
-* @author María del Carmen Chávez Conde
-* @param NA
-* @return TRUE cuando los strings coinciden, FALSE si los strings no coinciden. Formato: [* @return tipo comentario]
-* @version Versión actual del elemento
-*/
-function comparar_contrasenia () {
-	document.getElementById("error_vacio_pwd1").style.display= 'none';
-	document.getElementById("error_vacio_pwd2").style.display= 'none';
-	var pass1 = document.getElementById("error_pwd1");
-	pass1.classList.remove("has-warning");
-	var pass2 = document.getElementById("error_pwd2");
-	pass2.classList.remove("has-warning");
-	
-	var contrasenia1 = document.getElementById('pwd').value;
-	var contrasenia2 = document.getElementById('rpwd').value;
-	
-	if(contrasenia1 != ""){
-		if(contrasenia2 == contrasenia1){
-			return true;
-		}else{
-			document.getElementById('pwd').value = "";
-			document.getElementById('rpwd').value = "";
-			document.getElementById('pwd').placeholder = "Las contraseñas no coinciden";
-			document.getElementById('pwd').focus();
-		}
-	}else{
-		return false;
-	}
-}
-
-
-/**
-* La función validar_email verifica que el correo electrónico con el que se registró el usuario
-* este escrito con la estructura "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/".
-*@author María del Carmen Chávez Conde
-* @param NA
-* @return TRUE cuando el correo electrónico esta escrito correctamente, FALSE cuando el correo electrónico no esta escrito correctamente. Formato: [* @return tipo comentario]
-* @version Versión actual del elemento
-*/
-
-function validar_email() {
-	var valor = document.getElementById('correo');
-	valueForm=valor.value;
-	
-  var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-  	if(valueForm.search(patron)==0){
-  		return true;
-	}
-	else{
-		 return false;
-	}
-}
-
-/**
 * La función registrar manda al controlador Registro_usuario_c los datos que ingresó la persona que desea registrarse
 *@author María del Carmen Chávez Conde
 * @param NA
@@ -151,8 +94,9 @@ function actualizar() {
 		cache: false,
 		
 		success: function() {
-			alert('OK');
+			//alert('OK');
 			$('#Registro').modal('toggle');
+			location.href = "/mathonline";
 		},
 		error: function() {
 			alert('failure');

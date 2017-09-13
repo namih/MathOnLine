@@ -48,19 +48,26 @@
 		{
 			if ($usuario != null){
 				$user = $this->db
-								->SELECT('*')
-								->FROM('user')
-								->WHERE('user.id_user', $usuario['id_user'])
-								->GET()->row();
+							->SELECT('*')
+							->FROM('user')
+							->WHERE('user.id_user', $usuario['id_user'])
+							->GET()->row();
 								
 				if($user->email==$usuario['email']){
-					$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
-					$usuario['status']=$user->status;
-					return $usuario;
+					if($usuario['password']==''){
+						$this->db->SET($this->_sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+					} else{
+						$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+						$usuario['status']=$user->status;
 					}
-				else {
-					$usuario['status']=0;
-					$this->db->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user',$usuario);
+					return $usuario;
+				} else {
+					if($usuario['password']==''){
+						$this->db->SET($this->_sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+					} else{
+						$usuario['status']=0;
+						$this->db->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user',$usuario);
+					}
 					return $usuario;
 				}
 			} 
@@ -100,6 +107,35 @@
 			};
 			
 			
+			return $set_usuario;
+		}
+		
+		private function _sinpassUsuario($usuario)
+		{
+			$set_usuario = array();
+			
+			if (isset($usuario['user_name'])) {
+				$set_usuario['user_name'] =  $usuario['user_name'];
+			};
+			if (isset($usuario['id_avatar'])) {
+				$set_usuario['id_avatar'] = $usuario['id_avatar'];
+			};
+			if (isset($usuario['name'])) {
+				$set_usuario['name'] = $usuario['name'];
+			};
+			if (isset($usuario['last_name'])) {
+				$set_usuario['last_name'] = $usuario['last_name'];
+			};
+			if (isset($usuario['sex'])) {
+				$set_usuario['sex'] = $usuario['sex'];
+			};
+			if (isset($usuario['year_birthday'])) {
+				$set_usuario['year_birthday'] = $usuario['year_birthday'];
+			};
+			if (isset($usuario['email'])) {
+				$set_usuario['email'] = $usuario['email'];
+			};
+	
 			return $set_usuario;
 		}
 			
