@@ -1,4 +1,11 @@
 var editor;
+
+var global_question = '';
+var global_correct_answer = '';
+var global_distractor_a = '';
+var global_distractor_b = '';
+var global_distractor_c = '';
+
 window.onload = function () {
 	editor = com.wiris.jsEditor.JsEditor.newInstance({'language': 'es'});
 	editor.insertInto(document.getElementById('editorContainer'));
@@ -14,15 +21,15 @@ window.onload = function () {
 function preview_question () {
   var builder = document.getElementById("builder").value;
   if (document.getElementById("question").innerHTML == "") {
-  	var titulo = '<h5>Pregunta</h5>';
-  	document.getElementById("question").innerHTML = titulo + builder;
+  	document.getElementById("question").innerHTML = builder;
+  	global_question = document.getElementById("builder").value;
+  	document.getElementById("builder").value = '';
   	MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
   } else {
   	var question = document.getElementById("question").innerHTML;
-  	document.getElementById("builder").value = question;
+  	document.getElementById("builder").value = global_question;
   	document.getElementById("question").innerHTML = "";
-  }; 
-  
+  };
 }
 
 function preview_correct_answer () {

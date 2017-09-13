@@ -43,15 +43,33 @@
 			</div>
 		</div>
 	</div>
-	<div class="panel panel-success  col-lg-6 col-md-6 col-xs-12"  align="center">
+	<div class="panel panel-success  col-lg-6 col-md-6 col-xs-12">
 		<div class="panel-heading"><b>Previsualización de la evaluación</b></div>
 		<div class="panel-body">
-			<div id="question"></div>
-			<div id="correct_answer"></div>
-			<div id="distractor_a"></div>
-			<div id="distractor_b"></div>
-			<div id="distractor_c"></div>
+			<button onclick="preview_distractor_b()" type="button" class="btn btn-default">Distractor B</button>
+			<button onclick="preview_distractor_c()" type="button" class="btn btn-default">Distractor C</button>
+			<br />
+			<br />
+			<div align="left">
+				Pregunta
+				<p align="center" id="question"></p>
+			</div>
+			<div align="left">
+				Respuesta correcta
+				<p align="center" id="correct_answer"></p>
+			</div>
+			<div align="left">
+				Distractor A
+				<p align="center" id="distractor_a"></p>
+			</div>
+			<div align="left">
+				Distractor B
+				<p align="center" id="distractor_b"></p>
+			</div>
+			<div align="left">
+				Distractor C
+				<p align="center" id="distractor_c"></p>
+			</div>
 		</div>
 	</div> 
-	
 </div>
