@@ -76,6 +76,7 @@
               </script>
             </div>
 <script type="text/javascript">
+  id_tema=<?php echo $id_theme; ?>;
   arrayEvaluacion=<?php echo json_encode($preguntas_evaluacion);?>;
   function iniciarEvaluacion(){
     $('#preguntas_eval').html(preguntas_eval);

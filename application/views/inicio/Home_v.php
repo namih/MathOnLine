@@ -217,7 +217,7 @@
             <div class="modal-body">
               <div class="panel-body">
                 <div class="row">
-                  <img src="statics/img/calendario_uam/calendario_uam.png" width="100%" height="100%">
+                  <img src="statics/files/calendario_uam.png" width="100%" height="100%">
                 </div>                  
               </div>
             </div>
