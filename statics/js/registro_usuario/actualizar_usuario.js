@@ -19,7 +19,6 @@ function actualizar() {
 
 			       
   var bandera_usuario = 1;
-  var bandera_pass = 1;
   var bandera_email = 1;
   var bandera_anio = 1;
   var bandera_sexo = 1;
@@ -38,7 +37,7 @@ function actualizar() {
 		
 	};
 	
-	var validar_pwd = comparar_contrasenia();
+	var validar_pwd = comparar_contrasenia_perfil();
 	var validar_correo = validar_email();
 	
 	if (nacimiento == '' ) {
@@ -53,18 +52,6 @@ function actualizar() {
 		document.getElementById("error_vacio_email").style.display= 'inline';
 		bandera_email = 0;
 	}
-	  if(contrasenia1 == ''){
-	 	var pwd_vacio = document.getElementById("error_pwd1");
-		pwd_vacio.className += " has-warning";
-		document.getElementById("error_vacio_pwd1").style.display= 'inline';
-		bandera_pass = 0;
-	 }
-	  if(contrasenia2 == ''){
-	 	var pwd2_vacio = document.getElementById("error_pwd2");
-		pwd2_vacio.className += " has-warning";
-		document.getElementById("error_vacio_pwd2").style.display= 'inline';
-		bandera_pass = 0;
-	 }
 	 
 	 if(usuario == ''){
 	 	var usr = document.getElementById("usuario");
@@ -84,8 +71,7 @@ function actualizar() {
 		bandera_anio == 1 &&
 		bandera_email == 1 &&
 		bandera_usuario == 1 &&
-		bandera_sexo == 1 &&
-		bandera_pass == 1) {
+		bandera_sexo == 1) {
 		$.ajax({
 		type:'post',
 		url: base_url + 'Perfil_usuario_c/actualizar_perfil',
@@ -94,7 +80,7 @@ function actualizar() {
 		cache: false,
 		
 		success: function() {
-			//alert('OK');
+			alert('OK');
 			$('#Registro').modal('toggle');
 			location.href = "/mathonline";
 		},
@@ -109,3 +95,49 @@ function actualizar() {
 }   
 
 
+function comparar_contrasenia_perfil() {
+	document.getElementById("error_vacio_pwd1").style.display= 'none';
+	document.getElementById("error_vacio_pwd2").style.display= 'none';
+	var pass1 = document.getElementById("error_pwd1");
+	pass1.classList.remove("has-warning");
+	var pass2 = document.getElementById("error_pwd2");
+	pass2.classList.remove("has-warning");
+	
+	var contrasenia1 = document.getElementById('pwd').value;
+	var contrasenia2 = document.getElementById('rpwd').value;
+	
+	if(contrasenia1 != "" || contrasenia2 == ""){
+		if(contrasenia2 == contrasenia1){
+			return true;
+		}else{
+			document.getElementById('pwd').value = "";
+			document.getElementById('rpwd').value = "";
+			document.getElementById('pwd').placeholder = "Las contraseñas no coinciden";
+			document.getElementById('pwd').focus();
+		}
+	}else{
+		return false;
+	}
+}
+
+function longitud_contrasenia_perfil () {
+	var longi = document.getElementById('pwd').value;
+	var longi_2 = document.getElementById('rpwd');
+	var pwd = document.getElementById('pwd');
+    var longi_cadena = 8;
+    //alert(longi_cadena);
+    if (longi==''){
+    	longi_2.placeholder = "Tu contraseña no sera modificada";
+    	document.getElementById('pwd').placeholder = "Tu contraseña no sera modificada";
+    } else{
+    	if (longi.length < longi_cadena) {
+   
+    	longi_2.value = "";
+    	longi_2.placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		longi_2.focus();
+		document.getElementById('pwd').value = "";
+		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		//document.getElementById('pwd').select();
+    	}  
+	}
+}
