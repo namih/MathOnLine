@@ -55,15 +55,17 @@
 								
 				if($user->email==$usuario['email']){
 					if($usuario['password']==''){
-						$this->db->SET($this->_sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
-					} else{
-						$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
 						$usuario['status']=$user->status;
+						$this->db->SET($this->sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+					} else{
+						$usuario['status']=$user->status;
+						$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
 					}
 					return $usuario;
 				} else {
 					if($usuario['password']==''){
-						$this->db->SET($this->_sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+						$usuario['status']=0;
+						$this->db->SET($this->sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
 					} else{
 						$usuario['status']=0;
 						$this->db->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user',$usuario);
@@ -105,12 +107,14 @@
 			if (isset($usuario['email'])) {
 				$set_usuario['email'] = $usuario['email'];
 			};
-			
+			if (isset($usuario['status'])) {
+				$set_usuario['status'] = $usuario['status'];
+			};
 			
 			return $set_usuario;
 		}
 		
-		private function _sinpassUsuario($usuario)
+		private function sinpassUsuario($usuario)
 		{
 			$set_usuario = array();
 			
@@ -135,7 +139,10 @@
 			if (isset($usuario['email'])) {
 				$set_usuario['email'] = $usuario['email'];
 			};
-	
+			if (isset($usuario['status'])) {
+				$set_usuario['status'] = $usuario['status'];
+			};
+			
 			return $set_usuario;
 		}
 			

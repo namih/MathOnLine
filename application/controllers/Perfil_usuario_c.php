@@ -41,10 +41,10 @@
 
         	if($login != null && $login == true){
 				$registro = $this->input->post('datos');
-				$encrypted = $this->encrypt->encode($registro['password']);
-				$registro['password']=$encrypted;
-				
-				
+				if($registro['password']!=""){
+					$encrypted = $this->encrypt->encode($registro['password']);
+					$registro['password']=$encrypted;
+				}
 				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro);
 			
 				

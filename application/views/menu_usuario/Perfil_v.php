@@ -117,12 +117,12 @@
 							</div>
 							<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd1">
 								<label>Contraseña: </label>
-								<input onblur="longitud_contrasenia()" type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
+								<input onblur="longitud_contrasenia_perfil()" type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
 								<span id="error_vacio_pwd1" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 							</div>
 							<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd2">
 								<label>&nbsp; </label>
-								<input onblur="comparar_contrasenia()" type="password" class="form-control" id="rpwd" placeholder="Repetir Contraseña*">
+								<input onblur="comparar_contrasenia_perfil()" type="password" class="form-control" id="rpwd" placeholder="Repetir Contraseña*">
 								<span id="error_vacio_pwd2" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 							</div>
 							<div class="input-group col-lg-12 col-md-12 col-xs-12">
