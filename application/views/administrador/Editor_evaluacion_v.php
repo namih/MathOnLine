@@ -32,8 +32,14 @@
 				<textarea class="form-control" rows="5" id="builder"></textarea>
 			</div>
 			<div class="form-group">
-				<input id="file-demo" type="file" class="file" multiple="true" data-preview-file-type="any">
+				<input id="image_builder" type="file" class="file" multiple="true" data-preview-file-type="any">
 			</div>
+			<script type="text/javascript" charset="utf-8">
+				$("#image_builder").fileinput({
+					language: 'es',
+					showUpload: false
+				});
+			</script>
 			<div class="btn-group">
 				<button onclick="preview_question()" type="button" class="btn btn-default">Pregunta</button>
 				<button onclick="preview_correct_answer()" type="button" class="btn btn-default">Correcta</button>

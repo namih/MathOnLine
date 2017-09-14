@@ -69,6 +69,13 @@
 			$this->load->view('administrador/Editor_evaluacion_v');
 			$this->load->view('footer/footer_v');
 		}
+
+		public function clean()
+		{
+			$this->load->view('header/head_v');
+			$this->load->view('auto_verificar');
+			$this->load->view('footer/footer_v');
+		}
 		
 		public function registrar() {
 			date_default_timezone_set('America/Mexico_City');
