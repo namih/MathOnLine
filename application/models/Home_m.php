@@ -157,6 +157,27 @@
 			}				
 		}
 		
+		/**
+		 * Pregunta aleatoria.
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array Pregunta con sus respctivas respuestas.
+		 * @param NA
+		 * @version 1.0
+		 */
+		public function pregunta_semanal()
+		{
+			$this->db->order_by('id_evaluation','RANDOM');
+			$this->db->limit(1); 
+			$query = $this->db->get('evaluation');
+			
+			if ($query->num_rows() === 1) {
+				return $query->result_array();
+			} else {
+				return FALSE;
+			}
+		}
+		
 }
 
 /* End of file Home_m.php */

@@ -134,6 +134,15 @@
 			echo "<pre>";
 		}
 		
+		public function semanal()
+		{
+			$semanal = $this->Home_m->pregunta_semanal();
+			
+			echo "<pre>";
+			print_r($semanal);
+			echo "<pre>";
+		}
+		
 		public function guardar_imagen()
 		{
 		//comprobamos que sea una petición ajax
