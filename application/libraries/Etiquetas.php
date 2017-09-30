@@ -1,6 +1,6 @@
 <?php
 class Etiquetas{
-	
+
 	function type_user(){
 		$type=array(
 			'Administrador' => 1,
@@ -9,7 +9,7 @@ class Etiquetas{
 			);
 		return $type;
 	}
-	
+
 	function meses(){
 	$mes=array(
 			1 => 'Enero',
@@ -24,17 +24,17 @@ class Etiquetas{
 			10 => 'Octubre',
 			11 => 'Noviembre',
 			12 => 'Diciembre');
-		return $mes;	
+		return $mes;
 }
-	
+
 	function type_avatar()
 	{
 		$type = array(
-				'male' => array(2,4,6,10,11,12,13,16,17,19,21,24,25,27,29), 
+				'male' => array(2,4,6,10,11,12,13,16,17,19,21,24,25,27,29),
 				'female' => array(1,3,4,5,7,8,9,14,15,18,20,22,23,26,28,30));
 		return $type;
 	}
-	
+
 	function menu_user($idUser){
 		$menu_user = array(
 				//admin
@@ -99,8 +99,8 @@ class Etiquetas{
 									'onclick'=>''
 								),
 							)
-						),					
-					), 
+						),
+					),
 				//consejo
 				2 => array(
 					1=>array(
@@ -155,8 +155,8 @@ class Etiquetas{
 									'onclick'=>''
 								),
 							)
-						),					
-					), 
+						),
+					),
 				//usuario gral (alumno)
 				3 => array(
 					1=>array(
@@ -237,7 +237,7 @@ class Etiquetas{
 								),
 							)
 						),
-					), 
+					),
 		);
 		return $menu_user;
 	}
