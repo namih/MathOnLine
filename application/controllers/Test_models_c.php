@@ -143,6 +143,16 @@
 			echo "<pre>";
 		}
 		
+		public function blog_tuto()
+		{
+			$id_user = 2;
+			$blog = $this->Home_student_m->tutoriales_usuario($id_user);
+			
+			echo "<pre>";
+			print_r($blog);
+			echo "<pre>";
+		}
+		
 		public function guardar_imagen()
 		{
 		//comprobamos que sea una petición ajax

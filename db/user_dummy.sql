@@ -118,7 +118,7 @@ VALUES
 '2017-10-01 00:00:00',
 15,
 '2017-10-01 00:00:00',
-1);
+2);
 
 INSERT INTO `mathonline`.`blog_tutorials`
 (`id_blog_tutorials`,
@@ -134,8 +134,8 @@ VALUES
 3,
 '2017-10-03 00:00:00',
 12,
-'2017-01-03 00:00:00',
-1);
+'2017-10-03 00:00:00',
+2);
 
 INSERT INTO `mathonline`.`blog_tutorials`
 (`id_blog_tutorials`,
@@ -169,7 +169,7 @@ VALUES
 '2017-10-10 00:00:00',
 15,
 '2017-10-10 00:00:00',
-1);
+2);
 
 INSERT INTO `mathonline`.`blog_tutorials`
 (`id_blog_tutorials`,
@@ -220,7 +220,7 @@ VALUES
 '2017-10-15 00:00:00',
 20,
 '2017-10-16 00:00:00',
-1);
+2);
 
 INSERT INTO `mathonline`.`blog_tutorials`
 (`id_blog_tutorials`,
@@ -237,7 +237,7 @@ VALUES
 '2017-10-20 00:00:00',
 1,
 '2017-10-25 00:00:00',
-1);
+2);
 
 INSERT INTO `mathonline`.`blog_tutorials`
 (`id_blog_tutorials`,
@@ -254,4 +254,38 @@ VALUES
 '2017-11-01 00:00:00',
 5,
 NULL,
+1);
+
+INSERT INTO `mathonline`.`blog_tutorials`
+(`id_blog_tutorials`,
+`id_user`,
+`id_tutorial`,
+`start_date`,
+`progress`,
+`finish_date`,
+`status`)
+VALUES
+(10,
+2,
+40,
+'2017-11-01 00:00:00',
+22,
+'2017-11-01 00:00:00',
+1);
+
+INSERT INTO `mathonline`.`blog_tutorials`
+(`id_blog_tutorials`,
+`id_user`,
+`id_tutorial`,
+`start_date`,
+`progress`,
+`finish_date`,
+`status`)
+VALUES
+(11,
+2,
+40,
+'2017-11-05 00:00:00',
+22,
+'2017-11-08 00:00:00',
 1);

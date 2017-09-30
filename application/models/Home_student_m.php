@@ -65,7 +65,14 @@
 		public function tutoriales_usuario($id_user = NULL)
 		{
 			if ($id_user != NULL) {
-				$tuto_complete = $this->db->SELECT('*')->FROM('blog_tutorials')->WHERE('id_user', $id_user)->ORDER_BY('id_tutorial ASC')->ORDER_BY('tutorial_date ASC')->GET();
+				$tuto_complete = $this->db->SELECT('*')->
+											FROM('blog_tutorials')->
+											WHERE('id_user', $id_user)->
+											WHERE('status !=', 0)->
+											ORDER_BY('id_tutorial ASC')->
+											ORDER_BY('id_blog_tutorials ASC')->
+											GROUP_BY('id_tutorial')->
+											GET();
 				if ($tuto_complete->num_rows() > 0) {
 					return $tuto_complete->result_array();
 				} else {
