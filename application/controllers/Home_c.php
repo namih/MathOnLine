@@ -12,6 +12,8 @@ class Home_c extends CI_Controller
     }
 
     public function index(){
+        $question_week = $this->Home_m->pregunta_semanal();
+        //pregunta_semanal
         $this->load->view('header/head_v');
         $this->load->view('inicio/Home_v');
         $this->load->view('footer/footer_v');
@@ -209,7 +211,7 @@ class Home_c extends CI_Controller
                 );
             }
         }
-       
+
         $datos["temas"] = $themes_aux;
 
         $datos['opt_menu_active']='opt_tutoriales';

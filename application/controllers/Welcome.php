@@ -32,8 +32,10 @@ class Welcome extends CI_Controller {
             redirect(base_url("/index.php/home_c/goHomeUser"));
         }else{
             $themes = $this->get_theme_month();
+            $question_week = $this->Home_m->pregunta_semanal();
             $datos['themes'] = $themes;
-            
+            $datos['question_week'] = $question_week;
+
             $this->load->view('header/head_v');
             $this->load->view('inicio/Home_v', $datos);
             $this->load->view('footer/footer_v');
