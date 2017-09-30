@@ -10,16 +10,16 @@
                   <div class="panel panel-success tema_footer"  align="center">
                     <div class="panel-heading"><b><?php echo $tutorial_content['diapositivas'][$paginador['actual']]['titulo']; ?></b></div>
                     <div class="panel-body">
-                      <?php echo $tutorial_content['diapositivas'][$paginador['actual']]['vista']; ?>
+                      <?php echo $diapositiva_actual; ?>
                     </div>
                     <?php if(isset($paginador)){ ?>
                       <div class="panel-footer" style="margin: 0px;">
                           <ul class="pagination">
                             <?php if($paginador['anterior']!=''){ ?>
-                              <li><a href="#">&laquo; Aterior</a></li>
-                            <?php } ?>
+                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['anterior']; ?>/1" >&laquo; Anterior</a></li>
+                           <?php } ?>
                             <?php if($paginador['siguiente']!=''){ ?>
-                              <li><a href="#">Siguiente &raquo;</a></li>
+                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['siguiente']; ?>/2" >Siguiente &raquo;</a></li>
                             <?php } ?>
                           </ul>
                       </div>

@@ -38,7 +38,7 @@
                                         <?php if($dts_tutorial['concluido']==1){ ?>
                                           <a style="float: right;"><span class="badge" style="background-color: #61bf74;"><i class="fa fa-check" aria-hidden="true"></i></span></a>
                                         <?php }else{ ?>
-                                          <a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>" style="float: right;"><span class="badge" style="background-color: #cccccc;"><i class="fa fa-flag-o" aria-hidden="true"></i></span></a>
+                                          <a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>/<?php echo 1;/*dts_tutorial['progress'];*/?>/<?php echo 0; ?>" style="float: right;"><span class="badge" style="background-color: #cccccc;"><i class="fa fa-flag-o" aria-hidden="true"></i></span></a>
                                         <?php } ?>
                                       </div>
                                     <?php }
