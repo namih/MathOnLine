@@ -65,16 +65,10 @@
 		public function tutoriales_usuario($id_user = NULL)
 		{
 			if ($id_user != NULL) {
-				$tuto_complete = $this->db->SELECT('*')->
-											FROM('blog_tutorials')->
-											WHERE('id_user', $id_user)->
-											WHERE('status !=', 0)->
-											ORDER_BY('id_tutorial ASC')->
-											ORDER_BY('id_blog_tutorials ASC')->
-											GROUP_BY('id_tutorial')->
-											GET();
-				if ($tuto_complete->num_rows() > 0) {
-					return $tuto_complete->result_array();
+				
+				$query = $this->db->query("SELECT * FROM blog_tutorials WHERE id_blog_tutorials IN (SELECT MAX(id_blog_tutorials) FROM blog_tutorials GROUP BY id_tutorial) AND id_user =".$id_user.";");
+				if ($query->num_rows() > 0) {
+					return $query->result_array();
 				} else {
 					return FALSE;
 				}
