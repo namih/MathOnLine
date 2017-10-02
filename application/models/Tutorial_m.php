@@ -18,11 +18,15 @@
 		 public function create_tutorial($tutorial)
 		 {
 		 	if ($tutorial != NULL) {
-				 
+		 		$this->db->SET($this->_setTutorial($tutorial))->INSERT('blog_tutorials');
+				if ($this->db->affected_rows() === 1) {
+					return $this->db->insert_id();
+				} else {
+					return FALSE;
+				}
 			 } else {
 				 return NULL;
 			 }
-			 
 		 }
 		 
 		 /**
@@ -61,7 +65,30 @@
 			 
 		 }
 		 
+		 private function _setTutorial($tutorial)
+		 {
+			$set_tutorial = array();
+			
+			if (isset($tutorial['id_user'])) {
+				$set_tutorial['id_user'] =  $tutorial['id_user'];
+			};
+			if (isset($tutorial['id_tutorial'])) {
+				$set_tutorial['id_tutorial'] =  $tutorial['id_tutorial'];
+			};
+			if (isset($tutorial['start_date'])) {
+				$set_tutorial['start_date'] =  $tutorial['start_date'];
+			};
+			if (isset($tutorial['progress'])) {
+				$set_tutorial['progress'] =  $tutorial['progress'];
+			};
+			if (isset($tutorial['status'])) {
+				$set_tutorial['status'] =  $tutorial['status'];
+			};
+						
+			return $set_tutorial;
+		}
+		 
 }
 
-/* End of file Home_student_m.php */
-/* Location: ./application/models/Home_student_m.php */
+/* End of file Tutorial_m.php */
+/* Location: ./application/models/Tutorial_m.php */
