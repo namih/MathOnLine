@@ -113,12 +113,24 @@
 		 * @param NA
 		 * @version 1.0
 		 */
-		 public function review_progress($id_tutorial)
+		 public function list_views($id_tutorial)
 		 {
 		 	if ($id_tutorial != NULL) {
-				 $views = $this->db->SELECT('*')->FROM('tutorial_views')->WHERE('aaa',$id_tutorial);
+		 		
+				 $views = $this->db	->SELECT('tutorial_views.id_tutorial_views, tutorial_views.id_tutorial, tutorial_views.view_number, tutorial_views.name_view, tutorial.tutorial, subtopic.subtopic, theme.theme, tutorial_views.status')
+				 					->FROM('tutorial_views')
+				 					->JOIN('tutorial', 'tutorial.id_tutorial = tutorial_views.id_tutorial')
+				 					->JOIN('subtopic', 'subtopic.id_subtopic = tutorial.id_subtopic')
+									->JOIN('theme', 'theme.id_theme = subtopic.id_theme')
+									->WHERE('tutorial.id_tutorial', $id_tutorial)
+				 					->GET();
+				if ($views->num_rows() > 0) {
+					return $views->result_array();
+				} else {
+					return FALSE;
+				}
 			 } else {
-				 
+				 return NULL;
 			 }
 			 			 
 		 }

@@ -38,6 +38,18 @@
 			
 		}
 		
+		public function vista()
+		{
+			$id_tutorial = 32;
+			
+			$views = $this->Tutorial_m->list_views($id_tutorial);
+			
+			echo "<pre>";
+			print_r($views);
+			echo "<pre>";
+			
+		}
+		
 		
 		public function update_score()
 		{
