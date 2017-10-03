@@ -40,11 +40,18 @@
 		 public function update_progress($tutorial)
 		 {
 		 	if ($tutorial != NULL) {
-				 
+		 		if ($this->review_progress($tutorial)) {
+					$id_blog_tutorials = $tutorial['id_blog_tutorials'];
+		 			$progress = $this->db->update('blog_tutorials', $tutorial, array('id_blog_tutorials' => $id_blog_tutorials));
+					if ($progress == TRUE) {
+						return TRUE;
+					}
+				 } else {
+					 return FALSE;
+				 }
 			 } else {
 				 return NULL;
 			 }
-			 
 		 }
 		 
 		 /**
@@ -58,7 +65,40 @@
 		 public function finish_tutorial($tutorial)
 		 {
 		 	if ($tutorial != NULL) {
-				 
+		 		$id_blog_tutorials = $tutorial['id_blog_tutorials'];
+		 		$finish = $this->db->update('blog_tutorials', $tutorial, array('id_blog_tutorials' => $id_blog_tutorials));
+				if ($finish) {
+					return 'TRUE';
+				} else {
+					return 'FALSE';
+				}
+			 } else {
+				 return 'NULL';
+			 }
+			 
+		 }
+		 
+		  /**
+		 * Descripcion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return 
+		 * @param NA
+		 * @version 1.0
+		 */
+		 public function review_progress($tutorial)
+		 {
+		 	if ($tutorial != NULL) {
+				 $sql = $this->db->SELECT('progress')->FROM('blog_tutorials')->WHERE('id_blog_tutorials', $tutorial['id_blog_tutorials'])->GET();
+				if ($sql->num_rows() === 1) {
+					$aux = $sql->result_array();
+					$progress = $aux[0]['progress'];
+					if ($tutorial['progress'] > $progress) {
+						return TRUE;
+					}
+				} else {
+					return NULL;
+				}
 			 } else {
 				 return NULL;
 			 }

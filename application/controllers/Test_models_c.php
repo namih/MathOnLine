@@ -13,43 +13,31 @@
 			$this->load->model("Perfil_usuario_m");
 			$this->load->model("Home_m");
 			$this->load->model("Evaluation_m");
+			$this->load->model("Tutorial_m");
 			$this->load->library('email');
 			$this->load->library('encrypt');
 			$this->load->library('etiquetas');
         }
 		
-		
-		public function answer()
+		public function progreso()
 		{
-			$data = array(
-					   array(
-					      'id_evaluation_test_log' => 1 ,
-					      'id_evaluation' => 2 ,
-					      'answer' => 'correct_answer'
-					   ),
-					   array(
-					      'id_evaluation_test_log' => 1 ,
-					      'id_evaluation' => 4 ,
-					      'answer' => 'wrong_answer_a'
-					   ),
-					   array(
-					      'id_evaluation_test_log' => 1 ,
-					      'id_evaluation' => 6 ,
-					      'answer' => 'wrong_answer_b'
-					   ),
-					   array(
-					      'id_evaluation_test_log' => 1 ,
-					      'id_evaluation' =>  8,
-					      'answer' => 'correct_answer'
-					   ),
-					);
-					
-			$respuestas = $this->Evaluation_m->guardar_respuestas($data);
+			date_default_timezone_set('America/Mexico_City');
+			$format = 'Y-m-d h:i:s';
+			
+			$tutorial = array();
+			$tutorial['id_blog_tutorials'] = 3;
+			$tutorial['progress'] = 30;
+			$tutorial['finish_date'] = date($format);
+			$tutorial['status'] = 2;
+			
+			$actualizar = $this->Tutorial_m->finish_tutorial($tutorial);
 			
 			echo "<pre>";
-			print_r($respuestas);
+			print_r($actualizar);
 			echo "<pre>";
+			
 		}
+		
 		
 		public function update_score()
 		{
