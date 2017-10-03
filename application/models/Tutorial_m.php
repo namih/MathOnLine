@@ -105,6 +105,24 @@
 			 
 		 }
 		 
+		  /**
+		 * Descripcion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return 
+		 * @param NA
+		 * @version 1.0
+		 */
+		 public function review_progress($id_tutorial)
+		 {
+		 	if ($id_tutorial != NULL) {
+				 $views = $this->db->SELECT('*')->FROM('tutorial_views')->WHERE('aaa',$id_tutorial);
+			 } else {
+				 
+			 }
+			 			 
+		 }
+		 
 		 private function _setTutorial($tutorial)
 		 {
 			$set_tutorial = array();
