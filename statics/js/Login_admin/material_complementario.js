@@ -250,23 +250,30 @@ function get_link() {
 }
 
 function liga_seleccionada() {
+	var row = [];
 	var num_liga = document.getElementById('numero_link').textContent;
 	
 	var seleccionados = [];
+	var seleccionado_vista = [];
 	
 	for (var i=1; i <= num_liga; i++) {
 	  var seleccion = $("#link_"+i).is(":checked");
 	  
 	  if (seleccion == true) {
 	  	var x = $('#link_'+i).attr("name");
-	  	
+	  	var y = $('#link_'+i).attr("id");
 	  	seleccionados.push(x);
+	  	row = y.split("_");	  	
+	  	seleccionado_vista.push(row[1]);
 	  	
 	  };
 	};
-	
+	console.log(seleccionado_vista);
+	console.log(seleccionados);
 	var botones = '<button onclick="borrar_link(\'';
 	botones += seleccionados.toString();
+	botones += ',';
+	botones += seleccionado_vista.toString();
 	botones +=	'\')" type="button" class="btn btn-warning" data-dismiss="modal">Eliminar</button>';
  	botones += '<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>';
 	document.getElementById('botones').innerHTML = botones;
@@ -300,8 +307,9 @@ function bibliografia_seleccionada() {
 
 function borrar_biblio (lista) {
   	var aux_string =String(lista);
-  	var lista_array = JSON.parse("[" + aux_string + "]");
+ 	var lista_array = JSON.parse("[" + aux_string + "]");
   	var pos = lista.split(",");
+  	console.log(lista_array);
   	var url_update = base_url + '/Complementary_material_c/eliminar_biblio';
   	
   	$.ajax({
@@ -325,11 +333,14 @@ function borrar_biblio (lista) {
   	
 }
 
-function borrar_link (lista) {
+function borrar_link (lista, lista_v) {
   var aux_string =String(lista);
   	var lista_array = JSON.parse("[" + aux_string + "]");
   	var pos = lista.split(",");
   	var url_update = base_url + '/Complementary_material_c/eliminar_link';
+  	var aux_lista = String(lista_v);
+  	var lista_v_array = JSON.parse("[" + aux_lista + "]");
+  	var pos_lista_v = lista_v.split(",");
   	
   	$.ajax({
 			type : 'post',
@@ -341,8 +352,8 @@ function borrar_link (lista) {
 			cache : false,
 			success : function(msj) {
 				//alert(msj);
-				for(var i=0; i<lista_array.length; i++){
-			  		$('#row_l_'+lista_array[i]).remove();
+				for(var i=0; i<lista_v_array.length; i++){
+			  		$('#row_l_'+lista_v_array[i]).remove();
 			  	}
 			},
 			error : function(msj) {
