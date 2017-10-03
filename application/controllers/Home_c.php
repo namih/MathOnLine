@@ -133,6 +133,11 @@ class Home_c extends CI_Controller
         return $this->encrypt->decode($pass);
     }
 
+    public function encode_pass(){
+        print_r($this->encrypt->encode('123456'));
+        return $this->encrypt->encode('123456');
+    }
+
     /**
      * Destruye la sesion
      *
@@ -157,67 +162,73 @@ class Home_c extends CI_Controller
      * @version 1.0
      */
     public function goHomeUser(){
-        $datos["user_log"][0] = $this->session->userdata('user');
-        $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
-        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+        $login = $this->session->userdata('logged_in');
+        if($login != null && $login == true){
+            $datos["user_log"][0] = $this->session->userdata('user');
+            $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+            $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
-        $all_themes = $this->Home_student_m->lista_tutoriales();
-        $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
-        $i = 0;
-        $aux_theme = "";
-        $aux_subtopic = "";
-        $aux_tutorial = "";
-        $themes_aux = array();
-        if(count($themes_student)<=0){
-            $themes_student = array();
-        }   
-        foreach ($all_themes as $theme){
-            if($theme["theme"] != $aux_theme){
-                $aux_theme = $theme["theme"];
-                $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
-                $themes_aux[] = array(
-                    "nombre" => $all_themes[$key_theme]["theme"],
-                    "id_tema" => $all_themes[$key_theme]["id_theme"]
-                );
-                $i = count($themes_aux) - 1;
-            }
-            if($theme["subtopic"] != $aux_subtopic){
-                $aux_subtopic = $theme["subtopic"];
-                $key_subtopic = array_search($aux_subtopic, array_column($all_themes, 'subtopic'));
-                $themes_aux[$i]["subtemas"][] = array(
-                    "nombre" => $all_themes[$key_subtopic]["subtopic"],
-                    "id_subtema" => $all_themes[$key_subtopic]["id_subtopic"]
-                );
-                $j = count($themes_aux[$i]["subtemas"]) - 1 ;
-            }
-            if($theme["tutorial"] != $aux_tutorial){
-                $aux_tutorial = $theme["tutorial"];
-                $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
+            $all_themes = $this->Home_student_m->lista_tutoriales();
+            $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
 
-                if(count($themes_student)>1){
-                    $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
-                }else{
-                    $ket_tutorial_studen = null;
+            $i = 0;
+            $aux_theme = "";
+            $aux_subtopic = "";
+            $aux_tutorial = "";
+            $themes_aux = array();
+            if(count($themes_student)<=0){
+                $themes_student = array();
+            }
+            foreach ($all_themes as $theme){
+                if($theme["theme"] != $aux_theme){
+                    $aux_theme = $theme["theme"];
+                    $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
+                    $themes_aux[] = array(
+                        "nombre" => $all_themes[$key_theme]["theme"],
+                        "id_tema" => $all_themes[$key_theme]["id_theme"]
+                    );
+                    $i = count($themes_aux) - 1;
                 }
-                $concluido = 0;
-
-                if(is_int($ket_tutorial_studen)){
-                    $concluido = 1;
+                if($theme["subtopic"] != $aux_subtopic){
+                    $aux_subtopic = $theme["subtopic"];
+                    $key_subtopic = array_search($aux_subtopic, array_column($all_themes, 'subtopic'));
+                    $themes_aux[$i]["subtemas"][] = array(
+                        "nombre" => $all_themes[$key_subtopic]["subtopic"],
+                        "id_subtema" => $all_themes[$key_subtopic]["id_subtopic"]
+                    );
+                    $j = count($themes_aux[$i]["subtemas"]) - 1 ;
                 }
-                $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
-                    "nombre" => $all_themes[$key_tutorial]["tutorial"],
-                    "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
-                    "concluido" => $concluido
-                );
+                if($theme["tutorial"] != $aux_tutorial){
+                    $aux_tutorial = $theme["tutorial"];
+                    $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
+
+                    if(count($themes_student)>1){
+                        $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
+                    }else{
+                        $ket_tutorial_studen = null;
+                    }
+                    $concluido = 0;
+
+                    if(is_int($ket_tutorial_studen)){
+                        $concluido = 1;
+                    }
+                    $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
+                        "nombre" => $all_themes[$key_tutorial]["tutorial"],
+                        "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
+                        "concluido" => $concluido
+                    );
+                }
             }
+
+            $datos["temas"] = $themes_aux;
+
+            $datos['opt_menu_active']='opt_tutoriales';
+            $this->load->view('header/head_v');
+            $this->load->view('header/Menu_user_v', $datos);
+            $this->load->view('login/Sesion_user_v', $datos);
+            $this->load->view('footer/footer_v');
+        }else{
+            redirect(base_url());
         }
-
-        $datos["temas"] = $themes_aux;
-
-        $datos['opt_menu_active']='opt_tutoriales';
-        $this->load->view('header/head_v');
-        $this->load->view('header/Menu_user_v', $datos);
-        $this->load->view('login/Sesion_user_v', $datos);
-        $this->load->view('footer/footer_v');
     }
 }
