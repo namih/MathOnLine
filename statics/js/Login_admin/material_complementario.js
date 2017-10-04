@@ -272,7 +272,8 @@ function liga_seleccionada() {
 	console.log(seleccionados);
 	var botones = '<button onclick="borrar_link(\'';
 	botones += seleccionados.toString();
-	botones += ',';
+	botones += "','"
+	;
 	botones += seleccionado_vista.toString();
 	botones +=	'\')" type="button" class="btn btn-warning" data-dismiss="modal">Eliminar</button>';
  	botones += '<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>';
@@ -281,36 +282,45 @@ function liga_seleccionada() {
 }
 
 function bibliografia_seleccionada() {
+	var row = [];
 	var num_biblio = document.getElementById('numero_biblio').textContent;
 	
 	var seleccionados = [];
+	var seleccionado_vista = [];
 	
 	for (var i=1; i <= num_biblio; i++) {
 	  var seleccion = $("#biblio_"+i).is(":checked");
 	  
 	  if (seleccion == true) {
 	  	var x = $('#biblio_'+i).attr("name");
-	  	
+	  	var y = $('#biblio_'+i).attr("id");
 	  	seleccionados.push(x);
-	  	
+	  	row = y.split("_");	  	
+	  	seleccionado_vista.push(row[1]);
 	  };
 	};
 	
-	
+	console.log(seleccionado_vista);
+	console.log(seleccionados);
 	var botones = '<button onclick="borrar_biblio(\'';
 	botones += seleccionados.toString();
+	botones += "','";
+	botones += seleccionado_vista.toString();
 	botones +=	'\')" type="button" class="btn btn-warning" data-dismiss="modal">Eliminar</button>';
  	botones += '<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>';
 	document.getElementById('botones').innerHTML = botones;
 	$('#Eliminar').modal();
 }
 
-function borrar_biblio (lista) {
+function borrar_biblio (lista, lista_s) {
+	alert(lista_s)
   	var aux_string =String(lista);
  	var lista_array = JSON.parse("[" + aux_string + "]");
   	var pos = lista.split(",");
-  	console.log(lista_array);
   	var url_update = base_url + '/Complementary_material_c/eliminar_biblio';
+  	var aux_lista = String(lista_s);
+  	var lista_s_array = JSON.parse("[" + aux_lista + "]");
+  	var pos_lista_v = lista_s.split(",");
   	
   	$.ajax({
 			type : 'post',
@@ -322,8 +332,8 @@ function borrar_biblio (lista) {
 			cache : false,
 			success : function(msj) {
 				//alert(msj);
-				for(var i=0; i<lista_array.length; i++){
-			  		$('#row_b_'+lista_array[i]).remove();
+				for(var i=0; i<lista_s_array.length; i++){
+			  		$('#row_b_'+lista_s_array[i]).remove();
 			  	}
 			},
 			error : function(msj) {
@@ -334,14 +344,15 @@ function borrar_biblio (lista) {
 }
 
 function borrar_link (lista, lista_v) {
-  var aux_string =String(lista);
+	alert(lista);
+  	var aux_string =String(lista);
   	var lista_array = JSON.parse("[" + aux_string + "]");
   	var pos = lista.split(",");
   	var url_update = base_url + '/Complementary_material_c/eliminar_link';
   	var aux_lista = String(lista_v);
-  	var lista_v_array = JSON.parse("[" + aux_lista + "]");
-  	var pos_lista_v = lista_v.split(",");
-  	
+    var lista_v_array = JSON.parse("[" + aux_lista + "]");
+    var pos_lista_v = lista_v.split(",");
+   	
   	$.ajax({
 			type : 'post',
 			url : url_update,
@@ -362,6 +373,3 @@ function borrar_link (lista, lista_v) {
 		}); 
 }
 
-function add_biblio () {
-  
-}
