@@ -11,6 +11,10 @@ var global_image_distractor_a;
 var global_image_distractor_b;
 var global_image_distractor_c;
 
+var img_builder;
+
+var i;
+
 window.onload = function () {
 	editor = com.wiris.jsEditor.JsEditor.newInstance({'language': 'es'});
 	editor.insertInto(document.getElementById('editorContainer'));
@@ -22,17 +26,43 @@ window.onload = function () {
 
 function preview_question () {
   var builder = document.getElementById("builder").value;
+  
+  
   if (document.getElementById("question").innerHTML == "") {
-  	
   	var archivos = document.getElementById("image_builder");
   	var image_builder = archivos.files;
+  	
+  	global_image_question = image_builder;
+  	
+  	if (image_builder.length > 0) {
+  		for (i=0; i < image_builder.length; i++) {
+  			
+  			var reader = new FileReader();
+  			
+  			reader.onload = function(){
+  				imagen = reader.result;
+  				console.log('El valor de i es: '+i);
+  				var img = '<img src="'+imagen+'" width="5%" class="img-responsive" align="baseline">';
+  				
+  				console.log('img_'+i+'');
+  				
+  				img_builder = builder.replace('img_'+i+'', img);
+  				
+  				document.getElementById("question").innerHTML = img_builder;
+  			};
+  			
+  			reader.readAsDataURL(global_image_question[i]);
+  		};
+  	};
+  	
   	
   	document.getElementById("question").innerHTML = builder;
   	global_question = document.getElementById("builder").value;
   	document.getElementById("builder").value = '';
   	MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
   	
-  	global_image_question = image_builder;
+  	
+  	
   	
   } else {
   	var question = document.getElementById("question").innerHTML;
