@@ -12,7 +12,7 @@
 
 
 
-        function load_tutorial_content($id_tutorial = null, $num_diapositiva = null){
+        function load_tutorial_content($id_tutorial = null, $num_diapositiva = null, $id_blog = null){
             //menu usuario
             $datos["user_log"][0] = $this->session->userdata('user');
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
