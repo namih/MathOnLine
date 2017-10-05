@@ -11,9 +11,9 @@ var global_image_distractor_a;
 var global_image_distractor_b;
 var global_image_distractor_c;
 
-var img_builder;
+var builder;
 
-var i;
+var img_src = [];
 
 window.onload = function () {
 	editor = com.wiris.jsEditor.JsEditor.newInstance({'language': 'es'});
@@ -25,41 +25,44 @@ window.onload = function () {
 };
 
 function preview_question () {
-  var builder = document.getElementById("builder").value;
-  
-  
-  if (document.getElementById("question").innerHTML == "") {
-  	var archivos = document.getElementById("image_builder");
-  	var image_builder = archivos.files;
+	builder = document.getElementById("builder").value;
+	
+	
+	if (document.getElementById("question").innerHTML == "") {
+		var archivos = document.getElementById("image_builder");
+		var image_builder = archivos.files;
+		
+		global_image_question = image_builder;
+				
+		if (image_builder.length > 0) {
+			for(x = 0; x < image_builder.length; x = x + 1) {
+				var file = image_builder[x];
+				(function(file){
+					var reader = new FileReader();
+					reader.readAsDataURL(file);
+					
+					reader.onload = function(e) {
+						img_src.push(e.target.result);
+						if (img_src.length == image_builder.length) {
+							for (var i=0; i < img_src.length; i++) {
+								builder = builder.replace('img_'+i+'', '<img src="'+img_src[i]+'" class="img-responsive" width="5%">');
+								console.log(img_src[i]);
+							};
+							console.log(builder);
+							document.getElementById("question").innerHTML = builder;
+						};
+					};
+				})(file);
+			}
+			
+			
+    }
+  	  	
   	
-  	global_image_question = image_builder;
-  	
-  	if (image_builder.length > 0) {
-  		for (i=0; i < image_builder.length; i++) {
-  			
-  			var reader = new FileReader();
-  			
-  			reader.onload = function(){
-  				imagen = reader.result;
-  				console.log('El valor de i es: '+i);
-  				var img = '<img src="'+imagen+'" width="5%" class="img-responsive" align="baseline">';
-  				
-  				console.log('img_'+i+'');
-  				
-  				img_builder = builder.replace('img_'+i+'', img);
-  				
-  				document.getElementById("question").innerHTML = img_builder;
-  			};
-  			
-  			reader.readAsDataURL(global_image_question[i]);
-  		};
-  	};
-  	
-  	
-  	document.getElementById("question").innerHTML = builder;
-  	global_question = document.getElementById("builder").value;
-  	document.getElementById("builder").value = '';
-  	MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
+  	// document.getElementById("question").innerHTML = builder;
+  	// global_question = document.getElementById("builder").value;
+  	// document.getElementById("builder").value = '';
+  	// MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
   	
   	
   	
@@ -93,4 +96,9 @@ function preview_distractor_c () {
   var builder = document.getElementById("builder").value; 
   document.getElementById("distractor_c").innerHTML = builder;
   MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_c']);
+}
+
+function find_replace (builder, datos) {
+	console.log(datos.length);
+	console.log(datos);
 }

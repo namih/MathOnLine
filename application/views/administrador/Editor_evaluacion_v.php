@@ -15,6 +15,7 @@
 
 <script src="<?php echo base_url(); ?>statics/js/editor_evaluacion.js"></script>
 
+
 <div class="container-fluid">
 	<div class="panel panel-success tema_footer col-lg-12 col-md-12 col-xs-12"  align="center">
 		<div class="panel-heading"><b>Editor de ecuaciones</b></div>
