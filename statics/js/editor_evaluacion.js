@@ -45,7 +45,7 @@ function preview_question () {
 						img_src.push(e.target.result);
 						if (img_src.length == image_builder.length) {
 							for (var i=0; i < img_src.length; i++) {
-								builder = builder.replace('img_'+i+'', '<img src="'+img_src[i]+'" class="img-responsive" width="5%">');
+								builder = builder.replace('img_'+i+'', '<img src="'+img_src[i]+'" width="5%">');
 								console.log(img_src[i]);
 							};
 							console.log(builder);
