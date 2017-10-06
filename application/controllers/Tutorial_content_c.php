@@ -38,6 +38,7 @@
                 foreach ($tutorials as $key => $value) {
                   $datos['tutorial_content']['theme'] =$value['theme'];
                   $datos['tutorial_content']['subtopic'] = $value['subtopic'];
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['num_diapositiva'] = $value['view_number']; 
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['id_tutorial'] = $value['id_tutorial']; 
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];               
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];               
@@ -46,7 +47,9 @@
                 $datos['tutorial_content']=false;
             }
 
-            echo end($datos['tutorial_content']['diapositivas']);
+            $last_diapo = end($datos['tutorial_content']['diapositivas']['view_number']);
+            $last_diapo_number=$last_diapo['num_diapositiva'];
+
 
             if(!empty($datos['tutorial_content']['diapositivas'])){
                 $actual=$num_diapositiva;
@@ -62,7 +65,7 @@
                 }
                 $datos['paginador']=array(
                 'anterior'=>$anterior,
-                'actual'=>$actual, //cargar view con load->view
+                'actual'=>$actual, 
                 'siguiente'=>$siguiente
                 );
 
@@ -70,6 +73,10 @@
 
             //hacer el load de la vista correspondiente
             $datos['diapositiva_actual']= $datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'];
+            if($last_diapo_number==$num_diapositiva){
+                //cargar dos vistas en lugar de una. Se agrega la vista de finalizar
+                $datos['diapositiva_actual'].='';//diapositiva de finalizar
+            }
             $datos['id_tutorial'] = $id_tutorial;
 
             $this->load->view('header/head_v');
