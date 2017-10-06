@@ -1,5 +1,3 @@
-<?php echo '<pre>';
-print($tutorial_content); ?>
     <div id="tutorial_content">
       <div class="col-md-12">
           <div class="col-md-1"></div>

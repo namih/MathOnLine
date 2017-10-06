@@ -32,15 +32,21 @@
             }           
 
             // consulta en base el contenido tutorial
-           /* $datos['tutorial_content'] = array(
-            'nombre_tutorial'=>'Enteros',
-            'diapositivas'=>array(
-                1=>array( 'id_tutorial'=>1, 'titulo'=>'Factorización', 'vista'=>'numeros/enteros/fact_d_1' ),
-                2=>array( 'id_tutorial'=>2, 'titulo'=>'Números primos', 'vista'=>'numeros/enteros/num_d_2' ),
-                3=>array( 'id_tutorial'=>3, 'titulo'=>'Mínimo común múltiplo y máximo común divisor', 'vista'=>'numeros/enteros/min_max_d_3' ),
-                ),
-            );*/
-            $datos['tutorial_content'] = $this->Tutorial_m->list_views($id_tutorial);
+
+            $tutorials=$this->Tutorial_m->list_views($id_tutorial);
+            if(isset($tutorials) && !empty($tutorials)){
+                foreach ($tutorials as $key => $value) {
+                  $datos['tutorial_content']['theme'] =$value['theme'];
+                  $datos['tutorial_content']['subtopic'] = $value['subtopic'];
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['id_tutorial'] = $value['id_tutorial']; 
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];               
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];               
+                }
+            }else{
+                $datos['tutorial_content']=false;
+            }
+
+            echo end($datos['tutorial_content']['diapositivas']);
 
             if(!empty($datos['tutorial_content']['diapositivas'])){
                 $actual=$num_diapositiva;
@@ -56,7 +62,7 @@
                 }
                 $datos['paginador']=array(
                 'anterior'=>$anterior,
-                'actual'=>$actual,
+                'actual'=>$actual, //cargar view con load->view
                 'siguiente'=>$siguiente
                 );
 
