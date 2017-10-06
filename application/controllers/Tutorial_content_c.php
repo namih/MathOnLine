@@ -6,29 +6,41 @@
         public function __construct()
         {
             parent::__construct();
-            $this->load->model('Perfil_usuario_m');//cambiar modelo
+            $this->load->model(array('Perfil_usuario_m','Tutorial_m'));//cambiar modelo
             $this->load->library('encrypt');
         }
 
 
 
-        function load_tutorial_content($id_tutorial = null, $num_diapositiva = null, $id_blog = null){
+        function load_tutorial_content($id_tutorial = null, $num_diapositiva = null, $id_blog = null,$btn_navegacion){
             //menu usuario
             $datos["user_log"][0] = $this->session->userdata('user');
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
             $datos['opt_menu_active']='opt_tutoriales';
 
+            //iniciar tutorial
+            if($id_blog==0){
+                $datos['id_blog_actual']= $this->start_tutorial($id_tutorial);
+            }else{
+                $datos['id_blog_actual']=$id_blog;
+            } 
+
+            //guardar avance
+            if($btn_navegacion==2){
+                $save= $this->tutorial_progress($datos['id_blog_actual'], $num_diapositiva);
+            }           
 
             // consulta en base el contenido tutorial
-            $datos['tutorial_content'] = array(
+           /* $datos['tutorial_content'] = array(
             'nombre_tutorial'=>'Enteros',
             'diapositivas'=>array(
                 1=>array( 'id_tutorial'=>1, 'titulo'=>'Factorización', 'vista'=>'numeros/enteros/fact_d_1' ),
                 2=>array( 'id_tutorial'=>2, 'titulo'=>'Números primos', 'vista'=>'numeros/enteros/num_d_2' ),
                 3=>array( 'id_tutorial'=>3, 'titulo'=>'Mínimo común múltiplo y máximo común divisor', 'vista'=>'numeros/enteros/min_max_d_3' ),
                 ),
-            );
+            );*/
+            $datos['tutorial_content'] = $this->Tutorial_m->list_views($id_tutorial);
 
             if(!empty($datos['tutorial_content']['diapositivas'])){
                 $actual=$num_diapositiva;
@@ -101,6 +113,58 @@
             $this->load->view('footer/footer_v');
         }
 
+        /**
+        * Descripcion
+        *
+        * @author Julio Cesar Padilla Dorantes
+        * @return
+        * @param NA
+        * @version 1.0
+        */
+        function start_tutorial($id_tutorial){
+            $tutorial['id_tutorial'] = $id_tutorial;
+            $user_log = $this->session->userdata('user');
+            $tutorial['id_user']=$user_log['id_user'];
+
+            if ($tutorial != NULL) {
+                date_default_timezone_set('America/Mexico_City');
+                $format = 'Y-m-d h:i:s';
+                
+                $tutorial['start_date'] = date($format);
+                                
+                $create = $this->Tutorial_m->create_tutorial($tutorial);
+                if ($create != null) {
+                    return $create;
+                } else {
+                    return FALSE;
+                }
+            } else {
+                return NULL;
+            }
+        }
+
+        /**
+        * Descripcion
+        *
+        * @author Julio Cesar Padilla Dorantes
+        * @return
+        * @param NA
+        * @version 1.0
+        */
+        function tutorial_progress($id_blog, $progress){
+            $tutorial['id_blog_tutorials'] = $id_blog;
+            $tutorial['progress'] = $progress;
+            if ($tutorial != NULL) {
+                $create = $this->Tutorial_m->update_progress($tutorial);
+                if ($create != null) {
+                    return TRUE;
+                } else {
+                    return FALSE;
+                }
+            } else {
+                return NULL;
+            }
+        }
 
 }
 ?>

@@ -1,3 +1,5 @@
+<?php echo '<pre>';
+print($tutorial_content); ?>
     <div id="tutorial_content">
       <div class="col-md-12">
           <div class="col-md-1"></div>
@@ -16,10 +18,10 @@
                       <div class="panel-footer" style="margin: 0px;">
                           <ul class="pagination">
                             <?php if($paginador['anterior']!=''){ ?>
-                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['anterior']; ?>/1" >&laquo; Anterior</a></li>
+                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['anterior']; ?>/<?php echo $id_blog_actual; ?>/1" >&laquo; Anterior</a></li>
                            <?php } ?>
                             <?php if($paginador['siguiente']!=''){ ?>
-                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['siguiente']; ?>/2" >Siguiente &raquo;</a></li>
+                              <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['siguiente']; ?>/<?php echo $id_blog_actual; ?>/2" >Siguiente &raquo;</a></li>
                             <?php } ?>
                           </ul>
                       </div>
