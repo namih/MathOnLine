@@ -1,3 +1,10 @@
+/**
+* La función readURL lee la ruta de donde se encuantra la imagen. 
+*@author María del Carmen Chávez Conde
+* @param input
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function readURL (input) {
 	if(input.files && input.files[0]){
 		var reader = new FileReader();
@@ -7,7 +14,13 @@ function readURL (input) {
 		reader.readAsDataURL(input.files[0]);
 	}
 }
-
+/**
+* La función mostrar_imagen muestra la vista previa de la imagen que se seleccionó para un libro
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function mostrar_imagen () {
 	var img_tema = document.getElementById('img_libro');
 	img_tema.addEventListener("change", function() {
@@ -33,7 +46,13 @@ function mostrar_imagen () {
 		img.src = objectURL;
 	});
 }
-
+/**
+* La función get_bibliografia manda al controlador Complementery_material_c la bibliografía que fue editada o una nueva
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function get_bibliografia () {
 	
 	var id_usuario = document.getElementById('id_usuario').textContent;
@@ -177,7 +196,13 @@ function get_bibliografia () {
 
 }
 
-
+/**
+* La función get_link manda al controlador Complementery_material_c el link que fue editado o uno nuevo
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function get_link() {
 
 	var id_usuario = document.getElementById('id_usuario').textContent;
@@ -248,7 +273,14 @@ function get_link() {
 	
 
 }
-
+/**
+* La función liga_seleccionada guarda la información necesaria para determinar la liga a la que se hace referencia o para poder enviarla
+* a un modal y poder eliminarla cuando se seleccione el botón eliminar.
+* *@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function liga_seleccionada() {
 	var row = [];
 	var num_liga = document.getElementById('numero_link').textContent;
@@ -280,7 +312,14 @@ function liga_seleccionada() {
 	document.getElementById('botones').innerHTML = botones;
 	$('#Eliminar').modal();
 }
-
+/**
+* La función bibliografia_seleccionada guarda la información necesaria para determinar la bibliografia a la que se hace referencia para poder enviarla
+* a un modal y poder eliminarla cuando se seleccione el botón eliminar.
+* *@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function bibliografia_seleccionada() {
 	var row = [];
 	var num_biblio = document.getElementById('numero_biblio').textContent;
@@ -311,9 +350,14 @@ function bibliografia_seleccionada() {
 	document.getElementById('botones').innerHTML = botones;
 	$('#Eliminar').modal();
 }
-
+/**
+* La función borrar_biblioda la funcionalidad al botón eliminar perteneciente al modal con los datos de las biliografias que se desean eliminar .
+* *@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function borrar_biblio (lista, lista_s) {
-	alert(lista_s)
   	var aux_string =String(lista);
  	var lista_array = JSON.parse("[" + aux_string + "]");
   	var pos = lista.split(",");
@@ -340,9 +384,54 @@ function borrar_biblio (lista, lista_s) {
 				alert(msj);
 			}
 		}); 
-  	
+/**
+* La función es_numero verifica que el texto ingresado sea un numero entero con digitos del 0-9
+*@author María del Carmen Chávez Conde
+* @param numero
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
+ function es_numero (numero) {
+  if (!/^([0-9])*$/.test(numero)) {
+  	return false;
+  };
+}  	
+  /**
+* La función validar_anio_biblio valida que los digitos formen un numero con longitud
+* cuatro que se vincula a una bibliografía (libro)
+* *@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/	
+  	function validar_anio_biblio () {
+	document.getElementById("error_anio").style.display= 'none';
+	var anio_error = document.getElementById('error_vacio_anio');
+	var anio = document.getElementById('anio');
+	anio_error.classList.remove("has-warning");
+	var anio_long = document.getElementById('anio').value;
+	if (anio_long.length != 4) {
+		anio.value = "";
+		document.getElementById('anio').placeholder = "Escribe tu año de nacimiento, Ej: 1942";
+		document.getElementById('anio').focus();
+	} else {
+		var valor = es_numero(anio.value);
+		if (valor == false) {
+			anio.value = "";
+			document.getElementById('anio').placeholder = "Escribe tu año de nacimiento, Ej: 1942";
+			document.getElementById('anio').focus();
+		};
+	};
+	  
 }
-
+}
+/**
+* La función borrar_link da la funcionalidad al botón eliminar perteneciente al modal con los datos de los links que se desean eliminar .
+* *@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function borrar_link (lista, lista_v) {
 	alert(lista);
   	var aux_string =String(lista);

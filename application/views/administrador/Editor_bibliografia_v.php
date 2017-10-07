@@ -33,9 +33,10 @@
 				<label>Editorial</label>
 				<input type="text" class="form-control" id="editorial" value="<?php echo $editorial ?>">
 			</div>
-			<div class="form-group has-feedback col-md-6  col-xs-12">
+			<div class="form-group has-feedback col-md-6  col-xs-12" id="error_vacio_anio">
 				<label>Año</label>
-				<input type="text" class="form-control" id="anio" value="<?php echo $year ?>">
+				<input onblur="validar_anio()" type="text" class="form-control" id="anio" value="<?php echo $year ?>" required="">
+				<span id="error_anio" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 			</div>
 			<div class="form-group has-feedback col-md-6  col-xs-12">
 				<label>País</label>

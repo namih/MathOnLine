@@ -120,7 +120,13 @@ function comparar_contrasenia () {
 		return false;
 	}
 }
-
+/**
+* La función longitud_contrasenia valida que la contraseña contenga al menos 8 caracteres
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function longitud_contrasenia () {
 	var longi = document.getElementById('pwd').value;
 	var longi_2 = document.getElementById('rpwd');
@@ -364,12 +370,26 @@ function validar_correo () {
   		
   	}
 }
+/**
+* La función es_numero verifica que el texto ingresado sea un numero entero con digitos del 0-9
+*@author María del Carmen Chávez Conde
+* @param numero
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
  function es_numero (numero) {
   if (!/^([0-9])*$/.test(numero)) {
   	return false;
   };
 }
-  
+/**
+* La función validar_anio verifica que el texto ingresado tenga una longitud de 4, que son validados en la función es_numero. 
+* Tambien se verifica que estos digitos pertenexcan a un numero que representa el año que no puede estar vacío 
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/  
 function validar_anio () {
 	document.getElementById("error_anio").style.display= 'none';
 	var anio_error = document.getElementById('error_vacio_anio');
@@ -390,7 +410,13 @@ function validar_anio () {
 	};
 	  
 }  
-
+/**
+* La función validar_matricula verifica que la cadena ingresada sea de números con la función es_numero, la matricula no puede estar vacía
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function validar_matricula () {
 	var matricula = document.getElementById('mat');
 	var valor = es_numero(matricula.value);
@@ -402,7 +428,13 @@ function validar_matricula () {
 	
 	  
 }  
-
+/**
+* La función validar_sex valida el sexo que se da a elegir mediante un desplegable
+*@author María del Carmen Chávez Conde
+* @param NA
+* @return. Formato: [* @return tipo comentario]
+* @version Versión actual del elemento
+*/
 function validar_sex () {
   
 	var sex_error = document.getElementById('sex');
