@@ -35,7 +35,7 @@ class Registro_consejo_c extends CI_Controller {
 
 
 	        
-			
+			$datos['opt_menu_active']='opt_admin_alta';
 			$datos['unidades'] = $this->lista_uam();
 		    $this->load->view('header/head_v');
 		    $this->load->view('header/Menu_user_v', $datos);

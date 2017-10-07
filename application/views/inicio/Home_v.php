@@ -107,8 +107,29 @@
              <div class="panel panel-success tema_footer"  align="center">
                 <div class="panel-heading"><b>Pregunta de la semana</b></div>
                 <div class="panel-body">
-                  ¿Para ser genio hay que estar loco?<br><br>
-                  Pues sí. La evidencia científica vincula a los maniaco-depresivos y bipolares con la creatividad y un alto coeficiente intelectual. Un estudio realizado por expertos del Instituto de Psiquiatría de King`s College de Londres y el Instituto Karolinska en Estocolmo concluye que los estudiantes con... <a href="#">Ver mas</a>
+                    <div class="col-lg-12"><br>
+                      <!--<form method="POST" onsubmit="return validacion();" action="#">-->
+                      <form action="#">
+                        <?php if(isset($question_week) && $question_week!=false){ ?>
+                          <div class="form-group pregunta_home" id="preg_<?php echo $question_week['id_evaluation']; ?>">
+                            <label><?php echo $question_week['question']; ?></label>
+                          </div>
+                          <div class="checkbox" id="respuestas" align="left">
+                            <ul style="list-style: none;">
+                              <?php foreach ($question_week['answers'] as $llave => $valor) { ?>
+                                  <input type="radio" id="<?php echo $llave; ?>" name="answers_preg_home" value="<?php echo $valor['is_correct']; ?>" onclick="limpiarRespuesta();" ><label><li style="font-weight: bold;"><span style="font-weight: normal;"><?php echo $valor['description']; ?></span></li></label><br>
+                              <?php } ?>
+                            </ul>
+                            <br>
+                          </div>
+                          <div id="error_preg_home"></div>
+                          <?php } ?>
+                        <div id="btn_respuesta_p" align="right" style="display: none;">
+                          <!--<button type="submit" class="btn btn-success">Evaluar</button>-->
+                          <a class="btn btn-success" onclick="validaRespuestaPregunta();" >Responder</a>
+                        </div>
+                      </form>
+                    </div>                  
                 </div>
               </div>              
             </div>
