@@ -33,6 +33,7 @@ class Welcome extends CI_Controller {
         }else{
             $themes = $this->get_theme_month();
             $question_week = $this->Home_m->pregunta_semanal();
+            $question_week = $this->custom_question($question_week[0]);
             $datos['themes'] = $themes;
             $datos['question_week'] = $question_week;
 
@@ -41,6 +42,29 @@ class Welcome extends CI_Controller {
             $this->load->view('footer/footer_v');
         }
 	}
+
+    private function custom_question($question){
+        $question_custom = [];
+        $i = 0;
+        foreach ($question as $key => $value){
+            if($key == "correct_answer"){
+                $question_custom["answers"][$i]["description"] = $value;
+                $question_custom["answers"][$i]["key"] = $key;
+                $question_custom["answers"][$i]["is_correct"] = 1;
+                shuffle($question_custom["answers"]);
+                $i++;
+            }elseif ($key == "wrong_answer_a" || $key == "wrong_answer_b" || $key == "wrong_answer_c"){
+                $question_custom["answers"][$i]["description"] = $value;
+                $question_custom["answers"][$i]["key"] = $key;
+                $question_custom["answers"][$i]["is_correct"] = 0;
+                shuffle($question_custom["answers"]);
+                $i++;
+            }else{
+                $question_custom[$key] = $value;
+            }
+        }
+        return $question_custom;
+    }
 
 
     /**
