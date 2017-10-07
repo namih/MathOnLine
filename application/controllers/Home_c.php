@@ -181,18 +181,21 @@ class Home_c extends CI_Controller
             }
 
             foreach ($themes_student as $student){
-                $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));
-                 $all_themes[$key_student]['status'] = 0;
-                    $all_themes[$key_student]['progress'] = 0;
-                    $all_themes[$key_student]['id_blog_tutorials'] = 0;
+                $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));        
                 if(is_int($key_student)){
                     $all_themes[$key_student]['status'] = $student['status'];
                     $all_themes[$key_student]['progress'] = $student['progress'];
                     $all_themes[$key_student]['id_blog_tutorials'] = $student['id_blog_tutorials'];
                 }
             }
+            $i=0;
+            foreach ($all_themes as $theme){                
 
-            foreach ($all_themes as $theme){
+                if(!isset($theme['progress'])){
+                    $all_themes[$i]['status'] = 0;
+                    $all_themes[$i]['progress'] = 0;
+                    $all_themes[$i]['id_blog_tutorials'] = 0;
+                }
                 $aux_student_theme = null;
                 if($theme["theme"] != $aux_theme){
                     $aux_theme = $theme["theme"];
@@ -238,7 +241,11 @@ class Home_c extends CI_Controller
                         //"concluido" => $concluido,
                     );
                 }
+                $i++;
             }
+            echo "<pre>";
+            print_r($themes_aux);
+            echo "</pre>";
             $datos["temas"] = $themes_aux;
 
             $datos['opt_menu_active']='opt_tutoriales';
