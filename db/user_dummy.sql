@@ -112,23 +112,6 @@ INSERT INTO `mathonline`.`blog_tutorials`
 `finish_date`,
 `status`)
 VALUES
-(1,
-2,
-1,
-'2017-10-01 00:00:00',
-15,
-'2017-10-01 00:00:00',
-2);
-
-INSERT INTO `mathonline`.`blog_tutorials`
-(`id_blog_tutorials`,
-`id_user`,
-`id_tutorial`,
-`start_date`,
-`progress`,
-`finish_date`,
-`status`)
-VALUES
 (2,
 2,
 3,
