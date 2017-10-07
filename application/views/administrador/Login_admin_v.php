@@ -26,7 +26,7 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<h2>Calendario Escolar</h2>
-				<img class="img-responsive" src="statics/img/calendario_uam/calendario_uam.png"/>
+				<img class="img-responsive" src="statics/files/calendario_uam.png"/>
 				<div class="input-file-wrapper">
         			<form enctype="multipart/form-data" class="formulario" >
         				<input type="file" multiple="multiple" maxlength="3" id="archivos" />

@@ -64,4 +64,5 @@ $route['administrador'] = "Home_admin_c";
 $route['administrador_ccc'] = "Registro_consejo_c";
 $route['administrador_material'] = "Complementary_material_c/cargar_administrador";
 $route['inicio_tutorial/(:num)/(:num)/(:num)/(:num)'] = "Tutorial_content_c/load_tutorial_content/$1/$2/$3/$4";
+$route['fin_tutorial/(:num)'] = "Tutorial_content_c/end_tutorial/$1";
 

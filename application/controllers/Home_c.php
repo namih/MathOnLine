@@ -161,7 +161,7 @@ class Home_c extends CI_Controller
      * @param Recibe un arreglo que contiene la informacion del usuario
      * @version 1.0
      */
-    public function goHomeUser(){
+    public function goHomeUser(){    
         $login = $this->session->userdata('logged_in');
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
@@ -169,6 +169,12 @@ class Home_c extends CI_Controller
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
             $all_themes = $this->Home_student_m->lista_tutoriales();
+            for ($i=0; $i < count($all_themes); $i++) { 
+                $all_themes[$i]['status'] = 0;
+                $all_themes[$i]['progress'] = 1;
+                $all_themes[$i]['id_blog_tutorials'] = 0;
+            }
+            
             $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
 
             $i = 0;
@@ -179,7 +185,26 @@ class Home_c extends CI_Controller
             if(count($themes_student)<=0){
                 $themes_student = array();
             }
-            foreach ($all_themes as $theme){
+
+
+            foreach ($themes_student as $student){
+                $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));        
+                if(is_int($key_student)){
+
+                    $all_themes[$key_student]['status'] = $student['status'];
+                    $all_themes[$key_student]['progress'] = $student['progress'];
+                    $all_themes[$key_student]['id_blog_tutorials'] = $student['id_blog_tutorials'];
+                }
+            }
+
+            foreach ($all_themes as $theme){                
+                if(!isset($theme['progress'])){
+
+                    $theme['status'] = 0;
+                    $theme['progress'] = 0;
+                    $theme['id_blog_tutorials'] = 0;
+                }
+                $aux_student_theme = null;
                 if($theme["theme"] != $aux_theme){
                     $aux_theme = $theme["theme"];
                     $key_theme = array_search($aux_theme, array_column($all_themes, 'theme'));
@@ -201,21 +226,28 @@ class Home_c extends CI_Controller
                 if($theme["tutorial"] != $aux_tutorial){
                     $aux_tutorial = $theme["tutorial"];
                     $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
-
+                
                     if(count($themes_student)>1){
                         $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
+                        
                     }else{
                         $ket_tutorial_studen = null;
                     }
-                    $concluido = 0;
+
+                    /*$concluido = 0;
 
                     if(is_int($ket_tutorial_studen)){
                         $concluido = 1;
-                    }
+                    }*/
+
+                    
                     $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
                         "nombre" => $all_themes[$key_tutorial]["tutorial"],
                         "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
-                        "concluido" => $concluido
+                        "status" => $all_themes[$key_tutorial]["status"],
+                        "progress" => $all_themes[$key_tutorial]["progress"],
+                        "id_blog_tutorials" => $all_themes[$key_tutorial]["id_blog_tutorials"],
+                        //"concluido" => $concluido,
                     );
                 }
             }
@@ -232,3 +264,4 @@ class Home_c extends CI_Controller
         }
     }
 }
+
