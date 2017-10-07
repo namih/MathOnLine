@@ -266,3 +266,23 @@ $('form').on('submit',function(e){
             }
     });
 });
+
+
+/* Evaluar respuesta de la pregunta de la semana */
+function validaRespuestaPregunta() {
+    var respuesta= $('input:radio[name=answers_preg_home]:checked').val();
+    var msjSuccess = '';
+    if(respuesta==1){
+    	msjSuccess = '<div class="alert alert-success fade in alert-dismissable" style="margin-top:18px;"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><i class="fa fa-warning"></i>&nbsp;&nbsp;&nbsp;¡La respuesta es correcta!</div>';
+    }else{
+    	msjSuccess = '<div class="alert alert-warning fade in alert-dismissable" style="margin-top:18px;"><a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a><i class="fa fa-warning"></i>&nbsp;&nbsp;&nbsp;¡La respuesta es incorrecta!</div>';
+    }
+    msjSuccess+='<script>$(".alert-dismissable").alert();window.setTimeout(function() { $(".alert-dismissable").fadeOut(); }, 5000);<\/script>';
+    $("#error_preg_home").html(msjSuccess);
+    $("#btn_respuesta_p").hide();
+  }
+
+function limpiarRespuesta(){
+    $("#error_preg_home").empty();
+    $("#btn_respuesta_p").show();	
+}
