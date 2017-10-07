@@ -52,7 +52,17 @@ Base : <input type="text" id="columncount" />
 Altura : <input type="text" id="rowcount" />
 <input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Create Table" />
 <br/><br/><br />
-<div id="box" align="center">
+<div   class="col-md-6  col-xs-12" id="box" align="center">
 </div>	
+<div   class="col-md-6  col-xs-12" id="tab" align="center">
+	<table border="2" id="tab">
+			<tr>
+				<td background="red" width="20" height="20">
+				</td>
+				<td>
+				</td>
+			</tr>	
+		</table>	
+</div>
 	
 </div>
