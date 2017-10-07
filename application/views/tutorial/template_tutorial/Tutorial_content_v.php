@@ -7,7 +7,7 @@
                 <h1><?php echo $tutorial_content['nombre_tutorial']; ?></h1>
               </center>
                 <div class="col-md-12">
-                  <div class="panel panel-success tema_footer"  align="center">
+                  <div class="panel panel-success"  align="center">
                     <div class="panel-heading"><b><?php echo $tutorial_content['diapositivas'][$paginador['actual']]['titulo']; ?></b></div>
                     <div class="panel-body">
                       <?php echo $diapositiva_actual; ?>

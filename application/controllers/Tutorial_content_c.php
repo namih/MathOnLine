@@ -43,7 +43,7 @@
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];               
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];               
                 }
-                $last_diapo = end($datos['tutorial_content']['diapositivas']['view_number']);
+                $last_diapo = end($datos['tutorial_content']['diapositivas']);
                 $last_diapo_number=$last_diapo['num_diapositiva'];
             }else{
                 $datos['tutorial_content']=false;
@@ -72,8 +72,8 @@
             }
 
             //hacer el load de la vista correspondiente
-            //$datos['diapositiva_actual']= $this->load->view('tutorial/'.$datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'],$datos,TRUE);
-            $datos['diapositiva_actual']= $this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);
+            $datos['diapositiva_actual']= $this->load->view('tutorial/'.$datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'],$datos,TRUE);
+            //$datos['diapositiva_actual']= $this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);
             if($last_diapo_number==$num_diapositiva){
                 //cargar dos vistas en lugar de una. Se agrega la vista de finalizar
                 $datos['diapositiva_actual'].=$this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);//diapositiva de finalizar
