@@ -182,14 +182,13 @@ class Home_c extends CI_Controller
 
             foreach ($themes_student as $student){
                 $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));
+                 $all_themes[$key_student]['status'] = 0;
+                    $all_themes[$key_student]['progress'] = 0;
+                    $all_themes[$key_student]['id_blog_tutorials'] = 0;
                 if(is_int($key_student)){
                     $all_themes[$key_student]['status'] = $student['status'];
                     $all_themes[$key_student]['progress'] = $student['progress'];
                     $all_themes[$key_student]['id_blog_tutorials'] = $student['id_blog_tutorials'];
-                }else{
-                    $all_themes[$key_student]['status'] = 0;
-                    $all_themes[$key_student]['progress'] = 0;
-                    $all_themes[$key_student]['id_blog_tutorials'] = 0;
                 }
             }
 
