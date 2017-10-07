@@ -169,6 +169,9 @@ class Home_c extends CI_Controller
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
             $all_themes = $this->Home_student_m->lista_tutoriales();
+            foreach ($all_themes as $theme){
+
+            }
             $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
 
             $i = 0;
@@ -188,10 +191,10 @@ class Home_c extends CI_Controller
                     $all_themes[$key_student]['id_blog_tutorials'] = $student['id_blog_tutorials'];
                 }
             }
-            $i=0;
+            $i = 0;
             foreach ($all_themes as $theme){                
-
                 if(!isset($theme['progress'])){
+
                     $all_themes[$i]['status'] = 0;
                     $all_themes[$i]['progress'] = 0;
                     $all_themes[$i]['id_blog_tutorials'] = 0;
@@ -243,9 +246,7 @@ class Home_c extends CI_Controller
                 }
                 $i++;
             }
-            echo "<pre>";
-            print_r($themes_aux);
-            echo "</pre>";
+            
             $datos["temas"] = $themes_aux;
 
             $datos['opt_menu_active']='opt_tutoriales';
