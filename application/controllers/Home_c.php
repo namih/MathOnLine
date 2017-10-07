@@ -169,6 +169,11 @@ class Home_c extends CI_Controller
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
             $all_themes = $this->Home_student_m->lista_tutoriales();
+            for ($i=0; $i < count($all_themes); $i++) { 
+                $all_themes[$i]['status'] = 0;
+                $all_themes[$i]['progress'] = 0;
+                $all_themes[$i]['id_blog_tutorials'] = 0;
+            }
             
             $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
 
@@ -181,9 +186,11 @@ class Home_c extends CI_Controller
                 $themes_student = array();
             }
 
+
             foreach ($themes_student as $student){
                 $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));        
                 if(is_int($key_student)){
+
                     $all_themes[$key_student]['status'] = $student['status'];
                     $all_themes[$key_student]['progress'] = $student['progress'];
                     $all_themes[$key_student]['id_blog_tutorials'] = $student['id_blog_tutorials'];
@@ -233,6 +240,7 @@ class Home_c extends CI_Controller
                         $concluido = 1;
                     }*/
 
+                    
                     $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
                         "nombre" => $all_themes[$key_tutorial]["tutorial"],
                         "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
@@ -243,9 +251,7 @@ class Home_c extends CI_Controller
                     );
                 }
             }
-            echo "<pre>";
-            print_r($themes_aux);
-            echo "</pre>";
+
             $datos["temas"] = $themes_aux;
 
             $datos['opt_menu_active']='opt_tutoriales';
