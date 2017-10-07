@@ -33,13 +33,20 @@
                                 <div class="collapse list-group-submenu" id="subtema_<?php echo $subtema['id_subtema']; ?>">
                                   <?php if(isset($subtema['tutoriales']) && $subtema['tutoriales']!=false){
                                     foreach ($subtema['tutoriales'] as $id_tutorial => $dts_tutorial) { ?>
-                                      <div style="padding-left: 35px; <?php if($dts_tutorial['concluido']==1) echo "color: #564424;  background-color: #f9f3cf;"; ?>" href="#" class="tutorial list-group-item" data-parent="#subtema_<?php echo $subtema['id_subtema']; ?>" >
+                                      <div style="padding-left: 35px; <?php if($dts_tutorial['status']==2) echo "color: #564424;  background-color: #f9f3cf;"; ?>" href="#" class="tutorial list-group-item" data-parent="#subtema_<?php echo $subtema['id_subtema']; ?>" >
                                         <?php echo $dts_tutorial['nombre']; ?>
-                                        <?php if($dts_tutorial['concluido']==1){ ?>
-                                          <a style="float: right;"><span class="badge" style="background-color: #61bf74;"><i class="fa fa-check" aria-hidden="true"></i></span></a>
-                                        <?php }else{ ?>
-                                          <a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>/<?php echo 1;/*dts_tutorial['progress'];*/?>/<?php echo 0; ?>/<?php echo 0; ?>" style="float: right;"><span class="badge" style="background-color: #cccccc;"><i class="fa fa-flag-o" aria-hidden="true"></i></span></a>
-                                        <?php } ?>
+                                        <?php switch ($dts_tutorial['status']) {
+                                          case 0: /*No iniciado*/?>
+                                            <a data-toggle="tooltip" title="Iniciar tutorial" href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>/<?php echo $dts_tutorial['progress'];?>/<?php echo $dts_tutorial['id_blog_tutorials']; ?>/<?php echo 0; ?>" style="float: right;"><span class="badge" style="background-color: #cccccc;"><i class="fa fa-flag-o" aria-hidden="true"></i></span></a>
+                                          <?php   break;
+                                          case 1: /*En proceso*/?>
+                                            <a data-toggle="tooltip" title="Continuar tutorial" href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>/<?php echo $dts_tutorial['progress'];?>/<?php echo $dts_tutorial['id_blog_tutorials']; ?>/<?php echo 0; ?>" style="float: right;"><span class="badge" style="background-color: #d2f0f4;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a>
+
+                                          <?php   break;
+                                          case 2: /*Terminado: se pone el progreso a la primer diapositiva y el id blog_tutorials a 0 para que se cree un nuevo blog_tutorials*/?>
+                                            <a data-toggle="tooltip" title="Reiniciar tutorial" href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $dts_tutorial['id_tutorial']; ?>/<?php echo 0;?>/<?php echo 1; ?>/<?php echo 0; ?>" style="float: right;"><span class="badge" style="background-color: #61bf74;"><i class="fa fa-check" aria-hidden="true"></i></span></a>
+                                          <?php break;
+                                        } ?>
                                       </div>
                                     <?php }
                                   }?>
@@ -93,4 +100,9 @@
           </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip(); 
+      });
+    </script>
   </div><!-- cierra el div #user_main_content que inicia despues del menú-->

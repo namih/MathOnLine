@@ -43,12 +43,12 @@
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];               
                   $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];               
                 }
+                $last_diapo = end($datos['tutorial_content']['diapositivas']['view_number']);
+                $last_diapo_number=$last_diapo['num_diapositiva'];
             }else{
                 $datos['tutorial_content']=false;
+                $last_diapo_number=0;
             }
-
-            $last_diapo = end($datos['tutorial_content']['diapositivas']['view_number']);
-            $last_diapo_number=$last_diapo['num_diapositiva'];
 
 
             if(!empty($datos['tutorial_content']['diapositivas'])){
@@ -72,10 +72,11 @@
             }
 
             //hacer el load de la vista correspondiente
-            $datos['diapositiva_actual']= $datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'];
+            //$datos['diapositiva_actual']= $this->load->view('tutorial/'.$datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'],$datos,TRUE);
+            $datos['diapositiva_actual']= $this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);
             if($last_diapo_number==$num_diapositiva){
                 //cargar dos vistas en lugar de una. Se agrega la vista de finalizar
-                $datos['diapositiva_actual'].='';//diapositiva de finalizar
+                $datos['diapositiva_actual'].=$this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);//diapositiva de finalizar
             }
             $datos['id_tutorial'] = $id_tutorial;
 
@@ -178,6 +179,35 @@
                 return NULL;
             }
         }
+
+        /**
+        * Descripcion
+        *
+        * @author Julio Cesar Padilla Dorantes
+        * @return
+        * @param NA
+        * @version 1.0
+        */
+        function end_tutorial($id_blog_tutorial){
+            if ($id_blog_tutorial != NULL) {
+                date_default_timezone_set('America/Mexico_City');
+                $format = 'Y-m-d h:i:s';
+                
+                $tutorial['id_blog_tutorials'] = $id_blog_tutorial;
+                $tutorial['finish_date'] = date($format);
+                $tutorial['status'] = 2;
+                
+                $create = $this->Tutorial_m->finish_tutorial($tutorial);
+                if ($create != null) {
+                    //return $create;
+                    redirect(base_url().'/tutoriales');
+                } else {
+                    return FALSE;
+                }
+            } else {
+                return NULL;
+            }
+        }        
 
 }
 ?>
