@@ -104,7 +104,7 @@ class Etiquetas{
 				//consejo
 				2 => array(
 					1=>array(
-						'nombre'=>base_url().'administrador',
+						'nombre'=>'Inicio',
 						'id'=>'opt_ccc_inicio',
 						'href'=>'',
 						'onclick'=>'',
