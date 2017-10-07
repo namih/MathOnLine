@@ -172,9 +172,6 @@ class Evaluation_c extends CI_Controller
                     'id_user' => $this->evaluation['id_user'],
                     'total_score' => $this->evaluation['score']
                 );
-                echo "<pre>";
-                print_r($data);
-                echo "</pre>";
                 $response = $this->Evaluation_m->actualiza_escore($data);
                 
                 if($response){
@@ -202,6 +199,5 @@ class Evaluation_c extends CI_Controller
             }
         }
         return $data;
-
     }
 }
