@@ -171,7 +171,7 @@ class Home_c extends CI_Controller
             $all_themes = $this->Home_student_m->lista_tutoriales();
             for ($i=0; $i < count($all_themes); $i++) { 
                 $all_themes[$i]['status'] = 0;
-                $all_themes[$i]['progress'] = 0;
+                $all_themes[$i]['progress'] = 1;
                 $all_themes[$i]['id_blog_tutorials'] = 0;
             }
             
