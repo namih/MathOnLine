@@ -53,8 +53,19 @@
 	<div class="panel panel-success  col-lg-6 col-md-6 col-xs-12">
 		<div class="panel-heading"><b>Previsualización de la evaluación</b></div>
 		<div class="panel-body">
-			<button onclick="preview_distractor_b()" type="button" class="btn btn-default">Distractor B</button>
-			<button onclick="preview_distractor_c()" type="button" class="btn btn-default">Distractor C</button>
+			<div class="form-group col-lg-6 col-md-6 col-xs-12">
+				<select onchange="cargar_subtema()" class="form-control" id ="tema">
+		 		<option value="0">Seleccione un tema</option>
+		 		<?php for ($i=0; $i < count($temas) ; $i++) { ?>
+		 			<option value="<?php echo $temas[$i]['id_theme']; ?>"><?php echo $temas[$i]['theme']?></option>
+		 		<?php }?>
+		 		</select>
+			</div> 
+			<div class="form-group col-md-6 col-xs-12">
+				<select onchange="cargar_evaluaciones()" class="form-control" id ="subtema" disabled>
+					<option value="0">Seleccione un subtema</option>
+				</select>
+			</div>
 			<br />
 			<br />
 			<div align="left">
