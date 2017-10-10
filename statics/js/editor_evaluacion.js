@@ -258,3 +258,50 @@ function preview_distractor_c () {
 		img_src = [];
 	};
 }
+
+function cargar_subtema () {
+	var tema = document.getElementById('tema').value;
+	var subtema = document.getElementById('subtema');
+	var url_subtema = base_url + 'Admin_evaluation_c/subtema';
+	
+	if (tema == 0) {
+		subtema.disabled = true;
+		$('#subtema').empty();
+		var option = document.createElement('option');
+		option.text = 'Seleccione un subtema';
+		option.value = 0;
+		subtema.appendChild(option);
+	} else {
+		$('#subtema').empty();
+		subtema.disabled = false;
+		
+		var datos = {'tema':tema};
+		
+		$.ajax({
+			type:'post',
+			url: url_subtema,
+			data: {datos:datos},
+			datatype: 'json',
+			cache: false,
+			success: function(respuesta) {
+				var lista_subtema = JSON.parse(respuesta);
+				
+				var option0 = document.createElement('option');
+				option0.text = 'Seleccione un subtema...';
+				option0.value = 0;
+				subtema.appendChild(option0);
+				
+				for (var i=0; i < lista_subtema.length; i++) {
+					var option = document.createElement('option');
+					option.innerHTML = lista_subtema[i];
+					option.text = lista_subtema[i]['subtopic'];
+					option.value = lista_subtema[i]['id_subtopic'];
+					subtema.appendChild(option);
+				};
+			},
+			error: function() {
+				alert('failure');
+			}
+		});
+	};
+}
