@@ -221,4 +221,12 @@
 		$this->load->view('evaluacion',$datos);
 		$this->load->view('footer/footer_v');
 	}
+	
+	public function replace()
+	{
+		$test = array('ruta' => '../statics/img/algo.png', 'texto' => 'hola mundo cruel');
+		print_r($test);
+		$out_array = str_replace('../', '/', $test);
+		print_r($out_array);
+	}
 }

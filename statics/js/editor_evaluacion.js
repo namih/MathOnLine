@@ -54,8 +54,6 @@ function preview_question () {
 					};
 				})(file);
 			}
-			
-			
     }
   	  	
   	

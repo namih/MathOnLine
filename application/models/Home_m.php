@@ -172,7 +172,9 @@
 			$query = $this->db->get('evaluation');
 			
 			if ($query->num_rows() === 1) {
-				return $query->result_array();
+				$aux_array = $query->result_array();
+				$out_array[0] = str_replace('src="../', 'src="', $aux_array[0]);
+				return $out_array;
 			} else {
 				return FALSE;
 			}
