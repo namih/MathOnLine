@@ -19,50 +19,6 @@
 			$this->load->library('etiquetas');
         }
 		
-		public function progreso()
-		{
-			date_default_timezone_set('America/Mexico_City');
-			$format = 'Y-m-d h:i:s';
-			
-			$tutorial = array();
-			$tutorial['id_blog_tutorials'] = 3;
-			$tutorial['progress'] = 30;
-			$tutorial['finish_date'] = date($format);
-			$tutorial['status'] = 2;
-			
-			$actualizar = $this->Tutorial_m->finish_tutorial($tutorial);
-			
-			echo "<pre>";
-			print_r($actualizar);
-			echo "<pre>";
-			
-		}
-		
-		public function vista()
-		{
-			$id_tutorial = 32;
-			
-			$views = $this->Tutorial_m->list_views($id_tutorial);
-			
-			echo "<pre>";
-			print_r($views);
-			echo "<pre>";
-			
-		}
-		
-		
-		public function update_score()
-		{
-			$data = array('id_user' => 2,
-					      'total_score' => 45);
-					
-			$score = $this->Evaluation_m->actualiza_escore($data);
-			
-			echo "<pre>";
-			print_r($score);
-			echo "<pre>";
-		}
-		
 		public function wiris()
 		{
 			$this->load->view('header/head_v');
@@ -70,87 +26,11 @@
 			$this->load->view('footer/footer_v');
 		}
 
-		public function clean()
-		{
-			$this->load->view('header/head_v');
-			$this->load->view('auto_verificar');
-			$this->load->view('footer/footer_v');
-		}
-		
-		public function registrar() {
-			date_default_timezone_set('America/Mexico_City');
-			$format = 'Y-m-d h:i:s';
-			$usuario = array(
-				'user_name' => 'NightlightMX',
-				'password' => $this->encrypt->encode('JiU8Lp19O0'),
-				'type_user' => 3,
-				'name' => 'Julio Cesar',
-				'last_name' => 'Padilla Dorantes',
-				'sex' => 1,
-				'year_birthday' => 1985,
-				'id_degree' => 36,
-				'email' =>'nightlightmx@gmail.com',
-				'uam_identifier' => '204214807',
-				'is_student' => TRUE,
-				'is_employed' => TRUE,
-				'registration_date' => date($format)
-			);
-			
-			$ids = $this->Registro_usuario_m->obtener_id_avatar($usuario['sex']);
-			
-			$avatar = $ids[array_rand($ids, 1)];
-									
-			$usuario['id_avatar'] = $avatar['id_avatar'];
-			
-			
-			$id_usuario = $this->Registro_usuario_m->registrar_usuario($usuario);				
-			echo $id_usuario;
-			echo "<br>";
-			$activacion = $this->Registro_usuario_m->activar_cuenta($id_usuario);
-			echo $activacion;
-		}
-		
 		public function pass_encrypt()
 		{
 			$pass = '123456';
-			
 			$pass_encode = $this->encrypt->encode($pass);
-			
 			echo $pass_encode;
-			
-			date_default_timezone_set('America/Mexico_City');
-			$format = 'Y-m-d h:i:s';
-			
-			echo date($format);
-		}
-
-		public function eva()
-		{
-			$id_tema = 1;
-			$eva = $this->Evaluation_m->evaluacion($id_tema);
-			
-			echo "<pre>";
-			print_r($eva);
-			echo "<pre>";
-		}
-		
-		public function semanal()
-		{
-			$semanal = $this->Home_m->pregunta_semanal();
-			
-			echo "<pre>";
-			print_r($semanal);
-			echo "<pre>";
-		}
-		
-		public function blog_tuto()
-		{
-			$id_user = 2;
-			$blog = $this->Home_student_m->tutoriales_usuario($id_user);
-			
-			echo "<pre>";
-			print_r($blog);
-			echo "<pre>";
 		}
 		
 		public function guardar_imagen()
@@ -207,26 +87,5 @@
 			}
 		}
 		echo $mensaje;
-	}
-	
-	public function math()
-	{
-		$datos = array(	'question' => 'Simplifique <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>25</mn></mrow></mfrac></math>',
-						'r1' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfrac></math>',
-						'r2' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>25</mn></mrow></mfrac></math>',
-						'r3' => '<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>',
-						'r4' => '<img src="../statics/img/evaluacion/geom_trigonom/Img_3_4_1_1_2.bmp" class="img-responsive">', );
-		
-		$this->load->view('header/head_v');
-		$this->load->view('evaluacion',$datos);
-		$this->load->view('footer/footer_v');
-	}
-	
-	public function replace()
-	{
-		$test = array('ruta' => '../statics/img/algo.png', 'texto' => 'hola mundo cruel');
-		print_r($test);
-		$out_array = str_replace('../', '/', $test);
-		print_r($out_array);
 	}
 }
