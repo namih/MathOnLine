@@ -141,9 +141,7 @@ function longitud_contrasenia () {
 		document.getElementById('pwd').value = "";
 		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
 		//document.getElementById('pwd').select();
-    } else{
-    	pwd.focus();
-    };
+    } 
     
 }
 
