@@ -15,6 +15,25 @@ function seleccionar_unidad () {
 	};
 	
 }
+
+function longitud_contrasenia () {
+	var longi = document.getElementById('pwd').value;
+	var longi_2 = document.getElementById('rpwd');
+	var pwd = document.getElementById('pwd');
+    var longi_cadena = 8;
+    //alert(longi_cadena);
+    if (longi.length < longi_cadena) {
+   
+    	longi_2.value = "";
+    	longi_2.placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		longi_2.focus();
+		document.getElementById('pwd').value = "";
+		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
+		//document.getElementById('pwd').select();
+    }
+    
+}
+
 /**
 * La función comparar_contrasenia verifica que las contraseñas sean del mismo tamaño así como
 * los mismos caracteres
@@ -135,19 +154,22 @@ function registrar () {
   var nombre = document.getElementById('name').value;
   var apellidos = document.getElementById('last').value;
   var matricula = document.getElementById('empl').value;
+  var sexo = document.getElementById('sexo').value;
   
   
   var bandera_usuario = 1;
   var bandera_pass = 1;
   var bandera_email = 1;
+  var bandera_sexo = 1;
   
   var datos ={
 		user_name:usuario,
 		password:contrasenia1,
 		name:nombre,
 		last_name:apellidos,
+		sex:sexo,
 		email:email,
-		uam_identifier:matricula,	
+		uam_identifier:matricula
 	};
 	
 	var validar_pwd = comparar_contrasenia();
@@ -179,16 +201,18 @@ function registrar () {
 		document.getElementById("error_vacio_pwd2").style.display= 'inline';
 		bandera_pass = 0;
 	 }
-
-	 ;
+	if (sexo == 0) {
+	 	var sex = document.getElementById("sex");
+		sex.className += " has-warning";
+		bandera_sexo = 0;
+	 };
 	
 	if (
 		validar_pwd == true && 
 		validar_correo == true && 
-		
 		bandera_email == 1 &&
 		bandera_usuario == 1 &&
-		
+		bandera_sexo == 1 &&
 		bandera_pass == 1) {
 		
 		var url_registro = base_url + 'Registro_consejo_c/registrar_consejo';
@@ -253,4 +277,8 @@ function validar_username() {
   	}
 }
 
+function validar_sex () {
+	var sex_error = document.getElementById('sex');
+	sex_error.classList.remove("has-warning");
+}
 

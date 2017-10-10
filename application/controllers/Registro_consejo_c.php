@@ -6,7 +6,6 @@ class Registro_consejo_c extends CI_Controller {
 		parent::__construct();
 		$this->load->library('encrypt');
 			$this -> load -> model('Registro_consejo_m');
-			//$this->load->library('email');
 	}
 	
 	/**
@@ -116,9 +115,15 @@ class Registro_consejo_c extends CI_Controller {
 		$registro['registration_date']=date($format);
 		$encrypted = $this->encrypt->encode($registro['password']);
 		$registro['password']=$encrypted;
-		$registro['id_avatar']=24;
 		$registro['id_degree'] = 1;
+		$registro['is_employed'] = 1;
 		$registro['status'] = 1;
+		if ($registro['sex']==1) {
+			$registro['id_avatar']=17;
+		} else {
+			$registro['id_avatar']=26;
+		}
+		//print_r($registro);
 		$id_registro = $this->Registro_consejo_m->registrar_consejo($registro);	
 	}
 }

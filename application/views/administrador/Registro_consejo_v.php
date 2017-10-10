@@ -21,7 +21,7 @@
 		</div>
 		
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_pwd1">
-			<input type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
+			<input onblur="longitud_contrasenia()" type="password" class="form-control" id="pwd" placeholder="Contraseña*" required>
 			<span id="error_vacio_pwd1" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 
 		</div>
@@ -36,6 +36,15 @@
 				<span id="error_email" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 				<span id="error_vacio_email" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 			</div>
+			
+			<div class="form-group has-feedback col-md-6 col-xs-12" id="sex">
+				<select onblur="validar_sex()" class="form-control" id="sexo">
+					<option value="0">Sexo*</option>
+					<option value="1">Hombre</option>
+					<option value="2">Mujer</option>
+				</select>
+			</div>
+				
 		</div>
 		
 		
@@ -84,7 +93,7 @@
         <h4 class="modal-title">Registro completado</h4>
       </div>
       <div class="modal-body">
-        <p>Tu registro en Mate en Línea se a completado de forma satisfactoria. No obstante, para poder acceder debes inicialmente <strong>activar tu cuenta.</strong> Para ello, hemos remitido a tu correo electrónico un enlace con el que podrás hacerlo.</p>
+        <p>Tu registro en Mate en Línea se a completado de forma satisfactoria.</p>
       </div>
       <div class="modal-footer">
       	<a href="<?php echo base_url(); ?>" class="btn btn-success" role="button">Aceptar</a>
@@ -93,11 +102,4 @@
 
   </div>
 </div>
-
-
-
-
-
-
-
 <script src="statics/js/registro_consejo/Registro_consejo.js"></script>

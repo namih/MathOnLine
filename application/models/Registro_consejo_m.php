@@ -133,11 +133,17 @@
 			if (isset($usuario['last_name'])) {
 				$set_usuario['last_name'] = $usuario['last_name'];
 			};
+			if (isset($usuario['sex'])) {
+				$set_usuario['sex'] = $usuario['sex'];
+			};
 			if (isset($usuario['email'])) {
 				$set_usuario['email'] = $usuario['email'];
 			};
 			if (isset($usuario['id_degree'])) {
 				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
+			if (isset($usuario['is_employed'])) {
+				$set_usuario['is_employed'] = $usuario['is_employed'];
 			};
 			if (isset($usuario['uam_identifier'])) {
 				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
