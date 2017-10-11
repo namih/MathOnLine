@@ -64,4 +64,10 @@
 				echo "Error";
 			}
 		}
+		
+		public function guardar_evaluacion()
+		{
+			$titulo = $_FILES['question_img'];
+			print_r($titulo);
+		}
 }

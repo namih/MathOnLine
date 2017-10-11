@@ -31,8 +31,9 @@ function preview_question () {
 		var archivos = document.getElementById("image_builder");
 		var image_builder = archivos.files;
 		
-		global_question = builder;	
-		global_image_question = image_builder;
+		global_question = builder;
+		global_image_question = Object.assign({}, image_builder);	
+		
 		
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -50,13 +51,13 @@ function preview_question () {
 							document.getElementById("question").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
+							$("#image_builder").fileinput('clear');
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
 						};
 					};
 				})(file);
 			}
 		}
-		
 		document.getElementById("question").innerHTML = builder;
 		document.getElementById("builder").value = '';
 		MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
@@ -77,11 +78,14 @@ function preview_correct_answer () {
 	if (document.getElementById("correct_answer").innerHTML == "") {
 		var archivos = document.getElementById("image_builder");
 		var image_builder = archivos.files;
-		
+				
 		global_correct_answer = builder;	
-		global_image_correct_answer = image_builder;
+		global_image_correct_answer = Object.assign({}, image_builder);
+		
+		console.log('El tamaño del contrctor de la imagen es: '+image_builder.length);
 				
 		if (image_builder.length > 0) {
+			console.log('entre al IF');
 			for(x = 0; x < image_builder.length; x = x + 1) {
 				var file = image_builder[x];
 				(function(file){
@@ -89,6 +93,7 @@ function preview_correct_answer () {
 					reader.readAsDataURL(file);
 					reader.onload = function(e) {
 						img_src.push(e.target.result);
+						console.log('tamaño del arreglo del source'+img_src.length);
 						if (img_src.length == image_builder.length) {
 							for (var i=0; i < img_src.length; i++) {
 								
@@ -97,6 +102,8 @@ function preview_correct_answer () {
 							document.getElementById("correct_answer").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
+							$("#image_builder").fileinput('clear');
+							console.log(global_image_question);
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'correct_answer']);
 						};
 					};
@@ -126,7 +133,7 @@ function preview_distractor_a () {
 		var image_builder = archivos.files;
 		
 		global_distractor_a = builder;	
-		global_image_distractor_a = image_builder;
+		global_image_distractor_a = Object.assign({}, image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -144,6 +151,7 @@ function preview_distractor_a () {
 							document.getElementById("distractor_a").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
+							$("#image_builder").fileinput('clear');
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_a']);
 						};
 					};
@@ -173,7 +181,7 @@ function preview_distractor_b () {
 		var image_builder = archivos.files;
 		
 		global_distractor_b = builder;	
-		global_image_distractor_b = image_builder;
+		global_image_distractor_b = Object.assign({}, image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -191,6 +199,7 @@ function preview_distractor_b () {
 							document.getElementById("distractor_b").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
+							$("#image_builder").fileinput('clear');
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_b']);
 						};
 					};
@@ -220,7 +229,7 @@ function preview_distractor_c () {
 		var image_builder = archivos.files;
 		
 		global_distractor_c = builder;	
-		global_image_distractor_c = image_builder;
+		global_image_distractor_c = Object.assign({}, image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -238,6 +247,7 @@ function preview_distractor_c () {
 							document.getElementById("distractor_c").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
+							$("#image_builder").fileinput('clear');
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_c']);
 						};
 					};
@@ -304,4 +314,63 @@ function cargar_subtema () {
 			}
 		});
 	};
+}
+
+function guardar_evaluacion() {	
+	
+	var url_save = base_url + 'Admin_evaluation_c/guardar_evaluacion';
+	
+	var subtema = document.getElementById('subtema').value;
+	var puntos = 5;
+	
+	var formData = new FormData();
+	// formData.append('id_subtopic', subtema);
+	// formData.append('question', global_question);
+	//formData.append('question_img', global_image_question);
+	// formData.append('correct_answer', global_correct_answer);
+	// formData.append('correct_answer_img', global_image_correct_answer);
+	// formData.append('wrong_answer_a', global_distractor_a);
+	// formData.append('wrong_answer_a_img', global_image_distractor_a);
+	// formData.append('wrong_answer_b', global_distractor_b);
+	// formData.append('wrong_answer_b_img', global_image_distractor_b);
+	// formData.append('wrong_answer_c', global_distractor_c);
+	// formData.append('wrong_answer_c_img', global_image_distractor_c);
+	formData.append('points', puntos);
+	
+	console.log(formData);
+		
+	$.ajax({
+		type : 'post',
+		url : url_save,
+		data : formData,
+		datatype : 'json',
+		async : false,
+		cache : false,
+		contentType : false,
+		processData : false,
+		success : function(msj) {
+			alert(msj);
+		},
+		error : function(msj) {
+			alert(msj);
+		}
+	});
+	
+	
+	
+	
+	
+	// var formData = new FormData();
+// 
+			// formData.append('imagen', img_libro.files[0]);
+			// formData.append('id_user', id_usuario);
+			// formData.append('title', titulo);
+			// formData.append('author', autor);
+			// formData.append('editorial', editorial);
+			// formData.append('year', anio);
+			// formData.append('place_publication', pais);
+// 			
+			
+	
+	
 }

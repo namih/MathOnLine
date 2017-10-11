@@ -21,8 +21,9 @@
 		
 		public function wiris()
 		{
+			$datos['temas'] = $this->Evaluation_m->temas();
 			$this->load->view('header/head_v');
-			$this->load->view('administrador/Editor_evaluacion_v');
+			$this->load->view('administrador/Editor_evaluacion_v', $datos);
 			$this->load->view('footer/footer_v');
 		}
 

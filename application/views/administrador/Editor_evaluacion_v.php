@@ -62,7 +62,7 @@
 		 		</select>
 			</div> 
 			<div class="form-group col-md-6 col-xs-12">
-				<select onchange="cargar_evaluaciones()" class="form-control" id ="subtema" disabled>
+				<select class="form-control" id ="subtema" disabled>
 					<option value="0">Seleccione un subtema</option>
 				</select>
 			</div>
@@ -71,22 +71,30 @@
 			<div align="left">
 				Pregunta
 				<p align="center" id="question"></p>
+				<hr />
 			</div>
 			<div align="left">
 				Respuesta correcta
 				<p align="center" id="correct_answer"></p>
+				<hr />
 			</div>
 			<div align="left">
 				Distractor A
 				<p align="center" id="distractor_a"></p>
+				<hr />
 			</div>
 			<div align="left">
 				Distractor B
 				<p align="center" id="distractor_b"></p>
+				<hr />
 			</div>
 			<div align="left">
 				Distractor C
 				<p align="center" id="distractor_c"></p>
+				<hr />
+			</div>
+			<div align="right">
+				<button onclick="guardar_evaluacion()" type="button" class="btn btn-success">Guardar evaluación</button>
 			</div>
 		</div>
 	</div> 
