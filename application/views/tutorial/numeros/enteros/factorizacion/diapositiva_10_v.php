@@ -1,9 +1,9 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_4.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_10.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="panel-body">
 	<div>
-		<p> Encuentra todos los diferentes rectángulos con un área de 10 unidades cuadradas. Completa la tabla con las medidas.</p>
-	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 10.</p>
+		<p> Encuentra 6 diferentes rectángulos con un área de 5 unidades cuadradas. Completa la tabla con las medidas.</p>
+	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 5.</p>
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />
@@ -24,13 +24,13 @@
             <tbody>
             	<tr>
             		<td>
-            			<input type="text" readonly id="base1" value="10"/>
+            			<input type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" readonly id="altura1" value="1"/>
+            			<input  type="text" id="altura1" value="5" readonly=""/>
             		</td>
             		<td>
-            			<input type="text" readonly id="area1" value="10" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input type="text" id="area1" value="5" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -44,30 +44,9 @@
             			<input type="text" idid="area2" />
             		</td>
             	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base3"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura3" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area3"/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base4"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura4" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area4"/>
-            		</td>
-            	</tr>
+            </tbody>
         </table>
 	</div>
-	<br /><br /><br /><br />
+	<br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
 </div>

@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_3.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_9.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="panel-body">
 	<div   class="col-md-12  col-xs-12" id="tab" align="center">
@@ -14,13 +14,13 @@
             <tbody>
             	<tr>
             		<td>
-            			2
+            			1
             		</td>
             		<td>
-            			6
+            			15
             		</td>
             		<td>
-            			12
+            			15
             		</td>
             	</tr>
             	<tr>
@@ -28,56 +28,35 @@
             			3
             		</td>
             		<td>
-            			4
+            			5
             		</td>
             		<td>
-            			12
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			1
-            		</td>
-            		<td>
-            			12
-            		</td>
-            		<td>
-            			12
+            			15
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			6
-            		</td>
-            		<td>
-            			2
-            		</td>
-            		<td>
-            			12
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			4
+            			5
             		</td>
             		<td>
             			3
             		</td>
             		<td>
-            			12
+            			15
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			12
+            			15
             		</td>
             		<td>
             			1
             		</td>
             		<td>
-            			12
+            			15
             		</td>
             	</tr>
+
             </tbody>
         </table>
 	</div>
@@ -88,8 +67,6 @@
 		<input type="text"  id="2"/>
 		<input type="text"  id="3"/>
 		<input type="text"  id="4"/>
-		<input type="text"  id="5"/>
-		<input type="text"  id="6"/>
 	</div>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />

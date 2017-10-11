@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_6.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="panel-body">
 	<div>
@@ -24,13 +24,13 @@
             <tbody>
             	<tr>
             		<td>
-            			<input type="text" id="base1" />
+            			<input type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" />
+            			<input  type="text" id="altura1" value="8" readonly=""/>
             		</td>
             		<td>
-            			<input type="text" id="area1" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input type="text" id="area1" value="8" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -64,28 +64,6 @@
             		</td>
             		<td>
             			<input type="text"  id="area4"/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base5"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura5" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area5"/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base6"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura6" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area6"/>
             		</td>
             	</tr>
             </tbody>

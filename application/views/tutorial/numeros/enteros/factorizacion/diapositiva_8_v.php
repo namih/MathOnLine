@@ -1,9 +1,9 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_8.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="panel-body">
 	<div>
-		<p> Encuentra 6 diferentes rectángulos con un área de 12 unidades cuadradas. Completa la tabla con las medidas.</p>
-	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 12.</p>
+		<p> Encuentra 6 diferentes rectángulos con un área de 15 unidades cuadradas. Completa la tabla con las medidas.</p>
+	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 15.</p>
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />
@@ -24,13 +24,13 @@
             <tbody>
             	<tr>
             		<td>
-            			<input type="text" id="base1" />
+            			<input type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" />
+            			<input  type="text" id="altura1" value="15" readonly=""/>
             		</td>
             		<td>
-            			<input type="text" id="area1" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input type="text" id="area1" value="15" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -64,28 +64,6 @@
             		</td>
             		<td>
             			<input type="text"  id="area4"/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base5"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura5" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area5"/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text"  id="base6"/>
-            		</td>
-            		<td>
-            			<input type="text" id="altura6" />
-            		</td>
-            		<td>
-            			<input type="text"  id="area6"/>
             		</td>
             	</tr>
             </tbody>
