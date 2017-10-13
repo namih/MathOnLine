@@ -185,7 +185,7 @@ class Home_c extends CI_Controller
             if(count($themes_student)<=0){
                 $themes_student = array();
             }else{
-                if (is_array($values) || is_object($values))
+                if (is_array($themes_student) || is_object($themes_student))
                 {
                     foreach ($themes_student as $student){
                         $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));        

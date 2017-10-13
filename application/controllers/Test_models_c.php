@@ -26,7 +26,17 @@
 			$this->load->view('administrador/Editor_evaluacion_v', $datos);
 			$this->load->view('footer/footer_v');
 		}
-
+		
+		
+		public function blog()
+		{
+			$blog = $this->Home_student_m->tutoriales_usuario(2);
+			echo "<pre>";
+			print_r($blog);
+			echo "<pre>";
+		}
+		
+		
 		public function pass_encrypt()
 		{
 			$pass = '123456';
