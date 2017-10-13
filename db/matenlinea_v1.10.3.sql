@@ -1294,10 +1294,6 @@ INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `
 INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (14, 1, 14, 'numeros/enteros/factorizacion/diapositiva_14_v', 1);
 INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (15, 1, 15, 'numeros/enteros/factorizacion/diapositiva_15_v', 1);
 INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (16, 1, 16, 'numeros/enteros/factorizacion/diapositiva_16_v', 1);
-INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (17, 1, 17, 'numeros/enteros/factorizacion/diapositiva_17_v', 1);
-INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (18, 1, 18, 'numeros/enteros/factorizacion/diapositiva_18_v', 1);
-INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (19, 1, 19, 'numeros/enteros/factorizacion/diapositiva_19_v', 1);
-INSERT INTO `mathonline`.`tutorial_views` (`id_tutorial_views`, `id_tutorial`, `view_number`, `name_view`, `status`) VALUES (20, 1, 20, 'numeros/enteros/factorizacion/diapositiva_20_v', 1);
 
 COMMIT;
 
