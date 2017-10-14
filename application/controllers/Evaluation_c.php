@@ -141,7 +141,10 @@ class Evaluation_c extends CI_Controller
     }
 
     public function get_current_responses(){
-
+    	
+		date_default_timezone_set('America/Mexico_City');
+		$format = 'Y-m-d h:i:s';
+		
         $responses = $this->input->post('arrayResultado');
         $time = $responses['tiempo'];
         $evaluations = $responses["evaluacion"];
@@ -152,7 +155,7 @@ class Evaluation_c extends CI_Controller
         $this->evaluation['id_theme'] = 1;
         $this->evaluation['time_finish'] = $time;
         $this->evaluation['score'] = $this->session->userdata('score') + $total;
-        $this->evaluation['evaluation_date'] = date('d-m-Y h:i:s');
+        $this->evaluation['evaluation_date'] = date($format);
         /*echo "<pre>";
         print_r($responses);
         echo "</pre>";*/

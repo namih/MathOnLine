@@ -181,9 +181,9 @@
 		public function actualiza_escore($update)
 		{
 			if ($update!=NULL) {
-				$data = array('total_score' => $update['total_score'], );
-				$this->db->where('id_user', $update['id_user']);
-				$this->db->update('user', $data);
+				$this->db->WHERE('id_user', $update['id_user']);
+				$this->db->SET('total_score', 'total_score +' .	(string)$update['total_score'], FALSE);
+				$this->db->UPDATE('user');
 				if($this->db->affected_rows() > 0) {
 					return TRUE;
 				} else {
@@ -193,6 +193,7 @@
 				return NULL;
 			}
 		}
+		
 		
 		/**
 		 * Borrado logico (Baja) de una evaluacion
