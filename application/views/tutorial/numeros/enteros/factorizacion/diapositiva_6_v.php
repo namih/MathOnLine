@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="panel-body">
 	<div>
-		<p> Encuentra 6 diferentes rectángulos con un área de 12 unidades cuadradas. Completa la tabla con las medidas.</p>
-	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 12.</p>
+		<p> Encuentra 6 diferentes rectángulos con un área de 8 unidades cuadradas. Completa la tabla con las medidas.</p>
+	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 8.</p>
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />

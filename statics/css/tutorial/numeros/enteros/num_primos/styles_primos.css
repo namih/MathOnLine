@@ -36,31 +36,26 @@ table td{
 	left: -250px;
 	position:relative;
 }
-/*[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 26px;
-  cursor: pointer;
-  line-height: 36px;
-  font-size: 28px;
-  color: #e74c3c;
-  text-shadow: #2c3e50 2px 2px 1px;
-  transition: color .3s;
-}*/
-/*#tab{
-	left:200px;
-	width: 50%;
-	height: 50%;
-}
-*/
 
 p{
 	text-align: justify;
 }
 
-
-
-
+.tablaDiv{
+	float:left;
+	width: 30px;
+	height: 30px;
+}
+#seccion{
+	background-color: #DAF7A6;
+ 	padding: 10px;
+  	margin: 10px;
+  	display: inline-block;
+    margin-top: 20px;
+}
+#resaltar{
+	background: #388e3c;
+}
 
 
 

@@ -11,7 +11,7 @@
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	
-	<div   class="col-md-6  col-xs-12" id="tab" align="center">
+	<div   class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
             <thead>
