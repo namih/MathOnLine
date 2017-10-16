@@ -32,7 +32,7 @@ function preview_question () {
 		var image_builder = archivos.files;
 		
 		global_question = builder;
-		global_image_question = Object.assign({}, image_builder);	
+		global_image_question = image_builder;	
 		
 		
 		if (image_builder.length > 0) {
@@ -51,7 +51,8 @@ function preview_question () {
 							document.getElementById("question").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
-							$("#image_builder").fileinput('clear');
+							// $("#image_builder").fileinput('clear');
+							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
 						};
 					};
@@ -81,11 +82,8 @@ function preview_correct_answer () {
 				
 		global_correct_answer = builder;	
 		global_image_correct_answer = Object.assign({}, image_builder);
-		
-		console.log('El tamaño del contrctor de la imagen es: '+image_builder.length);
-				
+						
 		if (image_builder.length > 0) {
-			console.log('entre al IF');
 			for(x = 0; x < image_builder.length; x = x + 1) {
 				var file = image_builder[x];
 				(function(file){
@@ -93,7 +91,6 @@ function preview_correct_answer () {
 					reader.readAsDataURL(file);
 					reader.onload = function(e) {
 						img_src.push(e.target.result);
-						console.log('tamaño del arreglo del source'+img_src.length);
 						if (img_src.length == image_builder.length) {
 							for (var i=0; i < img_src.length; i++) {
 								
@@ -103,7 +100,7 @@ function preview_correct_answer () {
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
 							$("#image_builder").fileinput('clear');
-							console.log(global_image_question);
+							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'correct_answer']);
 						};
 					};
@@ -152,6 +149,7 @@ function preview_distractor_a () {
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
 							$("#image_builder").fileinput('clear');
+							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_a']);
 						};
 					};
@@ -200,6 +198,7 @@ function preview_distractor_b () {
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
 							$("#image_builder").fileinput('clear');
+							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_b']);
 						};
 					};
@@ -248,6 +247,7 @@ function preview_distractor_c () {
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
 							$("#image_builder").fileinput('clear');
+							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'distractor_c']);
 						};
 					};
@@ -323,11 +323,16 @@ function guardar_evaluacion() {
 	var subtema = document.getElementById('subtema').value;
 	var puntos = 5;
 	
+	console.log(global_image_question);
+	console.log(global_image_correct_answer);
+	console.log(global_image_distractor_a);
+	console.log(global_image_distractor_b);
+	console.log(global_image_distractor_c);
 	var formData = new FormData();
-	// formData.append('id_subtopic', subtema);
-	// formData.append('question', global_question);
+	formData.append('id_subtopic', subtema);
+	formData.append('question', global_question);
 	formData.append('question_img', global_image_question);
-	// formData.append('correct_answer', global_correct_answer);
+	//formData.append('correct_answer', global_correct_answer);
 	// formData.append('correct_answer_img', global_image_correct_answer);
 	// formData.append('wrong_answer_a', global_distractor_a);
 	// formData.append('wrong_answer_a_img', global_image_distractor_a);
