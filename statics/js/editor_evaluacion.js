@@ -326,7 +326,7 @@ function guardar_evaluacion() {
 	var formData = new FormData();
 	// formData.append('id_subtopic', subtema);
 	// formData.append('question', global_question);
-	//formData.append('question_img', global_image_question);
+	formData.append('question_img', global_image_question);
 	// formData.append('correct_answer', global_correct_answer);
 	// formData.append('correct_answer_img', global_image_correct_answer);
 	// formData.append('wrong_answer_a', global_distractor_a);

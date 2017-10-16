@@ -67,7 +67,16 @@
 		
 		public function guardar_evaluacion()
 		{
-			$titulo = $_FILES['question_img'];
-			print_r($titulo);
+			
+			foreach($_FILES['question_img']['tmp_name'] as $key => $tmp_name)
+			{
+				$file_name = $key.$_FILES['question_img']['name'][$key];
+				$file_size =$_FILES['question_img']['size'][$key];
+				$file_tmp =$_FILES['question_img']['tmp_name'][$key];
+				$file_type=$_FILES['question_img']['type'][$key];  
+				echo $file_name;
+			}
+			
+			
 		}
 }
