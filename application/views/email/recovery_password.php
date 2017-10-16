@@ -114,7 +114,6 @@
 												<table width="100%" border="0" cellspacing="0" cellpadding="0">
 													<tr>
 														<td class="bodycopy">
-															<h3>Nombre de usuario: <?php echo $user_name?></h3>
 															<h3>Contraseña: <?php echo $password ?></h3>
 														</td>
 													</tr>
