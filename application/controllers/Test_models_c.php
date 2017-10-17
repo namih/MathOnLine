@@ -36,6 +36,14 @@
 			echo "<pre>";
 		}
 		
+		public function preguntas()
+		{
+			$eva = $this->Evaluation_m->evaluacion_subtema(1);
+			echo "<pre>";
+			print_r($eva);
+			echo "<pre>";
+		}
+		
 		
 		public function pass_encrypt()
 		{

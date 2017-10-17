@@ -218,6 +218,59 @@
 				return NULL;
 			}
 		 }
+		 
+		 
+		 /**
+		 * Borrado logico (Baja) de una evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return TRUE si el borrado fue correcto, FALSE si ocurrio un error en el borrado
+		 * @param INT Identificador del link
+		 * @version 1.0
+		 */
+		 public function nueva_evaluacion($evaluacion)
+		 {
+		 	if (!is_null($evaluacion)) {
+		 		$this->db->SET($this->_setNewEvaluacion($evaluacion))->INSERT('evaluation');
+				if ($this->db->affected_rows() === 1) {
+					return $this->db->insert_id();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
+		 
+		 private function _setNewEvaluacion($evaluacion)
+		 {
+		 	$set_new_evaluacion = array();
+			
+			if (isset($evaluacion['id_subtopic'])) {
+				$set_new_evaluacion['id_subtopic'] =  $evaluacion['id_subtopic'];
+			};
+			if (isset($evaluacion['question'])) {
+				$set_new_evaluacion['question'] =  $evaluacion['question'];
+			};
+			if (isset($evaluacion['correct_answer'])) {
+				$set_new_evaluacion['correct_answer'] =  $evaluacion['correct_answer'];
+			};
+			if (isset($evaluacion['wrong_answer_a'])) {
+				$set_new_evaluacion['wrong_answer_a'] =  $evaluacion['wrong_answer_a'];
+			};
+			if (isset($evaluacion['wrong_answer_b'])) {
+				$set_new_evaluacion['wrong_answer_b'] =  $evaluacion['wrong_answer_b'];
+			};
+			if (isset($evaluacion['wrong_answer_c'])) {
+				$set_new_evaluacion['wrong_answer_c'] =  $evaluacion['wrong_answer_c'];
+			};
+			if (isset($evaluacion['points'])) {
+				$set_new_evaluacion['points'] =  $evaluacion['points'];
+			};
+			
+			return $set_new_evaluacion;
+		}
+		
 		
 		private function _setEvaluacion($evaluacion)
 		{

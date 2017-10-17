@@ -32,8 +32,8 @@ function preview_question () {
 		var image_builder = archivos.files;
 		
 		global_question = builder;
-		global_image_question = image_builder;	
-		
+		global_image_question = Object.assign([], image_builder);
+				
 		
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -51,7 +51,7 @@ function preview_question () {
 							document.getElementById("question").innerHTML = builder;
 							document.getElementById("builder").value = '';
 							$("#image_builder").fileinput('reset');
-							// $("#image_builder").fileinput('clear');
+							$("#image_builder").fileinput('clear');
 							img_src=[];
 							MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'question']);
 						};
@@ -81,7 +81,7 @@ function preview_correct_answer () {
 		var image_builder = archivos.files;
 				
 		global_correct_answer = builder;	
-		global_image_correct_answer = Object.assign({}, image_builder);
+		global_image_correct_answer = Object.assign([], image_builder);
 						
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -130,7 +130,7 @@ function preview_distractor_a () {
 		var image_builder = archivos.files;
 		
 		global_distractor_a = builder;	
-		global_image_distractor_a = Object.assign({}, image_builder);
+		global_image_distractor_a = Object.assign([], image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -179,7 +179,7 @@ function preview_distractor_b () {
 		var image_builder = archivos.files;
 		
 		global_distractor_b = builder;	
-		global_image_distractor_b = Object.assign({}, image_builder);
+		global_image_distractor_b = Object.assign([], image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -228,7 +228,7 @@ function preview_distractor_c () {
 		var image_builder = archivos.files;
 		
 		global_distractor_c = builder;	
-		global_image_distractor_c = Object.assign({}, image_builder);
+		global_image_distractor_c = Object.assign([], image_builder);
 				
 		if (image_builder.length > 0) {
 			for(x = 0; x < image_builder.length; x = x + 1) {
@@ -321,61 +321,75 @@ function guardar_evaluacion() {
 	var url_save = base_url + 'Admin_evaluation_c/guardar_evaluacion';
 	
 	var subtema = document.getElementById('subtema').value;
+	var tema = $("#tema option:selected").text();
 	var puntos = 5;
 	
 	console.log(global_image_question);
-	console.log(global_image_correct_answer);
-	console.log(global_image_distractor_a);
-	console.log(global_image_distractor_b);
-	console.log(global_image_distractor_c);
+	
+		
 	var formData = new FormData();
+	
 	formData.append('id_subtopic', subtema);
+	formData.append('tema', tema);
 	formData.append('question', global_question);
-	formData.append('question_img', global_image_question);
-	//formData.append('correct_answer', global_correct_answer);
-	// formData.append('correct_answer_img', global_image_correct_answer);
-	// formData.append('wrong_answer_a', global_distractor_a);
-	// formData.append('wrong_answer_a_img', global_image_distractor_a);
-	// formData.append('wrong_answer_b', global_distractor_b);
-	// formData.append('wrong_answer_b_img', global_image_distractor_b);
-	// formData.append('wrong_answer_c', global_distractor_c);
-	// formData.append('wrong_answer_c_img', global_image_distractor_c);
+	formData.append('correct_answer', global_correct_answer);
+	formData.append('wrong_answer_a', global_distractor_a);
+	formData.append('wrong_answer_b', global_distractor_b);
+	formData.append('wrong_answer_c', global_distractor_c);
 	formData.append('points', puntos);
 	
-	console.log(formData);
-		
+	if (global_image_question != undefined) {
+		if (global_image_question.length > 0) {
+			for (var i=0; i < global_image_question.length; i++) {
+				formData.append('image_question_'+i, global_image_question[i]);
+			};
+		};
+	};
+	
+	if (global_image_correct_answer != undefined) {
+		if (global_image_correct_answer.length > 0) {
+			for (var i=0; i < global_image_correct_answer.length; i++) {
+				formData.append('correct_answer_img_'+i, global_image_correct_answer[i]);
+			};
+		};
+	}
+	
+	if (global_image_distractor_a != undefined) {
+		if (global_image_distractor_a.length > 0) {
+			for (var i=0; i < global_image_distractor_a.length; i++) {
+				formData.append('wrong_answer_a_img_'+i, global_image_distractor_a[i]);
+			};
+		};
+	}
+	
+	if (global_image_distractor_b != undefined) {
+		if (global_image_distractor_b.length > 0) {
+			for (var i=0; i < global_image_distractor_b.length; i++) {
+				formData.append('wrong_answer_b_img_'+i, global_image_distractor_b[i]);
+			};
+		};
+	}
+	
+	if (global_image_distractor_c != undefined) {
+		if (global_image_distractor_c.length > 0) {
+			for (var i=0; i < global_image_distractor_c.length; i++) {
+				formData.append('wrong_answer_c_img_'+i, global_image_distractor_c[i]);
+			};
+		};
+	}
+
 	$.ajax({
-		type : 'post',
-		url : url_save,
+		type: 'POST',
+		url: url_save,
+		cache: false,
+		contentType: false,
+		processData: false,
 		data : formData,
-		datatype : 'json',
-		async : false,
-		cache : false,
-		contentType : false,
-		processData : false,
-		success : function(msj) {
-			alert(msj);
+		success: function(result){
+			console.log('El resultado es '+result);
 		},
-		error : function(msj) {
-			alert(msj);
+		error: function(err){
+			console.log('El error es '+err);
 		}
-	});
-	
-	
-	
-	
-	
-	// var formData = new FormData();
-// 
-			// formData.append('imagen', img_libro.files[0]);
-			// formData.append('id_user', id_usuario);
-			// formData.append('title', titulo);
-			// formData.append('author', autor);
-			// formData.append('editorial', editorial);
-			// formData.append('year', anio);
-			// formData.append('place_publication', pais);
-// 			
-			
-	
-	
+	});	
 }
