@@ -137,19 +137,35 @@
              <div class="panel panel-success tema_footer"  align="center">
                 <div class="panel-heading"><b>¿Qué es Mate en Línea?</b></div>
                 <div class="panel-body">
-                  <p align="justify"> 
-                    Es una plataforma electrónica diseñada para apoyarte en los temas de <b>números, álgebra, geometría/trigonometría y geometría analítica</b>, que te ayudará a elevar tu nivel de competencia, ahora que inicias una carrera universitaria.<br><br>
+                  <div class="col-md-12">
+                    <p align="justify"> 
+                      Es una plataforma electrónica diseñada para apoyarte en los temas de <b>números, álgebra, geometría/trigonometría y geometría analítica</b>, que te ayudará a elevar tu nivel de competencia, ahora que inicias una carrera universitaria.<br><br>
 
-                    En esencia, te ofrece <b>tutoriales y pruebas de evaluación</b> para que los tomes a tu ritmo y de la manera que juzgues más conveniente. Nadie supervisa tu desempeño. Nadie revisa tus resultados. Eres tú, exclusivamente tú, el o la que sabe cuánto has recorrido y qué resultados has obtenido.<br><br>
+                      En esencia, te ofrece <b>tutoriales y pruebas de evaluación</b> para que los tomes a tu ritmo y de la manera que juzgues más conveniente. Nadie supervisa tu desempeño. Nadie revisa tus resultados. Eres tú, exclusivamente tú, el o la que sabe cuánto has recorrido y qué resultados has obtenido.<br><br>
 
-                    <b>Mate en Línea</b> también tiene otras secciones, como son <b>tema del mes</b>, la <b>pregunta semanal</b>, <b>material complementario</b>, diseñadas para que tu participación en el portal sea divertida y obtengas el mayor provecho.<br><br>
+                      <b>Mate en Línea</b> también tiene otras secciones, como son <b>tema del mes</b>, la <b>pregunta semanal</b>, <b>material complementario</b>, diseñadas para que tu participación en el portal sea divertida y obtengas el mayor provecho.<br><br>
 
-                    Los <b>tutoriales</b> son cortos para que repases aquellos temas de matemáticas acerca de los cuales tengas dudas. Puedes cursar estos <b>tutoriales</b> tantas veces como lo desees, resolviendo distintos ejercicios hasta que te sientas seguro.<br><br> 
+                      Los <b>tutoriales</b> son cortos para que repases aquellos temas de matemáticas acerca de los cuales tengas dudas. Puedes cursar estos <b>tutoriales</b> tantas veces como lo desees, resolviendo distintos ejercicios hasta que te sientas seguro.<br><br> 
 
-                    Una vez que domines uno de los temas, puedes tomar las <b>pruebas de evaluación</b>, que son pruebas de 15 preguntas, siempre distintas, cuyo resultado únicamente tú conocerás. Las puedes tomar cuantas veces lo desees y te van a servir para ver cómo está tu nivel de matemáticas comparado con el resto de la población UAM.<br><br>
+                      Una vez que domines uno de los temas, puedes tomar las <b>pruebas de evaluación</b>, que son pruebas de 15 preguntas, siempre distintas, cuyo resultado únicamente tú conocerás. Las puedes tomar cuantas veces lo desees y te van a servir para ver cómo está tu nivel de matemáticas comparado con el resto de la población UAM.<br><br>
 
-                     Dentro de <b>Mate en Línea</b> existen ligas en las cuales iras accediendo en cuanto vayas avanzando dentro de los <b>tutoriales y pruebas de evaluación</b>. Estas ligas se verán reflejadas en tu perfil adornando tu avatar de usuario con uno de los siguientes emblemas:<br><br>
-                  </p>
+                       Dentro de <b>Mate en Línea</b> existen ligas en las cuales iras accediendo en cuanto vayas avanzando dentro de los <b>tutoriales y pruebas de evaluación</b>. Estas ligas se verán reflejadas en tu perfil adornando tu avatar de usuario con uno de los siguientes emblemas:<br><br>
+                    </p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-3">
+                      <img class="img-responsive" src="statics/img/ligas/liga_IV.jpg" alt="Liga IV" title="Liga IV" align="absmiddle">
+                    </div>
+                    <div class="col-md-3">
+                      <img class="img-responsive" src="statics/img/ligas/liga_III.jpg" alt="Liga III" title="Liga III" align="absmiddle">
+                    </div>
+                    <div class="col-md-3">
+                      <img class="img-responsive" src="statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
+                    </div>
+                    <div class="col-md-3">
+                      <img class="img-responsive" src="statics/img/ligas/liga_I.jpg" alt="Liga I" title="Liga I" align="absmiddle">
+                    </div>
+                  </div>
                 </div>
               </div>               
             </div>            
