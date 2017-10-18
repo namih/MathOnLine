@@ -159,7 +159,7 @@
                 <div class="panel-body">
                   <div class="col-sm-4 col-sm-offset-4 col-md-12 col-md-offset-0">
                     <a href="#" data-toggle="modal" data-target="#calendarModal" data-keyboard="true">  
-                      <img class="calendario img-responsive" src="statics/img/calendario_uam/calendar-97868_1280.png" alt="Calendario escolar UAM" title="Calendario escolar UAM" align="absmiddle">
+                      <img class="calendario img-responsive" src="statics/img/otros/calendar-97868_1280.png" alt="Calendario escolar UAM" title="Calendario escolar UAM" align="absmiddle">
                     </a>
                   </div>
                   <div class="col-sm-12 col-md-12">
