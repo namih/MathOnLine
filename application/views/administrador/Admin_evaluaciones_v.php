@@ -6,9 +6,12 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
 <div class="container-fluid">
-	<div class="col-md-12 col-xs-12">
+	<div class="form-group col-md-12 col-xs-12">
 		<h2>Administrador de evaluaciones</h2>
-		<h5>Agregar nueva evaluación   <a href="#"><span class="glyphicon glyphicon-plus "></span></a></h5>
+		<div>
+			<button onclick="agregar_evaluacion()" type="button" class="btn btn-success">Agregar nueva evaluación</button>
+		</div>
+		<br />
 		 <div class="form-group col-md-6 col-xs-12">
 		 	<select onchange="cargar_subtema()" class="form-control" id ="tema">
 		 		<option value="0">Seleccione un tema</option>

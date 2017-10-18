@@ -69,7 +69,7 @@ function cargar_evaluaciones () {
 							  '<table id="evaluation" class="table table-striped" width="100%" cellspacing="0">' +
 							    '<thead>' +
 							      '<tr>' +
-							        '<th></th>' +
+							        '<th>Borrar</th>' +
 							        '<th>Pregunta</th>' +
 							        '<th>Puntos</th>' +
 							        '<th>Editar</th>' +
@@ -90,9 +90,14 @@ function cargar_evaluaciones () {
 							  '</div>';
 			
 			document.getElementById("admin_tabla").innerHTML = tabla;
-			MathJax.Hub.Queue(["Typeset", MathJax.Hub, 'admin_tabla']);
 			$('#evaluation').DataTable( {
+				"drawCallback": function( settings ) {
+					MathJax.Hub.Queue(["Typeset",MathJax.Hub]); 
+				},
+				"pageLength": 20,
+				"lengthMenu": [[20, 50, 100, -1], [20, 50, 100, "Todas"]],
 		        "language": {
+		        	"search": "Buscar:",
 		            "lengthMenu": "Mostrar _MENU_ entradas",
 		            "zeroRecords": "Nada encontrado",
 		            "info": "Mostrando página _PAGE_ de _PAGES_",
@@ -130,4 +135,8 @@ function eliminar (id_evaluacion) {
 			alert('failure');
 		}
 	});
+}
+
+function agregar_evaluacion () {
+  alert('Llamar a la vista para crear una nueva evaluación');
 }

@@ -18,7 +18,7 @@
 			    $datos["user_log"][0] = $this->session->userdata('user');
 			    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 		        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
-		        $datos['opt_menu_active']='opt_materiales';
+		        $datos['opt_menu_active']='opt_admin_evaluacion';
 	
 			    $this->load->view('header/head_v');
 			    $this->load->view('header/Menu_user_v', $datos);

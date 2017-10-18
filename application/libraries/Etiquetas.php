@@ -49,7 +49,7 @@ class Etiquetas{
 						),
 					2=>array(
 						'nombre'=>'Evaluaciones',
-						'id'=>'opt_admin_evaluaciones',
+						'id'=>'opt_admin_evaluacion',
 						'href'=>base_url().'admin_evaluation_c/administrador',
 						'onclick'=>'',
 						'clase'=>'',
