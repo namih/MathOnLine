@@ -438,4 +438,335 @@
 			$id_evaluacion = $this->Evaluation_m->nueva_evaluacion($evaluacion);
 			echo $id_evaluacion;
 		}
+		
+		
+		public function actualizar_evaluacion()
+		{
+			$evaluacion = array();
+			$mensaje = '';
+			
+			$id_evaluation = $this->input->post('id_evaluation');
+			$id_subtopic = $this->input->post('id_subtopic');
+			$tema = $this->input->post('tema');
+			$question = $this->input->post('question');
+			$correct_answer = $this->input->post('correct_answer');
+			$wrong_answer_a = $this->input->post('wrong_answer_a');
+			$wrong_answer_b = $this->input->post('wrong_answer_b');
+			$wrong_answer_c = $this->input->post('wrong_answer_c');
+			$points = $this->input->post('points');
+			
+			switch ($tema) {
+				case 'Números':
+					$tema = 'numeros';
+					break;
+				case 'Álgebra':
+					$tema = 'algebra';
+					break;
+				case 'Geometría y Trigonometría':
+					$tema = 'geom_trigonom';
+					break;
+				case 'Geometría analítica':
+					$tema = 'geom_ana';
+					break;
+			}
+			
+			$ruta = "statics/img/evaluacion/".$tema."/";
+			
+			$evaluacion['id_subtopic'] = $id_subtopic;
+			$evaluacion['id_evaluation'] = $id_evaluation;
+			$evaluacion['points'] = $points;
+			
+			if (isset($_FILES['image_question_0'])) {
+				$i = 0;			
+				foreach ($_FILES as $key) {
+					if ($key['error'] == UPLOAD_ERR_OK) {
+						$type = explode( '/', $key['type'] );
+						if(is_uploaded_file($_FILES['image_question_'.$i]['tmp_name'])){
+							$temporal = $_FILES['image_question_'.$i]['tmp_name'];
+							$nombre = uniqid().'.'.$type[1];
+							$image = $ruta.$nombre;
+							
+							move_uploaded_file($temporal, $image);
+							
+							$ubicacion = $ruta.$nombre;
+							$question = str_replace("img_".$i, '<img class="img-responsive" src="../'.$ubicacion.'">', $question);
+							$i++;
+						}
+					}
+					if ($key['error']!= 0) {
+						switch ($key['error']) {
+						case UPLOAD_ERR_INI_SIZE:
+							$mensaje = "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+							break;
+	
+						case UPLOAD_ERR_FORM_SIZE:
+							$mensaje="El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+							break;
+	
+						case UPLOAD_ERR_PARTIAL:
+							$mensaje="El archivo subido sólo se cargó parcialmente";
+							break;
+	
+						case UPLOAD_ERR_NO_FILE:
+							$mensaje="Ningun archivo fue subido";
+						break;
+	
+						case UPLOAD_ERR_NO_TMP_DIR:
+							$mensaje="Falta una carpeta temporal";
+						break;							
+	
+						case UPLOAD_ERR_CANT_WRITE:
+							$mensaje="Error al escribir el archivo en el disco";
+						break;
+	
+						case UPLOAD_ERR_EXTENSION:
+							$mensaje="Archivo de carga detenido por extensión";
+						break;
+	
+						default: 
+							$mensaje = "Error desconocido en la carga"; 
+							break; 
+						}
+					}
+				}
+				$evaluacion['question'] = $question;
+			} else {
+				$evaluacion['question'] = $question;
+			}
+			
+			if (isset($_FILES['correct_answer_img_0'])) {
+				$i = 0;			
+				foreach ($_FILES as $key) {
+					if ($key['error'] == UPLOAD_ERR_OK) {
+						$type = explode( '/', $key['type'] );
+						if(is_uploaded_file($_FILES['correct_answer_img_'.$i]['tmp_name'])){
+							$temporal = $_FILES['correct_answer_img_'.$i]['tmp_name'];
+							$nombre = uniqid().'.'.$type[1];
+							$image = $ruta.$nombre;
+							
+							move_uploaded_file($temporal, $image);
+							
+							$ubicacion = $ruta.$nombre;
+							$correct_answer = str_replace("img_".$i, '<img class="img-responsive" src="../'.$ubicacion.'">', $correct_answer);
+							$i++;
+						}
+					}
+					if ($key['error']!= 0) {
+						switch ($key['error']) {
+						case UPLOAD_ERR_INI_SIZE:
+							$mensaje = "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+							break;
+	
+						case UPLOAD_ERR_FORM_SIZE:
+							$mensaje="El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+							break;
+	
+						case UPLOAD_ERR_PARTIAL:
+							$mensaje="El archivo subido sólo se cargó parcialmente";
+							break;
+	
+						case UPLOAD_ERR_NO_FILE:
+							$mensaje="Ningun archivo fue subido";
+						break;
+	
+						case UPLOAD_ERR_NO_TMP_DIR:
+							$mensaje="Falta una carpeta temporal";
+						break;							
+	
+						case UPLOAD_ERR_CANT_WRITE:
+							$mensaje="Error al escribir el archivo en el disco";
+						break;
+	
+						case UPLOAD_ERR_EXTENSION:
+							$mensaje="Archivo de carga detenido por extensión";
+						break;
+	
+						default: 
+							$mensaje = "Error desconocido en la carga"; 
+							break; 
+						}
+					}
+				}
+				$evaluacion['correct_answer'] = $correct_answer;
+			} else {
+				$evaluacion['correct_answer'] = $correct_answer;
+			}
+			
+			if (isset($_FILES['wrong_answer_a_img_0'])) {
+				$i = 0;			
+				foreach ($_FILES as $key) {
+					if ($key['error'] == UPLOAD_ERR_OK) {
+						$type = explode( '/', $key['type'] );
+						if(is_uploaded_file($_FILES['wrong_answer_a_img_'.$i]['tmp_name'])){
+							$temporal = $_FILES['wrong_answer_a_img_'.$i]['tmp_name'];
+							$nombre = uniqid().'.'.$type[1];
+							$image = $ruta.$nombre;
+							
+							move_uploaded_file($temporal, $image);
+							
+							$ubicacion = $ruta.$nombre;
+							$wrong_answer_a = str_replace("img_".$i, '<img class="img-responsive" src="../'.$ubicacion.'">', $wrong_answer_a);
+							$i++;
+						}
+					}
+					if ($key['error']!= 0) {
+						switch ($key['error']) {
+						case UPLOAD_ERR_INI_SIZE:
+							$mensaje = "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+							break;
+	
+						case UPLOAD_ERR_FORM_SIZE:
+							$mensaje="El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+							break;
+	
+						case UPLOAD_ERR_PARTIAL:
+							$mensaje="El archivo subido sólo se cargó parcialmente";
+							break;
+	
+						case UPLOAD_ERR_NO_FILE:
+							$mensaje="Ningun archivo fue subido";
+						break;
+	
+						case UPLOAD_ERR_NO_TMP_DIR:
+							$mensaje="Falta una carpeta temporal";
+						break;							
+	
+						case UPLOAD_ERR_CANT_WRITE:
+							$mensaje="Error al escribir el archivo en el disco";
+						break;
+	
+						case UPLOAD_ERR_EXTENSION:
+							$mensaje="Archivo de carga detenido por extensión";
+						break;
+	
+						default: 
+							$mensaje = "Error desconocido en la carga"; 
+							break; 
+						}
+					}
+				}
+				$evaluacion['wrong_answer_a'] = $wrong_answer_a;
+			} else {
+				$evaluacion['wrong_answer_a'] = $wrong_answer_a;
+			}
+			
+			if (isset($_FILES['wrong_answer_b_img_0'])) {
+				$i = 0;			
+				foreach ($_FILES as $key) {
+					if ($key['error'] == UPLOAD_ERR_OK) {
+						$type = explode( '/', $key['type'] );
+						if(is_uploaded_file($_FILES['wrong_answer_b_img_'.$i]['tmp_name'])){
+							$temporal = $_FILES['wrong_answer_b_img_'.$i]['tmp_name'];
+							$nombre = uniqid().'.'.$type[1];
+							$image = $ruta.$nombre;
+							
+							move_uploaded_file($temporal, $image);
+							
+							$ubicacion = $ruta.$nombre;
+							$wrong_answer_b = str_replace("img_".$i, '<img class="img-responsive" src="../'.$ubicacion.'">', $wrong_answer_b);
+							$i++;
+						}
+					}
+					if ($key['error']!= 0) {
+						switch ($key['error']) {
+						case UPLOAD_ERR_INI_SIZE:
+							$mensaje = "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+							break;
+	
+						case UPLOAD_ERR_FORM_SIZE:
+							$mensaje="El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+							break;
+	
+						case UPLOAD_ERR_PARTIAL:
+							$mensaje="El archivo subido sólo se cargó parcialmente";
+							break;
+	
+						case UPLOAD_ERR_NO_FILE:
+							$mensaje="Ningun archivo fue subido";
+						break;
+	
+						case UPLOAD_ERR_NO_TMP_DIR:
+							$mensaje="Falta una carpeta temporal";
+						break;							
+	
+						case UPLOAD_ERR_CANT_WRITE:
+							$mensaje="Error al escribir el archivo en el disco";
+						break;
+	
+						case UPLOAD_ERR_EXTENSION:
+							$mensaje="Archivo de carga detenido por extensión";
+						break;
+	
+						default: 
+							$mensaje = "Error desconocido en la carga"; 
+							break; 
+						}
+					}
+				}
+				$evaluacion['wrong_answer_b'] = $wrong_answer_b;
+			} else {
+				$evaluacion['wrong_answer_b'] = $wrong_answer_b;
+			}
+			
+			if (isset($_FILES['wrong_answer_c_img_0'])) {
+				$i = 0;			
+				foreach ($_FILES as $key) {
+					if ($key['error'] == UPLOAD_ERR_OK) {
+						$type = explode( '/', $key['type'] );
+						if(is_uploaded_file($_FILES['wrong_answer_c_img_'.$i]['tmp_name'])){
+							$temporal = $_FILES['wrong_answer_c_img_'.$i]['tmp_name'];
+							$nombre = uniqid().'.'.$type[1];
+							$image = $ruta.$nombre;
+							
+							move_uploaded_file($temporal, $image);
+							
+							$ubicacion = $ruta.$nombre;
+							$wrong_answer_c = str_replace("img_".$i, '<img class="img-responsive" src="../'.$ubicacion.'">', $wrong_answer_c);
+							$i++;
+						}
+					}
+					if ($key['error']!= 0) {
+						switch ($key['error']) {
+						case UPLOAD_ERR_INI_SIZE:
+							$mensaje = "El archivo subido supera la directiva upload_max_filesize en php.ini";  
+							break;
+	
+						case UPLOAD_ERR_FORM_SIZE:
+							$mensaje="El archivo subido supera la directiva MAX_FILE_SIZE que se especificó en el formulario HTM";
+							break;
+	
+						case UPLOAD_ERR_PARTIAL:
+							$mensaje="El archivo subido sólo se cargó parcialmente";
+							break;
+	
+						case UPLOAD_ERR_NO_FILE:
+							$mensaje="Ningun archivo fue subido";
+						break;
+	
+						case UPLOAD_ERR_NO_TMP_DIR:
+							$mensaje="Falta una carpeta temporal";
+						break;							
+	
+						case UPLOAD_ERR_CANT_WRITE:
+							$mensaje="Error al escribir el archivo en el disco";
+						break;
+	
+						case UPLOAD_ERR_EXTENSION:
+							$mensaje="Archivo de carga detenido por extensión";
+						break;
+	
+						default: 
+							$mensaje = "Error desconocido en la carga"; 
+							break; 
+						}
+					}
+				}
+				$evaluacion['wrong_answer_c'] = $wrong_answer_c;
+			} else {
+				$evaluacion['wrong_answer_c'] = $wrong_answer_c;
+			}
+			
+			$actualizacion = $this->Evaluation_m->actualizar_evaluacion($evaluacion);
+			echo $actualizacion;
+		}
 }

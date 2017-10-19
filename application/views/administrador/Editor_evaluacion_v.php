@@ -94,7 +94,12 @@
 				<hr />
 			</div>
 			<div align="right">
-				<button onclick="guardar_evaluacion()" type="button" class="btn btn-success"><?php if (isset($evaluacion['id_evaluation'])) {
+				<button onclick="guardar_evaluacion(<?php if (isset($evaluacion['id_evaluation'])) {
+					echo $evaluacion['id_evaluation'];
+				} else {
+					echo 0;
+				}
+				 ?>)" type="button" class="btn btn-success"><?php if (isset($evaluacion['id_evaluation'])) {
 					echo 'Actualizar evaluación';
 				} else {
 					echo 'Guardar evaluación';

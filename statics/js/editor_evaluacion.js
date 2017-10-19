@@ -339,17 +339,15 @@ function cargar_subtema () {
 	};
 }
 
-function guardar_evaluacion() {	
+function guardar_evaluacion(id_evaluacion) {	
 	
 	var url_save = base_url + 'Admin_evaluation_c/guardar_evaluacion';
+	var url_update = base_url + 'Admin_evaluation_c/actualizar_evaluacion';
 	
 	var subtema = document.getElementById('subtema').value;
 	var tema = $("#tema option:selected").text();
 	var puntos = 5;
-	
-	console.log(global_image_question);
-	
-		
+			
 	var formData = new FormData();
 	
 	formData.append('id_subtopic', subtema);
@@ -400,19 +398,41 @@ function guardar_evaluacion() {
 			};
 		};
 	}
-
-	$.ajax({
-		type: 'POST',
-		url: url_save,
-		cache: false,
-		contentType: false,
-		processData: false,
-		data : formData,
-		success: function(result){
-			console.log('El resultado es '+result);
-		},
-		error: function(err){
-			console.log('El error es '+err);
-		}
-	});	
+	
+	if (id_evaluacion==0) {
+		$.ajax({
+			type: 'POST',
+			url: url_save,
+			cache: false,
+			contentType: false,
+			processData: false,
+			data : formData,
+			success: function(result){
+				console.log('El resultado es '+result);
+			},
+			error: function(err){
+				console.log('El error es '+err);
+			}
+		});	
+	} else{
+		formData.append('id_evaluation', id_evaluacion);
+		$.ajax({
+			type: 'POST',
+			url: url_update,
+			cache: false,
+			contentType: false,
+			processData: false,
+			data : formData,
+			success: function(result){
+				console.log('El resultado es '+result);
+			},
+			error: function(err){
+				console.log('El error es '+err);
+			}
+		});	
+	};
+	
+	
+	
+	
 }

@@ -221,6 +221,29 @@
 		 
 		 
 		 /**
+		 * Actualiza un evaluación determinada
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return TRUE si fue satisfactoria la actualizacion, FALSE si ocurrio un error en la actualización
+		 * @param ARRAY Datos a actualizar de la evaluación
+		 * @version 1.0
+		 */
+		 public function actualizar_evaluacion($evaluacion)
+		 {
+		 	if (!is_null($evaluacion)) {
+				$this->db->where('id_evaluation', $evaluacion['id_evaluation']);
+				$this->db->update('evaluation', $evaluacion); 
+				if ($this->db->affected_rows() === 1) {
+					return 'TRUE';
+				} else {
+					return 'FALSE';
+				}
+			} else {
+				return 'NULL';
+			}
+		 }
+		 
+		 /**
 		 * Registra una nueva evaluacion
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
