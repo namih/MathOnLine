@@ -221,10 +221,10 @@
 		 
 		 
 		 /**
-		 * Borrado logico (Baja) de una evaluacion
+		 * Registra una nueva evaluacion
 		 * 
 		 * @author Julio Cesar Padilla Dorantes
-		 * @return TRUE si el borrado fue correcto, FALSE si ocurrio un error en el borrado
+		 * @return INT identificar de la nueva evaluación, FALSE si ocurrio un error en el registro
 		 * @param INT Identificador del link
 		 * @version 1.0
 		 */
@@ -234,6 +234,30 @@
 		 		$this->db->SET($this->_setNewEvaluacion($evaluacion))->INSERT('evaluation');
 				if ($this->db->affected_rows() === 1) {
 					return $this->db->insert_id();
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
+		 
+		  /**
+		 * Obtiene los datos especificos de una evaluacion
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array si encuentra los datos de la evaluacion solicitada, FALSE si no existe evaluacion con dicho identificador
+		 * @param INT Identificador de la evaluación
+		 * @version 1.0
+		 */
+		 public function get_evaluacion($id_evaluation)
+		 {
+		 	if ($id_evaluation!=NULL) {
+				$evaluacion = $this->db->SELECT('*')->FROM('evaluation')->WHERE('id_evaluation',$id_evaluation)->GET();
+				if ($evaluacion->num_rows() === 1) {
+					$aux_array = $evaluacion->row_array();
+					$out_array = str_replace('src="../', 'src="../../', $aux_array);
+					return $out_array;
 				} else {
 					return FALSE;
 				}

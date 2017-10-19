@@ -16,6 +16,29 @@ var builder;
 var img_src = [];
 
 window.onload = function () {
+	
+	var pregunta = document.getElementById('question').innerHTML;
+	var correct_answer = document.getElementById('correct_answer').innerHTML;
+	var distractor_a = document.getElementById('distractor_a').innerHTML;
+	var distractor_b = document.getElementById('distractor_b').innerHTML;
+	var distractor_c = document.getElementById('distractor_c').innerHTML;
+
+	if (pregunta != '') {
+		global_question = pregunta;
+	};
+	if (correct_answer != '') {
+		global_correct_answer = correct_answer;
+	};
+	if (distractor_a != '') {
+		global_distractor_a = distractor_a;
+	};
+	if (distractor_b != '') {
+		global_distractor_b = distractor_b;
+	};
+	if (distractor_c != '') {
+		global_distractor_c = distractor_c;
+	};
+	
 	editor = com.wiris.jsEditor.JsEditor.newInstance({'language': 'es'});
 	editor.insertInto(document.getElementById('editorContainer'));
 	

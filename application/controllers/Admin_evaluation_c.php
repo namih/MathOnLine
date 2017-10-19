@@ -65,6 +65,52 @@
 			}
 		}
 		
+		public function nueva_evaluacion()
+		{
+			$login = $this->session->userdata('logged_in');
+			if($login != null && $login == true){
+				$datos["user_log"][0] = $this->session->userdata('user');
+				$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+				$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+				$datos['opt_menu_active']='opt_admin_evaluacion';
+				
+				$datos['temas'] = $this->Evaluation_m->temas();				
+				
+				$this->load->view('header/head_v');
+				$this->load->view('header/Menu_user_v', $datos);
+				$this->load->view('administrador/Editor_evaluacion_v', $datos);
+				$this->load->view('footer/footer_v');
+			}else{
+				redirect(base_url());
+			}
+		}
+		
+		
+		public function editor_evaluacion($id_evaluacion=NULL)
+		{
+			$login = $this->session->userdata('logged_in');
+			if ($id_evaluacion != NULL) {
+				if($login != null && $login == true){
+			    $datos["user_log"][0] = $this->session->userdata('user');
+			    $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+		        $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
+		        $datos['opt_menu_active']='opt_admin_evaluacion';
+				
+				$datos['temas'] = $this->Evaluation_m->temas();	
+				$datos['evaluacion'] = $this->Evaluation_m->get_evaluacion($id_evaluacion);
+			    
+			    $this->load->view('header/head_v');
+				$this->load->view('header/Menu_user_v', $datos);
+				$this->load->view('administrador/Editor_evaluacion_v', $datos);
+				$this->load->view('footer/footer_v');
+		    }else{
+		    	redirect(base_url());
+		    }
+			} else {
+				redirect(base_url());
+			}
+		}
+		
 		public function guardar_evaluacion()
 		{
 			$evaluacion = array();

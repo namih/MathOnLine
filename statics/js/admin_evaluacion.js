@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-
 function cargar_subtema () {
 	var tema = document.getElementById('tema').value;
 	var subtema = document.getElementById('subtema');
@@ -81,7 +77,7 @@ function cargar_evaluaciones () {
 							    	tabla += '<td><span onclick="confirmar('+ lista_evaluacion[i]['id_evaluation']+')" style="color:red" class="glyphicon glyphicon-trash red" aria-hidden="true"></span></td>';
 							    	tabla += '<td>'+lista_evaluacion[i]['question']+'</td>';
 							    	tabla += '<td>'+lista_evaluacion[i]['points']+'</td>';
-							    	tabla += '<td><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></td>';
+							    	tabla += '<td> <a href="'+base_url+'Admin_evaluation_c/editor_evaluacion/'+lista_evaluacion[i]['id_evaluation']+'"><span id="edit_link" class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>';
 							    	tabla += '</tr>';
 							    };
 
@@ -122,7 +118,8 @@ function confirmar (id_evaluation) {
 
 function eliminar (id_evaluacion) {
 	var url_borrado = base_url + 'Admin_evaluation_c/borrar_evaluacion';
-  $.ajax({
+	
+	$.ajax({
 		type:'post',
 		url: url_borrado,
 		data: {id:id_evaluacion},
@@ -135,8 +132,4 @@ function eliminar (id_evaluacion) {
 			alert('failure');
 		}
 	});
-}
-
-function agregar_evaluacion () {
-  alert('Llamar a la vista para crear una nueva evaluación');
 }

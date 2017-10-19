@@ -70,31 +70,35 @@
 			<br />
 			<div align="left">
 				Pregunta
-				<p align="center" id="question"></p>
+				<p align="center" id="question"><?php echo $evaluacion['question']; ?></p>
 				<hr />
 			</div>
 			<div align="left">
 				Respuesta correcta
-				<p align="center" id="correct_answer"></p>
+				<p align="center" id="correct_answer"><?php echo $evaluacion['correct_answer']; ?></p>
 				<hr />
 			</div>
 			<div align="left">
 				Distractor A
-				<p align="center" id="distractor_a"></p>
+				<p align="center" id="distractor_a"><?php echo $evaluacion['wrong_answer_a']; ?></p>
 				<hr />
 			</div>
 			<div align="left">
 				Distractor B
-				<p align="center" id="distractor_b"></p>
+				<p align="center" id="distractor_b"><?php echo $evaluacion['wrong_answer_b']; ?></p>
 				<hr />
 			</div>
 			<div align="left">
 				Distractor C
-				<p align="center" id="distractor_c"></p>
+				<p align="center" id="distractor_c"><?php echo $evaluacion['wrong_answer_c']; ?></p>
 				<hr />
 			</div>
 			<div align="right">
-				<button onclick="guardar_evaluacion()" type="button" class="btn btn-success">Guardar evaluación</button>
+				<button onclick="guardar_evaluacion()" type="button" class="btn btn-success"><?php if (isset($evaluacion['id_evaluation'])) {
+					echo 'Actualizar evaluación';
+				} else {
+					echo 'Guardar evaluación';
+				}; ?></button>
 			</div>
 		</div>
 	</div> 

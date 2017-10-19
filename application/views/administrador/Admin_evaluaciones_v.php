@@ -8,9 +8,8 @@
 <div class="container-fluid">
 	<div class="form-group col-md-12 col-xs-12">
 		<h2>Administrador de evaluaciones</h2>
-		<div>
-			<button onclick="agregar_evaluacion()" type="button" class="btn btn-success">Agregar nueva evaluación</button>
-		</div>
+		Agregar nueva evaluación  <a href="<?php echo base_url(); ?>Admin_evaluation_c/nueva_evaluacion/"><span class="glyphicon glyphicon-plus "></span></a>
+		<br />
 		<br />
 		 <div class="form-group col-md-6 col-xs-12">
 		 	<select onchange="cargar_subtema()" class="form-control" id ="tema">
