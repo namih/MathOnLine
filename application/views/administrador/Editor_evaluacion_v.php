@@ -108,3 +108,20 @@
 		</div>
 	</div> 
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="notifications">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div id="modal_header" class="modal-header">
+        
+      </div>
+      <div id="modal_body" class="modal-body">
+        
+      </div>
+      <div id="modal_footer" class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>

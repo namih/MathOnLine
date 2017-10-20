@@ -399,7 +399,10 @@ function guardar_evaluacion(id_evaluacion) {
 		};
 	}
 	
-	if (id_evaluacion==0) {
+	console.log(subtema);
+	
+	if (global_question!='' && global_correct_answer!='' && global_distractor_a!='' && global_distractor_b!='' && global_distractor_c!='' && subtema!=0	) {
+		if (id_evaluacion==0) {
 		$.ajax({
 			type: 'POST',
 			url: url_save,
@@ -408,7 +411,11 @@ function guardar_evaluacion(id_evaluacion) {
 			processData: false,
 			data : formData,
 			success: function(result){
-				console.log('El resultado es '+result);
+				document.getElementById('modal_header').innerHTML = '<h4 class="modal-title">Guardada <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span></h4>';
+				document.getElementById('modal_body').innerHTML = '<p>La evaluación a sido registrada satisfactoreamente.</p>';
+				document.getElementById('modal_footer').innerHTML = '<button onclick="location.href="www.google.com.mx"" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
+				
+				$("#notifications").modal();
 			},
 			error: function(err){
 				console.log('El error es '+err);
@@ -424,15 +431,24 @@ function guardar_evaluacion(id_evaluacion) {
 			processData: false,
 			data : formData,
 			success: function(result){
-				console.log('El resultado es '+result);
+				document.getElementById('modal_header').innerHTML = '<h4 class="modal-title">Actualizada <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></h4>';
+				document.getElementById('modal_body').innerHTML = '<p>La evaluación a sido actualizada satisfactoreamente.</p>';
+				document.getElementById('modal_footer').innerHTML = '<button onclick="location.href="www.google.com.mx"" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
+				
+				$("#notifications").modal();
 			},
 			error: function(err){
 				console.log('El error es '+err);
 			}
 		});	
 	};
-	
-	
-	
+		
+	} else{
+		document.getElementById('modal_header').innerHTML = '<h5 class="modal-title">Error <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></h5>';
+		document.getElementById('modal_body').innerHTML = '<p>Verifique que la evaluación este debidamente construida.</p>';
+		document.getElementById('modal_footer').innerHTML = '<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>';
+		
+		$("#notifications").modal();
+	};
 	
 }
