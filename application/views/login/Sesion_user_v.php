@@ -13,7 +13,7 @@
                   <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
                 </div>
                 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-                  <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px;"> 595 puntos</label></div>
+                  <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e;"> 595 puntos</label></div>
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="progress progress-striped active">
                       <div class="progress-bar" role="progressbar"
@@ -88,7 +88,7 @@
                     <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
                   </div>
                   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px;"> 595 puntos</label></div>
+                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> 595 puntos</label></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                       <div class="progress progress-striped active">
                         <div class="progress-bar" role="progressbar"
@@ -135,3 +135,28 @@
       });
     </script>
   </div><!-- cierra el div #user_main_content que inicia despues del menú-->
+
+  <!--
+  <div class="container">
+      <div class="progress">
+         <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+            40% (success)
+         </div>
+      </div>
+      <div class="progress">
+         <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+            20% (info)
+         </div>
+      </div>
+      <div class="progress">
+         <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+            60% (warning)
+         </div>
+      </div>
+      <div class="progress">
+         <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+            80% (danger)
+         </div>
+      </div>
+   </div>
+   -->
