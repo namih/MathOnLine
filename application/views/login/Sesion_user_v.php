@@ -1,18 +1,19 @@
-    <?php //echo "<pre>"; print_r($temas);  // echo '<pre>'; print_r($user_log); print_r($temas); ?>
+    <?php /*echo "<pre>"; print_r($temas);  */ //echo '<pre>'; print_r($user_log); //print_r($temas); ?>
     <div id="menu_tutoriales">
+      <?php $vowels = array("á", "é", "í", "ó", "ú"); $vowel_up = array("Á", "É", "Í", "Ó", "Ú"); ?>
       <div class="col-md-12">
           <div class="col-xs-12 visible-xs">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
-              <center><h1>BIENVENIDO</h1></center>
-              <div >
-                <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
+              <center><h1>BIENVENIDO <?php echo  str_replace($vowels, $vowel_up, strtoupper($user_log[0]['user_name'])); ?></h1></center>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/><br>
               </div><br>
-              <div>
-                <h1><?php echo $user_log[0]['user_name']; ?></h1>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1></h1>
               </div>
             </div><!-- avagtar-->
           </div>
-          <div class="col-xs-12 visible-xs">
+          <div class="col-xs-12 visible-xs"><br><br>
             <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; "><br>
           </div>
           <div class="col-md-8" id="opcion_menu">
@@ -64,16 +65,30 @@
           <div class="col-md-4">
             <div class="col-md-12 hidden-xs">
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
-                <center><h1>BIENVENIDO</h1></center>
-                <div >
-                  <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/>
+                <center><h1>BIENVENIDO <?php echo  str_replace($vowels, $vowel_up, strtoupper($user_log[0]['user_name'])); ?></h1></center>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <img class="img-responsive" src="<?php echo base_url().$user_log[0]['location']; ?>"/><br>
                 </div><br>
-                <div>
-                  <h1><?php echo $user_log[0]['user_name']; ?></h1>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
+                  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                    <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
+                  </div>
+                  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px;"> 595 puntos</label></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="progress progress-striped active">
+                        <div class="progress-bar" role="progressbar"
+                             aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                             style="width: 85%">
+                          <span class="sr-only">85% completado</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div><!-- avagtar-->
             </div>
-            <div class="col-md-12 hidden-xs">
+            <div class="col-md-12 hidden-xs"><br><br>
               <hr style="height: 2px; border: 0; color: #666; background-color: #008c00; margin-top: 0px !important;  margin-bottom: 0px !important; "><br>
             </div>
             <div class="col-md-12">
