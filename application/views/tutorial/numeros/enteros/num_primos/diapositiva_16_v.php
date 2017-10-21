@@ -7,7 +7,7 @@
 		<p>Primero encontramos dos factores del número, por ejemplo 9 y 10: </p>
 		<p>Escribe en los espacios: </p>
 					<label>90</label><br/>
-					<label>/ \</label><br/>
+					<label><h1>/ \</h1></label><br/>
 		<input type="text"  id="1" value=""/>
 		<input type="text"  id="2" value=""/>
 	</div>

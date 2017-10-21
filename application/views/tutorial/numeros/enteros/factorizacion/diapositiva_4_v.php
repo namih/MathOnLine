@@ -1,13 +1,13 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_4.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
+<div class="container">
 	<div>
 		<p> Encuentra todos los diferentes rectángulos con un área de 10 unidades cuadradas. Completa la tabla con las medidas.</p>
 	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 10.</p>
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />
-	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Create Table" />
+	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Crear tabla" />
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	

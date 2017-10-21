@@ -8,7 +8,7 @@
 	<br/><br/>
 	<div id="seccion" >
 		<section>
-			<div class="tablaDiv" id="resaltar">1</div>
+			<div class="tablaDiv">1</div>
 			<div class="tablaDiv">2</div>
 			<div class="tablaDiv">3</div>
 			<div class="tablaDiv" id="resaltar">4</div>

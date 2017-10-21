@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p> Encuentra 6 diferentes rectángulos con un área de 12 unidades cuadradas. Completa la tabla con las medidas.</p>
 	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 12.</p>

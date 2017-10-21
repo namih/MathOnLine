@@ -6,7 +6,7 @@
 	</div>	
 	<div   class="col-xs-12  col-xs-12" id="tab">
 		
-		 <table class="table table-striped table-bordered table-condensed table-responsive" id="myTable">
+		 <table class="table table-striped table-bordered table-condensed table-responsive" style="width:50%; margin:0 auto;" id="myTable">
             <thead>
                 <tr class="success">
                     <th>Número</th>
@@ -18,142 +18,142 @@
             <tbody>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="1" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2"  type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2"  type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value=""/>
+            			<input class="input-sm2"  type="checkbox" id="base1" value=""/>
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="2" readonly=""/>
+            			<input  class="input-sm2" type="text" id="base1" value="2" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value=""/>
+            			<input class="input-sm2" type="checkbox" id="base1" value=""/>
             		</td>
             	</tr>
             		<tr>
             		<td>
-            			<input type="text" id="base1" value="3" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="3" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="4" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="4" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             		<tr>
             		<td>
-            			<input type="text" id="base1" value="5" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="5" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="6" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="6" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             		<tr>
             		<td>
-            			<input type="text" id="base1" value="7" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="7" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="8" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="8" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             		<tr>
             		<td>
-            			<input type="text" id="base1" value="9" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="9" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" />
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="10" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="10" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="" />
+            			<input class="input-sm2" type="text" id="altura1" value="" />
             		</td>
             		<td>
-            			<input type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input class="input-sm2" type="text" id="area1"  value="" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
             		</td>
             		<td>
-            			<input type="text" id="base1" value="" />
+            			<input class="input-sm2" type="checkbox" id="base1" value="" />
             		</td>
             	</tr>
             </tbody>

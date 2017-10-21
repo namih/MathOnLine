@@ -27,7 +27,7 @@ table td{
 	width: 70px;
 	height: 30px;
 }
-.radioS{
+/*.radioS{
 	left: -160px;
 	position:relative;
 }
@@ -35,7 +35,7 @@ table td{
 .radio{
 	left: -250px;
 	position:relative;
-}
+}*/
 /*[type="checkbox"] + label {
   display: block;
   position: relative;
@@ -58,7 +58,10 @@ p{
 	text-align: justify;
 }
 
-
+.input-sm2{
+	width: 100%;
+	
+}
 
 
 

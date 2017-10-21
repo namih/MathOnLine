@@ -1,5 +1,11 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
+<script>
+	function color() {
+		//alert("hii");
+		 document.getElementById("1").style.background="blue";
+	}
+</script>
 <div class="panel-body">
 	<div>
 		<p>A continuación se muestran los enteros del 1 al 50. Vamos a marcar (dar clic) todos los números que son primos:</p>
@@ -8,7 +14,7 @@
 	<br/><br/>
 	<div id="seccion" >
 		<section>
-			<div class="tablaDiv">1</div>
+			<div class="tablaDiv" id="1" onclick="color()">1</div>
 			<div class="tablaDiv">2</div>
 			<div class="tablaDiv">3</div>
 			<div class="tablaDiv">4</div>
