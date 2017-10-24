@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p>Usa el método anterior <b>(la coladera de Eratóstenes)</b> para encontrar todos los números primos desde 51 hasta 100.</p>
 	 	

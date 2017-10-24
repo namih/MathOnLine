@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_3.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
+<!-- <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css"> -->
 <div class="panel-body">
 	<div class="panel-body" >
 		<p>

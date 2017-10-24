@@ -6,7 +6,7 @@
 		 document.getElementById("1").style.background="blue";
 	}
 </script>
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p>A continuación se muestran los enteros del 1 al 50. Vamos a marcar (dar clic) todos los números que son primos:</p>
 	 	

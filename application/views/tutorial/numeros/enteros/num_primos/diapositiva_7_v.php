@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p>Esto te debió haber quedado:</p>
 	 	
@@ -77,9 +77,9 @@
 	<p>¿Qué notas acerca del digito de las unidades de estos números?</p>
 	<p>En qué números terminan todos excepto el 2 y el 5?</p>
 	<br /><br /><br />
-	<input type="text" id="1" value="" />
-	<input type="text" id="2" value="" />
-	<input type="text" id="3" value="" />
-	<input type="text" id="4" value="" />
+	<input class="input-sm" type="text" id="1" value="" />
+	<input class="input-sm" type="text" id="2" value="" />
+	<input class="input-sm" type="text" id="3" value="" />
+	<input class="input-sm" type="text" id="4" value="" />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
 </div>

@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div id="seccion" >
 		<section>
 			<div class="tablaDiv" id="resaltar">1</div>
@@ -69,6 +69,6 @@
 	</div>
 	<p>¿Cuántos números primos impares hay, menores que 50?</p>
 	<br /><br /><br />
-	<input type="text" id="1" value="" />
+	<input class="input-sm" type="text" id="1" value="" />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
 </div>
