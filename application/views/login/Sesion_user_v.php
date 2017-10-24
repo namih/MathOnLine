@@ -1,6 +1,24 @@
     <?php /*echo "<pre>"; print_r($temas);  */ //echo '<pre>'; print_r($user_log); //print_r($temas); ?>
     <div id="menu_tutoriales">
-      <?php $vowels = array("á", "é", "í", "ó", "ú"); $vowel_up = array("Á", "É", "Í", "Ó", "Ú"); ?>
+      <?php $vowels = array("á", "é", "í", "ó", "ú"); $vowel_up = array("Á", "É", "Í", "Ó", "Ú"); 
+        if($user_log[0]['total_score']<=200){
+          $barra='warning';
+          $avance=$user_log[0]['total_score']/2;
+        }else{
+          if($user_log[0]['total_score']<=400){
+            $barra='success';
+            $avance=($user_log[0]['total_score']-200)/2;
+          }else{
+            if($user_log[0]['total_score']<=600){
+              $barra='';
+              $avance=($user_log[0]['total_score']-400)/2;
+            }else{
+              $barra='danger';
+              $avance=100;
+            }
+          }
+        }
+      ?>
       <div class="col-md-12">
           <div class="col-xs-12 visible-xs">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="avatar" align="center"><!-- avagtar -->
@@ -10,20 +28,17 @@
               </div><br>
               <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                  <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
+                  <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.jpg" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
                 </div>
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-                  <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e;"> 595 puntos</label></div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="progress progress-striped active">
-                      <div class="progress-bar" role="progressbar"
-                           aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                           style="width: 85%">
-                        <span class="sr-only">85% completado</span>
+                  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> <?php echo $user_log[0]['total_score']; ?> puntos</label></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <div class="progress">
+                         <div class="progress-bar progress-bar-<?php echo $barra ?> progress-bar-striped active" role="progressbar" aria-valuenow="<?php echo $user_log[0]['total_score']; ?>" aria-valuemin="0" aria-valuemax="200" style="width:<?php echo $avance; ?>%">
+                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div><!-- avagtar-->
           </div>
@@ -85,17 +100,14 @@
                 </div><br>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                   <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                    <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_II.jpg" alt="Liga II" title="Liga II" align="absmiddle">
+                    <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.jpg" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
                   </div>
                   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> 595 puntos</label></div>
+                    <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> <?php echo $user_log[0]['total_score']; ?> puntos</label></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                      <div class="progress progress-striped active">
-                        <div class="progress-bar" role="progressbar"
-                             aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                             style="width: 85%">
-                          <span class="sr-only">85% completado</span>
-                        </div>
+                      <div class="progress">
+                         <div class="progress-bar progress-bar-<?php echo $barra ?> progress-bar-striped active" role="progressbar" aria-valuenow="<?php echo $user_log[0]['total_score']; ?>" aria-valuemin="0" aria-valuemax="200" style="width:<?php echo $avance; ?>%">
+                         </div>
                       </div>
                     </div>
                   </div>
@@ -136,7 +148,7 @@
     </script>
   </div><!-- cierra el div #user_main_content que inicia despues del menú-->
 
-  <!--
+ <!-- 
   <div class="container">
       <div class="progress">
          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
@@ -154,7 +166,7 @@
          </div>
       </div>
       <div class="progress">
-         <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+         <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
             80% (danger)
          </div>
       </div>
