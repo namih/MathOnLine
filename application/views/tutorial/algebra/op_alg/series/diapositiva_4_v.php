@@ -1,6 +1,4 @@
- <script src="<?php echo base_url(); ?>statics/js/tutorial//diapositiva_1.js"></script>
- <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p>Dados dos términos cualesquiera de una sucesión aritmética y su ubicación, es posible encontrar el primer término y la diferencia común.</p>
 		<p>Ejemplo:</p>
@@ -11,5 +9,4 @@
 		<p>d = 6</p>
 	</div>
   </div>		
-</div>
 
