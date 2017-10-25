@@ -3,6 +3,7 @@
 	var ia = 1;
 	var ib = 1;
 	var ic = 1;
+	var id = 1;
 	
 	function validar() {
 		var numerador = document.getElementById('numerador').value;
@@ -10,7 +11,7 @@
 		console.log(numerador);
 		console.log(denominador);
 		if (numerador != "" && denominador != "") {
-			if (numerador == 3 && denominador == 4) {
+			if (numerador == 4 && denominador == 6) {
 				$('#correcta').show();
 				$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
 					$("#correcta").slideUp(500);
@@ -25,7 +26,6 @@
 	}
 	
 	function incrementar_a () {
-		console.log(ia);
 		switch (ia) {
 			case 1:
 				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
@@ -76,7 +76,6 @@
 	}
 	
 	function disminuir_a () {
-		console.log(ia);
 		switch (ia) {
 			case 10:
 				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
@@ -127,7 +126,6 @@
 	}
 	
 	function incrementar_b () {
-		console.log(ib);
 		switch (ib) {
 			case 1:
 				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
@@ -178,7 +176,6 @@
 	}
 	
 	function disminuir_b () {
-		console.log(ib);
 		switch (ib) {
 			case 10:
 				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
@@ -229,7 +226,6 @@
 	}
 	
 	function incrementar_c () {
-		console.log(ic);
 		switch (ic) {
 			case 1:
 				document.getElementById("baguette_c").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
@@ -280,7 +276,6 @@
 	}
 	
 	function disminuir_c () {
-		console.log(ic);
 		switch (ic) {
 			case 10:
 				document.getElementById("baguette_c").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
@@ -329,15 +324,115 @@
 				break;
 		}
 	}
+	
+	function incrementar_d () {
+		switch (id) {
+			case 1:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+				document.getElementById("valor_d").innerHTML = "2";
+				id++;
+				break;
+			case 2:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+				document.getElementById("valor_d").innerHTML = "3";
+				id++;
+				break;
+			case 3:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+				document.getElementById("valor_d").innerHTML = "4";
+				id++;
+				break;
+			case 4:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+				document.getElementById("valor_d").innerHTML = "5";
+				id++;
+				break;
+			case 5:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+				document.getElementById("valor_d").innerHTML = "6";
+				id++;
+				break;
+			case 6:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+				document.getElementById("valor_d").innerHTML = "7";
+				id++;
+				break;
+			case 7:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+				document.getElementById("valor_d").innerHTML = "8";
+				id++;
+				break;
+			case 8:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+				document.getElementById("valor_d").innerHTML = "9";
+				id++;
+				break;
+			case 9:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10.png";
+				document.getElementById("valor_d").innerHTML = "10";
+				id++;
+				break;
+		}
+	}
+	
+	function disminuir_d () {
+		switch (id) {
+			case 10:
+				document.getElementById("baguette_d").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+				document.getElementById("valor_d").innerHTML = "9";
+				id--;
+				break;
+			case 9:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+				document.getElementById("valor_d").innerHTML = "8";
+				id--;
+				break;
+			case 8:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+				document.getElementById("valor_d").innerHTML = "7";
+				id--;
+				break;
+			case 7:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+				document.getElementById("valor_d").innerHTML = "6";
+				id--;
+				break;
+			case 6:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+				document.getElementById("valor_d").innerHTML = "5";
+				id--;
+				break;
+			case 5:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+				document.getElementById("valor_d").innerHTML = "4";
+				id--;
+				break;
+			case 4:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+				document.getElementById("valor_d").innerHTML = "3";
+				id--;
+				break;
+			case 3:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+				document.getElementById("valor_d").innerHTML = "2";
+				id--;
+				break;
+			case 2:
+				document.getElementById("baguette_d").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png";
+				document.getElementById("valor_d").innerHTML = "1";
+				id--;
+				break;
+		}
+	}
 </script>
 
 <div class="container-fluid">
-	<p align="justify">Equipo 2</p>
+	<p align="justify">Equipo 4</p>
 	<p align="justify">Utiliza las flechas para dividir la baguette entre el número de partes iguales que creas necesarias. Después, escribe la fracción correspondiente que le toca a cada uno.</p>
 	<p align="justify">Todos deben recibir la misma cantidad.</p>
 	<br>
 	<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
-		<div style="margin-bottom: 20px" class="col-xs-4 col-sm-4 col-lg-4">
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 			<div class="btn-group" id="opciones">
 				<button onclick="disminuir_a()" type="button" class="btn btn-info"><</button>
 				<button id="valor_a" type="button" class="btn">1</button>
@@ -347,7 +442,7 @@
 			<br />
 			<img id="baguette_a" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png" />
 		</div>
-		<div style="margin-bottom: 20px" class="col-xs-4 col-sm-4 col-lg-4">
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 			<div class="btn-group" id="opciones">
 				<button onclick="disminuir_b()" type="button" class="btn btn-warning"><</button>
 				<button id="valor_b" type="button" class="btn">1</button>
@@ -357,7 +452,7 @@
 			<br />
 			<img id="baguette_b" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png" />
 		</div>
-		<div style="margin-bottom: 20px" class="col-xs-4 col-sm-4 col-lg-4">
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 			<div class="btn-group" id="opciones">
 				<button onclick="disminuir_c()" type="button" class="btn btn-danger"><</button>
 				<button id="valor_c" type="button" class="btn">1</button>
@@ -367,10 +462,22 @@
 			<br />
 			<img id="baguette_c" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png" />
 		</div>
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
+			<div class="btn-group" id="opciones">
+				<button onclick="disminuir_d()" type="button" class="btn btn-success"><</button>
+				<button id="valor_d" type="button" class="btn">1</button>
+				<button onclick="incrementar_d()" type="button" class="btn btn-success">></button>
+			</div>
+			<br />
+			<br />
+			<img id="baguette_d" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png" />
+		</div>
 		<div class="col-xs-12 col-sm-12 col-lg-12">
 			<table>
 				<tbody>
 					<tr>
+						<td align="center"><img width="10%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/circulo.png" /></td>
+						<td align="center"><img width="10%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/circulo.png" /></td>
 						<td align="center"><img width="10%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/circulo.png" /></td>
 						<td align="center"><img width="10%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/circulo.png" /></td>
 						<td align="center"><img width="10%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/circulo.png" /></td>
