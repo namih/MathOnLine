@@ -84,12 +84,12 @@
 	<div>
 		<p> Escribe cada uno de los diferentes números que anotaste en las columnas de la tabla (sin repetir).</p>
 		<br />
-		<input type="text"  id="1"/>
-		<input type="text"  id="2"/>
-		<input type="text"  id="3"/>
-		<input type="text"  id="4"/>
-		<input type="text"  id="5"/>
-		<input type="text"  id="6"/>
+		<input class"input-sm2" type="text"  id="1"/>
+		<input class"input-sm2" type="text"  id="2"/>
+		<input class"input-sm2" type="text"  id="3"/>
+		<input class"input-sm2" type="text"  id="4"/>
+		<input class"input-sm2" type="text"  id="5"/>
+		<input class"input-sm2" type="text"  id="6"/>
 	</div>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />

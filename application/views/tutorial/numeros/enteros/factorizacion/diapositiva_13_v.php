@@ -1,6 +1,6 @@
  <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
  <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p> Observa que todo número entero puede ser expresado como un producto de dos números enteros, incluyendo el 1 y el número. Por ejemplo, el 12 se puede expresar como:</p>
 		<!--imagen-->
@@ -9,4 +9,4 @@
 	</div>
 
   </div>		
-</div>
+

@@ -1,11 +1,11 @@
  <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_15.js"></script>
  <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css"> -->
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		¿De cuáles de los siguientes números es factor el 24?</p>
 	</div>
 	
-	<div class="container">
+	<div class="container-fluid">
 	  <form>
 	    <div class="checkbox">
 	      <label><input type="checkbox" value="">1</label>

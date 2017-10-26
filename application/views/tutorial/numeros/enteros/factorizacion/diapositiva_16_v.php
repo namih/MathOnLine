@@ -4,7 +4,7 @@
 	<div>
 		¿De cuáles de los siguientes números es factor el 7?</p>
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 	  <form>
 	    <div class="checkbox">
 	      <label><input type="checkbox" value="">14</label>

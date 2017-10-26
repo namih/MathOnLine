@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_10.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
+<div class="container-fluid">
 	<div>
 		<p> Encuentra 6 diferentes rectángulos con un área de 5 unidades cuadradas. Completa la tabla con las medidas.</p>
 	 	<p>Coloca el número correspondiente en la base y la altura para obtener el área igual a 5.</p>
@@ -24,21 +24,21 @@
             <tbody>
             	<tr>
             		<td>
-            			<input type="text" id="base1" value="1" readonly=""/>
+            			<input class"input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input  type="text" id="altura1" value="5" readonly=""/>
+            			<input class"input-sm2" type="text" id="altura1" value="5" readonly=""/>
             		</td>
             		<td>
-            			<input type="text" id="area1" value="5" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
+            			<input class"input-sm2" type="text" id="area1" value="5" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input type="text" id="base2" />
+            			<input class"input-sm2" type="text" id="base2" />
             		</td>
             		<td>
-            			<input type="text" id="altura2" />
+            			<input class"input-sm2" type="text" id="altura2" />
             		</td>
             		<td>
             			<input type="text" idid="area2" />

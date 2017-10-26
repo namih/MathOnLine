@@ -10,4 +10,4 @@
     <button type="button" class="btn btn-default">NO</button>
   </div>
   </div>		
-</div>
+

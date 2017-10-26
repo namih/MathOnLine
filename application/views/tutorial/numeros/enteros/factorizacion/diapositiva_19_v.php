@@ -10,12 +10,10 @@
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 		<p>Después nos preguntamos: ¿Es el 2 un factor de 18?.</p>
-		<div  class="radioS">
-      			<label><input type="radio" name="optradio">SI</label>
-    	</div>
-    	<div class="radioS">
-      			<label><input type="radio" name="optradio">NO</label>
-    	</div>
+		 <div class="btn-group-vertical" align="left">
+		    <button type="button" class="btn btn-default">SI</button>
+		    <button type="button" class="btn btn-default">NO</button>
+  		</div>
 	</div>	
 	<div   class="col-md-4  col-xs-6" id="tab" align="center">
 		
