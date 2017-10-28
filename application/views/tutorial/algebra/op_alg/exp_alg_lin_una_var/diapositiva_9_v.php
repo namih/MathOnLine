@@ -5,6 +5,6 @@
 		<p>n + 2</p>
 		<p>n + 1 + 1 = n + 2.</p>
 		<br />
-		<img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_8.png" align="center"/>
+		<img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_8.png" align="center"/>
 	</div>
   </div>

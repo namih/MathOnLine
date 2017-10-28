@@ -15,7 +15,7 @@
 		  	</table>
 		</form>
 		<br />
-		<img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_18.png" align="center"/>
+		<img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_18.png" align="center"/>
 		<br />
 		<br /><input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		<div id="correcta" style="display: none" class="alert alert-success">

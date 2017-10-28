@@ -4,6 +4,6 @@
 		<p>n + n + n + 1</p>
 		<p>Esto también puede expresarse como 3n + 1 ya que 3n significa 3 por n o tres veces n.</p>
 		<p>n + n + n + 1 = 3n + 1</p>
-		<img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_20.png" align="center"/>
+		<img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_una_var/diapositiva_20.png" align="center"/>
 	</div>
   </div>

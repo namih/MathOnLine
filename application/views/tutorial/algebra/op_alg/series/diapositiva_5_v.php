@@ -3,7 +3,7 @@
 	<div>
 		<p>Encuentra el primer término a y la diferencia común d para los siguientes casos:</p>
 		<p>Si el término 3 es 20 y el término 12 es 56,</p>
-		<p>el primer término a es <input type="text" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" />, y la diferencia común d es <input type="text" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" />.</p>
+		<p>el primer término a es <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" />, y la diferencia común d es <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" />.</p>
 		<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
 		</div>
