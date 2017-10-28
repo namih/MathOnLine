@@ -27,6 +27,13 @@
 			$this->load->view('footer/footer_v');
 		}
 		
+		public function js_geogebra()
+		{
+			$this->load->view('header/head_v');
+			$this->load->view('js_geogebra_v');
+			$this->load->view('footer/footer_v');
+		}
+		
 		
 		public function blog()
 		{
