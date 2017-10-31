@@ -15,6 +15,7 @@ function enviar_contacto() {
 	       	data: {datos:datos},
 	       	type: 'POST',
 	       	success: function(data){
+	       		$("#contacto").modal("hide");
 	       		alert(data);
 		    },
 		    error: function(jqXHR, textStatus, errorThrown,data){
@@ -37,12 +38,11 @@ function enviar_contacto() {
 	            }	    
 	    });
 	  	
-	  	
 	  } else{
 	  	alert("XD");
 	  };
   } else{
-  	alert("XD");
+  	alert("No");
   };
 }
 
