@@ -180,12 +180,56 @@
 		 */
 		public function actualiza_escore($update)
 		{
+			echo $update['total_score'];
 			if ($update!=NULL) {
 				$this->db->WHERE('id_user', $update['id_user']);
 				$this->db->SET('total_score', 'total_score +' .	(string)$update['total_score'], FALSE);
 				$this->db->UPDATE('user');
 				if($this->db->affected_rows() > 0) {
+					$this->actualizar_liga($update);
 					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		}
+		
+		/**
+		 * Actualiza la liga del usuario de ser necesario
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return Array lista de los temas activos
+		 * @param Int Identificador del tema
+		 * @version 1.0
+		 */
+		public function actualizar_liga($update_liga)
+		{
+			if ($update_liga != NULL) {
+				$score = $this->db->SELECT('total_score')->FROM('user')->WHERE('id_user', $update_liga['id_user'])->GET();
+				if ($score->num_rows() === 1) {
+					$data = $score->row_array();
+					if ($data['total_score']<=200) {
+						$this->db->WHERE('id_user', $update_liga['id_user']);
+						$this->db->SET('league', 4, FALSE);
+						$this->db->UPDATE('user');
+					}
+					if ($data['total_score'] >= 201 && $data['total_score']<=400) {
+						$this->db->WHERE('id_user', $update_liga['id_user']);
+						$this->db->SET('league', 3, FALSE);
+						$this->db->UPDATE('user');
+					}
+					if ($data['total_score'] >= 401 && $data['total_score']<=600) {
+						$this->db->WHERE('id_user', $update_liga['id_user']);
+						$this->db->SET('league', 2, FALSE);
+						$this->db->UPDATE('user');
+					}
+					if ($data['total_score'] >= 601 ) {
+						$this->db->WHERE('id_user', $update_liga['id_user']);
+						$this->db->SET('league', 1, FALSE);
+						$this->db->UPDATE('user');
+					}
 				} else {
 					return FALSE;
 				}
@@ -234,12 +278,12 @@
 				$this->db->where('id_evaluation', $evaluacion['id_evaluation']);
 				$this->db->update('evaluation', $evaluacion); 
 				if ($this->db->affected_rows() === 1) {
-					return 'TRUE';
+					return TRUE;
 				} else {
-					return 'FALSE';
+					return FALSE;
 				}
 			} else {
-				return 'NULL';
+				return NULL;
 			}
 		 }
 		 

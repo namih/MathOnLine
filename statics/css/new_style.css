@@ -48,7 +48,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+	table {
+		overflow-x: auto;
+		display: block;
+	}	
 }
 
 /* Custom, iPhone Retina */
