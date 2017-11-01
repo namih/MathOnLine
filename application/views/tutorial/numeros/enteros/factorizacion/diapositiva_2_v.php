@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_2.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="container-fluid">
 	<div>
@@ -7,12 +7,11 @@
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />
-	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Create Table" />
+	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Crear tabla" />
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	
 	<div   class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
-		
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">
             <thead>
                 <tr class="success">
@@ -30,7 +29,7 @@
             			<input class="input-sm2" type="text" id="altura1" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text" id="area1" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')"/>
+            			<input class="input-sm2" type="text" id="area1" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -41,7 +40,7 @@
             			<input class="input-sm2" type="text" id="altura2" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text" idid="area2" />
+            			<input class="input-sm2" type="text" id="area2" readonly/>
             		</td>
             	</tr>
             	<tr>
@@ -52,7 +51,7 @@
             			<input class="input-sm2" type="text" id="altura3" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text"  id="area3"/>
+            			<input class="input-sm2" type="text"  id="area3" readonly/>
             		</td>
             	</tr>
             	<tr>
@@ -63,7 +62,7 @@
             			<input class="input-sm2" type="text" id="altura4" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text"  id="area4"/>
+            			<input class="input-sm2" type="text"  id="area4" readonly/>
             		</td>
             	</tr>
             	<tr>
@@ -74,7 +73,7 @@
             			<input class="input-sm2" type="text" id="altura5" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text"  id="area5"/>
+            			<input class="input-sm2" type="text"  id="area5" readonly/>
             		</td>
             	</tr>
             	<tr>
@@ -85,7 +84,7 @@
             			<input class="input-sm2" type="text" id="altura6" />
             		</td>
             		<td>
-            			<input class="input-sm2" type="text"  id="area6"/>
+            			<input class="input-sm2" type="text"  id="area6" readonly/>
             		</td>
             	</tr>
             </tbody>
@@ -93,4 +92,10 @@
 	</div>
 	<br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div>
 </div>

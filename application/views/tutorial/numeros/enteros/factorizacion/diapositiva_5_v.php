@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_5.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_5.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
 <div class="container-fluid">
 	<div   class="col-md-12  col-xs-12" id="tab" align="center">
@@ -13,25 +13,47 @@
             </thead>
             <tbody>
             	<tr>
-            		<td>
-            			1
+            		<td class="modif">
+            			<b>10</b>
             		</td>
-            		<td>
-            			5
+            		<td class="modif">
+            			<b>1</b>
             		</td>
-            		<td>
-            			5
+            		<td class="modif">
+            			<b>10</b>
             		</td>
             	</tr>
             	<tr>
-            		<td>
-            			5
+            		<td class="modif">
+            			<b>5</b>
             		</td>
-            		<td>
-            			1
+            		<td class="modif">
+            			<b>2</b>
             		</td>
-            		<td>
-            			5
+            		<td class="modif">
+            			<b>10</b>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<b>2</b>
+            		</td>
+            		<td class="modif">
+            			<b>5</b>
+            		</td>
+            		<td class="modif">
+            			<b>10</b>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<b>1</b>
+            		</td>
+            		<td class="modif">
+            			<b>10</b>
+            		</td>
+            		<td class="modif">
+            			<b>10</b>
             		</td>
             	</tr>
             </tbody>

@@ -11,6 +11,5 @@
 	<input class="input-sm"  type="text"  id="3" value=""/>
 	<input class="input-sm"  type="text"  id="4" value=""/>
 	<input class="input-sm"  type="text"  id="5" value=""/>
-  </div>		
-  <input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />  
 </div>

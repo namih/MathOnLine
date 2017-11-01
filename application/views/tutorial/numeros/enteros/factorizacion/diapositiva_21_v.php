@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_10.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
-	<div   class="col-md-6  col-xs-12" id="box" align="center">
+<div class="container-fluid">
+	<div   class="col-md-12  col-xs-12" id="box" align="center">
 		<p>Después nos preguntamos:¿Es el 3 un factor de 18?.</p>
 		<div  class="radioS">
       			<label><input type="radio" name="optradio">SI</label>

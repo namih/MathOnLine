@@ -2,7 +2,7 @@
  * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
  */
 function verificar(){
-	var numeros = [1,3,5,15];
+	var numeros = [1,2,5,10];
 	alert(numeros);
 	var num1= new Number($("#1").val());
 	var num2= new Number($("#2").val());

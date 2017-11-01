@@ -1,32 +1,16 @@
-div#MainContent{
-	min-height: 870px;
-}
-.titEntrenador{
-	margin-top: 75px;
-}
-.tema_mes{
-	min-height: 400px; max-height: 400px; overflow-y:auto; margin-bottom: 50px;
-}
-.tema_footer{
-	min-height: 300px; max-height: 300px; overflow-y:auto;
-}
 
 
-table{
+/*table{
 		width:50px;
 		height:50px;
-}
+}*/
 table td{
 		background-color:#0d9b1c;
 		padding:10px;
 		margin:10px;
 		border:1px solid #ccc;
 }
-.checkbox{
-	left: -250px;
-	width: 70px;
-	height: 30px;
-}
+
 /*.radioS{
 	left: -160px;
 	position:relative;
@@ -63,6 +47,10 @@ p{
 	
 }
 
+.modif{
+	text-align: center;
+	color: white;
+}
 
 
 
