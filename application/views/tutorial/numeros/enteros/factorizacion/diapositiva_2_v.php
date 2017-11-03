@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_2.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<div>
 		<p> Encuentra 6 diferentes rectángulos con un área de 12 unidades cuadradas. Completa la tabla con las medidas.</p>
@@ -12,7 +12,7 @@
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	
 	<div   class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
-		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">
+		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
             <thead>
                 <tr class="success">
                     <th>BASE</th>
@@ -22,68 +22,68 @@
             </thead>
             <tbody>
             	<tr>
-            		<td>
-            			<input class"input-sm2" type="text" id="base1" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base1" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura1" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="area1" readonly=""/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="base2" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura2" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="area2" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base3"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura3" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area3" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base4"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura4" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area4" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base5"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura5" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area5" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base6"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura6" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area6" readonly/>
             		</td>
             	</tr>
@@ -91,7 +91,7 @@
         </table>
 	</div>
 	<br /><br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

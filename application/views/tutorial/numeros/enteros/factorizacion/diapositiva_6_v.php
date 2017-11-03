@@ -1,5 +1,5 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_6.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_6.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<div>
 		<p> Encuentra 6 diferentes rectángulos con un área de 8 unidades cuadradas. Completa la tabla con las medidas.</p>
@@ -7,13 +7,13 @@
 	</div>
 	Base : <input type="text" id="columncount" />
 	Altura : <input type="text" id="rowcount" />
-	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Create Table" />
+	<input type="button"  class="btn btn-success btn-sm" onclick="createTable();" value="Crear tabla" />
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	
-	<div   class="col-md-6  col-xs-12" id="tab" align="center">
+	<div   class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		
-		 <table class="table table-striped table-bordered table-condensed table-responsive" id="myTable" style="width:20%; margin:0 auto;">
+		 <table class="table table-striped table-bordered table-condensed " id="myTable" style="width:50%; margin:0 auto;">
             <thead>
                 <tr class="success">
                     <th>BASE</th>
@@ -24,51 +24,57 @@
             <tbody>
             	<tr>
             		<td>
-            			<input class"input-sm2" type="text" id="base1" value="1" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td>
-            			<input class"input-sm2" type="text" id="altura1" value="8" readonly=""/>
+            			<input class="input-sm2" type="text" id="altura1" value="8" readonly=""/>
             		</td>
             		<td>
-            			<input class"input-sm2" type="text" id="area1" value="8" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input class"input-sm2" type="text" id="base2" />
-            		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="altura2" />
-            		</td>
-            		<td>
-            			<input class"input-sm2" type="text" idid="area2" />
+            			<input class="input-sm2" type="text" id="area1" readonly/>
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input class"input-sm2" type="text"  id="base3"/>
+            			<input class="input-sm2" type="text" id="base2" />
             		</td>
             		<td>
-            			<input class"input-sm2" type="text" id="altura3" />
+            			<input class="input-sm2" type="text" id="altura2" />
             		</td>
             		<td>
-            			<input class"input-sm2" type="text"  id="area3"/>
+            			<input class="input-sm2" type="text" id="area2" />
             		</td>
             	</tr>
             	<tr>
             		<td>
-            			<input class"input-sm2" type="text"  id="base4"/>
+            			<input class="input-sm2" type="text"  id="base3"/>
             		</td>
             		<td>
-            			<input class"input-sm2" type="text" id="altura4" />
+            			<input class="input-sm2" type="text" id="altura3" />
             		</td>
             		<td>
-            			<input class"input-sm2" type="text"  id="area4"/>
+            			<input class="input-sm2" type="text"  id="area3"/>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td>
+            			<input class="input-sm2" type="text"  id="base4"/>
+            		</td>
+            		<td>
+            			<input class="input-sm2" type="text" id="altura4" />
+            		</td>
+            		<td>
+            			<input class="input-sm2" type="text"  id="area4"/>
             		</td>
             	</tr>
             </tbody>
         </table>
 	</div>
 	<br /><br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div>
 </div>

@@ -6,7 +6,7 @@ function createTable(){
 
 
 	if (rows ==0 && cols ==0){
-		alert("Favor de colocar la base y altura deseada");
+		error("Favor de colocar la base y altura deseada");
 	}else{
 		if(rows*cols ==12){
 			var tr = [];
@@ -20,11 +20,27 @@ function createTable(){
 			console.log("TTTTT:"+mytable.html());
 			mytable.appendTo("#box");	       
 		}else{
-			alert("Los números ingresados no corresponden al area solicitada.");
+			error("Los números ingresados no corresponden al área solicitada.");
 		}
 	}
 
 }
+
+
+function correcto(texto) {
+		$('#correcta').text(texto);
+		$('#correcta').show();
+		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+		});
+}
+function error(texto) {
+		$('#error').text(texto);
+		$('#error').show();
+		$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+		});
+	}
 
 
 

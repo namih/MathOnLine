@@ -12,8 +12,7 @@ function createTable(){
 		error("Favor de ingresar solo números.");
 	}else{
 		if (rows ==0 && cols ==0){
-			correcto("Favor de colocar la base y altura deseada");
-			//alert("Favor de colocar la base y altura deseada");
+			correcto("Favor de ingresar los datos solicitados.");
 		}else{
 			if(rows*cols ==12){
 				var tr = [];
@@ -24,16 +23,13 @@ function createTable(){
 					}
 	
 				}
-				console.log("TTTTT:"+mytable.html());
+				//console.log("TTTTT:"+mytable.html());
 				mytable.appendTo("#box");	       
 			}else{
-				error("Los números ingresados no corresponden al area solicitada.");
-				//alert("Los números ingresados no corresponden al area solicitada.");
+				error("Los números ingresados no corresponden al área solicitada.");
 			}
 		}
 	}
-	
-
 }
 /*
  * 
@@ -63,7 +59,6 @@ function verificar(){
 	var tamanio_altura = this.eliminateDuplicates(altura);
 
 	if(tamanio_base.length == 6 && tamanio_altura.length == 6 ){
-	    //alert("No se repitieron los datos");
 		for (var i=1; i<7; i++){
 		res	=base[i-1]*altura[i-1];
 		area[i]=res;
@@ -71,21 +66,18 @@ function verificar(){
 		}
 		arr_valida=this.valida_area(area);
 		if(arr_valida.length > 1){
-			//alert("area"+arr_valida);
 			for(var j =1;j<arr_valida.length;j++){
 				var text="area"+arr_valida[j];
-				//alert(text);
 				document.getElementById(text).style.color='red';
 			}
 			error("Favor de repetir el ejercicio.");
 		}else{
 			correcto("El ejercicio se realizo exitosamente.");
-			//alert("El ejercicio se realizo exitosamente.");
+			this.clean_imput();
 		}
-		//alert("area"+aarr_valida);
 	}else{
-		error("Los datos ingresados no se deben de repetir para la base y la altura.");
-		//alert("Los datos ingresados no se deben de repetir para la base y la altura.");
+		
+		error("Validar que los datos ingresados sean correctos.");
 	}
 }
 
@@ -121,7 +113,17 @@ function valida_area(arr_area){
 	return out; 
 }
 
-
+/**
+ * Metodo para limpiar los inputs
+ */
+function clean_imput(){
+	for (var i=1; i < 7; i++) {
+		document.getElementById("base"+i).value="";
+		document.getElementById("altura"+i).value="";
+	  	document.getElementById("area"+i).value="";
+	}
+	 
+}
 
 function correcto(texto) {
 		$('#correcta').text(texto);
