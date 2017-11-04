@@ -9,11 +9,10 @@
 			$this->load->model('Perfil_usuario_m');
 			$this->load->library('encrypt');
 			$this -> load -> model('Registro_usuario_m');
-	
+			$this->load->helper('session_helper');
 	    }
 		public function Perfil_usuario($id_user = null){
 			$login = $this->session->userdata('logged_in');
-	
 	        if($login != null && $login == true){
 			
 				if ($id_user != null){
@@ -38,7 +37,6 @@
 		public function actualizar_perfil()
 		{
 			$login = $this->session->userdata('logged_in');
-
         	if($login != null && $login == true){
 				$registro = $this->input->post('datos');
 				if($registro['password']!=""){
@@ -46,17 +44,17 @@
 					$registro['password']=$encrypted;
 				}
 				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro);
-			
 				
 				if ($id_registro['status']==0) {
 					$this->envio_email($id_registro['id_user'], $id_registro['user_name'], $id_registro['email']);
 					header('Location: ../home_c/logout');
-				} else {
-					print_r($id_registro);
-				}
-    		} else{
+				} 
+    		}
+			else{
             	redirect(base_url());
         	}
+			$data_session = update_session($id_registro);
+			$this->session->set_userdata($data_session);
     	}
 		
 		function envio_email($id_usuario,$usuario,$email){

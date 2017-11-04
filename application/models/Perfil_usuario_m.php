@@ -11,7 +11,7 @@
 		{
 			if ($id_usuario != null){
 				$datos = $this->db
-								->SELECT('user.id_user, user.user_name, user.password, user.type_user, avatar.id_avatar, avatar.location, user.name, user.last_name, user.sex, user.year_birthday, user.email, user.id_degree, user.uam_identifier, user.is_student, user.is_employed, user.registration_date, user.status')
+								->SELECT('user.id_user, user.user_name, user.password, user.type_user, avatar.id_avatar, avatar.location, user.name, user.last_name, user.sex, user.year_birthday, user.email, user.id_degree, user.uam_identifier, user.is_student, user.is_employed, user.registration_date, user.total_score, user.league, user.status')
 								->FROM('user')
 								->JOIN('avatar', 'avatar.id_avatar = user.id_avatar')
 								->WHERE('user.id_user', $id_usuario)
@@ -52,7 +52,9 @@
 							->FROM('user')
 							->WHERE('user.id_user', $usuario['id_user'])
 							->GET()->row();
-								
+							
+				$usuario['type_user']=$user->type_user;
+				$usuario['total_score']=$user->total_score;
 				if($user->email==$usuario['email']){
 					if($usuario['password']==''){
 						$usuario['status']=$user->status;
