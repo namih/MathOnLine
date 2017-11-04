@@ -404,6 +404,61 @@ function acierto(label1) {
 			error();
 		}        
         break;
+    case 53:
+		var var1 = document.getElementById("1").checked;
+		var var2 = document.getElementById("2").checked;
+		var var3 = document.getElementById("3").checked;
+		var var4 = document.getElementById("4").checked;
+		var var5 = document.getElementById("5").checked;
+		if(var2 == true && var4==true){
+			if(var1 == true || var3==true || var5==true)
+				error();
+			else
+				correcto();
+		}
+		else{
+			error();
+		}        
+        break;
+    case 56:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="9" && var2 == "4"){
+			correcto();
+		}
+		else{
+			if(var1!="9")
+				document.getElementById("1").value="";
+			if(var2!="4")
+				document.getElementById("2").value="";
+		}        
+        break;
+    case 58:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="5" && var2 == "4"){
+			correcto();
+		}
+		else{
+			if(var1!="5")
+				document.getElementById("1").value="";
+			if(var2!="4")
+				document.getElementById("2").value="";
+		}        
+        break;
+    case 60:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="13" && var2 == "17"){
+			correcto();
+		}
+		else{
+			if(var1!="13")
+				document.getElementById("1").value="";
+			if(var2!="17")
+				document.getElementById("2").value="";
+		}        
+        break;
 	}
 }
 
