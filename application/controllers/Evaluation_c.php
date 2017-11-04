@@ -154,11 +154,9 @@ class Evaluation_c extends CI_Controller
         $this->evaluation['id_user'] = $this->session->userdata('user_id');
         $this->evaluation['id_theme'] = 1;
         $this->evaluation['time_finish'] = $time;
-        $this->evaluation['score'] = $this->session->userdata('score') + $total;
+        $this->evaluation['score'] = $total;
         $this->evaluation['evaluation_date'] = date($format);
-        /*echo "<pre>";
-        print_r($responses);
-        echo "</pre>";*/
+        
         $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation);
         
         if($response_evaluation != FALSE || $response_evaluation != NULL){
@@ -193,6 +191,7 @@ class Evaluation_c extends CI_Controller
     }
 
     private function calculate_results($evaluations){
+    	
         $data["total"] = 0;
         $data["number_corrects"] = 0;
         foreach ($evaluations as $evaluation){
