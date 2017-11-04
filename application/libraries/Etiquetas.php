@@ -95,7 +95,7 @@ class Etiquetas{
 								2=>array(
 									'nombre'=>'<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Cerrar sesión',
 									'id'=>'',
-									'href'=>'logout',
+									'href'=>base_url().'logout',
 									'onclick'=>''
 								),
 							)
