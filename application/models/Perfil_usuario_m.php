@@ -44,35 +44,38 @@
 			}
 		}
 
-		public function actualizar_perfil($usuario = null)
+		public function actualizar_perfil($usuario_nuevo = null,$user=null)
 		{
-			if ($usuario != null){
-				$user = $this->db
-							->SELECT('*')
-							->FROM('user')
-							->WHERE('user.id_user', $usuario['id_user'])
+			if ($usuario_nuevo != null){
+				
+				$avatar = $this->db -> select('avatar.location')
+							->FROM('avatar')
+							->WHERE('avatar.id_avatar',$usuario_nuevo['id_avatar'])
 							->GET()->row();
-							
-				$usuario['type_user']=$user->type_user;
-				$usuario['total_score']=$user->total_score;
-				if($user->email==$usuario['email']){
-					if($usuario['password']==''){
-						$usuario['status']=$user->status;
-						$this->db->SET($this->sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+				
+				$usuario_nuevo['type_user']=$user['type_user'];
+				$usuario_nuevo['total_score']=$user['total_score'];
+				$usuario_nuevo['location']=$avatar->location;
+				var_dump($user['email']==$usuario_nuevo['email']);
+				
+				if($user['email']==$usuario_nuevo['email']){
+					if($usuario_nuevo['password']==''){
+						$usuario_nuevo['status']=$user['status'];
+						$this->db->SET($this->sinpassUsuario($usuario_nuevo))->WHERE ('user.id_user', $user['id_user'])->UPDATE('user');
 					} else{
-						$usuario['status']=$user->status;
-						$this->db->SET($this->_setUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+						$usuario_nuevo['status']=$user['status'];
+						$this->db->SET($this->_setUsuario($usuario_nuevo))->WHERE ('user.id_user', $user['id_user'])->UPDATE('user');
 					}
-					return $usuario;
+					return $usuario_nuevo;
 				} else {
-					if($usuario['password']==''){
-						$usuario['status']=0;
-						$this->db->SET($this->sinpassUsuario($usuario))->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user');
+					if($usuario_nuevo['password']==''){
+						$usuario_nuevo['status']=0;
+						$this->db->SET($this->sinpassUsuario($usuario_nuevo))->WHERE ('user.id_user', $user['id_user'])->UPDATE('user');
 					} else{
-						$usuario['status']=0;
-						$this->db->WHERE ('user.id_user', $usuario['id_user'])->UPDATE('user',$usuario);
+						$usuario_nuevo['status']=0;
+						$this->db->WHERE ('user.id_user', $user['id_user'])->UPDATE('user',$usuario_nuevo);
 					}
-					return $usuario;
+					return $usuario_nuevo;
 				}
 			} 
 			else {

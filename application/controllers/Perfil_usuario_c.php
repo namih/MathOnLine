@@ -43,8 +43,9 @@
 					$encrypted = $this->encrypt->encode($registro['password']);
 					$registro['password']=$encrypted;
 				}
-				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro);
-				
+				$user = $this->session->userdata('user');
+				print_r($user);
+				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro,$user);
 				if ($id_registro['status']==0) {
 					$this->envio_email($id_registro['id_user'], $id_registro['user_name'], $id_registro['email']);
 					header('Location: ../home_c/logout');
@@ -53,6 +54,7 @@
 			else{
             	redirect(base_url());
         	}
+			print_r($id_registro);
 			$data_session = update_session($id_registro);
 			$this->session->set_userdata($data_session);
     	}

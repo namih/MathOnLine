@@ -16,6 +16,7 @@ if ( ! function_exists('test_method'))
                 "user_id" => $user["id_user"],
                 "type_user" => $user["type_user"],
                 "score" => $user['total_score'],
+                "league" => $user['league'],
                 "user" => $user
             );
             return $data_session;
