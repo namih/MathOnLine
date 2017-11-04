@@ -46,24 +46,27 @@ class Welcome extends CI_Controller {
     private function custom_question($question){
         $question_custom = [];
         $i = 0;
-        foreach ($question as $key => $value){
-            if($key == "correct_answer"){
-                $question_custom["answers"][$i]["description"] = $value;
-                $question_custom["answers"][$i]["key"] = $key;
-                $question_custom["answers"][$i]["is_correct"] = 1;
-                shuffle($question_custom["answers"]);
-                $i++;
-            }elseif ($key == "wrong_answer_a" || $key == "wrong_answer_b" || $key == "wrong_answer_c"){
-                $question_custom["answers"][$i]["description"] = $value;
-                $question_custom["answers"][$i]["key"] = $key;
-                $question_custom["answers"][$i]["is_correct"] = 0;
-                shuffle($question_custom["answers"]);
-                $i++;
-            }else{
-                $question_custom[$key] = $value;
+        if(count($question) > 0){
+            foreach ($question as $key => $value){
+                if($key == "correct_answer"){
+                    $question_custom["answers"][$i]["description"] = $value;
+                    $question_custom["answers"][$i]["key"] = $key;
+                    $question_custom["answers"][$i]["is_correct"] = 1;
+                    shuffle($question_custom["answers"]);
+                    $i++;
+                }elseif ($key == "wrong_answer_a" || $key == "wrong_answer_b" || $key == "wrong_answer_c"){
+                    $question_custom["answers"][$i]["description"] = $value;
+                    $question_custom["answers"][$i]["key"] = $key;
+                    $question_custom["answers"][$i]["is_correct"] = 0;
+                    shuffle($question_custom["answers"]);
+                    $i++;
+                }else{
+                    $question_custom[$key] = $value;
+                }
             }
+            return $question_custom;
         }
-        return $question_custom;
+        return null;
     }
 
 

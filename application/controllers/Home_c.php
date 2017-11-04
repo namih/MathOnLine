@@ -9,6 +9,7 @@ class Home_c extends CI_Controller
         $this->load->model('Home_m');
         $this->load->model('Home_student_m');
         $this->load->library('encrypt');
+        $this->load->helper('session_helper');
     }
 
     public function index(){
@@ -98,15 +99,12 @@ class Home_c extends CI_Controller
         $user = $this->Home_m->iniciar_sesion($credencial);
         if(isset($user[0]['id_user'])){
             $data_session = array(
-                "logged_in" => TRUE,
-                "user_id" => $user[0]["id_user"],
-                "type_user" => $user[0]["type_user"],
-                "score" => $user[0]['total_score'],
-                "user" => $user[0]
+                "logged_in" => true
             );
             $this->session->set_userdata($data_session);
-            //$this->goHomeUser($user);
-            echo 1;
+            $data_session = update_session($user[0]);
+            $this->session->set_userdata($data_session);
+            echo $user[0]["type_user"];
         }else{
             switch ($user){
                 case 2:
