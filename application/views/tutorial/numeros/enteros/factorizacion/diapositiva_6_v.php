@@ -23,46 +23,46 @@
             </thead>
             <tbody>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura1" value="8" readonly=""/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="area1" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="base2" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura2" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="area2" />
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base3"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura3" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area3"/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="base4"/>
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura4" />
             		</td>
-            		<td>
+            		<td class="modif">
             			<input class="input-sm2" type="text"  id="area4"/>
             		</td>
             	</tr>

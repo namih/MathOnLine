@@ -1,15 +1,11 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_3.js"></script>
 <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css"> -->
-<div class="container-fluid">
+<div class="panel-body">
 	<div class="panel-body" >
-		<p> Encuentra todos los factores del 47. Escríbelos en las casillas en orden ascendente (de menor a mayor).
+		<p>
+			Los números que tienen como factores únicamente al 1 y a sí mismos (como el 5, 17,47)
+			se llaman numeros primos.
+			Los números primos deben tener exactamente dos factores diferentes entre si (el 1 y el número).
+			El numero 1 no se considera número primo pues sólo tiene un factor: el 1.
 		</p> 
-		<br />
-		<input class="input-sm" type="text"  id="1"/>
-		<input class="input-sm" type="text"  id="2"/>
-		<input class="input-sm" type="text"  id="3"/>
-		<input class="input-sm" type="text"  id="4"/>
-	</div>
-	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
 </div>

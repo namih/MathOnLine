@@ -1,45 +1,50 @@
-function createTable(){
-	$(box).empty(); 
-	mytable = $('<table></table>').attr({ id: "basicTable" });
-	var rows = new Number($("#rowcount").val());
-	var cols = new Number($("#columncount").val());
-
-
-	if (rows ==0 && cols ==0){
-		error("Favor de colocar la base y altura deseada");
-	}else{
-		if(rows*cols ==5){
-			var tr = [];
-			for (var i = 0; i < rows; i++) {
-				var row = $('<tr></tr>').attr({ class: ["class1", "class2", "class3"].join(' ') }).appendTo(mytable);
-				for (var j = 0; j < cols; j++) {
-					$('<td></td>').text(" ").appendTo(row); 
-				}
-
-			}
-			console.log("TTTTT:"+mytable.html());
-			mytable.appendTo("#box");	       
-		}else{
-			error("Los números ingresados no corresponden al area solicitada.");
-		}
-	}
-
-}
 /**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida(){	
+	var res  =  $('input[name="optradio"]:checked').val();
+	
+	if (res=='S') {
+		correcto("Correcto");
+	}else if (res == 'N') {
+		error("Favor de repetir el ejercicio");
+	}
+	
+	if (res!='S' && res!='N' ){
+		error("Selecciona una de las opciones disponibles.");
+	}
+}
+
+/**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida21(){	
+	var res  =  $('input[name="optradio"]:checked').val();
+	
+	if (res=='N') {
+		correcto("Correcto");
+	}else if (res == 'S') {
+		error("Favor de repetir el ejercicio");
+	}
+	
+	if (res!='S' && res!='N' ){
+		error("Selecciona una de las opciones disponibles.");
+	}
+}
+/*
  * 
  */
 function verificar(){
 	var base1 = new Number($("#base1").val());
 	var base2 = new Number($("#base2").val());
-	
-	
+	var base3 = new Number($("#base3").val());
 	
 	var altura1 = new Number($("#altura1").val()); 
 	var altura2 = new Number($("#altura2").val());
+	var altura3 = new Number($("#altura3").val()); 
 	
-	
-	var base =[base1,base2];
-	var altura=[altura1,altura2];
+	var base =[base1,base2,base3];
+	var altura=[altura1,altura2,altura3];
 	
 	var area=[];
 	var res;
@@ -47,8 +52,8 @@ function verificar(){
 	var tamanio_base = this.eliminateDuplicates(base);
 	var tamanio_altura = this.eliminateDuplicates(altura);
 
-	if(tamanio_base.length == 2 && tamanio_altura.length == 2 ){
-		for (var i=1; i<3; i++){
+	if(tamanio_base.length == 3 && tamanio_altura.length == 3 ){
+		for (var i=1; i<4; i++){
 		res	=base[i-1]*altura[i-1];
 		area[i]=res;
 		document.getElementById("area"+i).value = res;
@@ -96,7 +101,7 @@ function valida_area(arr_area){
 	
 	var out=[];
 	for(var i=0; i<arr_area.length; i++){
-	  if(arr_area[i] != 5){
+	  if(arr_area[i] != 18){
 	  	out.push(i);	
 	  }
 	}	
@@ -107,13 +112,17 @@ function valida_area(arr_area){
  * Metodo para limpiar los inputs
  */
 function clean_imput(){
-	for (var i=1; i < 5; i++) {
+	for (var i=1; i < 4; i++) {
 		document.getElementById("base"+i).value="";
 		document.getElementById("altura"+i).value="";
 	  	document.getElementById("area"+i).value="";
 	}
 	 
 }
+
+
+
+
 
 function correcto(texto) {
 		$('#correcta').text(texto);
@@ -129,10 +138,6 @@ function error(texto) {
 			$("#error").slideUp(500);
 		});
 }
-
-
-
-
 
 
 

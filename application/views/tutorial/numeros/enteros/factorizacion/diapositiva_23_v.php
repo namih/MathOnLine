@@ -1,61 +1,117 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_10.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
-	<div   class="col-md-6  col-xs-12" id="box" align="center">
-		<p>Después nos preguntamos:¿Es el 3 un factor de 18?.</p>
-		<div  class="radioS">
-      			<label><input type="radio" name="optradio">SI</label>
-    	</div>
-    	<div class="radioS">
-      			<label><input type="radio" name="optradio">NO</label>
-    	</div>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_23.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
+<div class="container-fluid">
+	<div   class="col-md-12  col-xs-12" id="box" align="center">
+		<p>Utiliza la tabla para encontrar todos los factores de 120.</p>
 	</div>	
-	<div   class="col-md-4  col-xs-6" id="tab" align="center">
+	<div   class="col-xs-12  col-xs-12 table-responsive" id="tab">
 		
-		 <table class="table table-striped table-bordered table-condensed table-responsive" id="myTable">
+		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
             <thead>
                 <tr class="success">
-                    <th>FACTORES DE 18</th>
-                    
+                    <th>Num 1</th>
+                    <th>Num 2</th>
+                    <th>Resultado</th>
                 </tr>
             </thead>
             <tbody>
             	<tr>
-            		<td>
-            			<input class="input-sm" type="text" id="base1" value="1" readonly=""/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base1" value="1" />
             		</td>
-            		<td>
-            			<input  type="text" id="altura1" value="5" readonly=""/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura1" value="120" />
             		</td>
-            		<td>
-            			<input type="text" id="area1"  value="5" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text" id="base2" />
-            		</td>
-            		<td> 
-            			<input type="text" id="altura2" />
-            		</td>
-            		<td>
-            			<input type="text" idid="area2" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area1"  value="120" />
             		</td>
             	</tr>
             	<tr>
-            		<td>
-            			<input type="text" id="base2" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base2" />
             		</td>
-            		<td>
-            			<input type="text" id="altura2" />
+            		<td class="modif"> 
+            			<input class="input-sm2" type="text" id="altura2" />
             		</td>
-            		<td>
-            			<input type="text" idid="area2" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area2" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base3" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura3" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area3" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base4" />
+            		</td>
+            		<td class="modif"> 
+            			<input class="input-sm2" type="text" id="altura4" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area4" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base5" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura5" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area5" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base6" />
+            		</td>
+            		<td class="modif"> 
+            			<input class="input-sm2" type="text" id="altura6" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area6" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base7" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura7" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area7" />
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base8" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura8" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area8" />
             		</td>
             	</tr>
             </tbody>
         </table>
 	</div>
 	<br /><br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div> 
 </div>

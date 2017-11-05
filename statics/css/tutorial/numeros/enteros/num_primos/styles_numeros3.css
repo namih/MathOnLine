@@ -4,9 +4,18 @@
 		padding:10px;
 		margin:10px;
 		border:1px solid #ccc;
+	    text-align: center;
+	    color: white;
 }
 
-.input-sm2{
-	width: 100%;
-	
+
+#texto{
+	text-align: center;
 }
+
+
+
+
+
+
+

@@ -1,45 +1,24 @@
-function createTable(){
-	$(box).empty(); 
-	mytable = $('<table></table>').attr({ id: "basicTable" });
-	var rows = new Number($("#rowcount").val());
-	var cols = new Number($("#columncount").val());
-
-
-	if (rows ==0 && cols ==0){
-		error("Favor de colocar la base y altura deseada");
-	}else{
-		if(rows*cols ==5){
-			var tr = [];
-			for (var i = 0; i < rows; i++) {
-				var row = $('<tr></tr>').attr({ class: ["class1", "class2", "class3"].join(' ') }).appendTo(mytable);
-				for (var j = 0; j < cols; j++) {
-					$('<td></td>').text(" ").appendTo(row); 
-				}
-
-			}
-			console.log("TTTTT:"+mytable.html());
-			mytable.appendTo("#box");	       
-		}else{
-			error("Los números ingresados no corresponden al area solicitada.");
-		}
-	}
-
-}
-/**
- * 
- */
 function verificar(){
 	var base1 = new Number($("#base1").val());
 	var base2 = new Number($("#base2").val());
-	
-	
+	var base3 = new Number($("#base3").val());
+	var base4 = new Number($("#base4").val());
+	var base5 = new Number($("#base5").val());
+	var base6 = new Number($("#base6").val());
+	var base7 = new Number($("#base7").val());
+	var base8 = new Number($("#base8").val());
 	
 	var altura1 = new Number($("#altura1").val()); 
 	var altura2 = new Number($("#altura2").val());
+	var altura3 = new Number($("#altura3").val()); 
+	var altura4 = new Number($("#altura4").val()); 
+	var altura5 = new Number($("#altura5").val());
+	var altura6 = new Number($("#altura6").val()); 
+	var altura7 = new Number($("#altura7").val()); 
+	var altura8 = new Number($("#altura8").val());
 	
-	
-	var base =[base1,base2];
-	var altura=[altura1,altura2];
+	var base =[base1,base2,base3,base4,base5,base6,base7,base8];
+	var altura=[altura1,altura2,altura3,altura4,altura5,altura6,altura7,altura8];
 	
 	var area=[];
 	var res;
@@ -47,8 +26,8 @@ function verificar(){
 	var tamanio_base = this.eliminateDuplicates(base);
 	var tamanio_altura = this.eliminateDuplicates(altura);
 
-	if(tamanio_base.length == 2 && tamanio_altura.length == 2 ){
-		for (var i=1; i<3; i++){
+	if(tamanio_base.length == 8 && tamanio_altura.length == 8 ){
+		for (var i=1; i<9; i++){
 		res	=base[i-1]*altura[i-1];
 		area[i]=res;
 		document.getElementById("area"+i).value = res;
@@ -96,7 +75,7 @@ function valida_area(arr_area){
 	
 	var out=[];
 	for(var i=0; i<arr_area.length; i++){
-	  if(arr_area[i] != 5){
+	  if(arr_area[i] != 120){
 	  	out.push(i);	
 	  }
 	}	
@@ -107,13 +86,17 @@ function valida_area(arr_area){
  * Metodo para limpiar los inputs
  */
 function clean_imput(){
-	for (var i=1; i < 5; i++) {
+	for (var i=1; i < 4; i++) {
 		document.getElementById("base"+i).value="";
 		document.getElementById("altura"+i).value="";
 	  	document.getElementById("area"+i).value="";
 	}
 	 
 }
+
+
+
+
 
 function correcto(texto) {
 		$('#correcta').text(texto);
@@ -129,21 +112,3 @@ function error(texto) {
 			$("#error").slideUp(500);
 		});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,6 @@
 function verificar(){	
 	
 	var numeros = [1,2,4,8,16];
-	alert(numeros);
 	var num1= new Number($("#1").val());
 	var num2= new Number($("#2").val());
 	var num3= new Number($("#3").val());
@@ -14,8 +13,7 @@ function verificar(){
 	
 	if (isNaN(num1)||isNaN(num2)||isNaN(num3)||isNaN(num4)||isNaN(num5)) {
 		var array_num =[num1,num2,num3,num4,num5];
-		alert("array_num"+array_num);
-		alert("Favor de ingresar solo números.");	
+		error("Favor de ingresar solo números.");	
 		this.clean_imput();
 	}else{
 		var array_num =[num1,num2,num3,num4,num5];
@@ -24,15 +22,15 @@ function verificar(){
 		//alert(tamanio.length);
 		if(tamanio.length == 5){
 			if(this.compara_array(array_order,numeros)){
-			alert("El ejercicio se realizo satisfactoriamente.");
+			correcto("El ejercicio se realizó satisfactoriamente.");
 			this.clean_imput();
 			
 			}else{
-			alert("Favor de repetir nuevamente.");
+			error("Favor de repetir nuevamente.");
 			this.clean_imput();
 			}
 		}else{
-			alert("Los valores no deben de repetirse.");
+			error("No repetir los datos.");
 			this.clean_imput();
 		}
 	}
@@ -81,6 +79,22 @@ function compara_array(arr1,arr2){
 	}else{
 		return false;
 	}
+}
+
+
+function correcto(texto) {
+		$('#correcta').text(texto);
+		$('#correcta').show();
+		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+		});
+}
+function error(texto) {
+		$('#error').text(texto);
+		$('#error').show();
+		$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+		});
 }
 
 

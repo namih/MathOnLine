@@ -2,37 +2,13 @@
  * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
  */
 function verificar(){
-	var numeros = [1,2,5,10];
-	alert(numeros);
-	var num1= new Number($("#1").val());
-	var num2= new Number($("#2").val());
-	var num3= new Number($("#3").val());
-	var num4= new Number($("#4").val());
 	
-	if (isNaN(num1)||isNaN(num2)||isNaN(num3)||isNaN(num4)) {
-		var array_num =[num1,num2,num3,num4];
-		alert("array_num"+array_num);
-		alert("Favor de ingresar solo números.");	
-		this.clean_imput();
-	}else{
-		var array_num =[num1,num2,num3,num4];
-		var array_order=array_num.sort(function(a, b){return a-b});
-		var tamanio=this.eliminateDuplicates(array_order);
-		//alert(tamanio.length);
-		if(tamanio.length == 4){
-			if(this.compara_array(array_order,numeros)){
-			alert("El ejercicio se realizo satisfactoriamente.");
-			this.clean_imput();
-			
-			}else{
-			alert("Favor de repetir nuevamente.");
-			this.clean_imput();
-			}
-		}else{
-			alert("Los valores no deben de repetirse.");
-			this.clean_imput();
-		}
-	}
+	var factor2 = new Number($("altura2").val());
+	var factor1= document.getElementById("altura1").value;
+	
+	alert(factor1);
+	alert(factor2);
+	
 }
 /**
  * Metodo para eliminar los datos que se repiten en el areglo 

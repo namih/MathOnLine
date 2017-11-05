@@ -1,21 +1,26 @@
 /**
  * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
  */
+/**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
 function verificar(){
-	var numeros = [1,5];
+	var numeros = [1,3,5,15];
 	var num1= new Number($("#1").val());
 	var num2= new Number($("#2").val());
-	if (isNaN(num1)||isNaN(num2)) {
-		var array_num =[num1,num2];
-		//alert("array_num"+array_num);
+	var num3= new Number($("#3").val());
+	var num4= new Number($("#4").val());
+	
+	if (isNaN(num1)||isNaN(num2)||isNaN(num3)||isNaN(num4)) {
+		var array_num =[num1,num2,num3,num4];
 		error("Favor de ingresar solo números.");	
 		this.clean_imput();
 	}else{
-		var array_num =[num1,num2];
+		var array_num =[num1,num2,num3,num4];
 		var array_order=array_num.sort(function(a, b){return a-b});
 		var tamanio=this.eliminateDuplicates(array_order);
 		//alert(tamanio.length);
-		if(tamanio.length == 2){
+		if(tamanio.length == 4){
 			if(this.compara_array(array_order,numeros)){
 			correcto("El ejercicio se realizo satisfactoriamente.");
 			this.clean_imput();
@@ -25,13 +30,15 @@ function verificar(){
 			this.clean_imput();
 			}
 		}else{
-			error("Los valores no deben de repetirse.");
+			error("Favor de validar los datos ingresados.");
 			this.clean_imput();
 		}
 	}
 }
+
+
 /**
- * Metodo para eliminar los datos que se repiten en el areglo 
+ *Metodo para eliminar los datos que se repiten en el arreglo  
  */
 function eliminateDuplicates(arr) {
  	 var i,
@@ -52,7 +59,7 @@ function eliminateDuplicates(arr) {
  * Metodo para limpiar los inputs
  */
 function clean_imput(){
-	for (var i=1; i < 3; i++) {
+	for (var i=1; i < 5; i++) {
 	  document.getElementById(i).value="";
 	}
 	 
@@ -69,13 +76,16 @@ function compara_array(arr1,arr2){
 	  	cont=cont+1;
 	  }
 	}	
-	if(cont==2){
+	if(cont==4){
 		return true;
 	}else{
 		return false;
 	}
 }
-
+/**
+ * 
+ * @param {Object} texto
+ */
 function correcto(texto) {
 		$('#correcta').text(texto);
 		$('#correcta').show();
@@ -83,13 +93,18 @@ function correcto(texto) {
 			$("#correcta").slideUp(500);
 		});
 }
+/**
+ * 
+ * @param {Object} texto
+ */
 function error(texto) {
 		$('#error').text(texto);
 		$('#error').show();
 		$("#error").fadeTo(2000, 500).slideUp(500, function(){
 			$("#error").slideUp(500);
 		});
-}
+	}
+
 
 
 

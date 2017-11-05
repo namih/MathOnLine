@@ -1,57 +1,20 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_10.js"></script>
-<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/styles_numeros.css">
-<div class="panel-body">
-	<div   class="col-md-12  col-xs-12" id="box" align="center">
-		<p>Utiliza la tabla para encontrar todos los factores de 120 en orden.</p>
-	</div>	
-	<div   class="col-xs-12  col-xs-12" id="tab">
-		
-		 <table class="table table-striped table-bordered table-condensed table-responsive" id="myTable">
-            <thead>
-                <tr class="success">
-                    <th>FACTORES DE 18</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-            	<tr>
-            		<td>
-            			<input type="text" id="base1" value="1" readonly=""/>
-            		</td>
-            		<td>
-            			<input  type="text" id="altura1" value="5" readonly=""/>
-            		</td>
-            		<td>
-            			<input type="text" id="area1"  value="5" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text" id="base2" />
-            		</td>
-            		<td> 
-            			<input type="text" id="altura2" />
-            		</td>
-            		<td>
-            			<input type="text" idid="area2" />
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input type="text" id="base2" />
-            		</td>
-            		<td>
-            			<input type="text" id="altura2" />
-            		</td>
-            		<td>
-            			<input type="text" idid="area2" />
-            		</td>
-            	</tr>
-            </tbody>
-        </table>
-	</div>
-	<br /><br /><br />
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_24.js"></script>
+<div class="container-fluid">
 	<div>
-		<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+		<p> Encuentra todos los factores del 15. Escríbelos en las casillas.
+		</p> 
+		<br />
+		<input type="text"  id="1"/>
+		<input type="text"  id="2"/>
+		<input type="text"  id="3"/>
+		<input type="text"  id="4"/>
 	</div>
+	<br /><br />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div> 
 </div>

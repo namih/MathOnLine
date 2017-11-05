@@ -6,7 +6,7 @@ function createTable(){
 
 
 	if (rows ==0 && cols ==0){
-		alert("Favor de colocar la base y altura deseada");
+		error("Favor de colocar la base y altura deseada");
 	}else{
 		if(rows*cols ==15){
 			var tr = [];
@@ -20,7 +20,7 @@ function createTable(){
 			console.log("TTTTT:"+mytable.html());
 			mytable.appendTo("#box");	       
 		}else{
-			alert("Los números ingresados no corresponden al area solicitada.");
+			error("Los números ingresados no corresponden al area solicitada."); 
 		}
 	}
 
@@ -52,6 +52,7 @@ function verificar(){
 		res	=base[i-1]*altura[i-1];
 		area[i]=res;
 		document.getElementById("area"+i).value = res;
+		document.getElementById("area"+i).style.color='black';
 		}
 		arr_valida=this.valida_area(area);
 		if(arr_valida.length > 1){

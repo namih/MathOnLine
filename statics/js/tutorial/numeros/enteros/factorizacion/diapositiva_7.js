@@ -3,7 +3,6 @@
  */
 function verificar(){
 	var numeros = [1,2,4,8];
-	alert(numeros);
 	var num1= new Number($("#1").val());
 	var num2= new Number($("#2").val());
 	var num3= new Number($("#3").val());

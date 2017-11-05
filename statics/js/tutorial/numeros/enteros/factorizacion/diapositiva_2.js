@@ -63,6 +63,8 @@ function verificar(){
 		res	=base[i-1]*altura[i-1];
 		area[i]=res;
 		document.getElementById("area"+i).value = res;
+		document.getElementById("area"+i).style.color='black';
+
 		}
 		arr_valida=this.valida_area(area);
 		if(arr_valida.length > 1){

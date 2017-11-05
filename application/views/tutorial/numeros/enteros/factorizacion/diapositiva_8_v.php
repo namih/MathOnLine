@@ -11,9 +11,9 @@
 	<br/><br/><br />
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 	</div>	
-	<div   class="col-md-6  col-xs-12" id="tab" align="center">
+	<div   class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		
-		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
+		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
             <thead>
                 <tr class="success">
                     <th>BASE</th>
@@ -23,47 +23,47 @@
             </thead>
             <tbody>
             	<tr>
-            		<td>
-            			<input class"input-sm2" type="text" id="base1" value="1" readonly=""/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="altura1" value="15" readonly=""/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura1" value="15" readonly=""/>
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="area1" value="15" onkeyup="if (event.keyCode == 13) valida('base1','altura1','area1')" readonly=""/>
-            		</td>
-            	</tr>
-            	<tr>
-            		<td>
-            			<input class"input-sm2" type="text" id="base2" />
-            		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="altura2" />
-            		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="area2" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area1"  readonly=""/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
-            			<input class"input-sm2" type="text"  id="base3"/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base2" />
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="altura3" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura2" />
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text"  id="area3"/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area2" readonly/>
             		</td>
             	</tr>
             	<tr>
-            		<td>
-            			<input class"input-sm2" type="text"  id="base4"/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="base3" />
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text" id="altura4" />
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura3" />
             		</td>
-            		<td>
-            			<input class"input-sm2" type="text"  id="area4"/>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="area3" readonly/>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="base4" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura4" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="area4" readonly/>
             		</td>
             	</tr>
             </tbody>
