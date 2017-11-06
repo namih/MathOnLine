@@ -1,8 +1,10 @@
+    <?php $avance=($paginador['actual']*100)/count($tutorial_content['diapositivas']);
+    //echo count($tutorial_content['diapositivas']); echo "<pre>"; print_r($paginador['actual']); echo "</pre>"; ?>
     <div id="tutorial_content">
       <div class="col-md-12">
           <div class="col-md-1"></div>
           <div class="col-md-10">
-            <div class="container-fluid">
+            <div class="container-fluid">          
               <center>
                 <h1><?php echo $tutorial_content['nombre_tutorial']; ?></h1>
               </center>
@@ -10,6 +12,12 @@
                   <div class="panel panel-success"  align="center">
                     <div class="panel-heading"><b><?php echo $tutorial_content['diapositivas'][$paginador['actual']]['titulo']; ?></b></div>
                     <div class="panel-body">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="progress">
+                           <div class="progress-bar progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="<?php echo $avance; ?>" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $avance; ?>%">Avance <?php echo round($avance,0); ?>%
+                           </div>
+                        </div>
+                      </div>                      
                       <?php echo $diapositiva_actual; ?>
                     </div>
                     <?php if(isset($paginador)){ ?>

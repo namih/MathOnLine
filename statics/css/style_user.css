@@ -1,4 +1,124 @@
-@media (max-width: 491px) { /*col-xm-*/
+  
+@media(max-width: 199px){ /*col-xm-*/
+  .imagen-xs {
+    width: 400% !important;
+  }
+  h1{
+    font-size: 12px !important;
+  }
+  h2{
+    font-size: 11px !important;
+  }
+  h3{
+    font-size: 10px !important;
+  }
+  h4{
+    font-size: 9px !important;
+  }
+  h5{
+    font-size: 8px !important;
+  }
+  p{
+    font-size: 10px !important;
+  }
+  div{
+    font-size: 10px !important;
+  }
+  a{
+    font-size: 10px !important;
+  }
+  label{
+    font-size: 10px !important;
+  }
+  input{
+    font-size: 10px !important;
+  }
+  button{
+    font-size: 10px !important;
+  }
+  .panel-heading{
+    padding: 0px !important;
+  }
+  hr{
+    padding: 0px !important;
+  }
+  .calendario {
+    width: 65%;
+  }
+  .titEntrenador {
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+
+  .titEntrenador h3 {
+    margin-top: 0px !important;
+  }
+  .img-login {
+    width: 50%;
+  }
+  #contentInicio {
+    margin-top: 30%;
+  }
+  .navbar-green{
+    margin-top: 90px !important;
+  }
+}  
+@media(min-width: 200px) and (max-width: 299px) { /*col-xm-*/
+  .imagen-xs {
+    width: 140%;
+  }
+  h3{
+    font-size: 15px !important;
+  }
+  .calendario {
+    width: 65%;
+  }
+  .titEntrenador {
+    margin-top: 3px;
+    padding: 3px;
+  }
+  .titEntrenador h3 {
+    margin-top: 0px !important;
+  }
+  .img-login {
+    width: 50%;
+  }
+  #contentInicio {
+    margin-top: 20%;
+  }
+  .navbar-green{
+    margin-top: 90px !important;
+  }
+}  
+@media(min-width: 300px) and (max-width: 399px) { /*col-xm-*/
+  .imagen-xs {
+    width: 140%;
+  }
+  h3{
+    font-size: 20px !important;
+  }
+  .calendario {
+    width: 65%;
+  }
+  .titEntrenador {
+    margin-top: 3px;
+    padding: 3px;
+  }
+  .titEntrenador h3 {
+    margin-top: 0px !important;
+  }
+  .img-login {
+    width: 50%;
+  }
+  #contentInicio {
+    margin-top: 20%;
+  }
+  .navbar-green{
+    margin-top: 90px !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) { 
   .imagen-xs {
     width: 90%;
   }
