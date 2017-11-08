@@ -15,8 +15,8 @@
 	
 	function validar() {
 		var porcentaje = document.getElementById('porcentaje').value;
-		if (porcentaje == 75) {
-			document.getElementById('resultado').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>75</mn><mn>100</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>75</mn><mo>%</mo></math>';
+		if (porcentaje == 82) {
+			document.getElementById('resultado').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>82</mn><mo>%</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>82</mn><mn>100</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn><mo>.</mo><mn>82</mn></math>';
 			correcto();
 		} else {
 			error();
@@ -25,8 +25,8 @@
 </script>
 <div class="container-fluid">
 	<p align="justify">Escribe el número decimal como porcentaje.</p>
-	<img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_75.png" />
-	<h3 id="resultado"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mo>?</mo><mn>100</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mo>?</mo><mo>%</mo></math> <input placeholder="?" style="text-align: center" onchange="validar()" size="1" type="text" id="porcentaje"></h3>	
+	<img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_82.png" />
+	<h3 id="resultado"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>82</mn><mo>%</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mo>?</mo><mn>100</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn><mo>.</mo><mo>?</mo></math> <input placeholder="?" style="text-align: center" onchange="validar()" size="1" type="text" id="porcentaje"></h3>	
 </div>
 <br />
 <br />		

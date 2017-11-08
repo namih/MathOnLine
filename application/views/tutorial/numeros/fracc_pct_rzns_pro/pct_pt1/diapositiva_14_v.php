@@ -16,7 +16,7 @@
 	function validar () {
 		var porcentaje = document.getElementById('porcentaje').value;
 		if (porcentaje == 52) {
-			document.getElementById('resultado').innerHTML = ' Pablo: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>52</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>52</mn><mn>100</mn></mfrac><mo>=</mo><mn>52</mn><mo>%</mo></math>';
+			document.getElementById('resultado').innerHTML = 'Pablo: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>52</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>52</mn><mn>100</mn></mfrac><mo>=</mo><mn>52</mn><mo>%</mo></math>';
 			correcto();
 		} else {
 			error();
