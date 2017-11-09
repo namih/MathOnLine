@@ -5,6 +5,9 @@ var ib = 1;
 var ic = 1;
 var id = 1;
 
+var ia_0 = 0;
+var ib_0 = 0;
+
 function correcto () {
 	$('#correcta').show();
 	$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
@@ -1092,4 +1095,374 @@ function validar_6 () {
 	} else {
 		error();
 	};
+}
+
+function incrementar_a_9 () {
+	switch (ia) {
+		case 1:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+			document.getElementById("valor_a").innerHTML = "2";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+			document.getElementById("valor_a").innerHTML = "3";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+			document.getElementById("valor_a").innerHTML = "4";
+			ia++;
+			break;
+		case 4:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+			document.getElementById("valor_a").innerHTML = "5";
+			ia++;
+			break;
+		case 5:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+			document.getElementById("valor_a").innerHTML = "6";
+			ia++;
+			break;
+		case 6:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+			document.getElementById("valor_a").innerHTML = "7";
+			ia++;
+			break;
+		case 7:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+			document.getElementById("valor_a").innerHTML = "8";
+			ia++;
+			break;
+		case 8:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+			document.getElementById("valor_a").innerHTML = "9";
+			ia++;
+			break;
+		case 9:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10.png";
+			document.getElementById("valor_a").innerHTML = "10";
+			ia++;
+			break;
+	}
+}
+
+function disminuir_a_9 () {
+	switch (ia) {
+		case 10:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+			document.getElementById("valor_a").innerHTML = "9";
+			ia--;
+			break;
+		case 9:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+			document.getElementById("valor_a").innerHTML = "8";
+			ia--;
+			break;
+		case 8:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+			document.getElementById("valor_a").innerHTML = "7";
+			ia--;
+			break;
+		case 7:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+			document.getElementById("valor_a").innerHTML = "6";
+			ia--;
+			break;
+		case 6:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+			document.getElementById("valor_a").innerHTML = "5";
+			ia--;
+			break;
+		case 5:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+			document.getElementById("valor_a").innerHTML = "4";
+			ia--;
+			break;
+		case 4:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+			document.getElementById("valor_a").innerHTML = "3";
+			ia--;
+			break;
+		case 3:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+			document.getElementById("valor_a").innerHTML = "2";
+			ia--;
+			break;
+		case 2:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png";
+			document.getElementById("valor_a").innerHTML = "1";
+			ia--;
+			break;
+	}
+}
+
+function incrementar_b_9 () {
+	switch (ib) {
+		case 1:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+			document.getElementById("valor_b").innerHTML = "2";
+			ib++;
+			break;
+		case 2:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+			document.getElementById("valor_b").innerHTML = "3";
+			ib++;
+			break;
+		case 3:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+			document.getElementById("valor_b").innerHTML = "4";
+			ib++;
+			break;
+		case 4:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+			document.getElementById("valor_b").innerHTML = "5";
+			ib++;
+			break;
+		case 5:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+			document.getElementById("valor_b").innerHTML = "6";
+			ib++;
+			break;
+		case 6:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+			document.getElementById("valor_b").innerHTML = "7";
+			ib++;
+			break;
+		case 7:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+			document.getElementById("valor_b").innerHTML = "8";
+			ib++;
+			break;
+		case 8:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+			document.getElementById("valor_b").innerHTML = "9";
+			ib++;
+			break;
+		case 9:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10.png";
+			document.getElementById("valor_b").innerHTML = "10";
+			ib++;
+			break;
+	}
+}
+
+function disminuir_b_9 () {
+	switch (ib) {
+		case 10:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9.png";
+			document.getElementById("valor_b").innerHTML = "9";
+			ib--;
+			break;
+		case 9:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_8.png";
+			document.getElementById("valor_b").innerHTML = "8";
+			ib--;
+			break;
+		case 8:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_7.png";
+			document.getElementById("valor_b").innerHTML = "7";
+			ib--;
+			break;
+		case 7:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_6.png";
+			document.getElementById("valor_b").innerHTML = "6";
+			ib--;
+			break;
+		case 6:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5.png";
+			document.getElementById("valor_b").innerHTML = "5";
+			ib--;
+			break;
+		case 5:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_4.png";
+			document.getElementById("valor_b").innerHTML = "4";
+			ib--;
+			break;
+		case 4:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3.png";
+			document.getElementById("valor_b").innerHTML = "3";
+			ib--;
+			break;
+		case 3:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_2.png";
+			document.getElementById("valor_b").innerHTML = "2";
+			ib--;
+			break;
+		case 2:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_1.png";
+			document.getElementById("valor_b").innerHTML = "1";
+			ib--;
+			break;
+	}
+}
+
+function incrementar_a_10 () {
+	switch (ia_0) {
+		case 0:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_1.png";
+			document.getElementById("valor_a").innerHTML = "1";
+			ia_0++;
+			break;
+		case 1:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_2.png";
+			document.getElementById("valor_a").innerHTML = "2";
+			ia_0++;
+			break;
+		case 2:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_3.png";
+			document.getElementById("valor_a").innerHTML = "3";
+			ia_0++;
+			break;
+		case 3:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_4.png";
+			document.getElementById("valor_a").innerHTML = "4";
+			ia_0++;
+			break;
+		case 4:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_5.png";
+			document.getElementById("valor_a").innerHTML = "5";
+			ia_0++;
+			break;
+		case 5:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_6.png";
+			document.getElementById("valor_a").innerHTML = "6";
+			ia_0++;
+			break;
+		case 6:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_7.png";
+			document.getElementById("valor_a").innerHTML = "7";
+			ia_0++;
+			break;
+		case 7:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_8.png";
+			document.getElementById("valor_a").innerHTML = "8";
+			ia_0++;
+			break;
+		case 8:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_9.png";
+			document.getElementById("valor_a").innerHTML = "9";
+			ia_0++;
+			break;
+		case 9:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_10.png";
+			document.getElementById("valor_a").innerHTML = "10";
+			ia_0++;
+			break;
+	}
+}
+
+function disminuir_a_10 () {
+	switch (ia_0) {
+		case 10:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_9.png";
+			document.getElementById("valor_a").innerHTML = "9";
+			ia_0--;
+			break;
+		case 9:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_8.png";
+			document.getElementById("valor_a").innerHTML = "8";
+			ia_0--;
+			break;
+		case 8:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_7.png";
+			document.getElementById("valor_a").innerHTML = "7";
+			ia_0--;
+			break;
+		case 7:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_6.png";
+			document.getElementById("valor_a").innerHTML = "6";
+			ia_0--;
+			break;
+		case 6:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_5.png";
+			document.getElementById("valor_a").innerHTML = "5";
+			ia_0--;
+			break;
+		case 5:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_4.png";
+			document.getElementById("valor_a").innerHTML = "4";
+			ia_0--;
+			break;
+		case 4:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_3.png";
+			document.getElementById("valor_a").innerHTML = "3";
+			ia_0--;
+			break;
+		case 3:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_2.png";
+			document.getElementById("valor_a").innerHTML = "2";
+			ia_0--;
+			break;
+		case 2:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white_1.png";
+			document.getElementById("valor_a").innerHTML = "1";
+			ia_0--;
+			break;
+		case 1:
+			document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white.png";
+			document.getElementById("valor_a").innerHTML = "1";
+			ia_0--;
+			break;
+	}
+}
+
+function incrementar_b_10 () {
+	switch (ib_0) {
+		case 0:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_1.png";
+			document.getElementById("valor_b").innerHTML = "1";
+			ib_0++;
+			break;
+		case 1:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_2.png";
+			document.getElementById("valor_b").innerHTML = "2";
+			ib_0++;
+			break;
+		case 2:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_3.png";
+			document.getElementById("valor_b").innerHTML = "3";
+			ib_0++;
+			break;
+		case 3:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_4.png";
+			document.getElementById("valor_b").innerHTML = "4";
+			ib_0++;
+			break;
+		case 4:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_5.png";
+			document.getElementById("valor_b").innerHTML = "5";
+			ib_0++;
+			break;
+	}
+}
+
+function disminuir_b_10 () {
+	switch (ib_0) {
+		case 5:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_4.png";
+			document.getElementById("valor_b").innerHTML = "4";
+			ib_0--;
+			break;
+		case 4:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_3.png";
+			document.getElementById("valor_b").innerHTML = "3";
+			ib_0--;
+			break;
+		case 3:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_2.png";
+			document.getElementById("valor_b").innerHTML = "2";
+			ib_0--;
+			break;
+		case 2:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_5_yellow_1.png";
+			document.getElementById("valor_b").innerHTML = "1";
+			ib_0--;
+			break;
+		case 1:
+			document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white.png";
+			document.getElementById("valor_b").innerHTML = "1";
+			ib_0--;
+			break;
+	}
 }
