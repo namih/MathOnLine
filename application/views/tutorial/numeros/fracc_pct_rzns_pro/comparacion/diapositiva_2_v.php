@@ -1,18 +1,5 @@
-<script>
-	function correcto() {
-		$('#correcta').show();
-		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-			$("#correcta").slideUp(500);
-		});
-	}
-	
-	function error() {
-		$('#error').show();
-		$("#error").fadeTo(2000, 500).slideUp(500, function(){
-			$("#error").slideUp(500);
-		});
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/comparacion.js"></script>
+
 <div class="container-fluid">
 	<p align="justify">Cuando las fracciones tienen el mismo denominador, es fácil compararlas.</p>
 	<p align="justify">Por ejemplo si tienes <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>5</mn></mfrac></math> y 	<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>5</mn></mfrac></math>, ¿cúal es mayor? En ambos casos estamos comparando <u>quintos</u>.</p>

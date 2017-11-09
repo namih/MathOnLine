@@ -1,19 +1,4 @@
-<script type="text/javascript" charset="utf-8">
-	function validar () {
-		var equipo = document.getElementById('equipo').value;
-		if (equipo == 2) {
-			$('#correcta').show();
-				$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-					$("#correcta").slideUp(500);
-				});
-		} else {
-			$('#error').show();
-				$("#error").fadeTo(2000, 500).slideUp(500, function(){
-					$("#error").slideUp(500);
-				});
-		};
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/equivalencia.js"></script>
 
 <div class="container-fluid">
 	<p align="justify">¿Qué equipo tiene la mayor cantidad de baguettes para comer por persona?</p>
@@ -94,7 +79,7 @@
 		
 	</div>
 	<div>
-		<p align="justify">El equipo <input style="text-align: center" onchange="validar()" size="1" type="text" id="equipo"> tiene mayor cantidad de baguette por persona</p>
+		<p align="justify">El equipo <input style="text-align: center" onchange="validar_6()" size="5" type="text" id="equipo"> tiene mayor cantidad de baguette por persona</p>
 	</div>
 	 <br />
 	 <br />		
