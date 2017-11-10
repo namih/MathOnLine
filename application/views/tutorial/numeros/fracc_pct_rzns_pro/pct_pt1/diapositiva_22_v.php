@@ -1,96 +1,5 @@
-<script type="text/javascript" charset="utf-8">
-	function validar() {
-		var a_e1 = document.getElementById('a_e1').value;
-		var a_e2 = document.getElementById('a_e2').value;
-		
-		var b_e1 = document.getElementById('b_e1').value;
-		var b_e2 = document.getElementById('b_e2').value;
-		
-		var c_e1 = document.getElementById('c_e1').value;
-		var c_e2 = document.getElementById('c_e2').value;
-		
-		var d_e1 = document.getElementById('d_e1').value;
-		var d_e2 = document.getElementById('d_e2').value;
-		
-		var e_e1 = document.getElementById('e_e1').value;
-		var e_e2 = document.getElementById('e_e2').value;
-		
-		if (a_e1 == 40) {
-			document.getElementById('a_e1').style.backgroundColor = "Green";
-			document.getElementById('a_e1').style.color = "White";
-		} else {
-			document.getElementById('a_e1').style.backgroundColor = "Red";
-			document.getElementById('a_e1').style.color = "White";
-		};
-		if (a_e2 == 50) {
-			document.getElementById('a_e2').style.backgroundColor = "Green";
-			document.getElementById('a_e2').style.color = "White";
-		} else {
-			document.getElementById('a_e2').style.backgroundColor = "Red";
-			document.getElementById('a_e2').style.color = "White";
-		};
-		
-		if (b_e1 == 30) {
-			document.getElementById('b_e1').style.backgroundColor = "Green";
-			document.getElementById('b_e1').style.color = "White";
-		} else {
-			document.getElementById('b_e1').style.backgroundColor = "Red";
-			document.getElementById('b_e1').style.color = "White";
-		};
-		if (b_e2 == 40) {
-			document.getElementById('b_e2').style.backgroundColor = "Green";
-			document.getElementById('b_e2').style.color = "White";
-		} else {
-			document.getElementById('b_e2').style.backgroundColor = "Red";
-			document.getElementById('b_e2').style.color = "White";
-		};
-		
-		if (c_e1 == 10) {
-			document.getElementById('c_e1').style.backgroundColor = "Green";
-			document.getElementById('c_e1').style.color = "White";
-		} else {
-			document.getElementById('c_e1').style.backgroundColor = "Red";
-			document.getElementById('c_e1').style.color = "White";
-		};
-		if (c_e2 == 10) {
-			document.getElementById('c_e2').style.backgroundColor = "Green";
-			document.getElementById('c_e2').style.color = "White";
-		} else {
-			document.getElementById('c_e2').style.backgroundColor = "Red";
-			document.getElementById('c_e2').style.color = "White";
-		};
-		
-		if (d_e1 == '30/40') {
-			document.getElementById('d_e1').style.backgroundColor = "Green";
-			document.getElementById('d_e1').style.color = "White";
-		} else {
-			document.getElementById('d_e1').style.backgroundColor = "Red";
-			document.getElementById('d_e1').style.color = "White";
-		};
-		if (d_e2 == '40/50') {
-			document.getElementById('d_e2').style.backgroundColor = "Green";
-			document.getElementById('d_e2').style.color = "White";
-		} else {
-			document.getElementById('d_e2').style.backgroundColor = "Red";
-			document.getElementById('d_e2').style.color = "White";
-		};
-		
-		if (e_e1 == '30/40') {
-			document.getElementById('e_e1').style.backgroundColor = "Green";
-			document.getElementById('e_e1').style.color = "White";
-		} else {
-			document.getElementById('e_e1').style.backgroundColor = "Red";
-			document.getElementById('e_e1').style.color = "White";
-		};
-		if (e_e2 == '40/50') {
-			document.getElementById('e_e2').style.backgroundColor = "Green";
-			document.getElementById('e_e2').style.color = "White";
-		} else {
-			document.getElementById('e_e2').style.backgroundColor = "Red";
-			document.getElementById('e_e2').style.color = "White";
-		};
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/pct_pt1.js"></script>
+
 <div class="container-fluid">
 		<div class="col-xs-12 col-sm-12 col-lg-12">
 		  <div style="margin-bottom: 20px" class="col-xs-12 col-sm-6 col-lg-6">
@@ -115,32 +24,32 @@
 				<tbody>
 					<tr>
 						<td>Número de espacios</td>
-						<td><input style="text-align: center" size="1" type="text" id="a_e1"></td>
-						<td><input style="text-align: center" size="1" type="text" id="a_e2"></td>
+						<td><input style="text-align: center" size="5" type="text" id="a_e1"></td>
+						<td><input style="text-align: center" size="5" type="text" id="a_e2"></td>
 					</tr>
 					<tr>
 						<td>Número de espacios ocupados</td>
-						<td><input style="text-align: center" size="1" type="text" id="b_e1"></td>
-						<td><input style="text-align: center" size="1" type="text" id="b_e2"></td>
+						<td><input style="text-align: center" size="5" type="text" id="b_e1"></td>
+						<td><input style="text-align: center" size="5" type="text" id="b_e2"></td>
 					</tr>
 					<tr>
 						<td>Número de espacios disponibles</td>
-						<td><input style="text-align: center" size="1" type="text" id="c_e1"></td>
-						<td><input style="text-align: center" size="1" type="text" id="c_e2"></td>
+						<td><input style="text-align: center" size="5" type="text" id="c_e1"></td>
+						<td><input style="text-align: center" size="5" type="text" id="c_e2"></td>
 					</tr>
 					<tr>
 						<td>Fracción de espacios ocupados</td>
-						<td><input placeholder="a/b" style="text-align: center" size="1" type="text" id="d_e1"></td>
-						<td><input placeholder="a/b" style="text-align: center" size="1" type="text" id="d_e2"></td>
+						<td><input placeholder="a/b" style="text-align: center" size="5" type="text" id="d_e1"></td>
+						<td><input placeholder="a/b" style="text-align: center" size="5" type="text" id="d_e2"></td>
 					</tr>
 					<tr>
 						<td>Fracción de espacios disponibles</td>
-						<td><input placeholder="a/b" style="text-align: center" size="1" type="text" id="e_e1"></td>
-						<td><input placeholder="a/b" style="text-align: center" size="1" type="text" id="e_e2"></td>
+						<td><input placeholder="a/b" style="text-align: center" size="5" type="text" id="e_e1"></td>
+						<td><input placeholder="a/b" style="text-align: center" size="5" type="text" id="e_e2"></td>
 					</tr>
 				</tbody>
 			</table>
-			<button onclick="validar()" type="button" class="btn btn-success">Validar</button>
+			<button onclick="validar_22()" type="button" class="btn btn-success">Validar</button>
 		</div>
 		<p align="justify">¿Cuál crees que está más lleno?</p>
 		<div align="justify" class="col-xs-12 col-sm-12 col-lg-12">

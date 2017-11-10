@@ -1,18 +1,5 @@
-<script type="text/javascript" charset="utf-8">
-	function correcto() {
-		$('#correcta').show();
-		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-			$("#correcta").slideUp(500);
-		});
-	}
-	
-	function error() {
-		$('#error').show();
-		$("#error").fadeTo(2000, 500).slideUp(500, function(){
-			$("#error").slideUp(500);
-		});
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/pct_pt1.js"></script>
+
 <div class="container-fluid">
 	<p align="justify">Arrastra el rectangulo izquierdo y colocalo sobre el derecho para compararlos:</p>
 	<br />
