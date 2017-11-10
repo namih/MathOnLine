@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<p align="justify">Utiliza las flechas para sombrear el número de partes según lo indica cada fracción.</p>
 	<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
-		<div style="margin-bottom: 20px" class="col-xs-6 col-sm-6 col-lg-6">
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-6 col-lg-6">
 			<div class="btn-group" id="opciones">
 				<button onclick="disminuir_a_10()" type="button" class="btn btn-info"><</button>
 				<button id="valor_a" type="button" class="btn">1</button>
@@ -15,7 +15,7 @@
 			<br />
 			<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>10</mn></mfrac></math></h4>
 		</div>
-		<div style="margin-bottom: 20px" class="col-xs-6 col-sm-6 col-lg-6">
+		<div style="margin-bottom: 20px" class="col-xs-12 col-sm-6 col-lg-6">
 			<div class="btn-group" id="opciones">
 				<button onclick="disminuir_b_10()" type="button" class="btn btn-warning"><</button>
 				<button id="valor_b" type="button" class="btn">1</button>

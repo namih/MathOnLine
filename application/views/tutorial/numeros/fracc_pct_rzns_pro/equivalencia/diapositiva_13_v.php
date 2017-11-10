@@ -1,18 +1,5 @@
-<script type="text/javascript" charset="utf-8">
-	function correcto() {
-		$('#correcta').show();
-		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-			$("#correcta").slideUp(500);
-		});
-	}
-	
-	function error() {
-		$('#error').show();
-		$("#error").fadeTo(2000, 500).slideUp(500, function(){
-			$("#error").slideUp(500);
-		});
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/equivalencia.js"></script>
+
 <div class="container-fluid">
 	<h4 align="justify">Regresemos al problema:</h4>
 	<h4 align="justify">Según las indicaciones, en un experimento deben mezclarse <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>5</mn></mfrac></math> litros de agua con <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> litros de alcohol. Juan a mezclado <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>10</mn></mfrac></math> litros de agua y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>9</mn></mfrac></math> litros de alcohol.</h4>

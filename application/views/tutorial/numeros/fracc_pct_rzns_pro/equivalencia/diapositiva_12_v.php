@@ -1,175 +1,13 @@
-<script type="text/javascript" charset="utf-8">
-
-	var ia = 0;
-	var ib = 0;
-	
-	function correcto() {
-		$('#correcta').show();
-		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-			$("#correcta").slideUp(500);
-		});
-	}
-	
-	function error() {
-		$('#error').show();
-		$("#error").fadeTo(2000, 500).slideUp(500, function(){
-			$("#error").slideUp(500);
-		});
-	}
-	
-	function incrementar_a () {
-		console.log(ia);
-		switch (ia) {
-			case 0:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_1.png";
-				document.getElementById("valor_a").innerHTML = "1";
-				ia++;
-				break;
-			case 1:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_2.png";
-				document.getElementById("valor_a").innerHTML = "2";
-				ia++;
-				break;
-			case 2:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_3.png";
-				document.getElementById("valor_a").innerHTML = "3";
-				ia++;
-				break;
-			case 3:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_4.png";
-				document.getElementById("valor_a").innerHTML = "4";
-				ia++;
-				break;
-			case 4:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_5.png";
-				document.getElementById("valor_a").innerHTML = "5";
-				ia++;
-				break;
-			case 5:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_6.png";
-				document.getElementById("valor_a").innerHTML = "6";
-				ia++;
-				break;
-			case 6:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_7.png";
-				document.getElementById("valor_a").innerHTML = "7";
-				ia++;
-				break;
-			case 7:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_8.png";
-				document.getElementById("valor_a").innerHTML = "8";
-				ia++;
-				break;
-			case 8:
-				document.getElementById("baguette_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_9.png";
-				document.getElementById("valor_a").innerHTML = "9";
-				ia++;
-				break;
-		}
-	}
-	
-	function disminuir_a () {
-		console.log(ia);
-		switch (ia) {
-			case 9:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_8.png";
-				document.getElementById("valor_a").innerHTML = "8";
-				ia--;
-				break;
-			case 8:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_7.png";
-				document.getElementById("valor_a").innerHTML = "7";
-				ia--;
-				break;
-			case 7:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_6.png";
-				document.getElementById("valor_a").innerHTML = "6";
-				ia--;
-				break;
-			case 6:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_5.png";
-				document.getElementById("valor_a").innerHTML = "5";
-				ia--;
-				break;
-			case 5:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_4.png";
-				document.getElementById("valor_a").innerHTML = "4";
-				ia--;
-				break;
-			case 4:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_3.png";
-				document.getElementById("valor_a").innerHTML = "3";
-				ia--;
-				break;
-			case 3:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_2.png";
-				document.getElementById("valor_a").innerHTML = "2";
-				ia--;
-				break;
-			case 2:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_9_blue_1.png";
-				document.getElementById("valor_a").innerHTML = "1";
-				ia--;
-				break;
-			case 1:
-				document.getElementById("baguette_a").src = "<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white.png";
-				document.getElementById("valor_a").innerHTML = "1";
-				ia--;
-				break;
-		}
-	}
-	
-	function incrementar_b () {
-		console.log(ib);
-		switch (ib) {
-			case 0:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3_yellow_1.png";
-				document.getElementById("valor_b").innerHTML = "1";
-				ib++;
-				break;
-			case 1:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3_yellow_2.png";
-				document.getElementById("valor_b").innerHTML = "2";
-				ib++;
-				break;
-			case 2:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3_yellow_3.png";
-				document.getElementById("valor_b").innerHTML = "3";
-				ib++;
-				break;
-		}
-	}
-	
-	function disminuir_b () {
-		console.log(ib);
-		switch (ib) {
-			case 3:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3_yellow_2.png";
-				document.getElementById("valor_b").innerHTML = "2";
-				ib--;
-				break;
-			case 2:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_3_yellow_1.png";
-				document.getElementById("valor_b").innerHTML = "1";
-				ib--;
-				break;
-			case 1:
-				document.getElementById("baguette_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/entre_10_white.png";
-				document.getElementById("valor_b").innerHTML = "1";
-				ib--;
-				break;
-		}
-	}
-</script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/equivalencia.js"></script>
 
 <div class="container-fluid">
 	<p align="justify">Utiliza las flechas para sombrear el número de partes según lo indica cada fracción.</p>
 	<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 		<div style="margin-bottom: 20px" class="col-xs-6 col-sm-6 col-lg-6">
 			<div class="btn-group" id="opciones">
-				<button onclick="disminuir_a()" type="button" class="btn btn-info"><</button>
+				<button onclick="disminuir_a_12()" type="button" class="btn btn-info"><</button>
 				<button id="valor_a" type="button" class="btn">1</button>
-				<button onclick="incrementar_a()" type="button" class="btn btn-info">></button>
+				<button onclick="incrementar_a_12()" type="button" class="btn btn-info">></button>
 			</div>
 			<br />
 			<br />
@@ -179,9 +17,9 @@
 		</div>
 		<div style="margin-bottom: 20px" class="col-xs-6 col-sm-6 col-lg-6">
 			<div class="btn-group" id="opciones">
-				<button onclick="disminuir_b()" type="button" class="btn btn-warning"><</button>
+				<button onclick="disminuir_b_12()" type="button" class="btn btn-warning"><</button>
 				<button id="valor_b" type="button" class="btn">1</button>
-				<button onclick="incrementar_b()" type="button" class="btn btn-warning">></button>
+				<button onclick="incrementar_b_12()" type="button" class="btn btn-warning">></button>
 			</div>
 			<br />
 			<br />
