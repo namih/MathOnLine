@@ -50,3 +50,4 @@
 	</div>
 	<p align="justify">Observa que el 10% es equivalente a <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>10</mn></mfrac></math></p>
 </div>
+<p>Hola mundo</p>
