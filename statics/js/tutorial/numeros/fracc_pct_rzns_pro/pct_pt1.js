@@ -4658,14 +4658,14 @@ function validar_28() {
 		document.getElementById('parking_ec').style.backgroundColor = "Red";
 		document.getElementById('parking_ec').style.color = "White";
 	};
-	if (parking_ed == '1/2') {
+	if (parking_ed == '40/80') {
 		document.getElementById('parking_ed').style.backgroundColor = "Green";
 		document.getElementById('parking_ed').style.color = "White";
 	} else {
 		document.getElementById('parking_ed').style.backgroundColor = "Red";
 		document.getElementById('parking_ed').style.color = "White";
 	};
-	if (parking_ee == '1/2') {
+	if (parking_ee == '40/80') {
 		document.getElementById('parking_ee').style.backgroundColor = "Green";
 		document.getElementById('parking_ee').style.color = "White";
 	} else {
@@ -4711,14 +4711,14 @@ function validar_29() {
 		document.getElementById('parking_ec').style.backgroundColor = "Red";
 		document.getElementById('parking_ec').style.color = "White";
 	};
-	if (parking_ed == '1/4') {
+	if (parking_ed == '20/80') {
 		document.getElementById('parking_ed').style.backgroundColor = "Green";
 		document.getElementById('parking_ed').style.color = "White";
 	} else {
 		document.getElementById('parking_ed').style.backgroundColor = "Red";
 		document.getElementById('parking_ed').style.color = "White";
 	};
-	if (parking_ee == '1/4') {
+	if (parking_ee == '60/80') {
 		document.getElementById('parking_ee').style.backgroundColor = "Green";
 		document.getElementById('parking_ee').style.color = "White";
 	} else {
@@ -4764,14 +4764,14 @@ function validar_30() {
 		document.getElementById('parking_ec').style.backgroundColor = "Red";
 		document.getElementById('parking_ec').style.color = "White";
 	};
-	if (parking_ed == '3/4') {
+	if (parking_ed == '60/80') {
 		document.getElementById('parking_ed').style.backgroundColor = "Green";
 		document.getElementById('parking_ed').style.color = "White";
 	} else {
 		document.getElementById('parking_ed').style.backgroundColor = "Red";
 		document.getElementById('parking_ed').style.color = "White";
 	};
-	if (parking_ee == '3/4') {
+	if (parking_ee == '20/80') {
 		document.getElementById('parking_ee').style.backgroundColor = "Green";
 		document.getElementById('parking_ee').style.color = "White";
 	} else {
@@ -4817,14 +4817,14 @@ function validar_31() {
 		document.getElementById('parking_ec').style.backgroundColor = "Red";
 		document.getElementById('parking_ec').style.color = "White";
 	};
-	if (parking_ed == '1/10') {
+	if (parking_ed == '8/80') {
 		document.getElementById('parking_ed').style.backgroundColor = "Green";
 		document.getElementById('parking_ed').style.color = "White";
 	} else {
 		document.getElementById('parking_ed').style.backgroundColor = "Red";
 		document.getElementById('parking_ed').style.color = "White";
 	};
-	if (parking_ee == '1/10') {
+	if (parking_ee == '72/80') {
 		document.getElementById('parking_ee').style.backgroundColor = "Green";
 		document.getElementById('parking_ee').style.color = "White";
 	} else {
@@ -4832,6 +4832,59 @@ function validar_31() {
 		document.getElementById('parking_ee').style.color = "White";
 	};
 	if (parking_ef == 90) {
+		document.getElementById('parking_ef').style.backgroundColor = "Green";
+		document.getElementById('parking_ef').style.color = "White";
+	} else {
+		document.getElementById('parking_ef').style.backgroundColor = "Red";
+		document.getElementById('parking_ef').style.color = "White";
+	};
+}
+
+function validar_32() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	var parking_ef = document.getElementById('parking_ef').value;
+	
+	
+	if (parking_ea == 80) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == 16) {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == 64) {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == '16/80') {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == '64/80') {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+	if (parking_ef == 80) {
 		document.getElementById('parking_ef').style.backgroundColor = "Green";
 		document.getElementById('parking_ef').style.color = "White";
 	} else {
