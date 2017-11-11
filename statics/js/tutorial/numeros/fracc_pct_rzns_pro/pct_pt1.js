@@ -4057,3 +4057,785 @@ function disminuir_b_23 () {
 			break;
 	}
 }
+
+function validar_25() {
+	var a_e1 = document.getElementById('a_e1').value;
+	var a_e2 = document.getElementById('a_e2').value;
+	
+	var b_e1 = document.getElementById('b_e1').value;
+	var b_e2 = document.getElementById('b_e2').value;
+	
+	var c_e1 = document.getElementById('c_e1').value;
+	var c_e2 = document.getElementById('c_e2').value;
+	
+	var d_e1 = document.getElementById('d_e1').value;
+	var d_e2 = document.getElementById('d_e2').value;
+	
+	var e_e1 = document.getElementById('e_e1').value;
+	var e_e2 = document.getElementById('e_e2').value;
+	
+	if (a_e1 == 40) {
+		document.getElementById('a_e1').style.backgroundColor = "Green";
+		document.getElementById('a_e1').style.color = "White";
+	} else {
+		document.getElementById('a_e1').style.backgroundColor = "Red";
+		document.getElementById('a_e1').style.color = "White";
+	};
+	if (a_e2 == 80) {
+		document.getElementById('a_e2').style.backgroundColor = "Green";
+		document.getElementById('a_e2').style.color = "White";
+	} else {
+		document.getElementById('a_e2').style.backgroundColor = "Red";
+		document.getElementById('a_e2').style.color = "White";
+	};
+	
+	if (b_e1 == 24) {
+		document.getElementById('b_e1').style.backgroundColor = "Green";
+		document.getElementById('b_e1').style.color = "White";
+	} else {
+		document.getElementById('b_e1').style.backgroundColor = "Red";
+		document.getElementById('b_e1').style.color = "White";
+	};
+	if (b_e2 == 56) {
+		document.getElementById('b_e2').style.backgroundColor = "Green";
+		document.getElementById('b_e2').style.color = "White";
+	} else {
+		document.getElementById('b_e2').style.backgroundColor = "Red";
+		document.getElementById('b_e2').style.color = "White";
+	};
+	
+	if (c_e1 == 16) {
+		document.getElementById('c_e1').style.backgroundColor = "Green";
+		document.getElementById('c_e1').style.color = "White";
+	} else {
+		document.getElementById('c_e1').style.backgroundColor = "Red";
+		document.getElementById('c_e1').style.color = "White";
+	};
+	if (c_e2 == 24) {
+		document.getElementById('c_e2').style.backgroundColor = "Green";
+		document.getElementById('c_e2').style.color = "White";
+	} else {
+		document.getElementById('c_e2').style.backgroundColor = "Red";
+		document.getElementById('c_e2').style.color = "White";
+	};
+	
+	if (d_e1 == '24/40') {
+		document.getElementById('d_e1').style.backgroundColor = "Green";
+		document.getElementById('d_e1').style.color = "White";
+	} else {
+		document.getElementById('d_e1').style.backgroundColor = "Red";
+		document.getElementById('d_e1').style.color = "White";
+	};
+	if (d_e2 == '56/80') {
+		document.getElementById('d_e2').style.backgroundColor = "Green";
+		document.getElementById('d_e2').style.color = "White";
+	} else {
+		document.getElementById('d_e2').style.backgroundColor = "Red";
+		document.getElementById('d_e2').style.color = "White";
+	};
+	
+	if (e_e1 == '16/40') {
+		document.getElementById('e_e1').style.backgroundColor = "Green";
+		document.getElementById('e_e1').style.color = "White";
+	} else {
+		document.getElementById('e_e1').style.backgroundColor = "Red";
+		document.getElementById('e_e1').style.color = "White";
+	};
+	if (e_e2 == '24/80') {
+		document.getElementById('e_e2').style.backgroundColor = "Green";
+		document.getElementById('e_e2').style.color = "White";
+	} else {
+		document.getElementById('e_e2').style.backgroundColor = "Red";
+		document.getElementById('e_e2').style.color = "White";
+	};
+}
+
+function validar_26 () {
+	var e1 = document.getElementById('parking_e1').value;
+	var e2 = document.getElementById('parking_e2').value;
+	
+	if (e1 !="" && e2 !="") {
+		if (e1 == 60 && e2 == 70) {
+			correcto();
+		} else{
+			error();
+		};
+	};
+}
+
+function incrementar_a_26 () {
+	switch (ia) {
+		case 0:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_5.png";
+			document.getElementById("valor_a").innerHTML = "5%";
+			ia++;
+			break;
+		case 1:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_10.png";
+			document.getElementById("valor_a").innerHTML = "10%";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_15.png";
+			document.getElementById("valor_a").innerHTML = "15%";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_20.png";
+			document.getElementById("valor_a").innerHTML = "20%";
+			ia++;
+			break;
+		case 4:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_25.png";
+			document.getElementById("valor_a").innerHTML = "25%";
+			ia++;
+			break;
+		case 5:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_30.png";
+			document.getElementById("valor_a").innerHTML = "30%";
+			ia++;
+			break;
+		case 6:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_35.png";
+			document.getElementById("valor_a").innerHTML = "35%";
+			ia++;
+			break;
+		case 7:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_40.png";
+			document.getElementById("valor_a").innerHTML = "40%";
+			ia++;
+			break;
+		case 8:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_45.png";
+			document.getElementById("valor_a").innerHTML = "45%";
+			ia++;
+			break;
+		case 9:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_50.png";
+			document.getElementById("valor_a").innerHTML = "50%";
+			ia++;
+			break;
+		case 10:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_55.png";
+			document.getElementById("valor_a").innerHTML = "55%";
+			ia++;
+			break;
+		case 11:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_60.png";
+			document.getElementById("valor_a").innerHTML = "60%";
+			ia++;
+			break;
+		case 12:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_65.png";
+			document.getElementById("valor_a").innerHTML = "65%";
+			ia++;
+			break;
+		case 13:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_70.png";
+			document.getElementById("valor_a").innerHTML = "70%";
+			ia++;
+			break;
+		case 14:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_75.png";
+			document.getElementById("valor_a").innerHTML = "75%";
+			ia++;
+			break;
+		case 15:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_80.png";
+			document.getElementById("valor_a").innerHTML = "80%";
+			ia++;
+			break;
+		case 16:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_85.png";
+			document.getElementById("valor_a").innerHTML = "85%";
+			ia++;
+			break;
+		case 17:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_90.png";
+			document.getElementById("valor_a").innerHTML = "90%";
+			ia++;
+			break;
+		case 18:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_95.png";
+			document.getElementById("valor_a").innerHTML = "95%";
+			ia++;
+			break;
+		case 19:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_100.png";
+			document.getElementById("valor_a").innerHTML = "100%";
+			ia++;
+			break;
+	}
+}
+
+function disminuir_a_26 () {
+	switch (ia) {
+		case 1:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_clean.png";
+			document.getElementById("valor_a").innerHTML = "0%";
+			ia--;
+			break;
+		case 2:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_5.png";
+			document.getElementById("valor_a").innerHTML = "5%";
+			ia--;
+			break;
+		case 3:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_10.png";
+			document.getElementById("valor_a").innerHTML = "10%";
+			ia--;
+			break;
+		case 4:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_15.png";
+			document.getElementById("valor_a").innerHTML = "15%";
+			ia--;
+			break;
+		case 5:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_20.png";
+			document.getElementById("valor_a").innerHTML = "20%";
+			ia--;
+			break;
+		case 6:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_25.png";
+			document.getElementById("valor_a").innerHTML = "25%";
+			ia--;
+			break;
+		case 7:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_30.png";
+			document.getElementById("valor_a").innerHTML = "30%";
+			ia--;
+			break;
+		case 8:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_35.png";
+			document.getElementById("valor_a").innerHTML = "35%";
+			ia--;
+			break;
+		case 9:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_40.png";
+			document.getElementById("valor_a").innerHTML = "40%";
+			ia--;
+			break;
+		case 10:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_45.png";
+			document.getElementById("valor_a").innerHTML = "45%";
+			ia--;
+			break;
+		case 11:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_50.png";
+			document.getElementById("valor_a").innerHTML = "50%";
+			ia--;
+			break;
+		case 12:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_55.png";
+			document.getElementById("valor_a").innerHTML = "55%";
+			ia--;
+			break;
+		case 13:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_60.png";
+			document.getElementById("valor_a").innerHTML = "60%";
+			ia--;
+			break;
+		case 14:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_65.png";
+			document.getElementById("valor_a").innerHTML = "65%";
+			ia--;
+			break;
+		case 15:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_70.png";
+			document.getElementById("valor_a").innerHTML = "70%";
+			ia--;
+			break;
+		case 16:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_75.png";
+			document.getElementById("valor_a").innerHTML = "75%";
+			ia--;
+			break;
+		case 17:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_80.png";
+			document.getElementById("valor_a").innerHTML = "80%";
+			ia--;
+			break;
+		case 18:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_85.png";
+			document.getElementById("valor_a").innerHTML = "85%";
+			ia--;
+			break;
+		case 19:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_90.png";
+			document.getElementById("valor_a").innerHTML = "90%";
+			ia--;
+			break;
+		case 20:
+			document.getElementById("percent_a").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_blue_95.png";
+			document.getElementById("valor_a").innerHTML = "95%";
+			ia--;
+			break;
+	}
+}
+
+function incrementar_b_26 () {
+	switch (ib) {
+		case 0:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_5.png";
+			document.getElementById("valor_b").innerHTML = "5%";
+			ib++;
+			break;
+		case 1:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_10.png";
+			document.getElementById("valor_b").innerHTML = "10%";
+			ib++;
+			break;
+		case 2:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_15.png";
+			document.getElementById("valor_b").innerHTML = "15%";
+			ib++;
+			break;
+		case 3:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_20.png";
+			document.getElementById("valor_b").innerHTML = "20%";
+			ib++;
+			break;
+		case 4:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_25.png";
+			document.getElementById("valor_b").innerHTML = "25%";
+			ib++;
+			break;
+		case 5:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_30.png";
+			document.getElementById("valor_b").innerHTML = "30%";
+			ib++;
+			break;
+		case 6:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_35.png";
+			document.getElementById("valor_b").innerHTML = "35%";
+			ib++;
+			break;
+		case 7:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_40.png";
+			document.getElementById("valor_b").innerHTML = "40%";
+			ib++;
+			break;
+		case 8:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_45.png";
+			document.getElementById("valor_b").innerHTML = "45%";
+			ib++;
+			break;
+		case 9:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_50.png";
+			document.getElementById("valor_b").innerHTML = "50%";
+			ib++;
+			break;
+		case 10:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_55.png";
+			document.getElementById("valor_b").innerHTML = "55%";
+			ib++;
+			break;
+		case 11:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_60.png";
+			document.getElementById("valor_b").innerHTML = "60%";
+			ib++;
+			break;
+		case 12:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_65.png";
+			document.getElementById("valor_b").innerHTML = "65%";
+			ib++;
+			break;
+		case 13:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_70.png";
+			document.getElementById("valor_b").innerHTML = "70%";
+			ib++;
+			break;
+		case 14:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_75.png";
+			document.getElementById("valor_b").innerHTML = "75%";
+			ib++;
+			break;
+		case 15:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_80.png";
+			document.getElementById("valor_b").innerHTML = "80%";
+			ib++;
+			break;
+		case 16:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_85.png";
+			document.getElementById("valor_b").innerHTML = "85%";
+			ib++;
+			break;
+		case 17:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_90.png";
+			document.getElementById("valor_b").innerHTML = "90%";
+			ib++;
+			break;
+		case 18:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_95.png";
+			document.getElementById("valor_b").innerHTML = "95%";
+			ib++;
+			break;
+		case 19:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_100.png";
+			document.getElementById("valor_b").innerHTML = "100%";
+			ib++;
+			break;
+	}
+}
+
+function disminuir_b_26 () {
+	switch (ib) {
+		case 1:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_clean.png";
+			document.getElementById("valor_b").innerHTML = "0%";
+			ib--;
+			break;
+		case 2:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_5.png";
+			document.getElementById("valor_b").innerHTML = "5%";
+			ib--;
+			break;
+		case 3:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_10.png";
+			document.getElementById("valor_b").innerHTML = "10%";
+			ib--;
+			break;
+		case 4:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_15.png";
+			document.getElementById("valor_b").innerHTML = "15%";
+			ib--;
+			break;
+		case 5:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_20.png";
+			document.getElementById("valor_b").innerHTML = "20%";
+			ib--;
+			break;
+		case 6:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_25.png";
+			document.getElementById("valor_b").innerHTML = "25%";
+			ib--;
+			break;
+		case 7:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_30.png";
+			document.getElementById("valor_b").innerHTML = "30%";
+			ib--;
+			break;
+		case 8:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_35.png";
+			document.getElementById("valor_b").innerHTML = "35%";
+			ib--;
+			break;
+		case 9:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_40.png";
+			document.getElementById("valor_b").innerHTML = "40%";
+			ib--;
+			break;
+		case 10:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_45.png";
+			document.getElementById("valor_b").innerHTML = "45%";
+			ib--;
+			break;
+		case 11:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_50.png";
+			document.getElementById("valor_b").innerHTML = "50%";
+			ib--;
+			break;
+		case 12:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_55.png";
+			document.getElementById("valor_b").innerHTML = "55%";
+			ib--;
+			break;
+		case 13:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_60.png";
+			document.getElementById("valor_b").innerHTML = "60%";
+			ib--;
+			break;
+		case 14:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_65.png";
+			document.getElementById("valor_b").innerHTML = "65%";
+			ib--;
+			break;
+		case 15:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_70.png";
+			document.getElementById("valor_b").innerHTML = "70%";
+			ib--;
+			break;
+		case 16:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_75.png";
+			document.getElementById("valor_b").innerHTML = "75%";
+			ib--;
+			break;
+		case 17:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_80.png";
+			document.getElementById("valor_b").innerHTML = "80%";
+			ib--;
+			break;
+		case 18:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_85.png";
+			document.getElementById("valor_b").innerHTML = "85%";
+			ib--;
+			break;
+		case 19:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_90.png";
+			document.getElementById("valor_b").innerHTML = "90%";
+			ib--;
+			break;
+		case 20:
+			document.getElementById("percent_b").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/percent_orange_95.png";
+			document.getElementById("valor_b").innerHTML = "95%";
+			ib--;
+			break;
+	}
+}
+
+function validar_27() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	
+	
+	if (parking_ea == 1) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == '1/2') {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == '1/2') {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == 50) {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == 50) {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+}
+
+function validar_28() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	var parking_ef = document.getElementById('parking_ef').value;
+	
+	
+	if (parking_ea == 80) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == 40) {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == 40) {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == '1/2') {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == '1/2') {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+	if (parking_ef == 50) {
+		document.getElementById('parking_ef').style.backgroundColor = "Green";
+		document.getElementById('parking_ef').style.color = "White";
+	} else {
+		document.getElementById('parking_ef').style.backgroundColor = "Red";
+		document.getElementById('parking_ef').style.color = "White";
+	};
+}
+
+function validar_29() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	var parking_ef = document.getElementById('parking_ef').value;
+	
+	
+	if (parking_ea == 80) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == 20) {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == 60) {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == '1/4') {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == '1/4') {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+	if (parking_ef == 75) {
+		document.getElementById('parking_ef').style.backgroundColor = "Green";
+		document.getElementById('parking_ef').style.color = "White";
+	} else {
+		document.getElementById('parking_ef').style.backgroundColor = "Red";
+		document.getElementById('parking_ef').style.color = "White";
+	};
+}
+
+function validar_30() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	var parking_ef = document.getElementById('parking_ef').value;
+	
+	
+	if (parking_ea == 80) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == 60) {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == 20) {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == '3/4') {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == '3/4') {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+	if (parking_ef == 25) {
+		document.getElementById('parking_ef').style.backgroundColor = "Green";
+		document.getElementById('parking_ef').style.color = "White";
+	} else {
+		document.getElementById('parking_ef').style.backgroundColor = "Red";
+		document.getElementById('parking_ef').style.color = "White";
+	};
+}
+
+function validar_31() {
+	var parking_ea = document.getElementById('parking_ea').value;
+	var parking_eb = document.getElementById('parking_eb').value;
+	var parking_ec = document.getElementById('parking_ec').value;
+	var parking_ed = document.getElementById('parking_ed').value;
+	var parking_ee = document.getElementById('parking_ee').value;
+	var parking_ef = document.getElementById('parking_ef').value;
+	
+	
+	if (parking_ea == 80) {
+		document.getElementById('parking_ea').style.backgroundColor = "Green";
+		document.getElementById('parking_ea').style.color = "White";
+	} else {
+		document.getElementById('parking_ea').style.backgroundColor = "Red";
+		document.getElementById('parking_ea').style.color = "White";
+	};
+	if (parking_eb == 8) {
+		document.getElementById('parking_eb').style.backgroundColor = "Green";
+		document.getElementById('parking_eb').style.color = "White";
+	} else {
+		document.getElementById('parking_eb').style.backgroundColor = "Red";
+		document.getElementById('parking_eb').style.color = "White";
+	};
+	if (parking_ec == 72) {
+		document.getElementById('parking_ec').style.backgroundColor = "Green";
+		document.getElementById('parking_ec').style.color = "White";
+	} else {
+		document.getElementById('parking_ec').style.backgroundColor = "Red";
+		document.getElementById('parking_ec').style.color = "White";
+	};
+	if (parking_ed == '1/10') {
+		document.getElementById('parking_ed').style.backgroundColor = "Green";
+		document.getElementById('parking_ed').style.color = "White";
+	} else {
+		document.getElementById('parking_ed').style.backgroundColor = "Red";
+		document.getElementById('parking_ed').style.color = "White";
+	};
+	if (parking_ee == '1/10') {
+		document.getElementById('parking_ee').style.backgroundColor = "Green";
+		document.getElementById('parking_ee').style.color = "White";
+	} else {
+		document.getElementById('parking_ee').style.backgroundColor = "Red";
+		document.getElementById('parking_ee').style.color = "White";
+	};
+	if (parking_ef == 90) {
+		document.getElementById('parking_ef').style.backgroundColor = "Green";
+		document.getElementById('parking_ef').style.color = "White";
+	} else {
+		document.getElementById('parking_ef').style.backgroundColor = "Red";
+		document.getElementById('parking_ef').style.color = "White";
+	};
+}
