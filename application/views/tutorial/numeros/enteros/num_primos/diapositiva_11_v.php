@@ -5,7 +5,6 @@
 		<p>Esto te debió haber quedado:</p>
 	 	
 	</div>
-	<br/><br/>
 	<div id="seccion" >
 		<section>
 			<div class="tablaDiv" id="resaltar">51</div>
@@ -74,6 +73,6 @@
 	</div>
 	<p>Escribe los números primos mayores que 50 y menores que 100</p>
 	<br /><br /><br />
-	<input class="input-sm" type="text" id="1" value="" />
+	<input type="text" id="1" value="" />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
 </div>

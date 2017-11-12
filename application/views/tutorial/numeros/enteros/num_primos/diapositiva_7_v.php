@@ -1,14 +1,13 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/primos/diapositiva_7.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
 <div class="container-fluid">
 	<div>
 		<p>Esto te debió haber quedado:</p>
-	 	
 	</div>
-	<br/><br/>
+	<br/>
 	<div id="seccion" >
 		<section>
-			<div class="tablaDiv">1</div>
+			<div class="tablaDiv" id="resaltar">1</div>
 			<div class="tablaDiv">2</div>
 			<div class="tablaDiv">3</div>
 			<div class="tablaDiv" id="resaltar">4</div>
@@ -76,10 +75,19 @@
 		No se te pidió que marcaras los numeros que tienen al 4 o al 6 como factor ya que alpedir que marques los números que tienen al 2 como factor, se marcan todos éstos.</p>
 	<p>¿Qué notas acerca del digito de las unidades de estos números?</p>
 	<p>En qué números terminan todos excepto el 2 y el 5?</p>
-	<br /><br /><br />
-	<input class="input-sm" type="text" id="1" value="" />
-	<input class="input-sm" type="text" id="2" value="" />
-	<input class="input-sm" type="text" id="3" value="" />
-	<input class="input-sm" type="text" id="4" value="" />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<br />
+	<div class="table-responsive">
+	<input  type="text" id="1" value="" />
+	<input  type="text" id="2" value="" />
+	<input  type="text" id="3" value="" />
+	<input  type="text" id="4" value="" />
+	</div>
+	<br /><br />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div>
 </div>

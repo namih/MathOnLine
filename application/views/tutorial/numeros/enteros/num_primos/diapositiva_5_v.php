@@ -27,7 +27,7 @@
             			<input class="input-sm2"  type="text" id="area1"  value=""  />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2"  type="checkbox" id="base1" value=""/>
+            			<input class="input-sm2"  type="checkbox" id="1" value=""/>
             		</td>
             	</tr>
             	<tr>
@@ -150,7 +150,7 @@
             			<input class="input-sm2" type="text" id="altura10" value="" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="area1"  value="" />
+            			<input class="input-sm2" type="text" id="area10"  value="" />
             		</td>
             		<td class="modif">
             			<input class="input-sm2" type="checkbox" id="10" value="" />
@@ -159,13 +159,20 @@
             </tbody>
         </table>
 	</div>
-	<br /><br /><br />
+
 	<div  class="col-xs-12  col-xs-12 table-responsive">
 		<p>Los primeros cuatro números primos son:</p>
-		<input  type="text" id="1" value="" />
-		<input  type="text" id="2" value="" />
-		<input  type="text" id="3" value="" />
-		<input  type="text" id="4" value="" />
+		<input  type="text" id="prim1" value="" />
+		<input  type="text" id="prim2" value="" />
+		<input  type="text" id="prim3" value="" />
+		<input  type="text" id="prim4" value="" />
 		<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+		<div id="correcta" style="display: none" class="alert alert-success">
+		 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+		</div>
+		<div id="error" style="display: none" class="alert alert-warning">
+		 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+		</div> 
 	</div>
+	
 </div>
