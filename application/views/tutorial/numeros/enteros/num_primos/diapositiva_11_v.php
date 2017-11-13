@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/primos/diapositiva_11.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
 <div class="container-fluid">
 	<div>
@@ -71,8 +71,14 @@
 			<div class="tablaDiv" id="resaltar">100</div>
 		</section>
 	</div>
-	<p>Escribe los números primos mayores que 50 y menores que 100</p>
+	<p>Escribe los números primos mayores que 50 y menores que 100 (de menor a mayor)</p>
 	<br /><br /><br />
-	<input type="text" id="1" value="" />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="text" id="primos" value="" placeholder="1,2,3,4"/>
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	</div>
+	<div id="error" style="display: none" class="alert alert-warning">
+	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+	</div>
 </div>

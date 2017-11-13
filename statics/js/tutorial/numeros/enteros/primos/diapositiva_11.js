@@ -1,95 +1,96 @@
 /**
- * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ * 
  */
 function verificar(){
-	var numeros = [1,5];
-	alert(numeros);
-	var num1= new Number($("#1").val());
-	var num2= new Number($("#2").val());
-	/*if(num1=='' || num2==''){
-		alert("Favor de ingresar los datos ....");
-	} ocupar para validar que los campos no sean nulos*/
-	if (isNaN(num1)||isNaN(num2)) {
-		var array_num =[num1,num2];
-		alert("array_num"+array_num);
-		alert("Favor de ingresar solo números.");	
-		this.clean_imput();
+	var primos  = Array(document.getElementById("primos").value);
+	var arr_primos = Array("53,59,61,67,71,73,79,83,89,97"); 
+	
+	var res = array_diff(primos,arr_primos);
+	if(res.length == 0){
+		correcto("El ejercicio se realizó exitosamente");
 	}else{
-		var array_num =[num1,num2];
-		var array_order=array_num.sort(function(a, b){return a-b});
-		var tamanio=this.eliminateDuplicates(array_order);
-		//alert(tamanio.length);
-		if(tamanio.length == 2){
-			if(this.compara_array(array_order,numeros)){
-			alert("El ejercicio se realizo satisfactoriamente.");
-			this.clean_imput();
-			
-			}else{
-			alert("Favor de repetir nuevamente.");
-			this.clean_imput();
-			}
+		error("Favor de repetir el ejercicio");
+	}
+	
+}
+/**
+ * 
+ */
+function verificar12(){
+	
+	var primo12 = new Number($("#primo12").val());
+	
+	if (document.getElementById("primo12").value != '') {
+	if (primo12 == 101) {
+		correcto("El ejercicio se realizó exitosamente");
+	}else{
+		error("Repetir el ejercicio.");
+	}
+	}else{
+		error("Favor de ingresar el dato.");
+	}
+}
+/**
+ * 
+ */
+function verificar13(){
+	var primo13 = new Number($("#primo13").val());
+	
+	if (document.getElementById("primo13").value != '') {
+	if (primo13 == 997) {
+		correcto("El ejercicio se realizó exitosamente");
+	}else{
+		error("Repetir el ejercicio.");
+	}
+	}else{
+		error("Favor de ingresar el dato.");
+	}
+}
+
+function verificar14(){
+	var factores_primos  = Array(document.getElementById("factor_primo").value);
+	var arr_primos = Array("2,3,5"); 
+	
+	if (document.getElementById("factor_primo").value != '') {
+		var res = array_diff(factores_primos,arr_primos);
+		if(res.length == 0){
+			correcto("El ejercicio se realizó exitosamente");
 		}else{
-			alert("Los valores no deben de repetirse.");
-			this.clean_imput();
+			error("Favor de repetir el ejercicio");
 		}
-	}
-}
-/**
- * Metodo para eliminar los datos que se repiten en el areglo 
- */
-function eliminateDuplicates(arr) {
- 	 var i,
-     len=arr.length,
-     out=[],
-     obj={};
-
- 	for (i=0;i<len;i++) {
-    	obj[arr[i]]=0;
- 	}
- 	for (i in obj) {
-    	out.push(i);
- 	}
- 	return out;
-}	
-
-/**
- * Metodo para limpiar los inputs
- */
-function clean_imput(){
-	for (var i=1; i < 3; i++) {
-	  document.getElementById(i).value="";
-	}
-	 
-}
-/**
- * Metodo para comparar arreglos
- * @param {Object} arr1
- * @param {Object} arr2
- */
-function compara_array(arr1,arr2){
-	var cont=0;
-	for(var i=0,j=arr1.length; i<j; i++){
-	  if(arr1[i]==arr2[i]){
-	  	cont=cont+1;
-	  }
-	}	
-	if(cont==2){
-		return true;
 	}else{
-		return false;
+		error("Favor de ingresar los datos");
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * 
+ * @param {Object} array1
+ * @param {Object} array2
+ */
+function array_diff(array1, array2){
+    var difference = $.grep(array1, function(el) { return $.inArray(el,array2) < 0});
+    return difference.concat($.grep(array2, function(el) { return $.inArray(el,array1) < 0}));;
+}
+/**
+ * 
+ * @param {Object} texto
+ */
+function correcto(texto) {
+		$('#correcta').text(texto);
+		$('#correcta').show();
+		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+		});
+}
+/**
+ * 
+ * @param {Object} texto
+ */
+function error(texto) {
+		$('#error').text(texto);
+		$('#error').show();
+		$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+		});
+}
