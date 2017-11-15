@@ -1392,3 +1392,347 @@ function validar_18_b () {
 		error();
 	};
 }
+
+function validar_19_a () {
+	var cien_porciento = document.getElementById('cien_porciento').value;
+	if (cien_porciento == 107.76) {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_19_b () {
+	var total = document.getElementById('total').value;
+	if (total == 17.24) {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_20 () {
+	var iva = document.getElementById('iva').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var isr = document.getElementById('isr').value;
+	var total = document.getElementById('total').value;
+	
+	if (iva == '2,400.00') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (subtotal == '17,400.00') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('subtotal').style.backgroundColor = "Red";
+		document.getElementById('subtotal').style.color = "White";
+	};
+	if (retencion_iva == '1,600.00') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '1,500.00') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+	if (total == '14,300.00') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_21 () {
+	var iva = document.getElementById('iva').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var isr = document.getElementById('isr').value;
+	var total = document.getElementById('total').value;
+	
+	if (iva == '1,600.00') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (subtotal == '11,600.00') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('subtotal').style.backgroundColor = "Red";
+		document.getElementById('subtotal').style.color = "White";
+	};
+	if (retencion_iva == '1,066.67') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '1,000.00') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+	if (total == '9,533.33') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_22 () {
+	var honorarios = document.getElementById('honorarios').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var isr = document.getElementById('isr').value;
+	var total = document.getElementById('total').value;
+	
+	if (honorarios == '11,250,00') {
+		document.getElementById('honorarios').style.backgroundColor = "Green";
+		document.getElementById('honorarios').style.color = "White";
+	} else {
+		document.getElementById('honorarios').style.backgroundColor = "Red";
+		document.getElementById('honorarios').style.color = "White";
+	};
+	if (subtotal == '13,050.00') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('subtotal').style.backgroundColor = "Red";
+		document.getElementById('subtotal').style.color = "White";
+	};
+	if (retencion_iva == '1,200.00') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '1,125.00') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+	if (total == '10,725.00') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_23 () {
+	var honorarios = document.getElementById('honorarios').value;
+	var iva = document.getElementById('iva').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var isr = document.getElementById('isr').value;
+	var total = document.getElementById('total').value;
+	
+	if (honorarios == '5,452.59') {
+		document.getElementById('honorarios').style.backgroundColor = "Green";
+		document.getElementById('honorarios').style.color = "White";
+	} else {
+		document.getElementById('honorarios').style.backgroundColor = "Red";
+		document.getElementById('honorarios').style.color = "White";
+	};
+	if (iva == '872.41') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (retencion_iva == '581.61') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '545.26') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+	if (total == '5,198.14') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_24 () {
+	var honorarios = document.getElementById('honorarios').value;
+	var iva = document.getElementById('iva').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var isr = document.getElementById('isr').value;
+	var total = document.getElementById('total').value;
+	
+	if (honorarios == '32,343.75') {
+		document.getElementById('honorarios').style.backgroundColor = "Green";
+		document.getElementById('honorarios').style.color = "White";
+	} else {
+		document.getElementById('honorarios').style.backgroundColor = "Red";
+		document.getElementById('honorarios').style.color = "White";
+	};
+	if (iva == '5,175.00') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (subtotal == '37,518.75') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '3,234.38') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+	if (total == '30,834.38') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_25 () {
+	var honorarios = document.getElementById('honorarios').value;
+	var iva = document.getElementById('iva').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var total = document.getElementById('total').value;
+	
+	if (honorarios == '34,500.00') {
+		document.getElementById('honorarios').style.backgroundColor = "Green";
+		document.getElementById('honorarios').style.color = "White";
+	} else {
+		document.getElementById('honorarios').style.backgroundColor = "Red";
+		document.getElementById('honorarios').style.color = "White";
+	};
+	if (iva == '5,520.00') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (subtotal == '40,0250.00') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (retencion_iva == '3,680.00') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (total == '32,890.00') {
+		document.getElementById('total').style.backgroundColor = "Green";
+		document.getElementById('total').style.color = "White";
+	} else {
+		document.getElementById('total').style.backgroundColor = "Red";
+		document.getElementById('total').style.color = "White";
+	};
+}
+
+function validar_26 () {
+	var honorarios = document.getElementById('honorarios').value;
+	var iva = document.getElementById('iva').value;
+	var subtotal = document.getElementById('subtotal').value;
+	var retencion_iva = document.getElementById('retencion_iva').value;
+	var isr = document.getElementById('isr').value;
+	
+	if (honorarios == '14,475.00') {
+		document.getElementById('honorarios').style.backgroundColor = "Green";
+		document.getElementById('honorarios').style.color = "White";
+	} else {
+		document.getElementById('honorarios').style.backgroundColor = "Red";
+		document.getElementById('honorarios').style.color = "White";
+	};
+	if (iva == '2,316.00') {
+		document.getElementById('iva').style.backgroundColor = "Green";
+		document.getElementById('iva').style.color = "White";
+	} else {
+		document.getElementById('iva').style.backgroundColor = "Red";
+		document.getElementById('iva').style.color = "White";
+	};
+	if (subtotal == '16,791.00') {
+		document.getElementById('subtotal').style.backgroundColor = "Green";
+		document.getElementById('subtotal').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (retencion_iva == '1,544.00') {
+		document.getElementById('retencion_iva').style.backgroundColor = "Green";
+		document.getElementById('retencion_iva').style.color = "White";
+	} else {
+		document.getElementById('retencion_iva').style.backgroundColor = "Red";
+		document.getElementById('retencion_iva').style.color = "White";
+	};
+	if (isr == '1,447.50') {
+		document.getElementById('isr').style.backgroundColor = "Green";
+		document.getElementById('isr').style.color = "White";
+	} else {
+		document.getElementById('isr').style.backgroundColor = "Red";
+		document.getElementById('isr').style.color = "White";
+	};
+}
+
+function validar_27_a () {
+	var sin_iva = document.getElementById('sin_iva').value;
+	if (sin_iva == '1,077.59') {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_27_b () {
+	var iva = document.getElementById('iva').value;
+	if (iva == '172.41') {
+		correcto();
+	} else{
+		error();
+	};
+}
