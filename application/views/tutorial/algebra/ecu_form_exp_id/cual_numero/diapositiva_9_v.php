@@ -1,27 +1,26 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/ecu_form_exp_id/cual_numero.js"></script>
 
 <div class="container-fluid">
-	<p align="justify">¿Cuál es el número Y que al sumarle 3 da como resultado -5?</p>
+	<p align="justify">¿Cuál es el número Y que al restarle 3 da como resultado -13?</p>
 	<table>
 		<tr>
 			<td><h2>Y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
-			<td><h2>+&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
+			<td><h2>-&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
 			<td><h2>3&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
 			<td><h2>=&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
-			<td><h2>-5</h2></td>
+			<td><h2>13</h2></td>
 		</tr>
 		<tr>
-			<td><h2><input placeholder="Y" style="text-align: center" onchange="validar_2()" size="1" type="text" id="incognita"></h2></td>
-			<td><h2>+</h2></td>
+			<td><h2><input placeholder="Y" style="text-align: center" onchange="validar_9()" size="1" type="text" id="incognita"></h2></td>
+			<td><h2>-</h2></td>
 			<td><h2>3</h2></td>
 			<td><h2>=</h2></td>
-			<td><h2>-5</h2></td>
+			<td><h2>13</h2></td>
 		</tr>
 	</table>
 	<div align="right">
 		<button disabled="disabled" type="button" class="btn btn-primary">Otro ejercicio</button>
-	</div>
-	
+	</div>	
 </div>
 <br />
 <br />		

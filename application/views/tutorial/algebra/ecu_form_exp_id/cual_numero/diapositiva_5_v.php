@@ -1,14 +1,14 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/ecu_form_exp_id/cual_numero.js"></script>
 
 <div class="container-fluid">
-	<p align="justify">¿Cuál es el número X que al sumarle (-4) da como resultado <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mn>24</mn><mn>7</mn></mfrac></math>?</p>
+	<p align="justify">¿Cuál es el número Z que al sumarle <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>4</mn></mfrac></math> da como resultado 4?</p>
 	<table>
 		<tr>
-			<td><h2>X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
+			<td><h2>Z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
 			<td><h2>+&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
-			<td><h2>(-4)&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
+			<td><h2><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>4</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
 			<td><h2>=&nbsp;&nbsp;&nbsp;&nbsp;</h2></td>
-			<td><h2><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mn>24</mn><mn>7</mn></mfrac></math></h2></td>
+			<td><h2>4</h2></td>
 		</tr>
 		<tr>
 			<td>
@@ -16,22 +16,22 @@
 				<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>
 				  	<semantics>
 				  		<annotation-xml encoding="application/xhtml+xml">
-				  			<input onchange="validar_3()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador" />
+				  			<input onchange="validar_5()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador" />
 				  		</annotation-xml>
 				  	</semantics>
 			      </mi><mi>
 			      	<semantics>
 				  		<annotation-xml encoding="application/xhtml+xml">
-				  			<input onchange="validar_3()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador" />
+				  			<input onchange="validar_5()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador" />
 				  		</annotation-xml>
 				  	</semantics>
 				  	</mi></mfrac></math>
 				  </h2>
 			</td>
 			<td><h2>+</h2></td>
-			<td><h2>(-4)</h2></td>
+			<td><h2><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>4</mn></mfrac></math></h2></td>
 			<td><h2>=</h2></td>
-			<td><h2><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mn>24</mn><mn>7</mn></mfrac></math></h2></td>
+			<td><h2>4</h2></td>
 		</tr>
 	</table>
 	<div align="right">

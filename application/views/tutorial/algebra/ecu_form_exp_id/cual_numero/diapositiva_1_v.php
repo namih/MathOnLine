@@ -11,7 +11,7 @@
 			<td><h2>11</h2></td>
 		</tr>
 		<tr>
-			<td><h2><input placeholder="Y" style="text-align: center" onchange="validar_1()" size="1" type="text" id="incognita"></h1></td>
+			<td><h2><input placeholder="Y" style="text-align: center" onchange="validar_1()" size="1" type="text" id="incognita"></h2></td>
 			<td><h2>+</h2></td>
 			<td><h2>1</h2></td>
 			<td><h2>=</h2></td>
