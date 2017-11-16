@@ -134,3 +134,69 @@ function validar_11 () {
 		};
 	};
 }
+
+function validar_12 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 1 && denominador == 3) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
+
+function validar_13 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 4 && denominador == 5) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
+
+function validar_14 () {
+	var incognita = document.getElementById('incognita').value;
+	if (incognita == 3) {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_15 () {
+	var incognita = document.getElementById('incognita').value;
+	if (incognita == 2) {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_16 () {
+	var incognita = document.getElementById('incognita').value;
+	if (incognita == -3) {
+		correcto();
+	} else{
+		error();
+	};
+}
+
+function validar_17 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 2 && denominador == 5) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
