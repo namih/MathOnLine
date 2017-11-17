@@ -200,3 +200,51 @@ function validar_17 () {
 		};
 	};
 }
+
+function validar_18 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 2 && denominador == 3) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
+
+function validar_19 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 4 && denominador == 3) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
+
+function validar_20 () {
+	var numerador = document.getElementById('numerador').value;
+	var denominador = document.getElementById('denominador').value;
+	
+	if (numerador!='' && denominador!='') {
+		if (numerador == 3 && denominador == 5) {
+			correcto();
+		} else {
+			error();
+		};
+	};
+}
+
+function validar_21 () {
+	var incognita = document.getElementById('incognita').value;
+	if (incognita == 1) {
+		correcto();
+	} else{
+		error();
+	};
+}
