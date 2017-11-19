@@ -4892,3 +4892,1565 @@ function validar_32() {
 		document.getElementById('parking_ef').style.color = "White";
 	};
 }
+
+function incrementar_parking () {
+	switch (ia) {
+		case 0:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_1.png";
+			document.getElementById("porcentaje").innerHTML = "1";
+			ia++;
+			break;
+		case 1:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_2.png";
+			document.getElementById("porcentaje").innerHTML = "2";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_3.png";
+			document.getElementById("porcentaje").innerHTML = "3";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_4.png";
+			document.getElementById("porcentaje").innerHTML = "4";
+			ia++;
+			break;
+		case 4:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_5.png";
+			document.getElementById("porcentaje").innerHTML = "5";
+			ia++;
+			break;
+		case 5:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_6.png";
+			document.getElementById("porcentaje").innerHTML = "6";
+			ia++;
+			break;
+		case 6:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_7.png";
+			document.getElementById("porcentaje").innerHTML = "7";
+			ia++;
+			break;
+		case 7:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_8.png";
+			document.getElementById("porcentaje").innerHTML = "8";
+			ia++;
+			break;
+		case 8:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_9.png";
+			document.getElementById("porcentaje").innerHTML = "9";
+			ia++;
+			break;
+		case 9:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_10.png";
+			document.getElementById("porcentaje").innerHTML = "10";
+			ia++;
+			break;
+		case 10:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_11.png";
+			document.getElementById("porcentaje").innerHTML = "11";
+			ia++;
+			break;
+		case 11:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_12.png";
+			document.getElementById("porcentaje").innerHTML = "12";
+			ia++;
+			break;
+		case 12:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_13.png";
+			document.getElementById("porcentaje").innerHTML = "13";
+			ia++;
+			break;
+		case 13:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_14.png";
+			document.getElementById("porcentaje").innerHTML = "14";
+			ia++;
+			break;
+		case 14:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_15.png";
+			document.getElementById("porcentaje").innerHTML = "15";
+			ia++;
+			break;
+		case 15:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_16.png";
+			document.getElementById("porcentaje").innerHTML = "16";
+			ia++;
+			break;
+		case 16:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_17.png";
+			document.getElementById("porcentaje").innerHTML = "17";
+			ia++;
+			break;
+		case 17:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_18.png";
+			document.getElementById("porcentaje").innerHTML = "18";
+			ia++;
+			break;
+		case 18:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_19.png";
+			document.getElementById("porcentaje").innerHTML = "19";
+			ia++;
+			break;
+		case 19:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_20.png";
+			document.getElementById("porcentaje").innerHTML = "20";
+			ia++;
+			break;
+		case 20:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_21.png";
+			document.getElementById("porcentaje").innerHTML = "21";
+			ia++;
+			break;
+		case 21:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_22.png";
+			document.getElementById("porcentaje").innerHTML = "22";
+			ia++;
+			break;
+		case 22:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_23.png";
+			document.getElementById("porcentaje").innerHTML = "23";
+			ia++;
+			break;
+		case 23:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_24.png";
+			document.getElementById("porcentaje").innerHTML = "24";
+			ia++;
+			break;
+		case 24:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_25.png";
+			document.getElementById("porcentaje").innerHTML = "25";
+			ia++;
+			break;
+		case 25:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_26.png";
+			document.getElementById("porcentaje").innerHTML = "26";
+			ia++;
+			break;
+		case 26:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_27.png";
+			document.getElementById("porcentaje").innerHTML = "27";
+			ia++;
+			break;
+		case 27:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_28.png";
+			document.getElementById("porcentaje").innerHTML = "28";
+			ia++;
+			break;
+		case 28:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_29.png";
+			document.getElementById("porcentaje").innerHTML = "29";
+			ia++;
+			break;
+		case 29:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_30.png";
+			document.getElementById("porcentaje").innerHTML = "30";
+			ia++;
+			break;
+		case 30:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_31.png";
+			document.getElementById("porcentaje").innerHTML = "31";
+			ia++;
+			break;
+		case 31:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_32.png";
+			document.getElementById("porcentaje").innerHTML = "32";
+			ia++;
+			break;
+		case 32:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_33.png";
+			document.getElementById("porcentaje").innerHTML = "33";
+			ia++;
+			break;
+		case 33:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_34.png";
+			document.getElementById("porcentaje").innerHTML = "34";
+			ia++;
+			break;
+		case 34:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_35.png";
+			document.getElementById("porcentaje").innerHTML = "35";
+			ia++;
+			break;
+		case 35:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_36.png";
+			document.getElementById("porcentaje").innerHTML = "36";
+			ia++;
+			break;
+		case 36:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_37.png";
+			document.getElementById("porcentaje").innerHTML = "37";
+			ia++;
+			break;
+		case 37:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_38.png";
+			document.getElementById("porcentaje").innerHTML = "38";
+			ia++;
+			break;
+		case 38:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_39.png";
+			document.getElementById("porcentaje").innerHTML = "39";
+			ia++;
+			break;
+		case 39:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_40.png";
+			document.getElementById("porcentaje").innerHTML = "40";
+			ia++;
+			break;
+		case 40:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_41.png";
+			document.getElementById("porcentaje").innerHTML = "41";
+			ia++;
+			break;
+		case 41:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_42.png";
+			document.getElementById("porcentaje").innerHTML = "42";
+			ia++;
+			break;
+		case 42:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_43.png";
+			document.getElementById("porcentaje").innerHTML = "43";
+			ia++;
+			break;
+		case 43:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_44.png";
+			document.getElementById("porcentaje").innerHTML = "44";
+			ia++;
+			break;
+		case 44:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_45.png";
+			document.getElementById("porcentaje").innerHTML = "45";
+			ia++;
+			break;
+		case 45:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_46.png";
+			document.getElementById("porcentaje").innerHTML = "46";
+			ia++;
+			break;
+		case 46:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_47.png";
+			document.getElementById("porcentaje").innerHTML = "47";
+			ia++;
+			break;
+		case 47:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_48.png";
+			document.getElementById("porcentaje").innerHTML = "48";
+			ia++;
+			break;
+		case 48:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_49.png";
+			document.getElementById("porcentaje").innerHTML = "49";
+			ia++;
+			break;
+		case 49:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_50.png";
+			document.getElementById("porcentaje").innerHTML = "50";
+			ia++;
+			break;
+		case 50:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_51.png";
+			document.getElementById("porcentaje").innerHTML = "51";
+			ia++;
+			break;
+		case 51:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_52.png";
+			document.getElementById("porcentaje").innerHTML = "52";
+			ia++;
+			break;
+		case 52:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_53.png";
+			document.getElementById("porcentaje").innerHTML = "53";
+			ia++;
+			break;
+		case 53:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_54.png";
+			document.getElementById("porcentaje").innerHTML = "54";
+			ia++;
+			break;
+		case 54:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_55.png";
+			document.getElementById("porcentaje").innerHTML = "55";
+			ia++;
+			break;
+		case 55:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_56.png";
+			document.getElementById("porcentaje").innerHTML = "56";
+			ia++;
+			break;
+		case 56:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_57.png";
+			document.getElementById("porcentaje").innerHTML = "57";
+			ia++;
+			break;
+		case 57:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_58.png";
+			document.getElementById("porcentaje").innerHTML = "58";
+			ia++;
+			break;
+		case 58:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_59.png";
+			document.getElementById("porcentaje").innerHTML = "59";
+			ia++;
+			break;
+		case 59:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_60.png";
+			document.getElementById("porcentaje").innerHTML = "60";
+			ia++;
+			break;
+		case 60:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_61.png";
+			document.getElementById("porcentaje").innerHTML = "61";
+			ia++;
+			break;
+		case 61:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_62.png";
+			document.getElementById("porcentaje").innerHTML = "62";
+			ia++;
+			break;
+		case 62:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_63.png";
+			document.getElementById("porcentaje").innerHTML = "63";
+			ia++;
+			break;
+		case 63:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_64.png";
+			document.getElementById("porcentaje").innerHTML = "64";
+			ia++;
+			break;
+		case 64:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_65.png";
+			document.getElementById("porcentaje").innerHTML = "65";
+			ia++;
+			break;
+		case 65:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_66.png";
+			document.getElementById("porcentaje").innerHTML = "66";
+			ia++;
+			break;
+		case 66:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_67.png";
+			document.getElementById("porcentaje").innerHTML = "67";
+			ia++;
+			break;
+		case 67:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_68.png";
+			document.getElementById("porcentaje").innerHTML = "68";
+			ia++;
+			break;
+		case 68:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_69.png";
+			document.getElementById("porcentaje").innerHTML = "69";
+			ia++;
+			break;
+		case 69:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_70.png";
+			document.getElementById("porcentaje").innerHTML = "70";
+			ia++;
+			break;
+		case 70:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_71.png";
+			document.getElementById("porcentaje").innerHTML = "71";
+			ia++;
+			break;
+		case 71:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_72.png";
+			document.getElementById("porcentaje").innerHTML = "72";
+			ia++;
+			break;
+		case 72:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_73.png";
+			document.getElementById("porcentaje").innerHTML = "73";
+			ia++;
+			break;
+		case 73:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_74.png";
+			document.getElementById("porcentaje").innerHTML = "74";
+			ia++;
+			break;
+		case 74:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_75.png";
+			document.getElementById("porcentaje").innerHTML = "75";
+			ia++;
+			break;
+		case 75:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_76.png";
+			document.getElementById("porcentaje").innerHTML = "76";
+			ia++;
+			break;
+		case 76:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_77.png";
+			document.getElementById("porcentaje").innerHTML = "77";
+			ia++;
+			break;
+		case 77:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_78.png";
+			document.getElementById("porcentaje").innerHTML = "78";
+			ia++;
+			break;
+		case 78:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_79.png";
+			document.getElementById("porcentaje").innerHTML = "79";
+			ia++;
+			break;
+		case 79:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_80.png";
+			document.getElementById("porcentaje").innerHTML = "80";
+			ia++;
+			break;
+		case 80:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_81.png";
+			document.getElementById("porcentaje").innerHTML = "81";
+			ia++;
+			break;
+		case 81:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_82.png";
+			document.getElementById("porcentaje").innerHTML = "82";
+			ia++;
+			break;
+		case 82:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_83.png";
+			document.getElementById("porcentaje").innerHTML = "83";
+			ia++;
+			break;
+		case 83:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_84.png";
+			document.getElementById("porcentaje").innerHTML = "84";
+			ia++;
+			break;
+		case 84:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_85.png";
+			document.getElementById("porcentaje").innerHTML = "85";
+			ia++;
+			break;
+		case 85:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_86.png";
+			document.getElementById("porcentaje").innerHTML = "86";
+			ia++;
+			break;
+		case 86:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_87.png";
+			document.getElementById("porcentaje").innerHTML = "87";
+			ia++;
+			break;
+		case 87:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_88.png";
+			document.getElementById("porcentaje").innerHTML = "88";
+			ia++;
+			break;
+		case 88:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_89.png";
+			document.getElementById("porcentaje").innerHTML = "89";
+			ia++;
+			break;
+		case 89:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_90.png";
+			document.getElementById("porcentaje").innerHTML = "90";
+			ia++;
+			break;
+		case 90:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_91.png";
+			document.getElementById("porcentaje").innerHTML = "91";
+			ia++;
+			break;
+		case 91:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_92.png";
+			document.getElementById("porcentaje").innerHTML = "92";
+			ia++;
+			break;
+		case 92:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_93.png";
+			document.getElementById("porcentaje").innerHTML = "93";
+			ia++;
+			break;
+		case 93:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_94.png";
+			document.getElementById("porcentaje").innerHTML = "94";
+			ia++;
+			break;
+		case 94:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_95.png";
+			document.getElementById("porcentaje").innerHTML = "95";
+			ia++;
+			break;
+		case 95:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_96.png";
+			document.getElementById("porcentaje").innerHTML = "96";
+			ia++;
+			break;
+		case 96:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_97.png";
+			document.getElementById("porcentaje").innerHTML = "97";
+			ia++;
+			break;
+		case 97:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_98.png";
+			document.getElementById("porcentaje").innerHTML = "98";
+			ia++;
+			break;
+		case 98:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_99.png";
+			document.getElementById("porcentaje").innerHTML = "99";
+			ia++;
+			break;
+		case 99:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_100.png";
+			document.getElementById("porcentaje").innerHTML = "100";
+			ia++;
+			break;
+	}
+}
+
+function disminuir_parking () {
+	switch (ia) {
+		case 1:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent.png";
+			document.getElementById("porcentaje").innerHTML = "0";
+			ia--;
+			break;
+		case 2:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_1.png";
+			document.getElementById("porcentaje").innerHTML = "1";
+			ia--;
+			break;
+		case 3:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_2.png";
+			document.getElementById("porcentaje").innerHTML = "2";
+			ia--;
+			break;
+		case 4:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_3.png";
+			document.getElementById("porcentaje").innerHTML = "3";
+			ia--;
+			break;
+		case 5:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_4.png";
+			document.getElementById("porcentaje").innerHTML = "4";
+			ia--;
+			break;
+		case 6:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_5.png";
+			document.getElementById("porcentaje").innerHTML = "5";
+			ia--;
+			break;
+		case 7:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_6.png";
+			document.getElementById("porcentaje").innerHTML = "6";
+			ia--;
+			break;
+		case 8:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_7.png";
+			document.getElementById("porcentaje").innerHTML = "7";
+			ia--;
+			break;
+		case 9:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_8.png";
+			document.getElementById("porcentaje").innerHTML = "8";
+			ia--;
+			break;
+		case 10:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_9.png";
+			document.getElementById("porcentaje").innerHTML = "9";
+			ia--;
+			break;
+		case 11:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_10.png";
+			document.getElementById("porcentaje").innerHTML = "10";
+			ia--;
+			break;
+		case 12:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_11.png";
+			document.getElementById("porcentaje").innerHTML = "11";
+			ia--;
+			break;
+		case 13:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_12.png";
+			document.getElementById("porcentaje").innerHTML = "12";
+			ia--;
+			break;
+		case 14:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_13.png";
+			document.getElementById("porcentaje").innerHTML = "13";
+			ia--;
+			break;
+		case 15:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_14.png";
+			document.getElementById("porcentaje").innerHTML = "14";
+			ia--;
+			break;
+		case 16:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_15.png";
+			document.getElementById("porcentaje").innerHTML = "15";
+			ia--;
+			break;
+		case 17:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_16.png";
+			document.getElementById("porcentaje").innerHTML = "16";
+			ia--;
+			break;
+		case 18:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_17.png";
+			document.getElementById("porcentaje").innerHTML = "17";
+			ia--;
+			break;
+		case 19:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_18.png";
+			document.getElementById("porcentaje").innerHTML = "18";
+			ia--;
+			break;
+		case 20:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_19.png";
+			document.getElementById("porcentaje").innerHTML = "19";
+			ia--;
+			break;
+		case 21:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_20.png";
+			document.getElementById("porcentaje").innerHTML = "20";
+			ia--;
+			break;
+		case 22:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_21.png";
+			document.getElementById("porcentaje").innerHTML = "21";
+			ia--;
+			break;
+		case 23:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_22.png";
+			document.getElementById("porcentaje").innerHTML = "22";
+			ia--;
+			break;
+		case 24:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_23.png";
+			document.getElementById("porcentaje").innerHTML = "23";
+			ia--;
+			break;
+		case 25:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_24.png";
+			document.getElementById("porcentaje").innerHTML = "24";
+			ia--;
+			break;
+		case 26:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_25.png";
+			document.getElementById("porcentaje").innerHTML = "25";
+			ia--;
+			break;
+		case 27:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_26.png";
+			document.getElementById("porcentaje").innerHTML = "26";
+			ia--;
+			break;
+		case 28:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_27.png";
+			document.getElementById("porcentaje").innerHTML = "27";
+			ia--;
+			break;
+		case 29:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_28.png";
+			document.getElementById("porcentaje").innerHTML = "28";
+			ia--;
+			break;
+		case 30:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_29.png";
+			document.getElementById("porcentaje").innerHTML = "29";
+			ia--;
+			break;
+		case 31:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_30.png";
+			document.getElementById("porcentaje").innerHTML = "30";
+			ia--;
+			break;
+		case 32:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_31.png";
+			document.getElementById("porcentaje").innerHTML = "31";
+			ia--;
+			break;
+		case 33:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_32.png";
+			document.getElementById("porcentaje").innerHTML = "32";
+			ia--;
+			break;
+		case 34:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_33.png";
+			document.getElementById("porcentaje").innerHTML = "33";
+			ia--;
+			break;
+		case 35:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_34.png";
+			document.getElementById("porcentaje").innerHTML = "34";
+			ia--;
+			break;
+		case 36:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_35.png";
+			document.getElementById("porcentaje").innerHTML = "35";
+			ia--;
+			break;
+		case 37:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_36.png";
+			document.getElementById("porcentaje").innerHTML = "36";
+			ia--;
+			break;
+		case 38:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_37.png";
+			document.getElementById("porcentaje").innerHTML = "37";
+			ia--;
+			break;
+		case 39:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_38.png";
+			document.getElementById("porcentaje").innerHTML = "38";
+			ia--;
+			break;
+		case 40:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_39.png";
+			document.getElementById("porcentaje").innerHTML = "39";
+			ia--;
+			break;
+		case 41:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_40.png";
+			document.getElementById("porcentaje").innerHTML = "40";
+			ia--;
+			break;
+		case 42:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_41.png";
+			document.getElementById("porcentaje").innerHTML = "41";
+			ia--;
+			break;
+		case 43:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_42.png";
+			document.getElementById("porcentaje").innerHTML = "42";
+			ia--;
+			break;
+		case 44:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_43.png";
+			document.getElementById("porcentaje").innerHTML = "43";
+			ia--;
+			break;
+		case 45:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_44.png";
+			document.getElementById("porcentaje").innerHTML = "44";
+			ia--;
+			break;
+		case 46:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_45.png";
+			document.getElementById("porcentaje").innerHTML = "45";
+			ia--;
+			break;
+		case 47:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_46.png";
+			document.getElementById("porcentaje").innerHTML = "46";
+			ia--;
+			break;
+		case 48:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_47.png";
+			document.getElementById("porcentaje").innerHTML = "47";
+			ia--;
+			break;
+		case 49:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_48.png";
+			document.getElementById("porcentaje").innerHTML = "48";
+			ia--;
+			break;
+		case 50:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_49.png";
+			document.getElementById("porcentaje").innerHTML = "49";
+			ia--;
+			break;
+		case 51:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_50.png";
+			document.getElementById("porcentaje").innerHTML = "50";
+			ia--;
+			break;
+		case 52:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_51.png";
+			document.getElementById("porcentaje").innerHTML = "51";
+			ia--;
+			break;
+		case 53:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_52.png";
+			document.getElementById("porcentaje").innerHTML = "52";
+			ia--;
+			break;
+		case 54:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_53.png";
+			document.getElementById("porcentaje").innerHTML = "53";
+			ia--;
+			break;
+		case 55:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_54.png";
+			document.getElementById("porcentaje").innerHTML = "54";
+			ia--;
+			break;
+		case 56:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_55.png";
+			document.getElementById("porcentaje").innerHTML = "55";
+			ia--;
+			break;
+		case 57:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_56.png";
+			document.getElementById("porcentaje").innerHTML = "56";
+			ia--;
+			break;
+		case 58:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_57.png";
+			document.getElementById("porcentaje").innerHTML = "57";
+			ia--;
+			break;
+		case 59:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_58.png";
+			document.getElementById("porcentaje").innerHTML = "58";
+			ia--;
+			break;
+		case 60:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_59.png";
+			document.getElementById("porcentaje").innerHTML = "59";
+			ia--;
+			break;
+		case 61:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_60.png";
+			document.getElementById("porcentaje").innerHTML = "60";
+			ia--;
+			break;
+		case 62:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_61.png";
+			document.getElementById("porcentaje").innerHTML = "61";
+			ia--;
+			break;
+		case 63:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_62.png";
+			document.getElementById("porcentaje").innerHTML = "62";
+			ia--;
+			break;
+		case 64:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_63.png";
+			document.getElementById("porcentaje").innerHTML = "63";
+			ia--;
+			break;
+		case 65:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_64.png";
+			document.getElementById("porcentaje").innerHTML = "64";
+			ia--;
+			break;
+		case 66:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_65.png";
+			document.getElementById("porcentaje").innerHTML = "65";
+			ia--;
+			break;
+		case 67:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_66.png";
+			document.getElementById("porcentaje").innerHTML = "66";
+			ia--;
+			break;
+		case 68:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_67.png";
+			document.getElementById("porcentaje").innerHTML = "67";
+			ia--;
+			break;
+		case 69:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_68.png";
+			document.getElementById("porcentaje").innerHTML = "68";
+			ia--;
+			break;
+		case 70:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_69.png";
+			document.getElementById("porcentaje").innerHTML = "69";
+			ia--;
+			break;
+		case 71:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_70.png";
+			document.getElementById("porcentaje").innerHTML = "70";
+			ia--;
+			break;
+		case 72:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_71.png";
+			document.getElementById("porcentaje").innerHTML = "71";
+			ia--;
+			break;
+		case 73:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_72.png";
+			document.getElementById("porcentaje").innerHTML = "72";
+			ia--;
+			break;
+		case 74:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_73.png";
+			document.getElementById("porcentaje").innerHTML = "73";
+			ia--;
+			break;
+		case 75:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_74.png";
+			document.getElementById("porcentaje").innerHTML = "74";
+			ia--;
+			break;
+		case 76:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_75.png";
+			document.getElementById("porcentaje").innerHTML = "75";
+			ia--;
+			break;
+		case 77:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_76.png";
+			document.getElementById("porcentaje").innerHTML = "76";
+			ia--;
+			break;
+		case 78:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_77.png";
+			document.getElementById("porcentaje").innerHTML = "77";
+			ia--;
+			break;
+		case 79:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_78.png";
+			document.getElementById("porcentaje").innerHTML = "78";
+			ia--;
+			break;
+		case 80:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_79.png";
+			document.getElementById("porcentaje").innerHTML = "79";
+			ia--;
+			break;
+		case 81:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_80.png";
+			document.getElementById("porcentaje").innerHTML = "80";
+			ia--;
+			break;
+		case 82:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_81.png";
+			document.getElementById("porcentaje").innerHTML = "81";
+			ia--;
+			break;
+		case 83:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_82.png";
+			document.getElementById("porcentaje").innerHTML = "82";
+			ia--;
+			break;
+		case 84:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_83.png";
+			document.getElementById("porcentaje").innerHTML = "83";
+			ia--;
+			break;
+		case 85:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_84.png";
+			document.getElementById("porcentaje").innerHTML = "84";
+			ia--;
+			break;
+		case 86:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_85.png";
+			document.getElementById("porcentaje").innerHTML = "85";
+			ia--;
+			break;
+		case 87:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_86.png";
+			document.getElementById("porcentaje").innerHTML = "86";
+			ia--;
+			break;
+		case 88:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_87.png";
+			document.getElementById("porcentaje").innerHTML = "87";
+			ia--;
+			break;
+		case 89:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_88.png";
+			document.getElementById("porcentaje").innerHTML = "88";
+			ia--;
+			break;
+		case 90:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_89.png";
+			document.getElementById("porcentaje").innerHTML = "89";
+			ia--;
+			break;
+		case 91:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_90.png";
+			document.getElementById("porcentaje").innerHTML = "90";
+			ia--;
+			break;
+		case 92:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_91.png";
+			document.getElementById("porcentaje").innerHTML = "91";
+			ia--;
+			break;
+		case 93:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_92.png";
+			document.getElementById("porcentaje").innerHTML = "92";
+			ia--;
+			break;
+		case 94:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_93.png";
+			document.getElementById("porcentaje").innerHTML = "93";
+			ia--;
+			break;
+		case 95:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_94.png";
+			document.getElementById("porcentaje").innerHTML = "94";
+			ia--;
+			break;
+		case 96:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_95.png";
+			document.getElementById("porcentaje").innerHTML = "95";
+			ia--;
+			break;
+		case 97:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_96.png";
+			document.getElementById("porcentaje").innerHTML = "96";
+			ia--;
+			break;
+		case 98:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_97.png";
+			document.getElementById("porcentaje").innerHTML = "97";
+			ia--;
+			break;
+		case 99:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_98.png";
+			document.getElementById("porcentaje").innerHTML = "98";
+			ia--;
+			break;
+		case 100:
+			document.getElementById("parking").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/parking_percent_99.png";
+			document.getElementById("porcentaje").innerHTML = "99";
+			ia--;
+			break;
+	}
+}
+
+function validar_33_a () {
+	var ocupados = document.getElementById('ocupados').value;
+	if (ocupados == 46) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_33_b () {
+	var capacidad = document.getElementById('capacidad').value;
+	if (capacidad == 230) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_34_a () {
+	var ocupados = document.getElementById('ocupados').value;
+	if (ocupados == 15) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_34_b () {
+	var capacidad = document.getElementById('capacidad').value;
+	if (capacidad == 300) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_35_a () {
+	var ocupados = document.getElementById('ocupados').value;
+	if (ocupados == 19) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_35_b () {
+	var capacidad = document.getElementById('capacidad').value;
+	if (capacidad == 140) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_36_a () {
+	var ocupados = document.getElementById('ocupados').value;
+	if (ocupados == 7) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_36_b () {
+	var capacidad = document.getElementById('capacidad').value;
+	if (capacidad == 140) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_37() {
+	var a_e6 = document.getElementById('a_e6').value;
+	var b_e6 = document.getElementById('b_e6').value;
+	var c_e6 = document.getElementById('c_e6').value;
+	var d_e6 = document.getElementById('d_e6').value;
+	
+	
+	
+	if (a_e6 == 48) {
+		document.getElementById('a_e6').style.backgroundColor = "Green";
+		document.getElementById('a_e6').style.color = "White";
+	} else {
+		document.getElementById('a_e6').style.backgroundColor = "Red";
+		document.getElementById('a_e6').style.color = "White";
+	};
+	if (b_e6 == 32) {
+		document.getElementById('b_e6').style.backgroundColor = "Green";
+		document.getElementById('b_e6').style.color = "White";
+	} else {
+		document.getElementById('b_e6').style.backgroundColor = "Red";
+		document.getElementById('b_e6').style.color = "White";
+	};
+	if (c_e6 == '48/80') {
+		document.getElementById('c_e6').style.backgroundColor = "Green";
+		document.getElementById('c_e6').style.color = "White";
+	} else {
+		document.getElementById('c_e6').style.backgroundColor = "Red";
+		document.getElementById('c_e6').style.color = "White";
+	};
+	if (d_e6 == '32/80') {
+		document.getElementById('d_e6').style.backgroundColor = "Green";
+		document.getElementById('d_e6').style.color = "White";
+	} else {
+		document.getElementById('d_e6').style.backgroundColor = "Red";
+		document.getElementById('d_e6').style.color = "White";
+	};
+}
+
+function validar_38() {
+	var a_e6 = document.getElementById('a_e6').value;
+	var b_e6 = document.getElementById('b_e6').value;
+	var c_e6 = document.getElementById('c_e6').value;
+	var d_e6 = document.getElementById('d_e6').value;
+	
+	
+	
+	if (a_e6 == 60) {
+		document.getElementById('a_e6').style.backgroundColor = "Green";
+		document.getElementById('a_e6').style.color = "White";
+	} else {
+		document.getElementById('a_e6').style.backgroundColor = "Red";
+		document.getElementById('a_e6').style.color = "White";
+	};
+	if (b_e6 == 24) {
+		document.getElementById('b_e6').style.backgroundColor = "Green";
+		document.getElementById('b_e6').style.color = "White";
+	} else {
+		document.getElementById('b_e6').style.backgroundColor = "Red";
+		document.getElementById('b_e6').style.color = "White";
+	};
+	if (c_e6 == '36/60') {
+		document.getElementById('c_e6').style.backgroundColor = "Green";
+		document.getElementById('c_e6').style.color = "White";
+	} else {
+		document.getElementById('c_e6').style.backgroundColor = "Red";
+		document.getElementById('c_e6').style.color = "White";
+	};
+	if (d_e6 == '24/60') {
+		document.getElementById('d_e6').style.backgroundColor = "Green";
+		document.getElementById('d_e6').style.color = "White";
+	} else {
+		document.getElementById('d_e6').style.backgroundColor = "Red";
+		document.getElementById('d_e6').style.color = "White";
+	};
+}
+
+function validar_39() {
+	var a_e6 = document.getElementById('a_e6').value;
+	var b_e6 = document.getElementById('b_e6').value;
+	var c_e6 = document.getElementById('c_e6').value;
+	var d_e6 = document.getElementById('d_e6').value;
+	
+	
+	
+	if (a_e6 == 70) {
+		document.getElementById('a_e6').style.backgroundColor = "Green";
+		document.getElementById('a_e6').style.color = "White";
+	} else {
+		document.getElementById('a_e6').style.backgroundColor = "Red";
+		document.getElementById('a_e6').style.color = "White";
+	};
+	if (b_e6 == 42) {
+		document.getElementById('b_e6').style.backgroundColor = "Green";
+		document.getElementById('b_e6').style.color = "White";
+	} else {
+		document.getElementById('b_e6').style.backgroundColor = "Red";
+		document.getElementById('b_e6').style.color = "White";
+	};
+	if (c_e6 == '42/70') {
+		document.getElementById('c_e6').style.backgroundColor = "Green";
+		document.getElementById('c_e6').style.color = "White";
+	} else {
+		document.getElementById('c_e6').style.backgroundColor = "Red";
+		document.getElementById('c_e6').style.color = "White";
+	};
+	if (d_e6 == '28/70') {
+		document.getElementById('d_e6').style.backgroundColor = "Green";
+		document.getElementById('d_e6').style.color = "White";
+	} else {
+		document.getElementById('d_e6').style.backgroundColor = "Red";
+		document.getElementById('d_e6').style.color = "White";
+	};
+}
+
+function validar_40 () {
+	var porcentaje = document.getElementById('porcentaje').value;
+	if (porcentaje == 33) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_41 () {
+	var porcentaje = document.getElementById('porcentaje').value;
+	if (porcentaje == 33.33) {
+		correcto();
+	} else {
+		error();
+	};
+}
+
+function validar_42() {
+	var parking_a = document.getElementById('parking_a').value;
+	var parking_b = document.getElementById('parking_b').value;
+	var parking_c = document.getElementById('parking_c').value;
+	var parking_d = document.getElementById('parking_d').value;
+	var parking_e = document.getElementById('parking_e').value;
+	
+	
+	
+	if (parking_a == 25) {
+		document.getElementById('parking_a').style.backgroundColor = "Green";
+		document.getElementById('parking_a').style.color = "White";
+	} else {
+		document.getElementById('parking_a').style.backgroundColor = "Red";
+		document.getElementById('parking_a').style.color = "White";
+	};
+	if (parking_b == '5/30') {
+		document.getElementById('parking_b').style.backgroundColor = "Green";
+		document.getElementById('parking_b').style.color = "White";
+	} else {
+		document.getElementById('parking_b').style.backgroundColor = "Red";
+		document.getElementById('parking_b').style.color = "White";
+	};
+	if (parking_c == '25/30') {
+		document.getElementById('parking_c').style.backgroundColor = "Green";
+		document.getElementById('parking_c').style.color = "White";
+	} else {
+		document.getElementById('parking_c').style.backgroundColor = "Red";
+		document.getElementById('parking_c').style.color = "White";
+	};
+	if (parking_d == 16.6) {
+		document.getElementById('parking_d').style.backgroundColor = "Green";
+		document.getElementById('parking_d').style.color = "White";
+	} else {
+		document.getElementById('parking_d').style.backgroundColor = "Red";
+		document.getElementById('parking_d').style.color = "White";
+	};
+	if (parking_e == 83.3) {
+		document.getElementById('parking_e').style.backgroundColor = "Green";
+		document.getElementById('parking_e').style.color = "White";
+	} else {
+		document.getElementById('parking_e').style.backgroundColor = "Red";
+		document.getElementById('parking_e').style.color = "White";
+	};
+}
+
+function validar_43() {
+	var parking_a = document.getElementById('parking_a').value;
+	var parking_b = document.getElementById('parking_b').value;
+	var parking_c = document.getElementById('parking_c').value;
+	var parking_d = document.getElementById('parking_d').value;
+	var parking_e = document.getElementById('parking_e').value;
+	var parking_f = document.getElementById('parking_f').value;
+	
+	
+	
+	if (parking_a == 20) {
+		document.getElementById('parking_a').style.backgroundColor = "Green";
+		document.getElementById('parking_a').style.color = "White";
+	} else {
+		document.getElementById('parking_a').style.backgroundColor = "Red";
+		document.getElementById('parking_a').style.color = "White";
+	};
+	if (parking_b == 30) {
+		document.getElementById('parking_b').style.backgroundColor = "Green";
+		document.getElementById('parking_b').style.color = "White";
+	} else {
+		document.getElementById('parking_b').style.backgroundColor = "Red";
+		document.getElementById('parking_b').style.color = "White";
+	};
+	if (parking_c == 20) {
+		document.getElementById('parking_c').style.backgroundColor = "Green";
+		document.getElementById('parking_c').style.color = "White";
+	} else {
+		document.getElementById('parking_c').style.backgroundColor = "Red";
+		document.getElementById('parking_c').style.color = "White";
+	};
+	if (parking_d == 20) {
+		document.getElementById('parking_d').style.backgroundColor = "Green";
+		document.getElementById('parking_d').style.color = "White";
+	} else {
+		document.getElementById('parking_d').style.backgroundColor = "Red";
+		document.getElementById('parking_d').style.color = "White";
+	};
+	if (parking_e == 30) {
+		document.getElementById('parking_e').style.backgroundColor = "Green";
+		document.getElementById('parking_e').style.color = "White";
+	} else {
+		document.getElementById('parking_e').style.backgroundColor = "Red";
+		document.getElementById('parking_e').style.color = "White";
+	};
+	if (parking_f == 30) {
+		document.getElementById('parking_f').style.backgroundColor = "Green";
+		document.getElementById('parking_f').style.color = "White";
+	} else {
+		document.getElementById('parking_f').style.backgroundColor = "Red";
+		document.getElementById('parking_f').style.color = "White";
+	};
+}
+
+function validar_44() {
+	var parking_a = document.getElementById('parking_a').value;
+	var parking_b = document.getElementById('parking_b').value;
+	var parking_c = document.getElementById('parking_c').value;
+	var parking_d = document.getElementById('parking_d').value;
+	var parking_e = document.getElementById('parking_e').value;
+	var parking_f = document.getElementById('parking_f').value;
+	
+	var parking_g = document.getElementById('parking_g').value;
+	var parking_h = document.getElementById('parking_h').value;
+	var parking_i = document.getElementById('parking_i').value;
+	var parking_j = document.getElementById('parking_j').value;
+	var parking_k = document.getElementById('parking_k').value;
+	var parking_l = document.getElementById('parking_l').value;
+	
+	var parking_m = document.getElementById('parking_m').value;
+	var parking_n = document.getElementById('parking_n').value;
+	var parking_o = document.getElementById('parking_o').value;
+	var parking_p = document.getElementById('parking_p').value;
+	var parking_q = document.getElementById('parking_q').value;
+	var parking_r = document.getElementById('parking_r').value;
+	
+	var parking_s = document.getElementById('parking_s').value;
+	var parking_t = document.getElementById('parking_t').value;
+	var parking_u = document.getElementById('parking_u').value;
+	var parking_v = document.getElementById('parking_v').value;
+	var parking_w = document.getElementById('parking_w').value;
+	var parking_x = document.getElementById('parking_x').value;
+	
+	
+	
+	if (parking_a == 20) {
+		document.getElementById('parking_a').style.backgroundColor = "Green";
+		document.getElementById('parking_a').style.color = "White";
+	} else {
+		document.getElementById('parking_a').style.backgroundColor = "Red";
+		document.getElementById('parking_a').style.color = "White";
+	};
+	if (parking_b == 30) {
+		document.getElementById('parking_b').style.backgroundColor = "Green";
+		document.getElementById('parking_b').style.color = "White";
+	} else {
+		document.getElementById('parking_b').style.backgroundColor = "Red";
+		document.getElementById('parking_b').style.color = "White";
+	};
+	if (parking_c == 20) {
+		document.getElementById('parking_c').style.backgroundColor = "Green";
+		document.getElementById('parking_c').style.color = "White";
+	} else {
+		document.getElementById('parking_c').style.backgroundColor = "Red";
+		document.getElementById('parking_c').style.color = "White";
+	};
+	if (parking_d == 20) {
+		document.getElementById('parking_d').style.backgroundColor = "Green";
+		document.getElementById('parking_d').style.color = "White";
+	} else {
+		document.getElementById('parking_d').style.backgroundColor = "Red";
+		document.getElementById('parking_d').style.color = "White";
+	};
+	if (parking_e == 30) {
+		document.getElementById('parking_e').style.backgroundColor = "Green";
+		document.getElementById('parking_e').style.color = "White";
+	} else {
+		document.getElementById('parking_e').style.backgroundColor = "Red";
+		document.getElementById('parking_e').style.color = "White";
+	};
+	if (parking_f == 30) {
+		document.getElementById('parking_f').style.backgroundColor = "Green";
+		document.getElementById('parking_f').style.color = "White";
+	} else {
+		document.getElementById('parking_f').style.backgroundColor = "Red";
+		document.getElementById('parking_f').style.color = "White";
+	};
+	
+	if (parking_g == '30/50') {
+		document.getElementById('parking_g').style.backgroundColor = "Green";
+		document.getElementById('parking_g').style.color = "White";
+	} else {
+		document.getElementById('parking_g').style.backgroundColor = "Red";
+		document.getElementById('parking_g').style.color = "White";
+	};
+	if (parking_h == '30/60') {
+		document.getElementById('parking_h').style.backgroundColor = "Green";
+		document.getElementById('parking_h').style.color = "White";
+	} else {
+		document.getElementById('parking_h').style.backgroundColor = "Red";
+		document.getElementById('parking_h').style.color = "White";
+	};
+	if (parking_i == '10/30') {
+		document.getElementById('parking_i').style.backgroundColor = "Green";
+		document.getElementById('parking_i').style.color = "White";
+	} else {
+		document.getElementById('parking_i').style.backgroundColor = "Red";
+		document.getElementById('parking_i').style.color = "White";
+	};
+	if (parking_j == '60/80') {
+		document.getElementById('parking_j').style.backgroundColor = "Green";
+		document.getElementById('parking_j').style.color = "White";
+	} else {
+		document.getElementById('parking_j').style.backgroundColor = "Red";
+		document.getElementById('parking_j').style.color = "White";
+	};
+	if (parking_k == '60/90') {
+		document.getElementById('parking_k').style.backgroundColor = "Green";
+		document.getElementById('parking_k').style.color = "White";
+	} else {
+		document.getElementById('parking_k').style.backgroundColor = "Red";
+		document.getElementById('parking_k').style.color = "White";
+	};
+	if (parking_l == '40/70') {
+		document.getElementById('parking_l').style.backgroundColor = "Green";
+		document.getElementById('parking_l').style.color = "White";
+	} else {
+		document.getElementById('parking_l').style.backgroundColor = "Red";
+		document.getElementById('parking_l').style.color = "White";
+	};
+	
+	if (parking_m == '20/50') {
+		document.getElementById('parking_m').style.backgroundColor = "Green";
+		document.getElementById('parking_m').style.color = "White";
+	} else {
+		document.getElementById('parking_m').style.backgroundColor = "Red";
+		document.getElementById('parking_m').style.color = "White";
+	};
+	if (parking_n == '30/60') {
+		document.getElementById('parking_n').style.backgroundColor = "Green";
+		document.getElementById('parking_n').style.color = "White";
+	} else {
+		document.getElementById('parking_n').style.backgroundColor = "Red";
+		document.getElementById('parking_n').style.color = "White";
+	};
+	if (parking_o == '20/30') {
+		document.getElementById('parking_o').style.backgroundColor = "Green";
+		document.getElementById('parking_o').style.color = "White";
+	} else {
+		document.getElementById('parking_o').style.backgroundColor = "Red";
+		document.getElementById('parking_o').style.color = "White";
+	};
+	if (parking_p == '20/80') {
+		document.getElementById('parking_p').style.backgroundColor = "Green";
+		document.getElementById('parking_p').style.color = "White";
+	} else {
+		document.getElementById('parking_p').style.backgroundColor = "Red";
+		document.getElementById('parking_p').style.color = "White";
+	};
+	if (parking_q == '30/90') {
+		document.getElementById('parking_q').style.backgroundColor = "Green";
+		document.getElementById('parking_q').style.color = "White";
+	} else {
+		document.getElementById('parking_q').style.backgroundColor = "Red";
+		document.getElementById('parking_q').style.color = "White";
+	};
+	if (parking_r == '30/70') {
+		document.getElementById('parking_r').style.backgroundColor = "Green";
+		document.getElementById('parking_r').style.color = "White";
+	} else {
+		document.getElementById('parking_r').style.backgroundColor = "Red";
+		document.getElementById('parking_r').style.color = "White";
+	};
+	
+	if (parking_s == 60) {
+		document.getElementById('parking_s').style.backgroundColor = "Green";
+		document.getElementById('parking_s').style.color = "White";
+	} else {
+		document.getElementById('parking_s').style.backgroundColor = "Red";
+		document.getElementById('parking_s').style.color = "White";
+	};
+	if (parking_t == 50) {
+		document.getElementById('parking_t').style.backgroundColor = "Green";
+		document.getElementById('parking_t').style.color = "White";
+	} else {
+		document.getElementById('parking_t').style.backgroundColor = "Red";
+		document.getElementById('parking_t').style.color = "White";
+	};
+	if (parking_u == 33.33) {
+		document.getElementById('parking_u').style.backgroundColor = "Green";
+		document.getElementById('parking_u').style.color = "White";
+	} else {
+		document.getElementById('parking_u').style.backgroundColor = "Red";
+		document.getElementById('parking_u').style.color = "White";
+	};
+	if (parking_v == 75) {
+		document.getElementById('parking_v').style.backgroundColor = "Green";
+		document.getElementById('parking_v').style.color = "White";
+	} else {
+		document.getElementById('parking_v').style.backgroundColor = "Red";
+		document.getElementById('parking_v').style.color = "White";
+	};
+	if (parking_w == 66.66) {
+		document.getElementById('parking_w').style.backgroundColor = "Green";
+		document.getElementById('parking_w').style.color = "White";
+	} else {
+		document.getElementById('parking_w').style.backgroundColor = "Red";
+		document.getElementById('parking_w').style.color = "White";
+	};
+	if (parking_x == 57.14) {
+		document.getElementById('parking_x').style.backgroundColor = "Green";
+		document.getElementById('parking_x').style.color = "White";
+	} else {
+		document.getElementById('parking_x').style.backgroundColor = "Red";
+		document.getElementById('parking_x').style.color = "White";
+	};
+}
+
+function visualizar () {
+	var e10 = document.getElementById('e10').checked;
+	if (e10 == true) {
+		document.getElementById('e10_span').style.display = 'inline';
+	} else{
+		document.getElementById('e10_span').style.display = 'none';
+	};
+	
+	var e11 = document.getElementById('e11').checked;
+	if (e11 == true) {
+		document.getElementById('e11_span').style.display = 'inline';
+	} else{
+		document.getElementById('e11_span').style.display = 'none';
+	};
+	
+	var e12 = document.getElementById('e12').checked;
+	if (e12 == true) {
+		document.getElementById('e12_span').style.display = 'inline';
+	} else{
+		document.getElementById('e12_span').style.display = 'none';
+	};
+	
+	var e13 = document.getElementById('e13').checked;
+	if (e13 == true) {
+		document.getElementById('e13_span').style.display = 'inline';
+	} else{
+		document.getElementById('e13_span').style.display = 'none';
+	};
+	
+	var e14 = document.getElementById('e14').checked;
+	if (e14 == true) {
+		document.getElementById('e14_span').style.display = 'inline';
+	} else{
+		document.getElementById('e14_span').style.display = 'none';
+	};
+	
+	var e15 = document.getElementById('e15').checked;
+	if (e15 == true) {
+		document.getElementById('e15_span').style.display = 'inline';
+	} else{
+		document.getElementById('e15_span').style.display = 'none';
+	};
+}
