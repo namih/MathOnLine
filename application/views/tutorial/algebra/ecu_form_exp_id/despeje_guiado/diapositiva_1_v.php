@@ -3,28 +3,20 @@
 <div class="container-fluid">
 	<p align="justify">Sigue las indicaciones para encontrar el valor de X</p>
 	<div class="col-xs-12 col-sm-12 col-lg-12">
-		<div class="panel panel-success  col-xs-12 col-sm-12 col-lg-6">
+		<div class="panel panel-primary  col-xs-12 col-sm-12 col-lg-6">
 			<div class="panel-heading"><b>Instrucciones</b></div>
 			<div class="panel-body">
-				<div style="margin-bottom: 10px" class="btn-group btn-group-lg">
-					<button id="division" onclick="change_1_a()" type="button" class="btn btn-primary">&divide;</button>
-					<button id="multiplication" type="button" class="btn btn-primary">&times;</button>
-					<button id="subtraction" type="button" class="btn btn-primary">-</button>
-					<button id="sum" type="button" class="btn btn-primary">+</button>
+				<h4 id="instruction">Se hace la transposición de términos.</h4>
+				<div style="margin-bottom: 10px" class="btn-group btn-group-sm">
+					<button onclick="eliminar_secuencia_1()" type="button" class="btn btn-primary">Anterior</button>
+					<button onclick="agregar_secuencia_1()" type="button" class="btn btn-primary">Siguiente</button>
 				</div>
-				<h4 id="instruction">Divide ambos lados de la ecuación entre 8</h4>
-				<table>
-					<tr>
-						<td><h1>*&nbsp;&nbsp;</h1></td>
-						<td><input /></td>
-					</tr>
-				</table>
 			</div>
 		</div>
-		<div class="panel panel-success  col-xs-12 col-sm-12 col-lg-6">
-			<div class="panel-heading"><b>Visualizador</b></div>
-			<div class="panel-body">
-				<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>48</mn></math></p>
+		<div class="panel panel-primary  col-xs-12 col-sm-12 col-lg-6">
+			<div class="panel-heading"><b>Secuencia</b></div>
+			<div id="secuencia" class="panel-body">
+				<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>34</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>120</mn></math></h4>
 			</div>
 		</div>
 	</div>
