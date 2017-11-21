@@ -2,13 +2,13 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">VirtualBox_WinXP_15_05_2017_12_17_32: Otra manera de encontrar el resultado de una suma de números mixtos consiste en convertirlos en fracciones antes de sumar.
-                           ¿Cómo escribirías el número <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math>?</p>
-		<p>Imágen y operaciones</p>
-		<p>Observa que para escribir el número mixto como fracción podemos sumar las partes correspondientes a los enteros <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>2</mn></mfrac></math> y la fracción que forma el número mixto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> .</p>
-		<!-- <p>Esto quiere decir que hay 10 enteros en <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>2</mn></mfrac></math>. 10 enteros equivalen a <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>2</mn></mfrac></math>, y como la fracción que tenemos es <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>2</mn></mfrac></math>, entonces tenemos <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> que hace falta añadir a los enteros. Completa según lo anterior. El denominador de la fracción debe ser el mismo que en la fracción inicial (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>2</mn></mfrac></math>)</p>
-		<p>fraccion</p> 
-		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
+		<p align="justify">VirtualBox_WinXP_15_05_2017_12_17_41: Convierte la siguiente fracción en un número mixto.Escribe primero los enteros como fracción.</p>
+		<p>Operación</p>
+		<!-- <p>¿Cuántos cuartos hay en doce enteros? fracción</p> -->
+		 <!-- <p>¿Cuántos cuartos hay en total en <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math>?fracción</p> -->
+		<!-- <p>Observa que para escribir el número mixto como fracción podemos sumar las partes correspondientes a los enteros y la fracción que forma el número mixto (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math>). Para obtener las -->
+         
+		<!--<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 				<table>
 				  <tr align="center">
