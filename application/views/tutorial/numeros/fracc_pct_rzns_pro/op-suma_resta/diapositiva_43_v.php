@@ -2,11 +2,11 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">54. VirtualBox_WinXP_15_05_2017_12_18_38: Convierte cada número mixto en unafracción. Después, resta las fracciones con denominador común. Como resultado que obtendrás es mayor a un entero, escribe como un número mixto .</p>
+		<p align="justify">VirtualBox_WinXP_15_05_2017_12_18_41: Convierte cada número mixto en una fracción. Después, resta las fracciones con denominador común. Como resultado que obtendrás es mayor a un entero, escribe como un número mixto .</p>
 		<p>Operación con fracciones</p>		
-		<p>Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado es el que obtuviste es mayor a un entero, da clic en el botón número y escribe los números correspondientes.</p>
-		<p>Operaciones</p>
-		<p>botones mixto, verificar mas ejercicios</p>
+		<!-- <p>Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado es el que obtuviste es mayor a un entero, da clic en el botón número y escribe los números correspondientes.</p> -->
+		<!-- <p>Operaciones</p> -->
+		<!-- <p>botones mixto, verificar mas ejercicios</p> -->
 		 <!-- <p>¿Cuántos cuartos hay en total en <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math>?fracción</p> -->
 		<!-- <p>Observa que para escribir el número mixto como fracción podemos sumar las partes correspondientes a los enteros y la fracción que forma el número mixto (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math>). Para obtener las -->
          
