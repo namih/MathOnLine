@@ -1,3 +1,26 @@
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script type="text/javascript" charset="utf-8">
+	var applet2 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300	}, true);
+	window.addEventListener("load", function() {
+        applet2.inject('applet_container2');	
+    });
+</script>
+
+<!-- <script src="<?php echo base_url(); ?>statics/js/geogebraweb/web/web.nocache.js"></script> -->
+<script type="text/javascript">
+	 	function create_straight() {
+	 		var applet = document.ggbApplet;
+	 		var point_a = document.getElementById('point_a').value;
+	 		var point_b = document.getElementById('point_b').value;
+	 		var draw_a = 'A = '+ point_a;
+	 		var draw_b = 'B = '+ point_b;
+	 		applet.evalCommand(draw_a); 
+	 		applet.evalCommand(draw_b); 
+	 		//applet.evalCommand("s = Line[A, B]"); 
+	 	}
+	 </script>
+
+
 <div class="container-fluid">
 	<style type="text/css">
 		.pregunta{
@@ -35,10 +58,10 @@
 	            <tbody>
 	            	<tr>
 	            		<td>
-	            			<input class="input-sm2" type="text" id="reb_1" />
+	            			<input class="input-sm2" type="text" id="point_a" />
 	            		</td>
 	            		<td>
-	            			<input class="input-sm2" type="text" id="gram_1"/>
+	            			<input class="input-sm2" type="text" id="point_b"/>
 	            		</td>
 	            	</tr>
 	            	<tr>
@@ -67,9 +90,13 @@
 	            	</tr>
 	            </tbody>
 	        </table>
+			
+		<button onclick="create_straight()" type="button" class="btn btn-primary">Construir</button>
 		</div>
+
 		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
 			
+			<div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container2"></div>
 		</div>		
 	</div>
   </div>
