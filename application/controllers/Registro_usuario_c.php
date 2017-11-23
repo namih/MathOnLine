@@ -21,6 +21,7 @@ class Registro_usuario_c extends CI_Controller {
 	
 	function index() {
 		$this->load->view('header/head_v');
+		$this->load->view('header/head_home_v');
 		$datos['unidades'] = $this->lista_uam();
 		$this -> load -> view('Registro_usuario_v',$datos);
 		$this->load->view('footer/footer_v');		
