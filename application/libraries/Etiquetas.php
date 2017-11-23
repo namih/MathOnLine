@@ -211,7 +211,7 @@ class Etiquetas{
 					4=>array(
 						'nombre'=>'Estadísticas',
 						'id'=>'opt_estadisticas',
-						'href'=>'',
+						'href'=>base_url().'estadisticas',
 						'onclick'=>'',
 						'clase'=>'',
 						'submenu'=>array()
