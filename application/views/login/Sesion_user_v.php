@@ -28,7 +28,7 @@
               </div><br>
               <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                  <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.jpg" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
+                  <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.png" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
                 </div>
                   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
                     <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> <?php echo $user_log[0]['total_score']; ?> puntos</label></div>
@@ -100,7 +100,7 @@
                 </div><br>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-xl-offset-1">
                   <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                    <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.jpg" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
+                    <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/ligas/liga_<?php echo $user_log[0]['league']; ?>.png" alt="Liga <?php echo $user_log[0]['league']; ?>" title="Liga <?php echo $user_log[0]['league']; ?>" align="absmiddle">
                   </div>
                   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
                     <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="font-size: 25px; color: #7f7e7e; "> <?php echo $user_log[0]['total_score']; ?> puntos</label></div>

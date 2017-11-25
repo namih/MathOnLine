@@ -38,6 +38,7 @@ class Welcome extends CI_Controller {
             $datos['question_week'] = $question_week;
 
             $this->load->view('header/head_v');
+            $this->load->view('header/head_home_v');
             $this->load->view('inicio/Home_v', $datos);
             $this->load->view('footer/footer_v');
         }

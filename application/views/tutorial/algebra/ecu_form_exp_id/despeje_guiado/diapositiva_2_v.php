@@ -6,17 +6,23 @@
 		<div class="panel panel-primary  col-xs-12 col-sm-12 col-lg-6">
 			<div class="panel-heading"><b>Instrucciones</b></div>
 			<div class="panel-body">
-				<h4 id="instruction">Se hace la transposición de términos.</h4>
-				<div style="margin-bottom: 10px" class="btn-group btn-group-sm">
-					<button onclick="eliminar_secuencia_1()" type="button" class="btn btn-primary">Anterior</button>
-					<button onclick="agregar_secuencia_1()" type="button" class="btn btn-primary">Siguiente</button>
+				<h4 id="instruction">Dividir ambos lados entre 8</h4>
+				<div class="form-group">
+					<select class="form-control-inline" id="sel1">
+						<option>&divide;</option>
+						<option>&times;</option>
+						<option>-</option>
+						<option>+</option>
+					</select>
+					<input style="text-align: center" type="text" class="form-control-inline" id="usr">
 				</div>
+				<button type="button" class="btn btn-success">Aplicar</button>
 			</div>
 		</div>
 		<div class="panel panel-primary  col-xs-12 col-sm-12 col-lg-6">
 			<div class="panel-heading"><b>Secuencia</b></div>
 			<div id="secuencia" class="panel-body">
-				<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>34</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>120</mn></math></h4>
+				<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>48</mn></math></h4>
 			</div>
 		</div>
 	</div>

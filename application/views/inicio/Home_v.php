@@ -155,19 +155,19 @@
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                       <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Liga IV</label></div>
-                      <img class="img-responsive" src="statics/img/ligas/liga_4.jpg" alt="Liga IV" title="Liga IV" align="absmiddle">
+                      <img class="img-responsive" src="statics/img/ligas/liga_4.png" alt="Liga IV" title="Liga IV" align="absmiddle">
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                       <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Liga III</label></div>
-                      <img class="img-responsive" src="statics/img/ligas/liga_3.jpg" alt="Liga III" title="Liga III" align="absmiddle">
+                      <img class="img-responsive" src="statics/img/ligas/liga_3.png" alt="Liga III" title="Liga III" align="absmiddle">
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                       <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Liga II</label></div>
-                      <img class="img-responsive" src="statics/img/ligas/liga_2.jpg" alt="Liga II" title="Liga II" align="absmiddle">
+                      <img class="img-responsive" src="statics/img/ligas/liga_2.png" alt="Liga II" title="Liga II" align="absmiddle">
                     </div>
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                       <div><label class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Liga I</label></div>
-                      <img class="img-responsive" src="statics/img/ligas/liga_1.jpg" alt="Liga I" title="Liga I" align="absmiddle">
+                      <img class="img-responsive" src="statics/img/ligas/liga_1.png" alt="Liga I" title="Liga I" align="absmiddle">
                     </div>
                   </div>
                 </div>
