@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">VirtualBox_WinXP_15_05_2017_12_16_32: Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador. Una vez que lo consigas, arrastra la imagen de la izquierda para sobre poner la pieza azul sobre la verde y comprobar que son del mismo tamaño.</p>
+		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador. Una vez que lo consigas, arrastra la imagen de la izquierda para sobre poner la pieza azul sobre la verde y comprobar que son del mismo tamaño.</p>
 		
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">

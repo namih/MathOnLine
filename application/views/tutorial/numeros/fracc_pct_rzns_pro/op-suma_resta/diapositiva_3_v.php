@@ -30,7 +30,7 @@
 						<h1 id="total"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>12</mn></mfrac></math></h1>
 					</div>					
 					<div class="btn-group" id="opciones">
-						<button onclick="" type="button" class="btn btn-info"><</button>
+						<button onclick="decrementar_3 ()" type="button" class="btn btn-info"><</button>
 						<button onclick="incrementar_3 ()" type="button" class="btn btn-info">></button>
 					</div>
 				</div>		
