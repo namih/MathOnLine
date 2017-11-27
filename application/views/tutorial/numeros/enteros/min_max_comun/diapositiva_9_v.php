@@ -3,22 +3,9 @@
 <div class="container-fluid">
 
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
-		<p>Otra manera de escribir un número como el producto de factores primos es mediante una tabla y preguntándonos si el número es divisible entre los primos consecutivos, empezando desde el 2:</p>
-		<p>¿Es divisible el 150 entre 2?</p>
-		 <form method="post" action="#">
-			<table>
-				<td align="left">
-					<form>
-					    <div class="radio">
-					      <label><input type="radio" id="optradio" name="optradio" value="S" >SI</label>
-					    </div>
-					    <div class="radio">
-					      <label><input type="radio" id="optradio" name="optradio" value="N" >NO</label>
-					    </div>
-					</form>
-				</td>
-		  	</table>
-		</form>
+		<p>Encuentra la factorizacion en primos del número:</p>
+		<p>Después expresalo como un producto</p>
+		<label> <b>120 = </b></label> <input type="text" placeholder="a x b x c  ..." id="exp"/>
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
@@ -31,40 +18,56 @@
             <tbody>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="150" readonly/>
+            			<input class="input-sm2" type="text" id="base1" value="120" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" onblur="valida_factor(1,this)"/>
+            			<input class="input-sm2" type="text" id="altura1" value="" onblur="valida_factor(1,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="base2" value="" readonly/>
             		</td>
             		<td class="modif"> 
-            			<input class="input-sm2" type="text" id="altura2" readonly/>
+            			<input class="input-sm2" type="text" id="altura2" value="" onblur="valida_factor(2,this)" />
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base3"  />
+            			<input class="input-sm2" type="text" id="base3" value="" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" readonly />
+            			<input class="input-sm2" type="text" id="altura3" value="" onblur="valida_factor(3,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base4" readonly />
+            			<input class="input-sm2" type="text" id="base4" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura4" readonly=""/>
+            			<input class="input-sm2" type="text" id="altura4" onblur="valida_factor(4,this)"/>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base5" readonly/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura5" onblur="valida_factor(5,this)"/>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base6" readonly/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura6" onblur="valida_factor(6,this)"/>
             		</td>
             	</tr>
             </tbody>
         </table>
 	</div>
-	<input type="button" class="btn btn-success btn-sm" onclick="valida1();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="valida9();" value="Verificar" />
 	<br /><br /><br />
 	
 	<div id="correcta" style="display: none" class="alert alert-success">

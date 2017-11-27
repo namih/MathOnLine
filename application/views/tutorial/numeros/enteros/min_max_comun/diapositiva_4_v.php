@@ -3,8 +3,7 @@
 <div class="container-fluid">
 
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
-		<p>Otra manera de escribir un número como el producto de factores primos es mediante una tabla y preguntándonos si el número es divisible entre los primos consecutivos, empezando desde el 2:</p>
-		<p>¿Es divisible el 150 entre 2?</p>
+		<p>Ahora preguntamos: ¿Es divisible el 25 entre 5?</p>
 		 <form method="post" action="#">
 			<table>
 				<td align="left">
@@ -34,37 +33,37 @@
             			<input class="input-sm2" type="text" id="base1" value="150" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" onblur="valida_factor(1,this)"/>
+            			<input class="input-sm2" type="text" id="altura1" value="2" readonly/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="base2" value="75" readonly/>
             		</td>
             		<td class="modif"> 
-            			<input class="input-sm2" type="text" id="altura2" readonly/>
+            			<input class="input-sm2" type="text" id="altura2" value="3" readonly />
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base3"  />
+            			<input class="input-sm2" type="text" id="base3" value="25" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" readonly />
+            			<input class="input-sm2" type="text" id="altura3"  onblur="valida_factor(3,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base4" readonly />
+            			<input class="input-sm2" type="text" id="base4" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura4" readonly=""/>
+            			<input class="input-sm2" type="text" id="altura4" readonly/>
             		</td>
             	</tr>
             </tbody>
         </table>
 	</div>
-	<input type="button" class="btn btn-success btn-sm" onclick="valida1();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="valida4();" value="Verificar" />
 	<br /><br /><br />
 	
 	<div id="correcta" style="display: none" class="alert alert-success">
