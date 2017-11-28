@@ -152,7 +152,7 @@ class Evaluation_c extends CI_Controller
         $total = $response_calculate['total'];
         $number_correct = $response_calculate['number_corrects'];
         $this->evaluation['id_user'] = $this->session->userdata('user_id');
-        $this->evaluation['id_theme'] = 1;
+        $this->evaluation['id_theme'] = $responses['id_tema'];//id_tema
         $this->evaluation['time_finish'] = $time;
         $this->evaluation['score'] = $total;
         $this->evaluation['evaluation_date'] = date($format);
