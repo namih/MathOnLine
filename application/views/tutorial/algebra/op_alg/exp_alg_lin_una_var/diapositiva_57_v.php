@@ -2,6 +2,6 @@
 <div class="container-fluid">
 	<div>
 		<p>Recuerda que cuando una variable aparece sola, quiere decir que se está sumando una sola vez, por lo que su coeficiente es 1.</p>
-		<p>2n + n + 5 = 2n + 1n + 5 = 3n + 5</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>1</mn><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn></math></p>
 	</div>
   </div>

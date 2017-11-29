@@ -1,0 +1,11 @@
+<div class="container-fluid">
+	<div>
+		<p>Observa que el perímetro del rectángulo se obtiene sumando sus 4 lados:</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi></math></p>
+		<p>Esto se puede escribir también como: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>y</mi></math> ya que podemos multiplicar el lado que mide <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> por 2 (se escribe <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi></math>) y el lado que mide y por 2 (se escribe <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>y</mi></math>) y después sumarlas.</p>
+		<p><b>Las siguientes expresiones son equivalentes:</b></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>y</mi></math></p>
+		<p><b>No</b> es posible, sin embargo, sumar <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>y</mi></math> y escribir <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>x</mi><mi>y</mi></math> o <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi></math>, debido a que “<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>” y “<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>” no necesariamente representan la misma cantidad.</p><br />
+		<img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_5.png" align="center"/>
+	</div>
+  </div>

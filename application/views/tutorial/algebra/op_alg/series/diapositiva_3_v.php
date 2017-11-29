@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div>
-		<p>Una sucesión aritmética es una secuencia de números donde todos los términos, a excepción del primero, se obtiene sumando al anterior un valor constante, llamado diferencia común.</p>
+		<p>Una sucesión aritmética es una secuencia de números donde todos los términos, a excepción del primero, se obtiene sumando al anterior un valor constante, llamado <i>diferencia común</i>.</p>
 		<p>Si a es el primer término y d es la diferencia común, la sucesión aritmética tiene a forma:		a, a +d, a + 2d, …</p>
 		<p>Y el término general es:		a + (n - 1)d</p>
 		<p>Los siguientes son ejemplos de sucesiones aritméticas:</p>

@@ -1,0 +1,7 @@
+<div class="container-fluid">
+	<div>
+		<p>Recuerda que cuando tenemos una expresión en la que aparecen varias variables elevadas a distintos exponentes, podemos sumar o restar solamente los términos semejantes, es decir aquellos en los que se encuentren las mismas variables elevadas al mismo exponente.</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>6</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>9</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><msup><mi>y</mi><mn>2</mn></msup></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><msup><mi>a</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn><msup><mi>b</mi><mn>3</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>6</mn><msup><mi>a</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>5</mn><msup><mi>b</mi><mn>3</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn><msup><mi>a</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>2</mn><msup><mi>b</mi><mn>3</mn></msup></math></p>
+	</div>
+  </div>

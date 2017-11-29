@@ -3,7 +3,7 @@
 	<div>
 		<p>En una expresión algebraica, los coeficientes también pueden ser negativos.</p>
 		<p>Para simplificar la expresión, suma los coeficientes.</p>
-		<p>3x +(-7)x = -4x</p>
-		<p>3 + (-7) = -4</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>(</mo><mo>-</mo><mn>7</mn><mo>)</mo><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mo>-</mo><mn>4</mn><mi>x</mi></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mo>(</mo><mo>-</mo><mn>7</mn><mo>)</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mo>-</mo><mn>4</mn></math></p>
 	</div>
   </div>

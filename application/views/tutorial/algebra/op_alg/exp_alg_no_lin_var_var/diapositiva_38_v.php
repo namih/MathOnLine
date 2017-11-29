@@ -1,0 +1,8 @@
+<div class="container-fluid">
+	<div>
+		<p>Cuando tenemos una expresión en la que aparecen las variables elevadas a distintos exponentes, podemos sumar solamente los <b>términos semejantes</b>, es decir aquellos en los que se encuentren las <b>mismas variables</b> elevadas <b>al mismo exponente</b>.</p>
+		<p>Observa que también sumamos, por su parte, las <b>constantes</b>.</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>6</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>1</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>9</mn><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>6</mn></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><msup><mi>w</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn><msup><mi>w</mi><mn>3</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><msup><mi>w</mi><mn>2</mn></msup><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><msup><mi>w</mi><mn>3</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>7</mn><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>9</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn><msup><mi>w</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>8</mn><msup><mi>w</mi><mn>3</mn></msup><mo>&#xA0;</mo><mo>-</mo><mo>&#xA0;</mo><mn>2</mn></math></p>
+	</div>
+  </div>
