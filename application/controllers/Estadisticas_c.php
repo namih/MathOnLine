@@ -4,7 +4,7 @@ class Estadisticas_c extends CI_Controller {
 			
 		public function __construct() {
 			parent::__construct();
-			// $this->load->model("Estadisticas_m");
+			$this->load->model("Estadisticas_m");
         }
 		
 		public function index() {
@@ -12,6 +12,8 @@ class Estadisticas_c extends CI_Controller {
 			if($login != null && $login == true) {
 				$datos["user_log"][0] = $this->session->userdata('user');
 				$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
+				$best_evaluation = $this->Estadisticas_m->best_evaluation($datos["user_log"][0]['id_user']);
+				$datos['best_evaluation'] = $best_evaluation;
 				$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 				$datos['opt_menu_active']='opt_estadisticas';
 				

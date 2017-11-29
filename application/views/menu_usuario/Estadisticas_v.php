@@ -1,3 +1,10 @@
+<div>
+	<h1>Test de datos de la DB</h1>
+	<pre>
+		<?php print_r($best_evaluation) ?>
+	</pre>
+</div>
+
 <style type="text/css" media="screen">
 	.chart {
 		width: 100%; 
@@ -61,27 +68,135 @@
 				<tbody>
 					<tr>
 						<td>Números</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>
+							<?php
+								if (isset($best_evaluation['num']['evaluation_date'] )) {
+									echo $best_evaluation['num']['evaluation_date'] ;
+								} else {
+									echo 'NA';
+								}
+							?>
+						</td>
+						<td>
+							<?php
+								if (isset($best_evaluation['num']['time_finish'])) {
+									$horas = floor($best_evaluation['num']['time_finish']/3600);
+									$minutos = floor(($best_evaluation['num']['time_finish']-($horas*3600))/60);
+									$segundos = $best_evaluation['num']['time_finish']-($horas*3600)-($minutos*60);
+									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
+								} else {
+									echo "NA";
+								}
+							?>
+						</td>
+						<td>
+							<?php
+							if (isset($best_evaluation['num']['score'])) {
+								echo $best_evaluation['num']['score'];
+							} else {
+								echo 'NA';
+							}
+							?>
+						</td>
 					</tr>
 					<tr>
 						<td>Álgebra</td>
-						<td></td>
-						<td></td>
-						<td></td>
+							<td>
+								<?php
+									if (isset($best_evaluation['algebra']['evaluation_date'] )) {
+										echo $best_evaluation['algebra']['evaluation_date'] ;
+									} else {
+										echo 'NA';
+									}
+								?>
+							</td>
+							<td>
+								<?php
+									if (isset($best_evaluation['algebra']['time_finish'])) {
+										$horas = floor($best_evaluation['algebra']['time_finish']/3600);
+										$minutos = floor(($best_evaluation['algebra']['time_finish']-($horas*3600))/60);
+										$segundos = $best_evaluation['algebra']['time_finish']-($horas*3600)-($minutos*60);
+										echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
+									} else {
+										echo "NA";
+									}
+								?>
+							</td>
+							<td>
+								<?php
+								if (isset($best_evaluation['algebra']['score'])) {
+									echo $best_evaluation['algebra']['score'];
+								} else {
+									echo 'NA';
+								}
+								?>
+							</td>
 					</tr>
 					<tr>
 						<td>Geometria y trigonometria</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>
+							<?php
+								if (isset($best_evaluation['geo_tri']['evaluation_date'] )) {
+									echo $best_evaluation['geo_tri']['evaluation_date'] ;
+								} else {
+									echo 'NA';
+								}
+							?>
+						</td>
+						<td>
+							<?php
+								if (isset($best_evaluation['geo_tri']['time_finish'])) {
+									$horas = floor($best_evaluation['geo_tri']['time_finish']/3600);
+									$minutos = floor(($best_evaluation['geo_tri']['time_finish']-($horas*3600))/60);
+									$segundos = $best_evaluation['geo_tri']['time_finish']-($horas*3600)-($minutos*60);
+									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
+								} else {
+									echo "NA";
+								}
+							?>
+						</td>
+						<td>
+							<?php
+							if (isset($best_evaluation['geo_tri']['score'])) {
+								echo $best_evaluation['geo_tri']['score'];
+							} else {
+								echo 'NA';
+							}
+							?>
+						</td>
 					</tr>
 					<tr>
 						<td>Geometría analítica</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td>
+							<?php
+								if (isset($best_evaluation['geo_ana']['evaluation_date'] )) {
+									echo $best_evaluation['geo_ana']['evaluation_date'] ;
+								} else {
+									echo 'NA';
+								}
+							?>
+						</td>
+						<td>
+							<?php
+								if (isset($best_evaluation['geo_ana']['time_finish'])) {
+									$horas = floor($best_evaluation['geo_ana']['time_finish']/3600);
+									$minutos = floor(($best_evaluation['geo_ana']['time_finish']-($horas*3600))/60);
+									$segundos = $best_evaluation['geo_ana']['time_finish']-($horas*3600)-($minutos*60);
+									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
+								} else {
+									echo "NA";
+								}
+							?>
+						</td>
+						<td>
+							<?php
+							if (isset($best_evaluation['geo_ana']['score'])) {
+								echo $best_evaluation['geo_ana']['score'];
+							} else {
+								echo 'NA';
+							}
+							?>
+						</td>
 					</tr>
 				</tbody>
 			</table>
