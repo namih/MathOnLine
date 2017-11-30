@@ -1,10 +1,3 @@
-<div>
-	<h1>Test de datos de la DB</h1>
-	<pre>
-		<?php print_r($best_evaluation) ?>
-	</pre>
-</div>
-
 <style type="text/css" media="screen">
 	.chart {
 		width: 100%; 
@@ -26,10 +19,10 @@
       function drawMultSeries() {
       var data = google.visualization.arrayToDataTable([
         ['Tutorial', 'Cursado', 'Sin cursar'],
-        ['Números', 25, 5],
-        ['Álgebra', 12, 0],
-        ['Geometria y trigonometria', 22, 10],
-        ['Geometría analítica', 0, 15],
+        ['Números', <? echo $end_tuto['num'] ?>, <? echo ($count_tuto['num'] - $end_tuto['num']) ?>],
+        ['Álgebra', <? echo $end_tuto['algebra'] ?>, <? echo ($count_tuto['algebra'] - $end_tuto['algebra']) ?>],
+        ['Geometria y trigonometria', <? echo $end_tuto['geo_tri'] ?>, <? echo ($count_tuto['geo_tri'] - $end_tuto['geo_tri']) ?>],
+        ['Geometría analítica', <? echo $end_tuto['geo_ana'] ?>, <? echo ($count_tuto['geo_ana'] - $end_tuto['geo_ana']) ?>],
       ]);
 
         // Set chart options

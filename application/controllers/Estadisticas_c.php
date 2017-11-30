@@ -13,6 +13,10 @@ class Estadisticas_c extends CI_Controller {
 				$datos["user_log"][0] = $this->session->userdata('user');
 				$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 				$best_evaluation = $this->Estadisticas_m->best_evaluation($datos["user_log"][0]['id_user']);
+				$count_tuto = $this->Estadisticas_m->count_tutorial();
+				$end_tuto = $this->Estadisticas_m->end_tutorial($datos["user_log"][0]['id_user']);
+				$datos['count_tuto'] = $count_tuto;
+				$datos['end_tuto'] = $end_tuto;
 				$datos['best_evaluation'] = $best_evaluation;
 				$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 				$datos['opt_menu_active']='opt_estadisticas';
