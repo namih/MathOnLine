@@ -58,7 +58,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="12" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" style="background-color: green; color: white" value="12" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -109,7 +109,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="24" readonly=""/>
+            			<input class="input-sm2" type="text" style="background-color: green; color: white" id="base1" value="24" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -160,7 +160,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="36" readonly=""/>
+            			<input class="input-sm2" type="text" style="background-color: green; color: white" id="base1" value="36" readonly=""/>
             		</td>
             	</tr>
             </tbody>
@@ -200,7 +200,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="12" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" style="background-color: green; color: white" value="12" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -234,7 +234,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="24" readonly=""/>
+            			<input class="input-sm2" type="text" style="background-color: green; color: white" id="base1" value="24" readonly=""/>
             		</td>
             	</tr>
             	<tr>
@@ -268,7 +268,7 @@
             			<input class="input-sm2" type="text" id="altura1" value="=" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="36" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" style="background-color: green; color: white" value="36" readonly=""/>
             		</td>
             	</tr>
             </tbody>

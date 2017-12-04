@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_8.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_14.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<div>
@@ -12,7 +12,9 @@
             <thead>
                 <tr class="success">
                     <th>Número 1</th>
+                    <th>  </th>
                     <th>Número 2</th>
+                    <th>  </th>
                     <th>Resultado</th>
                 </tr>
             </thead>
@@ -22,10 +24,16 @@
             			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" value="15" readonly=""/>
+            			<input class="input-sm2" type="text" value="X" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="area1"  readonly=""/>
+            			<input class="input-sm2" type="text" id="altura1" value="12" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="area1"  readonly="12"/>
             		</td>
             	</tr>
             	<tr>
@@ -33,7 +41,13 @@
             			<input class="input-sm2" type="text" id="base2" />
             		</td>
             		<td class="modif">
+            			<input class="input-sm2" type="text"  value="X" readonly=""/>
+            		</td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura2" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
             		</td>
             		<td class="modif">
             			<input class="input-sm2" type="text" id="area2" readonly/>
@@ -44,7 +58,13 @@
             			<input class="input-sm2" type="text"  id="base3" />
             		</td>
             		<td class="modif">
+            			<input class="input-sm2" type="text"  value="X" readonly=""/>
+            		</td>
+            		<td class="modif">
             			<input class="input-sm2" type="text" id="altura3" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
             		</td>
             		<td class="modif">
             			<input class="input-sm2" type="text"  id="area3" readonly/>
@@ -53,57 +73,77 @@
             </tbody>
         </table>
         <br /><br />
-        <label>18</label>
+        <label>Factores de 18</label>
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
-            <thead>
+		 	 <thead>
                 <tr class="success">
                     <th>Número 1</th>
+                    <th>  </th>
                     <th>Número 2</th>
+                    <th>  </th>
                     <th>Resultado</th>
                 </tr>
             </thead>
-            <tbody>
+              <tbody>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
+            			<input class="input-sm2" type="text" id="bas1" value="1" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" value="15" readonly=""/>
+            			<input class="input-sm2" type="text" value="X" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="area1"  readonly=""/>
+            			<input class="input-sm2" type="text" id="alt1" value="18" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="ar1"  readonly="18"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="bas2" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura2" />
+            			<input class="input-sm2" type="text"  value="X" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="area2" readonly/>
+            			<input class="input-sm2" type="text" id="alt2" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="ar2" readonly/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base3" />
+            			<input class="input-sm2" type="text"  id="bas3" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" />
+            			<input class="input-sm2" type="text"  value="X" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="area3" readonly/>
+            			<input class="input-sm2" type="text" id="alt3" />
             		</td>
-            	</tr> 
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  value="=" readonly=""/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="ar3" readonly/>
+            		</td>
+            	</tr>
             </tbody>
         </table>
 	</div>
 	
 	<br /><br />
-	<label>Escribe los factores comunes (en orden ascendente):</label> <input type="text" />
+	<label>Escribe los factores comunes (en orden ascendente):</label> <input type="text" id="factores" placeholder="a,b,c.." />
 	<br />
-	<label>Escribe el mayor de estos números, es decir, el máximo común divisor (MCD): </label><input type="text" />
+	<label>Escribe el mayor de estos números, es decir, el máximo común divisor (MCD): </label><input type="text" id="maximo"/>
 	<br /><br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">

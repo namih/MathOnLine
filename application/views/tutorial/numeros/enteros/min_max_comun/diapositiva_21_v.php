@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_21.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 
@@ -23,7 +23,7 @@
             			<input class="input-sm2" type="text" id="altura1" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" />
+            			<input class="input-sm2" type="text" id="area1" />
             		</td>
             	</tr>
             	<tr>
@@ -128,7 +128,7 @@
             </tbody>
         </table>
 	</div>
-	<input type="button" class="btn btn-success btn-sm" onclick="valida1();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<br /><br /><br />
 	
 	<div id="correcta" style="display: none" class="alert alert-success">

@@ -1,11 +1,11 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 
 	<div   class="col-md-6  col-xs-12 table-responsive" id="box" align="center">
 		<p>La tabla muestra los múltiplos de 10 y 6 </p>
 		<p>Encuentra el mínimo común múltiplo de estos dos números</p>
-		<input type="text" />
+		<input type="text" placeholder="a,b.." id="minimo"  />
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
@@ -130,7 +130,7 @@
             </tbody>
         </table>
 	</div>
-	<input type="button" class="btn btn-success btn-sm" onclick="valida1();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar20();" value="Verificar" />
 	<br /><br /><br />
 	
 	<div id="correcta" style="display: none" class="alert alert-success">

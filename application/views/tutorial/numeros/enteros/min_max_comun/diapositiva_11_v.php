@@ -5,7 +5,13 @@
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 		<p>Expresa el siguiente número como producto de sus factores primos ordenándolos de menor a mayor y usando notación exponencial.</p>
 		<p>Apóyate en la tabla si te es útil.</p>
-		<label> 28 = </label><input type="text" />
+		<!-- <label> 28 = </label><input type="text" /> -->
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<msup>
+				<mn>88</mn>
+				<mn>7</mn>
+			</msup>
+		</math>
 		
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
