@@ -8,11 +8,13 @@
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 				<table>
 				  <tr align="center">
-				    <td><img class="img-responsive" id="seis_a" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_sextos_azul.png"/></td>
+				  	<td><img class="img-responsive" id="porcion_a" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_sextos.png"/></td>
+				    <td><img class="img-responsive" id="frac_a" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_sextos_azul.png"/></td>
 				    <td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>6</mn></mfrac></math></h1></td>
 				    <td align="center"><h1 style="color: red">+</h1></td> 
 				    <td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></h1></td>
-				    <td><img class="img-responsive" id="seis_v" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_verde.png"/></td>
+				    <td><img class="img-responsive" id="frac_b" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_verde.png"/></td>
+				    <td><img class="img-responsive" id="porcion_v" width="40%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_tercios.png"/></td>
 				   </tr>
 				</table>
 			</div>
