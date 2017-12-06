@@ -7,9 +7,9 @@
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
-					<td><h1 style="color: blue">&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1 style="color: blue">&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>4</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
 					<td align="center "><h1>+</h1></td>
-					<td><h1 style="color: green">&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1 style="color: green">&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>5</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
 					<td align="center"><h1>=</h1></td>
 				</tr>
 			</table>

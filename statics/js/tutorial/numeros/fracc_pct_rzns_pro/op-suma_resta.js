@@ -912,7 +912,7 @@ function fraccion_9_c () {
   	};
 }
 
-function fraccion_11_a () {
+function fraccion_10_a () {
   	var numerador_a = document.getElementById('numerador_a').value;
   	var denominador_a = document.getElementById('denominador_a').value;
   	if (numerador_a != '' && denominador_a != '') {
@@ -932,7 +932,7 @@ function fraccion_11_a () {
   	};
 }
 
-function fraccion_11_b () {
+function fraccion_10_b () {
   	var numerador_b = document.getElementById('numerador_b').value;
   	var denominador_b = document.getElementById('denominador_b').value;
   	if (numerador_b != '' && denominador_b != '') {
@@ -952,11 +952,71 @@ function fraccion_11_b () {
   	};
 }
 
-function fraccion_11_c () {
+function fraccion_10_c () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
 		if (numerador_c == 23 && denominador_c == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_11_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 10 && denominador_a == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_11_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 16 && denominador_b == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_11_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 26 && denominador_c == 20) {
   			
   			$('#correcta').show();
 			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
@@ -977,6 +1037,146 @@ function fraccion_12 () {
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
 		if (numerador == 10 && denominador == 13) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_13_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 5 && denominador_a == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_13_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 8 && denominador_b == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_13_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 12 && denominador_c == 20) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_14_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 18 && denominador_a == 30) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_14_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 25 && denominador_b == 30) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_14_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 43 && denominador_c == 30) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_15 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 9 && denominador == 6) {
   			
   			$('#correcta').show();
 			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
