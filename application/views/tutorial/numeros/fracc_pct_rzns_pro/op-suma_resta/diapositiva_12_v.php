@@ -5,7 +5,7 @@
 		<p align="justify">Observa que el resultado, es decir <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>26</mn><mn>20</mn></mfrac></math>, se puede reducir o simplificar. Encuentra una fracción equivalente dividiendo entre el mismo número el numerador y el denominador.
 			               Reduce la fracción hasta que ya no sea posible simplificar.</p>
 		
-		<div class=" col-lg-4 col-md-4  col-xs-12">
+		<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">

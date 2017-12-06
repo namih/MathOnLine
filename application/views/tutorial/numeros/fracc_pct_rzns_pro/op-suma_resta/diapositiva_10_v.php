@@ -4,7 +4,7 @@
 	
 		<p align="justify">Suma las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador.</p>
 		
-		<div class=" col-lg-4 col-md-4  col-xs-12">
+		<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">

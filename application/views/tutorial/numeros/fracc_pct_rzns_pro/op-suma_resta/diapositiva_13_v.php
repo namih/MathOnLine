@@ -5,7 +5,7 @@
 		<p align="justify">Suma las fracciones con denominador común, es decir, con el mismo denominador. 
 			               Si es posible simplifica tu resultado. Debes escribir en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse.</p>
 		
-	<div class=" col-lg-4 col-md-4  col-xs-12">
+	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
