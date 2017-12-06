@@ -1191,6 +1191,8 @@ function fraccion_15 () {
   		};
   	};
 }
+
+
 function fraccion_mixta_16 () {
 	var entero = document.getElementById('entero').value;
   	var numerador = document.getElementById('numerador').value;
@@ -1211,3 +1213,44 @@ function fraccion_mixta_16 () {
   		};
   	};
 }
+
+function decimal_17 () {
+  	var decimal = document.getElementById('decimal').value;
+  	  	if (decimal != '') {
+			if (decimal == 10.5) {
+  			
+  				$('#correcta').show();
+				$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+				$("#correcta").slideUp(500);
+				});	
+  			}else{
+  			
+  				$('#error').show();
+				$("#error").fadeTo(2000, 500).slideUp(500, function(){
+				$("#error").slideUp(500);
+				});
+  			};	
+  		};
+}
+
+function fraccion_mixta_17 () {
+	var entero = document.getElementById('entero').value;
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 10 && numerador == 1 && denominador == 2) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
