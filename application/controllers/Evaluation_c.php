@@ -35,6 +35,7 @@ class Evaluation_c extends CI_Controller
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
             $this->questions = $this->Evaluation_m->evaluacion($id);
+
             $datos['tema_eval']=$this->questions['tema'][0]['theme'];
 
             $this->questions = $this->questions['evaluacion'];
@@ -176,7 +177,11 @@ class Evaluation_c extends CI_Controller
                 $response = $this->Evaluation_m->actualiza_escore($data);
                 
                 if($response){
-                    echo "todo un exito";
+                    $data['total'] = $total;
+                    $data['time'] = $time;
+                    $data['number_correct'] = $number_correct;
+                    print_r($data);
+                    //echo "todo un exito";
                 }else{
                     
                     echo "fracaso total :(";
