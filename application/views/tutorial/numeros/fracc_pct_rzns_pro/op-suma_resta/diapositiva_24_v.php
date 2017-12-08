@@ -42,7 +42,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_b_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+														<input onchange="numerador_a_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -61,7 +61,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_c_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+														<input onchange="numerador_a_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -80,7 +80,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_d_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
+														<input onchange="numerador_a_24 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>

@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	<div class=" col-lg-12 col-md-12  col-xs-12">
-		<p align="justify">VirtualBox_WinXP_15_05_2017_12_17_41: Convierte la siguiente fracción en un número mixto.Escribe primero los enteros como fracción.</p>	
+		<p align="justify">Convierte la siguiente fracción en un número mixto.Escribe primero los enteros como fracción.</p>	
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
@@ -21,7 +21,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_a_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+														<input onchange="numerador_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -40,7 +40,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_b_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+														<input onchange="numerador_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -63,7 +63,7 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="numerador_c_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+												<input onchange="numerador_26 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -77,3 +77,11 @@
 			</div>
 	</div>
 </div>
+
+<div id="correcta" style="display: none" class="alert alert-success">
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+
+</div>	

@@ -12,7 +12,7 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="numerador_a_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+												<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -36,7 +36,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_b_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+														<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -55,7 +55,7 @@
 											<mi>
 												<semantics>
 													<annotation-xml encoding="application/xhtml+xml">
-														<input onchange="numerador_c_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+														<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 													</annotation-xml>
 												</semantics>
 											</mi>
@@ -78,7 +78,7 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="numerador_d_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
+												<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -95,7 +95,7 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="numerador_e_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_e" placeholder="0" />
+												<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_e" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -110,7 +110,7 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="numerador_f_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_f" placeholder="0" />
+												<input onchange="numerador_25 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_f" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
