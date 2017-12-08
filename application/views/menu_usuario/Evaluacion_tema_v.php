@@ -1,5 +1,5 @@
     <script src="<?php echo base_url() ?>statics/js/evaluacion.js"></script>
-            <div class="container-fluid">
+            <div class="container-fluid" id="contenedor_evaluacion">
               <center><h1 style="color:#ffffff;">&nbsp;</h1></center>
               <div id="conf_eval">
                 <div>
@@ -77,6 +77,7 @@
             </div>
 <script type="text/javascript">
   id_tema=<?php echo $id_theme; ?>;
+  nom_tema='<?php echo $tema_eval; ?>';
   arrayEvaluacion=<?php echo json_encode($preguntas_evaluacion);?>;
   function iniciarEvaluacion(){
     $('#preguntas_eval').html(preguntas_eval);

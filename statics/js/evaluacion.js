@@ -67,14 +67,55 @@ var id_tema=0;
             //console.log(cronometro);
 
             arrayResultado={id_tema:id_tema,tiempo:tiempo,evaluacion:arrayEvaluacion};
-            console.log(arrayResultado);
+            //console.log(arrayResultado);
             var url = base_url + 'Evaluation_c/get_current_responses';
             $.ajax({        
                 url: url,       
                 data: {arrayResultado:arrayResultado},
                 type: 'POST',
                 success: function(data){
-                    console.log(data);
+                    var mensaje='';
+                    data= jQuery.parseJSON(data);
+                    if(Number(data)==0){
+                        mensaje+='<div class="alert alert-danger alert-dismissable"><br><i class="fa fa-warning"></i>Ocurrió un error al guardar la evaluación, es posible que se hayan perdido algunos datos. Intente de nuevo o contacte con el administrador del sistéma.</div>'
+                    }else{
+                        mensaje+='<div <div class="col-md-12">';
+                            mensaje+='<div class="alert alert-success alert-dismissable"><i class="fa fa-info"> </i> FELICIDADES ha finalizado la evalución de "'+nom_tema+'".</div>';
+                            
+                            mensaje+='<div class="col-lg-6">';
+                                mensaje+='<div><label>Sus respuestas:</label><br>';
+                                    mensaje+='<ol>';
+                                        for (var i=0; i <= arrayEvaluacion.length - 1;  i++) {
+                                            mensaje+='<li>';
+                                                if(arrayEvaluacion[i]['answer_is_correct']==1){
+                                                    mensaje+='Correcta';
+                                                }else{
+                                                    mensaje+='Incorrecta';
+                                                }
+                                                        //console.log(arrayEvaluacion[i]['answer_is_correct']);
+                                            mensaje+='</li>';
+                                        }
+                                    mensaje+='</ol>';
+                                mensaje+='</div>';
+                            mensaje+='</div>';
+                            
+                            mensaje+='<div class="col-lg-6">';
+                                    mensaje+='<label>Resuestas correctas: </label> '+data['number_correct']+'<br>';
+                                    mensaje+='<label>Tiempo: </label> '+cronometro+'<br>';
+                                    mensaje+='<label>Puntuación: </label> '+data['total_score']+'<br>';
+                                mensaje+='</div>';
+                            mensaje+='</div>';
+
+                            mensaje+='<div class="col-md-12">';
+                                mensaje+='<div class="text-center">';
+                                    mensaje+='<a href="#" class="btn btn-success" onclick="window.location.replace(\''+base_url+'Home_c/goHomeUser\');">Ir a tutoriales</a>';
+                                mensaje+='</div>';
+                            mensaje+='</div';
+                        mensaje+='</div>';
+
+                    }
+
+                    $('#contenedor_evaluacion').html(mensaje);
                 },
                 error: function(jqXHR, textStatus, errorThrown,data){
                      if (jqXHR.status === 0) {

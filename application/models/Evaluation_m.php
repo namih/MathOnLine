@@ -180,7 +180,6 @@
 		 */
 		public function actualiza_escore($update)
 		{
-			echo $update['total_score'];
 			if ($update!=NULL) {
 				$this->db->WHERE('id_user', $update['id_user']);
 				$this->db->SET('total_score', 'total_score +' .	(string)$update['total_score'], FALSE);
