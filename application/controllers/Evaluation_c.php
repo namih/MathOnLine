@@ -180,7 +180,7 @@ class Evaluation_c extends CI_Controller
                     $data['total'] = $total;
                     $data['time'] = $time;
                     $data['number_correct'] = $number_correct;
-                    print_r($data);
+                    print_r(json_encode($data));
                     //echo "todo un exito";
                 }else{
                     
