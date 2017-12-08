@@ -425,3 +425,16 @@ function validar_27 () {
 		};
 	};
 }
+
+function validar_28 () {
+	var valor_1 = document.getElementById('valor_1').value;
+	var valor_2 = document.getElementById('valor_2').value;
+		
+	if (valor_1!='' && valor_2!='') {
+		if ((valor_1 == 2 && valor_2 == -2)||(valor_1 == -2 && valor_2 == 2)) {
+			correcto();
+		} else{
+			error();
+		};
+	};
+}
