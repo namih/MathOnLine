@@ -1254,3 +1254,598 @@ function fraccion_mixta_17 () {
   	};
 }
 
+function decimal_18 () {
+  	var decimal = document.getElementById('decimal').value;
+  	  	if (decimal != '') {
+			if (decimal == 4.666) {
+  			
+  				$('#correcta').show();
+				$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+				$("#correcta").slideUp(500);
+				});	
+  			}else{
+  			
+  				$('#error').show();
+				$("#error").fadeTo(2000, 500).slideUp(500, function(){
+				$("#error").slideUp(500);
+				});
+  			};	
+  		};
+}
+
+function fraccion_mixta_18 () {
+	var entero = document.getElementById('entero').value;
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 4 && numerador == 2 && denominador == 3) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_19_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 2 && denominador_a == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_19_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 3 && denominador_b == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_19_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 5 && denominador_c == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_20_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 30 && denominador_a == 40) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_20_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 24 && denominador_b == 40 ) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_20_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 54 && denominador_c == 40) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function entero_21 () {
+  	var entero = document.getElementById('entero').value;
+  	  	if (entero != '') {
+			if (entero == 4) {
+  			
+  				$('#correcta').show();
+				$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+				$("#correcta").slideUp(500);
+				});	
+  			}else{
+  			
+  				$('#error').show();
+				$("#error").fadeTo(2000, 500).slideUp(500, function(){
+				$("#error").slideUp(500);
+				});
+  			};	
+  		};
+}
+
+function fraccion_21_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 4 && denominador_a == 8) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_21_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 6 && denominador_b == 8 ) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_21_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 10 && denominador_c == 8) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_mixta_22a () {
+	var entero_a = document.getElementById('entero_a').value;
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (entero_a != '' && numerador_a != '' && denominador_a != '') {
+		if (entero_a == 2 && numerador_a == 3 && denominador_a == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_mixta_22b () {
+	var entero_b = document.getElementById('entero_b').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (entero_b != '' && numerador_b != '' && denominador_b != '') {
+		if (entero_b == 1 && numerador_b == 4 && denominador_b == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function fraccion_mixta_22c () {
+	var entero_c = document.getElementById('entero_c').value;
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (entero_c != '' && numerador_c != '' && denominador_c != '') {
+		if (entero_c == 3 && numerador_c == 7 && denominador_c == 6) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_a_23 () {
+	var numerador_a = document.getElementById('numerador_a').value;
+	
+  	if (numerador_a != '') {
+		if (numerador_a == 2 ) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_b_23 () {
+	
+	var numerador_b = document.getElementById('numerador_b').value;
+  	
+   	if (numerador_b != '') {
+		if (numerador_b == 2) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_c_23 () {
+	
+	
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	
+   	if (numerador_c != '') {
+		if (numerador_c == 1) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_d_23 () {
+	
+	
+  	var numerador_d = document.getElementById('numerador_d').value;
+   	if (numerador_d != '') {
+		if (numerador_d == 3) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_a_24 () {
+	var numerador_a = document.getElementById('numerador_a').value;
+	
+  	if (numerador_a != '') {
+		if (numerador_a == 8 ) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_b_24 () {
+	
+	var numerador_b = document.getElementById('numerador_b').value;
+  	
+   	if (numerador_b != '') {
+		if (numerador_b == 8) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_c_24 () {
+	
+	
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	
+   	if (numerador_c != '') {
+		if (numerador_c == 1) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_d_24 () {
+	
+	
+  	var numerador_d = document.getElementById('numerador_d').value;
+   	if (numerador_d != '') {
+		if (numerador_d == 9) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_a_25 () {
+	var numerador_a = document.getElementById('numerador_a').value;
+	
+  	if (numerador_a != '') {
+		if (numerador_a == 4 ) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_b_25 () {
+	
+	var numerador_b = document.getElementById('numerador_b').value;
+  	
+   	if (numerador_b != '') {
+		if (numerador_b == 4) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_c_25 () {
+	
+	
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	
+   	if (numerador_c != '') {
+		if (numerador_c == 48) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_d_25 () {
+	
+	
+  	var numerador_d = document.getElementById('numerador_d').value;
+   	if (numerador_d != '') {
+		if (numerador_d == 48) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_e_25 () {
+	
+	
+  	var numerador_d = document.getElementById('numerador_e').value;
+   	if (numerador_d != '') {
+		if (numerador_d == 3) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
+
+function numerador_f_25 () {
+	
+	
+  	var numerador_d = document.getElementById('numerador_f').value;
+   	if (numerador_d != '') {
+		if (numerador_d == 51) {
+  			
+  			$('#correcta').show();
+			$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+			});	
+  		}else{
+  			
+  			$('#error').show();
+			$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+			});
+  		};
+  	};
+}
