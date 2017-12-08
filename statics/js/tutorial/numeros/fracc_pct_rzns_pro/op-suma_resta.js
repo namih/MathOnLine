@@ -1327,3 +1327,89 @@ function numerador_26 () {
   		};
   	};
 }
+
+function fraccion_27 () {
+	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	
+   	if (numerador != '' && denominador != '') {
+		if (numerador == 11 && denominador == 2) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_28_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 5 && denominador_a == 2) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_28_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 3 && denominador_b == 3) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numerador_28 () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var numerador_d = document.getElementById('numerador_d').value;
+   	if (numerador_c != '' && numerador_d != '') {
+		if (numerador_c == 1 && numerador_d == 1) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_28_c () {
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 15 && denominador_e == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_28_d () {
+  	var numerador_f = document.getElementById('numerador_f').value;
+  	var denominador_f = document.getElementById('denominador_f').value;
+  	if (numerador_f != '' && denominador_f != '') {
+		if (numerador_f == 6 && denominador_f == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_28 () {
+	var entero_g = document.getElementById('entero_g').value;
+  	var numerador_g = document.getElementById('numerador_g').value;
+  	var denominador_g = document.getElementById('denominador_g').value;
+  	if (entero_g != '' && numerador_g != '' && denominador_g != '') {
+		if (entero_g == 18 && numerador_g == 3 && denominador_g == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
