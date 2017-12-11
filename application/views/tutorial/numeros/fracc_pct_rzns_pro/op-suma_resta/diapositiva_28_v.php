@@ -23,14 +23,14 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+										<input onchange="fraccion_28_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+										<input onchange="fraccion_28_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -51,14 +51,14 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+										<input onchange="fraccion_28_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+										<input onchange="fraccion_28_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -81,7 +81,7 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+										<input onchange="numerador_28 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -98,7 +98,7 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
+										<input onchange="numerador_28 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_d" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -121,14 +121,14 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_e" placeholder="0" />
+										<input onchange="fraccion_28_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_e" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_e" placeholder="0" />
+										<input onchange="fraccion_28_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_e" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -142,14 +142,14 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_f" placeholder="0" />
+										<input onchange="fraccion_28_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_f" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_f" placeholder="0" />
+										<input onchange="fraccion_28_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_f" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
@@ -162,20 +162,20 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_mixta_22a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_g" placeholder="0" />
+											<input onchange="fraccion_mixta_28 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_g" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mfrac>
 									<mi><semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_mixta_22a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_g" placeholder="0" />
+												<input onchange="fraccion_mixta_28 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_g" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
 									<mi><semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_mixta_22a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_g" placeholder="0" />
+												<input onchange="fraccion_mixta_28 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_g" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
