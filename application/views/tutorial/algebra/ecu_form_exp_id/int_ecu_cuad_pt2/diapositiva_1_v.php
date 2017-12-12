@@ -11,8 +11,13 @@
 	<div class="col-xs-12 col-sm-12 col-lg-12">
 	  <p align="justify">Las ecuaciones cuadráticas pueden asociarse con funciones del tipo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></math>, cuya gráfica representa una parábola.</p>
 	  <p align="justify">Observa la gráfica de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn></math>.</p>
-	  <p align="justify">Cambia el valor de x con las flechas y observa la ubicación del punto P(x,y) sobre la gráfcia.</p>
-	  <p>¿Cuántas intersecciones tiene la gráfica con el eje x? <input type="text" name="some_name" value="" id="some_name"/></p>
+	  <p align="justify">Cambia el valor de x con las flechas y observa la ubicación del punto P(x,y) sobre la gráfica.</p>
+	  <div class="btn-group" id="opciones" class="col-xs-12 col-sm-12 col-lg-12">
+		<button onclick="disminuir_1()" type="button" class="btn btn-info"><</button>
+		<button id="valor" type="button" class="btn">0</button>
+		<button onclick="incrementar_1()" type="button" class="btn btn-info">></button>
+	</div>
+	<p>¿Cuántas intersecciones tiene la gráfica con el eje x? <input placeholder="0" style="text-align: center" onchange="validar_1()" size="1" type="text" id="interseccion"></p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-lg-12" id="applet_container">
 	</div>
