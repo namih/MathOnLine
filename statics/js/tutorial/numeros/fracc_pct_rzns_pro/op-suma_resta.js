@@ -1488,3 +1488,131 @@ function fraccion_mixta_29 () {
   		};
   	};
 }
+
+function incrementar_31 () {
+  	  	switch (ia) {
+		case 1:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_onceavo_vnaranja.png";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 4:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 5:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 6:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 7:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 8:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 9:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/nueve_onceavos_vnaranja.png";
+			ia++;
+			break;
+		case 10:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_onceavos_vnaranja.png";
+			ia++;
+			break;	
+		case 11:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>11</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/once_onceavos_vnaranja.png";
+			ia++;
+			break;	
+		
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_31 () {
+	console.log(ia);
+  	switch (ia) {
+  		case 12:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 11:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/nueve_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 10:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 9:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 8:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 7:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 6:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 5:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_onceavos_vnaranja.png";
+			ia--;
+			break;
+		case 4:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_onceavos_vnaranja.png";
+			ia--;
+			break;	
+		case 3:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_onceavo_vnaranja.png";
+			ia--;
+			break;	
+		case 2:
+			document.getElementById("numerador").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>11</mn></mfrac></math>';
+			document.getElementById("onceavos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cero_onceavos_vnaranja.png";
+			break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
