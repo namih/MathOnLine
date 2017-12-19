@@ -21,7 +21,7 @@
                       <?php echo $diapositiva_actual; ?>
                     </div>
                     <?php if(isset($paginador)){ ?>
-                      <div class="panel-footer" style="margin: 0px;">
+                      <div class="panel-footer" style="margin: 0px;" id="content_paginator">
                           <ul class="pagination">
                             <?php if($paginador['anterior']!=''){ ?>
                               <li><a href="<?php echo base_url(); ?>inicio_tutorial/<?php echo $id_tutorial ?>/<?php echo $paginador['anterior']; ?>/<?php echo $id_blog_actual; ?>/1" >&laquo; Anterior</a></li>
