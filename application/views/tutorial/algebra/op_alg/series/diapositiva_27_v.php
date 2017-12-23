@@ -7,5 +7,8 @@
 		<p>Hace 30 años nacieron 2 padres.</p>
 		<p>Hace 60 años nacieron 4 abuelos.</p>
 		<p>Hace 90 años nacieron 8 bisabuelos.</p>
+		<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
+		</div>
 	</div>
  </div>		

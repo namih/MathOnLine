@@ -1,3 +1,41 @@
+var ni = 1;
+var ia = 1;
+var valor=1;
+function correcto() {
+		$('#correcta').show();
+		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
+			$("#correcta").slideUp(500);
+		});
+}
+function error() {
+		$('#error').show();
+		$("#error").fadeTo(2000, 500).slideUp(500, function(){
+			$("#error").slideUp(500);
+		});
+}
+
+function mostrar() {
+	valor=2;
+	ni=1;
+	ia=1;
+	document.getElementById('ejercicio2').style.display = 'block';
+	document.getElementById('ejercicio1').style.display = 'none';
+	document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n.png";
+	document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+	
+}
+
+function mostrar1() {
+	document.getElementById('ejercicio3').style.display = 'block';
+	document.getElementById('ejercicio2').style.display = 'none';
+	document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n.png";
+	document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+	valor=3;
+	ni=1;
+	ia=1;
+	
+}
+
 function acierto(label1) {
 	switch (label1) {
     case 2:
@@ -306,12 +344,30 @@ function acierto(label1) {
         break;
 	case 39:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="3"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="3")
 				document.getElementById("1").value="";
+		}
+		if(var2=="5"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="5")
+				document.getElementById("2").value="";
+		}
+		if(var3=="8"){
+			correcto();
+		}
+		else{
+			if(var3!="8")
+				document.getElementById("3").value="";
 		}
         break;
     case 40:
@@ -332,46 +388,127 @@ function acierto(label1) {
         break;
 	case 42:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="9"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="9")
 				document.getElementById("1").value="";
 		}
+		if(var2=="25"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="25")
+				document.getElementById("2").value="";
+		}
+		if(var3=="35"){
+			correcto();
+		}
+		else{
+			if(var3!="35")
+				document.getElementById("3").value="";
+		}
         break;
 	case 44:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="13"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="13")
 				document.getElementById("1").value="";
+		}
+		if(var2=="14"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="14")
+				document.getElementById("2").value="";
+		}
+		if(var3=="19"){
+			correcto();
+		}
+		else{
+			if(var3!="19")
+				document.getElementById("3").value="";
 		}
         break;
 	case 46:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="13"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="13")
 				document.getElementById("1").value="";
+		}
+		if(var2=="14"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="14")
+				document.getElementById("2").value="";
+		}
+		if(var3=="16"){
+			correcto();
+		}
+		else{
+			if(var3!="16")
+				document.getElementById("3").value="";
 		}
         break;
     case 48:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
 		if(var1=="13" && var2 == "17"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="13")
 				document.getElementById("1").value="";
 			if(var2!="17")
 				document.getElementById("2").value="";
-		}        
+		}
+		if(var3=="9" && var4 == "10"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="9")
+				document.getElementById("3").value="";
+			if(var4!="10")
+				document.getElementById("4").value="";
+		}
+		if(var5=="16" && var6=="0"){
+			correcto();
+			
+		}
+		else{
+			if(var5!="16")
+				document.getElementById("5").value="";
+			if(var6!="0")
+				document.getElementById("6").value="";
+		}       
         break;
 	case 49:
 		var var1 = document.getElementById("1").checked;
@@ -423,115 +560,349 @@ function acierto(label1) {
         break;
     case 56:
 		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="9/4" || var1 == "2.25"){
+			correcto();
+			document.getElementById("1").value="";
+		}
+		else{
+			if(var1!="9/4" || var1 != "2.25")
+				document.getElementById("1").value="";
+		}
+		if(var2=="14"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="14")
+				document.getElementById("2").value="";
+		}
+		if(var3=="14/4" || var3 == "3.5"){
 			correcto();
 		}
 		else{
-			if(var1!="9/4" || var1 == "2.25")
-				document.getElementById("1").value="";
-		}        
+			if(var3!="14/4" || var3 == "3.5")
+				document.getElementById("3").value="";
+		}
         break;
     case 58:
 		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="5/4" || var1 == "1.25"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="5/4" || var1 == "1.25")
 				document.getElementById("1").value="";
-		}        
+		}
+		if(var2=="11"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="11")
+				document.getElementById("2").value="";
+		}
+		if(var3=="10/4" || var3 == "2.5"){
+			correcto();
+		}
+		else{
+			if(var3!="10/4" || var3 == "2.5")
+				document.getElementById("3").value="";
+		}
         break;
     case 60:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
 		if(var1=="13" && var2 == "17"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="13")
 				document.getElementById("1").value="";
 			if(var2!="17")
 				document.getElementById("2").value="";
-		}        
-        break;
+		}
+		if(var3=="9" && var4 == "7"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="9")
+				document.getElementById("3").value="";
+			if(var4!="7")
+				document.getElementById("4").value="";
+		}
+		if(var5=="10" && var6=="1" ){
+			correcto();
+		}
+		else{
+			if(var5!="10")
+				document.getElementById("5").value="";
+			if(var6!="1")
+				document.getElementById("6").value="";
+		}
+		break;
     case 62:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
 		if(var1=="-1" && var2 == "17"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="-1")
 				document.getElementById("1").value="";
 			if(var2!="17")
 				document.getElementById("2").value="";
-		}        
+		}
+		if(var3=="1" && var4 == "7"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="1")
+				document.getElementById("3").value="";
+			if(var4!="7")
+				document.getElementById("4").value="";
+		}
+		if(var5=="4" && var6=="1" ){
+			correcto();
+		}
+		else{
+			if(var5!="4")
+				document.getElementById("5").value="";
+			if(var6!="1")
+				document.getElementById("6").value="";
+		}
         break;
     case 64:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
 		if(var1=="3" && var2 == "17"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="3")
 				document.getElementById("1").value="";
 			if(var2!="17")
 				document.getElementById("2").value="";
-		}        
+		}
+		if(var3=="1" && var4 == "10"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="1")
+				document.getElementById("3").value="";
+			if(var4!="10")
+				document.getElementById("4").value="";
+		}
+		if(var5=="4" && var6 == "0"){
+			correcto();
+		}
+		else{
+			if(var5!="4")
+				document.getElementById("5").value="";
+			if(var6!="0")
+				document.getElementById("6").value="";
+		}
         break;    
     case 66:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
 		if(var1=="-9" && var2 == "17"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="-9")
 				document.getElementById("1").value="";
 			if(var2!="17")
 				document.getElementById("2").value="";
-		}        
+		}
+		if(var3=="-9" && var4 == "10"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="-9")
+				document.getElementById("3").value="";
+			if(var4!="10")
+				document.getElementById("4").value="";
+		}
+		if(var5=="-16" && var6 == "0"){
+			correcto();
+		}
+		else{
+			if(var5!="-16")
+				document.getElementById("5").value="";
+			if(var6!="0")
+				document.getElementById("6").value="";
+		}
         break;
     case 68:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="4" && var2 == "6"){
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
+		if(var1=="4" && var2 == "-6"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
 		}
 		else{
 			if(var1!="4")
 				document.getElementById("1").value="";
-			if(var2!="6")
+			if(var2!="-6")
 				document.getElementById("2").value="";
-		}        
+		}
+		if(var3=="2" && var4 == "-1"){
+			correcto();
+			document.getElementById("3").value="";
+			document.getElementById("4").value="";
+		}
+		else{
+			if(var3!="2")
+				document.getElementById("3").value="";
+			if(var4!="-1")
+				document.getElementById("4").value="";
+		}
+		if(var5=="0" && var6 == "10"){
+			correcto();
+		}
+		else{
+			if(var5!="0")
+				document.getElementById("5").value="";
+			if(var6!="10")
+				document.getElementById("6").value="";
+		}
+        break;
+    case 69:
+        var var1_1 = document.getElementById("uno").src;
+        var var1_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+        var var2_1 = document.getElementById("tres").src;
+        var var2_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+        var var3_1 = document.getElementById("uno2").src;
+        var var3_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+        var var4_1 = document.getElementById("tres2").src;
+        var var4_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+        var var5_1 = document.getElementById("uno3").src;
+        var var5_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+        var var6_1 = document.getElementById("tres3").src;
+        var var6_2 = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+		if( var1_1==var1_2 && var2_1==var2_2){
+			correcto();
+		}
+		if( var3_1==var3_2 && var4_1==var4_2){
+			correcto();
+		}
+		if( var5_1==var5_2 && var6_1==var6_2){
+			correcto();
+		}
         break;
 	case 70:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="6"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="6")
 				document.getElementById("1").value="";
 		}
+		if(var2=="10"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="10")
+				document.getElementById("2").value="";
+		}
+		if(var3=="5"){
+			correcto();
+		}
+		else{
+			if(var3!="5")
+				document.getElementById("3").value="";
+		}
         break;
 	case 71:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+        var var3 = document.getElementById("3").value;
 		if(var1=="5"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="5")
 				document.getElementById("1").value="";
+		}
+		if(var2=="9"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="9")
+				document.getElementById("2").value="";
+		}
+		if(var3=="4"){
+			correcto();
+		}
+		else{
+			if(var3!="4")
+				document.getElementById("3").value="";
 		}
         break;
     case 72:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
+		var var7 = document.getElementById("7").value;
+		var var8 = document.getElementById("8").value;
+		var var9 = document.getElementById("9").value;
 		if(var1=="4" && var2 == "8" && var3 == "9"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
+			document.getElementById("3").value="";
 		}
 		else{
 			if(var1!="4")
@@ -540,14 +911,48 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 			if(var3!="9")
 				document.getElementById("3").value="";
-		}        
+		}
+		if(var4=="8" && var5 == "16" && var6 == "17"){
+			correcto();
+			document.getElementById("4").value="";
+			document.getElementById("5").value="";
+			document.getElementById("6").value="";
+		}
+		else{
+			if(var4!="8")
+				document.getElementById("4").value="";
+			if(var5!="16")
+				document.getElementById("5").value="";
+			if(var6!="17")
+				document.getElementById("6").value="";
+		} 
+		if(var7=="3" && var8 == "6" && var9 == "7"){
+			correcto();
+		}
+		else{
+			if(var7!="3")
+				document.getElementById("7").value="";
+			if(var8!="6")
+				document.getElementById("8").value="";
+			if(var9!="7")
+				document.getElementById("9").value="";
+		} 
         break;
 	case 73:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
+		var var7 = document.getElementById("7").value;
+		var var8 = document.getElementById("8").value;
+		var var9 = document.getElementById("9").value;
 		if(var1=="4" && var2 == "12" && var3 == "13"){
 			correcto();
+			document.getElementById("1").value="";
+			document.getElementById("2").value="";
+			document.getElementById("3").value="";
 		}
 		else{
 			if(var1!="4")
@@ -556,129 +961,853 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 			if(var3!="13")
 				document.getElementById("3").value="";
+		}
+		if(var4=="8" && var5 == "24" && var6 == "25"){
+			correcto();
+			document.getElementById("4").value="";
+			document.getElementById("5").value="";
+			document.getElementById("6").value="";
+		}
+		else{
+			if(var4!="8")
+				document.getElementById("4").value="";
+			if(var5!="24")
+				document.getElementById("5").value="";
+			if(var6!="25")
+				document.getElementById("6").value="";
+		} 
+		if(var7=="3" && var8 == "9" && var9 == "10"){
+			correcto();
+		}
+		else{
+			if(var7!="3")
+				document.getElementById("7").value="";
+			if(var8!="9")
+				document.getElementById("8").value="";
+			if(var9!="10")
+				document.getElementById("9").value="";
 		}        
         break;
 	case 74:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="7"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="7")
 				document.getElementById("1").value="";
 		}
+		if(var2=="11"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="11")
+				document.getElementById("2").value="";
+		}
+		if(var3=="6"){
+			correcto();
+		}
+		else{
+			if(var3!="6")
+				document.getElementById("3").value="";
+		}
         break;
 	case 75:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="10"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="10")
 				document.getElementById("1").value="";
 		}
+		if(var2=="18"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="18")
+				document.getElementById("2").value="";
+		}
+		if(var3=="8"){
+			correcto();
+		}
+		else{
+			if(var3!="8")
+				document.getElementById("3").value="";
+		}
         break;
 	case 76:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="15"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="15")
 				document.getElementById("1").value="";
 		}
+		if(var2=="27"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="27")
+				document.getElementById("2").value="";
+		}
+		if(var3=="12"){
+			correcto();
+		}
+		else{
+			if(var3!="12")
+				document.getElementById("3").value="";
+		}
         break;
 	case 77:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="6"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="6")
 				document.getElementById("1").value="";
 		}
+		if(var2=="12"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="12")
+				document.getElementById("2").value="";
+		}
+		if(var3=="9/2" || var3 == "4.5"){
+			correcto();
+		}
+		else{
+			if(var3!="9/2" || var3 == "4.5")
+				document.getElementById("3").value="";
+		}
         break;
 	case 78:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="10"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="10")
 				document.getElementById("1").value="";
 		}
-        break;
-    case 79:
-		var var1 = document.getElementById("1").value;
-		if(var1=="16/3" || var1 == "5.333"){
+		if(var2=="20"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="20")
+				document.getElementById("2").value="";
+		}
+		if(var3=="15/2" || var3 == "7.5"){
 			correcto();
 		}
 		else{
-			if(var1!="16/3" || var1 == "5.333")
-				document.getElementById("1").value="";
-		}        
+			if(var3!="15/2" || var3 == "7.5")
+				document.getElementById("3").value="";
+		}
         break;
+    case 79:
+		var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		if(var1=="16/3" || var1 == "5.33"){
+			correcto();
+			document.getElementById("1").value="";
+		}
+		else{
+			if(var1!="16/3" || var1 != "5.33")
+				document.getElementById("1").value="";
+		}
+		if(var2=="32/3" || var2 == "10.66"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="32/3" || var2 != "10.66")
+				document.getElementById("2").value="";
+		}
+		if(var3=="4"){
+			correcto();
+		}
+		else{
+			if(var3!="4")
+				document.getElementById("3").value="";
+		}
+        break;
+    case 80:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="16"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="16")
 				document.getElementById("1").value="";
 		}
+		if(var2=="20"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="20")
+				document.getElementById("2").value="";
+		}
+		if(var3=="28"){
+			correcto();
+		}
+		else{
+			if(var3!="28")
+				document.getElementById("3").value="";
+		}
         break;
 	case 81:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="32"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="32")
 				document.getElementById("1").value="";
+		}
+		if(var2=="24"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="24")
+				document.getElementById("2").value="";
+		}
+		if(var3=="28"){
+			correcto();
+		}
+		else{
+			if(var3!="28")
+				document.getElementById("3").value="";
 		}
         break;
 	case 82:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="32"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="32")
 				document.getElementById("1").value="";
 		}
+		if(var2=="80"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="80")
+				document.getElementById("2").value="";
+		}
+		if(var3=="100"){
+			correcto();
+		}
+		else{
+			if(var3!="100")
+				document.getElementById("3").value="";
+		}
 		break;
 	case 83:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="40"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="40")
 				document.getElementById("1").value="";
+		}
+		if(var2=="100"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="100")
+				document.getElementById("2").value="";
+		}
+		if(var3=="125"){
+			correcto();
+		}
+		else{
+			if(var3!="125")
+				document.getElementById("3").value="";
 		}
         break;
 	case 84:
         var var1 = document.getElementById("1").value;
+        var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="40"){
 			correcto();
+			document.getElementById("1").value="";
 		}
 		else{
 			if(var1!="40")
 				document.getElementById("1").value="";
 		}
+		if(var2=="15"){
+			correcto();
+			document.getElementById("2").value="";
+		}
+		else{
+			if(var2!="15")
+				document.getElementById("2").value="";
+		}
+		if(var3=="-30"){
+			correcto();
+		}
+		else{
+			if(var3!="-30")
+				document.getElementById("3").value="";
+		}
         break;
 	}
 }
-
-function correcto() {
-		$('#correcta').show();
-		$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
-			$("#correcta").slideUp(500);
-		});
-}
-function error() {
-		$('#error').show();
-		$("#error").fadeTo(2000, 500).slideUp(500, function(){
-			$("#error").slideUp(500);
-		});
+	
+function incrementar_69_1() {
+  	switch (ni) {
+		case 1:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			ni++;
+			break;
+		case 2:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			ni++;
+			break;
+		case 3:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			ni++;
+			break;
+		case 4:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_4.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_4.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_4.png";
+			}
+			break;
+			
 	}
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_69_1() {
+	console.log(ni);
+  	switch (ni) {
+		case 4:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_3.png";
+			}
+			ni--;
+			break;
+		case 3:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_2.png";
+			}
+			ni--;
+			break;	
+		case 2:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n_1.png";
+			}
+			ni--;
+			break;	
+		case 1:
+			if(valor==1){
+				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n.png";
+			}
+			if(valor==2){
+				document.getElementById("n2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("uno2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n.png";
+			}
+			if(valor==3){
+				document.getElementById("n3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("uno3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_n.png";
+			}
+			break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_69_3() {
+  	  	switch (ia) {
+		case 1:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			ia++;
+			break;
+		case 2:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}
+			ia++;
+			break;
+		case 3:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			ia++;
+			break;
+		case 4:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			ia++;
+			break;
+		case 5:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			ia++;
+			break;
+		case 6:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			ia++;
+			break;
+		case 7:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			ia++;
+			break;
+		case 8:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			ia++;
+			break;
+		case 9:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			ia++;
+			break;
+		case 10:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			ia++;
+			break;	
+		case 11:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			ia++;
+			break;	
+		case 12:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>12</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_12.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>12</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_12.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>12</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_12.png";
+			}
+		    break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_69_3() {
+	console.log(ia);
+  	switch (ia) {
+  		
+		case 12:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>11</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_11.png";
+			}
+			ia--;
+			break;
+		case 11:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>10</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_10.png";
+			}
+			ia--;
+			break;
+		case 10:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>9</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_9.png";
+			}
+			ia--;
+			break;
+		case 9:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>8</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_8.png";
+			}
+			ia--;
+			break;
+		case 8:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>7</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_7.png";
+			}
+			ia--;
+			break;
+		case 7:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>6</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_6.png";
+			}
+			ia--;
+			break;
+		case 6:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>5</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_5.png";
+			}
+			ia--;
+			break;
+		case 5:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>4</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_4.png";
+			}
+			ia--;
+			break;
+		case 4:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>3</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_3.png";
+			}
+			ia--;
+			break;
+		case 3:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_2.png";
+			}ia--;
+			break;	
+		case 2:
+			
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c_1.png";
+			}
+			
+			ia--;
+			break;	
+		case 1:
+			if(valor==1){
+				document.getElementById("c").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("tres").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+			}
+			if(valor==2){
+				document.getElementById("c2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("tres2").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+			}
+			if(valor==3){
+				document.getElementById("c3").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math>';
+				document.getElementById("tres3").src = base_url+"statics/img/tutorial/algebra/op_alg/exp_alg_lin_var_var/diapositiva_49_c.png";
+			}break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}

@@ -68,15 +68,15 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="20" && var2 == "36" && var3=="61"){
+		if(var1=="21" && var2 == "37" && var3=="62"){
 			correcto();
 		}
 		else{
-			if(var1!="20")
+			if(var1!="21")
 				document.getElementById("1").value="";
-			if(var2!="36")
+			if(var2!="37")
 				document.getElementById("2").value="";
-			if(var3!="61")
+			if(var3!="62")
 				document.getElementById("3").value="";
 		}        
         break;
@@ -366,19 +366,19 @@ function acierto(label1) {
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
-		if(var1=="8" && var2 == "11" && var3=="20" && var4=="36" && var5=="61"){
+		if(var1=="8" && var2 == "12" && var3=="21" && var4=="37" && var5=="62"){
 			correcto();
 		}
 		else{
 			if(var1!="8")
 				document.getElementById("1").value="";
-			if(var2!="11")
+			if(var2!="12")
 				document.getElementById("2").value="";
-			if(var3!="20")
+			if(var3!="21")
 				document.getElementById("3").value="";
-			if(var4!="36")
+			if(var4!="37")
 				document.getElementById("4").value="";
-			if(var5!="61")
+			if(var5!="62")
 				document.getElementById("5").value="";
 		}        
         break;

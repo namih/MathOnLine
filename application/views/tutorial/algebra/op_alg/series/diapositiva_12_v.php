@@ -3,5 +3,8 @@
 	<div>
 		<p>Encuentra la suma de los primeros 20 término de una sucesión aritmética cuyo tercer término es 55 y el último es -98</p>
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo></math> <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" /></p>
+		<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
+		</div>
 	</div>
  </div>		
