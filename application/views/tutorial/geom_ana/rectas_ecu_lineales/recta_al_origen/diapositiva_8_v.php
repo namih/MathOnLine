@@ -48,7 +48,7 @@
 								<p><b>Empecemos con una recta que pasa por el origen es decir, que pasa por el punto (0,0)</b></p>
 							</div><br>
 							<div class="paso_2">
-								<p>Supongamos que esta recta pasa también por el punto Q (4,3 )</p>
+								<p>Supongamos que esta recta pasa también por el punto Q ( -5,1 )</p>
 							</div><br>
 							<div class="paso_3">
 								<p>Tomemos ahora un punto cualquiera sobre la recta, llamémosle P.</p>
@@ -57,22 +57,22 @@
 							<div class="paso_4">
 								<p>Al trazar los segmentos verticales se forman dos triángulos semejantes. POP' y QOQ'</p>
 								<p>Si comparamos los cocientes que resultan de dividir los catetos de los triángulos POP' y QOQ' tenemos que </p>
-								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math>     POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
+								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>-5</mn></mfrac><mo>=</mo><mn>-0</mn><mo>.</mo><mn>2</mn></math>     POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
 								<p>Arrastra el punto P y observa qué pasa con los cocientes.</p>
 							</div><br>
 							<div class="paso_5">
-								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math>     POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
-								<p>En general, para un punto P(x,y) sobre la recta que pasa por el origen y por el punto Q( 4,3 ):</p>
-								<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></p>
+								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mstyle displaystyle="true"><mn>1</mn></mstyle><mstyle displaystyle="true"><mo>-</mo><mn>5</mn></mstyle></mfrac><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>2</mn></math>    POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
+								<p>En general, para un punto P(x,y) sobre la recta que pasa por el origen y por el punto Q( -5,1 ):</p>
+								<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo>-</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></math></p>
 								<p>Esto se conoce como el "Teorema de Tales" </p>
 							</div><br>
 							<div class="paso_6">
 								<p>En una recta que pasa por el origen, al cociente <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac></math> se le llama <b>pendiente</b> de la recta. Se suele denotar con una <b>m</b>.</p>
 								<p><b><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mo>=</mo><mfrac><mi>y</mi><mi>x</mi></mfrac></math> </b></p>
 								<p> La pendiente nos dice qué tan inclinada está la recta.</p>
-								<p> Si en <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math>  despejamos y obtenemos </p>
-								<p><b><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>x</mi></math></b></p>
-								<p>Esta es la ecuación de la recta que pasa por el origen y por el punto Q( 4,3 )</p>
+								<p> Si en <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></math>  despejamos y obtenemos </p>
+								<p><b><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mi>x</mi></math></b></p>
+								<p>Esta es la ecuación de la recta que pasa por el origen y por el punto Q( -5,1 )</p>
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
