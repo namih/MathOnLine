@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<p>El identificar los factores primos de un entero nos puede ayudar a encontrar raíces sin utilizar calculadora. ¿cuál es la raíz de 125</p>
@@ -20,17 +20,17 @@
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
             <thead>
                 <tr class="success">
-                    <th>   </th>
-                    <th>   *    </th>
+                    <th>Número</th>
+                    <th>Factor</th>
                 </tr>
             </thead>
             <tbody>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base1" value="1" readonly=""/>
+            			<input class="input-sm2" type="text" id="base1" value="125" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" value="15" readonly=""/>
+            			<input class="input-sm2" type="text" id="altura1"  onblur="valida_factor(1,this)"/>
             		</td>
             	</tr>
             	<tr>
@@ -38,7 +38,7 @@
             			<input class="input-sm2" type="text" id="base2" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura2" />
+            			<input class="input-sm2" type="text" id="altura2" onblur="valida_factor(2,this)" />
             		</td>
             	</tr>
             	<tr>
@@ -46,14 +46,22 @@
             			<input class="input-sm2" type="text"  id="base3" />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" />
+            			<input class="input-sm2" type="text" id="altura3" onblur="valida_factor(3,this)"/>
+            		</td>
+            	</tr> 
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="base4" />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura4" readonly="" onblur="valida_factor(4,this)"/>
             		</td>
             	</tr> 
             </tbody>
         </table>
 	<p>La raíz cúbica de 125 es de 5</p>
 	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="valida4();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar34();" value="Verificar" />
 	<br />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 

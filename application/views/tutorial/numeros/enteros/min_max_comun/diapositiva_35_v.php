@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<p>¿Cuál es la raíz cúbica de 216?</p>
@@ -26,55 +26,63 @@
             			<input class="input-sm2" type="text" id="base1" value="216" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1"  />
+            			<input class="input-sm2" type="text" id="altura1" onblur="valida_factor(1,this)" />
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="base2" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura2" />
+            			<input class="input-sm2" type="text" id="altura2" onblur="valida_factor(2,this)" />
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base3" />
+            			<input class="input-sm2" type="text"  id="base3" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" />
-            		</td>
-            	</tr> 
-            	<tr>
-            		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base4" />
-            		</td>
-            		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura4" />
+            			<input class="input-sm2" type="text" id="altura3" onblur="valida_factor(3,this)" />
             		</td>
             	</tr> 
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base5" />
+            			<input class="input-sm2" type="text"  id="base4" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura5" />
+            			<input class="input-sm2" type="text" id="altura4" onblur="valida_factor(4,this)" />
             		</td>
             	</tr> 
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base6" />
+            			<input class="input-sm2" type="text"  id="base5" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura6" />
+            			<input class="input-sm2" type="text" id="altura5" onblur="valida_factor(5,this)" />
+            		</td>
+            	</tr> 
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="base6" readonly />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura6"  onblur="valida_factor(6,this)" />
+            		</td>
+            	</tr> 
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text"  id="base7" readonly />
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura7" readonly onblur="valida_factor(7,this)" />
             		</td>
             	</tr> 
             </tbody>
         </table>
         <br /><br />
-	<label>La raíz cúbica de 216 es de 2 X 3 =</label> <input type="text" id="raiz"/>
+	<label>La raíz cúbica de 216 es de 2 X 3 =</label> <input type="text" id="1"/>
 	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="valida4();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar35();" value="Verificar" />
 	<br />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 

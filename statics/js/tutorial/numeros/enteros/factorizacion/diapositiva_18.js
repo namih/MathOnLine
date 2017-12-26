@@ -6,17 +6,12 @@ function verificar(){
 	var num2 = document.getElementById("2").checked;
 	var num3 = document.getElementById("3").checked;
 	var num4 = document.getElementById("4").checked;
-	var num6 = document.getElementById("6").checked;
-	var num7 = document.getElementById("7").checked;
-	var num8 = document.getElementById("8").checked;
-	var num12 = document.getElementById("12").checked;
-	var num24 = document.getElementById("24").checked;
+
 	
-	
-	if (num1 !=true && num2 !=true && num3 !=true && num4!=true && num6 !=true && num7!=true && num8!=true && num12 !=true && num24!=true) {
+	if (num1 !=true && num2 !=true && num3 !=true && num4!=true) {
 		error("Favor de seleccionar alguna de las opciones.");
 	}else{
-		if(num24 == true && num1 !=true && num2 !=true && num3 !=true && num4!=true && num6 !=true && num7!=true && num8!=true && num12 !=true){
+		if(num4 == true && num1 !=true && num2 !=true && num3 !=true ){
 			correcto("EL ejercicio se realizó satisfactoriamente");
 		}else{
 			error("Favor de repetir el ejercicio");

@@ -91,7 +91,7 @@
 		<p><b>MCD de 4 y 12 es:</b></p> <input type="text" id="mcd"/>
 		<p><b>MCM de 4 y 12 es:</b></p> <input type="text" id="mcm"/>
 	</div>
-	<br /><br /><br /><br />
+	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar24();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 

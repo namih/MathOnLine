@@ -65,6 +65,21 @@ function verificar(){
 /**
  * 
  */
+function verificar18(){
+	var num1= new Number($("#num1").val());
+	if (num1 !='') {
+		if (num1 == 5) {
+			correcto("El ejercicio se realizo satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
 function verificar20(){
 	var num1= document.getElementById("minimo").value;
 	if (num1 !='') {
@@ -85,8 +100,8 @@ function verificar24(){
 	var num2= document.getElementById("mcm").value;
 	
 	if (num1 !='' && num2 !='') {
-		if (num1 == 2 || num1 == 3) {
-			correcto("El ejercicio se realizo satisfactoriamente.");
+		if (num1 == 2 && num2 == 2) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
 		}else{
 				error("Favor de repetir nuevamente.");
 		}
@@ -94,22 +109,241 @@ function verificar24(){
 			error("Favor de ingresar los datos");
 	}
 }
-
 /**
  * 
  */
-function verificar18(){
-	var num1= new Number($("#num1").val());
-	if (num1 !='') {
-		if (num1 == 5) {
-			correcto("El ejercicio se realizo satisfactoriamente.");
+function verificar28(){
+		var num1= new Number($("#1").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("2").value =num1;
+			document.getElementById("3").value =num1;
+			res =num1*num1;
+			document.getElementById("4").value =res;
+			if (res == 49) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
 		}else{
-				error("Favor de repetir nuevamente.");
+			error("Favor de ingresar los datos.");
 		}
-	}else{
-			error("Favor de ingresar los datos");
 	}
-}
+/**
+ * 
+ */
+function verificar29(){
+		var num1= new Number($("#1").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("2").value =num1;
+			document.getElementById("3").value =num1;
+			document.getElementById("4").value =num1;
+			res =num1*num1*num1;
+			document.getElementById("5").value =res;
+			if (res == 64) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar30(){
+		var num1= new Number($("#num1").val());
+		var num2= new Number($("#num2").val());
+		
+		
+		if (num1 != '' && num2 != ''){
+			if (num1 == 5 && num2 ==5) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar31(){
+		var num1= new Number($("#1").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("2").value =num1;
+			document.getElementById("3").value =num1;
+			res =num1*num1;
+			document.getElementById("4").value =res;
+			if (res == 121) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar32(){
+		var num1= new Number($("#1").val());
+		var num2= new Number($("#2").val());
+		var num3= new Number($("#3").val());
+		var num4= new Number($("#4").val());
+		
+		var res ;
+		if (num1 != '' ||num2 != ''||num3 != ''){
+			res =num1*num2*num3;
+			document.getElementById("4").value =res;
+			if (res == 64) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar33(){
+		var num1= new Number($("#1").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("2").value =num1;
+			document.getElementById("3").value =num1;
+			document.getElementById("4").value =num1;
+			res =num1*num1*num1;
+			document.getElementById("5").value =res;
+			if (res == 8) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}		
+/**
+ * 
+ */
+function verificar34(){
+		var num1= new Number($("#num1").val());
+		var num2= new Number($("#num2").val());
+		var num3= new Number($("#num3").val());
+		var res ;
+		if (num1 != '' && num2 != '' && num3 != ''){
+			if (num1 == 5 && num2 == 5 && num3 == 5) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}		
+/**
+ * 
+ */
+function verificar35(){
+		var num1= new Number($("#1").val());
+		if (num1 != ''){
+			if (num1 == 6) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar36(){
+		var num1= new Number($("#1").val());
+		if (num1 != ''){
+			if (num1 == 8) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+	
+/**
+ * 
+ */
+function verificar37(){
+		var num1= new Number($("#num1").val());
+		var num2= new Number($("#num2").val());
+		var num3= new Number($("#num3").val());
+		var num4= new Number($("#ra1").val());
+		var num5= new Number($("#ra2").val());
+	
+		if (num1 != '' ||num2 != '' ||num3 != '' ||num4 != '' ||num5 != ''){
+			var res = num4*num5;
+			if (num1 == 2 && num2 == 2 && num3 ==4 && res ==72) {
+				document.getElementById("ra3").value=res;
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}						
+/**
+ * 
+ */
+function verificar38(){
+		var num1= new Number($("#1").val());
+		
+		if (num1 != ''){
+			if (num1 == 410 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}		
+/**
+ * 
+ */
+function verificar40(){
+		var num1= new Number($("#1").val());
+		
+		if (num1 != ''){
+			if (num1 == 18 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}		
 /**
  * Metodo para eliminar los datos que se repiten en el arreglo 
  */
@@ -177,7 +411,7 @@ function clean_imput(){
  * @param {Object} x
  * @param {Object} posiciones
  */
-function trunc (x, posiciones = 0) {
+function trunc (x, posiciones =0) {
   var s = x.toString();
   var l = s.length;
   var decimalLength = s.indexOf('.') + 1;

@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_1.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<p>En ocasiones podemos utilizar el resultado de la raiz de un número para encontrar la raíz de otro número. Por ejemplo, si sabemos que <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>1296</mn></msqrt><mo>=</mo><mn>36</mn></math>,
@@ -19,7 +19,7 @@
 		<p>Como sabemos que <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>1296</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><mn>36</mn><mo>,</mo></math> entonces:</p>
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
 			<msqrt><mn>5184</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><msqrt><mn>1296</mn><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mn>4</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msqrt><mn>1296</mn></msqrt><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><msqrt><mn>4</mn></msqrt><mo>&#xA0;</mo><mo>&#x2009;</mo><mo>=</mo>
-		</math> <input type="text" id="raiz1"/> <label> X </label> <input type="text" id="raiz2"/><label> = </label> <input type="text" id="raiz3"/>
+		</math> <input type="text" id="ra1"/> <label> X </label> <input type="text" id="ra2"/><label> = </label> <input type="text" id="ra3"/>
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
@@ -35,29 +35,29 @@
             			<input class="input-sm2" type="text" id="base1" value="5184" readonly=""/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura1" />
+            			<input class="input-sm2" type="text" id="altura1" onblur="valida_factor(1,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="base2" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura2" />
+            			<input class="input-sm2" type="text" id="altura2" onblur="valida_factor(2,this)" />
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text"  id="base3" />
+            			<input class="input-sm2" type="text"  id="base3" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" />
+            			<input class="input-sm2" type="text" id="altura3" readonly/>
             		</td>
             	</tr> 
             </tbody>
         </table>
 	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="valida4();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar37();" value="Verificar" />
 	<br />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
