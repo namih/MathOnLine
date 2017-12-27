@@ -40,7 +40,7 @@
 							</mi>
 						</mfrac>
 					</math></h1>
-				    	
+				    </td>	
 				</tr>
 			</table>
 		</div>

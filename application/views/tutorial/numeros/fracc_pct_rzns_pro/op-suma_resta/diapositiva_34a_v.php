@@ -7,9 +7,9 @@
 			<table>
 				 
 				  <tr align="center">
-				    <td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math></h1></td>
+				    <td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math></h1></td>
 				    <td align="center"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
-				    <td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>6</mn></mfrac></math></h1></td>
+				    <td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>4</mn></mfrac></math></h1></td>
 				    <td align="center"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></td>
 				    <td align="center"><h1 style="color: red">?</h1></td>
 				  </tr>
@@ -20,14 +20,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_o ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+											<input onchange="correcto_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_o ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+											<input onchange="correcto_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -41,14 +41,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_oo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+											<input onchange="correcto_aa ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_oo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+											<input onchange="correcto_aa ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -62,14 +62,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_ooo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+											<input onchange="correcto_aaa ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_ooo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
+											<input onchange="correcto_aaa ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>

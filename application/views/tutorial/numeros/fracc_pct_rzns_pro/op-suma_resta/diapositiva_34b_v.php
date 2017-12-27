@@ -20,14 +20,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_o ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+											<input onchange="correcto_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_o ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+											<input onchange="correcto_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -41,14 +41,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_oo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+											<input onchange="correcto_bb ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_oo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+											<input onchange="correcto_bb ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -62,14 +62,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_ooo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+											<input onchange="correcto_bbb ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="correcto_34_ooo ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
+											<input onchange="correcto_bbb ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
