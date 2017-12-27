@@ -31,7 +31,7 @@
                 <div class="pregunta"><p>4. Empiezo con 100 pesos ahorrados en el banco. Al final de cada año, el banco me duplica la cantidad que tengo ahorrada.</p>
                 </div>
                 <div class="instruccion">
-                <p></p>
+                <p>Completa tabla que relaciona los años transcurridos con el capital que tengo en el banco.</p>
                 </div>
                 <div class="row">
                     <div align="left"><p><label>Ejemplo 3</label></p></div>
