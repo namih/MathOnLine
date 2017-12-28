@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/distancia_puntos/distancia.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/plano_cartesiano/distancia_puntos/distancia.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
 	var applet = new GGBApplet({filename: base_url+"statics/ggb/dist_punto_d5.ggb","showToolbar":false, height: 500, "showMenuBar": false}, true);
@@ -19,8 +19,8 @@
 <br />	
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar3();" value="Verificar" />	
 <div id="correcta" style="display: none" class="alert alert-success">
-	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
+	 	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 </div>
 <div id="error" style="display: none" class="alert alert-warning">
-	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> No te des por vencido, ni aun vencido.
+ 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 </div>
