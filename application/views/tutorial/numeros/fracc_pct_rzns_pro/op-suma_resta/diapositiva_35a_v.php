@@ -22,16 +22,16 @@
 					<td>
 				    	<h1 id="frac1" style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math></h1>
 				    	<div class="btn-group" id="opciones">
-							<button onclick="" type="button" class="btn btn-info"><</button>
-							<button onclick="" type="button" class="btn btn-info">></button>
+							<button onclick="decrementar_35a_a ()" type="button" class="btn btn-info"><</button>
+							<button onclick="incrementar_35a_a" type="button" class="btn btn-info">></button>
 						</div>					
 				    </td>
 				    <td align="center"><h1>&nbsp;-&nbsp;</h1><br /></td>
 				    <td>
 				    	<h1 id="frac2" style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow></mfrac></math></h1>
 				    	<div class="btn-group" id="opciones">
-							<button onclick="" type="button" class="btn btn-info"><</button>
-							<button onclick="" type="button" class="btn btn-info">></button>
+							<button onclick="decrementar_35a_b" type="button" class="btn btn-info"><</button>
+							<button onclick="incrementar_35a_b" type="button" class="btn btn-info">></button>
 						</div>					
 				    </td>
 				    <td align="center"><h1>&nbsp;&nbsp;=&nbsp;&nbsp;</h1></td>
