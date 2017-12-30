@@ -3,6 +3,9 @@ var ib = 1;
 var valor_a = false;
 var valor_b = false;
 
+var bandera_35_a = false;
+var bandera_35_b = false;
+
 function acierto () {
   	$('#correcta').show();
 	$("#correcta").fadeTo(2000, 500).slideUp(500, function(){
@@ -1964,7 +1967,7 @@ function correcto_34_bbb () {
 }
 
 function incrementar_35_a () {
-	console.log(ia);
+	
   	switch (ia) {
   		
 		case 1:
@@ -1972,6 +1975,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 2:
@@ -1979,6 +1983,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 3:
@@ -1986,6 +1991,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 4:
@@ -1993,6 +1999,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 5:
@@ -2000,6 +2007,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_a = true;
 			ia++;
 			break;
 		case 6:
@@ -2007,6 +2015,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 7:
@@ -2014,6 +2023,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 8:
@@ -2021,22 +2031,25 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>27</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciocho_veintisieteavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		}
 
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-	
+	correcta_35();
 }
 
 function decrementar_35_a () {
+	
 	switch (ia) {
 		case 9:
 			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 8:
@@ -2044,6 +2057,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		
@@ -2052,6 +2066,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_a = true;
 			ia--;
 			break;
 		case 6:
@@ -2059,6 +2074,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_a = false;
 			ia--;
 			break;	
 		case 5:
@@ -2066,6 +2082,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 4:
@@ -2073,6 +2090,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 3:
@@ -2080,6 +2098,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 			
@@ -2088,20 +2107,24 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			bandera_35_a = false;
 			break;
 			
 	}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
 
 function incrementar_35_b () {
+	
 	switch (ib) {
 		case 1:
 			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 2:
@@ -2109,6 +2132,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			bandera_35_b = true;
 			ib++;
 			break;
 		case 3:
@@ -2116,6 +2140,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_veinticuatroavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 4:
@@ -2123,6 +2148,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>30</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_treintavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 5:
@@ -2130,6 +2156,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>36</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_treintaiseisavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
@@ -2138,6 +2165,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>42</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_cuarentaidosavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		
@@ -2146,6 +2174,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>48</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_cuarentaiochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
@@ -2154,12 +2183,14 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>54</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciocho_cincuentaicuatroavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cincuentaicuatroavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
 	}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
 
 
@@ -2171,6 +2202,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>48</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_cuarentaiochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 			
@@ -2179,6 +2211,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>42</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_cuarentaidosavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 			
@@ -2187,6 +2220,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>36</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_treintaiseisavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;	
 		
@@ -2195,6 +2229,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>30</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_treintavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 		case 5:
@@ -2202,6 +2237,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_veinticuatroavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;	
 		case 4:
@@ -2209,6 +2245,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			bandera_35_b = true;
 			ib--;
 			break;
 		case 3:
@@ -2216,7 +2253,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
-			
+			bandera_35_b = false;
 			ib--;
 			break;
 		case 2:
@@ -2224,9 +2261,11 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_h_verde.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_sextos.png";
+			bandera_35_b = false;
 			break;
 		}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
 function incrementar_35a_a () {
 	console.log(ia);
@@ -2759,3 +2798,19 @@ function decrementar_35b_b () {
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
+function mostrar_segundo () {
+  	document.getElementById('first').style.display = 'none';
+  	document.getElementById('second').style.display = 'inline-block';
+}
+
+function mostrar_tercero () {
+  	document.getElementById('second').style.display = 'none';
+  	document.getElementById('third').style.display = 'inline-block';
+}
+
+function correcta_35(){
+	if (bandera_35_a == true && bandera_35_b == true) {
+		document.getElementById('rest').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>1</mo><mn>18</mn></mfrac></math>';
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	};
+}
