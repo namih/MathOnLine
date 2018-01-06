@@ -6,7 +6,7 @@
 			<p>En el triángulo ABC conocemos el ángulo a = 65° y la hipotenusa. Buscamos el cateto opuesto a A</p>
 		</div>	
 		<div class="form-group has-feedback col-md-6  col-xs-12">
-			<p>Imagen</p>
+			<img class="img-responsive" width="35%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_6.png" align="center"/>
 		</div>
 	</div>
 </div>
