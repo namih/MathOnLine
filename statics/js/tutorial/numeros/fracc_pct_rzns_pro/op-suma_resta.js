@@ -1741,7 +1741,7 @@ function decrementar_33_a () {
 		case 2:
 			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow></mfrac></math>';
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math>';
-			ia--;
+			
 			break;
 	}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -2267,7 +2267,7 @@ function decrementar_35_b () {
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 	correcta_35();
 }
-function incrementar_35a_a () {
+function incrementar_35_uno_a () {
 	console.log(ia);
   	switch (ia) {
   		
@@ -2334,7 +2334,7 @@ function incrementar_35a_a () {
 	
 }
 
-function decrementar_35a_a () {
+function decrementar_35_uno_a () {
 	switch (ia) {
 		case 9:
 			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
@@ -2399,7 +2399,7 @@ function decrementar_35a_a () {
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
-function incrementar_35a_b () {
+function incrementar_35_uno_b () {
 	switch (ib) {
 		case 1:
 			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
@@ -2468,7 +2468,7 @@ function incrementar_35a_b () {
 }
 
 
-function decrementar_35a_b () {
+function decrementar_35_uno_b () {
 	
 	switch (ib) {
 		case 9:
