@@ -38,7 +38,7 @@
 				<div class="row">
 					<div align="left"><p><label>Ejemplo</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="pregunta paso_0">
 								<p><b>Consideremos un punto arbitrario P(<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>y</mi><mn>1</mn></math>) y la recta que pasa por el origen y por P.</b></p>
 								<p><b>NOTA:</b> Se escriben subíndices (<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>y</mi><mn>1</mn></math>) cuando queremos denotar un punto específico.</p>

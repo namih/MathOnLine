@@ -27,36 +27,27 @@
 		<div class="tema"><p>La recta - Recta que pasa por dos puntos.</p>
 		</div>
 		<div class="instruccion">
-			<p>	En este tutorial aprenderás cómo encontrar la ecuación de la recta que pasa por dos puntos.
-			<br>
-			Lee con atención cada paso de las explicaciones y dedícale suficiente tiempo a los ejercicios hasta que domines el tema.<br></p>
+			<p>	Resuelve los siguientes ejercicios.
+			<br></p>
 		</div>
 		<div id="boxEjemplos_1">
 			<div id="box_1_ejemplo_0">
-				<div class="pregunta"><p>¿Cómo es Ia ecuación de una recta que no pasa por el origen?</p>
+				<div class="pregunta"><p></p>
 				</div>
 				<div class="instruccion">
-				<p>Desarrollo paso a paso.</p>
+				<p>En los siguientes ejercicios escribe lo que se te pide en los campos de texto. Escribe las respuestas con dos decimales exactos.</p>
 				</div>
 				<div class="row">
-					<div align="left"><p><label>Ejemplo</label></p></div>
+					<div align="left"><p><label></label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="paso_0">
+								<p>Considera la recta que pasa por los puntos <br> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>(</mo><mo>&#xA0;</mo><mn>1</mn><mo>,</mo><mo>&#xA0;</mo><mn>4</mn><mo>&#xA0;</mo><mo>)</mo></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>(</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mn>7</mn><mo>&#xA0;</mo><mo>)</mo></math> </p>
+								<p>La pendiente vale: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi><mo>=</mo><mo> ?</mo></math> </p>
 								<p></p>
 							</div><br>
 							<div class="paso_1">
-								<p>Por ejemplo la recta que pasa por los puntos Q( 1, 2 ) y R( 4, 6 )</p>
-							</div><br>
-							<div class="paso_2">
-								<p>Tomemos un punto P(x,y) cualquiera sobre la recta. Arrastra P y observa cómo cambian sus coordenadas. P( 5, 7.33)</p>
-							</div><br>
-							<div class="paso_3">
-								<p>Observa que se forman dos triángulos semejantes RQR1 y PQP1</p>
-
-							</div><br>
-							<div class="paso_4">
-								<p>Arrastra el punto magenta que está sobre R1, colócalo sobre el eje X. ¿Cuánto mide Ia base del triángulo RQR1?</p>
+								<p>La ecuación es: <br><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>x</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo></math><input type="number"></p>
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">

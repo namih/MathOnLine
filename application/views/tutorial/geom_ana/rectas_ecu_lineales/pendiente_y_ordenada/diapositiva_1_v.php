@@ -41,7 +41,7 @@
 				<div class="row">
 					<div align="left"><p><label>Primera experimentación</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="paso_0">
 								<p>Grafica en papel cuadriculado la recta y=2x+3</p>
 								<p>Para ello completa una tabla en la que para cinco valores de x encuentres el valor de y correspondiente.</p>
