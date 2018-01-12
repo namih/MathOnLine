@@ -1,7 +1,7 @@
- <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/op-suma_resta.js"></script>
+   <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/op-suma_resta.js"></script>
 
 <div class="container-fluid">
-	<p align="justify">VirtualBox_WinXP_15_05_2017_12_18_18: Observa que las dos fracciones tienen distinto denominador. Encuentra fracciones equivalentes a cada una, con un denominador común, para que se puedan restar.</p>
+	<p align="justify">Observa que las dos fracciones tienen distinto denominador. Encuentra fracciones equivalentes a cada una, con un denominador común, para que se puedan restar.</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 				<table>
@@ -30,8 +30,8 @@
 				    <td>
 				    	<h1 id="frac2" style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math></h1>
 				    	<div class="btn-group" id="opciones">
-							<button onclick="" type="button" class="btn btn-info"><</button>
-							<button onclick="" type="button" class="btn btn-info">></button>
+							<button onclick="decrementar_36_b ()" type="button" class="btn btn-info"><</button>
+							<button onclick="incrementar_36_b ()" type="button" class="btn btn-info">></button>
 						</div>					
 				    </td>
 				    <td align="center"><h1 style="color: red">&nbsp;&nbsp;=&nbsp;&nbsp;</h1></td>
@@ -45,14 +45,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador" placeholder="0" />
+											<input onchange="fraccion_36 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador" placeholder="0" />
+											<input onchange="fraccion_36 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -64,4 +64,11 @@
 			</table>
 		</div>
 	</div>
+</div>
+
+<div id="correcta" style="display: none" class="alert alert-success">
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
 </div>
