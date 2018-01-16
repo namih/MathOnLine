@@ -59,7 +59,7 @@ function verificar9(){
 	var primo9 = new Number($("#primo9").val());
 	
 	if (document.getElementById("primo9").value != '') {
-	if (primo9 == 12) {
+	if (primo9 == 14) {
 		correcto("El ejercicio se realizó exitosamente");
 	}else{
 		error("Repetir el ejercicio.");

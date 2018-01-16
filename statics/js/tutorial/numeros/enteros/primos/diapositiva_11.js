@@ -46,7 +46,9 @@ function verificar13(){
 		error("Favor de ingresar el dato.");
 	}
 }
-
+/**
+ *metodo para validar los factores primos de 30 
+ */
 function verificar14(){
 	var factores_primos  = Array(document.getElementById("factor_primo").value);
 	var arr_primos = Array("2,3,5"); 
@@ -62,6 +64,64 @@ function verificar14(){
 		error("Favor de ingresar los datos");
 	}
 }
+
+/**
+ *metodo para validar los factores primos de 36
+ */
+function verificar14_1(){
+	var factores_primos  = Array(document.getElementById("factor_primo_1").value);
+	var arr_primos = Array("2,3"); 
+	
+	if (document.getElementById("factor_primo").value != '') {
+		var res = array_diff(factores_primos,arr_primos);
+		if(res.length == 0){
+			correcto("El ejercicio se realizó exitosamente");
+		}else{
+			error("Favor de repetir el ejercicio");
+		}
+	}else{
+		error("Favor de ingresar los datos");
+	}
+}
+
+/**
+ *metodo para validar los factores primos de 30 
+ */
+function verificar14_2(){
+	var factores_primos  = Array(document.getElementById("factor_primo_2").value);
+	var arr_primos = Array("7"); 
+	
+	if (document.getElementById("factor_primo").value != '') {
+		var res = array_diff(factores_primos,arr_primos);
+		if(res.length == 0){
+			correcto("El ejercicio se realizó exitosamente");
+		}else{
+			error("Favor de repetir el ejercicio");
+		}
+	}else{
+		error("Favor de ingresar los datos");
+	}
+}
+
+
+
+/**
+ * 
+ */
+function ejercicio2(){
+	document.getElementById('div_1').style.display='none';
+	document.getElementById('div_2').style.display='block';
+	
+}
+/**
+ * 
+ */
+function ejercicio3(){
+	document.getElementById('div_2').style.display='none';
+	document.getElementById('div_3').style.display='block';
+	
+}
+
 
 /**
  * 

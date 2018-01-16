@@ -9,6 +9,9 @@
 			<input  type="text"  id="2" value=""/>
 			<input  type="text"  id="3" value=""/>
 			<input  type="text"  id="4" value=""/>
+			<br /><br />
+			<p>Escribe la descomposición en primos</p> 
+			<label>150=</label ><input id="11" size=7  /><label>X</label></ ><input label id="22" size=7 /><label>X</label></label ><input id="33" size=7 /><label>X</label></label  ><input id="44" size=7/>
 		</div>
 	</div>
 	<br/><br/><br />

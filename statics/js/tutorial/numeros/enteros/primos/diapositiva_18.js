@@ -11,6 +11,13 @@ function verificar(){
 	var num3 = new Number($("#3").val());
 	var num4 = new Number($("#4").val());
 	
+	var prim1 = new Number($("#11").val());
+	var prim2 = new Number($("#22").val());
+	var prim3 = new Number($("#33").val());
+	var prim4 = new Number($("#44").val());
+	
+	var res =prim1*prim2*prim3*prim4;
+	
 	
 	if (document.getElementById("1").value != '' && document.getElementById("2").value != '' && document.getElementById("3").value != '' && document.getElementById("4").value != '') {
 		if (isNaN(num1)||isNaN(num2)||isNaN(num3)||isNaN(num4)) {
@@ -28,7 +35,7 @@ function verificar(){
 			
 		
 			if(tamanio_9.length == 2 && tamanio_10.length == 2 ){
-				if((this.compara_array(array_order_9,numeros9,2)) == true && (this.compara_array(array_order_10,numeros10,2)) == true){
+				if((this.compara_array(array_order_9,numeros9,2)) == true && (this.compara_array(array_order_10,numeros10,2)) == true && res ==150){
 				correcto("El ejercicio se realizo satisfactoriamente.");
 				this.clean_imput();
 				
