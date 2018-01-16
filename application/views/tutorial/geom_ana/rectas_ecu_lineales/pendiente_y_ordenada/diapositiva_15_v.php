@@ -31,7 +31,7 @@
         </div>
         <div id="boxEjemplos_1">
             <div id="box_1_ejemplo_0">
-                <div class="pregunta"><p> Ahora resuelve los ejercicios que están más abajo</p>
+                <div class="pregunta"><p> Ahora resuelve los siguientes ejercicios.</p>
                 </div>
                 <div class="instruccion">
                 <p>Contesta los siguientes ejercicios escribiendo las respuestas en los campos de texto.</p>
@@ -40,7 +40,7 @@
                     <div align="left"><p><label>Ejercicios</label></p></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-                            <p>En la recta y= 3x-1</p>
+                            <p>En la recta <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math></p>
                             <p><label> ¿Cuál es su pendiente? <input class="n_float" type="text" name="constant_ecu" id="constant_ecu" onkeypress="return validarSoloFlotante(event,'constant_ecu');"> </label></p>
                             <p><label> ¿Cuál es su intersección con el eje Y? <input class="n_float" type="text" name="constant_ecu" id="constant_ecu" onkeypress="return validarSoloFlotante(event,'constant_ecu');"> </label></p>
                             <p><label> ¿Cuál es su intersección con el eje x? <input class="n_float" type="text" name="constant_ecu" id="constant_ecu" onkeypress="return validarSoloFlotante(event,'constant_ecu');"> </label></p>
