@@ -29,19 +29,25 @@
 		<div id="boxEjemplos_1">
 			<div id="box_1_ejemplo_0">
 				<div class="pregunta">
-					<p>En un torneo de canasta un jugador obtuvo en sus tres primeras partidas 152, 130 y 147 puntos respectivamente. ¿Cuántos puntos debe ganar en la siguiente partida para obtener un promedio entre 140 y 180 puntos?</p>
+					<p>En un triángulo rectángulo, uno de los ángulos agudos, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>, es menor que <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>3</mi></math> veces el otro ángulo menos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>10</mi></math> grados. ¿Cuánto puede medir dicho ángulo?</p>
 				</div>
 				<div class="instruccion">
-					<p>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math> representa  los puntos que debe ganar en la cuarta partida, ¿entre qué valores debe estar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>?</p>
+					<p>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>   representa Ia medida del ángulo en grados, escribe Ia desigualdad que satisface <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>.</p>
 				</div>
 				<br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                     <div class="paso_0">
-						<p> <input type="number" name=""> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo><mo>&#xA0;</mo><mi>p</mi><mo>&#xA0;</mo><mo>&lt;</mo></math> <input type="number" name="">
+						<p> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> 
+						<select>
+							<option></option>
+							<option> < </option>
+							<option> > </option>
+							<option> = </option>
+						</select> <input type="number" name=""> grados.
 						</p>
                     </div><br>
                     <div class="paso_1">
-                        <p>El jugador debe sacar entre 131 y 291 puntos en la cuarta partida para que esté entre 140 y 180 puntos.
+						<p> El ángulo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> debe ser menor que <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>65</mn><mo>&#xB0;</mo></math>.
 						</p>
                     </div><br>
                 </div>				

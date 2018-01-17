@@ -29,20 +29,25 @@
 		<div id="boxEjemplos_1">
 			<div id="box_1_ejemplo_0">
 				<div class="pregunta">
-					<p>En un torneo de canasta un jugador obtuvo en sus tres primeras partidas 152, 130 y 147 puntos respectivamente. ¿Cuántos puntos debe ganar en la siguiente partida para obtener un promedio entre 140 y 180 puntos?</p>
+					<p>La fábrica “Aceros del Norte” ofrece a un candidato a vendedor dos opciones para pactar su salario.<br> La primera opción es un sueldo de $120,000 fijos más una comisión del 2% sobre sus ventas anuales.<br> La segunda opción consiste únicamente en el pago de una comisión del 8% sobre sus ventas anuales. <br> ¿Para qué montos de ventas anuales le conviene al candidato seleccionar Ia primera opción salarial? </p>
 				</div>
 				<div class="instruccion">
-					<p>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math> representa  los puntos que debe ganar en la cuarta partida, ¿entre qué valores debe estar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>?</p>
+					<p>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math>  representa las ventas anuales, escribe la desigualdad que indica que le conviene más la primera opción.</p>
 				</div>
 				<br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                     <div class="paso_0">
-						<p> <input type="number" name=""> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo><mo>&#xA0;</mo><mi>p</mi><mo>&#xA0;</mo><mo>&lt;</mo></math> <input type="number" name="">
+						<p> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> 
+						<select>
+							<option></option>
+							<option> < </option>
+							<option> > </option>
+							<option> = </option>
+						</select> <input type="number" name="">
 						</p>
                     </div><br>
                     <div class="paso_1">
-                        <p>El jugador debe sacar entre 131 y 291 puntos en la cuarta partida para que esté entre 140 y 180 puntos.
-						</p>
+                    	<p>En este paso colocar la respuesta</p>
                     </div><br>
                 </div>				
 				<br>
