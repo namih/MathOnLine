@@ -50,14 +50,65 @@
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>
 					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_a" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_a" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_a" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 						<td align="center "><h1 style="color: red">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</h1></td>
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_b" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_b" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_b" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 						<td align="center"><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_uno_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_uno_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_c" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 					</tr>
 				</table>
 			</div>
@@ -82,14 +133,65 @@
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>
 					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_a" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_a" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_a" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 						<td align="center "><h1 style="color: red">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</h1></td>
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_b" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_b" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_b" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 						<td align="center"><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_c" placeholder="0" /></annotation-xml></semantics></mi>
-								<mi><semantics><annotation-xml encoding="application/xhtml+xml"><input onchange="fraccion_40_dos_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" /></annotation-xml></semantics></mi></mfrac></math></h1></td>
+						<td><h1>
+						<math xmlns="http://www.w3.org/1998/Math/MathML">
+							<mfrac>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_c" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+								<mi>
+									<semantics>
+										<annotation-xml encoding="application/xhtml+xml">
+											<input onchange="fraccion_40_dos_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_c" placeholder="0" />
+										</annotation-xml>
+									</semantics>
+								</mi>
+							</mfrac>
+						</math></h1></td>
 					</tr>
 				</table>
 			</div>
