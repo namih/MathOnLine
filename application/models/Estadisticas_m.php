@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 	class Estadisticas_m extends CI_Model {
-			
+
 		public function __construct() {
 			parent::__construct();
 		}
-		
+
 		public function best_evaluation($id_user = null) {
 			if ($id_user != NULL) {
 				$best_num = $this->db->SELECT('*')->FROM('evaluation_test_log')->ORDER_BY('score', 'DESC')->ORDER_BY('time_finish', 'ASC')->WHERE('id_user', $id_user)->WHERE('id_theme', 1)->GET();
@@ -17,7 +17,7 @@
 				$best['geo_tri'] = $best_geo_tri->row_array();
 				$best['geo_ana'] = $best_geo_ana->row_array();
 				return $best;
-				
+
 			} else {
 				return NULL;
 			}
@@ -56,10 +56,14 @@
 			$count_tuto['algebra'] = $count_algebra;
 			$count_tuto['geo_tri'] = $count_geo_tri;
 			$count_tuto['geo_ana'] = $count_geo_ana;
-			
+
 			return $count_tuto;
 		}
-		
+
+		public function test(){
+			return "Hola mundo";
+		}
+
 		public function end_tutorial($id_user=NULL) {
 			if ($id_user != null) {
 				$count_num = $this->db	->SELECT('*')
@@ -106,14 +110,14 @@
 				$count_end['algebra'] = $count_algebra->num_rows();
 				$count_end['geo_tri'] = $count_geo_tri->num_rows();
 				$count_end['geo_ana'] = $count_geo_ana->num_rows();
-				
+
 				return $count_end;
 			} else {
 				return NULL;
 			}
-			
+
 		}
-		
+
 }
 
 /* End of file Estadisticas_m.php */
