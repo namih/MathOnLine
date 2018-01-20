@@ -19,10 +19,10 @@
       function drawMultSeries() {
       var data = google.visualization.arrayToDataTable([
         ['Tutorial', 'Cursado', 'Sin cursar'],
-        ['Números', <? echo $end_tuto['num'] ?>, <? echo ($count_tuto['num'] - $end_tuto['num']) ?>],
-        ['Álgebra', <? echo $end_tuto['algebra'] ?>, <? echo ($count_tuto['algebra'] - $end_tuto['algebra']) ?>],
-        ['Geometria y trigonometria', <? echo $end_tuto['geo_tri'] ?>, <? echo ($count_tuto['geo_tri'] - $end_tuto['geo_tri']) ?>],
-        ['Geometría analítica', <? echo $end_tuto['geo_ana'] ?>, <? echo ($count_tuto['geo_ana'] - $end_tuto['geo_ana']) ?>],
+        ['Números', <?php echo $end_tuto['num'] ?>, <?php echo ($count_tuto['num'] - $end_tuto['num']) ?>],
+        ['Álgebra', <?php echo $end_tuto['algebra'] ?>, <?php echo ($count_tuto['algebra'] - $end_tuto['algebra']) ?>],
+        ['Geometria y trigonometria', <?php echo $end_tuto['geo_tri'] ?>, <?php echo ($count_tuto['geo_tri'] - $end_tuto['geo_tri']) ?>],
+        ['Geometría analítica', <?php echo $end_tuto['geo_ana'] ?>, <?php echo ($count_tuto['geo_ana'] - $end_tuto['geo_ana']) ?>],
       ]);
 
         // Set chart options
@@ -78,7 +78,7 @@
 									$segundos = $best_evaluation['num']['time_finish']-($horas*3600)-($minutos*60);
 									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
 								} else {
-									echo "NA";
+									echo 'NA';
 								}
 							?>
 						</td>
@@ -111,7 +111,7 @@
 										$segundos = $best_evaluation['algebra']['time_finish']-($horas*3600)-($minutos*60);
 										echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
 									} else {
-										echo "NA";
+										echo 'NA';
 									}
 								?>
 							</td>
@@ -144,7 +144,7 @@
 									$segundos = $best_evaluation['geo_tri']['time_finish']-($horas*3600)-($minutos*60);
 									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
 								} else {
-									echo "NA";
+									echo 'NA';
 								}
 							?>
 						</td>
@@ -177,7 +177,7 @@
 									$segundos = $best_evaluation['geo_ana']['time_finish']-($horas*3600)-($minutos*60);
 									echo $horas.'h:'.$minutos.'m:'.$segundos.'s';
 								} else {
-									echo "NA";
+									echo 'NA';
 								}
 							?>
 						</td>
