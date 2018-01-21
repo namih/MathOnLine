@@ -100,6 +100,8 @@
 	<p>Encuentra los factores primos que son comunes al 12 y 18, es decir, los que se repiten en las dos tablas:</p>
 	<input type="text" id="num1" />
 	<input type="text" id="num2"/>
+	<p>El MCD de 12 y 18 se obtiene multiplicando los factores primos comunes que acabas de encontrar:</p>
+	<label>2 X 3 =</label><input id="mcd" size="5" />
 	<br /><br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">

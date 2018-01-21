@@ -7,13 +7,17 @@
 	<div class="table-responsive">
 	<input type="text" id="1"/> <label> X </label> <input type="text" id="2"/> <label> X </label> <input type="text" id="3" /><label> = </label> <input type="text" id="4"readonly="" />
 	</div>
-	<br /><br />
+	<br />
+	<div id="tex" style="display: none">
+	<p>Decimos que 4 es la <b>la raíz cúbica</b> de 64, que se expresa como: </p>
+	<math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mn>64</mn><mn>3</mn></mroot><mo>=</mo><mn>4</mn></math>	</div>
+	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar32();" value="Verificar" />
 	<br />
-	<div id="correcta" style="display: none" class="alert alert-success">
-	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
-	</div>
-	<div id="error" style="display: none" class="alert alert-warning">
-	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-	</div> 
 </div>
+<div id="correcta" style="display: none" class="alert alert-success">
+ 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+ 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+</div> 

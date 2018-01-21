@@ -57,6 +57,44 @@
             	</tr>
             </tbody>
         </table>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mn>24</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+			<msup>
+				<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas_1" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp1" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+		</msup>
+			<mo>&#xA0;</mo>
+			<mi>x</mi>
+			<mo>&#xA0;</mo>
+			<msup>
+				<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas_2" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp2" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			</msup>
+			</math>
         <br /><br />
         <label>54</label>
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
@@ -109,12 +147,50 @@
             	</tr>
             </tbody>
         </table>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mn>54</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+			<msup>
+				<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas_3" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp3" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+		</msup>
+			<mo>&#xA0;</mo>
+			<mi>x</mi>
+			<mo>&#xA0;</mo>
+			<msup>
+				<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas_4" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			<mi>
+				<semantics>
+				  <annotation-xml encoding="application/xhtml+xml">
+				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp4" />
+				  </annotation-xml>
+				</semantics>
+			</mi>
+			</msup>
+			</math>
         	<!-- Notacion exponencial -->
         <br /><br />
 	</div>
 	<!-- Notacion exponencial -->
 	<br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="valida23();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

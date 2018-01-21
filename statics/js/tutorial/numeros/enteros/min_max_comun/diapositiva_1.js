@@ -342,6 +342,69 @@ function valida9(){
 	}
 }
 /**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida11(){	
+	var num11 = new Number($("#bas1").val());
+	var num22 = new Number($("#exp1").val());
+	var num33 = new Number($("#bas2").val());
+	var num44 = new Number($("#exp2").val());
+	
+	if(num11!='' && num22!='' && num33!= '' && num44!= ''){
+		if (num11==2 && num22 == 2 && num33 == 7 && num44 ==1) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+			
+		}else{
+			error("Favor de repetir el ejercicio.");
+			}
+	}else{
+		error("Favor  de ingresar los datos");
+	}
+}
+/**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida11_1(){	
+	var num11 = new Number($("#bas3").val());
+	var num22 = new Number($("#exp3").val());
+	
+	
+	if(num11!='' && num22!=''){
+		if (num11==3 && num22 == 4) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+			
+		}else{
+			error("Favor de repetir el ejercicio.");
+			}
+	}else{
+		error("Favor  de ingresar los datos");
+	}
+		
+	
+}
+/**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida11_2(){	
+	var num11 = new Number($("#bas4").val());
+	var num22 = new Number($("#exp4").val());
+	var num33 = new Number($("#bas5").val());
+	var num44 = new Number($("#exp5").val());
+	var num55 = new Number($("#bas6").val());
+	var num66 = new Number($("#exp6").val());
+	
+	if(num11!='' && num22!='' && num33!= '' && num44!= ''&& num55!=''  && num66!= ''){
+		if (num11==2 && num22 == 1 && num33 == 3 && num44 ==1 && num55==13 && num66==1) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+			
+		}else{
+			error("Favor de repetir el ejercicio.");
+			}
+	}else{
+		error("Favor  de ingresar los datos");
+	}
+}
+/**
  * 
  */
 function valida_factor(factor1,factor2){

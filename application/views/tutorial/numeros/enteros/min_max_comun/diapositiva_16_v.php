@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
+ <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/min_max_comun/diapositiva_15.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<div>
@@ -107,6 +107,8 @@
 	<p>Escribe los factores primos comunes de 30 y 54</p>
 	<input type="text" id="num1" />
 	<input type="text" id="num2"/>
+	<p>El MCD de 30 y 54 se obtiene multiplicando los factores primos comunes que acabas de encontrar:</p>
+	<label>2 X 3 =</label><input id="mcd" size="5" />
 	<br /><br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
