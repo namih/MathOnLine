@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="005a5636-fb96-408c-bef1-3681f77e2c9b" name="Default" comment="" />
+    <list default="true" id="005a5636-fb96-408c-bef1-3681f77e2c9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/img/tutorial/numeros/log_exp/logIntro.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_10_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_11_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_12_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_13_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_14_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_15_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_16_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_17_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_18_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_19_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_1_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_20_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_21_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_2_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_3_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_4_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_5_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_6_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_7_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_8_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_9_v.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Tutorial_content_c.php" afterPath="$PROJECT_DIR$/application/controllers/Tutorial_content_c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/email/activacion_cuenta.php" afterPath="$PROJECT_DIR$/application/views/email/activacion_cuenta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header/Menu_user_v.php" afterPath="$PROJECT_DIR$/application/views/header/Menu_user_v.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header/head_home_v.php" afterPath="$PROJECT_DIR$/application/views/header/head_home_v.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/inicio/Home_v.php" afterPath="$PROJECT_DIR$/application/views/inicio/Home_v.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/js_geogebra_v.php" afterPath="$PROJECT_DIR$/application/views/js_geogebra_v.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/css/bootstrap-3.3.7/.hound.yml" afterPath="$PROJECT_DIR$/statics/css/bootstrap-3.3.7/.hound.yml" />
+    </list>
     <ignored path="MathOnLine.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -20,81 +63,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <file leaf-file-name="diapositiva_8_v.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_8_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+            <state relative-caret-position="234">
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="25" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluation_c.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Evaluation_c.php">
+      <file leaf-file-name="diapositiva_23_v.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="185" column="20" lean-forward="true" selection-start-line="185" selection-start-column="20" selection-end-line="185" selection-end-column="20" />
+            <state relative-caret-position="215">
+              <caret line="12" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluation_m.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Evaluation_m.php">
+      <file leaf-file-name="diapositiva_24_v.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="364" column="11" lean-forward="false" selection-start-line="364" selection-start-column="8" selection-end-line="364" selection-end-column="11" />
+            <state relative-caret-position="108">
+              <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biblio.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/biblio.sql">
+      <file leaf-file-name="int_pow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="links.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/links.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="temas_mes.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/temas_mes.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="248" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_dummy.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/user_dummy.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluacion.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statics/js/evaluacion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+            <state relative-caret-position="229">
+              <caret line="143" column="10" lean-forward="true" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -102,26 +105,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gohome</find>
-      <find>encode</find>
-      <find>Home_m</find>
-      <find>tutoriales_usuario</find>
-      <find>iniciar</find>
-      <find>form</find>
-      <find>mathonline</find>
-      <find>goHomeUser</find>
-      <find>$this-&gt;load-&gt;helper('new_helper');</find>
-      <find>goh</find>
-      <find>gohom</find>
-      <find>database</find>
-      <find>baseur</find>
-      <find>login(</find>
-      <find>admin_</find>
-      <find>login</find>
-      <find>inicio_tutorial</find>
-      <find>load_tutorial_content</find>
       <find>calculate_results</find>
       <find>get_current_responses</find>
       <find>Iniciar</find>
@@ -134,10 +126,34 @@
       <find>pri</find>
       <find>print</find>
       <find>echo</find>
+      <find>mate</find>
+      <find>logo_matenlinea/mate1.jpg</find>
+      <find>/iniciar_session/people-145129_1280.png</find>
+      <find>mate1.jpg</find>
+      <find>goHomeUser</find>
+      <find>AllowOverride</find>
+      <find>.php</find>
+      <find>cual_numero.js</find>
+      <find>moreExamples</find>
+      <find>x</find>
+      <find>logaritmo</find>
+      <find>js_geogebra_v</find>
+      <find>=</find>
+      <find>por e</find>
+      <find>wi</find>
+      <find>width: 50px</find>
+      <find>success</find>
+      <find>check</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>width: 80px</replace>
+      <replace>checkbox</replace>
+    </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/application/controllers</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/application/views</dir>
+      <dir>$PROJECT_DIR$/application/controllers</dir>
     </dirStrings>
   </component>
   <component name="FindManager">
@@ -157,17 +173,51 @@
         <option value="$PROJECT_DIR$/application/controllers/Admin_evaluation_c.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/models/Home_m.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/statics/js/home.js" />
         <option value="$PROJECT_DIR$/application/helpers/session_helper.php" />
         <option value="$PROJECT_DIR$/application/controllers/Home_c.php" />
         <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/application/views/tutorial/numeros/enteros/factorizacion/diapositiva_1_v.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/application/views/inicio/Home_v.php" />
-        <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/models/Evaluation_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Evaluation_c.php" />
+        <option value="$PROJECT_DIR$/application/views/email/activacion_cuenta.php" />
+        <option value="$PROJECT_DIR$/application/views/header/head_home_v.php" />
+        <option value="$PROJECT_DIR$/application/views/header/Menu_user_v.php" />
+        <option value="$PROJECT_DIR$/application/views/inicio/Home_v.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/views/header/head_v.php" />
+        <option value="$PROJECT_DIR$/application/views/footer/footer_v.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/statics/css/bootstrap-3.3.7/.hound.yml" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/application/controllers/Tutorial_content_c.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/geom_ana/plano_cartesiano/distancia_puntos/diapositiva_1_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_1_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_2_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_3_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_4_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_5_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_6_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_7_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_8_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_9_v.php" />
+        <option value="$PROJECT_DIR$/application/views/js_geogebra_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_11_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_10_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_12_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_13_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_14_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_15_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_16_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_20_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_19_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_18_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_17_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_21_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" />
+        <option value="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" />
+        <option value="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" />
       </list>
     </option>
   </component>
@@ -235,7 +285,55 @@
               <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="menu_usuario" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="numeros" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="numeros" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="log_exp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="statics" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="statics" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="statics" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="statics" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="log_exp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -256,6 +354,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/statics/img/tutorial/numeros/log_exp" />
       <recent name="$PROJECT_DIR$/application/config" />
       <recent name="$PROJECT_DIR$/system/libraries" />
     </key>
@@ -272,7 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.views">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -298,6 +397,14 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
+    <configuration name="views" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/application/views" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.views" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -346,21 +453,25 @@
       <workItem from="1511210161328" duration="107000" />
       <workItem from="1512620444639" duration="2280000" />
       <workItem from="1512667163767" duration="612000" />
-      <workItem from="1512709849397" duration="128000" />
+      <workItem from="1512709849397" duration="167000" />
+      <workItem from="1514597620010" duration="17093000" />
+      <workItem from="1514958087081" duration="123000" />
+      <workItem from="1516493218963" duration="13005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72611000" />
+    <option name="totallyTimeSpent" value="102871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31437355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25518832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -374,7 +485,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -410,237 +520,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/Home_m.php">
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="65" column="108" lean-forward="true" selection-start-line="65" selection-start-column="108" selection-end-line="65" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Registro_usuario_m.php">
+    <entry file="file://$PROJECT_DIR$/statics/css/bootstrap-3.3.7/.hound.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/js/registro_usuario/Registro_usuario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="152" column="9" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/Registro_usuario_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="96" column="61" lean-forward="false" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Test_views_c.php" />
-    <entry file="file://$PROJECT_DIR$/application/views/header/head_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/core/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.4.sql" />
-    <entry file="file://$PROJECT_DIR$/system/libraries/Session/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Registro_usuario_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="165" column="5" lean-forward="false" selection-start-line="141" selection-start-column="4" selection-end-line="165" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.5.sql" />
-    <entry file="file://$PROJECT_DIR$/application/models/Registro_usuario_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/usuarios/Perfil_v.php" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/br.php" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/tmp.txt" />
-    <entry file="file://$PROJECT_DIR$/application/models/Perfil_usuario_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="87" column="69" lean-forward="false" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.9.sql" />
-    <entry file="file://$PROJECT_DIR$/application/models/Home_admin_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.10.1.sql" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/Home_admin_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Home_student_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Home_student_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="69" lean-forward="false" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Admin_evaluation_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.12.sql" />
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="80" column="29" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Home_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login/Sesion_user_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="76" column="85" lean-forward="false" selection-start-line="76" selection-start-column="78" selection-end-line="76" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="227" column="16" lean-forward="true" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/session_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/borrame.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Tutorial_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/fracc_pct_rzns_pro/comparacion/diapositiva_1_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/enteros/factorizacion/diapositiva_1_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Tutorial_content_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statics/js/evaluacion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="47" lean-forward="false" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Home_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -651,72 +541,391 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/inicio/Home_v.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/footer/footer_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="63" column="43" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Home_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/borrame.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/img/tutorial/numeros/log_exp/logIntro.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/geom_ana/plano_cartesiano/distancia_puntos/diapositiva_1_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="165" lean-forward="true" selection-start-line="8" selection-start-column="165" selection-end-line="8" selection-end-column="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/js/tutorial/algebra/ecu_form_exp_id/balanza.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statics/js/tutorial/algebra/ecu_form_exp_id/cual_numero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/cual_numero/diapositiva_7_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_1_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Tutorial_content_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_2_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_4_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_5_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_7_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_6_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="51" column="93" lean-forward="true" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/matenlinea_v1.14.sql">
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_3_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="624" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2269" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/biblio.sql">
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/geom_trigonom/trigonometria/definiciones/diapositiva_7_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/geom_trigonom/trigonometria/definiciones/diapositiva_1_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/geom_trigonom/trigonometria/definiciones/diapositiva_2_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/links.sql">
+    <entry file="file://$PROJECT_DIR$/application/views/funcion_seno_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/temas_mes.sql">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Test_models_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_9_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_11_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_10_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_12_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/js_geogebra_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" lean-forward="true" selection-start-line="0" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_13_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#sup#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#763#770#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_14_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#sup#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#740#747#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#sup#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_15_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="94" lean-forward="false" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#sup#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#709#716#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#span#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#sup#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_16_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="203" lean-forward="false" selection-start-line="4" selection-start-column="203" selection-end-line="4" selection-end-column="203" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_18_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_19_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_17_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_20_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="248" selection-end-column="3" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/user_dummy.sql">
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_21_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        <state relative-caret-position="175">
+          <caret line="43" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Evaluation_m.php">
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_8_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="364" column="11" lean-forward="false" selection-start-line="364" selection-start-column="8" selection-end-line="364" selection-end-column="11" />
+        <state relative-caret-position="234">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="25" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Evaluation_c.php">
+    <entry file="file://$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="185" column="20" lean-forward="true" selection-start-line="185" selection-start-column="20" selection-end-line="185" selection-end-column="20" />
+        <state relative-caret-position="229">
+          <caret line="143" column="10" lean-forward="true" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
           <folding />
         </state>
       </provider>
