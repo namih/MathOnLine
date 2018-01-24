@@ -1,3 +1,4 @@
+<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/seno/seno.js"></script>
 <div class="container-fluid">
 	<div>
 		<p>Cuando el ángulo  sea de 45°, es decir, de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#x3C0;</mi><mn>4</mn></mfrac></math> radianes, ¿cuánto vale el seno de  en este caso? Para encontrar el valor del cateto opuesto podemos utilizar el teorema de Pitágoras:</p>
@@ -18,5 +19,8 @@
 				</annotation-xml>
 			</semantics>
 		</mi></msqrt></mfrac></math></p>
+	</div>
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
 	</div>
 </div>

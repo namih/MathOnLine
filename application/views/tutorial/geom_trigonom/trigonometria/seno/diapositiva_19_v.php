@@ -1,3 +1,4 @@
+<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/seno/seno.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
 	var applet = new GGBApplet({filename: base_url+"statics/ggb/circunferencia/circunferencia6.ggb","showToolbar":false, height: 390, width: 480,"showMenuBar": false}, true);
@@ -30,5 +31,8 @@
 			<div class="col-xs-12 col-sm-12 col-lg-12" id="applet_container_15">
 			</div>
 		</div>	
+	</div>
+	<div id="correcta" style="display: none" class="alert alert-success">
+	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
 	</div>
 </div>

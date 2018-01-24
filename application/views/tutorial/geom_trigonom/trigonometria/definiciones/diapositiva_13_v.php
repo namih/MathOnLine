@@ -1,6 +1,6 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
-	var applet = new GGBApplet({filename: base_url+"statics/ggb/definicion_d13.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
+	var applet = new GGBApplet({filename: base_url+"statics/ggb/definicion/definicion_d13.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
 	window.addEventListener("load", function() {
         applet.inject('applet_container_13');	
     });

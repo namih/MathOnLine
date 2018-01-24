@@ -1,12 +1,12 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
-	var applet = new GGBApplet({filename: base_url+"statics/ggb/definicion_d2.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
+	var applet = new GGBApplet({filename: base_url+"statics/ggb/definicion/definicion_d2.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
 	window.addEventListener("load", function() {
         applet.inject('applet_container');	
     });
 </script>
 <script type="text/javascript" charset="utf-8">
-	var applet8 = new GGBApplet({filename: base_url+"statics/ggb/definicion_d8.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
+	var applet8 = new GGBApplet({filename: base_url+"statics/ggb/definicion/definicion_d8.ggb","showToolbar":false, height: 250, "showMenuBar": false}, true);
 	window.addEventListener("load", function() {
         applet8.inject('applet_container_8');	
     });

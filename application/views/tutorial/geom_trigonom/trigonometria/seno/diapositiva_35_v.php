@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/seno/seno.js"></script>
 <div class="container-fluid">
 	<div id="principio">
-		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
+		<div style="margin-bottom: 20px" class=" col-lg-12 col-md-12 col-xs-12">
 			<p>Escribe un ángulo para el cual el seno tenga el valor dado.</p>
 						<div class=" col-lg-12 col-md-12  col-xs-12">
 							<img class="img-responsive" id="uno" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28.png" align="center"/>
@@ -16,7 +16,7 @@
 						<br />
 						<br />
 						<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mi>e</mi><mi>n</mi></math>
-							<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="text" size="4" id="1" />
+							<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="number" step="0.01" id="1" />
 							<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3C0;</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>0</mn></math></p>
 			<div id="respuesta" class=" col-lg-12 col-md-12  col-xs-12" style='display:none;'>
 				<p>Observa que existen varias respuestas correctas:</p>
