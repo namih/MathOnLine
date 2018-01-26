@@ -412,7 +412,7 @@
 			<button type="button" class="btn btn-success" onclick="mostrar_fraccion_42_uno ()">Fracción</button>
    	 	</div>
    	 	<div align="right">
-			<button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
+			<button type="button" class="btn btn-success" onclick="mostrar_tercero ()">Más ejercicios</button>
 		</div>
 	</div>
 	<div id="third" style="display: none">
