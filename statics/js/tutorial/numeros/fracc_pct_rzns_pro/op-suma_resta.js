@@ -4773,7 +4773,7 @@ function mostrar_mixto_42 () {
   	document.getElementById('mixto').style.display = 'inline-block';
   	document.getElementById('mix').style.display = 'none';
   	document.getElementById('frac').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
 }
 
 function mostrar_fraccion_42 () {
@@ -4781,7 +4781,7 @@ function mostrar_fraccion_42 () {
   	document.getElementById('fraccion').style.display = 'inline-block';
   	document.getElementById('frac').style.display = 'none';
   	document.getElementById('mix').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
 }
 
 function fraccion_mixta_42 () {
@@ -4874,7 +4874,7 @@ function mostrar_mixto_42_uno () {
   	document.getElementById('mixto_uno').style.display = 'inline-block';
   	document.getElementById('mix_uno').style.display = 'none';
   	document.getElementById('frac_uno').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto_uno']);
 }
 
 function mostrar_fraccion_42_uno () {
@@ -4882,7 +4882,7 @@ function mostrar_fraccion_42_uno () {
   	document.getElementById('fraccion_uno').style.display = 'inline-block';
   	document.getElementById('frac_uno').style.display = 'none';
   	document.getElementById('mix_uno').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'fraccion_uno']);
 }
 
 function fraccion_mixta_42_uno () {
@@ -4975,7 +4975,7 @@ function mostrar_mixto_42_dos () {
   	document.getElementById('mixto_dos').style.display = 'inline-block';
   	document.getElementById('mix_dos').style.display = 'none';
   	document.getElementById('frac_dos').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto_dos']);
 }
 
 function mostrar_fraccion_42_dos () {
@@ -4983,7 +4983,7 @@ function mostrar_fraccion_42_dos () {
   	document.getElementById('fraccion_dos').style.display = 'inline-block';
   	document.getElementById('frac_dos').style.display = 'none';
   	document.getElementById('mix_dos').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'fraccion_dos']);
 }
 
 function fraccion_mixta_42_dos () {
@@ -5003,7 +5003,7 @@ function fraccion_43_a () {
   	var numerador_a = document.getElementById('numerador_a').value;
   	var denominador_a = document.getElementById('denominador_a').value;
   	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 5 && denominador_a == 2) {
+		if (numerador_a == 3 && denominador_a == 2) {
   			acierto();
   		}else{
   			error();
@@ -5015,7 +5015,7 @@ function fraccion_43_b () {
   	var numerador_b = document.getElementById('numerador_b').value;
   	var denominador_b = document.getElementById('denominador_b').value;
   	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 7 && denominador_b == 4) {
+		if (numerador_b == 4 && denominador_b == 3) {
   			acierto();
   		}else{
   			error();
@@ -5023,23 +5023,12 @@ function fraccion_43_b () {
   	};
 }
 
-function numerador_43 () {
-  	var numerador_c = document.getElementById('numerador_c').value;
-  	var numerador_d = document.getElementById('numerador_d').value;
-   	if (numerador_c != '' && numerador_d != '') {
-		if (numerador_c == 5 && numerador_d == 7) {
-  			acierto();
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_43_c () {
-  	var numerador_e = document.getElementById('numerador_e').value;
-  	var denominador_e = document.getElementById('denominador_e').value;
-  	if (numerador_e != '' && denominador_e != '') {
-		if (numerador_e == 10 && denominador_e == 4) {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 9 && denominador_c == 6) {
   			acierto();
   		}else{
   			error();
@@ -5048,10 +5037,10 @@ function fraccion_43_c () {
 }
 
 function fraccion_43_d () {
-  	var numerador_f = document.getElementById('numerador_f').value;
-  	var denominador_f = document.getElementById('denominador_f').value;
-  	if (numerador_f != '' && denominador_f != '') {
-		if (numerador_f == 7 && denominador_f == 4) {
+  	var numerador_d = document.getElementById('numerador_d').value;
+  	var denominador_d = document.getElementById('denominador_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 8 && denominador_d == 6) {
   			acierto();
   		}else{
   			error();
@@ -5060,10 +5049,10 @@ function fraccion_43_d () {
 }
 
 function fraccion_43_e () {
-  	var numerador_g = document.getElementById('numerador_g').value;
-  	var denominador_g = document.getElementById('denominador_g').value;
-  	if (numerador_g != '' && denominador_g != '') {
-		if (numerador_g == 3 && denominador_g == 4) {
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 1 && denominador_e == 6) {
   			acierto();
   		}else{
   			error();
@@ -5071,28 +5060,160 @@ function fraccion_43_e () {
   	};
 }
 
-function mostrar_mixto_43 () {
-  	document.getElementById('fraccion').style.display = 'none';
-  	document.getElementById('mixto').style.display = 'inline-block';
-  	document.getElementById('mix').style.display = 'none';
-  	document.getElementById('frac').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
-}
-
-function mostrar_fraccion_43 () {
-  	document.getElementById('mixto').style.display = 'none';
-  	document.getElementById('fraccion').style.display = 'inline-block';
-  	document.getElementById('frac').style.display = 'none';
-  	document.getElementById('mix').style.display = 'inline-block';
-  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
-}
-
 function fraccion_mixta_43 () {
-	var entero_h = document.getElementById('entero_h').value;
-  	var numerador_h = document.getElementById('numerador_h').value;
-  	var denominador_h = document.getElementById('denominador_h').value;
-  	if (entero_h != '' && numerador_h != '' && denominador_h != '') {
-		if (entero_h == 0 && numerador_h == 0 && denominador_h == 0) {
+	var entero_f = document.getElementById('entero_f').value;
+  	var numerador_f = document.getElementById('numerador_f').value;
+  	var denominador_f = document.getElementById('denominador_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 0 && numerador_f == 1 && denominador_f == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 41 && denominador_a == 7) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 9 && denominador_b == 5) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_43_uno_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 205 && denominador_c == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_d () {
+  	var numerador_d = document.getElementById('numerador_uno_d').value;
+  	var denominador_d = document.getElementById('denominador_uno_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 63 && denominador_d == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_e () {
+  	var numerador_e = document.getElementById('numerador_uno_e').value;
+  	var denominador_e = document.getElementById('denominador_uno_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 142 && denominador_e == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_43_uno () {
+	var entero_f = document.getElementById('entero_uno_f').value;
+  	var numerador_f = document.getElementById('numerador_uno_f').value;
+  	var denominador_f = document.getElementById('denominador_uno_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 4 && numerador_f == 2 && denominador_f == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 15 && denominador_a == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 6 && denominador_b == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_43_dos_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 15 && denominador_c == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_d () {
+  	var numerador_d = document.getElementById('numerador_dos_d').value;
+  	var denominador_d = document.getElementById('denominador_dos_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 6 && denominador_d == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_e () {
+  	var numerador_e = document.getElementById('numerador_dos_e').value;
+  	var denominador_e = document.getElementById('denominador_dos_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 9 && denominador_e == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_43_dos () {
+	var entero_f = document.getElementById('entero_dos_f').value;
+  	var numerador_f = document.getElementById('numerador_dos_f').value;
+  	var denominador_f = document.getElementById('denominador_dos_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 2 && numerador_f == 1 && denominador_f == 4) {
   			acierto();
   		}else{
   			error();
