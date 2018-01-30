@@ -10,6 +10,58 @@ function mostrar() {
 
 function acierto(label1) {
 	switch (label1) {
+    case 2:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="0" && var2 == "1"){
+			correcto();
+		}
+		else{
+			if(var1!="0")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 3:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="1" && var2 == "1"){
+			correcto();
+		}
+		else{
+			if(var1!="1")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 4:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="-1" && var2 == "1"){
+			correcto();
+		}
+		else{
+			if(var1!="-1")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 5:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="0" && var2 == "1"){
+			correcto();
+		}
+		else{
+			if(var1!="0")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
     case 6:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
@@ -26,69 +78,17 @@ function acierto(label1) {
     case 7:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 8:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 9:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 11:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 12:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "2"){
+		if(var1=="1" && var2 == "1.414"){
 			correcto();
 		}
 		else{
 			if(var1!="1")
 				document.getElementById("1").value="";
-			if(var2!="2")
+			if(var2!="1.414")
 				document.getElementById("2").value="";
 		}
         break;
-    case 13:
+    case 8:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="0.707" || var1 == ".707"){
@@ -105,7 +105,7 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-    case 14:
+    case 9:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="1" && var2 == "1.414"){
@@ -118,7 +118,67 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
+    case 11:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="-0.707" || var1 == "-.707"){
+			if(var2 == "1")
+				correcto();
+			else
+				if(var2!="1")
+					document.getElementById("2").value="";
+		}
+		else{
+			if(var1!="-0.707" || var1!="-.707")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 12:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="-1" && var2 == "1.414"){
+			correcto();
+		}
+		else{
+			if(var1!="-1")
+				document.getElementById("1").value="";
+			if(var2!="1.414")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 14:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="-0.707" || var1 == "-.707"){
+			if(var2 == "1")
+				correcto();
+			else
+				if(var2!="1")
+					document.getElementById("2").value="";
+		}
+		else{
+			if(var1!="-0.707" || var1!="-.707")
+				document.getElementById("1").value="";
+			if(var2!="1")
+				document.getElementById("2").value="";
+		}
+        break;
     case 15:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="1" && var2 == "1.414"){
+			correcto();
+		}
+		else{
+			if(var1!="1")
+				document.getElementById("1").value="";
+			if(var2!="1.414")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 16:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="0.707" || var1 == ".707"){
@@ -135,67 +195,20 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-    case 16:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
-			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
-		}
-        break;
     case 18:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
-				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
+		if(var1=="0" && var2 == "1"){
+			correcto();
 		}
 		else{
-			if(var1!="-0.707" || var1!="-.707")
+			if(var1!="0")
 				document.getElementById("1").value="";
 			if(var2!="1")
 				document.getElementById("2").value="";
 		}
         break;
     case 19:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
-			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 21:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
-				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="-0.707" || var1!="-.707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 23:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="-1" && var2 == "1"){
@@ -208,8 +221,8 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-    case 24:
-		var var1 = document.getElementById("1").value;
+	case 20:
+        var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="0" && var2 == "1"){
 			correcto();
@@ -221,8 +234,8 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-	case 25:
-        var var1 = document.getElementById("1").value;
+    case 21:
+		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="1" && var2 == "1"){
 			correcto();
@@ -234,79 +247,64 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-    case 26:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-	case 29:
+	case 24:
         var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="0" && var2 == "1" && var3=="0" && var4 == "0" && var5=="-1" && var6 == "1"){
+		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
 			correcto();
 		}
 		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-			if(var3!="0")
-				document.getElementById("3").value="";
-			if(var4!="0")
-				document.getElementById("4").value="";
-			if(var5!="-1")
-				document.getElementById("5").value="";
-			if(var6!="1")
-				document.getElementById("6").value="";
-		}
-        break;
-	case 30:
-        var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		var var3 = document.getElementById("3").value;
-		var var4 = document.getElementById("4").value;
-		var var5 = document.getElementById("5").value;
-		var var6 = document.getElementById("6").value;
-		if(var1=="0" && var2 == "-1" && var3=="0" && var4 == "0" && var5=="1" && var6 == "-1"){
-			correcto();
-		}
-		else{
-			if(var1!="0")
+			if(var1!="1")
 				document.getElementById("1").value="";
 			if(var2!="-1")
 				document.getElementById("2").value="";
-			if(var3!="0")
+			if(var3!="1")
 				document.getElementById("3").value="";
 			if(var4!="0")
 				document.getElementById("4").value="";
-			if(var5!="1")
+			if(var5!="0")
 				document.getElementById("5").value="";
-			if(var6!="-1")
+			if(var6!="0")
 				document.getElementById("6").value="";
 		}
         break;
-	case 31:
+	case 25:
+        var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
+		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
+			correcto();
+		}
+		else{
+			if(var1!="1")
+				document.getElementById("1").value="";
+			if(var2!="-1")
+				document.getElementById("2").value="";
+			if(var3!="1")
+				document.getElementById("3").value="";
+			if(var4!="0")
+				document.getElementById("4").value="";
+			if(var5!="0")
+				document.getElementById("5").value="";
+			if(var6!="0")
+				document.getElementById("6").value="";
+		}
+        break;
+	case 26:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		var var7 = document.getElementById("7").value;
-		var var8 = document.getElementById("8").value;
-		if(var1=="0" && var2 == "0" && var3=="0" && var4 == "0" && var5=="0" && var6 == "0" && var7=="0" && var8 == "0"){
+		if(var1=="0" && var2 == "0" && var3=="0" && var4 == "0" && var5=="0" && var6 == "0"){
 			correcto();
 		}
 		else{
@@ -322,13 +320,9 @@ function acierto(label1) {
 				document.getElementById("5").value="";
 			if(var6!="0")
 				document.getElementById("6").value="";
-			if(var7!="0")
-				document.getElementById("7").value="";
-			if(var8!="0")
-				document.getElementById("8").value="";
 		}
         break;
-    case 32:
+    case 27:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
@@ -347,7 +341,7 @@ function acierto(label1) {
 				document.getElementById("4").value="";
 		}
         break;
-	case 33:
+	case 28:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
@@ -366,7 +360,7 @@ function acierto(label1) {
 				document.getElementById("4").value="";
 		}
         break;
-    case 34:
+    case 29:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
@@ -387,9 +381,9 @@ function acierto(label1) {
 				document.getElementById("3").value="";
 		}
         break;
-    case 35:
+    case 30:
 		var var1 = document.getElementById("1").value;
-		if(var1%1==0){
+		if(var1%0.5==0 && var1%1!=0){
 			mostrar();
 		}
         break;
@@ -408,7 +402,7 @@ function incrementar_49_1() {
   		case -7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_7.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
 			
 			ni++;
 			break;
@@ -416,7 +410,7 @@ function incrementar_49_1() {
   		case -6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_6.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
 			
 			ni++;
 			break;
@@ -424,7 +418,7 @@ function incrementar_49_1() {
   		case -5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_5.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
 			
 			ni++;
 			break;
@@ -432,7 +426,7 @@ function incrementar_49_1() {
   		case -4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_4.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
 			
 			ni++;
 			break;
@@ -440,7 +434,7 @@ function incrementar_49_1() {
   		case -3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_3.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
 			
 			ni++;
 			break;
@@ -448,7 +442,7 @@ function incrementar_49_1() {
   		case -2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_2.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
 			
 			ni++;
 			break;
@@ -456,7 +450,7 @@ function incrementar_49_1() {
   		case -1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_1.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
 			
 			ni++;
 			break;
@@ -464,7 +458,7 @@ function incrementar_49_1() {
   		case 0:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
 			
 			ni++;
 			break;
@@ -472,21 +466,21 @@ function incrementar_49_1() {
 		case 1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_8.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
 			
 			ni++;
 			break;
 		case 2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_9.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
 			
 			ni++;
 			break;
 		case 3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_10.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
 			
 		
 			ni++;
@@ -494,7 +488,7 @@ function incrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_11.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
 			
 			ni++;
 			break;
@@ -502,7 +496,7 @@ function incrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_12.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
 			
 			ni++;
 			break;
@@ -510,7 +504,7 @@ function incrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_13.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
 			
 			ni++;
 			break;
@@ -518,7 +512,7 @@ function incrementar_49_1() {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_14.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_14.png";
 			
 		
 			break;
@@ -535,7 +529,7 @@ function decrementar_49_1() {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_13.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
 		
 			ni--;
 			break;
@@ -543,7 +537,7 @@ function decrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_12.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
 		
 			ni--;
 			break;
@@ -551,7 +545,7 @@ function decrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_11.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
 		
 			ni--;
 			break;
@@ -559,77 +553,77 @@ function decrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_10.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
 		
 			ni--;
 			break;
 		case 3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_9.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
 		
 			ni--;
 			break;	
 		case 2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_8.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
 		
 			ni--;
 			break;	
 		case 1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
 			ni--;
 			break;
 		
 		case 0:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_1.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
 			ni--;
 			break;
 		
 		case -1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_2.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
 			ni--;
 			break;
 		
 		case -2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_3.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
 			ni--;
 			break;
 		
 		case -3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_4.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
 			ni--;
 			break;
 		
 		case -4:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_5.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
 			ni--;
 			break;
 		
 		case -5:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_6.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
 			ni--;
 			break;
 		
 		case -6:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28_7.png";
+				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
 			ni--;
 			break;
 		
