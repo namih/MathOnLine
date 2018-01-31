@@ -411,9 +411,10 @@ function guardar_evaluacion(id_evaluacion) {
 			processData: false,
 			data : formData,
 			success: function(result){
+				var admin_eva = base_url + 'admin_evaluation_c/administrador';
 				document.getElementById('modal_header').innerHTML = '<h4 class="modal-title">Guardada <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span></h4>';
 				document.getElementById('modal_body').innerHTML = '<p>La evaluación a sido registrada satisfactoreamente.</p>';
-				document.getElementById('modal_footer').innerHTML = '<button onclick="location.href="www.google.com.mx"" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
+				document.getElementById('modal_footer').innerHTML = '<button onclick=location.href=\"'+ admin_eva +'\" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
 				
 				$("#notifications").modal();
 			},
@@ -431,9 +432,10 @@ function guardar_evaluacion(id_evaluacion) {
 			processData: false,
 			data : formData,
 			success: function(result){
+				var admin_eva = base_url + 'admin_evaluation_c/administrador';
 				document.getElementById('modal_header').innerHTML = '<h4 class="modal-title">Actualizada <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></h4>';
 				document.getElementById('modal_body').innerHTML = '<p>La evaluación a sido actualizada satisfactoreamente.</p>';
-				document.getElementById('modal_footer').innerHTML = '<button onclick="location.href="www.google.com.mx"" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
+				document.getElementById('modal_footer').innerHTML = '<button onclick=location.href=\"'+ admin_eva +'\" type="button" class="btn btn-success">Regresar a evaluaciones</button>';
 				
 				$("#notifications").modal();
 			},
