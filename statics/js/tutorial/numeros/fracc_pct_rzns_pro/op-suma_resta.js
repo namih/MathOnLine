@@ -189,6 +189,34 @@ function fraccion_4 () {
   	};
 }
 
+function fraccion_uno_4 () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 4 && denominador == 5) {
+  			document.getElementById("vacio_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_4_5.png";
+  			acierto();	
+  		}else{
+  			document.getElementById("vacio_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_0_4.png";
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_dos_4 () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 2 && denominador == 4) {
+  			document.getElementById("vacio_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_2_4.png";
+  			acierto();	
+  		}else{
+  			document.getElementById("vacio_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_0_4.png";
+  			error();
+  		};
+  	};
+}
 
 function incrementar_5_a () {
 	console.log(ia);
@@ -507,7 +535,7 @@ function incrementar_6_b () {
 			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("quince_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_quinceavos_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_quinceavos.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
 			ib++;
 			break;
 		case 3:
@@ -937,6 +965,78 @@ function fraccion_10_c () {
   	};
 }
 
+function fraccion_uno_10_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 5 && denominador_a == 20) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_uno_10_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 8 && denominador_b == 20) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_uno_10_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 13 && denominador_c == 20) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_10_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 12 && denominador_a == 24) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_10_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 12 && denominador_b == 24) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_10_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 24 && denominador_c == 24) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
 function fraccion_11_a () {
   	var numerador_a = document.getElementById('numerador_a').value;
   	var denominador_a = document.getElementById('denominador_a').value;
@@ -966,6 +1066,78 @@ function fraccion_11_c () {
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
 		if (numerador_c == 26 && denominador_c == 20) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_uno_11_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 3 && denominador_a == 6) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_uno_11_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 2 && denominador_b == 6) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_uno_11_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 5 && denominador_c == 6) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_11_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 6 && denominador_a == 18) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_11_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 6 && denominador_b == 18) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_dos_11_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 12 && denominador_c == 18) {
   			acierto();	
   		}else{
   			error();
@@ -5220,3 +5392,5 @@ function fraccion_mixta_43_dos () {
   		};
   	};
 }
+
+
