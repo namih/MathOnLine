@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-	<p align="justify">Escribe el resultado de la resta. Da clic en intro para ver la representación gráfica. Puedes arrastrar las figuras usando los puntos amarillos para comprobar tu respuesta.</p>
+	<p align="justify">Escribe el resultado de la resta. Da clic en intro para ver la representación gráfica. Puedes arrastrar las figuras para comprobar tu respuesta.</p>
 	<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 		<div id="figuras" style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12" style="display: none">
 			<table id="pictures" style="display: none">

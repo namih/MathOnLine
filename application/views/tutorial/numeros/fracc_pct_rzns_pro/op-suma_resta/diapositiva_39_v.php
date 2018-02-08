@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	<div id="first">
-		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador con el mismo denominador . Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
+		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>
@@ -35,7 +35,7 @@
 	</div>
 	
 	<div id="second" style="display: none">
-		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador con el mismo denominador . Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
+		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador . Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>
@@ -68,7 +68,7 @@
 	</div>
 	
 	<div id="third" style="display: none">
-		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador con el mismo denominador . Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
+		<p align="justify">Resta las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador . Si es posible simplifica el resultado. Debes escribir, en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse. </p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>

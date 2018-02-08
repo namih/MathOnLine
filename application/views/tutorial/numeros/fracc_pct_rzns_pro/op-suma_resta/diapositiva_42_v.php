@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	<div id="first">
-		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones con denominador común. Como resultado que obtendrás es mayor a un entero, escribe como un número mixto .</p>
+		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones convirtiéndolas a fracciones con denominador común. Si el resultado obtenido es mayor a un entero, escribe como un número mixto .</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<table>
 			<tr align="center">
@@ -61,7 +61,7 @@
 			</tr>
 		</table>
 	</div>							
-	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado es el que obtuviste es mayor a un entero, da clic en el botón número y escribe los números correspondientes.</p>
+	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado que obtuviste es mayor a un entero, da clic en el botón mixto y escribe los números correspondientes.</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
@@ -209,7 +209,7 @@
 		</div>
 	</div>
 	<div id="second" style="display: none">
-		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones con denominador común. Como resultado que obtendrás es mayor a un entero, escribe como un número mixto .</p>
+		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones convirtiéndolas a fracciones con denominador común. Si el resultado obtenido es mayor a un entero, escribe como un número mixto .</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<table>
 			<tr align="center">
@@ -268,7 +268,7 @@
 			</tr>
 		</table>
 	</div>							
-	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado es el que obtuviste es mayor a un entero, da clic en el botón número y escribe los números correspondientes.</p>
+	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado que obtuviste es mayor a un entero, da clic en el botón mixto y escribe los números correspondientes.</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
@@ -416,7 +416,7 @@
 		</div>
 	</div>
 	<div id="third" style="display: none">
-		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones con denominador común. Como resultado que obtendrás es mayor a un entero, escribe como un número mixto .</p>
+		<p align="justify">Convierte cada número mixto en una fracción. Después, resta las fracciones convirtiéndolas a fracciones con denominador común. Si el resultado obtenido es mayor a un entero, escribe como un número mixto .</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<table>
 			<tr align="center">
@@ -475,7 +475,7 @@
 			</tr>
 		</table>
 	</div>							
-	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado es el que obtuviste es mayor a un entero, da clic en el botón número y escribe los números correspondientes.</p>
+	<p align="left">Escribe las fracciones correspondientes y réstalas convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado que obtuviste es mayor a un entero, da clic en el botón mixto y escribe los números correspondientes.</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">

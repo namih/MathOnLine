@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	<div id="first">
-		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador.</p>
+		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador. Despues, escribe el resultado de la resta</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 			<table>
@@ -75,7 +75,7 @@
 	</div>
 	
 	<div id="second" style="display: none">
-		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador.</p>
+		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador. Despues, escribe el resultado de la resta</p>
 	
     	<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
@@ -148,7 +148,7 @@
    	 </div>
    </div>
    <div id="third" style="display: none">
-   		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador.</p>
+   		<p align="justify">Utiliza las flechas para encontrar fracciones equivalentes que tengan el mismo denominador. Despues, escribe el resultado de la resta</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 				<table>

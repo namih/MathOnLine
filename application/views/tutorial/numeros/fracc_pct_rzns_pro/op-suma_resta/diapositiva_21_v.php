@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">En ocasiones debemos sumar dos números mixtos como los siguientes:</p>
+		<p align="left">En ocasiones debemos sumar dos números mixtos como los siguientes:</p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>
@@ -13,7 +13,7 @@
 					</tr>
 				</table>
 			</div>
-			<p>Para encontrar el resultado, podemos sumar los enteros y las fracciones y escribir el resultado como número mixto.Recuerda convertir las fracciones en fracciones equivalentes con el mismo denominador y simplificar al máximo tu respuesta final.</p>
+			<p align="left">Para encontrar el resultado, podemos sumar los enteros y las fracciones y escribir el resultado como número mixto.Recuerda convertir las fracciones en fracciones equivalentes con el mismo denominador y simplificar al máximo tu respuesta final.</p>
 		
 			<div class=" col-lg-12 col-md-12  col-xs-12">
 				<table>

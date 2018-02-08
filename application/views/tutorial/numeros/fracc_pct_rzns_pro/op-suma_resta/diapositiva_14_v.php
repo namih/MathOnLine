@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Suma las fracciones con denominador común,es decir, 
+		<p align="justify">Suma las fracciones convirtiéndolas en fracciones con denominador común,es decir, 
 			               con el mismo denominador. Simplifica tu resultado al máximo:</p>
 		
 	<div class=" col-lg-12 col-md-12  col-xs-12">

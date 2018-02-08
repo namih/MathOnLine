@@ -1,7 +1,7 @@
  <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/op-suma_resta.js"></script>
 
 <div class="container-fluid">
-	<p align="justify">Ahora sí podemos contestar la pregunta delproblema del agua en la lata de Alejandro. Su lata está llena de agua hasta . 3 Si se toma 2 media lata. ¿cuánto le queda?</p>
+	<p align="justify">Ahora sí podemos contestar la pregunta del problema del agua en la lata de Alejandro. Su lata está llena de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si se toma media lata. ¿cuánto le queda?</p>
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
@@ -83,6 +83,7 @@
 					</td>
 				</tr>
 			</table>
+			<p align="left">Para responder, resta las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador.</p>
 		</div>
 	</div>
 </div>

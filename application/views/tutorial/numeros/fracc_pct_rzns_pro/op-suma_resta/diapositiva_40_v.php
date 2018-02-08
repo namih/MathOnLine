@@ -28,7 +28,13 @@
 					</tr>
 				</table>
 			</div>
-		</div>
+			<div align="center" id="mix">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_42()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_42 ()">Fracción</button>
+   	 		</div>
+   	 	</div>
 		<div align="right">
 			<button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
 		</div>
@@ -112,6 +118,12 @@
 					</tr>
 				</table>
 			</div>
+			<div align="center" id="mix">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_42()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_42 ()">Fracción</button>
+   	 		</div>
 		</div>
 		<div align="right">
 			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
@@ -195,6 +207,12 @@
 					</tr>
 				</table>
 			</div>
+			<div align="center" id="mix">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_42()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_42 ()">Fracción</button>
+   	 		</div>	
 		</div>
 	</div>
 </div>
