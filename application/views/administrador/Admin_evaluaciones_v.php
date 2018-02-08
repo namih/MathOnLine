@@ -42,7 +42,7 @@
           <h4 class="modal-title">Confirmación</h4>
         </div>
         <div class="modal-body">
-          <p>Esta seguro eliminar esta pregunta >:3 Ya no podra recuperarla posteriormente.</p>
+          <p>Esta seguro eliminar esta pregunta. Ya no podra recuperarla posteriormente.</p>
         </div>
         <div class="modal-footer" id="modal_boton">
         	

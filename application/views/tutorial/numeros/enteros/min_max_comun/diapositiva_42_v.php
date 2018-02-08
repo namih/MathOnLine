@@ -11,7 +11,7 @@
 		<input type="text" id="num3" />
 	</div>	
     <br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="valida4();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar42();" value="Verificar" />
 	<br />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 

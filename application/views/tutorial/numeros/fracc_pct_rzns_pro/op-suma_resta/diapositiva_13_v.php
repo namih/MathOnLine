@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Suma las fracciones con denominador común, es decir, con el mismo denominador. 
+		<p align="justify">Suma las fracciones convirtiédolas en fracciones con denominador común, es decir, con el mismo denominador. 
 			               Si es posible simplifica tu resultado. Debes escribir en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse.</p>
 		
 	<div class=" col-lg-12 col-md-12  col-xs-12">

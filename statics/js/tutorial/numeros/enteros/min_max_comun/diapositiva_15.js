@@ -754,15 +754,33 @@ function verificar40_2(){
 		}else{
 			error("Favor de ingresar los datos.");
 		}
+}
+/**
+ * 
+ */
+function verificar41(){
+	var num1= new Number($("#num1").val());
+		
+		if (num1 != ''){
+			if (num1 == 144 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
 }	
 /**
  * 
  */
 function verificar42(){
-		var num1= new Number($("#3").val());
+		var num1= new Number($("#num1").val());
+		var num2= new Number($("#num2").val());
+		var num3= new Number($("#num3").val());
 		
-		if (num1 != ''){
-			if (num1 == 18 ) {
+		if (num1 != '' && num2 != '' && num3 != ''){
+			if (num1 == 24 && num2==7 && num3==5) {
 				correcto("El ejercicio se realizó exitosamente");
 			}else{
 				error("Favor de volver a repetir");

@@ -10,11 +10,11 @@
 			<table>
 				<tr align="center">
 					<td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>4</mn></mfrac></math></h1></td>
-					<td align="center "><h1>+</h1></td>
+					<td align="center "><h1 style="color: red">&nbsp;&nbsp;+&nbsp;&nbsp;</h1></td>
 					<td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>5</mn></mfrac></math></h1></td>
-					<td align="center"><h1>=</h1></td>
+					<td align="center"><h1 style="color: red">&nbsp;&nbsp;=&nbsp;&nbsp;</h1></td>
 					<td><h1 style="color: red"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>26</mn></mfrac></math></h1></td>
-					<td align="center"><h1>=</h1></td>
+					<td align="center"><h1 style="color: red">&nbsp;&nbsp;=&nbsp;&nbsp;</h1></td>
 					<td>
 						<h1>
 				<math xmlns="http://www.w3.org/1998/Math/MathML">

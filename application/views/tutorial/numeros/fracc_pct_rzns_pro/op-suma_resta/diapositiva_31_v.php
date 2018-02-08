@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Al igual que en la suma, restar fracciones con el mismo denominador resulta fácil. Usa las flechas para escribir el resultado de la resta.</p>
+		<p align="justify">Al igual que en la suma, restar fracciones con el mismo denominador resulta fácil. Usa las flechas para escribir el resultado de la resta. Puedes arrastrar las figuras para comprobar tus respuestas</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
 				<table>

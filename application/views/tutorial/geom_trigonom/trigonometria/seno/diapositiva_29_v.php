@@ -1,6 +1,6 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/seno/seno.js"></script>
 <div class="container-fluid">
-
+	<p>Cambia el valor de θ y encuentra cúanto vale el seno de los siguientes ángulos:</p>
 		<div style="margin-bottom: 20px" class=" col-lg-12 col-md-12  col-xs-12">
 						<div class=" col-lg-12 col-md-12  col-xs-12">
 							<img class="img-responsive" id="uno" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/seno/diapositiva_28.png" align="center"/>
