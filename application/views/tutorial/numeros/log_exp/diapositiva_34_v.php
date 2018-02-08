@@ -1,31 +1,30 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/log_exp/int_pow.js"></script>
 <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
-        Utilizando la propiedad 1:
-        <br><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mi>m</mi></msup><mi>*</mi><msup><mi>a</mi><mi>n</mi></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math>
-        <br><br>indica cuál o cuáles de las siguientes expresiones son correctas:
+        Ahora utiliza la propiedad 1 y 2 para simplificar. Indica cuál o cuáles de las siguientes expresiones son correctas:
         <br><br>
+
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_1">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup><mo>*</mo><msup><mi>x</mi><mn>5</mn></msup><mo>=</mo><msup><mi>x</mi><mn>7</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mn>2</mn><mn>6</mn></msup><mo>*</mo><msup><mn>2</mn><mn>3</mn></msup></mrow><msup><mn>2</mn><mn>2</mn></msup></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>128</mn></math>
         </div>
         <br><br>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_2">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>m</mi><mn>2</mn></msup><msup><mi>n</mi><mn>2</mn></msup><mo>*</mo><msup><mi>m</mi><mn>4</mn></msup><msup><mi>n</mi><mn>5</mn></msup><mo>=</mo><msup><mi>m</mi><mn>6</mn></msup><msup><mi>n</mi><mn>7</mn></msup></math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mstyle displaystyle="true"><msup><mn>2</mn><mn>7</mn></msup><mo>*</mo><msup><mn>2</mn><mn>2</mn></msup><mo>*</mo><mn>2</mn></mstyle><msup><mn>2</mn><mn>5</mn></msup></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>64</mn></math>
         </div>
         <br><br>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_3">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>g</mi><mn>5</mn></msup><msup><mi>h</mi><mn>2</mn></msup><mo>*</mo><msup><mi>h</mi><mn>5</mn></msup><mo>=</mo><msup><mi>g</mi><mn>5</mn></msup><msup><mi>h</mi><mn>7</mn></msup></math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mn>3</mn><mn>7</mn></msup><mo>*</mo><msup><mn>3</mn><mn>9</mn></msup><mo>*</mo><mn>3</mn></mrow><mrow><msup><mn>3</mn><mn>11</mn></msup><mo>*</mo><msup><mn>3</mn><mn>5</mn></msup></mrow></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><mn>3</mn></math>
         </div>
         <br><br>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_4">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>m</mi><mn>2</mn></msup><mi>n</mi><mo>*</mo><mi>m</mi><msup><mi>n</mi><mn>5</mn></msup><mo>=</mo><msup><mi>m</mi><mn>3</mn></msup><msup><mi>n</mi><mn>6</mn></msup></math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mstyle displaystyle="true"><msup><mn>3</mn><mn>13</mn></msup><mo>*</mo><msup><mn>3</mn><mn>4</mn></msup><mo>*</mo><msup><mn>3</mn><mn>6</mn></msup></mstyle><mrow><msup><mn>3</mn><mn>8</mn></msup><mo>*</mo><mn>3</mn><mo>*</mo><msup><mn>3</mn><mn>11</mn></msup></mrow></mfrac><mo>=</mo><mo>&#x2009;</mo><mn>27</mn></math>
         </div>
         <br><br>
 

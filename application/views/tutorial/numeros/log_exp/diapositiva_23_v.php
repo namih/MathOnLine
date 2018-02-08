@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
         Utilizando la Propiedad 1:
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mi>m</mi></msup><mi>x</mi><msup><mi>a</mi><mi>n</mi></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>a</mi><mi>m</mi></msup><mi>*</mi><msup><mi>a</mi><mi>n</mi></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math>
         indica cuál o cuáles de las siguientes expresiones son correctas:
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
