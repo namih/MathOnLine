@@ -20,24 +20,10 @@
                 <?php if(isset($themes) && $themes!=false){ ?>
                     <div class="item">
                       <div class="panel panel-success tema_mes" >
-                        <div class="panel-heading" align="center"><?php echo $themes[2]['mes']; ?></div>
-                        <div class="panel-body">
-                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[2]['image']; ?>');"><br>
-                            <h3 class="titulo_tema"><?php echo $themes[2]['title']; ?> </h3><br><br>>
-                          </div>
-                          <br><br>
-                          <p style="text-indent: 20px;">
-                            <?php echo $themes[2]['description']; ?> 
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item active">
-                      <div class="panel panel-success tema_mes" >
                         <div class="panel-heading" align="center"><?php echo $themes[0]['mes']; ?></div>
                         <div class="panel-body">
                           <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[0]['image']; ?>');"><br>
-                            <h3 class="titulo_tema"><?php echo $themes[0]['title']; ?> </h3><br><br>
+                            <h3 class="titulo_tema"><?php echo $themes[0]['title']; ?> </h3><br><br>>
                           </div>
                           <br><br>
                           <p style="text-indent: 20px;">
@@ -46,7 +32,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="item">
+                    <div class="item active">
                       <div class="panel panel-success tema_mes" >
                         <div class="panel-heading" align="center"><?php echo $themes[1]['mes']; ?></div>
                         <div class="panel-body">
@@ -56,6 +42,20 @@
                           <br><br>
                           <p style="text-indent: 20px;">
                             <?php echo $themes[1]['description']; ?> 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="panel panel-success tema_mes" >
+                        <div class="panel-heading" align="center"><?php echo $themes[2]['mes']; ?></div>
+                        <div class="panel-body">
+                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[2]['image']; ?>');"><br>
+                            <h3 class="titulo_tema"><?php echo $themes[2]['title']; ?> </h3><br><br>
+                          </div>
+                          <br><br>
+                          <p style="text-indent: 20px;">
+                            <?php echo $themes[2]['description']; ?> 
                           </p>
                         </div>
                       </div>
