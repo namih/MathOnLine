@@ -1,8 +1,8 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/tangente/tangente.js"></script>
 <div class="container-fluid">
 	<div id="ejercicio1">
-		<p>Observa cómo, conforme los valores de θ se acercan a los puntos en los que la tangente no esta definida, la gráfica de la función crece rápidamente.</p>
-		<p>Decimos, en estos casos, que el valor tiende a infinito, cuando crce en los positivos, o a menos infinito cuando decrece hacia los negativos.</p>
+		<p>Observa cómo, conforme los valores de θ se acercan a los puntos en los que la tangente no esta definida, la gráfica de la función crece muy rápidamente.</p>
+		<p>Decimos, en estos casos, que el valor tiende a infinito, cuando crece en los positivos, o a menos infinito cuando decrece hacia los negativos.</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 						<div class=" col-lg-12 col-md-12  col-xs-12">
 							<img class="img-responsive" id="uno" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25.png" align="center"/>

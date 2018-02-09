@@ -28,13 +28,13 @@
 			<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>
 				<semantics>
 					  <annotation-xml encoding="application/xhtml+xml">
-					  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="1" />
+					  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="3" />
 					  </annotation-xml>
 					</semantics>
 			</mn><mn>
 				<semantics>
 					  <annotation-xml encoding="application/xhtml+xml">
-					  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="2" />
+					  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="4" />
 					  </annotation-xml>
 					</semantics>
 			</mn></mfrac></math></p>

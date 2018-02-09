@@ -18,16 +18,18 @@
 					<br />
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mn>0</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
 						<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="text" size="4" id="1" />	
+						<h6><label><input type="checkbox" id="definido1" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido1" > No está definido</label>
+					<br />
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mi>&#x3C0;</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
 						<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="text" size="4" id="2" />
+						<h6><label><input type="checkbox" id="definido2" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido2" > No está definido</label>
+					<br />
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mn>2</mn><mi>&#x3C0;</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
 						<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="text" size="4" id="3" />
+						<h6><label><input type="checkbox" id="definido1" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido3" > No está definido</label>
 				</div>	
 				<div class="form-group has-feedback col-md-6  col-xs-12">
 					<br />
@@ -45,8 +47,8 @@
 							  </annotation-xml>
 							</semantics>
 						</mi></mfrac></math>
+						<h6><label><input type="checkbox" id="definido4" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido4" > No está definido</label>
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfrac><mrow><mn>3</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac>
 						<mi>
 							<semantics>
@@ -61,8 +63,8 @@
 							  </annotation-xml>
 							</semantics>
 						</mi></mfrac></math>
+						<h6><label><input type="checkbox" id="definido5" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido5" > No está definido</label>
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfrac><mrow><mn>5</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac>
 						<mi>
 							<semantics>
@@ -77,8 +79,8 @@
 							  </annotation-xml>
 							</semantics>
 						</mi></mfrac></math>
+						<h6><label><input type="checkbox" id="definido6" > No está definido</label></h6>
 					</h4>
-					<label><input type="checkbox" id="definido6" > No está definido</label>
 				</div>
 			
 			</div>

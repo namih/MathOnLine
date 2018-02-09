@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/tangente/tangente.js"></script>
 <div class="container-fluid">
 	<div id="ejercicio1">
-		<p>Anteriormente vimos como, al cambiar el valor de θ, cambia el valor la tangente de θ. Si representamos ahora la relación entre θ y tan θ, 
+		<p>Anteriormente vimos como, al cambiar el valor de θ, cambia el valor de la tangente de θ. Si representamos ahora la relación entre θ y tan θ, 
 			colocando a θ en el eje horizontal y a tan θ en el eje vertical, obtenemos una gráfica como la siguiente:</p>
 		<p>Cambia el valor de θ para observar como se mueve el punto en la gráfica.</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">

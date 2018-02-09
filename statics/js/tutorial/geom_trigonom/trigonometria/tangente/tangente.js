@@ -13,24 +13,24 @@ function acierto(label1) {
     case 2:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="1" && var2 == "0"){
 			correcto();
 		}
 		else{
-			if(var1!="0")
+			if(var1!="1")
 				document.getElementById("1").value="";
-			if(var2!="1")
+			if(var2!="0")
 				document.getElementById("2").value="";
 		}
         break;
     case 3:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1=="0" && var2 == "1"){
 			correcto();
 		}
 		else{
-			if(var1!="1")
+			if(var1!="0")
 				document.getElementById("1").value="";
 			if(var2!="1")
 				document.getElementById("2").value="";
@@ -39,17 +39,30 @@ function acierto(label1) {
     case 4:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
+		if(var1=="0" && var2 == "-1"){
+			correcto();
+		}
+		else{
+			if(var1!="0")
+				document.getElementById("1").value="";
+			if(var2!="-1")
+				document.getElementById("2").value="";
+		}
+        break;
+    case 5:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		if(var1=="-1" && var2 == "0"){
 			correcto();
 		}
 		else{
 			if(var1!="-1")
 				document.getElementById("1").value="";
-			if(var2!="1")
+			if(var2!="0")
 				document.getElementById("2").value="";
 		}
         break;
-    case 5:
+    case 6:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="0" && var2 == "1"){
@@ -62,20 +75,7 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-    case 6:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
-			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 7:
+    case 8:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1=="1" && var2 == "1.414"){
@@ -85,60 +85,60 @@ function acierto(label1) {
 			if(var1!="1")
 				document.getElementById("1").value="";
 			if(var2!="1.414")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 8:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="0.707" || var1 == ".707"){
-			if(var2 == "1")
-				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="0.707" || var1!=".707")
-				document.getElementById("1").value="";
-			if(var2!="1")
 				document.getElementById("2").value="";
 		}
         break;
     case 9:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
-			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
-		}
-        break;
-    case 11:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
-				correcto();
-			else
-				if(var2!="1")
+		var var3 = document.getElementById("3").value;
+		if(var1=="0.707" || var1 == ".707"){
+			if(var2=="0.707" || var2 == ".707"){
+				if(var3 == "1")
+					correcto();
+				else
+					if(var3!="1")
+						document.getElementById("3").value="";
+			}
+			else{
+				if(var2!="0.707" || var2!=".707")
 					document.getElementById("2").value="";
+				if(var3!="1")
+					document.getElementById("3").value="";
+			}
 		}
 		else{
-			if(var1!="-0.707" || var1!="-.707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
+			if(var2=="0.707" || var2 == ".707"){
+				if(var1=="0.707" || var1 == ".707"){
+					if(var3 == "1")
+						correcto();
+					else
+						if(var3!="1")
+							document.getElementById("3").value="";
+				}
+				else{
+					if(var1!="0.707" || var1!=".707")
+						document.getElementById("1").value="";
+					if(var3!="1")
+						document.getElementById("3").value="";
+				}
+			}
+			else{
+				if(var1!="0.707" || var1!=".707")
+					document.getElementById("1").value="";
+				if(var2!="0.707" || var2!=".707")
+					document.getElementById("2").value="";
+				if(var3!="1")
+					document.getElementById("3").value="";
+			}
 		}
         break;
-    case 12:
+    case 10:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		if(var1=="-1" && var2 == "1.414" && var3=="1" && var4 == "1.414"){
 			correcto();
 		}
 		else{
@@ -146,42 +146,125 @@ function acierto(label1) {
 				document.getElementById("1").value="";
 			if(var2!="1.414")
 				document.getElementById("2").value="";
+			if(var3!="1")
+				document.getElementById("3").value="";
+			if(var4!="1.414")
+				document.getElementById("4").value="";
 		}
         break;
-    case 14:
+    case 12:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
-				correcto();
-			else
-				if(var2!="1")
+		var var3 = document.getElementById("3").value;
+		if(var1=="0.707" || var1 == ".707"){
+			if(var2=="-0.707" || var2 == "-.707"){
+				if(var3 == "-1")
+					correcto();
+				else
+					if(var3!="-1")
+						document.getElementById("3").value="";
+			}
+			else{
+				if(var2!="-0.707" || var2!="-.707")
 					document.getElementById("2").value="";
+				if(var3!="-1")
+					document.getElementById("3").value="";
+			}
 		}
 		else{
-			if(var1!="-0.707" || var1!="-.707")
+			if(var2=="-0.707" || var2 == "-.707"){
+				if(var1=="0.707" || var1 == ".707"){
+					if(var3 == "-1")
+						correcto();
+					else
+						if(var3!="-1")
+							document.getElementById("3").value="";
+				}
+				else{
+					if(var1!="0.707" || var1!=".707")
+						document.getElementById("1").value="";
+					if(var3!="-1")
+						document.getElementById("3").value="";
+				}
+			}
+			else{
+				if(var1!="0.707" || var1!=".707")
+					document.getElementById("1").value="";
+				if(var2!="-0.707" || var2!="-.707")
+					document.getElementById("2").value="";
+				if(var3!="-1")
+					document.getElementById("3").value="";
+			}
+		}
+        break;
+    case 13:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		if(var1=="-1" && var2 == "1.414" && var3=="-1" && var4 == "1.414"){
+			correcto();
+		}
+		else{
+			if(var1!="-1")
 				document.getElementById("1").value="";
-			if(var2!="1")
+			if(var2!="1.414")
 				document.getElementById("2").value="";
+			if(var3!="-1")
+				document.getElementById("3").value="";
+			if(var4!="1.414")
+				document.getElementById("4").value="";
 		}
         break;
     case 15:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
-			correcto();
+		var var3 = document.getElementById("3").value;
+		if(var1=="-0.707" || var1 == "-.707"){
+			if(var2=="-0.707" || var2 == "-.707"){
+				if(var3 == "1")
+					correcto();
+				else
+					if(var3!="1")
+						document.getElementById("3").value="";
+			}
+			else{
+				if(var2!="-0.707" || var2!="-.707")
+					document.getElementById("2").value="";
+				if(var3!="1")
+					document.getElementById("3").value="";
+			}
 		}
 		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
+			if(var2=="-0.707" || var2 == "-.707"){
+				if(var1=="-0.707" || var1 == "-.707"){
+					if(var3 == "1")
+						correcto();
+					else
+						if(var3!="1")
+							document.getElementById("3").value="";
+				}
+				else{
+					if(var1!="-0.707" || var1!="-.707")
+						document.getElementById("1").value="";
+					if(var3!="1")
+						document.getElementById("3").value="";
+				}
+			}
+			else{
+				if(var1!="-0.707" || var1!="-.707")
+					document.getElementById("1").value="";
+				if(var2!="-0.707" || var2!="-.707")
+					document.getElementById("2").value="";
+				if(var3!="1")
+					document.getElementById("3").value="";
+			}
 		}
         break;
     case 16:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0.707" || var1 == ".707"){
+		if(var1=="-0.707" || var1 == "-.707"){
 			if(var2 == "1")
 				correcto();
 			else
