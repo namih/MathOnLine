@@ -12,13 +12,14 @@ class Contacto_c extends CI_Controller
 	public function correo_contacto()
 	{
 		$contacto = $this->input->post('datos');
+		$email = 'matenlinea.cbi@gmail.com';
 		
 		if ($contacto != NULL) {
 			$configuracion = $this->conf_email->configuracion_email();
 			$this->email->initialize($configuracion);
 			
 			$this->email->from('Bienvenido a matematicas .....');
-			$this->email->to($configuracion['smtp_user']);
+			$this->email->to($email);
 			$this->email->subject('Contacto con la cuenta Mathonline');
 			$this->email->message('Correo electronico: '. $contacto['email'] . ' Comentario: '. $contacto['comentario']);
 			
