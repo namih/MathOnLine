@@ -28,7 +28,7 @@
 					<br />
 					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mn>2</mn><mi>&#x3C0;</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
 						<input onblur="acierto(<?php echo $paginador['actual']; ?>)" style="text-align:center" type="text" size="4" id="3" />
-						<h6><label><input type="checkbox" id="definido1" > No está definido</label></h6>
+						<h6><label><input type="checkbox" id="definido3" > No está definido</label></h6>
 					</h4>
 				</div>	
 				<div class="form-group has-feedback col-md-6  col-xs-12">
@@ -37,7 +37,7 @@
 						<mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
-							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="4" />
 							  </annotation-xml>
 							</semantics>
 						</mi><mi>
@@ -53,13 +53,13 @@
 						<mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
-							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="6" />
 							  </annotation-xml>
 							</semantics>
 						</mi><mi>
 								<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
-							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="7" />
 							  </annotation-xml>
 							</semantics>
 						</mi></mfrac></math>
@@ -69,13 +69,13 @@
 						<mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
-							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="8" />
 							  </annotation-xml>
 							</semantics>
 						</mi><mi>
 								<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
-							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+							  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="9" />
 							  </annotation-xml>
 							</semantics>
 						</mi></mfrac></math>
@@ -84,6 +84,7 @@
 				</div>
 			
 			</div>
+			<br /><input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		<div class=" col-lg-12 col-md-12  col-xs-12">	
 			<div id="correcta" style="display: none" class="alert alert-success">
 		 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.

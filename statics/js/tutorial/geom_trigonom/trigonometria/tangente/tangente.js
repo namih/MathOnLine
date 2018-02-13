@@ -377,65 +377,149 @@ function acierto(label1) {
 				document.getElementById("2").value="";
 		}
         break;
-	case 24:
+	case 27:
         var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
-			correcto();
+		var var7 = document.getElementById("7").value;
+		var var8 = document.getElementById("8").value;
+		var var9 = document.getElementById("9").value;
+		var var10 = document.getElementById("definido1").checked;
+		var var11 = document.getElementById("definido2").checked;
+		var var12 = document.getElementById("definido3").checked;
+		var var13 = document.getElementById("definido4").checked;
+		var var14 = document.getElementById("definido5").checked;
+		var var15 = document.getElementById("definido6").checked;
+		if(var1 == "0" && var2 == "0" && var3 == "0" && var13 == true && var14 == true && var15 == true
+		&&	var4 == "1" && var5 == "0" && var6 == "-1" && var7 == "0" && var8 == "1" && var9 == "0"
+			&&	var10 == false && var11 == false && var12 == false){
+					correcto();
 		}
 		else{
-			if(var1!="1")
+			if(var1!="0")
 				document.getElementById("1").value="";
-			if(var2!="-1")
+			if(var2!="0")
 				document.getElementById("2").value="";
-			if(var3!="1")
+			if(var3!="0")
 				document.getElementById("3").value="";
-			if(var4!="0")
+			if(var4!="1")
 				document.getElementById("4").value="";
 			if(var5!="0")
 				document.getElementById("5").value="";
-			if(var6!="0")
+			if(var6!="-1")
 				document.getElementById("6").value="";
+			if(var7!="0")
+				document.getElementById("7").value="";
+			if(var8!="1")
+				document.getElementById("8").value="";
+			if(var9!="0")
+				document.getElementById("9").value="";
 		}
         break;
-	case 25:
-        var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		var var3 = document.getElementById("3").value;
-		var var4 = document.getElementById("4").value;
-		var var5 = document.getElementById("5").value;
-		var var6 = document.getElementById("6").value;
-		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
-			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="-1")
-				document.getElementById("2").value="";
-			if(var3!="1")
-				document.getElementById("3").value="";
-			if(var4!="0")
-				document.getElementById("4").value="";
-			if(var5!="0")
-				document.getElementById("5").value="";
-			if(var6!="0")
-				document.getElementById("6").value="";
-		}
-        break;
-	case 26:
+	case 28:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="0" && var2 == "0" && var3=="0" && var4 == "0" && var5=="0" && var6 == "0"){
-			correcto();
+		var var7 = document.getElementById("7").value;
+		var var8 = document.getElementById("8").value;
+		var var9 = document.getElementById("9").value;
+		var var10 = document.getElementById("definido1").checked;
+		var var11 = document.getElementById("definido2").checked;
+		var var12 = document.getElementById("definido3").checked;
+		var var13 = document.getElementById("definido4").checked;
+		var var14 = document.getElementById("definido5").checked;
+		var var15 = document.getElementById("definido6").checked;
+		if(var1 == "0" && var2 == "0" && var3 == "0" && var13 == true && var14 == true && var15 == true &&
+		var4 == "-1" && var5 == "0" && var6 == "1" && var7 == "0" && var8 == "-1" && var9 == "0" &&
+				var10 == false && var11 == false && var12 == false){
+					correcto();
+		}
+		else{
+			if(var1!="0")
+				document.getElementById("1").value="";
+			if(var2!="0")
+				document.getElementById("2").value="";
+			if(var3!="0")
+				document.getElementById("3").value="";
+			if(var4!="-1")
+				document.getElementById("4").value="";
+			if(var5!="0")
+				document.getElementById("5").value="";
+			if(var6!="1")
+				document.getElementById("6").value="";
+			if(var7!="0")
+				document.getElementById("7").value="";
+			if(var8!="-1")
+				document.getElementById("8").value="";
+			if(var9!="0")
+				document.getElementById("9").value="";
+		}
+        break;
+    case 29:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		var var5 = document.getElementById("5").value;
+		var var6 = document.getElementById("6").value;
+		var var7 = document.getElementById("7").value;
+		var var8 = document.getElementById("8").value;
+		var var9 = document.getElementById("9").value;
+		var var10 = document.getElementById("10").value;
+		var var11 = document.getElementById("11").value;
+		var var12 = document.getElementById("12").value;
+		var var13 = document.getElementById("definido1").checked;
+		var var14 = document.getElementById("definido2").checked;
+		var var15 = document.getElementById("definido3").checked;
+		var var16 = document.getElementById("definido4").checked;
+		var var17 = document.getElementById("definido5").checked;
+		var var18 = document.getElementById("definido6").checked;
+		if(var1 == "1" && var2 == "0" && var3 == "1" && var4 == "0" && var5 == "1" && var6 == "0"
+			&& var7 == "-1" && var8 == "0" && var9 == "-1" && var10 == "0" && var11 == "-1" && var12 == "0"
+				&& var13 == true && var14 == true && var15 == true
+					&& var16 == true && var17 == true && var18 == true){
+						correcto();
+		}
+		else{
+			if(var1!="1")
+				document.getElementById("1").value="";
+			if(var2!="0")
+				document.getElementById("2").value="";
+			if(var3!="1")
+				document.getElementById("3").value="";
+			if(var4!="0")
+				document.getElementById("4").value="";
+			if(var5!="1")
+				document.getElementById("5").value="";
+			if(var6!="0")
+				document.getElementById("6").value="";
+			if(var7!="-1")
+				document.getElementById("7").value="";
+			if(var8!="0")
+				document.getElementById("8").value="";
+			if(var9!="-1")
+				document.getElementById("9").value="";
+			if(var10!="0")
+				document.getElementById("10").value="";
+			if(var11!="-1")
+				document.getElementById("11").value="";
+			if(var12!="0")
+				document.getElementById("12").value="";
+		}
+        break;
+    case 30:
+		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
+		var var4 = document.getElementById("4").value;
+		if(var1 == "0" && var2 == "0" && var3 == "0" && var4 == "0" ){
+						correcto();
 		}
 		else{
 			if(var1!="0")
@@ -446,75 +530,25 @@ function acierto(label1) {
 				document.getElementById("3").value="";
 			if(var4!="0")
 				document.getElementById("4").value="";
-			if(var5!="0")
-				document.getElementById("5").value="";
-			if(var6!="0")
-				document.getElementById("6").value="";
 		}
         break;
-    case 27:
+    case 31:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
-		if(var1=="1" && var2 == "1" && var3=="1" && var4 == "1"){
-			correcto();
+		if(var1 == "0" && var2 == "0" && var3 == "0" && var4 == "0" ){
+						correcto();
 		}
 		else{
-			if(var1!="1")
+			if(var1!="0")
 				document.getElementById("1").value="";
-			if(var2!="1")
+			if(var2!="0")
 				document.getElementById("2").value="";
-			if(var3!="1")
+			if(var3!="0")
 				document.getElementById("3").value="";
-			if(var4!="1")
+			if(var4!="0")
 				document.getElementById("4").value="";
-		}
-        break;
-	case 28:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		var var3 = document.getElementById("3").value;
-		var var4 = document.getElementById("4").value;
-		if(var1=="-1" && var2 == "-1" && var3=="-1" && var4 == "-1"){
-			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="-1")
-				document.getElementById("2").value="";
-			if(var3!="-1")
-				document.getElementById("3").value="";
-			if(var4!="-1")
-				document.getElementById("4").value="";
-		}
-        break;
-    case 29:
-		var var1 = document.getElementById("1").value;
-		var var2 = document.getElementById("2").value;
-		var var3 = document.getElementById("3").value;
-		if(var1=="2"){
-			mostrar();
-		}
-		else{
-			if(var1!="2")
-				document.getElementById("1").value="";
-		}
-		if(var2=="1" && var3=="-1"){
-			correcto();
-		}
-		else{
-			if(var2!="1")
-				document.getElementById("2").value="";
-			if(var3!="-1")
-				document.getElementById("3").value="";
-		}
-        break;
-    case 30:
-		var var1 = document.getElementById("1").value;
-		if(var1%0.5==0 && var1%1!=0){
-			mostrar();
 		}
         break;
 	}
@@ -526,7 +560,7 @@ function correcto() {
 			$("#correcta").slideUp(500);
 		});
 }
-	
+
 function incrementar_49_1() {
   	switch (ni) {
   		case -7:

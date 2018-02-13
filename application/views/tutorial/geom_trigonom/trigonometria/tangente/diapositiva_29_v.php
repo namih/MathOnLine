@@ -117,6 +117,7 @@
 				</h4>
 			</div>
 		</div>
+		<br /><input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		<div class=" col-lg-12 col-md-12  col-xs-12">	
 			<div id="correcta" style="display: none" class="alert alert-success">
 		 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.

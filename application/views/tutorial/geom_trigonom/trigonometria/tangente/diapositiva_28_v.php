@@ -37,13 +37,13 @@
 					<mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="4" />
 						  </annotation-xml>
 						</semantics>
 					</mi><mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="6" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
 						  </annotation-xml>
 						</semantics>
 					</mi></mfrac></math>
@@ -53,13 +53,13 @@
 					<mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="6" />
 						  </annotation-xml>
 						</semantics>
 					</mi><mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="6" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="7" />
 						  </annotation-xml>
 						</semantics>
 					</mi></mfrac></math>
@@ -69,13 +69,13 @@
 					<mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="5" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="8" />
 						  </annotation-xml>
 						</semantics>
 					</mi><mi>
 						<semantics>
 						  <annotation-xml encoding="application/xhtml+xml">
-						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="6" />
+						  		<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="9" />
 						  </annotation-xml>
 						</semantics>
 					</mi></mfrac></math>
@@ -83,6 +83,7 @@
 				</h4>
 			</div>
 		</div>
+		<br /><input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		<div class=" col-lg-12 col-md-12  col-xs-12">	
 			<div id="correcta" style="display: none" class="alert alert-success">
 		 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
