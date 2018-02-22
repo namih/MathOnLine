@@ -72,10 +72,11 @@
 			</div>		
 		</div>
 		<p align="justify"> Observa que el denominador no cambia, ya que el entero está dividido siempre en el mismo número de partes.</p>
-	</div>
-	<div align="right">
+		<div align="right">
 			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+		</div>
 	</div>
+	
 	<div id="third" style="display: none">
 		<p align="justify">  Sumar fracciones con el mismo denominador es fácil ya que estamos sumando partes del mismo tamaño: Utiliza las flechas para escribir el resultado de la suma.</p>
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
