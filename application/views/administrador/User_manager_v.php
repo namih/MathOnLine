@@ -1,4 +1,4 @@
-<script src="../statics/js/admin_usuarios.js"></script>
+<script src="statics/js/admin_usuarios.js"></script>
 
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
@@ -25,19 +25,19 @@
 </div>
 
 <!-- Modal -->
-  <div class="modal fade" id="confirmacion" role="dialog">
+  <div class="modal fade" id="confirmar_activacion" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Confirmación</h4>
+          <h4 class="modal-title">Activación</h4>
         </div>
         <div class="modal-body">
-          <p>Esta seguro eliminar esta pregunta. Ya no podra recuperarla posteriormente.</p>
+          <p>Esta seguro en <b>ACTIVAR</b> la cuenta del usuario.</p>
         </div>
-        <div class="modal-footer" id="modal_boton">
+        <div class="modal-footer" id="modal_boton_activacion">
         	
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
         </div>
@@ -45,3 +45,26 @@
       
     </div>
   </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="confirmar_desactivacion" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Desactivación</h4>
+        </div>
+        <div class="modal-body">
+          <p>Esta seguro en <b>DESACTIVAR</b> la cuenta del usuario.</p>
+        </div>
+        <div class="modal-footer" id="modal_boton_desactivacion">
+        	
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+

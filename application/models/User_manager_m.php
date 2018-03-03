@@ -18,11 +18,10 @@
 		 */
 		public function get_users($type_user)
 		{
-			if ($type_user!=NULL) {
-				$usuarios = $this->db->SElECT('*')->FROM('users')->WHERE('type_user', $type_user)->GET();
+			if ($type_user != NULL) {
+				$usuarios = $this->db->SELECT('*')->FROM('user')->WHERE('type_user', $type_user)->GET();
 				if ($usuarios->num_rows() > 0) {
-					$respuesta = array('evaluacion' => $evaluacion->result_array(), 'tema' => $tema->result_array());
-					return $respuesta;
+					return $usuarios->result_array();
 				} else {
 					return FALSE;
 				}

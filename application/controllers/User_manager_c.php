@@ -29,14 +29,13 @@ class User_manager_c extends CI_Controller {
 		
 		public function usuarios()
 		{
-			$datos = $this->input -> post('datos');
+			$datos = $this->input->post('datos');
 			$type_user = $datos['type_user'];
-			$usuarios = $this->User_manager_m->get_usuarios($type_user);	
-			if ($subtema == FALSE) {
+			$usuarios = $this->User_manager_m->get_users($type_user);
+			if ($usuarios == FALSE) {
 				echo "No hay usuarios registrados con el perfil seleccionado.";
 			} else {
 				echo json_encode($usuarios);
 			}
 		}
-		
 	}

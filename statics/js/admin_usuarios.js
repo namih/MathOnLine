@@ -1,7 +1,6 @@
 function cargar_usuarios () {
 	var type_user = document.getElementById('usuarios').value;
 	var url_usuarios = base_url + 'User_manager_c/usuarios';
-	
 	var datos = {'type_user':type_user};
 	
 	$.ajax({
@@ -12,25 +11,34 @@ function cargar_usuarios () {
 		cache: false,
 		success: function(respuesta) {
 			
-			var lista_evaluacion = JSON.parse(respuesta);
-						
+			var lista_usuarios = JSON.parse(respuesta);
 			var tabla =	'<div>'+
-							  '<table id="evaluation" class="table table-striped" width="100%" cellspacing="0">' +
+							  '<table id="table_users" class="table table-striped" width="100%" cellspacing="0">' +
 							    '<thead>' +
 							      '<tr>' +
-							        '<th>Borrar</th>' +
-							        '<th>Pregunta</th>' +
-							        '<th>Puntos</th>' +
-							        '<th>Editar</th>' +
+							        '<th>ID Usuario</th>' +
+							        '<th>Nombre de usuario</th>' +
+							        '<th>Email</th>' +
+							        '<th>Fecha de registro</th>' +
+							        '<th>Estatus</th>' +
 							      '</tr>' +
 							    '</thead>' +
 							    '<tbody>';
-							    for (var i=0; i < lista_evaluacion.length; i++) {
+							    for (var i=0; i < lista_usuarios.length; i++) {
 							    	tabla += '<tr>';
-							    	tabla += '<td><span onclick="confirmar('+ lista_evaluacion[i]['id_evaluation']+')" style="color:red" class="glyphicon glyphicon-trash red" aria-hidden="true"></span></td>';
-							    	tabla += '<td>'+lista_evaluacion[i]['question']+'</td>';
-							    	tabla += '<td>'+lista_evaluacion[i]['points']+'</td>';
-							    	tabla += '<td> <a href="'+base_url+'Admin_evaluation_c/editor_evaluacion/'+lista_evaluacion[i]['id_evaluation']+'"><span id="edit_link" class="glyphicon glyphicon-edit" aria-hidden="true"></span> </a> </td>';
+							    	tabla += '<td>'+lista_usuarios[i]['id_user']+'</td>';
+							    	tabla += '<td>'+lista_usuarios[i]['user_name']+'</td>';
+							    	tabla += '<td>'+lista_usuarios[i]['email']+'</td>';
+							    	
+							    	var fecha = lista_usuarios[i]['registration_date'].split(" ");
+							    	
+							    	tabla += '<td>'+fecha[0]+'</td>';
+							    	
+							    	if (lista_usuarios[i]['status']==0) {
+							    		tabla += '<td><span onclick="confirmar_activacion('+ lista_usuarios[i]['id_user']+')" style="color:red" class="glyphicon glyphicon-off" aria-hidden="true"></span></td>';
+							    	} else{
+							    		tabla += '<td><span onclick="confirmar_desactivacion('+ lista_usuarios[i]['id_user']+')" style="color:green" class="glyphicon glyphicon-off" aria-hidden="true"></span></td>';
+							    	};
 							    	tabla += '</tr>';
 							    };
 
@@ -39,10 +47,7 @@ function cargar_usuarios () {
 							  '</div>';
 			
 			document.getElementById("admin_tabla").innerHTML = tabla;
-			$('#evaluation').DataTable( {
-				"drawCallback": function( settings ) {
-					MathJax.Hub.Queue(["Typeset",MathJax.Hub]); 
-				},
+			$('#table_users').DataTable( {
 				"pageLength": 20,
 				"lengthMenu": [[20, 50, 100, -1], [20, 50, 100, "Todas"]],
 		        "language": {
@@ -61,21 +66,47 @@ function cargar_usuarios () {
 	});
 }
 
-function confirmar (id_evaluation) {
-	var boton = '<button onclick="eliminar('+id_evaluation+')" type="button" class="btn btn-warning" data-dismiss="modal">Eliminar</button>';
+function confirmar_activacion(id_user) {
+	var boton = '<button onclick="activacion('+id_user+')" type="button" class="btn btn-warning" data-dismiss="modal">Activar</button>';
 	boton += '<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>';
-	document.getElementById("modal_boton").innerHTML = boton;
+	document.getElementById("modal_boton_activacion").innerHTML = boton;
 	
-	$("#confirmacion").modal();
+	$("#confirmar_activacion").modal();
 }
 
-function eliminar (id_evaluacion) {
-	var url_borrado = base_url + 'Admin_evaluation_c/borrar_evaluacion';
+function activacion (id_user) {
+	var url_activacion = base_url + 'User_manager_c/activar_usuario';
 	
 	$.ajax({
 		type:'post',
-		url: url_borrado,
-		data: {id:id_evaluacion},
+		url: url_activacion,
+		data: {id:id_user},
+		datatype: 'json',
+		cache: false,
+		success: function(respuesta) {
+			alert(respuesta);
+		},
+		error: function() {
+			alert('failure');
+		}
+	});
+}
+
+function confirmar_desactivacion(id_user) {
+	var boton = '<button onclick="desactivacion('+id_user+')" type="button" class="btn btn-warning" data-dismiss="modal">Desactivar</button>';
+	boton += '<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>';
+	document.getElementById("modal_boton_desactivacion").innerHTML = boton;
+	
+	$("#confirmar_desactivacion").modal();
+}
+
+function desactivacion (id_user) {
+	var url_desactivacion = base_url + 'User_manager_c/desactivar_usuario';
+	
+	$.ajax({
+		type:'post',
+		url: url_desactivacion,
+		data: {id:id_user},
 		datatype: 'json',
 		cache: false,
 		success: function(respuesta) {
