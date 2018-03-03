@@ -1,11 +1,9 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/sucesiones/sucesiones.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>Una sucesión es una secuencia de números organizados de tal manera que cada uno de ellos se calcula a partir del anterior, siguiendo una regla específica.</p>
-		<p>Intenta averiguar cuales son los siguientes 3 términos de esta sucesión:</p>
-		<p>0, 6, 12, <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" />, <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" />, <input onblur="acierto(<?php echo $paginador['actual']; ?>)" type="text" style="text-align: center" id="3" size="4" /></p>
+		<p>En general, no es fácil encontrar la fórmula de recurrencia a partir de enumerar los primeros tres o cuatro términos de una sucesión.</p>
+		<p>El siguiente es un ejemplo de sucesiones que comienzan con los mismos tres términos:</p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>,</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#xA0;</mo><mo>,</mo><mo>&#xA0;</mo><msup><mn>3</mn><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>,</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#xA0;</mo><mo>,</mo><mo>&#xA0;</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><msup><mo>)</mo><mn>2</mn></msup><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>,</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#xA0;</mo><mo>,</mo><mo>&#xA0;</mo><mn>8</mn><mi>n</mi><mo>+</mo><mo>&#xA0;</mo><mfrac><mn>12</mn><mi>n</mi></mfrac><mo>-</mo><mn>19</mn><mo>,</mo><mo>&#xA0;</mo><mo>.</mo><mo>.</mo><mo>.</mo></math></p>
 	</div>
-	<div id="correcta" style="display: none" class="alert alert-success">
-	 	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.
-	</div>
-</div>
+  </div>		
