@@ -38,4 +38,28 @@ class User_manager_c extends CI_Controller {
 				echo json_encode($usuarios);
 			}
 		}
+		
+		public function activar_usuario()
+		{
+			$datos = $this->input->post('datos');
+			$id_user = $datos['id_user'];
+			$activacion = $this->User_manager_m->activacion($id_user);
+			if ($activacion == TRUE) {
+				echo "Activado";
+			} else {
+				echo "Error";
+			}
+		}
+		
+		public function desactivar_usuario()
+		{
+			$datos = $this->input->post('datos');
+			$id_user = $datos['id_user'];
+			$desactivar = $this->User_manager_m->desactivacion($id_user);
+			if ($desactivar == TRUE) {
+				echo "Desactivado";
+			} else {
+				echo "Error";
+			}
+		}
 	}

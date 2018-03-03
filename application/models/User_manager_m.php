@@ -30,9 +30,53 @@
 			}
 		}
 		
-		
-		
-				
+		/**
+		 * Description
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return AAA
+		 * @param BBB
+		 * @version 1.0
+		 */
+		public function activacion($id_user)
+		 {
+		 	if (!is_null($id_user)) {
+		 		$logical_erasure = array('status' => 1);
+				$this->db->where('id_user', $id_user);
+				$this->db->update('user', $logical_erasure); 
+				if ($this->db->affected_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
+		 
+		 /**
+		 * Description
+		 * 
+		 * @author Julio Cesar Padilla Dorantes
+		 * @return AAA
+		 * @param BBB
+		 * @version 1.0
+		 */
+		 public function desactivacion($id_user)
+		 {
+		 	if (!is_null($id_user)) {
+		 		$logical_erasure = array('status' => 0);
+				$this->db->where('id_user', $id_user);
+				$this->db->update('user', $logical_erasure); 
+				if ($this->db->affected_rows() === 1) {
+					return TRUE;
+				} else {
+					return FALSE;
+				}
+			} else {
+				return NULL;
+			}
+		 }
 }
 
 /* End of file Evaluation_m.php */

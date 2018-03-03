@@ -76,15 +76,16 @@ function confirmar_activacion(id_user) {
 
 function activacion (id_user) {
 	var url_activacion = base_url + 'User_manager_c/activar_usuario';
+	var datos = {'id_user':id_user};
 	
 	$.ajax({
 		type:'post',
 		url: url_activacion,
-		data: {id:id_user},
+		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
 		success: function(respuesta) {
-			alert(respuesta);
+			cargar_usuarios();
 		},
 		error: function() {
 			alert('failure');
@@ -102,15 +103,16 @@ function confirmar_desactivacion(id_user) {
 
 function desactivacion (id_user) {
 	var url_desactivacion = base_url + 'User_manager_c/desactivar_usuario';
+	var datos = {'id_user':id_user};
 	
 	$.ajax({
 		type:'post',
 		url: url_desactivacion,
-		data: {id:id_user},
+		data: {datos:datos},
 		datatype: 'json',
 		cache: false,
 		success: function(respuesta) {
-			alert(respuesta);
+			cargar_usuarios();
 		},
 		error: function() {
 			alert('failure');
