@@ -115,8 +115,9 @@ function acierto(label1) {
 		var var7 = document.getElementById("7").value;
 		var var8 = document.getElementById("8").value;
 		var var9 = document.getElementById("9").value;
-		if(var1=="3" && var2 == "-1.5" && var3=="0.75"){
-			correcto();
+		if(var1=="3" && var2 == "-1.5"){
+			if(var3==0.75 || var3==.75)
+				correcto();
 		}   
 		if(var4=="10" && var5=="20" && var6=="40"){
 			correcto();
@@ -127,7 +128,15 @@ function acierto(label1) {
         break;
     case 23:
 		var var1 = document.getElementById("1").value;
+		var var2 = document.getElementById("2").value;
+		var var3 = document.getElementById("3").value;
 		if(var1=="50.097"){
+			correcto();
+		}
+		if(var2=="100"){
+			correcto();
+		}
+		if(var3=="110"){
 			correcto();
 		}        
         break;
