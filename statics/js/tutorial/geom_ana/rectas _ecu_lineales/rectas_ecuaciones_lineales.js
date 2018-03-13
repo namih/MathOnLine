@@ -6,7 +6,21 @@
     var point_y = $('#row_'+id_row+'_td_2').val();
 
     if( point_x!='' && point_y!='' && (Number(point_x) || point_x==0) && (Number(point_y) || point_y==0) ){
-        var relacion_xy=Number(point_x*Number(relacion));
+        if(relacion==1){
+          var relacion_xy=Number(point_x*37.5);
+        }else{
+          if(relacion==2){
+            var relacion_xy=Number(point_x*80);
+          }else{
+            if(relacion==3){
+              var relacion_xy=Number(point_x*2.5)+15;
+            }else{
+              var relacion_xy=Number(100*Number(Math.pow(2, point_x)));
+              
+            }
+          }
+        }
+        
       if(Number(point_y)==relacion_xy){
         create_coordenada(point_x,point_y,id_row);
       }else{

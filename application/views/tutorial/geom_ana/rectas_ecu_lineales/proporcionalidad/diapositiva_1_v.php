@@ -39,7 +39,7 @@
 				<p>Completa la siguiente tabla que relaciona el número de rebanadas con el peso total.</p>
 				</div>
 				<div class="row">
-					<div align="left"><p><label>Ejemplo</label></p></div>
+					<div align="left"><p><label>Ejemplo 1</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<table class="table table-responsive table-striped table-bordered table-condensed" style="max-width:0%; margin:0 auto;">
@@ -52,36 +52,36 @@
 					            </thead>
 					            <tbody>
 					            	<tr id="row_1">
-					            		<td><input onchange="pintaCoordenada('row_1_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_1_td_1');" class="input-sm2" type="text" id="row_1_td_1" value="0" disabled="disabled" /></td>
-					            		<td><input onchange="pintaCoordenada('row_1_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_1_td_2');" class="input-sm2" type="text" id="row_1_td_2" /></td>
+					            		<td><input onchange="pintaCoordenada('row_1_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_1_td_1');" class="input-sm2" type="text" id="row_1_td_1" value="0" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_1_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_1_td_2');" class="input-sm2" type="text" id="row_1_td_2" /></td>
 					            	</tr>
 					            	<tr id="row_2">
-					            		<td><input onchange="pintaCoordenada('row_2_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_2_td_1');" class="input-sm2" type="text" id="row_2_td_1" /></td>
-					            		<td><input onchange="pintaCoordenada('row_2_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_2_td_2');" class="input-sm2" type="text" id="row_2_td_2" /></td>
+					            		<td><input onchange="pintaCoordenada('row_2_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_2_td_1');" class="input-sm2" type="text" id="row_2_td_1" /></td>
+					            		<td><input onchange="pintaCoordenada('row_2_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_2_td_2');" class="input-sm2" type="text" id="row_2_td_2" /></td>
 					            	</tr>
 					            	<tr id="row_3">
-					            		<td><input onchange="pintaCoordenada('row_3_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_3_td_1');" class="input-sm2" type="text" id="row_3_td_1" /></td>
-					            		<td><input onchange="pintaCoordenada('row_3_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_3_td_2');" class="input-sm2" type="text" id="row_3_td_2" /></td>
+					            		<td><input onchange="pintaCoordenada('row_3_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_3_td_1');" class="input-sm2" type="text" id="row_3_td_1" /></td>
+					            		<td><input onchange="pintaCoordenada('row_3_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_3_td_2');" class="input-sm2" type="text" id="row_3_td_2" /></td>
 					            	</tr>
 					            	<tr id="row_4">
-					            		<td><input onchange="pintaCoordenada('row_4_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_4_td_1');" class="input-sm2" type="text" id="row_4_td_1" /></td>
-					            		<td><input onchange="pintaCoordenada('row_4_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_4_td_2');" class="input-sm2" type="text" id="row_4_td_2" value="150" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_4_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_4_td_1');" class="input-sm2" type="text" id="row_4_td_1" /></td>
+					            		<td><input onchange="pintaCoordenada('row_4_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_4_td_2');" class="input-sm2" type="text" id="row_4_td_2" value="150" disabled="disabled" /></td>
 					            	</tr>
 					            	<tr id="row_5">
-					            		<td><input onchange="pintaCoordenada('row_5_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_5_td_1');" class="input-sm2" type="text" id="row_5_td_1" value="6" disabled="disabled" /></td>
-					            		<td><input onchange="pintaCoordenada('row_5_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_5_td_2');" class="input-sm2" type="text" id="row_5_td_2" /></td>
+					            		<td><input onchange="pintaCoordenada('row_5_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_5_td_1');" class="input-sm2" type="text" id="row_5_td_1" value="6" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_5_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_5_td_2');" class="input-sm2" type="text" id="row_5_td_2" /></td>
 					            	</tr>
 					            	<tr id="row_6">
-					            		<td><input onchange="pintaCoordenada('row_6_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_6_td_1');" class="input-sm2" type="text" id="row_6_td_1" value="8" disabled="disabled" /></td>
-					            		<td><input onchange="pintaCoordenada('row_6_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_6_td_2');" class="input-sm2" type="text" id="row_6_td_2" value="300" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_6_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_6_td_1');" class="input-sm2" type="text" id="row_6_td_1" value="8" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_6_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_6_td_2');" class="input-sm2" type="text" id="row_6_td_2" value="300" disabled="disabled" /></td>
 					            	</tr>
 					            	<tr id="row_7">
-					            		<td><input onchange="pintaCoordenada('row_7_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_7_td_1');" class="input-sm2" type="text" id="row_7_td_1" /></td>
-					            		<td><input onchange="pintaCoordenada('row_7_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_7_td_2');" class="input-sm2" type="text" id="row_7_td_2" /></td>
+					            		<td><input onchange="pintaCoordenada('row_7_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_7_td_1');" class="input-sm2" type="text" id="row_7_td_1" /></td>
+					            		<td><input onchange="pintaCoordenada('row_7_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_7_td_2');" class="input-sm2" type="text" id="row_7_td_2" /></td>
 					            	</tr>
 					            	<tr id="row_8">
-					            		<td><input onchange="pintaCoordenada('row_8_td_1','37.5');" onkeypress="return validarSoloFlotante(event,'row_8_td_1');" class="input-sm2" type="text" id="row_8_td_1" /></td>
-					            		<td><input onchange="pintaCoordenada('row_8_td_2','37.5');" onkeypress="return validarSoloFlotante(event,'row_8_td_2');" class="input-sm2" type="text" id="row_8_td_2" value="1200" disabled="disabled" /></td>
+					            		<td><input onchange="pintaCoordenada('row_8_td_1',1);" onkeypress="return validarSoloFlotante(event,'row_8_td_1');" class="input-sm2" type="text" id="row_8_td_1" /></td>
+					            		<td><input onchange="pintaCoordenada('row_8_td_2',1);" onkeypress="return validarSoloFlotante(event,'row_8_td_2');" class="input-sm2" type="text" id="row_8_td_2" value="1200" disabled="disabled" /></td>
 					            	</tr>
 					            </tbody>
 					        </table>
@@ -116,7 +116,7 @@
 						<p>Si "x" indica el número de rebanadas y "y" indica la cantidad de gramos de jamón, escribe la ecuación que indique cómo se relacionan los gramos de jamón de pavo con el número de rebanadas.</p>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-						<label> y= <input class="n_float" type="text" name="input_constant_ecu" id="input_constant_ecu" onchange="validaInputRelacion('37','input_constant_ecu','.5');" onkeypress="return validarSoloFlotante(event,'input_constant_ecu');"> x </label>
+						<label> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold-italic">y</mi><mo mathvariant="bold">=</mo></math> <input class="n_float" type="text" name="input_constant_ecu" id="input_constant_ecu" onchange="validaInputRelacion('37','input_constant_ecu','.5');" onkeypress="return validarSoloFlotante(event,'input_constant_ecu');"> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold-italic">x</mi></math> </label>
 
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_constant_ecu">
