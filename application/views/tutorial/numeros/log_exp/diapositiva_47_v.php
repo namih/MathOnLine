@@ -21,7 +21,6 @@
 
         <p>
             <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>log</mi><mi>b</mi></msub><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><mfrac><mrow><msub><mi>log</mi><mi>a</mi></msub><mi>x</mi></mrow><mrow><msub><mi>log</mi><mi>a</mi></msub><mi>b</mi></mrow></mfrac></math>
-
         </p>
     </div>
 </div>

@@ -10,9 +10,20 @@
             <input type="number" id="num_user_1" class="form-control" style="width: 80px; display: inline-block;">
             <input type="text" id="base_user_1" class="form-control" style="width: 80px; display: inline-block;">
             <sup><input type="number" id="power_user_1" class="form-control" style="width: 80px; display: inline-block;"></sup>
-            <input type="hidden" id="num_correct_1" value="x" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="num_correct_1" value="3" class="form-control" style="width: 80px; display: inline-block;">
             <input type="hidden" id="base_correct_1" value="x" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="power_correct_1" value="8" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="power_correct_1" value="9" class="form-control" style="width: 80px; display: inline-block;">
+
+            <br><br>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success_1" class="text-center" hidden>
+                <br><br>
+                <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="error_1" class="text-center" hidden>
+                <br><br>
+                <p class="bg-danger text-danger" style="padding: 15px;">Incorrecto, intenté de nuevo</p>
+            </div>
         </div>
         <br><br>
 
@@ -21,9 +32,24 @@
             <input type="number" id="num_user_2" class="form-control" style="width: 80px; display: inline-block;">
             <input type="text" id="base_user_2" class="form-control" style="width: 80px; display: inline-block;">
             <sup><input type="number" id="power_user_2" class="form-control" style="width: 80px; display: inline-block;"></sup>
-            <input type="hidden" id="num_correct_2" value="7" value="x" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="base_correct_2" value="7" value="c" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="power_correct_2" value="20" value="18" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="num_correct_2" value="20" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="base_correct_2" value="x" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="power_correct_2" value="14" class="form-control" style="width: 80px; display: inline-block;">
+
+            <br><br>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success_2" class="text-center" hidden>
+                <br><br>
+                <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="error_2" class="text-center" hidden>
+                <br><br>
+                <p class="bg-danger text-danger" style="padding: 15px;">Incorrecto, intenté de nuevo</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="text-center">
+                <br>
+            </div>
         </div>
         <br><br>
 
@@ -32,9 +58,24 @@
             <input type="number" id="num_user_3" class="form-control" style="width: 80px; display: inline-block;">
             <input type="text" id="base_user_3" class="form-control" style="width: 80px; display: inline-block;">
             <sup><input type="number" id="power_user_3" class="form-control" style="width: 80px; display: inline-block;"></sup>
-            <input type="hidden" id="num_correct_3" value="7" value="x" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="base_correct_3" value="7" value="h" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="power_correct_3" value="20" value="15" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="num_correct_3" value="7" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="base_correct_3" value="c" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="power_correct_3" value="13" class="form-control" style="width: 80px; display: inline-block;">
+
+            <br><br>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success_3" class="text-center" hidden>
+                <br><br>
+                <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="error_3" class="text-center" hidden>
+                <br><br>
+                <p class="bg-danger text-danger" style="padding: 15px;">Incorrecto, intenté de nuevo</p>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="text-center">
+                <br>
+            </div>
         </div>
         <br><br>
 
@@ -43,26 +84,28 @@
             <input type="number" id="num_user_4" class="form-control" style="width: 80px; display: inline-block;">
             <input type="text" id="base_user_4" class="form-control" style="width: 80px; display: inline-block;">
             <sup><input type="number" id="power_user_4" class="form-control" style="width: 80px; display: inline-block;"></sup>
-            <input type="hidden" id="num_correct_4" value="7" value="x" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="base_correct_4" value="7" value="x" class="form-control" style="width: 80px; display: inline-block;">
-            <input type="hidden" id="power_correct_4" value="20" value="20" class="form-control" style="width: 80px; display: inline-block;">
-        </div>
-        <br><br>
+            <input type="hidden" id="num_correct_4" value="42" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="base_correct_4" value="a" class="form-control" style="width: 80px; display: inline-block;">
+            <input type="hidden" id="power_correct_4" value="2" class="form-control" style="width: 80px; display: inline-block;">
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success" class="text-center" hidden>
             <br><br>
-            <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>
-        </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success_4" class="text-center" hidden>
+                <br><br>
+                <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>
+            </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="error" class="text-center" hidden>
-            <br><br>
-            <p class="bg-danger text-danger" style="padding: 15px;">Incorrecto, intenté de nuevo</p>
-        </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="error_4" class="text-center" hidden>
+                <br><br>
+                <p class="bg-danger text-danger" style="padding: 15px;">Incorrecto, intenté de nuevo</p>
+            </div>
 
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="text-center">
+                <br>
+            </div>
+        </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" class="text-center">
             <br>
-            <button type="button" class="btn btn-success" onclick="validateBasePowerByCheckBox()">Verificar</button>
+            <button type="button" class="btn btn-success" onclick="validateMultipleBaseAndPowerCheckBox2()">Verificar</button>
         </div>
-
     </div>
 </div>

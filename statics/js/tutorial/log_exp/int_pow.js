@@ -162,3 +162,112 @@ function validateBasePowerByCheckBox(){
     }
 
 }
+
+function validateMultipleCheckBox(){
+    var i = 1;
+    $("input[name='answer[]']").each(function ()
+    {
+        var answer_user = $($(this)[0]).is(":checked");
+        var correct_answer = Boolean($(this)[0].value);
+        if(answer_user == correct_answer){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+        i++;
+    });
+}
+
+function validateMultipleCheckBox(){
+    var i = 1;
+    $("input[name='answer[]']").each(function () {
+        var answer_user = $($(this)[0]).is(":checked");
+        var correct_answer = $(this)[0].value;
+        if(correct_answer == 'true'){
+            correct_answer = true;
+        }else{
+            correct_answer = false;
+        }
+        console.log(answer_user == correct_answer);
+        if(answer_user == correct_answer){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+        i++;
+    });
+}
+
+function validateMultipleBaseAndPowerCheckBox(){
+    for(var i=1; i<=4; i++){
+        if($('#base_user_'+i).val().toLowerCase() == $('#base_correct_'+i)[0].value && $('#power_user_'+i).val().toLowerCase() == $('#power_correct_'+i)[0].value){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+    }
+}
+
+function validateMultipleBaseAndPowerCheckBox2(){
+    for(var i=1; i<=4; i++){
+        if($('#num_user_'+i).val() ==$('#num_correct_'+i)[0].value && $('#base_user_'+i).val().toLowerCase() == $('#base_correct_'+i)[0].value && $('#power_user_'+i).val().toLowerCase() == $('#power_correct_'+i)[0].value){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+    }
+}
+
+function validateMultipleBaseAndPowerCheckBox3(){
+    for(var i=1; i<=4; i++){
+        if($('#base1_user_'+i).val().toLowerCase() == $('#base1_correct_'+i)[0].value &&
+            $('#power1_user_'+i).val() ==$('#power1_correct_'+i)[0].value &&
+            $('#base2_user_'+i).val().toLowerCase() == $('#base2_correct_'+i)[0].value &&
+            $('#power2_user_'+i).val().toLowerCase() == $('#power2_correct_'+i)[0].value){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+    }
+}
+
+function validateMultipleBaseAndPowerCheckBox4(){
+    for(var i=1; i<=4; i++){
+        if($('#base_user_'+i).val() ==$('#base_correct_'+i)[0].value &&
+            $('#value_x_user_'+i).val().toLowerCase() == $('#value_x_correct_'+i)[0].value &&
+            $('#power_x_user_'+i).val() ==$('#power_x_correct_'+i)[0].value &&
+            $('#value_y_user_'+i).val().toLowerCase() == $('#base2_correct_'+i)[0].value &&
+            $('#power_y_user_'+i).val().toLowerCase() == $('#power2_correct_'+i)[0].value){
+            $('#success_'+i).show();
+            $('#error_'+i).hide();
+        }else{
+            $('#error_'+i).show();
+            $('#success_'+i).hide();
+        }
+    }
+}
+
+function ln2Inputs(){
+    var correct = Math.log(16) / Math.log(3);
+    var user_answer = Math.log($("#numerador")[0].value)/Math.log($("#denominador")[0].value);
+    console.log($("#numerador")[0].value)
+    console.log($("#denominador")[0].value)
+    $("#answer_user").val(user_answer);
+    if(correct == user_answer){
+        $('#success').show();
+        $('#error').hide();
+    }else{
+        $('#success').hide();
+        $('#error').show();
+    }
+}
