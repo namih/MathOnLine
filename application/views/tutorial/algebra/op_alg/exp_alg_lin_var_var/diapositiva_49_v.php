@@ -45,7 +45,7 @@
 			<input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		</div>
 		<div class="btn-group" id="opciones5">
-			<input type="button" class="btn btn-success btn-sm" value="Más ejercicios" onclick="mostrar()" ><br />
+			<input type="button" class="btn btn-success btn-sm" value="Más ejercicios" onclick="imagen()" ><br />
 		</div>
 	</div>
 	
@@ -94,7 +94,7 @@
 			<input type="button" class="btn btn-success btn-sm" onclick="acierto(<?php echo $paginador['actual']; ?>)" value="VERIFICAR" /><br />
 		</div>
 		<div class="btn-group" id="opciones5">
-			<input type="button" class="btn btn-success btn-sm" value="Más ejercicios" onclick="mostrar1()" ><br />
+			<input type="button" class="btn btn-success btn-sm" value="Más ejercicios" onclick="imagen2()" ><br />
 		</div>
 	</div>
 	<div id="ejercicio3" style='display:none;'>
