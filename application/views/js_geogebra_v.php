@@ -16,9 +16,9 @@
 	 		var point_b = document.getElementById('point_b').value;
 	 		var draw_a = 'A = '+ point_a;
 	 		var draw_b = 'B = '+ point_b;
-	 		applet.evalCommand(draw_a); 
-	 		applet.evalCommand(draw_b); 
-	 		applet.evalCommand("s = Line[A, B]"); 
+	 		applet.evalCommand(draw_a);
+	 		applet.evalCommand(draw_b);
+	 		applet.evalCommand("s = Line[(1,1), (1,1)]");
 	 	}
 	 	function seno () {
 		   var applet = document.ggbApplet;
@@ -41,4 +41,4 @@
 		<button onclick="create_straight()" type="button" class="btn btn-primary">Construir</button>
 		<button onclick="seno()" type="button" class="btn btn-primary">Función Seno</button>
 	</div>
-</div>
+</div>

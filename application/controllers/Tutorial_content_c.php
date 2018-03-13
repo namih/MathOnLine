@@ -73,13 +73,16 @@
 
             //hacer el load de la vista correspondiente
             $datos['diapositiva_actual']= $this->load->view('tutorial/'.$datos['tutorial_content']['diapositivas'][$num_diapositiva]['vista'],$datos,TRUE);
+            /*echo "<pre>";
+            print_r($datos);
+            echo "</pre>";
+            return;*/
             //$datos['diapositiva_actual']= $this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);
             if($last_diapo_number==$num_diapositiva){
                 //cargar dos vistas en lugar de una. Se agrega la vista de finalizar
                 $datos['diapositiva_actual'].=$this->load->view('tutorial/template_tutorial/Finish_tutorial_v',$datos,TRUE);//diapositiva de finalizar
             }
             $datos['id_tutorial'] = $id_tutorial;
-
             $this->load->view('header/head_v');
             $this->load->view('header/Menu_user_v', $datos);
             $this->load->view('tutorial/template_tutorial/Tutorial_content_v',$datos);

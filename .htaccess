@@ -8,4 +8,3 @@ Options All -Indexes
 
 AddDefaultCharset UTF-8
 php_value default_charset UTF-8
-

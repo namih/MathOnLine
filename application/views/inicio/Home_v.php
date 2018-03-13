@@ -80,7 +80,7 @@
                     <div class="row">
                         <div class="row">
                           <div class="col-md-12 col-sm-12">
-                            <div class="col-md-4 col-sm-4" align="center"><img class="img-login img-responsive" width="75%" src="<?php echo base_url(); ?>statics/img/iniciar_session/people-145129_1280.png"/></div>
+                            <div class="col-md-4 col-sm-4" align="center"><img class="img-login img-responsive" width="75%" src="statics/img/iniciar_session/people-145129_1280.png"/></div>
                             <div class="col-md-8 col-sm-8">
                                 <div class="form-group">
                                   <input type="text" name="username-user" id="username_user" tabindex="1" class="form-control" placeholder="Nombre del usuario">

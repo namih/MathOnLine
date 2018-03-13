@@ -44,7 +44,7 @@
 									<table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
 										<tr>
 											<td height="70" style="padding: 0 20px 20px 0;">
-												<img class="fix" src="<?php echo base_url() ?>/statics/img/logo_matenlinea/mate1.jpg" width="90" height="90" border="0" alt="" />
+												<img class="fix" src="statics/img/logo_matenlinea/mate1.jpg" width="90" height="90" border="0" alt="" />
 											</td>
 										</tr>
 									</table>
