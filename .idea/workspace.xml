@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="005a5636-fb96-408c-bef1-3681f77e2c9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_10_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_1_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_2_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_3_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_4_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_5_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_6_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_7_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_8_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_9_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_48_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_49_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_50_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_51_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_52_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_53_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_54_v.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_55_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_31_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_31_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_32_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_32_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_33_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_33_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_34_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_34_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_35_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_35_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_36_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_36_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_37_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_37_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_38_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_38_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_39_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_39_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_43_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_43_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_45_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_45_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_47_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_47_v.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" afterPath="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" />
-    </list>
+    <list default="true" id="005a5636-fb96-408c-bef1-3681f77e2c9b" name="Default" comment="" />
     <ignored path="MathOnLine.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -62,17 +20,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="int_pow.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="int_pow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="261" column="93" lean-forward="false" selection-start-line="261" selection-start-column="93" selection-end-line="261" selection-end-column="93" />
+            <state relative-caret-position="445">
+              <caret line="262" column="21" lean-forward="false" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diapositiva_44_v.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="diapositiva_44_v.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -516,12 +474,12 @@
       <workItem from="1520389650934" duration="4820000" />
       <workItem from="1520483999354" duration="2883000" />
       <workItem from="1520565724573" duration="4253000" />
-      <workItem from="1520910875779" duration="17168000" />
+      <workItem from="1520910875779" duration="17219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140692000" />
+    <option name="totallyTimeSpent" value="140743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -953,14 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="60" column="91" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_46_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -987,8 +937,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="261" column="93" lean-forward="false" selection-start-line="261" selection-start-column="93" selection-end-line="261" selection-end-column="93" />
+        <state relative-caret-position="445">
+          <caret line="262" column="21" lean-forward="false" selection-start-line="262" selection-start-column="21" selection-end-line="262" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="60" column="91" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="91" />
           <folding />
         </state>
       </provider>
