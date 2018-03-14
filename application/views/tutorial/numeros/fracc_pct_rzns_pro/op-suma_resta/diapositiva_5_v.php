@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Cuando tenemos fracciones con diferente denominador, lo que hacemos es convertirlas en fracciones equivalentes en las que el denominador sea igual. Utiliza las flechas para encontrar fracciones equivalentes  para <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> y para <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> que tengan el mismo denominador.</p>
+		<p align="justify">Cuando tenemos fracciones con diferente denominador, lo que hacemos es convertirlas en fracciones equivalentes en las que el denominador sea igual. Utiliza las flechas para encontrar fracciones equivalentes para que <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> que tengan el mismo denominador.</p>
 		
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div style="margin-bottom: 20px" class="col-xs-12 col-sm-12 col-lg-12">
