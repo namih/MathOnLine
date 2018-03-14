@@ -3,7 +3,9 @@
 <div class="container-fluid">
 	
 	<p align="justify">Suma las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador. Simplifica tu resultado al máximo. Si el resultado que obtuviste es mayor a un entero, da clic  en el botón mixto y escribe los números correspondientes.</p>
-	<div class=" col-lg-12 col-md-12  col-xs-12">
+	<div id="first">
+			<div class=" col-lg-12 col-md-12  col-xs-12">
+		
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
@@ -17,20 +19,20 @@
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
 				<tr align="center">
-					<td><h1>
+					<td><h1 >
 							<math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mfrac>
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_20_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_20_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -43,21 +45,21 @@
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_20_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
 									<mi>
 										<semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_20_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
 								</mfrac>
 							</math></h1></td>
 					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
-					<td><h1>
+					<td><h1 id="fraccion">
 							<math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mfrac>
 									<mi>
@@ -76,13 +78,194 @@
 									</mi>
 								</mfrac>
 							</math></h1></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div align="center" id="mix">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_20()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_20 ()">Fracción</button>
+   	 		</div>
+		<div align="right">
+			<button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
+		</div>
+	</div>
+	<div id="second" style="display: none">
+		<div class=" col-lg-12 col-md-12  col-xs-12">
+		
+		<div class=" col-lg-12 col-md-12  col-xs-12">
+			<table>
+				<tr align="center">
+					<td><h1 style="color: blue"><math  xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=</h1></td>
 				</tr>
 			</table>
 		</div>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
-			<button type="button" onclick="" class="btn btn-primary" disabled >Más ejercicios</button>
-			<button type="button" onclick="" class="btn btn-primary" disabled >Mixto</button>
+			<table>
+				<tr align="center">
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input onchange="fraccion_20_uno ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input onchange="fraccion_20_uno ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c_uno" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					</tr>
+				</table>
+			</div>
 		</div>
+		<div align="center" id="mix_uno">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_20_uno()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac_uno" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_20_uno ()">Fracción</button>
+   	 		</div>
+		<div align="right">
+			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+		</div>
+	</div>
+	<div id="third" style="display: none">
+		<div class=" col-lg-12 col-md-12  col-xs-12">
+		
+		<div class=" col-lg-12 col-md-12  col-xs-12">
+			<table>
+				<tr align="center">
+					<td><h1 style="color: blue"><math  xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>2</mn></mfrac></math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=</h1></td>
+				</tr>
+			</table>
+		</div>
+		<div class=" col-lg-12 col-md-12  col-xs-12">
+			<table>
+				<tr align="center">
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
+					<td><h1>
+							<math xmlns="http://www.w3.org/1998/Math/MathML">
+								<mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input onchange="fraccion_20_dos ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input onchange="fraccion_20_dos ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c_dos" placeholder="0" />
+											</annotation-xml>
+										</semantics>
+									</mi>
+								</mfrac>
+							</math></h1></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div align="center" id="mix_dos">
+				<button type="button" class="btn btn-success" onclick="mostrar_mixto_20_dos()">Mixto</button>
+   	 		</div>
+   	 		<div align="center" id="frac_dos" style="display: none">
+				<button type="button" class="btn btn-success" onclick="mostrar_fraccion_20_dos ()">Fracción</button>
+   	 		</div>
 	</div>
 </div>
 

@@ -21,14 +21,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -37,14 +37,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -92,14 +92,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -108,14 +108,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -163,14 +163,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -179,14 +179,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
