@@ -41,8 +41,11 @@
 					<div align="left"><p><label>Ejemplo</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-							<div class="pregunta paso_0">
-								<p><b>¿Cómo podemos representar una recta en el plano cartesiano mediante una ecuación?</b></p>
+							<div class="paso_5">
+								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math>     POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
+								<p>En general, para un punto P(x,y) sobre la recta que pasa por el origen y por el punto Q( 4,3 ):</p>
+								<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></p>
+								<p>Esto se conoce como el "Teorema de Tales" </p>
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">

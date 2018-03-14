@@ -26,14 +26,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
@@ -48,14 +48,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>

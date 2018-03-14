@@ -44,6 +44,12 @@
 							<div class="pregunta paso_0">
 								<p><b>¿Cómo podemos representar una recta en el plano cartesiano mediante una ecuación?</b></p>
 							</div><br>
+							<div class="paso_1">
+								<p><b>Empecemos con una recta que pasa por el origen es decir, que pasa por el punto (0,0)</b></p>
+							</div><br>
+							<div class="paso_2">
+								<p>Supongamos que esta recta pasa también por el punto Q (4,3 )</p>
+							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
 							<div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
