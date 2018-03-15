@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
-            <input type="checkbox" name="answer[]" id="answer_3" value="true">
+            <input type="checkbox" name="answer[]" id="answer_3" value="false">
             <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>7</mn><mn>9</mn></msup><mi>x</mi><msup><mn>7</mn><mrow><mn>11</mn><mo>&#xA0;</mo></mrow></msup><mo>=</mo><mo>&#xA0;</mo><msup><mn>7</mn><mn>10</mn></msup></math>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success_3" class="text-center" hidden>
                 <p class="bg-success text-success" style="padding: 15px;">Correcto!!!</p>

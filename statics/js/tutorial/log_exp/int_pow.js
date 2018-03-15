@@ -190,7 +190,7 @@ function validateMultipleCheckBox(){
         }else{
             correct_answer = false;
         }
-        console.log(answer_user == correct_answer);
+
         if(answer_user == correct_answer){
             $('#success_'+i).show();
             $('#error_'+i).hide();
