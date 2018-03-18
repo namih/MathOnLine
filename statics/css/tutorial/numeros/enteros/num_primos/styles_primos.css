@@ -22,5 +22,25 @@
 	background: #388e3c;
 }
 
+.input-top5{
+	margin-top:5px;
+}
+
+.div-border0{
+	border: 0px solid #ddd;
+}
+
+
+.input-sm-cs{
+	width: 40%;
+}
+
+
+.input-sm-cc{
+	width: 23%;
+}
+
+
+
 
 

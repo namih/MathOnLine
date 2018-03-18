@@ -75,15 +75,13 @@
 		No se te pidió que marcaras los numeros que tienen al 4 o al 6 como factor ya que alpedir que marques los números que tienen al 2 como factor, se marcan todos éstos.</p>
 	<p>¿Qué notas acerca del digito de las unidades de estos números?</p>
 	<p>En qué números terminan todos excepto el 2 y el 5?</p>
-	<br />
-	<div class="table-responsive">
-	<input  type="text" id="1" value="" />
-	<input  type="text" id="2" value="" />
-	<input  type="text" id="3" value="" />
-	<input  type="text" id="4" value="" />
+	<div class="table-responsive div-border0">
+	<input  class="input-sm input-top5" type="text" id="1" value="" />
+	<input  class="input-sm input-top5" type="text" id="2" value="" />
+	<input  class="input-sm input-top5" type="text" id="3" value="" />
+	<input  class="input-sm input-top5" type="text" id="4" value="" />
 	</div>
-	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

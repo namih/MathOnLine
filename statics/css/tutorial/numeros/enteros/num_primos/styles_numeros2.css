@@ -10,3 +10,13 @@
 	width: 100%;
 	
 }
+
+
+.div-border0{
+	border: 0px solid #ddd;
+}
+
+.input-top5{
+	margin-top:5px;
+}
+

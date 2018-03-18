@@ -68,10 +68,10 @@
 		</section>
 	</div>
 	<p>¿Cuántos números primos pares hay, menores que 50?</p>
-	<br /><br /><br />
-	<div class="table-responsive">
-	<input  type="text" id="primo1" value="" />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar8();" value="Verificar" />
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" type="text" id="primo1" value="" />
+
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar8();" value="Verificar" />
 	
 	</div>
 	<div id="correcta" style="display: none" class="alert alert-success">

@@ -1,16 +1,16 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/primos/diapositiva_3.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/num_primos/styles_primos.css">
 <div class="container-fluid">
 	<div class="panel-body" >
 		<p> Encuentra los factores del 47. Escríbelos en las casillas.
 		</p> 
 		<br />
-		<input  type="text"  id="1"/>
-		<input  type="text"  id="2"/>
-		<input  type="text"  id="3"/>
-		<input  type="text"  id="4"/>
+		<input  class="input-sm input-top5"  type="text"  id="1"/>
+		<input  class="input-sm input-top5"  type="text"  id="2"/>
+		<input  class="input-sm input-top5"  type="text"  id="3"/>
+		<input  class="input-sm input-top5"  type="text"  id="4"/>
 	</div>
-	<br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input  type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>
