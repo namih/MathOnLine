@@ -1169,11 +1169,11 @@ function fraccion_12 () {
 
 
 
-function fraccion_13_c () {
-  	var numerador_c = document.getElementById('numerador_c').value;
-  	var denominador_c = document.getElementById('denominador_c').value;
-  	if (numerador_c != '' && denominador_c != '') {
-		result_frac = numerador_c / denominador_c;
+function fraccion_13 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador_c != '') {
+		result_frac = numerador / denominador;
 		
 		if (parseFloat(result_frac) == 0.65) {
   			acierto();	
@@ -1183,6 +1183,34 @@ function fraccion_13_c () {
   	};
 }
 
+
+function fraccion_13_uno () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		
+		if (parseFloat(result_frac) == 0.65) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_13_dos () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		
+		if (parseFloat(result_frac) == 0.65) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
 
 
 function fraccion_14_c () {
@@ -1400,37 +1428,77 @@ function mostrar_fraccion_20 () {
   	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
 }
 
+function fraccion_mixta_20 () {
+	var entero_h = document.getElementById('entero_h').value;
+  	var numerador_h = document.getElementById('numerador_h').value;
+  	var denominador_h = document.getElementById('denominador_h').value;
+  	if (entero_h != '' && numerador_h != '' && denominador_h != '') {
+		if (entero_h == 1 && numerador_h == 14 && denominador_h == 40) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
 function mostrar_mixto_20_uno () {
-  	document.getElementById('fraccion_uno').style.display = 'none';
-  	document.getElementById('mixto_uno').style.display = 'inline-block';
+  	document.getElementById('fraccion1').style.display = 'none';
+  	document.getElementById('mixto1').style.display = 'inline-block';
   	document.getElementById('mix_uno').style.display = 'none';
   	document.getElementById('frac_uno').style.display = 'inline-block';
   	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
 }
 
 function mostrar_fraccion_20_uno () {
-  	document.getElementById('mixto_uno').style.display = 'none';
-  	document.getElementById('fraccion_uno').style.display = 'inline-block';
+  	document.getElementById('mixto1').style.display = 'none';
+  	document.getElementById('fraccion1').style.display = 'inline-block';
   	document.getElementById('frac_uno').style.display = 'none';
   	document.getElementById('mix_uno').style.display = 'inline-block';
   	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
 }
 
+function fraccion_mixta_20_uno () {
+	var entero = document.getElementById('entero_uno_h').value;
+  	var numerador = document.getElementById('numerador_uno_h').value;
+  	var denominador = document.getElementById('denominador_uno_h').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 1 && numerador == 14 && denominador == 40) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
 function mostrar_mixto_20_dos () {
-  	document.getElementById('fraccion_dos').style.display = 'none';
-  	document.getElementById('mixto_dos').style.display = 'inline-block';
-  	document.getElementById('mix_dos').style.display = 'none';
-  	document.getElementById('frac_dos').style.display = 'inline-block';
+  	document.getElementById('fraccion_2').style.display = 'none';
+  	document.getElementById('mixto_2').style.display = 'inline-block';
+  	document.getElementById('mix_2').style.display = 'none';
+  	document.getElementById('frac_2').style.display = 'inline-block';
   	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
 }
 
 function mostrar_fraccion_20_dos () {
-  	document.getElementById('mixto_dos').style.display = 'none';
-  	document.getElementById('fraccion_dos').style.display = 'inline-block';
-  	document.getElementById('frac_dos').style.display = 'none';
-  	document.getElementById('mix_dos').style.display = 'inline-block';
+  	document.getElementById('mixto_2').style.display = 'none';
+  	document.getElementById('fraccion_2').style.display = 'inline-block';
+  	document.getElementById('frac_2').style.display = 'none';
+  	document.getElementById('mix_2').style.display = 'inline-block';
   	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
 }
+
+function fraccion_mixta_20_dos () {
+	var entero = document.getElementById('entero_dos_h').value;
+  	var numerador = document.getElementById('numerador_dos_h').value;
+  	var denominador = document.getElementById('denominador_dos_h').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 1 && numerador == 14 && denominador == 40) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
 
 function entero_21 () {
   	var entero = document.getElementById('entero').value;
