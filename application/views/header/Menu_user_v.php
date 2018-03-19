@@ -2,7 +2,7 @@
       <div class="col-xm-12 col-sm-12" id="log_user">
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-2">
           <a href="<?php echo base_url();?>">
-            <img class="imagen-xs img-responsive" width="80%" src="statics/img/logo_matenlinea/mate1.jpg">
+            <img class="imagen-xs img-responsive" width="80%" src="<?php echo base_url() ?>/statics/img/logo_matenlinea/mate1.jpg">
           </a>
         </div>
         <div class="col-xs-8 col-sm-9 col-md-9 col-lg-8 ">
@@ -10,10 +10,10 @@
             <h3>Mi Entrenador Personal en Matemáticas</h3>
           </div>
         </div>
-      </div> 
-    </header>     
+      </div>
+    </header>
 <?php //echo '<pre>'; print_r($menu_user); ?>
-<div class="col-md-12">  
+<div class="col-md-12">
       <nav class="navbar navbar-green">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -57,7 +57,7 @@
             <?php } ?>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
-      </nav> 
+      </nav>
 </div>
 <div id="section_main_content" style="min-height: 890px;">
     <?php //echo '<pre>'; print_r($user_log); print_r($temas); ?>
@@ -135,9 +135,9 @@
         $('div#navbar_menu li.sLi').each(function(){
             this.removeAttribute('class', 'active');
         });
-        elDelClick.setAttribute('class', 'active'); 
+        elDelClick.setAttribute('class', 'active');
         }
-    });*/ 
+    });*/
   /*$('section#menuEvaluacion li[name="liAdminEval"]').each(function() {
         this.onclick = function(e){
             var aMenu =$(this).children("a").first();
@@ -176,4 +176,4 @@
             });
         }
     });*/
-</script> 
+</script>
