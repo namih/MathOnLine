@@ -2,36 +2,36 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">En ocasiones debemos sumar dos números mixtos como los siguientes:</p>
+		<p align="left">En ocasiones debemos sumar dos números mixtos como los siguientes:</p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
-		<div class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-				<tr align="center">
-					<td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></td>
-					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
-					<td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>
-				</tr>
-			</table>
-		</div>
-		<p>Para encontrar el resultado, podemos sumar los enteros y las fracciones y escribir el resultado como número mixto.Recuerda convertir las fracciones en fracciones equivalentes con el mismo denominador y simplificar al máximo tu respuesta final.</p>
+			<div class=" col-lg-12 col-md-12  col-xs-12">
+				<table>
+					<tr align="center">
+						<td><h1 style="color: blue"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></td>
+						<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>
+						<td><h1 style="color: green"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>
+					</tr>
+				</table>
+			</div>
+			<p align="left">Para encontrar el resultado, podemos sumar los enteros y las fracciones y escribir el resultado como número mixto.Recuerda convertir las fracciones en fracciones equivalentes con el mismo denominador y simplificar al máximo tu respuesta final.</p>
 		
-		<div class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-				<tr align="center">
-					<td><h1>1+3</h1></td>
-					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
-					<td><input onchange="entero_21 ()" style="text-align:center" type="text" size="3" id="entero" placeholder="0" /></td>
-			    </tr>
-			</table>
-		</div>
-		<div class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-				<tr align="center">	
-					<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></td>
-					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>	
-					<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>	
-					<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>	
-					<td><h3>
+			<div class=" col-lg-12 col-md-12  col-xs-12">
+				<table>
+					<tr align="center">
+						<td><h1>1+3</h1></td>
+						<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>
+						<td><input onchange="entero_21 ()" style="text-align:center" type="text" size="3" id="entero" placeholder="0" /></td>
+			    	</tr>
+				</table>
+			</div>
+			<div class=" col-lg-12 col-md-12  col-xs-12">
+				<table>
+					<tr align="center">	
+						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></td>
+						<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;</h1></td>	
+						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math></h1></td>	
+						<td><h1 style="color: red">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</h1></td>	
+						<td><h3>
 							<math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mfrac>
 									<mi>

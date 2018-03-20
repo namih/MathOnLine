@@ -7,13 +7,18 @@
 	<p>Encuentra un número que multiplicado por si mismo nos de 25:</p>
 	<div class="table-responsive">
 	<input type="text" id="num1"/> <label> X </label> <input type="text" id="num2"/> <label> = 25</label>
+	<br />
+	<div id="tex" style="display: none">
+	<p>Decimos que 5 es la <b>la raíz cuadrada</b> de 25, que se expresa como: </p>
+	<math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>25</mn></msqrt><mo>=</mo><mn>5</mn></math>
+	</div>
+	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar30();" value="Verificar" />
 	</div>
-	<br /><br /><br />
-	<div id="correcta" style="display: none" class="alert alert-success">
-	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
-	</div>
-	<div id="error" style="display: none" class="alert alert-warning">
-	 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
-	</div> 
+	<br />
+<div id="correcta" style="display: none" class="alert alert-success">
+ 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 </div>
+<div id="error" style="display: none" class="alert alert-warning">
+ 		<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+</div> 

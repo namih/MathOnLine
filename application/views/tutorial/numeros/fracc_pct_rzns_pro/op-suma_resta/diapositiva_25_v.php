@@ -2,11 +2,11 @@
 
 <div class="container-fluid">
 	<div class=" col-lg-12 col-md-12  col-xs-12">
-		<p align="justify">¿Cómo escribirías el número <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math> como fracción?</p>	
+		<p align="center">¿Cómo escribirías el número <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math> como fracción?</p>	
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
-				<tr align="center">
-						<td align="center"><p>¿Cuántos cuartos hay en un entero? </p> </p></td>
+				<tr align="left">
+						<td ><p align="left">¿Cuántos cuartos hay en un entero? </p> </td>
 							<td><h3><math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mfrac>
 									<mi>
@@ -122,7 +122,7 @@
 					</tr>
 				</table>
 			</div>
-			<p>Observa que para escribir el número mixto como fracción podemos sumar las partes correspondientes a los enteros y la fracción que forma el número mixto (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math>). Para obtener las
+			<p align="left">Observa que para escribir el número mixto como fracción podemos sumar las partes correspondientes a los enteros y la fracción que forma el número mixto (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac></math>). Para obtener las
           partes correspondientes podemos multiplicar el número de enteros (12) por el número de partes que hay en un entero (<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>4</mn></mfrac></math>) .</p> 
 	</div>
 </div>

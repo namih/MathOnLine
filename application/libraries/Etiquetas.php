@@ -72,6 +72,14 @@ class Etiquetas{
 						'submenu'=>array()
 						),
 					5=>array(
+						'nombre'=>'Usuarios',
+						'id'=>'opt_admin_users',
+						'href'=>base_url().'administrador_usuarios',
+						'onclick'=>'',
+						'clase'=>'',
+						'submenu'=>array()
+						),
+					6=>array(
 						'nombre'=>'Estadisticas',
 						'id'=>'opt_admin_estadisticas',
 						'href'=>'',
@@ -79,7 +87,7 @@ class Etiquetas{
 						'clase'=>'',
 						'submenu'=>array()
 						),
-					6=>array(
+					7=>array(
 						'nombre'=>'<span class="glyphicon glyphicon-user"> </span>',
 						'id'=>'',
 						'href'=>'',

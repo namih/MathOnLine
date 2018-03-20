@@ -9,7 +9,7 @@ function valida_factor(factor1,factor2){
 		document.getElementById("base"+(factor1+1)).value=0;
 	}else{
 	var modu=factor/num;
-	var truk =this.trunc(modu,3);
+	var truk =this.trunc(modu,4);
 	document.getElementById("base"+(factor1+1)).value=truk;
 	}
 }
@@ -37,6 +37,7 @@ function verificar(){
 	var numeros = [2,3];
 	var num1= new Number($("#num1").val());
 	var num2= new Number($("#num2").val());
+	var num3= new Number($('#mcd').val());
 	
 	if (isNaN(num1)||isNaN(num2)) {
 	error("Favor de ingresar solo números.");	
@@ -47,7 +48,58 @@ function verificar(){
 		var tamanio=this.eliminateDuplicates(array_order);
 		
 		if(tamanio.length == 2){
-			if(this.compara_array(array_order,numeros)){
+			if(this.compara_array(array_order,numeros)&& num3 ==6){
+			correcto("El ejercicio se realizo satisfactoriamente.");
+			this.clean_imput();
+			
+			}else{
+			error("Favor de repetir nuevamente.");
+			this.clean_imput();
+			}
+		}else{
+			error("Los valores no deben de repetirse.");
+			this.clean_imput();
+		}
+	}
+	
+}
+/**
+ * 
+ */
+function verificar12(){
+		var num1= new Number($("#cuadros").val());
+		var num2= new Number($("#cm").val());
+		if (num1 != ''){
+			if (num1 == 24 && num2==32 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ *
+ * 
+ */
+function verificar_17(){
+	var numeros = [2,3];
+	var num1= new Number($("#num1").val());
+	var num2= new Number($("#num2").val());
+	var num3= new Number($('#mcd_1').val());
+	
+	if (isNaN(num1)||isNaN(num2)) {
+	error("Favor de ingresar solo números.");	
+	this.clean_imput();
+	}else{
+		var array_num =[num1,num2];
+		var array_order=array_num.sort(function(a, b){return a-b});
+		var tamanio=this.eliminateDuplicates(array_order);
+		
+		if(tamanio.length == 2){
+			if(this.compara_array(array_order,numeros)&& num3 ==12){
 			correcto("El ejercicio se realizo satisfactoriamente.");
 			this.clean_imput();
 			
@@ -80,11 +132,85 @@ function verificar18(){
 /**
  * 
  */
+function verificar22(){
+	var num1= new Number($("#num5").val());
+	var num2= new Number($("#num15").val());
+	
+	if (num1 !='' && num2 !='') {
+		document.getElementById("min").innerHTML='='+(5*num1);
+		document.getElementById("min_1").innerHTML='='+(15*num2);
+		if (num1 == 3 && num2 ==1) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+			
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
+ */
+function valida23(){	
+	var num11 = new Number($("#bas_1").val());
+	var num22 = new Number($("#exp1").val());
+	var num33 = new Number($("#bas_2").val());
+	var num44 = new Number($("#exp2").val());
+	var num55 = new Number($("#bas_3").val());
+	var num66 = new Number($("#exp3").val());
+	var num77 = new Number($("#bas_4").val());
+	var num88 = new Number($("#exp4").val());
+	
+	if(num11!='' && num22!='' && num33!= '' && num44!= '' && num55!='' && num66!='' && num77!= '' && num88!= ''){
+		if (num11==2 && num22 == 3 && num33 == 3 && num44 ==1 && num55==2 && num66==1 && num77==3 && num88==3) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+			
+		}else{
+			error("Favor de repetir el ejercicio.");
+			}
+	}else{
+		error("Favor  de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
+function verificar18_1(){
+	var num1= new Number($("#num2").val());
+	if (num1 !='') {
+		if (num1 == 6) {
+			correcto("El ejercicio se realizo satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
+function verificar18_2(){
+	var num1= new Number($("#num3").val());
+	if (num1 !='') {
+		if (num1 == 14) {
+			correcto("El ejercicio se realizo satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
 function verificar20(){
 	var num1= document.getElementById("minimo").value;
 	if (num1 !='') {
-		if (num1.trim() == "30,60" || num1.trim() == "60,30") {
-			correcto("El ejercicio se realizo satisfactoriamente.");
+		if (num1.trim() ==30) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
 		}else{
 				error("Favor de repetir nuevamente.");
 		}
@@ -100,7 +226,58 @@ function verificar24(){
 	var num2= document.getElementById("mcm").value;
 	
 	if (num1 !='' && num2 !='') {
-		if (num1 == 2 && num2 == 2) {
+		if (num1 == 4 && num2 == 12) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
+function verificar25(){
+	var num1= document.getElementById("seg").value;
+
+	if (num1 !='') {
+		if (num1 == 150) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
+function verificar26(){
+	var num1= document.getElementById("cm").value;
+	var num2= document.getElementById("pedazos").value;
+	
+	if (num1 !='' && num2 != '') {
+		if (num1 == 4 && num2==133) {
+			correcto("El ejercicio se realizó satisfactoriamente.");
+		}else{
+				error("Favor de repetir nuevamente.");
+		}
+	}else{
+			error("Favor de ingresar los datos");
+	}
+}
+/**
+ * 
+ */
+function verificar27(){
+	var num1 = new Number($("#1").val());
+	var num2 = new Number($("#2").val());
+	var num3 = new Number($("#3").val());
+	var num4 = new Number($("#4").val());
+	if (num1 !='' && num2 != '' && num3 !='' && num4 != '') {
+		if (num1 == 138 && num2==150 && num3==174  && num4==186 ) {
 			correcto("El ejercicio se realizó satisfactoriamente.");
 		}else{
 				error("Favor de repetir nuevamente.");
@@ -121,6 +298,50 @@ function verificar28(){
 			res =num1*num1;
 			document.getElementById("4").value =res;
 			if (res == 49) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}
+/**
+ * 
+ */
+function verificar28_1(){
+		var num1= new Number($("#5").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("6").value =num1;
+			document.getElementById("7").value =num1;
+			res =num1*num1;
+			document.getElementById("8").value =res;
+			if (res == 144) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}
+/**
+ * 
+ */
+function verificar28_2(){
+		var num1= new Number($("#9").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("10").value =num1;
+			document.getElementById("11").value =num1;
+			res =num1*num1;
+			document.getElementById("12").value =res;
+			if (res == 36) {
 				correcto("El ejercicio se realizó exitosamente");
 			}else{
 				error("Favor de volver a repetir");
@@ -157,6 +378,52 @@ function verificar29(){
 /**
  * 
  */
+function verificar29_1(){
+		var num1= new Number($("#6").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("7").value =num1;
+			document.getElementById("8").value =num1;
+			document.getElementById("9").value =num1;
+			res =num1*num1*num1;
+			document.getElementById("10").value =res;
+			if (res == 125) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar29_2(){
+		var num1= new Number($("#11").val());
+		var res ;
+		if (num1 != ''){
+			document.getElementById("12").value =num1;
+			document.getElementById("13").value =num1;
+			document.getElementById("14").value =num1;
+			res =num1*num1*num1;
+			document.getElementById("15").value =res;
+			if (res == 27) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+			
+			
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}			
+/**
+ * 
+ */
 function verificar30(){
 		var num1= new Number($("#num1").val());
 		var num2= new Number($("#num2").val());
@@ -164,6 +431,7 @@ function verificar30(){
 		
 		if (num1 != '' && num2 != ''){
 			if (num1 == 5 && num2 ==5) {
+				document.getElementById('tex').style.display='block';
 				correcto("El ejercicio se realizó exitosamente");
 			}else{
 				error("Favor de volver a repetir");
@@ -208,6 +476,7 @@ function verificar32(){
 			res =num1*num2*num3;
 			document.getElementById("4").value =res;
 			if (res == 64) {
+				document.getElementById('tex').style.display='block';
 				correcto("El ejercicio se realizó exitosamente");
 			}else{
 				error("Favor de volver a repetir");
@@ -289,6 +558,36 @@ function verificar36(){
 			error("Favor de ingresar los datos.");
 		}
 	}	
+/**
+ * 
+ */
+function verificar36_1(){
+		var num1= new Number($("#2").val());
+		if (num1 != ''){
+			if (num1 == 9) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}	
+/**
+ * 
+ */
+function verificar36_2(){
+		var num1= new Number($("#3").val());
+		if (num1 != ''){
+			if (num1 == 12) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+	}			
 	
 /**
  * 
@@ -327,7 +626,87 @@ function verificar38(){
 		}else{
 			error("Favor de ingresar los datos.");
 		}
+}	
+/**
+ * 
+ */
+function verificar38_1(){
+		var num1= new Number($("#2").val());
+		
+		if (num1 != ''){
+			if (num1 == 58 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ */
+function verificar38_2(){
+		var num1= new Number($("#3").val());
+		
+		if (num1 != ''){
+			if (num1 == 62 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
 }		
+/**
+ * 
+ */
+function verificar39(){
+		var num1= new Number($("#1").val());
+		
+		if (num1 != ''){
+			if (num1 == 8 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}		
+/**
+ * 
+ */
+function verificar39_1(){
+		var num1= new Number($("#2").val());
+		
+		if (num1 != ''){
+			if (num1 == 9 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ */
+function verificar39_2(){
+		var num1= new Number($("#3").val());
+		
+		if (num1 != ''){
+			if (num1 == 13 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}			
 /**
  * 
  */
@@ -343,7 +722,89 @@ function verificar40(){
 		}else{
 			error("Favor de ingresar los datos.");
 		}
-}		
+}	
+/**
+ * 
+ */
+function verificar40_1(){
+		var num1= new Number($("#2").val());
+		
+		if (num1 != ''){
+			if (num1 == 170 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ */
+function verificar40_2(){
+		var num1= new Number($("#3").val());
+		
+		if (num1 != ''){
+			if (num1 == 18 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}
+/**
+ * 
+ */
+function verificar41(){
+	var num1= new Number($("#num1").val());
+		
+		if (num1 != ''){
+			if (num1 == 144 ) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ */
+function verificar42(){
+		var num1= new Number($("#num1").val());
+		var num2= new Number($("#num2").val());
+		var num3= new Number($("#num3").val());
+		
+		if (num1 != '' && num2 != '' && num3 != ''){
+			if (num1 == 24 && num2==7 && num3==5) {
+				correcto("El ejercicio se realizó exitosamente");
+			}else{
+				error("Favor de volver a repetir");
+			}
+		}else{
+			error("Favor de ingresar los datos.");
+		}
+}	
+/**
+ * 
+ */
+function ejercicio2(){
+	document.getElementById('div_1').style.display='none';
+	document.getElementById('div_2').style.display='block';
+	
+}
+/**
+ * 
+ */
+function ejercicio3(){
+	document.getElementById('div_2').style.display='none';
+	document.getElementById('div_3').style.display='block';
+	
+}	
 /**
  * Metodo para eliminar los datos que se repiten en el arreglo 
  */

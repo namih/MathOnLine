@@ -1,5 +1,5 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
 <script type="text/javascript" charset="utf-8">
 	var applet0 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300	}, true);
 	window.addEventListener("load", function() { applet0.inject('applet_container0'); });
@@ -38,9 +38,9 @@
 				<div class="instruccion">
 				</div>
 				<div class="row">
-					<div align="left"><p><label>Ejemplo</label></p></div>
+					<div align="left"><p><label>Ejemplo 2</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="pregunta paso_0">
 								<p><b>¿Cómo podemos representar una recta en el plano cartesiano mediante una ecuación?</b></p>
 							</div><br>

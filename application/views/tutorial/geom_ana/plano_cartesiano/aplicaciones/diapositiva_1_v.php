@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/plano_cartesiano/aplicaciones/distancia.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
-	var applet = new GGBApplet({filename: base_url+"statics/ggb/dist_punto_d14.ggb","showToolbar":false, height: 500, "showMenuBar": false}, true);
+	var applet = new GGBApplet({filename: base_url+"statics/ggb/dist_punto_d24.ggb","showToolbar":false, height: 500, "showMenuBar": false}, true);
 	window.addEventListener("load", function() {
         applet.inject('applet_container');	
     });
@@ -30,7 +30,7 @@
 	</div>
 </div>
 <br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar3();" value="Verificar" />	
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar1();" value="Verificar" />	
 
 <div id="correcta" style="display: none" class="alert alert-success">
 	 	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 

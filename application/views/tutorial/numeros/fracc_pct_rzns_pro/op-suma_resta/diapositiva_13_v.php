@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Suma las fracciones con denominador común, es decir, con el mismo denominador. 
+		<p align="justify">Suma las fracciones convirtiédolas en fracciones con denominador común, es decir, con el mismo denominador. 
 			               Si es posible simplifica tu resultado. Debes escribir en el resultado, una fracción irreducible, es decir, que ya no pueda simplificarse.</p>
 		
 	<div class=" col-lg-12 col-md-12  col-xs-12">
@@ -26,14 +26,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
@@ -48,14 +48,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_13_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>

@@ -19,6 +19,7 @@ function valida(){
  * Metodo para validar que los datos ingresados sean de acuerdo a lo solicitado
  */
 function valida21(){	
+	
 	var res  =  $('input[name="optradio"]:checked').val();
 	
 	if (res=='N') {
@@ -31,7 +32,55 @@ function valida21(){
 		error("Selecciona una de las opciones disponibles.");
 	}
 }
-/*
+
+function valida21_1(){
+	
+	var res  =  $('input[name="optradio_2"]:checked').val();
+	
+	if (res=='N') {
+		correcto("Correcto");
+	}else if (res == 'S') {
+		error("Favor de repetir el ejercicio");
+	}
+	
+	if (res!='S' && res!='N' ){
+		error("Selecciona una de las opciones disponibles.");
+	}
+}
+
+function valida21_2(){
+	
+	var res  =  $('input[name="optradio_3"]:checked').val();
+	
+	if (res=='S') {
+		correcto("Correcto");
+	}else if (res == 'N') {
+		error("Favor de repetir el ejercicio");
+	}
+	
+	if (res!='S' && res!='N' ){
+		error("Selecciona una de las opciones disponibles.");
+	}
+}
+
+/**
+ * 
+ */
+function ejercicio2(){
+	document.getElementById('divi_1').style.display='none';
+	document.getElementById('divi_2').style.display='block';
+	
+}
+/**
+ * 
+ */
+function ejercicio3(){
+	document.getElementById('divi_2').style.display='none';
+	document.getElementById('divi_3').style.display='block';
+	
+}
+
+/**
  * 
  */
 function verificar(){

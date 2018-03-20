@@ -34,7 +34,7 @@ function verificar(){
 	if (cont==0) {
 		correcto("El ejercicio se realizo satisfactoriamente.");
 	}else{
-		error("Favor de ingresar los datos");
+		error("Favor de verificar");
 	}
 }
 

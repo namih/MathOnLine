@@ -1,7 +1,18 @@
 var ia = 1;
 var ib = 1;
-var valor_a = false;
-var valor_b = false;
+var ia_uno = 1;
+var ib_uno = 1;
+var ia_dos = 1;
+var ib_dos = 1;
+
+var bandera_35_a = false;
+var bandera_35_b = false;
+var bandera_35_uno_a = false;
+var bandera_35_uno_b = false;
+var bandera_35_dos_a = false;
+var bandera_35_dos_b = false;
+
+var result_frac = 0;
 
 function acierto () {
   	$('#correcta').show();
@@ -15,6 +26,18 @@ function error () {
 	$("#error").fadeTo(2000, 500).slideUp(500, function(){
 	$("#error").slideUp(500);
 	});
+}
+
+function mostrar_segundo () {
+  	document.getElementById('first').style.display = 'none';
+  	document.getElementById('second').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function mostrar_tercero () {
+  	document.getElementById('second').style.display = 'none';
+  	document.getElementById('third').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
 }
 
 function incrementar_3 () {
@@ -77,6 +100,7 @@ function incrementar_3 () {
 		case 12:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_12.png";
+			ia++;
 		    break;	
 	}
 
@@ -89,64 +113,65 @@ function decrementar_3 () {
 	console.log(ia);
   	switch (ia) {
   		
-		case 12:
+		case 13:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>11</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_11.png";
 			ia--;
 			break;
-		case 11:
+		case 12:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_10.png";
 			ia--;
 			break;
-		case 10:
+		case 11:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_9.png";
 			ia--;
 			break;
-		case 9:
+		case 10:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_8.png";
 			ia--;
 			break;
-		case 8:
+		case 9:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_7.png";
 			ia--;
 			break;
-		case 7:
+		case 8:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_6.png";
 			ia--;
 			break;
-		case 6:
+		case 7:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_5.png";
 			ia--;
 			break;
-		case 5:
+		case 6:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_4.png";
 			ia--;
 			break;
-		case 4:
+		case 5:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_3.png";
 			ia--;
 			break;
-		case 3:
+		case 4:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_2.png";
 			ia--;
 			break;	
-		case 2:
+		case 3:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_1.png";
 			ia--;
 			break;	
-		case 1:
+		case 2:
 			document.getElementById("total").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("doce").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos.png";
+			ia--;
 			break;	
 	}
 
@@ -154,11 +179,152 @@ function decrementar_3 () {
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
+function incrementar_uno_3 () {
+  	  	switch (ia_uno) {
+		case 1:
+			document.getElementById("total1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>';
+			document.getElementById("medios").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_medio_rojo.png";
+			ia_uno++;
+			break;
+		case 2:
+			document.getElementById("total1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>2</mn></mfrac></math>';
+			document.getElementById("medios").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_medios_rojo.png";
+			ia_uno++;
+			break;
+		
+		}
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_uno_3 () {
+	console.log(ia_uno);
+  	switch (ia_uno) {
+  		
+		
+		case 3:
+			document.getElementById("total1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>';
+			document.getElementById("medios").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_medio_rojo.png";
+			ia_uno--;
+			break;	
+		case 2:
+			document.getElementById("total1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>2</mn></mfrac></math>';
+			document.getElementById("medios").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_octavos.png";
+			ia_dos--;
+			break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_dos_3 () {
+  	  	switch (ia_dos) {
+		case 1:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_8_c.png";
+			ia_dos++;
+			break;
+		case 2:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/2_8_c.png";
+			ia_dos++;
+			break;
+		case 3:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/3_8_c.png";
+			ia_dos++;
+			break;
+		case 4:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_8_c.png";
+			ia_dos++;
+			break;
+		case 5:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/5_8_c.png";
+			ia_dos++;
+			break;
+		case 6:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_8_c.png";
+			ia_dos++;
+			break;
+		case 7:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/7_8_c.png";
+			ia_dos++;
+			break;
+		case 8:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_8_c.png";
+			ia_dos++;
+			break;
+			
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_dos_3 () {
+	console.log(ia_dos);
+  	switch (ia_dos) {
+  		
+		
+		case 9:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/7_8_c.png";
+			ia_dos--;
+			break;
+		case 8:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_8_c.png";
+			ia_dos--;
+			break;
+		case 7:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/5_8_c.png";
+			ia_dos--;
+			break;
+		case 6:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_8_c.png";
+			ia_dos--;
+			break;
+		case 5:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/3_8_c.png";
+			ia_dos--;
+			break;
+		case 4:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/2_8_c.png";
+			ia_dos--;
+			break;	
+		case 3:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_8_c.png";
+			ia_dos--;
+			break;	
+		case 2:
+			document.getElementById("total2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("ocho").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/0_8_c.png";
+			ia_dos--;
+			break;	
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
 function fraccion_4 () {
   	var numerador = document.getElementById('numerador').value;
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
-		if (numerador == 8 && denominador == 8) {
+  		result_frac = numerador / denominador;
+		if (parseFloat(result_frac) == 1) {
   			document.getElementById("vacio").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_octavos_red.png";
   			acierto();	
   		}else{
@@ -168,6 +334,36 @@ function fraccion_4 () {
   	};
 }
 
+function fraccion_uno_4 () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		if (parseFloat(result_frac) == 0.8) {
+  			document.getElementById("vacio_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_4_5.png";
+  			acierto();	
+  		}else{
+  			document.getElementById("vacio_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_0_4.png";
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_dos_4 () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		if (parseFloat(result_frac) == 0.5) {
+  			document.getElementById("vacio_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_2_4.png";
+  			acierto();	
+  		}else{
+  			document.getElementById("vacio_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_0_4.png";
+  			error();
+  		};
+  	};
+}
 
 function incrementar_5_a () {
 	console.log(ia);
@@ -486,7 +682,7 @@ function incrementar_6_b () {
 			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("quince_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_quinceavos_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_quinceavos.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
 			ib++;
 			break;
 		case 3:
@@ -558,10 +754,7 @@ function decrementar_6_b () {
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_quintos.png";
 			ib--;
 			break;
-			
-			
-	
-	}
+		}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
@@ -714,7 +907,8 @@ function fraccion_7 () {
   	var numerador = document.getElementById('numerador').value;
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
-		if (numerador == 9 && denominador == 6) {
+		result_frac = numerador / denominador;
+		if (parseFloat(result_frac) == 1.5) {
   			acierto();	
   		}else{
   			error();
@@ -839,7 +1033,8 @@ function fraccion_8 () {
   	var numerador = document.getElementById('numerador').value;
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
-		if (numerador == 11 && denominador == 6) {
+		result_frac = numerador / denominador;
+		if (parseFloat(result_frac) == 1.833333333) {
   			acierto();
   		}else{
   			error();
@@ -847,35 +1042,15 @@ function fraccion_8 () {
   	};
 }
 
-function fraccion_9_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 7 && denominador_a == 14) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
-function fraccion_9_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 6 && denominador_b == 14) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_9_c () {
-  	var numerador_c = document.getElementById('numerador_c').value;
-  	var denominador_c = document.getElementById('denominador_c').value;
-  	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 13 && denominador_c == 14) {
+  	var numerador = document.getElementById('numerador_c').value;
+  	var denominador = document.getElementById('denominador_c').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		
+		if (parseFloat(result_frac) == 0.9285714285714286) {
   			acierto();	
   		}else{
   			error();
@@ -883,35 +1058,15 @@ function fraccion_9_c () {
   	};
 }
 
-function fraccion_10_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 15 && denominador_a == 20) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
-function fraccion_10_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 8 && denominador_b == 20) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_10_c () {
-  	var numerador_c = document.getElementById('numerador_c').value;
-  	var denominador_c = document.getElementById('denominador_c').value;
-  	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 23 && denominador_c == 20) {
+  	var numerador = document.getElementById('numerador_c').value;
+  	var denominador = document.getElementById('denominador_c').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		
+		if (parseFloat(result_frac) == 1.15) {
   			acierto();
   		}else{
   			error();
@@ -919,35 +1074,78 @@ function fraccion_10_c () {
   	};
 }
 
-function fraccion_11_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 10 && denominador_a == 20) {
-  			acierto();	
+
+
+function fraccion_uno_10_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		
+		if (parseFloat(result_frac) == 0.65) {
+  			acierto();
   		}else{
   			error();
   		};
   	};
 }
 
-function fraccion_11_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 16 && denominador_b == 20) {
-  			acierto();	
+
+
+function fraccion_dos_10_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		
+		if (parseFloat(result_frac) == 1.00) {
+  			acierto();
   		}else{
   			error();
   		};
   	};
 }
+
+
 
 function fraccion_11_c () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 26 && denominador_c == 20) {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.3) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+
+function fraccion_uno_11_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.8333333333333334) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_dos_11_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.6666666666666666) {
   			acierto();	
   		}else{
   			error();
@@ -959,7 +1157,9 @@ function fraccion_12 () {
   	var numerador = document.getElementById('numerador').value;
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
-		if (numerador == 10 && denominador == 13) {
+		result_frac = numerador / denominador;
+		
+		if (parseFloat(result_frac) == 1.3) {
   			acierto();	
   		}else{
   			error();
@@ -967,35 +1167,15 @@ function fraccion_12 () {
   	};
 }
 
-function fraccion_13_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 5 && denominador_a == 20) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
-function fraccion_13_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 8 && denominador_b == 20) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_13_c () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 13 && denominador_c == 20) {
+		result_frac = numerador_c / denominador_c;
+		
+		if (parseFloat(result_frac) == 0.65) {
   			acierto();	
   		}else{
   			error();
@@ -1003,35 +1183,15 @@ function fraccion_13_c () {
   	};
 }
 
-function fraccion_14_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 18 && denominador_a == 30) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
-function fraccion_14_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 25 && denominador_b == 30) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_14_c () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 43 && denominador_c == 30) {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.4333333333333333) {
   			acierto();
   		}else{
   			error();
@@ -1043,7 +1203,9 @@ function fraccion_15 () {
   	var numerador = document.getElementById('numerador').value;
   	var denominador = document.getElementById('denominador').value;
   	if (numerador != '' && denominador != '') {
-		if (numerador == 9 && denominador == 6) {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.5) {
   			acierto();	
   		}else{
   			error();
@@ -1113,35 +1275,64 @@ function fraccion_mixta_18 () {
   	};
 }
 
-function fraccion_19_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 2 && denominador_a == 6) {
-  			acierto();	
+function decimal_18_uno () {
+  	var decimal = document.getElementById('decimal_uno').value;
+  	  	if (decimal != '') {
+			if (decimal == 3.333) {
+  				acierto();	
+  			}else{
+	  			error();
+  			};	
+  		};
+}
+
+function fraccion_mixta_18_uno () {
+	var entero = document.getElementById('entero_uno').value;
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 3 && numerador == 1 && denominador == 3) {
+  			acierto();
   		}else{
   			error();
   		};
   	};
 }
 
-function fraccion_19_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 3 && denominador_b == 6) {
-  			acierto();	
+function decimal_18_dos () {
+  	var decimal = document.getElementById('decimal_dos').value;
+  	  	if (decimal != '') {
+			if (decimal == 1.500) {
+  				acierto();	
+  			}else{
+	  			error();
+  			};	
+  		};
+}
+
+function fraccion_mixta_18_dos () {
+	var entero = document.getElementById('entero_dos').value;
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if ((entero == 1 && numerador == 3 && denominador == 6) || (entero == 1 && numerador == 1 && denominador == 2)) {
+  			acierto();
   		}else{
   			error();
   		};
   	};
 }
+
+
+
 
 function fraccion_19_c () {
-  	var numerador_c = document.getElementById('numerador_c').value;
-  	var denominador_c = document.getElementById('denominador_c').value;
-  	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 5 && denominador_c == 6) {
+  	var numerador = document.getElementById('numerador_c').value;
+  	var denominador = document.getElementById('denominador_c').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.8333333333333334) {
   			acierto();
   		}else{
   			error();
@@ -1149,40 +1340,96 @@ function fraccion_19_c () {
   	};
 }
 
-function fraccion_20_a () {
-  	var numerador_a = document.getElementById('numerador_a').value;
-  	var denominador_a = document.getElementById('denominador_a').value;
-  	if (numerador_a != '' && denominador_a != '') {
-		if (numerador_a == 30 && denominador_a == 40) {
-  			acierto();	
-  		}else{
-  			error();
-  		};
-  	};
-}
 
-function fraccion_20_b () {
-  	var numerador_b = document.getElementById('numerador_b').value;
-  	var denominador_b = document.getElementById('denominador_b').value;
-  	if (numerador_b != '' && denominador_b != '') {
-		if (numerador_b == 24 && denominador_b == 40 ) {
-  			acierto();
-  		}else{
-  			error();
-  		};
-  	};
-}
 
 function fraccion_20_c () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
-		if (numerador_c == 54 && denominador_c == 40) {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.35) {
   			acierto();	
   		}else{
   			error();
   		};
   	};
+}
+
+function fraccion_20_uno () {
+  	var numerador_c = document.getElementById('numerador_c_uno').value;
+  	var denominador_c = document.getElementById('denominador_c_uno').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.4166666666666667) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_20_dos () {
+  	var numerador_c = document.getElementById('numerador_c_dos').value;
+  	var denominador_c = document.getElementById('denominador_c_dos').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		result_frac = numerador_c / denominador_c;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.75) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function mostrar_mixto_20 () {
+  	document.getElementById('fraccion').style.display = 'none';
+  	document.getElementById('mixto').style.display = 'inline-block';
+  	document.getElementById('mix').style.display = 'none';
+  	document.getElementById('frac').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
+}
+
+function mostrar_fraccion_20 () {
+  	document.getElementById('mixto').style.display = 'none';
+  	document.getElementById('fraccion').style.display = 'inline-block';
+  	document.getElementById('frac').style.display = 'none';
+  	document.getElementById('mix').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
+}
+
+function mostrar_mixto_20_uno () {
+  	document.getElementById('fraccion_uno').style.display = 'none';
+  	document.getElementById('mixto_uno').style.display = 'inline-block';
+  	document.getElementById('mix_uno').style.display = 'none';
+  	document.getElementById('frac_uno').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
+}
+
+function mostrar_fraccion_20_uno () {
+  	document.getElementById('mixto_uno').style.display = 'none';
+  	document.getElementById('fraccion_uno').style.display = 'inline-block';
+  	document.getElementById('frac_uno').style.display = 'none';
+  	document.getElementById('mix_uno').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
+}
+
+function mostrar_mixto_20_dos () {
+  	document.getElementById('fraccion_dos').style.display = 'none';
+  	document.getElementById('mixto_dos').style.display = 'inline-block';
+  	document.getElementById('mix_dos').style.display = 'none';
+  	document.getElementById('frac_dos').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
+}
+
+function mostrar_fraccion_20_dos () {
+  	document.getElementById('mixto_dos').style.display = 'none';
+  	document.getElementById('fraccion_dos').style.display = 'inline-block';
+  	document.getElementById('frac_dos').style.display = 'none';
+  	document.getElementById('mix_dos').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
 }
 
 function entero_21 () {
@@ -1738,7 +1985,7 @@ function decrementar_33_a () {
 		case 2:
 			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow></mfrac></math>';
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math>';
-			ia--;
+			
 			break;
 	}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
@@ -1964,7 +2211,7 @@ function correcto_34_bbb () {
 }
 
 function incrementar_35_a () {
-	console.log(ia);
+	
   	switch (ia) {
   		
 		case 1:
@@ -1972,6 +2219,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 2:
@@ -1979,6 +2227,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 3:
@@ -1986,6 +2235,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 4:
@@ -1993,6 +2243,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 5:
@@ -2000,6 +2251,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_a = true;
 			ia++;
 			break;
 		case 6:
@@ -2007,6 +2259,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 7:
@@ -2014,6 +2267,7 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		case 8:
@@ -2021,22 +2275,25 @@ function incrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>27</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciocho_veintisieteavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
+			bandera_35_a = false;
 			ia++;
 			break;
 		}
 
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-	
+	correcta_35();
 }
 
 function decrementar_35_a () {
+	
 	switch (ia) {
 		case 9:
 			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 8:
@@ -2044,6 +2301,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		
@@ -2052,6 +2310,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_a = true;
 			ia--;
 			break;
 		case 6:
@@ -2059,6 +2318,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_a = false;
 			ia--;
 			break;	
 		case 5:
@@ -2066,6 +2326,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 4:
@@ -2073,6 +2334,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 		case 3:
@@ -2080,6 +2342,7 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_a = false;
 			ia--;
 			break;
 			
@@ -2088,20 +2351,25 @@ function decrementar_35_a () {
 			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>';
 			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_azul.png";
 			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			bandera_35_a = false;
+			ia--;
 			break;
 			
 	}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
 
 function incrementar_35_b () {
+	
 	switch (ib) {
 		case 1:
 			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 2:
@@ -2109,6 +2377,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			bandera_35_b = true;
 			ib++;
 			break;
 		case 3:
@@ -2116,6 +2385,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_veinticuatroavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 4:
@@ -2123,6 +2393,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>30</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_treintavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		case 5:
@@ -2130,6 +2401,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>36</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_treintaiseisavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
@@ -2138,6 +2410,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>42</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_cuarentaidosavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 		
@@ -2146,6 +2419,7 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>48</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_cuarentaiochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
@@ -2154,12 +2428,14 @@ function incrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>54</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciocho_cincuentaicuatroavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cincuentaicuatroavos.png";
+			bandera_35_b = false;
 			ib++;
 			break;
 			
 	}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
 
 
@@ -2171,6 +2447,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>48</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_cuarentaiochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 			
@@ -2179,6 +2456,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>42</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_cuarentaidosavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 			
@@ -2187,6 +2465,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>36</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_treintaiseisavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;	
 		
@@ -2195,6 +2474,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>30</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_treintavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;
 		case 5:
@@ -2202,6 +2482,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_veinticuatroavos_v.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_b = false;
 			ib--;
 			break;	
 		case 4:
@@ -2209,6 +2490,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			bandera_35_b = true;
 			ib--;
 			break;
 		case 3:
@@ -2216,7 +2498,7 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_h.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
-			
+			bandera_35_b = false;
 			ib--;
 			break;
 		case 2:
@@ -2224,538 +2506,2948 @@ function decrementar_35_b () {
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
 			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_h_verde.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_sextos.png";
+			bandera_35_b = false;
+			ib--;
 			break;
 		}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35();
 }
-function incrementar_35a_a () {
-	console.log(ia);
-  	switch (ia) {
+function incrementar_35_uno_a () {
+	console.log(ia_uno);
+  	switch (ia_uno) {
   		
 		case 1:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_sextos.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 2:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 3:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_a = true;
+			ia_uno++;
 			break;
 		case 4:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_quinceavos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_quinceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 5:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 6:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 7:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_24_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_24_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		case 8:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>9</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>27</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/9_27_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
-			ia++;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>27</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/9_27_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
+			bandera_35_uno_a = false;
+			ia_uno++;
 			break;
 		}
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+		correcta_35_uno();
+	}
 
-	
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-	
-}
-
-function decrementar_35a_a () {
-	switch (ia) {
+function decrementar_35_uno_a () {
+	console.log(ia_uno);
+	switch (ia_uno) {
 		case 9:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_24_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_24_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;
 		case 8:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;
 		
 		case 7:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			bandera_35_a = false;
+			bandera_35_uno_a--;
 			break;
 		case 6:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_quinceavos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_quinceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_xv.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;	
 		case 5:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_uno_a = true ;
+			ia_uno--;
 			break;
 		case 4:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;
 		case 3:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_sextos.png";
-			ia--;
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;
 			
 		case 2:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_3_v_azul.png.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_3_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			bandera_35_uno_a = false;
+			ia_uno--;
 			break;
 			
 	}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_uno();
 }
 
-function incrementar_35a_b () {
-	switch (ib) {
+function incrementar_35_uno_b () {
+	console.log(ib_uno);
+	switch (ib_uno) {
 		case 1:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_octavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_octavos.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_octavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_octavos.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 		case 2:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_12_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_12_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_uno_b = true;
+			ib_uno++;
 			break;
 			
 		case 3:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_dieciseisavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciseisavos.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_dieciseisavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciseisavos.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 		case 4:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_veinteavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_veinteavos.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_veinteavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_veinteavos.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 		case 5:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_veinticuatroavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_veinticuatroavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 			
 		case 6:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiochoavos_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_28.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiochoavos_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_28.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 		
 		case 7:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_treintaidosavos_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_32.png";
-			ib++;
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_treintaidosavos_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_32.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
 			break;
 			
 		case 8:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>9</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>9</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>36</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/18_36_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_36.png";
+			bandera_35_uno_b = false;
+			ib_uno++;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_uno();
+}
+
+
+function decrementar_35_uno_b () {
+	console.log(ib_uno);
+	switch (ib_uno) {
+		case 9:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_treintaidosavos_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_32.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiochoavos_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_28.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_veinticuatroavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;	
+		
+		case 6:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_veinteavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_veinteavos.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;
+		case 5:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_dieciseisavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciseisavos.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;	
+		case 4:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_12_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
+			bandera_35_uno_b = true;
+			ib_uno--;
+			break;
+		case 3:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_octavos_h_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_octavos.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;
+		case 2:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>2</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_cuartos_v_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_cuartos.png";
+			bandera_35_uno_b = false;
+			ib_uno--;
+			break;
+		}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_uno();
+}
+function incrementar_35_dos_a () {
+	console.log(ia_dos);
+  	switch (ia_dos) {
+  		
+		case 1:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_12_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_12.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_18_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_18.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_24.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 4:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
+			bandera_35_dos_a = true;
+			ia_dos++;
+			break;
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>54</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/36_54_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_54.png";
+			bandera_35_dos_a = false;
+			ia_dos++;
+			break;
+		}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_dos();
+}
+
+function decrementar_35_dos_a () {
+	switch (ia_dos) {
+		case 9:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
+			bandera_35_a = false;
+			ia_dos--;
+			break;
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;
+		
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;	
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_24.png";
+			bandera_35_dos_a = true;
+			ia_dos--;
+			break;
+		case 4:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_18_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_18.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_12_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_12.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;
+			
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_6_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_6.png";
+			bandera_35_dos_a = false;
+			ia_dos--;
+			break;
+			
+	}
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_dos();
+}
+
+function incrementar_35_dos_b () {
+	switch (ib_dos) {
+		case 1:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_15_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_20_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/10_25_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_30_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			bandera_35_dos_b = true;
+			ib_dos++;
+			break;
+			
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/14_35_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+		
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_40_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>9</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>45</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/18_45_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_45.png";
+			bandera_35_dos_b = false;
+			ib_dos++;
+			break;
+			
+	}
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_dos();
+}
+
+
+function decrementar_35_dos_b () {
+	
+	switch (ib_dos) {
+		case 9:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_40_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/14_35_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_30_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			bandera_35_dos_b = true;
+			ib_dos--;
+			break;	
+		
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/10_25_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_20_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;	
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_15_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/2_5_h.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_5.png";
+			bandera_35_dos_b = false;
+			ib_dos--;
+			break;
+		}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	correcta_35_dos();
+}
+
+function correcta_35(){
+	if (bandera_35_a == true && bandera_35_b == true) {
+		document.getElementById('rest').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>1</mo><mn>18</mn></mfrac></math>';
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}else{
+		document.getElementById('rest').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>?</mo><mn>18</mn></mfrac></math>';
+	};
+}
+
+function correcta_35_uno(){
+	if (bandera_35_uno_a == true && bandera_35_uno_b == true) {
+		document.getElementById('rest_uno').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>-2</mo><mn>12</mn></mfrac></math>';
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}else{
+		document.getElementById('rest_uno').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>?</mo><mn>12</mn></mfrac></math>';
+	};
+}
+
+function correcta_35_dos(){
+	if (bandera_35_dos_a == true && bandera_35_dos_b == true) {
+		document.getElementById('rest_dos').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>8</mo><mn>30</mn></mfrac></math>';
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	}else{
+		document.getElementById('rest_dos').innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mo>?</mo><mn>30</mn></mfrac></math>';
+	};
+}
+
+function incrementar_36_a () {
+	
+	switch (ia) {
+		
+		case 1:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>14</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_14_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_14.png";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_21_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v21.png";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>28</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_28_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v28.png";
+			ia++;
+			break;
+			
+		case 4:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_35_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_35.png";
+			ia++;
+			break;
+			
+		case 5:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_24_42.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			ia++;
+			break;
+			
+		case 6:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>49</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_28_49.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_49.png";
+			ia++;
+			break;
+			
+		case 7:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>56</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_32_56.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_56.png";
+			ia++;
+			break;
+		
+		case 8:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>63</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_36_63.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_63.png";
+			ia++;
+			break;
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function decrementar_36_a () {
+	switch (ia) {
+		case 9:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>56</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_32_56.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_56.png";
+			ia--;
+			break;
+			
+		case 8:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>49</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_28_49.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_49.png";
+			ia--;
+			break;
+			
+		case 7:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_24_42.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			ia--;
+			break;
+			
+		case 6:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_35_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_35.png";
+			ia--;
+			break;
+			
+		case 5:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>28</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_28_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v28.png";
+			ia--;
+			break;	
+		case 4:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_21_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v21.png";
+			ia--;
+			break;
+		case 3:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>14</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_14_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_14.png";
+			ia--;
+			break;
+		case 2:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>7</mn></mfrac></math>';
+			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_7_v.png";
+			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_7.png";
+			ia--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_36_b () {
+	switch (ib) {
+		case 1:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_6_12.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
+			ib++;
+			break;
+		case 2:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_9_18.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			ib++;
+			break;
+		case 3:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_12_24.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
+			ib++;
+			break;
+		case 4:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_15_30.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			ib++;
+			break;
+			
+		case 5:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>36</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/18_36_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_36.png";
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_18_36.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
 			ib++;
 			break;
 			
-	}
-	
+		case 6:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_21_42.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
+			ib++;
+			break;
+			
+		case 7:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>48</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_24_48.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
+			ib++;
+			break;
+			
+		case 8:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>27</mn><mn>54</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_27_54.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cincuentaicuatroavos.png";
+			ib++;
+			break;
+		}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
 
-function decrementar_35a_b () {
+function decrementar_36_b () {
 	
 	switch (ib) {
 		case 9:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_treintaidosavos_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_32.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>48</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_24_48.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaiochoavos.png";
 			ib--;
 			break;
 			
 		case 8:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiochoavos_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_28.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>42</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_21_42.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_cuarentaidosavos.png";
 			ib--;
 			break;
 			
 		case 7:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>36</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_18_36.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintaiseisavos.png";
+			ib--;
+			break;
+			
+		case 6:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_15_30.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_treintavos.png";
+			ib--;
+			break;
+			
+		case 5:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_veinticuatroavos_h_verde.png";
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_12_24.png";
 			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_veinticuatroavos.png";
 			ib--;
 			break;	
-		
-		case 6:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_veinteavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_veinteavos.png";
+		case 4:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_9_18.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
 			ib--;
 			break;
-		case 5:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_dieciseisavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciseisavos.png";
-			ib--;
-			break;	
-		case 4:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
+		case 3:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
 			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_12_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos.png";
-			ib--;
-			break;
-		case 3:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_octavos_h_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_octavos.png";
-			
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_6_12.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_doceavos_h.png";
 			ib--;
 			break;
 		case 2:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>2</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_cuartos_v_verde.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_cuartos.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_3_6.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h2_sextos.png";
+			ib--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function fraccion_36 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 3 && denominador == 42) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function incrementar_36_uno_a () {
+	
+	switch (ia_uno) {
+		
+		case 1:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			ia_uno++;
+			break;
+		case 2:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			ia_uno++;
+			break;
+		case 3:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v2_doceavos.png";
+			ia_uno++;
+			break;
+			
+		case 4:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cinco_quinceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_quinceavos.png";
+			ia_uno++;
+			break;
+			
+		case 5:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			ia_uno++;
+			break;
+			
+		case 6:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			ia_uno++;
+			break;
+			
+		case 7:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_8_24.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			ia_uno++;
+			break;
+		
+		case 8:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>27</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_9_27.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
+			ia_uno++;
+			break;
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function decrementar_36_uno_a () {
+	switch (ia_uno) {
+		case 9:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_8_24.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			ia_uno--;
+			break;
+			
+		case 8:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/siete_veintiunavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			ia_uno--;
+			break;
+			
+		case 7:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_24_42.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			ia_uno--;
+			break;
+			
+		case 6:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			ia_uno--;
+			break;
+			
+		case 5:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_doceavos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v2_doceavos.png";
+			ia_uno--;
+			break;	
+		case 4:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/tres_novenos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			ia_uno--;
+			break;
+		case 3:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_sextos_v.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			ia_uno--;
+			break;
+		case 2:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
+			document.getElementById("division_uno_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_3_v_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			ia_uno--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_36_uno_b () {
+	console.log(ib_uno);
+	switch (ib_uno) {
+		case 1:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			ib_uno++;
+			break;
+		case 2:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_15_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			ib_uno++;
+			break;
+		case 3:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_20_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			ib_uno++;
+			break;
+		case 4:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/10_25_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			ib_uno++;
+			break;
+			
+		case 5:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_30_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			ib_uno++;
+			break;
+			
+		case 6:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/14_35_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			ib_uno++;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_40_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			ib_uno++;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>45</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/18_45_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_45.png";
+			ib_uno++;
 			break;
 		}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
-function incrementar_35b_a () {
+
+
+function decrementar_36_uno_b () {
+	
+	switch (ib_uno) {
+		case 9:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_40_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			ib_uno--;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/14_35_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			ib_uno--;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_30_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			ib_uno--;
+			break;
+			
+		case 6:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/10_25_h.png";
+			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			ib_uno--;
+			break;
+			
+		case 5:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_20_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			ib_uno--;
+			break;	
+		case 4:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/6_15_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			ib_uno--;
+			break;
+		case 3:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			ib_uno--;
+			break;
+		case 2:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>';
+			document.getElementById("division_uno_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_verde.png";
+			document.getElementById("porcion2_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_tercios.png";
+			ib_uno--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function fraccion_uno_36 () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == -1 && denominador == 15) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function incrementar_36_dos_a () {
+	
+	switch (ia_dos) {
+		
+		case 1:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			ia_dos++;
+			break;
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			ia_dos++;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v2_doceavos.png";
+			ia_dos++;
+			break;
+			
+		case 4:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_quinceavos.png";
+			ia_dos++;
+			break;
+			
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			ia_dos++;
+			break;
+			
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			ia_dos++;
+			break;
+			
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			ia_dos++;
+			break;
+		
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>27</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciocho_veintisieteavos_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintisieteavos_v.png";
+			ia_dos++;
+			break;
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function decrementar_36_dos_a () {
+	switch (ia_dos) {
+		case 9:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dieciseis_veinticuatroavos_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veinticuatroavos_v.png";
+			ia_dos--;
+			break;
+			
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>21</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/catorce_veintiunavos_v.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_veintiunavos_v.png";
+			ia_dos--;
+			break;
+			
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/doce_dieciochoavos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_dieciochoavos.png";
+			ia_dos--;
+			break;
+			
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/diez_quinceavos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_quinceavos.png";
+			ia_dos--;
+			break;
+			
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_doceavos_azul.png";
+			document.getElementById("porcion_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v2_doceavos.png";
+			ia_dos--;
+			break;	
+		case 4:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>9</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_novenos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_novenos.png";
+			ia_dos--;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/cuatro_sextos_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_sextos.png";
+			ia_dos--;
+			break;
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>';
+			document.getElementById("division_dos_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/dos_tercios_azul.png";
+			document.getElementById("porcion_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+			ia_dos--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_36_dos_b () {
+	console.log(ib_dos);
+	switch (ib_dos) {
+		case 1:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>10</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_6_10.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			ib_dos++;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_9_15.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			ib_dos++;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_12_20.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			ib_dos++;
+			break;
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_15_25.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			ib_dos++;
+			break;
+			
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_18_30.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			ib_dos++;
+			break;
+			
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_21_35.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			ib_dos++;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_24_40.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			ib_dos++;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>27</mn><mn>45</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_27_45.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_45.png";
+			ib_dos++;
+			break;
+		}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+
+function decrementar_36_dos_b () {
+	
+	switch (ib_dos) {
+		case 9:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>40</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_24_40.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_40.png";
+			ib_dos--;
+			break;
+			
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>35</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_21_35.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_35.png";
+			ib_dos--;
+			break;
+			
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>30</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_18_30.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_30.png";
+			ib_dos--;
+			break;
+			
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>25</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_15_25.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_25.png";
+			ib_dos--;
+			break;
+			
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>20</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_12_20.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_20.png";
+			ib_dos--;
+			break;	
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>15</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_9_15.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_15.png";
+			ib_dos--;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>10</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_6_10.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			ib_dos--;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>5</mn></mfrac></math>';
+			document.getElementById("division_dos_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/ih_3_5.png";
+			document.getElementById("porcion2_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_5.png";
+			ib_dos--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function fraccion_dos_36 () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 1 && denominador == 15) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function incrementar_37_a () {
 	console.log(ia);
-  	switch (ia) {
-  		
-		case 1:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_12_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_12.png";
-			ia++;
-			break;
-		case 2:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_18_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_18.png";
-			ia++;
-			break;
-		case 3:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_24.png";
-			ia++;
-			break;
-		case 4:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
-			ia++;
-			break;
-		case 5:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
-			ia++;
-			break;
-		case 6:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
-			ia++;
-			break;
-		case 7:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
-			ia++;
-			break;
-		case 8:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>54</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/36_54_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_54.png";
-			ia++;
-			break;
-		}
-
-	
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-	
-}
-
-function decrementar_35b_a () {
 	switch (ia) {
-		case 9:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
-			ia--;
+		case 1:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
+			ia++;
 			break;
-		case 8:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
-			ia--;
-			break;
-		
-		case 7:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
-			ia--;
-			break;
-		case 6:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
-			ia--;
-			break;	
-		case 5:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_24.png";
-			ia--;
-			break;
-		case 4:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_18_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_18.png";
-			ia--;
+		case 2:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>15</mn></mfrac></math>';
+			
+			ia++;
 			break;
 		case 3:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>12</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/8_12_v.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_12.png";
-			ia--;
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>20</mn></mfrac></math>';
+			ia++;
 			break;
-			
-		case 2:
-			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>6</mn></mfrac></math>';
-			document.getElementById("division_v").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_6.png";
-			document.getElementById("porcion").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_tercios.png";
+		case 4:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			ia++;
 			break;
-			
+		case 5:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			ia++;
+			break;
+		case 6:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			ia++;
+			break;
+		case 7:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			ia++;
+			break;
+		case 8:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>45</mn></mfrac></math>';
+			ia++;
+			break;
+		
 	}
+
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
-function incrementar_35b_b () {
+function decrementar_37_a () {
+	switch (ia) {
+		
+
+		case 9:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>40</mn></mfrac></math>';
+			ia--;
+			break;
+		case 8:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>35</mn></mfrac></math>';
+			ia--;
+			break;	
+		case 7:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>30</mn></mfrac></math>';
+			ia--;
+			break;
+		case 6:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>25</mn></mfrac></math>';
+			ia--;
+			break;
+		case 5:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>20</mn></mfrac></math>';
+			ia--;
+			break;	
+		case 4:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>15</mn></mfrac></math>';
+			ia--;
+			break;
+		case 3:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
+			ia--;
+			break;
+		case 2:
+			document.getElementById("frac1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res1").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac></math>';
+			ia--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_37_b () {
 	switch (ib) {
 		case 1:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
 			ib++;
 			break;
 		case 2:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/12_18_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
 			ib++;
 			break;
 		case 3:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_24.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
 			ib++;
 			break;
 		case 4:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
 			ib++;
 			break;
 		case 5:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
 			ib++;
 			break;
-			
 		case 6:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
+			ib++;
+			break;
+		case 7:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
+			ib++;
+			break;
+		case 8:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>36</mn></mfrac></math>';
 			ib++;
 			break;
 		
-		case 7:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
-			ib++;
-			break;
-			
-		case 8:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>9</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>54</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/36_54_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_54.png";
-			ib++;
-			break;
-			
 	}
-	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
 
 
-function decrementar_35b_b () {
+function decrementar_37_b () {
 	
 	switch (ib) {
 		case 9:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>8</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>32</mn><mn>48</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/32_48_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_48.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>32</mn></mfrac></math>';
 			ib--;
 			break;
-			
 		case 8:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>7</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>28</mn><mn>42</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/28_42_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_42.png";
-			ib--;
-			break;
-			
-		case 7:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>6</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>36</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/24_36_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_36.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>14</mn><mn>28</mn></mfrac></math>';
 			ib--;
 			break;	
-		
+		case 7:
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>24</mn></mfrac></math>';
+			ib--;
+			break;
 		case 6:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xD7;</mo><mn>4</mn></mrow><mrow><mn>5</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>20</mn><mn>30</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/20_30_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_v_30.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>10</mn><mn>20</mn></mfrac></math>';
 			ib--;
 			break;
 		case 5:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>4</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>16</mn><mn>24</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/16_24_v.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_24.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>16</mn></mfrac></math>';
 			ib--;
 			break;	
 		case 4:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>&#xD7;</mo><mn>6</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/seis_dieciochoavos_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_dieciochoavos.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>12</mn></mfrac></math>';
 			ib--;
 			break;
 		case 3:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>&#xD7;</mo><mn>5</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>10</mn></mfrac></math>';
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/4_10_h.png";
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_10.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>8</mn></mfrac></math>';
 			ib--;
 			break;
 		case 2:
-			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
-			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac></math>';
-			document.getElementById("division_h").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/2_5_h.png";
-			document.getElementById("porcion2").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/porcion_h_5.png";
+			document.getElementById("frac2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>5</mn></mrow></mfrac></math>';
+			document.getElementById("res2").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>4</mn></mfrac></math>';
+			ib--;
 			break;
-		}
+	}
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
+
+function mismo_denominador_37 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+		if ((numerador == -2 && denominador == 20) || (numerador == -1 && denominador == 10)) {
+			acierto();
+			document.getElementById("correcto").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_onceavo_vnaranja.png";
+			document.getElementById("correcto_1").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+		}else{
+			error();
+			document.getElementById("correcto").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			document.getElementById("correcto_1").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+		};
+	};
+}
+
+function incrementar_37_uno_a () {
+	console.log(ia_uno);
+	switch (ia_uno) {
+		case 1:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>14</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 2:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>21</mn></mfrac></math>';
+			
+			ia_uno++;
+			break;
+		case 3:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>28</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 4:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>35</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 5:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>42</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 6:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>49</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 7:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>56</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		case 8:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>27</mn><mn>63</mn></mfrac></math>';
+			ia_uno++;
+			break;
+		
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function decrementar_37_uno_a () {
+	switch (ia_uno) {
+		case 9:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>56</mn></mfrac></math>';
+			ia_uno--;
+			break;
+		case 8:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>21</mn><mn>49</mn></mfrac></math>';
+			ia_uno--;
+			break;	
+		case 7:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>42</mn></mfrac></math>';
+			ia_uno--;
+			break;
+		case 6:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>15</mn><mn>35</mn></mfrac></math>';
+			ia_uno--;
+			break;
+		case 5:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>28</mn></mfrac></math>';
+			ia_uno--;
+			break;	
+		case 4:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>21</mn></mfrac></math>';
+			ia_uno--;
+			break;
+		case 3:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>14</mn></mfrac></math>';
+			ia_uno--;
+			break;
+		case 2:
+			document.getElementById("frac1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>7</mn></mrow></mfrac></math>';
+			document.getElementById("res1_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>7</mn></mfrac></math>';
+			ia_uno--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_37_uno_b () {
+	switch (ib_uno) {
+		case 1:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 2:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 3:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 4:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 5:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 6:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 7:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		case 8:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>27</mn></mfrac></math>';
+			ib_uno++;
+			break;
+		
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+
+function decrementar_37_uno_b () {
+	
+	switch (ib_uno) {
+		case 9:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			ib_uno--;
+			break;
+		case 8:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			ib_uno--;
+			break;	
+		case 7:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			ib_uno--;
+			break;
+		case 6:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			ib_uno--;
+			break;
+		case 5:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			ib_uno--;
+			break;	
+		case 4:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			ib_uno--;
+			break;
+		case 3:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			ib_uno--;
+			break;
+		case 2:
+			document.getElementById("frac2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_uno").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
+			ib_uno--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function mismo_denominador_uno_37 () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+		if (numerador == 2 && denominador == 21) {
+			acierto();
+			document.getElementById("correcto_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_onceavo_vnaranja.png";
+			document.getElementById("correcto_1_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+		}else{
+			error();
+			document.getElementById("correcto_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			document.getElementById("correcto_1_uno").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+		};
+	};
+}
+
+function incrementar_37_dos_a () {
+	console.log(ia_dos);
+	switch (ia_dos) {
+		case 1:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>16</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>24</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>32</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 4:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>30</mn><mn>40</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>48</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>42</mn><mn>56</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>48</mn><mn>64</mn></mfrac></math>';
+			ia_dos++;
+			break;
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>54</mn><mn>72</mn></mfrac></math>';
+			ia_dos++;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function decrementar_37_dos_a () {
+	switch (ia_dos) {
+		case 9:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>48</mn><mn>64</mn></mfrac></math>';
+			ia_dos--;
+			break;
+		case 8:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>42</mn><mn>56</mn></mfrac></math>';
+			ia_dos--;
+			break;	
+		case 7:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>36</mn><mn>48</mn></mfrac></math>';
+			ia_dos--;
+			break;
+		case 6:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>30</mn><mn>40</mn></mfrac></math>';
+			ia_dos--;
+			break;
+		case 5:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>24</mn><mn>32</mn></mfrac></math>';
+			ia_dos--;
+			break;	
+		case 4:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>18</mn><mn>24</mn></mfrac></math>';
+			ia_dos--;
+			break;
+		case 3:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>12</mn><mn>16</mn></mfrac></math>';
+			ia_dos--;
+			break;
+		case 2:
+			document.getElementById("frac1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>6</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>8</mn></mrow></mfrac></math>';
+			document.getElementById("res1_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>8</mn></mfrac></math>';
+			ia_dos--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_37_dos_b () {
+	switch (ib_dos) {
+		case 1:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>9</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>9</mn><mn>27</mn></mfrac></math>';
+			ib_dos++;
+			break;
+		
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+
+function decrementar_37_dos_b () {
+	
+	switch (ib_dos) {
+		case 9:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>8</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>8</mn><mn>24</mn></mfrac></math>';
+			ib_dos--;
+			break;
+		case 8:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>7</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>21</mn></mfrac></math>';
+			ib_dos--;
+			break;	
+		case 7:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>6</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>6</mn><mn>18</mn></mfrac></math>';
+			ib_dos--;
+			break;
+		case 6:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>5</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>5</mn><mn>15</mn></mfrac></math>';
+			ib_dos--;
+			break;
+		case 5:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>4</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>12</mn></mfrac></math>';
+			ib_dos--;
+			break;	
+		case 4:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>9</mn></mfrac></math>';
+			ib_dos--;
+			break;
+		case 3:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>2</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>6</mn></mfrac></math>';
+			ib_dos--;
+			break;
+		case 2:
+			document.getElementById("frac2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>&#xA0;</mo><mo>&#xD7;</mo><mo>&#xA0;</mo><mn>3</mn></mrow></mfrac></math>';
+			document.getElementById("res2_dos").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
+			ib_dos--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function mismo_denominador_dos_37 () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+		if ((numerador == 10 && denominador == 24) || (numerador == 5 && denominador == 12)) {
+			acierto();
+			document.getElementById("correcto_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/un_onceavo_vnaranja.png";
+			document.getElementById("correcto_1_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+		}else{
+			error();
+			document.getElementById("correcto_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			document.getElementById("correcto_1_dos").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+		};
+	};
+}
+
+function fraccion_38_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if ((numerador_a == 4 && denominador_a == 6) || (numerador_a == 8 && denominador_a == 12) || (numerador_a == 12 && denominador_a == 18)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_38_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if ((numerador_b == 3 && denominador_b == 6) || (numerador_b == 6 && denominador_b == 12) || (numerador_b == 9 && denominador_b == 18)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_38_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if ((numerador_c == 1 && denominador_c == 6) || (numerador_c == 2 && denominador_c == 12) || (numerador_c == 3 && denominador_c == 18)) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 6 && denominador_a == 21) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 7 && denominador_b == 21)  {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == -1 && denominador_c == 21)  {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_uno_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if ((numerador_a == 4 && denominador_a == 8) || (numerador_a == 2 && denominador_a == 4)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_uno_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if ((numerador_b == 4 && denominador_b == 8) || (numerador_b == 2 && denominador_b == 4))  {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_uno_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if ((numerador_c == 0 && denominador_c == 8) ||(numerador_c == 0 && denominador_c == 4))  {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_dos_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if ((numerador_a == 6 && denominador_a == 12) || (numerador_a == 3 && denominador_a == 6)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_dos_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if ((numerador_b == 4 && denominador_b == 12) || (numerador_b == 2 && denominador_b == 6))  {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_39_dos_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if ((numerador_c == 2 && denominador_c == 12) || (numerador_c == 1 && denominador_c == 6))  {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 30 && denominador_a == 40) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 24 && denominador_b == 40)  {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if ((numerador_c == 6 && denominador_c == 40) || (numerador_c == 3 && denominador_c == 20))  {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_uno_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 8 && denominador_a == 8) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_uno_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 8 && denominador_b == 8)  {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_uno_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 0 && denominador_c == 8) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_dos_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if ((numerador_a == 10 && denominador_a == 25) || (numerador_a == 2 && denominador_a == 5)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_dos_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if ((numerador_b == 10 && denominador_b == 25) || (numerador_b == 2 && denominador_b == 5)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_40_dos_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if ((numerador_c == 0 && denominador_c == 25) || (numerador_c == 0 && denominador_c == 5)) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function entero_41 () {
+  	var entero = document.getElementById('entero').value;
+  	  	if (entero != '') {
+			if (entero == 1) {
+  				acierto();
+  			}else{
+  				error();
+  			};	
+  		};
+}
+
+function fraccion_41_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 2 && denominador_a == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_41_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 1 && denominador_b == 4 ) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_41_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 1 && denominador_c == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_41 () {
+	var entero = document.getElementById('entero_m').value;
+  	var numerador = document.getElementById('numerador_m').value;
+  	var denominador = document.getElementById('denominador_m').value;
+  	if (entero != '' && numerador != '' && denominador != '') {
+		if (entero == 1 && numerador == 1 && denominador == 4) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 5 && denominador_a == 2) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 7 && denominador_b == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numerador_42 () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var numerador_d = document.getElementById('numerador_d').value;
+   	if (numerador_c != '' && numerador_d != '') {
+		if (numerador_c == 5 && numerador_d == 7) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_c () {
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 10 && denominador_e == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_d () {
+  	var numerador_f = document.getElementById('numerador_f').value;
+  	var denominador_f = document.getElementById('denominador_f').value;
+  	if (numerador_f != '' && denominador_f != '') {
+		if (numerador_f == 7 && denominador_f == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_e () {
+  	var numerador_g = document.getElementById('numerador_g').value;
+  	var denominador_g = document.getElementById('denominador_g').value;
+  	if (numerador_g != '' && denominador_g != '') {
+		if (numerador_g == 3 && denominador_g == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function mostrar_mixto_42 () {
+  	document.getElementById('fraccion').style.display = 'none';
+  	document.getElementById('mixto').style.display = 'inline-block';
+  	document.getElementById('mix').style.display = 'none';
+  	document.getElementById('frac').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto']);
+}
+
+function mostrar_fraccion_42 () {
+  	document.getElementById('mixto').style.display = 'none';
+  	document.getElementById('fraccion').style.display = 'inline-block';
+  	document.getElementById('frac').style.display = 'none';
+  	document.getElementById('mix').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub,'fraccion']);
+}
+
+function fraccion_mixta_42 () {
+	var entero_h = document.getElementById('entero_h').value;
+  	var numerador_h = document.getElementById('numerador_h').value;
+  	var denominador_h = document.getElementById('denominador_h').value;
+  	if (entero_h != '' && numerador_h != '' && denominador_h != '') {
+		if (entero_h == 0 && numerador_h == 0 && denominador_h == 0) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_uno_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 11 && denominador_a == 3) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_uno_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 13 && denominador_b == 7) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numerador_42_uno () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var numerador_d = document.getElementById('numerador_uno_d').value;
+   	if (numerador_c != '' && numerador_d != '') {
+		if (numerador_c == 11 && numerador_d == 13) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_uno_c () {
+  	var numerador_e = document.getElementById('numerador_uno_e').value;
+  	var denominador_e = document.getElementById('denominador_uno_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 77 && denominador_e == 21) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_uno_d () {
+  	var numerador_f = document.getElementById('numerador_uno_f').value;
+  	var denominador_f = document.getElementById('denominador_uno_f').value;
+  	if (numerador_f != '' && denominador_f != '') {
+		if (numerador_f == 39 && denominador_f == 21) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_uno_e () {
+  	var numerador_g = document.getElementById('numerador_uno_g').value;
+  	var denominador_g = document.getElementById('denominador_uno_g').value;
+  	if (numerador_g != '' && denominador_g != '') {
+		if (numerador_g == 39 && denominador_g == 38) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function mostrar_mixto_42_uno () {
+  	document.getElementById('fraccion_uno').style.display = 'none';
+  	document.getElementById('mixto_uno').style.display = 'inline-block';
+  	document.getElementById('mix_uno').style.display = 'none';
+  	document.getElementById('frac_uno').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto_uno']);
+}
+
+function mostrar_fraccion_42_uno () {
+  	document.getElementById('mixto_uno').style.display = 'none';
+  	document.getElementById('fraccion_uno').style.display = 'inline-block';
+  	document.getElementById('frac_uno').style.display = 'none';
+  	document.getElementById('mix_uno').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'fraccion_uno']);
+}
+
+function fraccion_mixta_42_uno () {
+	var entero_h = document.getElementById('entero_h_uno').value;
+  	var numerador_h = document.getElementById('numerador_h_uno').value;
+  	var denominador_h = document.getElementById('denominador_h_uno').value;
+  	if (entero_h != '' && numerador_h != '' && denominador_h != '') {
+		if (entero_h == 1 && numerador_h == 1 && denominador_h == 38) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_dos_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 17 && denominador_a == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_dos_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 7 && denominador_b == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numerador_dos_42 () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var numerador_d = document.getElementById('numerador_dos_d').value;
+   	if (numerador_c != '' && numerador_d != '') {
+		if (numerador_c == 17 && numerador_d == 7) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_dos_c () {
+  	var numerador_e = document.getElementById('numerador_dos_e').value;
+  	var denominador_e = document.getElementById('denominador_dos_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 17 && denominador_e == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_dos_d () {
+  	var numerador_f = document.getElementById('numerador_dos_f').value;
+  	var denominador_f = document.getElementById('denominador_dos_f').value;
+  	if (numerador_f != '' && denominador_f != '') {
+		if (numerador_f == 7 && denominador_f == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42_dos_e () {
+  	var numerador_g = document.getElementById('numerador_dos_g').value;
+  	var denominador_g = document.getElementById('denominador_dos_g').value;
+  	if (numerador_g != '' && denominador_g != '') {
+		if (numerador_g == 10 && denominador_g == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function mostrar_mixto_42_dos () {
+  	document.getElementById('fraccion_dos').style.display = 'none';
+  	document.getElementById('mixto_dos').style.display = 'inline-block';
+  	document.getElementById('mix_dos').style.display = 'none';
+  	document.getElementById('frac_dos').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'mixto_dos']);
+}
+
+function mostrar_fraccion_42_dos () {
+  	document.getElementById('mixto_dos').style.display = 'none';
+  	document.getElementById('fraccion_dos').style.display = 'inline-block';
+  	document.getElementById('frac_dos').style.display = 'none';
+  	document.getElementById('mix_dos').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub, 'fraccion_dos']);
+}
+
+function fraccion_mixta_42_dos () {
+	var entero_h = document.getElementById('entero_h_dos').value;
+  	var numerador_h = document.getElementById('numerador_h_dos').value;
+  	var denominador_h = document.getElementById('denominador_h_dos').value;
+  	if (entero_h != '' && numerador_h != '' && denominador_h != '') {
+		if (entero_h == 2 && numerador_h == 2 && denominador_h == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_a () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 3 && denominador_a == 2) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_b () {
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 4 && denominador_b == 3) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_43_c () {
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 9 && denominador_c == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_d () {
+  	var numerador_d = document.getElementById('numerador_d').value;
+  	var denominador_d = document.getElementById('denominador_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 8 && denominador_d == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_e () {
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 1 && denominador_e == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_43 () {
+	var entero_f = document.getElementById('entero_f').value;
+  	var numerador_f = document.getElementById('numerador_f').value;
+  	var denominador_f = document.getElementById('denominador_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 0 && numerador_f == 1 && denominador_f == 6) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_a () {
+  	var numerador_a = document.getElementById('numerador_uno_a').value;
+  	var denominador_a = document.getElementById('denominador_uno_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 41 && denominador_a == 7) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_b () {
+  	var numerador_b = document.getElementById('numerador_uno_b').value;
+  	var denominador_b = document.getElementById('denominador_uno_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 9 && denominador_b == 5) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_43_uno_c () {
+  	var numerador_c = document.getElementById('numerador_uno_c').value;
+  	var denominador_c = document.getElementById('denominador_uno_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 205 && denominador_c == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_d () {
+  	var numerador_d = document.getElementById('numerador_uno_d').value;
+  	var denominador_d = document.getElementById('denominador_uno_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 63 && denominador_d == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_uno_e () {
+  	var numerador_e = document.getElementById('numerador_uno_e').value;
+  	var denominador_e = document.getElementById('denominador_uno_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 142 && denominador_e == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_43_uno () {
+	var entero_f = document.getElementById('entero_uno_f').value;
+  	var numerador_f = document.getElementById('numerador_uno_f').value;
+  	var denominador_f = document.getElementById('denominador_uno_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 4 && numerador_f == 2 && denominador_f == 35) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_a () {
+  	var numerador_a = document.getElementById('numerador_dos_a').value;
+  	var denominador_a = document.getElementById('denominador_dos_a').value;
+  	if (numerador_a != '' && denominador_a != '') {
+		if (numerador_a == 15 && denominador_a == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_b () {
+  	var numerador_b = document.getElementById('numerador_dos_b').value;
+  	var denominador_b = document.getElementById('denominador_dos_b').value;
+  	if (numerador_b != '' && denominador_b != '') {
+		if (numerador_b == 6 && denominador_b == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_43_dos_c () {
+  	var numerador_c = document.getElementById('numerador_dos_c').value;
+  	var denominador_c = document.getElementById('denominador_dos_c').value;
+  	if (numerador_c != '' && denominador_c != '') {
+		if (numerador_c == 15 && denominador_c == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_d () {
+  	var numerador_d = document.getElementById('numerador_dos_d').value;
+  	var denominador_d = document.getElementById('denominador_dos_d').value;
+  	if (numerador_d != '' && denominador_d != '') {
+		if (numerador_d == 6 && denominador_d == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43_dos_e () {
+  	var numerador_e = document.getElementById('numerador_dos_e').value;
+  	var denominador_e = document.getElementById('denominador_dos_e').value;
+  	if (numerador_e != '' && denominador_e != '') {
+		if (numerador_e == 9 && denominador_e == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_mixta_43_dos () {
+	var entero_f = document.getElementById('entero_dos_f').value;
+  	var numerador_f = document.getElementById('numerador_dos_f').value;
+  	var denominador_f = document.getElementById('denominador_dos_f').value;
+  	if (entero_f != '' && numerador_f != '' && denominador_f != '') {
+		if (entero_f == 2 && numerador_f == 1 && denominador_f == 4) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
 

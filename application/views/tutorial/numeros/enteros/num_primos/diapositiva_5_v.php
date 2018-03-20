@@ -4,9 +4,9 @@
 	<div   class="col-md-12  col-xs-12" id="box" align="center">
 		<p>Escribe los factores de cada número y determina si es un número primo</p>
 	</div>	
-	<div   class="col-xs-12  col-xs-12 table-responsive" id="tab">
+	<div   class="col-xs-12  col-xs-12 table-responsive div-border0" id="tab">
 		
-		 <table class="table table-striped table-bordered table-condensed " style="width:50%; margin:0 auto;" id="myTable">
+		 <table class="table table-striped table-bordered table-condensed" style="width:50%; margin:0 auto;" id="myTable">
             <thead>
                 <tr class="success">
                     <th>Número</th>
@@ -160,13 +160,13 @@
         </table>
 	</div>
 
-	<div  class="col-xs-12  col-xs-12 table-responsive">
+	<div  class="col-xs-12  col-xs-12 table-responsive div-border0">
 		<p>Los primeros cuatro números primos son:</p>
-		<input  type="text" id="prim1" value="" />
-		<input  type="text" id="prim2" value="" />
-		<input  type="text" id="prim3" value="" />
-		<input  type="text" id="prim4" value="" />
-		<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+		<input  class="input-sm input-top5" type="text" id="prim1" value="" />
+		<input  class="input-sm input-top5" type="text" id="prim2" value="" />
+		<input  class="input-sm input-top5" type="text" id="prim3" value="" />
+		<input  class="input-sm input-top5" type="text" id="prim4" value="" />
+		<input 	type="button" class="btn btn-success btn-sm input-top5" onclick="verificar();" value="Verificar" />
 		<div id="correcta" style="display: none" class="alert alert-success">
 		 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 		</div>

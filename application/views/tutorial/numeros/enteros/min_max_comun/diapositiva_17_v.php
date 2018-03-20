@@ -110,9 +110,11 @@
 		<input type="text" id="num1"/>
 		<input type="text" id="num2" />
 		<!-- <input type="text" id="fact3"/> -->
+		<p>Si algún  número se repite  en ambos casos, debes escribirlo el número de veces que se repita.</p>
+	<label>2 X 2 X 3 =</label><input id="mcd_1" size="5" />
 	</div>
 	<br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm" onclick="verificar_17();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

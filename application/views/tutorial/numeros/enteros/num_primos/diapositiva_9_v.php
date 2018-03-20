@@ -68,10 +68,9 @@
 		</section>
 	</div>
 	<p>¿Cuántos números primos impares hay, menores que 50?</p>
-	<br /><br /><br />
-	<div class="table-responsive">
-	<input  type="text" id="primo9" value="" />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar9();" value="Verificar" />
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" type="text" id="primo9" value="" />
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar9();" value="Verificar" />
 	
 	</div>
 	<div id="correcta" style="display: none" class="alert alert-success">

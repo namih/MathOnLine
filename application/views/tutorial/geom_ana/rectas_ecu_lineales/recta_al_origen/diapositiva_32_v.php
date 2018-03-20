@@ -39,7 +39,7 @@
 				<div class="row">
 					<div align="left"><p><label></label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="pregunta paso_0">
 								<p>1. Encuentra Ia ecuación de Ia recta pasa por el origen y por el punto P( 6, -9 )</p>
 								<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mfrac><mn><input type="number" name="numerador"/> </mn><mn><input type="number" name="denominador"/></mn></mfrac><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><input type="number" name="resultado"/><mi>x</mi></math></p>

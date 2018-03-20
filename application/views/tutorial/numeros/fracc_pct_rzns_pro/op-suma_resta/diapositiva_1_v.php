@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div>
-		<p> Manuel y dos amigos están acampando en un bosque. Llevan algunas latas de alimentos, las cuales, después de abrirse, les sirven como vasos para tomar agua. Las tres latas son del mismo tamaño. La lata de Manuel está llena <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> y la de Roberto está llena hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. Ambos deciden juntar el agua en una sola lata para llenar la otra con tierra. ¿Cabe el agua en una sola lata?</p>
+		<p align="left"> Manuel y dos amigos están acampando en un bosque. Llevan algunas latas de alimentos, las cuales, después de abrirse, les sirven como vasos para tomar agua. Las tres latas son del mismo tamaño. La lata de Manuel está llena <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> y la de Roberto está llena hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. Ambos deciden juntar el agua en una sola lata para llenar la otra con tierra. ¿Cabe el agua en una sola lata?</p>
 		<br />
 		<br />
 		<br />

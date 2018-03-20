@@ -5,7 +5,7 @@
 	<div   class="col-md-6  col-xs-12 table-responsive" id="box" align="center">
 		<p>La tabla muestra los múltiplos de 10 y 6 </p>
 		<p>Encuentra el mínimo común múltiplo de estos dos números</p>
-		<input type="text" placeholder="a,b.." id="minimo"  />
+		<input type="text" size="7" id="minimo"  />
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">

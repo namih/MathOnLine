@@ -210,12 +210,3 @@ function error(texto) {
 			$("#error").slideUp(500);
 		});
 }
-// 
-// function incrementar_1() {
-// 	
-	// var x = 0;
-// 	
-	// var applet = document.ggbApplet;
-// 	
-	// applet.evalCommand("P = Point[{-5, 21}]"); 
-// }

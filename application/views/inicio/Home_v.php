@@ -17,24 +17,50 @@
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <?php if(isset($themes) && $themes!=false){ 
-                  foreach ($themes as $key => $value) { ?>
-                    <div class="item <?php if($key==1) echo "active"; ?>">
+                <?php if(isset($themes) && $themes!=false){ ?>
+                    <div class="item">
                       <div class="panel panel-success tema_mes" >
-                        <div class="panel-heading" align="center"><?php echo $value['mes']; ?></div>
+                        <div class="panel-heading" align="center"><?php echo $themes[0]['mes']; ?></div>
                         <div class="panel-body">
-                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$value['image']; ?>');"><br>
-                            <h3 class="titulo_tema"><?php echo $value['title']; ?> </h3><br><br>
-                            <!--<img class="img-responsive" style="max-height: 200px; max-width: 80%; " src="<?php echo base_url().$value['image']; ?>"/>-->
+                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[0]['image']; ?>');"><br>
+                            <h3 class="titulo_tema"><?php echo $themes[0]['title']; ?> </h3><br><br>>
                           </div>
                           <br><br>
                           <p style="text-indent: 20px;">
-                            <?php echo $value['description']; ?> 
+                            <?php echo $themes[0]['description']; ?> 
                           </p>
                         </div>
                       </div>
                     </div>
-                <?php } }?>
+                    <div class="item active">
+                      <div class="panel panel-success tema_mes" >
+                        <div class="panel-heading" align="center"><?php echo $themes[1]['mes']; ?></div>
+                        <div class="panel-body">
+                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[1]['image']; ?>');"><br>
+                            <h3 class="titulo_tema"><?php echo $themes[1]['title']; ?> </h3><br><br>
+                          </div>
+                          <br><br>
+                          <p style="text-indent: 20px;">
+                            <?php echo $themes[1]['description']; ?> 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="panel panel-success tema_mes" >
+                        <div class="panel-heading" align="center"><?php echo $themes[2]['mes']; ?></div>
+                        <div class="panel-body">
+                          <div class="titulo_tema_mes" style="background-image: url('<?php echo base_url().$themes[2]['image']; ?>');"><br>
+                            <h3 class="titulo_tema"><?php echo $themes[2]['title']; ?> </h3><br><br>
+                          </div>
+                          <br><br>
+                          <p style="text-indent: 20px;">
+                            <?php echo $themes[2]['description']; ?> 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                <?php }?>
               </div>
             </div>                     
           <?php } ?>
