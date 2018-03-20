@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="005a5636-fb96-408c-bef1-3681f77e2c9b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_10_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_10_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_11_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_11_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_12_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_12_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_13_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_13_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_14_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_14_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_15_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_15_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_16_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_16_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_17_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_17_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_18_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_18_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_19_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_19_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_1_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_1_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_20_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_20_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_21_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_21_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_22_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_23_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_24_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_25_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_26_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_27_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_28_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_29_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_2_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_2_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_30_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_31_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_31_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_32_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_32_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_33_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_33_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_34_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_34_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_35_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_35_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_36_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_36_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_37_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_37_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_38_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_38_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_39_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_39_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_3_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_3_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_40_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_40_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_41_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_41_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_42_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_42_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_43_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_43_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_44_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_45_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/ley_exp/diapositiva_45_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_46_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_46_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_47_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_47_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_48_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_48_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_49_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_49_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_4_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_4_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_50_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_50_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_51_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_51_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_52_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_52_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_53_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_53_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_54_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_54_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_55_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_55_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_5_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_5_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_6_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_6_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_7_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_7_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_8_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_8_v.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_9_v.php" afterPath="$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_9_v.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" afterPath="$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js" />
     </list>
     <ignored path="MathOnLine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,8 +55,8 @@
       <file leaf-file-name="diapositiva_46_v.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_46_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -278,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,7 +255,7 @@
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="geom_ana" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="algebra" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
@@ -317,26 +263,8 @@
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="numeros" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="numeros" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="log_exp" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MathOnLine" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tutorial" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="numeros" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="log_exp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="log" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="algebra" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="op_alg" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MathOnLine" type="b2602c69:ProjectViewProjectNode" />
@@ -373,8 +301,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,12 +430,13 @@
       <workItem from="1520994769823" duration="1714000" />
       <workItem from="1521058685576" duration="955000" />
       <workItem from="1521080225088" duration="890000" />
-      <workItem from="1521093147340" duration="3466000" />
+      <workItem from="1521093147340" duration="3979000" />
+      <workItem from="1521515840797" duration="429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148057000" />
+    <option name="totallyTimeSpent" value="148999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="24" width="1301" height="744" extended-state="0" />
@@ -567,34 +494,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_50_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_54_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_53_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_52_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_50_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_54_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_53_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_52_v.php" />
     <entry file="file://$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/balanza/diapositiva_1_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -651,20 +554,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_47_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_51_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="29" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_47_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_51_v.php" />
     <entry file="file://$PROJECT_DIR$/application/views/tutorial/algebra/ecu_form_exp_id/fac_bin_al_cua/diapositiva_3_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -735,163 +626,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="78" lean-forward="false" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="58" column="91" lean-forward="false" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="107" column="104" lean-forward="false" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="97" column="130" lean-forward="true" selection-start-line="97" selection-start-column="130" selection-end-line="97" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="67" column="6" lean-forward="true" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_31_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_32_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_33_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_34_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="60" column="91" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_35_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="60" column="91" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_36_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_37_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_38_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="66" column="91" lean-forward="false" selection-start-line="66" selection-start-column="67" selection-end-line="66" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_39_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="64" column="91" lean-forward="false" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_43_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="60" column="91" lean-forward="false" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_46_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_45_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="54" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_48_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_22_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_24_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_25_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_26_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_28_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_27_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_29_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_30_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_31_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_32_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_33_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_34_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_35_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_36_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_37_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_38_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_39_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_43_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_46_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_45_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_48_v.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_44_v.php" />
     <entry file="file://$PROJECT_DIR$/statics/js/tutorial/log_exp/int_pow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -900,14 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/diapositiva_23_v.php" />
     <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/intro/diapositiva_1_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -926,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tutorial/numeros/log_exp/log/diapositiva_46_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
