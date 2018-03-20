@@ -1108,7 +1108,7 @@ function fraccion_dos_10_c () {
 
 
 
-function fraccion_11_c () {
+function fraccion_11 () {
   	var numerador_c = document.getElementById('numerador_c').value;
   	var denominador_c = document.getElementById('denominador_c').value;
   	if (numerador_c != '' && denominador_c != '') {
@@ -1124,7 +1124,7 @@ function fraccion_11_c () {
 
 
 
-function fraccion_uno_11_c () {
+function fraccion_uno_11 () {
   	var numerador_c = document.getElementById('numerador_uno_c').value;
   	var denominador_c = document.getElementById('denominador_uno_c').value;
   	if (numerador_c != '' && denominador_c != '') {
@@ -1139,7 +1139,7 @@ function fraccion_uno_11_c () {
 }
 
 
-function fraccion_dos_11_c () {
+function fraccion_dos_11 () {
   	var numerador_c = document.getElementById('numerador_dos_c').value;
   	var denominador_c = document.getElementById('denominador_dos_c').value;
   	if (numerador_c != '' && denominador_c != '') {
@@ -1170,9 +1170,9 @@ function fraccion_12 () {
 
 
 function fraccion_13 () {
-  	var numerador = document.getElementById('numerador').value;
-  	var denominador = document.getElementById('denominador').value;
-  	if (numerador != '' && denominador_c != '') {
+  	var numerador = document.getElementById('numerador_c').value;
+  	var denominador = document.getElementById('denominador_c').value;
+  	if (numerador != '' && denominador != '') {
 		result_frac = numerador / denominador;
 		
 		if (parseFloat(result_frac) == 0.65) {
@@ -1185,12 +1185,12 @@ function fraccion_13 () {
 
 
 function fraccion_13_uno () {
-  	var numerador = document.getElementById('numerador_uno').value;
-  	var denominador = document.getElementById('denominador_uno').value;
+  	var numerador = document.getElementById('numerador_uno_c').value;
+  	var denominador = document.getElementById('denominador_uno_c').value;
   	if (numerador != '' && denominador != '') {
 		result_frac = numerador / denominador;
-		
-		if (parseFloat(result_frac) == 0.65) {
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.75) {
   			acierto();	
   		}else{
   			error();
@@ -1199,12 +1199,12 @@ function fraccion_13_uno () {
 }
 
 function fraccion_13_dos () {
-  	var numerador = document.getElementById('numerador_dos').value;
-  	var denominador = document.getElementById('denominador_dos').value;
+  	var numerador = document.getElementById('numerador_dos_c').value;
+  	var denominador = document.getElementById('denominador_dos_c').value;
   	if (numerador != '' && denominador != '') {
 		result_frac = numerador / denominador;
-		
-		if (parseFloat(result_frac) == 0.65) {
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.8333333333333334) {
   			acierto();	
   		}else{
   			error();

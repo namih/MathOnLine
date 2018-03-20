@@ -53,14 +53,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
+									<input onchange="fraccion_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
+									<input onchange="fraccion_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -124,14 +124,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" />
+									<input onchange="fraccion_uno_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_uno_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_c" placeholder="0" />
+									<input onchange="fraccion_uno_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>
@@ -143,6 +143,7 @@
 			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
    		</div>
 	</div>
+	
 	<div id="third" style="display: none">
 		<p align="justify"> Suma las fracciones convirtiéndolas en fracciones con denominador común, es decir, con el mismo denominador.</p>
 		<div class=" col-lg-12 col-md-12  col-xs-12">
@@ -195,14 +196,14 @@
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_c" placeholder="0" />
+									<input onchange="fraccion_dos_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_dos_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi>
 						<mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="fraccion_dos_11_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_c" placeholder="0" />
+									<input onchange="fraccion_dos_11 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></mfrac></math></h1></td>

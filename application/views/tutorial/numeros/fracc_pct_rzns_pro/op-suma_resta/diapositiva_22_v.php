@@ -1,7 +1,9 @@
  <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/fracc_pct_rzns_pro/op-suma_resta.js"></script>
 
 <div class="container-fluid">
-	<p align="justify">VirtualBox_WinXP_15_05_2017_12_17_30: Encuentra el resultado de las siguientes sumas. Para ello, suma los enteros y las fracciones. Recuerda convertir las fracciones equivalentes con el mismo denominador y simplifica al máximo tu respuesta final.</p>
+	
+	<p align="justify">Encuentra el resultado de las siguientes sumas. Para ello, suma los enteros y las fracciones. Recuerda convertir las fracciones equivalentes con el mismo denominador y simplifica al máximo tu respuesta final.</p>
+	<div id="first"> 
 	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
 			<table>
@@ -100,10 +102,11 @@
 				</tr>
 			</table>
 		</div>	
-		<div class=" col-lg-12 col-md-12  col-xs-12">
-			<button style="margin-bottom: 20px" type="button" onclick="" class="btn btn-primary" disabled >Más ejercicios</button>
-		</div>
-	</div>
+	</div>	
+</div>
+	
+	
+	<div id="second" style="display: none"></div>
 </div>
 
 <div id="correcta" style="display: none" class="alert alert-success">

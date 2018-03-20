@@ -131,14 +131,14 @@
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="fraccion_13_dos ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" />
+										<input onchange="fraccion_13_uno ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_uno_c" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
 							<mi>
 								<semantics>
 									<annotation-xml encoding="application/xhtml+xml">
-										<input onchange="fraccion_13_dos ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_c" placeholder="0" />
+										<input onchange="fraccion_13_uno ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_uno_c" placeholder="0" />
 									</annotation-xml>
 								</semantics>
 							</mi>
