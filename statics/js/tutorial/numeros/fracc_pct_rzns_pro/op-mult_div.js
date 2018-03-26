@@ -337,7 +337,7 @@ function decrementar_8 () {
 			document.getElementById("numero").innerHTML ='3';
 			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_tres.png";
 			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
-			success();
+			
 			ia--;
 			break;
 		case 3:
@@ -358,4 +358,99 @@ function decrementar_8 () {
 
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function incrementar_9 () {
+  	  	switch (ia) {
+		case 1:
+			document.getElementById("numero").innerHTML ='2';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_sextos.png";
+			document.getElementById("fraction").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>6</mn></mfrac></math>';
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+			ia++;
+			break;
+			}
+		MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_9 () {
+	console.log(ia);
+  	switch (ia) {
+  		case 2:
+			document.getElementById("numero").innerHTML ='1';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_tres.png";
+			document.getElementById("fraction").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>';
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+	}
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function fraccion_10 () {
+  	var numerador = document.getElementById('numerador_a').value;
+  	var denominador = document.getElementById('denominador_a').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.16666666666666666) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function entero_10 () {
+  	var entero = document.getElementById('entero').value;
+  	  	if (entero != '') {
+			if (entero == 1) {
+  				acierto();
+  			}else{
+  				error();
+  			};	
+  		};
+}
+
+function fraccion_11_a () {
+  	var numerador = document.getElementById('numerador_a').value;
+  	var denominador = document.getElementById('denominador_a').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.16666666666666666) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_11_b () {
+  	var numerador = document.getElementById('numerador_b').value;
+  	var denominador = document.getElementById('denominador_b').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.16666666666666666) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_12 () {
+  	var numerador = document.getElementById('numerador_a').value;
+  	var denominador = document.getElementById('denominador_a').value;
+  	if (numerador != '' && denominador != '') {
+		result_frac = numerador / denominador;
+		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.6666666666666667) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
 }
