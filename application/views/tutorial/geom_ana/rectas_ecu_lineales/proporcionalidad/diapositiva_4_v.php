@@ -1,7 +1,7 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300  }, true);
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/proporcionalidad/diapositiva_4.ggb","showToolbar":false, height: 300  }, true);
     window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 <div class="container-fluid">
