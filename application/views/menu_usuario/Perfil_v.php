@@ -154,6 +154,33 @@
 									<option value="2" <?php if(isset($user_log[0]['sex']) && $user_log[0]['sex']==2) echo 'selected="selected"' ?> >Mujer</option>
 								</select>
 							</div>
+
+							<div class="form-group col-md-6 col-xs-12">
+								<label>Unidad UAM: </label>
+								<select onchange="seleccionar_unidad()" class="form-control" id ="uam">
+									<?php for ($i=0; $i < count($unidades) ; $i++) { ?>
+										<option <?php if(isset($user_log[0]['id_unit_uam']) && $user_log[0]['id_unit_uam']==$unidades[$i]['id_unit_uam']) echo 'selected="selected"' ?> value="<?php echo $unidades[$i]['id_unit_uam']; ?>"><?php echo $unidades[$i]['name']?></option>
+									<?php } ?>
+								</select>
+							</div>
+							<div class="form-group col-md-6 col-xs-12">
+								<label>Licenciatura: </label>
+								<select  class="form-control" id ="carrera" disabled>
+									<?php if(isset($licenciaturas)) {
+										foreach ($licenciaturas as $key => $value) { ?>
+										<option <?php if(isset($user_log[0]['id_degree']) && $user_log[0]['id_degree']==$value['id_degree']) echo 'selected="selected"' ?> value="<?php echo $value['id_degree']; ?>"><?php echo $value['degree'];?></option>
+									<?php } }?>
+								</select>
+							</div>
+							<div class="form-group col-md-6  col-xs-12">
+								<label>Matricula: </label>
+								<input onblur="validar_matricula()" type="text" class="form-control" id="mat" placeholder="Matrícula" value="<?php echo $user_log[0]['uam_identifier']; ?>" disabled>
+							</div>
+							<div class="form-group checkbox col-md-6  col-xs-12">
+			      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="estudia" <?php if(isset($user_log[0]['is_student']) && $user_log[0]['is_student']==1) echo 'checked' ?> >Estudia</label>
+			      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="trabaja" <?php if(isset($user_log[0]['is_employed']) && $user_log[0]['is_employed']==1) echo 'checked' ?> >Trabaja</label>
+			    			</div>
+
 			    			<div class="input-group col-lg-12 col-md-12 col-xs-12">
 								<div class="form-group col-md-6  col-xs-12">
 									<button type="button" onclick="actualizar()" class="btn btn-primary">Guardar Cambios</button>

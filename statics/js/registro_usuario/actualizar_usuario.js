@@ -6,22 +6,32 @@
 * @version Versión actual del elemento
 */
 function actualizar() {
-  var id_usuario = document.getElementById('id_user').value;
-  var usuario = document.getElementById('usr').value;
-  var contrasenia1 = document.getElementById('pwd').value;
-  var contrasenia2 = document.getElementById('rpwd').value;
-  var email = document.getElementById('correo').value;
-  var nombre = document.getElementById('name').value;
-  var apellidos = document.getElementById('last').value;
-  var nacimiento = document.getElementById('anio').value;
-  var sexo = document.getElementById('sexo').value;
-  var avatar = $('#id_avatar_user').val();
+	var id_usuario = document.getElementById('id_user').value;
+	var usuario = document.getElementById('usr').value;
+	var contrasenia1 = document.getElementById('pwd').value;
+	var contrasenia2 = document.getElementById('rpwd').value;
+	var email = document.getElementById('correo').value;
+	var nombre = document.getElementById('name').value;
+	var apellidos = document.getElementById('last').value;
+	var nacimiento = document.getElementById('anio').value;
+	var sexo = document.getElementById('sexo').value;
+	var avatar = $('#id_avatar_user').val();
 
-			       
-  var bandera_usuario = 1;
-  var bandera_email = 1;
-  var bandera_anio = 1;
-  var bandera_sexo = 1;
+	var carrera = document.getElementById('carrera').value;
+	var matricula = document.getElementById('mat').value;
+	var estudia = document.getElementById('estudia').checked;
+	var trabaja = document.getElementById('trabaja').checked;
+	var unidad = document.getElementById('uam').value;
+	if (unidad == 0) {
+		carrera = 1;
+	} else {
+	};
+
+
+	var bandera_usuario = 1;
+	var bandera_email = 1;
+	var bandera_anio = 1;
+	var bandera_sexo = 1;
   
   
   var datos ={
@@ -33,8 +43,12 @@ function actualizar() {
 		last_name:apellidos,
 		sex:sexo,
 		year_birthday:nacimiento,
-		email:email
-		
+		email:email,
+		unidad:unidad
+		carrera:carrera,
+		matricula:matricula,
+		estudia:estudia,
+		trabaja:trabaja,
 	};
 	
 	var validar_pwd = comparar_contrasenia_perfil();

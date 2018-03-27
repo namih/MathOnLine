@@ -20,6 +20,9 @@
 				} else {
 					$datos['user_log']= false;
 				}
+
+				$datos['unidades'] = $this->Registro_usuario_m->obtener_unidades_uam();
+				$datos['licenciaturas'] = $this->Registro_usuario_m->obtener_licenciaturas($user_log[0]['id_unit_uam']);
 	
 		    	$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        	$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
