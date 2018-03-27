@@ -1,16 +1,16 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_lin_una_var/variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cual es el valor de las piezas juntas?</p>
+		<p>¿Cuál es el valor de las piezas juntas?</p>
 		<p>Elige todas las opciones que sean correctas.</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math><br />
-					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>3</mn></msup></math><br />
-					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mi>n</mi><mo>+</mo><mi>n</mi></math><br />
-					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mn>3</mn></math><br />
-					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mi>n</mi></math><br />
+					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi></math><br />
+					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="bold">n</mi><mn>3</mn></msup></math><br />
+					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mi mathvariant="bold">n</mi><mo>+</mo><mi mathvariant="bold">n</mi></math><br />
+					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mn>3</mn></math><br />
+					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mi mathvariant="bold">n</mi></math><br />
 				</td>
 		  	</table>
 		</form>
