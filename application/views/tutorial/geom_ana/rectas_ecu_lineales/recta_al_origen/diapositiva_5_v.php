@@ -58,7 +58,7 @@
 								<p>Al trazar los segmentos verticales se forman dos triángulos semejantes. POP' y QOQ'</p>
 								<p>Si comparamos los cocientes que resultan de dividir los catetos de los triángulos POP' y QOQ' tenemos que </p>
 								<p>QOQ': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math>     POP': <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>2</mn><mo>.</mo><mn>25</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math> </p>
-								<p>Arrastra el punto P y observa qué pasa con los cocientes.</p>
+								<p>Arrastra el punto <strong>p</strong> y observa qué pasa con los cocientes.</p>
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
