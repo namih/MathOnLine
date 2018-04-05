@@ -44,11 +44,11 @@ function actualizar() {
 		sex:sexo,
 		year_birthday:nacimiento,
 		email:email,
-		unidad:unidad
-		carrera:carrera,
-		matricula:matricula,
-		estudia:estudia,
-		trabaja:trabaja,
+		unidad:unidad,
+		id_degree:carrera,
+		uam_identifier:matricula,
+		is_student:estudia,
+		is_employed:trabaja,
 	};
 	
 	var validar_pwd = comparar_contrasenia_perfil();

@@ -5,11 +5,11 @@
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mn>8</mn></math><br />
-					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>&#xA0;</mo><mi>+</mi><mo>&#xA0;</mo><mn>8</mn></math><br />
+					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>&#xA0;</mo><mi>×</mi><mo>&#xA0;</mo><mn>8</mn></math><br />
+					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>8</mn></math><br />
 					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>8</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>5</mn></math><br />
-					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mo>&#xA0;</mo><mi>+</mi><mo>&#xA0;</mo><mn>16</mn></math><br />
-					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>x</mo><mn>8</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mo>x</mo><mn>5</mn></math><br />
+					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>16</mn></math><br />
+					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>×</mo><mn>8</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mo>×</mo><mn>5</mn></math><br />
 				</td>
 			</table>
 		</form>

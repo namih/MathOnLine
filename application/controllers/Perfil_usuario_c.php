@@ -17,6 +17,7 @@
 			
 				if ($id_user != null){
 					$datos['user_log'] = $this->Perfil_usuario_m->datos_usuario($id_user);
+					//print_r($datos);
 				} else {
 					$datos['user_log']= false;
 				}
@@ -47,6 +48,7 @@
 					$registro['password']=$encrypted;
 				}
 				$user = $this->session->userdata('user');
+				print_r($registro);
 				print_r($user);
 				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro,$user);
 				if ($id_registro['status']==0) {

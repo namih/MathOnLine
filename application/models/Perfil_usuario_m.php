@@ -136,6 +136,18 @@
 			if (isset($usuario['status'])) {
 				$set_usuario['status'] = $usuario['status'];
 			};
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
+			if (isset($usuario['uam_identifier'])) {
+				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
+			};
+			if (isset($usuario['is_student'])) {
+				$set_usuario['is_student'] = $usuario['is_student'];
+			};
+			if (isset($usuario['is_employed'])) {
+				$set_usuario['is_employed'] = $usuario['is_employed'];
+			};
 
 			return $set_usuario;
 		}
@@ -167,6 +179,18 @@
 			};
 			if (isset($usuario['status'])) {
 				$set_usuario['status'] = $usuario['status'];
+			};
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
+			if (isset($usuario['uam_identifier'])) {
+				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
+			};
+			if (isset($usuario['is_student'])) {
+				$set_usuario['is_student'] = $usuario['is_student'];
+			};
+			if (isset($usuario['is_employed'])) {
+				$set_usuario['is_employed'] = $usuario['is_employed'];
 			};
 
 			return $set_usuario;

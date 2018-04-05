@@ -6,11 +6,11 @@
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi></math><br />
-		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mn>2</mn></math><br />
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mn>1</mn></math><br />
-		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mi mathvariant="bold">n</mi><mo>+</mo><mn>1</mn></math><br />
-		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi mathvariant="bold">n</mi></math><br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math><br />
+		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mn>2</mn></math><br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mn>1</mn></math><br />
+		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></math><br />
+		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva8" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>n</mi></math><br />
 		  		</td>
 		  	</table>
 		</form>

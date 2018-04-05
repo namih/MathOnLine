@@ -6,10 +6,10 @@
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="1"><math style="font-family:Arial" xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi></math><br />
-		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mi mathvariant="bold">n</mi></math><br />
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>1</mn></math><br />
-		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi mathvariant="bold">n</mi></math><br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math><br />
+		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="2"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mi>n</mi></math><br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>1</mn></math><br />
+		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva5" id="4"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>n</mi></math><br />
   				</td>
   			</table>
 		</form>

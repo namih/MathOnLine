@@ -6,12 +6,12 @@
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mn>3</mn></math><br />
-					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi mathvariant="bold">n</mi><mo>+</mo><mn>3</mn></math><br />
-					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mi mathvariant="bold">n</mi><mo>+</mo><mn>3</mn></math><br />
-					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi mathvariant="bold">n</mi><mo>+</mo><mn>1</mn></math><br />
-					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>(</mo><mi mathvariant="bold">n</mi><mo>+</mo><mn>2</mn><mo>)</mo></math><br />
-					<input type="checkbox" id="6" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="bold">n</mi><mo>+</mo><mi mathvariant="bold">n</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></math><br />
+					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mn>3</mn></math><br />
+					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>n</mi><mo>+</mo><mn>3</mn></math><br />
+					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>3</mn></math><br />
+					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></math><br />
+					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>(</mo><mi>n</mi><mo>+</mo><mn>2</mn><mo>)</mo></math><br />
+					<input type="checkbox" id="6" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></math><br />
 				</td>
 		  	</table>
 		</form>
