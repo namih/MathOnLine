@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/enteros/factorizacion/diapositiva_3.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros3.css">
 <div class="container-fluid">
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		<p>Usualmente, al escribir un número como producto de sus fatores primos, escribimos primero aquellos que son menores.</p>
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
             <thead>

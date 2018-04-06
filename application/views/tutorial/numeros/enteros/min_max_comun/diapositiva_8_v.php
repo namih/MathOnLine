@@ -5,7 +5,7 @@
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 		<p>Encuentra la factorizacion en primos del número:</p>
 		<p>Después expresalo como un producto</p>
-		<label> <b>400 = </b></label> <input type="text" placeholder="a x b x c  ..." id="exp"/>
+		<label> <b>400 = </b></label> <input class="input-sm input-top5 table-responsive" type="text" placeholder="a x b x c  ..." id="exp"/>
 		<p>Observa que como los factores se repiten, podemos utilizar la notación exponencial para expresar  el número:</p>
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
 			<mn>400</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
@@ -45,7 +45,7 @@
 			</mi>
 			</msup></math>
 	</div>	
-	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
+	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
              <thead>
                 <tr class="success">

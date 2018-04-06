@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid" id="div_1" style="display: block">
 	<p>Encuentra las raíces que se solicitan, identificando los factores primos del entero</p>
-	<div class="table-responsive">
+	<div class="table-responsive div-border0">
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
 			<msqrt><mn>64</mn></msqrt>
-		</math> <label> = </label> <input type="text" id="1" />
+		</math> <label> = </label> <input class="input-sm input-top5" size="15"  type="text" id="1" />
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">
@@ -80,10 +80,10 @@
 </div>
 <div class="container-fluid" id="div_2" style="display: none">
 	<p>Encuentra las raíces que se solicitan, identificando los factores primos del entero</p>
-	<div class="table-responsive">
+	<div class="table-responsive div-border0">
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
 			<msqrt><mn>81</mn></msqrt>
-		</math> <label> = </label> <input type="text" id="2" />
+		</math> <label> = </label> <input class="input-sm input-top5" size="15"  type="text" id="2" />
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">
@@ -144,10 +144,10 @@
 </div>
 <div class="container-fluid" id="div_3" style="display: none">
 	<p>Encuentra las raíces que se solicitan, identificando los factores primos del entero</p>
-	<div class="table-responsive">
+	<div class="table-responsive div-border0">
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
 			<msqrt><mn>144</mn></msqrt>
-		</math> <label> = </label> <input type="text" id="3" />
+		</math> <label> = </label> <input class="input-sm input-top5" size="15"  type="text" id="3" />
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">

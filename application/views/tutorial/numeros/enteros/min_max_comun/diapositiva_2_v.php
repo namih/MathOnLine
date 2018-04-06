@@ -19,7 +19,7 @@
 		  	</table>
 		</form>
 	</div>	
-	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
+	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
              <thead>
                 <tr class="success">

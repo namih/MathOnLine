@@ -7,7 +7,7 @@
 	</div>
 	<br /> <br />
 	<label>12</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 			 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -106,12 +106,12 @@
 	
 	<br /><br />
 	<p>Escribe los factores  comunes de 12 y 36</p>
-	<div class="table-responsive">
-		<input type="text" id="num1"/>
-		<input type="text" id="num2" />
+	<div class="table-responsive div-border0">
+		<input class="input-sm input-top5" type="text" id="num1"/>
+		<input class="input-sm input-top5" type="text" id="num2" />
 		<!-- <input type="text" id="fact3"/> -->
 		<p>Si algún  número se repite  en ambos casos, debes escribirlo el número de veces que se repita.</p>
-	<label>2 X 2 X 3 =</label><input id="mcd_1" size="5" />
+	<label>2 X 2 X 3 =</label><input class="input-sm input-top5" id="mcd_1" size="5" />
 	</div>
 	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar_17();" value="Verificar" />

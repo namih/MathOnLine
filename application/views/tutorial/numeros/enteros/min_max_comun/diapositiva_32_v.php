@@ -4,8 +4,8 @@
 	<p>Cuando buscamos un número que multiplicado por si mismo 3 veces nos dé otro. se le llama <b>raíz cúbica</b> </p>
 	<p>Encuentra un número que multiplicado por si mismo 3 veces nos dé 64</p>
 	<p>Comprueba tu resultado :</p>
-	<div class="table-responsive">
-	<input type="text" id="1"/> <label> X </label> <input type="text" id="2"/> <label> X </label> <input type="text" id="3" /><label> = </label> <input type="text" id="4"readonly="" />
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" size="10" type="text" id="1"/> <label> X </label> <input class="input-sm input-top5" size="10" type="text" id="2"/> <label> X </label> <input class="input-sm input-top5" size="10" type="text" id="3" /><label> = </label> <input class="input-sm input-top5" size="10" type="text" id="4"readonly="" />
 	</div>
 	<br />
 	<div id="tex" style="display: none">

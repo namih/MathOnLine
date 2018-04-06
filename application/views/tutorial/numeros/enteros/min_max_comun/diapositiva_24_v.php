@@ -6,7 +6,7 @@
 	</div>
 	<br /> <br />
 	<label>4</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -88,8 +88,8 @@
 	</div>
 	<br /><br />
 	<div>
-		<p><b>MCD de 4 y 12 es:</b></p> <input type="text" id="mcd"/>
-		<p><b>MCM de 4 y 12 es:</b></p> <input type="text" id="mcm"/>
+		<p><b>MCD de 4 y 12 es:</b></p> <input class="input-sm input-top5" size="10" type="text" id="mcd"/>
+		<p><b>MCM de 4 y 12 es:</b></p> <input class="input-sm input-top5" size="10" type="text" id="mcm"/>
 	</div>
 	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar24();" value="Verificar" />

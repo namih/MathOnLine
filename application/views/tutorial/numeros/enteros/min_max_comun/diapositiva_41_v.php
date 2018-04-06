@@ -4,7 +4,7 @@
 	<p>Hay dos satélites a distintas alturas, en órbita alrededor de la Tierra. A uno le toma 16 horas completar una órbita, y al otro le toma 
 		18 horas. En algún momento, los dos están sobre la Ciudad de México.
 		Apartir de ese momento, ¿En cúantas horas volverán a estar los dos sobre la Ciudad de México?</p>
-	<div class="table-responsive"><input type="text" id="num1" /><label>horas</label></div>	
+	<div class="table-responsive div-border0"><input class="input-sm input-top5" size="10" type="text" id="num1" /><label>horas</label></div>	
     <br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar41();" value="Verificar" />
 	<br />

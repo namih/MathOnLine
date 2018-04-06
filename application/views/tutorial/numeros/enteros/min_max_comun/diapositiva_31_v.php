@@ -6,11 +6,11 @@
 		<msqrt>
 			<mn>121</mn>
 		</msqrt>
-	</math> <label>=</label> <input type="text" id="1" />
+	</math> <label>=</label> <input class="input-sm input-top5" size="10" type="text" id="1" />
 	<p>Comprueba tu resultado :</p>
 	
-	<div class="table-responsive">
-	<input type="text" id="2"readonly=""/> <label> X </label> <input type="text" id="3"readonly/> <label> = </label> <input type="text" id="4" readonly/>
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" size="10"  type="text" id="2"readonly=""/> <label> X </label> <input class="input-sm input-top5" size="10" type="text" id="3"readonly/> <label> = </label> <input class="input-sm input-top5" size="10" type="text" id="4" readonly/>
 	</div>
 	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar31();" value="Verificar" />

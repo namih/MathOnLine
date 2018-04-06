@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 	<p>Encontrar el mínimo común multiplo de 5 y 15:</p>
-	<label> 5 x  </label> <input type="text" size="5" id="num5"/> <label id="min"> = </label><br />
-	<label>15 x  </label> <input type="text" size="5" id="num15"/> <label id="min_1"> =</label><br />
+	<label> 5 x  </label> <input class="input-sm input-top5" type="text" size="5" id="num5"/> <label id="min"> = </label><br />
+	<label>15 x  </label> <input class="input-sm input-top5" type="text" size="5" id="num15"/> <label id="min_1"> =</label><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar22();" value="Verificar" />
 	<br /><br /><br />
 	<div id="correcta" style="display: none" class="alert alert-success">
