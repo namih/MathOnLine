@@ -1,6 +1,10 @@
 var result_frac = 0;
 var ia = 1;
 var ib = 1;
+var ia_uno = 1;
+var ib_uno = 1;
+var ia_dos = 1;
+var ib_dos = 1;
 
 function acierto () {
   	$('#correcta').show();
@@ -448,6 +452,208 @@ function fraccion_12 () {
 		result_frac = numerador / denominador;
 		console.log(result_frac);
 		if (parseFloat(result_frac) == 1.6666666666666667) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function incrementar_13_a () {
+  	  	switch (ia) {
+		case 1:
+			document.getElementById("numero").innerHTML ='2';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_dos.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 2:
+			document.getElementById("numero").innerHTML ='3';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_tres.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+			ia++;
+			break;
+		case 3:
+			document.getElementById("numero").innerHTML ='4';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_cuatro.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 4:
+			document.getElementById("numero").innerHTML ='5';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_cinco.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 5:
+			document.getElementById("numero").innerHTML ='6';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_seis.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 6:
+			document.getElementById("numero").innerHTML ='7';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_siete.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 7:
+			document.getElementById("numero").innerHTML ='8';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_ocho.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		case 8:
+			document.getElementById("numero").innerHTML ='9';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_nueve.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia++;
+			break;
+		
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	
+}
+
+function decrementar_13_a () {
+	console.log(ia);
+  	switch (ia) {
+  		
+		case 9:
+			document.getElementById("numero").innerHTML ='8';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_ocho.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 8:
+			document.getElementById("numero").innerHTML ='7';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_siete.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 7:
+			document.getElementById("numero").innerHTML ='6';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_seis.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 6:
+			document.getElementById("numero").innerHTML ='5';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_cinco.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 5:
+			document.getElementById("numero").innerHTML ='4';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_cuatro.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 4:
+			document.getElementById("numero").innerHTML ='3';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_tres.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/correcto.png";
+			
+			ia--;
+			break;
+		case 3:
+			document.getElementById("numero").innerHTML ='2';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_dos.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		case 2:
+			document.getElementById("numero").innerHTML ='1';
+			document.getElementById("cuadro").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/iv_uno.png";
+			document.getElementById("bien").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/incorrecto.png";
+			ia--;
+			break;
+		
+			
+	}
+
+	
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+
+function numero_14 () {
+  	var entero = document.getElementById('entero').value;
+  	  	if (entero != '') {
+			if (entero == 1) {
+  				acierto();
+  			}else{
+  				error();
+  			};	
+  		};
+}
+
+function fraccion_14 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	var numerador_d = document.getElementById('numerador_d').value;
+  	var denominador_d = document.getElementById('denominador_d').value;
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if ((numerador_a != '' && denominador_a != '') && (numerador_b != '' && denominador_b != '') && (numerador_c != '' && denominador_c != '') && (numerador_d != '' && denominador_d != '')) {
+  		result_frac_1 = numerador_a / denominador_a;
+  		result_frac_2 = numerador_b / denominador_b;
+  		result_frac_3 = numerador_c / denominador_c;
+  		result_frac_4 = numerador_d / denominador_d;
+  		result_frac_5 = numerador_e / denominador_e;
+		if ((parseFloat(result_frac_1) == 0.25) && (parseFloat(result_frac_2) == 0.25) && (parseFloat(result_frac_3) == 0.5) && (parseFloat(result_frac_4) == 0.5) && (parseFloat(result_frac_5) == 0.25)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numero_15_a () {
+  	var entero = document.getElementById('numero_a').value;
+  	  	if (entero != '') {
+			if (entero == 1) {
+  				acierto();
+  			}else{
+  				error();
+  			};	
+  		};
+}
+
+function numero_15_b () {
+  	var entero = document.getElementById('numero_b').value;
+  	  	if (entero != '') {
+			if (entero == 8) {
+  				acierto();
+  			}else{
+  				error();
+  			};	
+  		};
+}
+
+function fraccion_15 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	var numerador_c = document.getElementById('numerador_c').value;
+  	var denominador_c = document.getElementById('denominador_c').value;
+  	var numerador_d = document.getElementById('numerador_d').value;
+  	var denominador_d = document.getElementById('denominador_d').value;
+  	var numerador_e = document.getElementById('numerador_e').value;
+  	var denominador_e = document.getElementById('denominador_e').value;
+  	if ((numerador_a != '' && denominador_a != '') && (numerador_b != '' && denominador_b != '') && (numerador_c != '' && denominador_c != '') && (numerador_d != '' && denominador_d != '') && (numerador_e != '' && denominador_e != '')) {
+  		result_frac_1 = numerador_a / denominador_a;
+  		result_frac_2 = numerador_b / denominador_b;
+  		result_frac_3 = numerador_c / denominador_c;
+  		result_frac_4 = numerador_d / denominador_d;
+  		result_frac_5 = numerador_e / denominador_e;
+		if ((parseFloat(result_frac_1) == 0.125) && (parseFloat(result_frac_2) == 0.125) && (parseFloat(result_frac_3) == 0.5) && (parseFloat(result_frac_4) == 0.25) && (parseFloat(result_frac_5) == 0.125)) {
   			acierto();	
   		}else{
   			error();
