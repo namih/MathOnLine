@@ -46,6 +46,7 @@
 		<div align="center" id="mix">
 			<button type="button" class="btn btn-success" onclick="mostrar_mixto()">Mixto</button>
    	 	</div>
+   	 </div>
    	 	<div align="center" id="frac" style="display: none">
 			<button type="button" class="btn btn-success" onclick="mostrar_fraccion()">Fracción</button>
    	 	</div>

@@ -22,7 +22,7 @@
 			<h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
 					<input onchange="numero_15_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numero_a" placeholder="0" />
-			</annotation-xml></semantics></mi></h5></math></li>
+			</annotation-xml></semantics></mi></math></h5></li>
 			 
 		<li>¿Qué fracción del área del cuadrado es el área del cuadrado azul? <h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
