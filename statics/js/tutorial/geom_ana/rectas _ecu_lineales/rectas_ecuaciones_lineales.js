@@ -87,7 +87,7 @@
     function validarSoloFlotante(elEvento,elElemento){
       // Variables que definen los caracteres permitidos
       var permitidos = "0123456789.";
-      var teclas_especiales = [8, 37, 39,9]; // 9=tab, 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
+      var teclas_especiales = [8, 37, 39,45,9]; // 45= minus "-" 9=tab, 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
       //si la cadena ya tiene un punto no se deben permitir mas
       if($('#'+elElemento).val().indexOf('.')!=-1)
         permitidos=permitidos.replace('.','');
