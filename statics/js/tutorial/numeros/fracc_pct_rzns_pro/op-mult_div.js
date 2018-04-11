@@ -836,3 +836,212 @@ function fraccion_20_dos () {
   		};
   	};
 }
+
+function respuesta_21 () {
+  	var opcion1 = document.getElementById('r1').cheked;
+  	var opcion2 = document.getElementById('r2').cheked;
+  	var opcion3 = document.getElementById('r3').cheked;
+  	switch (ia) {
+		case 1:
+			error();
+			ia++;
+			break;	
+		case 2:
+			error();
+			ia++;
+			break;
+		case 3:
+			acierto();
+			ia++;
+			break;
+		
+	}
+	
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
+function fraccion_26 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.3333333333333333) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_26_uno () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.45454545454545453) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_26_dos () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.3333333333333333) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_28 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.25) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_28_uno () {
+  	var numerador = document.getElementById('numerador_uno').value;
+  	var denominador = document.getElementById('denominador_uno').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.75) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+
+function fraccion_28_dos () {
+  	var numerador = document.getElementById('numerador_dos').value;
+  	var denominador = document.getElementById('denominador_dos').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 1.6666666666666667) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_33 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		console.log(result_frac1);
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac2);
+		if ((parseFloat(result_frac1) == 0.6666666666666666) && (parseFloat(result_frac2) == 0.2222222222222222)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_35 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.1) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_36 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		console.log(result_frac1);
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac2);
+		if ((parseFloat(result_frac1) == 0.125) && (parseFloat(result_frac2) == 0.125)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_37 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		console.log(result_frac1);
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac2);
+		if ((parseFloat(result_frac1) == 0.5) && (parseFloat(result_frac2) == 0.1)) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function respuesta_38 () {
+  	var opcion1 = document.getElementById('r1').cheked;
+  	var opcion2 = document.getElementById('r2').cheked;
+  	switch (ia) {
+		case 1:
+			acierto();
+			ia++;
+			break;	
+		case 2:
+			error();
+			ia++;
+			break;
+		
+	}
+	
+}
+
