@@ -1,7 +1,7 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
 <script type="text/javascript" charset="utf-8">
-	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/recta_por_dos_puntos/diapositiva_1.ggb","showToolbar":false, height: 300	}, true);
+	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/recta_por_dos_puntos/diapositiva_4.ggb","showToolbar":false, height: 300	}, true);
 	window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 
@@ -34,8 +34,7 @@
 		</div>
 		<div id="boxEjemplos_1">
 			<div id="box_1_ejemplo_0">
-				<div class="pregunta">
-				</div>
+				<div class="pregunta"></div>
 				<div class="instruccion">
 				</div>
 				<div class="row">
@@ -44,6 +43,16 @@
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="pregunta paso_0">
 								<p><b>¿Cómo es la ecuación de una recta que no pasa por el origen?</b></p>
+							</div><br>
+							<div class="paso_1">
+								<p>Por ejemplo la recta que pasa por los puntos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mi>R</mi><mo>(</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>)</mo></math></p>
+							</div><br>
+							<div class="paso_2">
+								<p>Tomemos un punto <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>(</mo><mo>&#xA0;</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&#xA0;</mo><mo>)</mo></math> cualquiera sobre la recta. Arrastra P y observa cómo cambian sus coordenadas. <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>(</mo><mo>&#xA0;</mo><mn>5</mn><mo>,</mo><mo>&#xA0;</mo><mn>7</mn><mo>.</mo><mn>33</mn><mo>&#xA0;</mo><mo>)</mo></math></p>
+							</div><br>
+							<div class="paso_3">
+								<p>Observa que se forman dos triángulos semejantes <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mi>Q</mi><msub><mi>R</mi><mn>1</mn></msub><mo>&#xA0;</mo></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>Q</mi><msub><mi>P</mi><mn>1</mn></msub><mo>&#xA0;</mo></math></p>
+
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
