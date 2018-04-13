@@ -2256,3 +2256,88 @@ function fraccion_43 () {
   	};
 }
 
+function fraccion_44 () {
+  	var numerador = document.getElementById('numero').value;
+  	if (numerador != '') {
+  		if (numerador == 2) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_45 () {
+  	var numerador = document.getElementById('numero').value;
+  	if (numerador != '') {	
+		if (numerador == 2) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_46 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 2) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_47 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 0.16666666666666666) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_48 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		console.log(result_frac1);
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac2);
+		if (parseFloat(result_frac1) == 3.142857142857143 && parseFloat(result_frac2) == 7.857142857142857) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_49 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		console.log(result_frac1);
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac2);
+		if (parseFloat(result_frac1) == 4.25 && parseFloat(result_frac2) == 21.25) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
