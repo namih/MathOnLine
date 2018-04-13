@@ -65,7 +65,7 @@
     function validarSoloNumero(elEvento){
           // Variables que definen los caracteres permitidos
       var permitidos = "0123456789";
-      var teclas_especiales = [8,9, 37, 39]; // 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
+      var teclas_especiales = [8,9, 37, 45,39]; // 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
       // Obtener la tecla pulsada
       var evento = elEvento || window.event;
       var codigoCaracter = evento.charCode || evento.keyCode;

@@ -2,23 +2,7 @@
 
 
 <div class="container-fluid">
-	<style type="text/css">
-		.tema{
-			color: #224EB5;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.pregunta{
-			color: #2e75b6;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.instruccion{
-			color: #000000;
-			text-align: justify;
-			font-weight: normal;
-		}
-	</style>
+ 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
 		<div class="tema"><p>Desigualdades</p>
 			<p> Operaciones con desigualdades lineales de una variable</p>

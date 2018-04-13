@@ -1,0 +1,15 @@
+		.tema{
+			color: #224EB5;
+			text-align: justify;
+			font-weight: bold;
+		}
+		.pregunta{
+			color: #2e75b6;
+			text-align: justify;
+			font-weight: bold;
+		}
+		.instruccion{
+			color: #000000;
+			text-align: justify;
+			font-weight: normal;
+		}
