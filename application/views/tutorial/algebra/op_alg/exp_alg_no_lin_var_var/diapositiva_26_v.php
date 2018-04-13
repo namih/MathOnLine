@@ -1,11 +1,11 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_no_lin_var_var/no_var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cual es el valor de las figuras juntas?</p>
+		<p>¿Cuál es el valor de las figuras juntas?</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><msup><mi>3</mi><mn>2</mn></msup></math><br />
+					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup></math><br />
 					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi><mn>3</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn></math><br />
 					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><msup><mi>n</mi><mn>2</mn></msup></math><br />
 					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mi>n</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>3</mn></math><br />

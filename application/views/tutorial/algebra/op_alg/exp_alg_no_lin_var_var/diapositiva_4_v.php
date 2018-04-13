@@ -1,8 +1,8 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_no_lin_var_var/no_var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿cuanto mide el área de la figura formada por los cuadrados rosa y azul juntos?</p>
-		<p>Elige todas las respuestas que sean correctas.</p>
+		<p>¿Cuánto mide el área de la figura formada por los cuadrados rosa y azul juntos?</p>
+		<p>Hay más de una respuesta correcta.</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">

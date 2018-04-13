@@ -1,13 +1,13 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_no_lin_var_var/no_var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cuanto mide el área del cuadrado morado?</p>
-		<p>Elige todas las respuestas que sean correctas.</p>
+		<p>¿Cuánto mide el área del cuadrado morado?</p>
+		<p>Hay más de una respuesta correcta.</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
 					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>y</mi><mn>2</mn></msup></math><br />
-					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>x</mo><mo>&#xA0;</mo><mi>y</mi></math><br />
+					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>×</mo><mo>&#xA0;</mo><mi>y</mi></math><br />
 					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>(</mo><mi>y</mi><mo>)</mo></math><br />
 					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>y</mi></math><br />
 					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>y</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>y</mi></math><br />

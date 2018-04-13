@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_no_lin_var_var/no_var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>Supón que el cuadrado rosa vale <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>2</mn></msup></math> puntos, el rectángulo vale <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> puntos y el cuadrado blanco vale 1 punto. ¿Cuanto valen las figuras juntas?</p>
+		<p>Supón que el cuadrado rosa vale <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mn>2</mn></msup></math> puntos, el rectángulo vale <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> puntos y el cuadrado blanco vale 1 punto. ¿Cómo puede expresarse la suma de las tres figuras?</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
