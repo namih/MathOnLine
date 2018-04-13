@@ -1045,3 +1045,1214 @@ function respuesta_38 () {
 	
 }
 
+
+function incrementar_39 () {
+	
+	switch (ia) {
+		case 1:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_2_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>';
+			ia++;
+			break;
+		case 2:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_3_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>';
+			ia++;
+			break;
+		case 3:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_4_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>';
+			ia++;
+			break;
+		case 4:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_5_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>';
+			ia++;
+			break;
+		case 5:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_6_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>';
+			ia++;
+			break;
+		case 6:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_7_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>';
+			ia++;
+			break;
+		case 7:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_8_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>';
+			ia++;
+			break;
+		case 8:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_9_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math>';
+			ia++;
+			break;
+		case 9:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_10_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math>';
+			ia++;
+			break;
+		case 10:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_11_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math>';
+			ia++;
+			break;
+		case 11:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_12_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn></math>';
+			ia++;
+			break;
+		case 12:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_13_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn></math>';
+			ia++;
+			break;
+		case 13:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_14_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math>';
+			ia++;
+			break;
+		case 14:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_15_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math>';
+			ia++;
+			break;
+		case 15:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_16_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn></math>';
+			ia++;
+			break;
+		case 16:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_17_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn></math>';
+			ia++;
+			break;
+		case 17:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_18_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn></math>';
+			ia++;
+			break;
+		case 18:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_19_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math>';
+			ia++;
+			break;
+		case 19:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_20_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn></math>';
+			ia++;
+			break;
+		case 20:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_21_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math>';
+			ia++;
+			break;
+		case 21:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_22_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>22</mn></math>';
+			ia++;
+			break;
+		case 22:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_23_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math>';
+			ia++;
+			break;
+		case 23:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_24_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>24</mn></math>';
+			ia++;
+			break;
+		case 24:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_25_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math>';
+			ia++;
+			break;
+		case 25:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_26_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math>';
+			ia++;
+			break;
+		case 26:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_27_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>27</mn></math>';
+			ia++;
+			break;
+		case 27:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_28_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math>';
+			ia++;
+			break;
+		case 28:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_29_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29</mn></math>';
+			ia++;
+			break;
+		case 29:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_30_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math>';
+			ia++;
+			break;
+		case 30:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_31_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31</mn></math>';
+			ia++;
+			break;
+		case 31:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_32_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn></math>';
+			ia++;
+			break;
+		case 32:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_33_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn></math>';
+			ia++;
+			break;
+		case 33:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_34_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>34</mn></math>';
+			ia++;
+			break;
+		case 34:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_35_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>35</mn></math>';
+			ia++;
+			break;
+		case 35:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_36_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>36</mn></math>';
+			ia++;
+			break;
+		case 36:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_37_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>37</mn></math>';
+			ia++;
+			break;
+		case 37:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_38_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>38</mn></math>';
+			ia++;
+			break;
+		case 38:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_39_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn></math>';
+			ia++;
+			break;
+		case 39:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_40_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>40</mn></math>';
+			ia++;
+			break;
+		case 40:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_41_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>41</mn></math>';
+			ia++;
+			break;
+		case 41:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_42_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math>';
+			ia++;
+			break;
+		case 42:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_43_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>43</mn></math>';
+			ia++;
+			break;
+		case 43:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_44_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>44</mn></math>';
+			ia++;
+			break;
+		case 44:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_45_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>45</mn></math>';
+			ia++;
+			break;
+		case 45:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_46_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>46</mn></math>';
+			ia++;
+			break;
+		case 46:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_47_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>47</mn></math>';
+			ia++;
+			break;
+		case 47:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_48_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>48</mn></math>';
+			acierto();
+			ia++;
+			break;
+		case 48:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_49_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>49</mn></math>';
+			ia++;
+			break;
+		case 49:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_50_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>50</mn></math>';
+			ia++;
+			break;
+		case 50:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_51_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>51</mn></math>';
+			ia++;
+			break;
+		case 51:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_52_100.png";
+		    document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>52</mn></math>';
+			ia++;
+			break;
+		case 52:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_53_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>53</mn></math>';
+			ia++;
+			break;
+		case 53:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_54_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>54</mn></math>';
+			ia++;
+			break;
+		case 54:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_55_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math>';
+			ia++;
+			break;
+		
+		
+	}
+
+	
+	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function decrementar_39 () {
+	switch (ia) {
+		case 55:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_54_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>54</mn></math>';
+			ia--;
+			break;	
+		case 54:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_53_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>53</mn></math>';
+			ia--;
+			break;
+		case 53:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_52_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>52</mn></math>';
+			ia--;
+			break;
+		case 52:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_51_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>51</mn></math>';
+			ia--;
+			break;
+		case 51:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_50_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>50</mn></math>';
+			ia--;
+			break;
+		case 50:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_49_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>49</mn></math>';
+			ia--;
+			break;
+		case 49:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_48_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>48</mn></math>';
+			acierto();
+			ia--;
+			break;
+		case 48:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_47_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>47</mn></math>';
+			ia--;
+			break;
+		case 47:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_46_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>46</mn></math>';
+			ia--;
+			break;
+		case 46:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_45_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>45</mn></math>';
+			ia--;
+			break;
+		case 45:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_44_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>44</mn></math>';
+			ia--;
+			break;
+		case 44:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_43_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>43</mn></math>';
+			ia--;
+			break;
+		case 43:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_42_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math>';
+			ia--;
+			break;
+		case 42:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_41_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>41</mn></math>';
+			ia--;
+			break;
+		case 41:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_40_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>40</mn></math>';
+			ia--;
+			break;
+		case 40:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_39_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn></math>';
+			ia--;
+			break;
+		case 39:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_38_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>38</mn></math>';
+			ia--;
+			break;
+		case 38:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_37_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>37</mn></math>';
+			ia--;
+			break;
+		case 37:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_36_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>36</mn></math>';
+			ia--;
+			break;
+		case 36:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_35_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>35</mn></math>';
+			ia--;
+			break;
+		case 35:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_34_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>34</mn></math>';
+			ia--;
+			break;
+		case 34:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_33_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn></math>';
+			ia--;
+			break;
+		case 33:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_32_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn></math>';
+			ia--;
+			break;
+		case 32:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_31_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31</mn></math>';
+			ia--;
+			break;
+		case 31:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_30_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math>';
+			ia--;
+			break;
+		case 30:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_29_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29</mn></math>';
+			ia--;
+			break;
+		case 29:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_28_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math>';
+			ia--;
+			break;
+		case 28:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_27_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>27</mn></math>';
+			ia--;
+			break;
+		case 27:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_26_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math>';
+			ia--;
+			break;
+		case 26:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_25_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math>';
+			ia--;
+			break;
+		case 25:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_24_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>24</mn></math>';
+			ia--;
+			break;
+		case 24:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_23_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math>';
+			ia--;
+			break;
+		case 23:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_22_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>22</mn></math>';
+			ia--;
+			break;
+		case 22:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_21_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math>';
+			ia--;
+			break;
+		case 21:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_20_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn></math>';
+			ia--;
+			break;
+		case 20:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_19_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math>';
+			ia--;
+			break;
+		case 19:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_18_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn></math>';
+			ia--;
+			break;
+		case 18:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_17_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn></math>';
+			ia--;
+			break;
+		case 17:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_16_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn></math>';
+			ia--;
+			break;
+		case 16:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_15_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math>';
+			ia--;
+			break;
+		case 15:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_14_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math>';
+			ia--;
+			break;
+		case 14:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_13_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn></math>';
+			ia--;
+			break;
+		case 13:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_12_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn></math>';
+			ia--;
+			break;
+		case 12:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_11_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math>';
+			ia--;
+			break;
+		case 11:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_10_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math>';
+			ia--;
+			break;
+		case 10:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_9_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math>';
+			ia--;
+			break;
+		case 9:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_8_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>';
+			ia--;
+			break;
+		case 8:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_7_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>';
+			ia--;
+			break;
+		case 7:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_6_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>';
+			ia--;
+			break;
+		case 6:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_5_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>';
+			ia--;
+			break;
+		case 5:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_4_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>';
+			ia--;
+			break;
+		case 4:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_3_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>';
+			ia--;
+			break;
+		case 3:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_2_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>';
+			ia--;
+			break;
+		case 2:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_1_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>';
+			
+			break;
+		}
+	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function respuesta_39_a () {
+  	var opcion1 = document.getElementById('r1_a').cheked;
+  	var opcion2 = document.getElementById('r2_a').cheked;
+  	switch (ia) {
+		case 1:
+			acierto();
+			ia++;
+			break;	
+		case 2:
+			error();
+			ia++;
+			break;
+		
+	}
+	
+}
+
+function respuesta_39_b () {
+  	var opcion1 = document.getElementById('r1_b').cheked;
+  	var opcion2 = document.getElementById('r2_b').cheked;
+  	switch (ib) {
+		case 1:
+			error();
+			ib++;
+			break;	
+		case 2:
+			acierto();
+			ib++;
+			break;
+		
+	}
+	
+}
+
+function incrementar_40 () {
+	
+	switch (ia) {
+		case 1:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_2_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>';
+			ia++;
+			break;
+		case 2:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_3_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>';
+			ia++;
+			break;
+		case 3:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_4_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>';
+			ia++;
+			break;
+		case 4:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_5_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>';
+			ia++;
+			break;
+		case 5:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_6_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>';
+			ia++;
+			break;
+		case 6:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_7_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>';
+			ia++;
+			break;
+		case 7:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_8_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>';
+			ia++;
+			break;
+		case 8:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_9_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math>';
+			ia++;
+			break;
+		case 9:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_10_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math>';
+			ia++;
+			break;
+		case 10:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_11_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math>';
+			ia++;
+			break;
+		case 11:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_12_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn></math>';
+			ia++;
+			break;
+		case 12:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_13_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn></math>';
+			ia++;
+			break;
+		case 13:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_14_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math>';
+			ia++;
+			break;
+		case 14:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_15_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math>';
+			ia++;
+			break;
+		case 15:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_16_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn></math>';
+			ia++;
+			break;
+		case 16:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_17_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn></math>';
+			ia++;
+			break;
+		case 17:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_18_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn></math>';
+			ia++;
+			break;
+		case 18:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_19_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math>';
+			ia++;
+			break;
+		case 19:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_20_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn></math>';
+			ia++;
+			break;
+		case 20:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_21_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math>';
+			ia++;
+			break;
+		case 21:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_22_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>22</mn></math>';
+			ia++;
+			break;
+		case 22:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_23_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math>';
+			ia++;
+			break;
+		case 23:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_24_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>24</mn></math>';
+			ia++;
+			break;
+		case 24:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_25_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math>';
+			ia++;
+			break;
+		case 25:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_26_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math>';
+			ia++;
+			break;
+		case 26:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_27_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>27</mn></math>';
+			ia++;
+			break;
+		case 27:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_28_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math>';
+			ia++;
+			break;
+		case 28:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_29_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29</mn></math>';
+			ia++;
+			break;
+		case 29:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_30_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math>';
+			ia++;
+			break;
+		case 30:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_31_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31</mn></math>';
+			ia++;
+			break;
+		case 31:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_32_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn></math>';
+			ia++;
+			break;
+		case 32:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_33_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn></math>';
+			ia++;
+			break;
+		case 33:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_34_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>34</mn></math>';
+			ia++;
+			break;
+		case 34:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_35_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>35</mn></math>';
+			ia++;
+			break;
+		case 35:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_36_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>36</mn></math>';
+			ia++;
+			break;
+		case 36:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_37_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>37</mn></math>';
+			ia++;
+			break;
+		case 37:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_38_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>38</mn></math>';
+			ia++;
+			break;
+		case 38:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_39_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn></math>';
+			ia++;
+			break;
+		case 39:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_40_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>40</mn></math>';
+			ia++;
+			break;
+		case 40:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_41_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>41</mn></math>';
+			ia++;
+			break;
+		case 41:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_42_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math>';
+			ia++;
+			break;
+		case 42:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_43_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>43</mn></math>';
+			ia++;
+			break;
+		case 43:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_44_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>44</mn></math>';
+			ia++;
+			break;
+		case 44:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_45_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>45</mn></math>';
+			ia++;
+			break;
+		case 45:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_46_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>46</mn></math>';
+			ia++;
+			break;
+		case 46:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_47_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>47</mn></math>';
+			ia++;
+			break;
+		case 47:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_48_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>48</mn></math>';
+			acierto();
+			ia++;
+			break;
+		case 48:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_49_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>49</mn></math>';
+			ia++;
+			break;
+		case 49:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_50_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>50</mn></math>';
+			ia++;
+			break;
+		case 50:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_51_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>51</mn></math>';
+			ia++;
+			break;
+		case 51:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_52_100.png";
+		    document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>52</mn></math>';
+			ia++;
+			break;
+		case 52:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_53_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>53</mn></math>';
+			ia++;
+			break;
+		case 53:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_54_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>54</mn></math>';
+			ia++;
+			break;
+		case 54:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_55_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math>';
+			ia++;
+			break;
+		
+		
+	}
+
+	
+	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function decrementar_40 () {
+	switch (ia) {
+		case 55:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_54_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>54</mn></math>';
+			ia--;
+			break;	
+		case 54:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_53_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>53</mn></math>';
+			ia--;
+			break;
+		case 53:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_52_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>52</mn></math>';
+			ia--;
+			break;
+		case 52:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_51_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>51</mn></math>';
+			ia--;
+			break;
+		case 51:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_50_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>50</mn></math>';
+			ia--;
+			break;
+		case 50:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_49_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>49</mn></math>';
+			ia--;
+			break;
+		case 49:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_48_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>48</mn></math>';
+			acierto();
+			ia--;
+			break;
+		case 48:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_47_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>47</mn></math>';
+			ia--;
+			break;
+		case 47:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_46_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>46</mn></math>';
+			ia--;
+			break;
+		case 46:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_45_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>45</mn></math>';
+			ia--;
+			break;
+		case 45:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_44_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>44</mn></math>';
+			ia--;
+			break;
+		case 44:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_43_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>43</mn></math>';
+			ia--;
+			break;
+		case 43:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_42_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>42</mn></math>';
+			ia--;
+			break;
+		case 42:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_41_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>41</mn></math>';
+			ia--;
+			break;
+		case 41:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_40_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>40</mn></math>';
+			ia--;
+			break;
+		case 40:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_39_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>39</mn></math>';
+			ia--;
+			break;
+		case 39:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_38_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>38</mn></math>';
+			ia--;
+			break;
+		case 38:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_37_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>37</mn></math>';
+			ia--;
+			break;
+		case 37:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_36_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>36</mn></math>';
+			ia--;
+			break;
+		case 36:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_35_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>35</mn></math>';
+			ia--;
+			break;
+		case 35:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_34_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>34</mn></math>';
+			ia--;
+			break;
+		case 34:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_33_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn></math>';
+			ia--;
+			break;
+		case 33:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_32_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>32</mn></math>';
+			ia--;
+			break;
+		case 32:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_31_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>31</mn></math>';
+			ia--;
+			break;
+		case 31:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_30_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math>';
+			ia--;
+			break;
+		case 30:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_29_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>29</mn></math>';
+			ia--;
+			break;
+		case 29:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_28_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math>';
+			ia--;
+			break;
+		case 28:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_27_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>27</mn></math>';
+			ia--;
+			break;
+		case 27:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_26_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>26</mn></math>';
+			ia--;
+			break;
+		case 26:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_25_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math>';
+			ia--;
+			break;
+		case 25:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_24_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>24</mn></math>';
+			ia--;
+			break;
+		case 24:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_23_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>23</mn></math>';
+			ia--;
+			break;
+		case 23:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_22_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>22</mn></math>';
+			ia--;
+			break;
+		case 22:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_21_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>21</mn></math>';
+			ia--;
+			break;
+		case 21:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_20_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn></math>';
+			ia--;
+			break;
+		case 20:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_19_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>19</mn></math>';
+			ia--;
+			break;
+		case 19:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_18_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>18</mn></math>';
+			ia--;
+			break;
+		case 18:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_17_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>17</mn></math>';
+			ia--;
+			break;
+		case 17:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_16_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>16</mn></math>';
+			ia--;
+			break;
+		case 16:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_15_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math>';
+			ia--;
+			break;
+		case 15:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_14_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>14</mn></math>';
+			ia--;
+			break;
+		case 14:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_13_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13</mn></math>';
+			ia--;
+			break;
+		case 13:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_12_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn></math>';
+			ia--;
+			break;
+		case 12:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_11_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn></math>';
+			ia--;
+			break;
+		case 11:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_10_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math>';
+			ia--;
+			break;
+		case 10:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_9_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9</mn></math>';
+			ia--;
+			break;
+		case 9:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_8_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn></math>';
+			ia--;
+			break;
+		case 8:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_7_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math>';
+			ia--;
+			break;
+		case 7:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_6_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn></math>';
+			ia--;
+			break;
+		case 6:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_5_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn></math>';
+			ia--;
+			break;
+		case 5:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_4_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn></math>';
+			ia--;
+			break;
+		case 4:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_3_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn></math>';
+			ia--;
+			break;
+		case 3:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_2_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math>';
+			ia--;
+			break;
+		case 2:
+			document.getElementById("telar").src = base_url+"statics/img/tutorial/numeros/fracc_pct_rzns_pro/telar_1_100.png";
+			document.getElementById("tira").innerHTML ='Número de tiras: <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math>';
+			
+			break;
+		}
+	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function numerador_40 () {
+	var numerador_a = document.getElementById('numero_a').value;
+	var numerador_b = document.getElementById('numero_b').value;
+	var numerador_c = document.getElementById('numero_c').value;
+	
+  	if (numerador_a != '' && numerador_b != '' && numerador_c != '') {
+		if (numerador_a == 48 && numerador_b == 2 && numerador_c == 48 ) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function numerador_41 () {
+	var numerador_a = document.getElementById('numero').value;
+	
+  	if (numerador_a != '' ) {
+		if (numerador_a == 48 ) {
+  			acierto();
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_42 () {
+  	var numerador = document.getElementById('numerador').value;
+  	var denominador = document.getElementById('denominador').value;
+  	if (numerador != '' && denominador != '') {
+  		result_frac = numerador / denominador;
+  		console.log(result_frac);
+		if (parseFloat(result_frac) == 16) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
+function fraccion_43 () {
+  	var numerador_a = document.getElementById('numerador_a').value;
+  	var denominador_a = document.getElementById('denominador_a').value;
+  	var numerador_b = document.getElementById('numerador_b').value;
+  	var denominador_b = document.getElementById('denominador_b').value;
+  	if (numerador_a != '' && denominador_a != '' && numerador_b != '' && denominador_b != '') {
+  		result_frac1 = numerador_a / denominador_a;
+  		result_frac2 = numerador_b / denominador_b;
+  		console.log(result_frac1);
+  		console.log(result_frac2);
+		if (parseFloat(result_frac1) == 1.6666666666666667 && parseFloat(result_frac2) == 25) {
+  			acierto();	
+  		}else{
+  			error();
+  		};
+  	};
+}
+
