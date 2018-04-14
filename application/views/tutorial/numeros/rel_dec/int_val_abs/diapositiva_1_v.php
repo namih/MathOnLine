@@ -1,23 +1,20 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
 
 <div class="container-fluid">
-	
-		<p align="justify">Manuel y sus amigos tienen 5 latas llenas de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> . Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> litro, ¿cuántos litros de agua tienen?</p>
+	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
+		<p align="justify">Para las transmisiones de radio es necesario contar con antenas retransmisoras que reciben la señal de otra antena y la retransmiten a una potencia mayor, de manera que la señal pueda viajar mayores distancias sin degradarse.
+			La señal de una estación de radio no profesional viaja alrededor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn><mo>&#xA0;</mo><mi>k</mi><mi>m</mi></math> sin degradarse. Si se tiene una antena retransmisora a <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn><mo>&#xA0;</mo><mi>k</mi><mi>m</mi></math> 
+			de la estación de radio, ¿en qué lugar respecto a la estación de radio se debe colocar una nueva antena retransmisora para que no se pierda la calidad de la señal? </p>
+	</div>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></div></td>
-						<td><img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/lata_un_medio.png"  /></div></td>
-					</tr>
-			</table>
+			<p>Geogebra-antenas </p>
 		</div>		
 		
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
-			Estima la cantidad antes de resolver el problema:
-		   	<li>Menos de 1 litro de agua.</li> 
-		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
-			<li>Más de 2 litros de agua.</li> 
-			<li>Más de tres litros de agua.</li> 
+			<p>podemos considerar que las antenas retransmisoras se sitúan sobre una recta numérica y que la estación de radio se encuentra situada en el origen de la misma.</p>
+			<p>Además podemos especificar que si una antena retransmisora se encuentra del lado izquierdo de la estación de radio le asignaremos un número negativo, mientras que si se encuentra del lado derecho le asignaremos un número positivo.</p>
+			<p>¿En qué lugar respecto a la estación se debe colocar una antena retransmisora para que no se pierda la calidad de la señal?</p>
+			<p>¿Cómo podemos escribir en forma matemática que un objeto se encuentra a cierta distancia de otro objeto?</p>
 		</div>	
 		
 </div>
