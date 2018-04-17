@@ -2,8 +2,17 @@
 
 <div class="container-fluid">
 	
-		<p align="justify">Manuel y sus amigos tienen 5 latas llenas de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> . Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> litro, ¿cuántos litros de agua tienen?</p>
+		
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="justify">¿Cómo se miden las distancias entre dospuntos en la recta numérica?¿Què caracterìsticas que debe tener la forma de medir la distancia?</p>
+			<p align="left">Entre las afirmaciones siguientes elige aquella que NO debe ser una característica de la forma de medir la distancia entre dos puntos:</p>
+			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			Estima la cantidad antes de resolver el problema:
+		   	<li>Menos de 1 litro de agua.</li> 
+		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
+			<li>Más de 2 litros de agua.</li> 
+			<li>Más de tres litros de agua.</li> 
+		</div>	
 			<table>
 					<tr align="center">
 						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></div></td>
@@ -12,12 +21,6 @@
 			</table>
 		</div>		
 		
-		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
-			Estima la cantidad antes de resolver el problema:
-		   	<li>Menos de 1 litro de agua.</li> 
-		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
-			<li>Más de 2 litros de agua.</li> 
-			<li>Más de tres litros de agua.</li> 
-		</div>	
+		
 		
 </div>
