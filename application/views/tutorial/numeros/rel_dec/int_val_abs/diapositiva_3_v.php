@@ -1,23 +1,97 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
 
 <div class="container-fluid">
-	
-		<p align="justify">Manuel y sus amigos tienen 5 latas llenas de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> . Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> litro, ¿cuántos litros de agua tienen?</p>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></div></td>
-						<td><img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/lata_un_medio.png"  /></div></td>
+		<p align="justify">Considerando las caracterìsticas que se desea que tenga la distancia, en matemáteticas se define el valor absoluto de un número real como su distancia al origen.</p>
+		<p align="left">El <strong>valor absoluto</strong> de un número real <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> se denota por <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced></math>.</p>
+		<p align="left">Responde las preguntas.</p>
+		<div id="seccion" align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			<table align="left">
+					<tr align="left">
+						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>10</mn></math>?</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn>10</mn></mfenced><mo>=</mo></math></td>
+						<td><h6><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_3_a()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_a" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi></h6></td>
 					</tr>
 			</table>
-		</div>		
-		
-		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
-			Estima la cantidad antes de resolver el problema:
-		   	<li>Menos de 1 litro de agua.</li> 
-		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
-			<li>Más de 2 litros de agua.</li> 
-			<li>Más de tres litros de agua.</li> 
-		</div>	
-		
+		</div>
+
+		<div style="display:none" align="left" class=" col-lg-12 col-md-12  col-xs-12" id="seccion_1">
+			<table align="left">
+					<tr align="left">
+						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>-10</mn></math>?</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn>-10</mn></mfenced><mo>=</mo></math></td>
+						<td><h6><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_3_b()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_b" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi></h6></td>
+					</tr>
+			</table>
+		</div>
+
+		<div style="display:none" align="left" class=" col-lg-12 col-md-12  col-xs-12" id="seccion_2">
+			<table align="left">
+					<tr align="left">
+						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1.96</mn></math>?</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn>1.96</mn></mfenced><mo>=</mo></math></td>
+						<td><h6><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_3_c()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_c" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi></h6></td>
+					</tr>
+			</table>
+		</div>
+
+		<div style="display:none" align="left" class=" col-lg-12 col-md-12  col-xs-12" id="seccion_3">
+			<table align="left">
+					<tr align="left">
+						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>-1.96</mn></math>?</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn>-1.96</mn></mfenced><mo>=</mo></math></td>
+						<td><h6><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_3_d()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_d" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi></h6></td>
+					</tr>
+			</table>
+		</div>
+
+		<div style="display:none" align="left" class=" col-lg-12 col-md-12  col-xs-12" id="seccion_3">
+			<table align="left">
+					<tr align="left">
+						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>-1.96</mn></math>?</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn>-1.96</mn></mfenced><mo>=</mo></math></td>
+						<td><h6><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_3_()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_d" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi></h6></td>
+					</tr>
+			</table>
+		</div>
+
+
+	</div>
+</div>
+
+<div id="correcta" style="display: none" class="alert alert-success">
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 </div>

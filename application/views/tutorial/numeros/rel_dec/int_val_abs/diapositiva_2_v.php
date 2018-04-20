@@ -12,23 +12,22 @@
 					<li>La distancia entre dos puntos puede ser positiva o negativa.</li>
 				</ol>
 			</div>
-			<div class="dropdown" align="left">
-    		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Opciones:
-    		<span class="caret"></span></button>
-    		<ul class="dropdown-menu">
-      		<li id="r1"><a href="#">1</a></li>
-      		<li id="r2"><a href="#">2</a></li>
-      		<li id="r3"><a href="#">3</a></li>
-					<li id="r4"><a href="#">4</a></li>
-    		</ul>
-  		</div>
-			<table>
-					<tr align="center">
+			<div style="margin-bottom: 20px" align="left" class=" col-lg-12 col-md-12  col-xs-12">
+					<span>Afirmaciones: </span>
+					<select id="opcion" onchange="respuesta_2 ()">
+							<option value="0" id="r1">Elige:</a></option>
+							<option value="1" id="r1">1</a></option>
+							<option value="2" id="r2">2</a></option>
+							<option value="3" id="r3">3</a></option>
+							<option value="4" id="r4">4</a></option>
+				</select>
+			</div>
+ </div>
+</div>
 
-					</tr>
-			</table>
-		</div>
-
-
-
+<div id="correcta" style="display: none" class="alert alert-success">
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 </div>

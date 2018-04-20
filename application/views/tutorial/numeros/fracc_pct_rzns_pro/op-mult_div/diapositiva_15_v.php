@@ -18,12 +18,12 @@
 		</table>
 	</div>
 	<div align="left" style="margin-bottom: 20px"  class=" col-lg-8 col-md-8 col-xs-8">
-		<li>Área del cuadrado: 
+		<li>Área del cuadrado:
 			<h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
 					<input onchange="numero_15_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numero_a" placeholder="0" />
 			</annotation-xml></semantics></mi></math></h5></li>
-			 
+
 		<li>¿Qué fracción del área del cuadrado es el área del cuadrado azul? <h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
 					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
@@ -32,8 +32,8 @@
 					<annotation-xml encoding="application/xhtml+xml">
 						<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
 					</annotation-xml></semantics></mi></mfrac></math></h5></li>
-		
-		<li>¿Cuál es el área del cuadrado azul? 
+
+		<li>¿Cuál es el área del cuadrado azul?
 			<h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
 					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_b" placeholder="0" />
@@ -41,8 +41,8 @@
 				<mi><semantics>
 					<annotation-xml encoding="application/xhtml+xml">
 						<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_b" placeholder="0" />
-					</annotation-xml></semantics></mi></mfrac></math></h5></li> 
-		
+					</annotation-xml></semantics></mi></mfrac></math></h5></li>
+
 		<li>Área del cuadrado azul = base x altura = <h5><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics>
 				<annotation-xml encoding="application/xhtml+xml">
 					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_c" placeholder="0" />
@@ -76,8 +76,8 @@
 </div>
 
 <div id="correcta" style="display: none" class="alert alert-success">
-	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
 </div>
 <div id="error" style="display: none" class="alert alert-warning">
-	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> 
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 </div>
