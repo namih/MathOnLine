@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
  
 <script type="text/javascript" charset="utf-8">
-	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/recta_por_dos_puntos/diapositiva_59.ggb","showToolbar":false, height: 300	}, true);
+	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/recta_por_dos_puntos/diapositiva_73.ggb","showToolbar":false, height: 300	}, true);
 	window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 
@@ -28,6 +28,9 @@
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="paso_0">
 							</div>
+							<div class="paso_1">
+								<p>Tomemos como ejemplo la recta que pasa por los puntos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>Q</mi><mo>(</mo><mo>&#xA0;</mo><mn>6</mn><mo>,</mo><mo>&#xA0;</mo><mn>1</mn><mo>&#xA0;</mo><mo>)</mo></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi><mo>(</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mn>4</mn><mo>&#xA0;</mo><mo>)</mo></math> </p>
+							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
 							<div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
