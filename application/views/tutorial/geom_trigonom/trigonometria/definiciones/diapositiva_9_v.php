@@ -24,5 +24,5 @@
 		</div>
 		
 	</div>
-	<p>Si tenemos triángulos cuyos lados son diferentes, los cocientes de los lados serán diferentes.</p>
+	<p>Si tenemos triángulos cuyos lados son diferentes, el numerador y el denominador de los cocientes de los lados, serán diferentes. Pero, si los triángulos son semejantes, los cocientes de los lados serán iguales.</p>
 </div>
