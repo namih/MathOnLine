@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/pendiente_y_ordenada/diapositiva_16.ggb","howToolbar":false, height: 300 }, true);
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/pendiente_y_ordenada/diapositiva_18.ggb","howToolbar":false, height: 300 }, true);
     window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 <div class="container-fluid">
@@ -26,19 +26,20 @@
                     <div align="left"></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-                            <p>En la recta <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac><mn>3</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math></p>
-                            <p><label> ¿Cuál es su pendiente? <input class="n_float" type="text" name="pendiente" id="pendiente" onchange="validaInputRelacion('1','pendiente','');" onkeypress="return validarSoloNumero(event);"> </label>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_pendiente">
-                                </div>
+                             <p>En la recta <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>2</mn><mn>4</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn></math></p>
+                            <p><label> ¿Cuál es su pendiente? <input class="n_float" type="text" name="pendiente" id="pendiente" onchange="validaInputRelacion('-0','pendiente','.5');" onkeypress="return validarSoloFlotante(event,'pendiente');"> </label>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_pendiente">
+                                    </div>
+                                    </p>
+                            <p><label> ¿Cuál es su intersección con el eje Y? <input class="n_float" type="text" name="inter_x" id="inter_x"  onchange="validaInputRelacion('3','inter_x','');" onkeypress="return validarSoloNumero(event);"> </label>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_inter_x">
+                                    </div>
                             </p>
-                            <p><label> ¿Cuál es su intersección con el eje Y? <input class="n_float" type="text" name="inter_x" id="inter_x"  onchange="validaInputRelacion('2','inter_x','');" onkeypress="return validarSoloNumero(event);"> </label>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_inter_x">
-                                </div>
-                            </p>
-                            <p><label> ¿Cuál es su intersección con el eje x? <input class="n_float" type="text" name="inter_y" id="inter_y" onchange="validaInputRelacion('-2','inter_y','');" onkeypress="return validarSoloNumero(event);"> </label>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_inter_y">
-                                </div>
-                            </p>
+                            <p><label> ¿Cuál es su intersección con el eje x? <input class="n_float" type="text" name="inter_y" id="inter_y" onchange="validaInputRelacion('6','inter_y','');" onkeypress="return validarSoloNumero(event);"> </label>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_inter_y">
+                                    </div>
+                                    </p>
+
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
                             <div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>

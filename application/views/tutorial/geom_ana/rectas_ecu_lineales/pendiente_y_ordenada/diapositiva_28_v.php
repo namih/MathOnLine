@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <script type="text/javascript" charset="utf-8">
-	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/pendiente_y_ordenada/diapositiva_15.ggb","howToolbar":false, height: 300	}, true);
+	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/pendiente_y_ordenada/diapositiva_28.ggb","showToolbar":false, height: 300	}, true);
 	window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 <div class="container-fluid">
@@ -23,15 +23,16 @@
 				<p><label>Ejercicios</label></p>
 				</div>
 				<div class="row">
-					<div align="left"></div>
+					<div align="left"><p><label>Ejercicios</label></p></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-  						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-							<p>En la recta <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>1</mn></math></p>
-							<p><label> ¿Cuál es su pendiente? <input class="n_float" type="text" name="pendiente" id="pendiente" disabled="disabled" readonly="readonly" value="3"> </label>
-							</p>
-							<p><label> ¿Cuál es su intersección con el eje Y? <input class="n_float" type="text" name="inter_x" id="inter_x"  disabled="disabled" readonly="readonly" value="-1"> </label>
-							</p>
-							<p><label> ¿Cuál es su intersección con el eje x? <input class="n_float" type="text" name="inter_y" id="inter_y" disabled="disabled" readonly="readonly" value="0.33"> </label>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
+							<p>Encuentra la ecuación de la recta <b>perpendicular</b> a la recta</p>
+							<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>-</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>.</mo><mn>5</mn></math></p>
+							<p>que pasa por el punto <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>(</mo><mo>&#xA0;</mo><mn>3</mn><mo>,</mo><mo>&#xA0;</mo><mo>-</mo><mn>4</mn><mo>&#xA0;</mo><mo>)</mo></math></p>
+							<p><label> y= <input class="n_float" type="text" name="pendiente" id="pendiente" disabled="disabled" readonly="readonly" value="0.33">  x + <input class="n_float" type="text" name="ordenada" id="ordenada" disabled="disabled" readonly="readonly" value="-5"> </label>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_pendiente"></div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_ordenada">
+                                    </div>
 							</p>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
