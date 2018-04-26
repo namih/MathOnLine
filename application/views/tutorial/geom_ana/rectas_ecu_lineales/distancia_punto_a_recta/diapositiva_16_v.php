@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/distancia_punto_a_recta/diapositiva_2.ggb","showToolbar":false, height: 300  }, true);
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/distancia_punto_a_recta/diapositiva_16.ggb","showToolbar":false, height: 300  }, true);
     window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 <div class="container-fluid">
@@ -33,7 +33,27 @@
 					<div align="left"></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
-							<div class="paso_0">
+							<div class="paso_6">
+								<p>Ahora hay que encontrar el punto de intersección de estas dos rectas</p>
+								<p><span style="color:red;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>5</mn></math></span> <br>y<br> <span style="color:blue;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>.</mo><mn>5</mn></math></span></p>	
+								<p>¿Cuál es el punto de intersección?</p>
+								<p>Q( <math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input class="n_float" type="text" name="input_1" id="input_1" onchange="validaInputRelacion('1','input_1','.4');" onkeypress="return validarSoloFlotante(event,'input_1');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
+											</annotation-xml>
+										</semantics>										
+									</mi></math>, <math xmlns="http://www.w3.org/1998/Math/MathML">
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('-2','input_2','.2');" onkeypress="return validarSoloFlotante(event,'input_2');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
+											</annotation-xml>
+										</semantics>										
+									</mi></math> )</p>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_1"></div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_2"></div>
 							</div><br>
 						</div>
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
