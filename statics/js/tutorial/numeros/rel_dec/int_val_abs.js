@@ -34,10 +34,12 @@ function respuesta_2 (){
 
 function entero_3_a () {
   	var entero = document.getElementById('entero_a').value;
+
   	 if (entero != '') {
 		     if (entero == 10) {
   				     acierto();
                document.getElementById('seccion_1').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>1</mn><mn>6</mn></mfrac></math>';
         	     MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			 }else{
   				     error();
@@ -53,6 +55,7 @@ function entero_3_b () {
                document.getElementById('seccion').style.display = 'none';
                document.getElementById('seccion_1').style.display = 'none';
                document.getElementById('seccion_2').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>2</mn><mn>6</mn></mfrac></math>';
         	     MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			}else{
   				error();
@@ -66,6 +69,7 @@ function entero_3_c () {
 			   if (entero == 1.96) {
   				     acierto();
                document.getElementById('seccion_3').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>2</mn><mn>6</mn></mfrac></math>';
                MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			}else{
   				error();
@@ -83,6 +87,7 @@ function entero_3_d () {
                document.getElementById('seccion_2').style.display = 'none';
                document.getElementById('seccion_3').style.display = 'none';
                document.getElementById('seccion_4').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>3</mn><mn>6</mn></mfrac></math>';
         	     MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			}else{
   				error();
@@ -90,12 +95,50 @@ function entero_3_d () {
   		};
 }
 
-function entero_3_e () {
-  	var entero = document.getElementById('entero_c').value;
-  	 if (entero != '') {
-			   if (entero == 1.96) {
+function fraccion_3_a () {
+  	var numerador = document.getElementById('numerador_3a').value;
+    var denominador = document.getElementById('denominador_3b').value;
+  	 if (numerador != '' && denominador != '') {
+			   if (numerador == 2 && denominador == 3) {
   				     acierto();
                document.getElementById('seccion_5').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>3</mn><mn>6</mn></mfrac></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function fraccion_3_b () {
+  var numerador = document.getElementById('numerador_3c').value;
+  var denominador = document.getElementById('denominador_3d').value;
+   if (numerador != '' && denominador != '') {
+       if (numerador == 2 && denominador == 3) {
+             acierto();
+             document.getElementById('seccion').style.display = 'none';
+             document.getElementById('seccion_1').style.display = 'none';
+             document.getElementById('seccion_2').style.display = 'none';
+             document.getElementById('seccion_3').style.display = 'none';
+             document.getElementById('seccion_4').style.display = 'none';
+             document.getElementById('seccion_5').style.display = 'none';
+             document.getElementById('seccion_6').style.display = 'inline-block';
+             document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>4</mn><mn>6</mn></mfrac></math>';
+             MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+      }else{
+        error();
+      };
+    };
+
+}
+
+function entero_3_e () {
+  	var entero = document.getElementById('entero_e').value;
+  	 if (entero != '') {
+			   if (entero == 12) {
+  				     acierto();
+               document.getElementById('seccion_7').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>4</mn><mn>6</mn></mfrac></math>';
                MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			}else{
   				error();
@@ -104,16 +147,91 @@ function entero_3_e () {
 }
 
 function entero_3_f () {
-  	var entero = document.getElementById('entero_b').value;
+  	var entero = document.getElementById('entero_f').value;
   	 if (entero != '') {
-			   if (entero == 10) {
+			   if (entero == 12) {
   				     acierto();
                document.getElementById('seccion').style.display = 'none';
                document.getElementById('seccion_1').style.display = 'none';
-               document.getElementById('seccion_2').style.display = 'inline-block';
-        	     MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+               document.getElementById('seccion_2').style.display = 'none';
+               document.getElementById('seccion_3').style.display = 'none';
+               document.getElementById('seccion_4').style.display = 'none';
+               document.getElementById('seccion_5').style.display = 'none';
+               document.getElementById('seccion_6').style.display = 'none';
+               document.getElementById('seccion_7').style.display = 'none';
+               document.getElementById('seccion_8').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>5</mn><mn>6</mn></mfrac></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
   			}else{
   				error();
   			};
   		};
+}
+
+function entero_3_g () {
+  	var entero = document.getElementById('entero_g').value;
+  	 if (entero != '') {
+			   if (entero == 1.58) {
+  				     acierto();
+               document.getElementById('seccion_9').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>5</mn><mn>6</mn></mfrac></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function entero_3_h () {
+  	var entero = document.getElementById('entero_h').value;
+  	 if (entero != '') {
+			   if (entero == 1.58) {
+  				     acierto();
+               document.getElementById('seccion').style.display = 'none';
+               document.getElementById('seccion_1').style.display = 'none';
+               document.getElementById('seccion_2').style.display = 'none';
+               document.getElementById('seccion_3').style.display = 'none';
+               document.getElementById('seccion_4').style.display = 'none';
+               document.getElementById('seccion_5').style.display = 'none';
+               document.getElementById('seccion_6').style.display = 'none';
+               document.getElementById('seccion_7').style.display = 'none';
+               document.getElementById('seccion_8').style.display = 'none';
+               document.getElementById('seccion_9').style.display = 'none';
+               document.getElementById('seccion_10').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>6</mn><mn>6</mn></mfrac></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function fraccion_3_c () {
+  	var numerador = document.getElementById('numerador_3e').value;
+    var denominador = document.getElementById('denominador_3f').value;
+  	 if (numerador != '' && denominador != '') {
+			   if (numerador == 1 && denominador == 3) {
+  				     acierto();
+               document.getElementById('seccion_11').style.display = 'inline-block';
+               document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>6</mn><mn>6</mn></mfrac></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function fraccion_3_d () {
+  var numerador = document.getElementById('numerador_3g').value;
+  var denominador = document.getElementById('denominador_3h').value;
+   if (numerador != '' && denominador != '') {
+       if (numerador == 1 && denominador == 3) {
+             acierto();
+             document.getElementById("indicador").innerHTML ='Ejercicio: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>6</mn><mn>6</mn></mfrac></math>';
+             MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+      }else{
+        error();
+      };
+    };
+
 }
