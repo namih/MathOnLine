@@ -20,6 +20,18 @@ function error () {
 	   });
 }
 
+function mostrar_segundo () {
+  	document.getElementById('first').style.display = 'none';
+  	document.getElementById('second').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
+function mostrar_tercero () {
+  	document.getElementById('second').style.display = 'none';
+  	document.getElementById('third').style.display = 'inline-block';
+  	MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+}
+
 function respuesta_2 (){
     var res = document.getElementById('opcion');
     var seleccionado = res.options[res.selectedIndex].value;
@@ -234,4 +246,49 @@ function fraccion_3_d () {
       };
     };
 
+}
+
+function entero_4_a () {
+  	var entero_a = document.getElementById('entero_a').value;
+    var entero_b = document.getElementById('entero_b').value;
+    var entero_c = document.getElementById('entero_c').value;
+  	 if (entero_a != '' && entero_b != '' && entero_c != '') {
+			   if (entero_a == 12 && entero_b == 12 && entero_c == 12) {
+  				     acierto();
+               document.getElementById("indicador_a").innerHTML ='Efectivamente, -12 y 12 son simétricos y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>12</mn></mrow></mfenced><mo>=</mo><mfenced open="|" close="|"><mn>12</mn></mfenced><mo>=</mo><mn>12</mn></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function entero_4_b () {
+  	var entero_d = document.getElementById('entero_d').value;
+    var entero_e = document.getElementById('entero_e').value;
+    var entero_f = document.getElementById('entero_f').value;
+  	 if (entero_d != '' && entero_e != '' && entero_f != '') {
+			   if (entero_d == 1.08 && entero_e == 1.08 && entero_f == 1.08) {
+  				     acierto();
+               document.getElementById("indicador_b").innerHTML ='Efectivamente, -1.08 y 1.08 son simétricos y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>1.08</mn></mrow></mfenced><mo>=</mo><mfenced open="|" close="|"><mn>1.08</mn></mfenced><mo>=</mo><mn>1.08</mn></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function entero_4_c () {
+  	var entero_a = document.getElementById('entero_g').value;
+    var entero_b = document.getElementById('entero_h').value;
+    var entero_c = document.getElementById('entero_i').value;
+  	 if (entero_a != '' && entero_b != '' && entero_c != '') {
+			   if (entero_a == 12 && entero_b == 12 && entero_c == 12) {
+  				     acierto();
+               document.getElementById("indicador").innerHTML ='Efectivamente, -12 y 12 son simétricos y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>12</mn></mrow></mfenced><mo>=</mo><mfenced open="|" close="|"><mn>12</mn></mfenced><mo>=</mo><mn>12</mn></math>';
+               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+  			}else{
+  				error();
+  			};
+  		};
 }
