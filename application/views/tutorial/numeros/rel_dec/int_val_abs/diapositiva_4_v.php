@@ -102,21 +102,21 @@
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 			<table align ="left">
 					<tr>
-						<td>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></math>, su simétrico es</td>
+						<td>Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#xA0;</mo><mo>=</mo><mo>-</mo><mo>&#xA0;</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></math>, su simétrico es</td>
 						<td >&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h6><math xmlns="http://www.w3.org/1998/Math/MathML">
 							<mfrac>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_3g" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_4a" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_3h" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_4b" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -131,14 +131,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_3g" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_4c" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_3h" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_4d" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
@@ -153,14 +153,14 @@
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_3g" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_4e" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>
 								<mi>
 									<semantics>
 										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_d ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_3h" placeholder="0" />
+											<input onchange="fraccion_4_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_4f" placeholder="0" />
 										</annotation-xml>
 									</semantics>
 								</mi>

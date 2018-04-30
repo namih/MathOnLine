@@ -1,23 +1,68 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
 
 <div class="container-fluid">
-	
-		<p align="justify">Manuel y sus amigos tienen 5 latas llenas de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> . Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> litro, ¿cuántos litros de agua tienen?</p>
+	<div id="first">
+		<div align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="justify">A partir de lo que has hecho anteriormente podemos scribr la definición del valor absoluto en general:</p>
+			<p align="justify">Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> es un número real , definimos <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced></math> como:</p>
+		</div>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
-					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></div></td>
-						<td><img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/lata_un_medio.png"  /></div></td>
-					</tr>
-			</table>
-		</div>		
-		
-		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
-			Estima la cantidad antes de resolver el problema:
-		   	<li>Menos de 1 litro de agua.</li> 
-		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
-			<li>Más de 2 litros de agua.</li> 
-			<li>Más de tres litros de agua.</li> 
-		</div>	
-		
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&#x2265;</mo><mn>0</mn></math></p>
+			<p align="center">&nbsp;&nbsp;y&nbsp;&nbsp;</p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mo>-</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn></math>, es decir, si a es negativo.</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left">Recuerda que <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math> representa un número negativo, ya que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> e negativo, su número simétrico, que es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math>, es positivo. </p>
+			<p align="left">Localiza en la recta numérica el número simétrico al número dado, y encuentra su valor absoluto</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left" style="color:red">Aquí va la grafica donde se localiza el simétrico de 4.8, en el minuto 2:12:16 podemos ver este ejemplo </p>
+		</div>
+		<div align="right">
+			<button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
+		</div>
+	</div>
+
+
+	<div id="second" style="display:none">
+		<div align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="justify">A partir de lo que has hecho anteriormente podemos scribr la definición del valor absoluto en general:</p>
+			<p align="justify">Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> es un número real , definimos <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced></math> como:</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&#x2265;</mo><mn>0</mn></math></p>
+			<p align="center">&nbsp;&nbsp;y&nbsp;&nbsp;</p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mo>-</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn></math>, es decir, si a es negativo.</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left">Recuerda que <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math> representa un número negativo, ya que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> e negativo, su número simétrico, que es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math>, es positivo. </p>
+			<p align="left">Localiza en la recta numérica el número simétrico al número dado, y encuentra su valor absoluto</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left" style="color:red">Aquí va la grafica donde se localiza el simétrico de ..., en el minuto 2:13:15 podemos ver este ejemplo </p>
+		</div>
+		<div align="right">
+			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+		</div>
+	</div>
+
+	<div id="third" style="display:none">
+		<div align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="justify">A partir de lo que has hecho anteriormente podemos scribr la definición del valor absoluto en general:</p>
+			<p align="justify">Si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> es un número real , definimos <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced></math> como:</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&#x2265;</mo><mn>0</mn></math></p>
+			<p align="center">&nbsp;&nbsp;y&nbsp;&nbsp;</p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mo>-</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn></math>, es decir, si a es negativo.</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left">Recuerda que <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math> representa un número negativo, ya que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> e negativo, su número simétrico, que es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math>, es positivo. </p>
+			<p align="left">Localiza en la recta numérica el número simétrico al número dado, y encuentra su valor absoluto</p>
+		</div>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
+			<p align="left" style="color:red">Aquí va la grafica donde se localiza el simétrico de ..., en el minuto 2:13:28 podemos ver este ejemplo </p>
+		</div>
+	</div>
+
 </div>

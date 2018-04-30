@@ -1,23 +1,71 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
 
 <div class="container-fluid">
-	
-		<p align="justify">Manuel y sus amigos tienen 5 latas llenas de agua hasta <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math> . Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>. Si cada lata tiene una capacidad de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math> litro, ¿cuántos litros de agua tienen?</p>
+	<div class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<table>
+			<p align="justify">Encuentra la distancia entre los dos puntos:</p>
+			<table align="center">
 					<tr align="center">
-						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>2</mn></mfrac></math></h1></div></td>
-						<td><img width="50%" class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/lata_un_medio.png"  /></div></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>.</mo><mn>99</mn></math> y </td>
+						<td>&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>31</mn></math></td>
 					</tr>
 			</table>
-		</div>		
-		
+		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
-			Estima la cantidad antes de resolver el problema:
-		   	<li>Menos de 1 litro de agua.</li> 
-		   	<li>Más de 1 litro de agua pero menos de 2 litros de agua.</li> 
-			<li>Más de 2 litros de agua.</li> 
-			<li>Más de tres litros de agua.</li> 
-		</div>	
-		
+			<table align="center">
+					<tr align="center">
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mfenced><mrow><mo>-</mo><mn>1</mn><mo>.</mo><mn>99</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>31</mn></mrow></mfenced></mrow></mfenced><mo>=</mo></math></td>
+						<td><mi>|
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_a" placeholder="0" />
+								</annotation-xml>
+							</semantics>|
+						</mi>=</td>
+						<td><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_b" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi> </td>
+
+					</tr>
+			</table>
+		</div>
+
+		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12">
+			<table align="center">
+					<tr align="center">
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mfenced><mrow><mn>0</mn><mo>.</mo><mn>31</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mo>-</mo><mn>1</mn><mo>.</mo><mn>99</mn></mrow></mfenced></mrow></mfenced><mo>=</mo></math></td>
+						<td><mi>|
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_c" placeholder="0" />
+								</annotation-xml>
+							</semantics>|
+						</mi>=</td>
+						<td><mi>
+							<semantics>
+								<annotation-xml encoding="application/xhtml+xml">
+									<input onchange="entero_8_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_d" placeholder="0" />
+								</annotation-xml>
+							</semantics>
+						</mi> </td>
+					</tr>
+			</table>
+		</div>
+
+		<div style="display:none" id="recta_a">
+		</div>
+	</div>
+
+
+</div>
+
+<div id="correcta" style="display: none" class="alert alert-success">
+	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+</div>
+<div id="error" style="display: none" class="alert alert-warning">
+	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
 </div>

@@ -278,15 +278,35 @@ function entero_4_b () {
   		};
 }
 
-function entero_4_c () {
-  	var entero_a = document.getElementById('entero_g').value;
-    var entero_b = document.getElementById('entero_h').value;
-    var entero_c = document.getElementById('entero_i').value;
-  	 if (entero_a != '' && entero_b != '' && entero_c != '') {
-			   if (entero_a == 12 && entero_b == 12 && entero_c == 12) {
+function fraccion_4_a () {
+  var numerador_a = document.getElementById('numerador_4a').value;
+  var denominador_a = document.getElementById('denominador_4b').value;
+  var numerador_b = document.getElementById('numerador_4c').value;
+  var denominador_b = document.getElementById('denominador_4d').value;
+  var numerador_c = document.getElementById('numerador_4e').value;
+  var denominador_c = document.getElementById('denominador_4f').value;
+
+   if ((numerador_a != '' && denominador_a != '') && (numerador_b != '' && denominador_b != '') && (numerador_c != '' && denominador_c != '')) {
+       if ((numerador_a == 4 && denominador_a == 17) &&(numerador_b == 4 && denominador_b == 17) && (numerador_c == 4 && denominador_c == 17)) {
+             acierto();
+            document.getElementById("indicador_c").innerHTML ='Efectivamente, <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfrac><mn>4</mn><mn>17</mn></mfrac><mo>&#xA0;</mo><mi>y</mi><mo>&#xA0;</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></math> son simétricos y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></mrow></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfenced open="|" close="|"><mrow><mo>&#xA0;</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></mrow></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>4</mn><mn>17</mn></mfrac></math>';
+
+      }else{
+        error();
+      };
+    };
+
+}
+
+function entero_8_a () {
+  	var entero_a = document.getElementById('entero_a').value;
+    var entero_b = document.getElementById('entero_b').value;
+    var entero_c = document.getElementById('entero_c').value;
+    var entero_d = document.getElementById('entero_d').value;
+  	 if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+			   if (entero_a == -2.3 && entero_b == 2.3 && entero_c == 2.3 && entero_d == 2.3) {
   				     acierto();
-               document.getElementById("indicador").innerHTML ='Efectivamente, -12 y 12 son simétricos y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>12</mn></mrow></mfenced><mo>=</mo><mfenced open="|" close="|"><mn>12</mn></mfenced><mo>=</mo><mn>12</mn></math>';
-               MathJax.Hub.Queue(["Reprocess",MathJax.Hub]);
+              document.getElementById('recta_a').style.display = 'inline-block';
   			}else{
   				error();
   			};
