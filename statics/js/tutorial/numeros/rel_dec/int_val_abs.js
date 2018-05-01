@@ -312,3 +312,33 @@ function entero_8_a () {
   			};
   		};
 }
+
+function entero_8_b () {
+  	var entero_a = document.getElementById('entero_uno_a').value;
+    var entero_b = document.getElementById('entero_uno_b').value;
+    var entero_c = document.getElementById('entero_uno_c').value;
+    var entero_d = document.getElementById('entero_uno_d').value;
+  	 if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+			   if (entero_a == 10 && entero_b == 10 && entero_c == -10 && entero_d == 10) {
+  				     acierto();
+              document.getElementById('recta_b').style.display = 'inline-block';
+  			}else{
+  				error();
+  			};
+  		};
+}
+
+function entero_8_c () {
+  	var entero_a = document.getElementById('entero_dos_a').value;
+    var entero_b = document.getElementById('entero_dos_b').value;
+    var entero_c = document.getElementById('entero_dos_c').value;
+    var entero_d = document.getElementById('entero_dos_d').value;
+  	 if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+			   if (entero_a == -17 && entero_b == 17 && entero_c == 17 && entero_d == 17) {
+  				     acierto();
+              document.getElementById('recta_c').style.display = 'inline-block';
+  			}else{
+  				error();
+  			};
+  		};
+}
