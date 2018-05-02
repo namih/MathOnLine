@@ -342,3 +342,51 @@ function entero_8_c () {
   			};
   		};
 }
+
+function seleccionado_9 (){
+    var res1 = document.getElementById('opcion_a');
+    var res2 = document.getElementById('opcion_b');
+    var seleccionado_a = res1.options[res1.selectedIndex].value;
+    var seleccionado_b = res2.options[res2.selectedIndex].value;
+    var respuesta_a = res1.options[res1.selectedIndex].text;
+    var respuesta_b = res2.options[res2.selectedIndex].text;
+        if (seleccionado_a == 1 && seleccionado_b == 3) {
+            acierto();
+        }
+        else {
+            error();
+        }
+}
+
+function operacion_10_a () {
+  	var entero = document.getElementById('result_a').value;
+    if (entero != '') {
+		     if (entero == -36) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+}
+
+function operacion_10_b () {
+  	var entero = document.getElementById('result_b').value;
+    if (entero != '') {
+		     if (entero == 209) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+}
+
+function operacion_10_c () {
+  	var entero = document.getElementById('result_c').value;
+    if (entero != '') {
+		     if (entero == 23) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+}
