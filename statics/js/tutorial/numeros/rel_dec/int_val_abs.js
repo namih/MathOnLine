@@ -390,3 +390,271 @@ function operacion_10_c () {
   			};
   		};
 }
+
+function operacion_11_a () {
+  	var entero_a = document.getElementById('entero_a').value;
+    var entero_b = document.getElementById('entero_b').value;
+    var opcion = document.getElementById('opcion_a');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+		     if (entero_a == 4 && entero_b == 2 && seleccionado_a == 1) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+}
+
+function operacion_11_b () {
+  	var entero_a = document.getElementById('entero_uno_a').value;
+    var entero_b = document.getElementById('entero_uno_b').value;
+    var opcion = document.getElementById('opcion_uno_a');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+		     if (entero_a == 3 && entero_b == 15 && seleccionado_a == 1) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+    }
+
+      function operacion_11_c () {
+        	var entero_a = document.getElementById('entero_dos_a').value;
+          var entero_b = document.getElementById('entero_dos_b').value;
+          var opcion = document.getElementById('opcion_dos_a');
+
+          var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+          var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+          if (entero_a != '' && entero_b !='' ) {
+      		     if (entero_a == 3 && entero_b == 11 && seleccionado_a == 1) {
+        				     acierto();
+        			 }else{
+        				     error();
+        			};
+        		};
+}
+
+function operacion_12_a () {
+  	var entero_a = document.getElementById('entero_a').value;
+    var entero_b = document.getElementById('entero_b').value;
+    var opcion = document.getElementById('opcion_a');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+		     if (entero_a == 1 && entero_b == 13 && seleccionado_a == 1) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+}
+
+function operacion_12_b () {
+  	var entero_a = document.getElementById('entero_uno_a').value;
+    var entero_b = document.getElementById('entero_uno_b').value;
+    var opcion = document.getElementById('opcion_uno_a');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+		     if (entero_a == 2 && entero_b == 4 && seleccionado_a == 1) {
+  				     acierto();
+  			 }else{
+  				     error();
+  			};
+  		};
+    }
+
+
+    function operacion_12_c () {
+        var entero_a = document.getElementById('entero_dos_a').value;
+        var entero_b = document.getElementById('entero_dos_b').value;
+        var opcion = document.getElementById('opcion_dos_a');
+
+        var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+        var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+        if (entero_a != '' && entero_b !='' ) {
+             if (entero_a == 4 && entero_b == 6 && seleccionado_a == 1) {
+                   acierto();
+             }else{
+                   error();
+            };
+          };
+    }
+
+    function operacion_13_a () {
+      	var entero_a = document.getElementById('entero_a').value;
+        var entero_b = document.getElementById('entero_b').value;
+        var opcion = document.getElementById('opcion_a');
+
+        var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+        var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+        if (entero_a != '' && entero_b !='' ) {
+    		     if (entero_a == 7 && entero_b == 7 && seleccionado_a == 2) {
+      				     acierto();
+      			 }else{
+      				     error();
+      			};
+      		};
+    }
+
+    function operacion_13_b () {
+      	var entero_a = document.getElementById('entero_uno_a').value;
+        var entero_b = document.getElementById('entero_uno_b').value;
+        var opcion = document.getElementById('opcion_uno_a');
+
+        var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+        var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+        if (entero_a != '' && entero_b !='' ) {
+    		     if (entero_a == 10 && entero_b == 10 && seleccionado_a == 2) {
+      				     acierto();
+      			 }else{
+      				     error();
+      			};
+      		};
+        }
+
+
+function operacion_13_c () {
+  var entero_a = document.getElementById('entero_dos_a').value;
+  var entero_b = document.getElementById('entero_dos_b').value;
+  var opcion = document.getElementById('opcion_dos_a');
+
+  var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+  var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+  if (entero_a != '' && entero_b !='' ) {
+      if (entero_a == 5 && entero_b == 5 && seleccionado_a == 2) {
+          acierto();
+      }else{
+            error();
+      };
+  };
+}
+
+function operacion_14_a () {
+    var opcion = document.getElementById('opcion_a');
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+      if (seleccionado_a == 1) {
+               acierto();
+         }else{
+               error();
+        };
+
+}
+
+function operacion_14_b () {
+    var opcion = document.getElementById('opcion_b');
+    var seleccionado_b = opcion.options[opcion.selectedIndex].value;
+    var respuesta_b = opcion.options[opcion.selectedIndex].text;
+      if (seleccionado_b == 2) {
+               acierto();
+         }else{
+               error();
+        };
+
+}
+
+function operacion_14_c () {
+    var opcion = document.getElementById('opcion_c');
+    var seleccionado_c = opcion.options[opcion.selectedIndex].value;
+    var respuesta_c = opcion.options[opcion.selectedIndex].text;
+      if (seleccionado_c == 2) {
+               acierto();
+               document.getElementById('info').style.display = 'inline-block';
+         }else{
+               error();
+        };
+
+}
+
+function operacion_15_a () {
+    var entero_a = document.getElementById('entero_a').value;
+    var entero_b = document.getElementById('entero_b').value;
+    var opcion = document.getElementById('opcion_a');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+         if (entero_a == 12 && entero_b == 12 && seleccionado_a == 2) {
+               acierto();
+         }else{
+               error();
+        };
+      };
+}
+
+function operacion_15_b () {
+    var entero_a = document.getElementById('entero_uno_a').value;
+    var entero_b = document.getElementById('entero_uno_b').value;
+    var opcion = document.getElementById('opcion_b');
+
+    var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+    var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+    if (entero_a != '' && entero_b !='' ) {
+         if (entero_a == 63 && entero_b == 63 && seleccionado_a == 2) {
+               acierto();
+         }else{
+               error();
+        };
+      };
+    }
+
+    function operacion_15_c () {
+      var entero_a = document.getElementById('entero_dos_a').value;
+      var entero_b = document.getElementById('entero_dos_b').value;
+      var opcion = document.getElementById('opcion_c');
+
+      var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+      var respuesta_a = opcion.options[opcion.selectedIndex].text;
+
+
+      if (entero_a != '' && entero_b !='' ) {
+          if (entero_a == 14 && entero_b == 14 && seleccionado_a == 2) {
+              acierto();
+          }else{
+                error();
+          };
+      };
+    }
+
+    function operacion_16 () {
+        var opcion = document.getElementById('opcion_a');
+        var seleccionado_a = opcion.options[opcion.selectedIndex].value;
+        var respuesta_a = opcion.options[opcion.selectedIndex].text;
+        if (seleccionado_a == 2) {
+            acierto();
+
+        }else{
+              error();
+              document.getElementById('info_a').style.display = 'inline-block';
+            };
+    }
