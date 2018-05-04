@@ -7,18 +7,18 @@
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
         <p>Utilizando la igualdad: </p>
         <p class="text-center">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi>a</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>b</mi><msup><mo>)</mo><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><msup><mi>a</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><msup><mi>b</mi><mn>2</mn></msup></math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>(</mo><mi>a</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>b</mi><mo>)</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo><msup><mi>a</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mi>a</mi><mi>b</mi></math>
         </p>
         <p>
-            Encuentra el resultado de los siguientes productos fácilmente :
+            Encuentra el resultado de los siguientes productos fácilmente:
         </p>
         <p class="text-center">
-            <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mn>101</mn><msup><mo>)</mo><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo></math>
-            (
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>12</mn><mo>(</mo><mn>12</mn><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>6</mn><mo>)</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#x2009;</mo></math> <br><br>
+            12(
             <input type="number" id="number_1" style="width: 30%">
-            +
+            ) + 12(
             <input type="number" id="number_2" style="width: 30%">
-            )^2
+            )
         </p>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success" class="text-center" hidden>

@@ -2,32 +2,32 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <div class="container-fluid">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/ecu_form_exp_id/cuadrados.jpg">
+        <!--<img src="<?php /*echo base_url(); */?>statics/img/tutorial/algebra/ecu_form_exp_id/cuadrados.jpg">-->
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
         <p>
-            ¿Cuánto mide el área del cuadrado azul
+            ¿Cuánto mide el área del cuadrado azul?
         </p>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_1" value="false">
-            2a
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>a</mi></math>
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_2" value="true">
-            a*a
+            <input type="checkbox" name="answer[]" id="answer_2" value="false">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>a</mi><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>2</mn><mi>a</mi></math>
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <input type="checkbox" name="answer[]" id="answer_3" value="false">
-            a*b
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#xA0;</mo><mo>*</mo><mo>&#x2009;</mo><mn>1</mn></math>
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_4" value="false">
-            2a+2b
+            <input type="checkbox" name="answer[]" id="answer_4" value="true">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2009;</mo><mo>*</mo><mo>&#x2009;</mo><mi>a</mi></math>
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="success" class="text-center" hidden>
