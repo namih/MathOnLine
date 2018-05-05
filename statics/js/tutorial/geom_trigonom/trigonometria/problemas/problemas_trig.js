@@ -34,7 +34,7 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.9063){
-			if(var2=="4.71")
+			if(var2==4.7127)
 				resultado();
 			
 		}
@@ -49,7 +49,7 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.0524){
-			if(var2 == "190.81"){
+			if(var2 >= 190.8113 && var2<=190.8396){
 				resultado();
 			}
 		}
@@ -63,8 +63,8 @@ function acierto(label1) {
 	case 15:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1==0.309){
-			if(var2==154.51){
+		if(var1==0.3090){
+			if(var2==154.5084){
 				resultado();
 			}
 		}

@@ -1,19 +1,19 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/geom_trigonom/trigonometria/problemas/problemas_trig.js"></script>
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<p>Estudia los ejercicios que estan a continuacion. Completa los datos que se le pidan para poder seguir avanzado.</p>
+		<p>Estudia los ejercicios que están a continuación. Completa los datos que se te piden para poder seguir avanzado.</p>
 		<div class="form-group has-feedback col-md-6  col-xs-12">
 			<p><b>5. Al despegar, un avión forma un ángulo de elevación de 18° con respecto al piso. Si su velocidad es de 300 Km/h,
 				 ¿cuál será la altitud del avión después de 1 minuto?, ¿cuánto tardará el avión en alcanzar una altitud de 3000 metros?
 			</b></p>
-			<p>Evaluamos el seno de 18° usando una calculadora, teniendo cuidado que esté tabajando en grados y no en radianes.</p>
+			<p>Evaluamos el seno de 18° usando una calculadora, teniendo cuidado que esté tabajando en grados y no en radianes. (Utiliza 4 decimales de precisión</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mo>(</mo><mn>5</mn><mo>)</mo><mo>&#xA0;</mo><mo>(</mo></math><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" placeholder="0.3090" disabled/>
 				<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>)</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" placeholder="1.55" disabled/>
 			</p>
 			<div id="resultado">
-				<p>Así que el avión va a una altura de 1.55 km, despues deun minuto. Esto contesta la primera pegunta.</p>
+				<p>Así que el avión va a una altura de 1.55 km, después de un minuto. Esto contesta la primera pegunta.</p>
 			</div>
-			<p>para contentas la segunda pregunta, debemos conocer primero cuanto ha recorrido en linea recta cuando tiene una altura de 3 km.</p>
+			<p>Para contestar la segunda pregunta, a, debemos conocer primero la distancia c que ha recorrido el avión en línea recta cuando ha alcanzado una altura de 3 km.</p>
 		</div>
 		<div class="form-group has-feedback col-md-6  col-xs-12">
 			<br />
@@ -23,6 +23,6 @@
 		</div>
 		
 	</div>
-	<p>En el triangulo ABC, conocemos ahora el cateto opuesto al ángulo A, y queremos conocer la hipotenusa.</p>
+	<p>En el triángulo ABC, conocemos ahora la longitud del cateto opuesto al ángulo A, y queremos conocer la longitud de la hipotenusa.</p>
 		<p>Nuevamente debemos usar la función seno: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mi>e</mi><mi>n</mi><mo>&#xA0;</mo><mn>18</mn><mo>&#xB0;</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mrow><mn>3</mn></mrow><mi>c</mi></mfrac></math></p>
 </div>
