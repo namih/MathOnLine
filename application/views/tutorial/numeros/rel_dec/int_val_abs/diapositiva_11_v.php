@@ -147,7 +147,7 @@
 								<option value="3" id="r3">></a></option>
 								</select></td>
 						<td>&nbsp;&nbsp;</td>
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mn><mo>-</mo>4</mn></mfenced><mo>+</mo><mfenced open="|" close="|"><mrow><mn>7</mn></mrow></mfenced></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>4</mn></mrow></mfenced><mo>+</mo><mfenced open="|" close="|"><mn>7</mn></mfenced></math></h4></td>
 					</tr>
 				</table>
 		</div>

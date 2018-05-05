@@ -55,7 +55,7 @@
 
 	<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<p align="left">¿Cómo se compara <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced></math> con <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math> ?</p>
+			<p align="left">Cuando <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> tienen signos contrarios.¿Cómo se compara <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced></math> con <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math> ?</p>
 			<p align="left">Para resolver esta pregunta resuelve lo siguiente:</p>
 			<table>
 					<tr align="center">
@@ -106,7 +106,7 @@
 
 	<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<p align="left">¿Cómo se compara <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced></math> con <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math> ?</p>
+			<p align="left">Cuando <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> tienen signos contrarios.¿Cómo se compara <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced></math> con <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math> ?</p>
 			<p align="left">Para resolver esta pregunta resuelve lo siguiente:</p>
 			<table>
 					<tr align="center">
