@@ -34,23 +34,19 @@ function cloneImage(id_aux){
 }
 
 function rotate(){
-    //$(this).rotate(90);
-    console.log("en rotate", window.element_to_rotate);
     $(window.element_to_rotate).toggleClass('rotate-90');
 }
 
 window.element_to_rotate = null;
 
 function setElementToRotate(element){
-    console.log(element);
     window.element_to_rotate = element;
-    console.log(window.element_to_rotate);
 }
 
 
 function validateAnswer10(){
     var number_1 = parseFloat($("#number_1").val());
-    var number_2 = parseFloat($("#number_1").val());
+    var number_2 = parseFloat($("#number_2").val());
 
     if(number_1 == 50.5 && number_2 == 50.5){
         $('#success').show();

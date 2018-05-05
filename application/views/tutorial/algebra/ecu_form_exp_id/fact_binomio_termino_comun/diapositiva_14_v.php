@@ -2,7 +2,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <div class="container-fluid">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <!--<img src="<?php /*echo base_url(); */?>statics/img/tutorial/algebra/ecu_form_exp_id/cuadrados.jpg">-->
+        <img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/fact_binomio_termino_comun/fbtc_10.jpg">
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
@@ -11,7 +11,7 @@
         </p>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_1" value="false">
+            <input type="checkbox" name="answer[]" id="answer_1" value="true">
             <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>e</mi><mo>+</mo><mn>5</mn></math>
         </div>
 
@@ -21,12 +21,12 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_3" value="false">
+            <input type="checkbox" name="answer[]" id="answer_3" value="true">
             <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi>e</mi><mo>+</mo><mn>5</mn><mo>)</mo><mo>(</mo><mi>e</mi><mo>+</mo><mn>1</mn><mo>)</mo></math>
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_4" value="true">
+            <input type="checkbox" name="answer[]" id="answer_4" value="false">
             <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>e</mi><mo>+</mo><mn>1</mn></math>
         </div>
 

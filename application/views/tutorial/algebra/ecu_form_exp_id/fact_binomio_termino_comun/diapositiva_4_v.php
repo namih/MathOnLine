@@ -2,7 +2,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <div class="container-fluid">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <!--<img src="<?php /*echo base_url(); */?>statics/img/tutorial/algebra/ecu_form_exp_id/cuadrados.jpg">-->
+        <img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/fact_binomio_termino_comun/fbtc_3.jpg">
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
@@ -16,7 +16,7 @@
         </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <input type="checkbox" name="answer[]" id="answer_2" value="false">
+            <input type="checkbox" name="answer[]" id="answer_2" value="true">
             <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>b</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><mn>8</mn><mi>b</mi></math>
         </div>
 

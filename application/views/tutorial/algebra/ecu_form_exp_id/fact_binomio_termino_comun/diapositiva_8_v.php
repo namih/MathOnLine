@@ -1,7 +1,8 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/ecu_form_exp_id/areas.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/ecu_form_exp_id/fact_binomio_termino_comun.js"></script>
+
 <div class="container-fluid">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="cuadro101" id="cuadro101" src="<?php echo base_url(); ?>statics/img/tutorial/algebra/ecu_form_exp_id/cuadro101.jpg" style="z-index: 1;">
+        <img src="<?php echo base_url(); ?>statics/img/tutorial/algebra/fact_binomio_termino_comun/fbtc_5.jpg">
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify">
@@ -33,7 +34,7 @@
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <br>
-            <button type="button" class="btn btn-success" onclick="validateAnswer10()">Verificar</button>
+            <button type="button" class="btn btn-success" onclick="validateAnswer8()">Verificar</button>
         </div>
     </div>
 </div>
