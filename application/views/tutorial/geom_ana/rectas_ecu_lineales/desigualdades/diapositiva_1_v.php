@@ -30,8 +30,8 @@
                                 <p>Veamos lo que sucede al multiplicar la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo><mn>5</mn></math> por <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn></math></p>
                             </div><br>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center" style="border: 1px solid;">
-                            <div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cont_graph" align="center">
+                            <div align="center" class="col-xs-12 col-sm-12 col-lg-12 graphic" id="applet_container0"></div>
                         </div>                        
                     </div>
                 </div><br>

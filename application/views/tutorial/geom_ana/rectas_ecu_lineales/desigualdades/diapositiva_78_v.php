@@ -6,26 +6,8 @@
 </script>
 
 <div class="container-fluid">
-    <style type="text/css">
-        .tema{
-            color: #224EB5;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .pregunta{
-            color: #2e75b6;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .instruccion{
-            color: #000000;
-            text-align: justify;
-            font-weight: normal;
-        }
-    </style>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-        <div class="tema"><p>Desigualdades.</p>
-            <p> Operaciones con desigualdades lineales de una variable</p>
+        <div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
         </div>
         <div class="instruccion">
             <p></p>
@@ -56,8 +38,8 @@
                                 <p>Arrastra el punto (a) al extremo de la solución</p>
                             </div><br>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center" style="border: 1px solid;">
-                            <div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cont_graph" align="center">
+                            <div align="center" class="col-xs-12 col-sm-12 col-lg-12 graphic" id="applet_container0"></div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                             <div class="paso_2">

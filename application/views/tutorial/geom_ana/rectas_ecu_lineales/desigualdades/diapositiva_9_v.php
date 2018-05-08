@@ -33,8 +33,8 @@
                                 <p>Para <math xmlns="http://www.w3.org/1998/Math/MathML"><mo mathcolor="#191919">&#xA0;</mo><mi mathcolor="#191919">x</mi><mo mathcolor="#191919">=</mo><mo mathcolor="#191919">-</mo><mn mathcolor="#191919">2</mn><mo mathcolor="#191919">.</mo><mn mathcolor="#191919">6</mn><mo mathcolor="#191919">&#xA0;</mo></math> tenemos: <math xmlns="http://www.w3.org/1998/Math/MathML"><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#FF0000">-</mo><mn mathcolor="#FF0000">2</mn><mo mathcolor="#FF0000">.</mo><mn mathcolor="#FF0000">6</mn><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#191919">&#xD7;</mo><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#191919">(</mo><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#191919">-</mo><mn mathcolor="#191919">1</mn><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#191919">)</mo><mo mathcolor="#191919">&#xA0;</mo><mo mathcolor="#191919">=</mo><mo mathcolor="#007F00">&#x2009;</mo><mn mathcolor="#007F00">2</mn><mo mathcolor="#007F00">.</mo><mn mathcolor="#007F00">6</mn><mo mathcolor="#007F00">&#xA0;</mo><mo mathcolor="#007F00">&#xA0;</mo></math></p>
                             </div><br>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center" style="border: 1px solid;">
-                            <div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cont_graph" align="center">
+                            <div align="center" class="col-xs-12 col-sm-12 col-lg-12 graphic" id="applet_container0"></div>
                         </div>                        
                     </div>
                 </div><br>

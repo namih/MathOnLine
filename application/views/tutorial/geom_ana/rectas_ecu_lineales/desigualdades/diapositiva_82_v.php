@@ -4,8 +4,7 @@
 <div class="container-fluid">
  
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-		<div class="tema"><p>Desigualdades</p>
-			<p> Operaciones con desigualdades lineales de una variable</p>
+		<div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
 		</div>
 		<div class="instruccion">
 			<p>	Regresemos al problema inicial del interactivo de desigualdades: </p>

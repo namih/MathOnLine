@@ -13,3 +13,11 @@
 			text-align: justify;
 			font-weight: normal;
 		}
+
+		.cont_graph{
+			border: 1px solid; padding: 0px !important; margin:0px !important;
+		}
+
+		.graphic{
+			display: block; padding: 0px !important; margin:0px !important;
+		}
