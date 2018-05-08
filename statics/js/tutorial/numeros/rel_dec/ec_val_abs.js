@@ -307,3 +307,222 @@ function resultado_2_c () {
     };
 
 }
+
+function resultado_3_a () {
+  var res = document.getElementById('opcion_a');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_a').value;
+
+    	 if (entero != '') {
+  		     if (entero == -2.5 && seleccionado == 2) {
+    				     acierto();
+                 document.getElementById('opciones_a').style.display = 'none';
+                 document.getElementById('dos').style.display = 'inline-block';
+                 document.getElementById('opciones_b').style.display = 'inline-block';
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_b () {
+  var res = document.getElementById('opcion_b');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_b').value;
+
+    	 if (entero != '') {
+  		     if (entero == -2.5 && seleccionado == 1) {
+    				     acierto();
+                 document.getElementById('opciones_b').style.display = 'none';
+                 document.getElementById('tres').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_c () {
+  var entero = document.getElementById('entero_c').value;
+
+    	 if (entero != '') {
+  		     if (entero == -1.75 ) {
+    				     acierto();
+                 document.getElementById('cuatro').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_d () {
+  var entero = document.getElementById('entero_d').value;
+
+    	 if (entero != '') {
+  		     if (entero == -3.25 ) {
+    				     acierto();
+                 document.getElementById('uno').style.display = 'none';
+                 document.getElementById('dos').style.display = 'none';
+
+                 document.getElementById('tres').style.display = 'none';
+                 document.getElementById('cuatro').style.display = 'none';
+                 document.getElementById('cinco').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_e () {
+  var res = document.getElementById('opcion_c');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_e').value;
+
+    	 if (entero != '') {
+  		     if (entero == 0.2 && seleccionado == 2) {
+    				     acierto();
+                 document.getElementById('opciones_c').style.display = 'none';
+                 document.getElementById('siete').style.display = 'inline-block';
+                 document.getElementById('opciones_d').style.display = 'inline-block';
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_f () {
+  var res = document.getElementById('opcion_d');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_f').value;
+
+    	 if (entero != '') {
+  		     if (entero == 0.2 && seleccionado == 1) {
+    				     acierto();
+                 document.getElementById('opciones_d').style.display = 'none';
+                 document.getElementById('ocho').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_g () {
+  var entero = document.getElementById('entero_g').value;
+
+    	 if (entero != '') {
+  		     if (entero == 1.05) {
+    				     acierto();
+                 document.getElementById('nueve').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_h () {
+  var entero = document.getElementById('entero_h').value;
+
+    	 if (entero != '') {
+  		     if (entero == -0.65) {
+    				     acierto();
+                 document.getElementById('seis').style.display = 'none';
+                 document.getElementById('siete').style.display = 'none';
+
+                 document.getElementById('ocho').style.display = 'none';
+                 document.getElementById('nueve').style.display = 'none';
+                 document.getElementById('diez').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_i () {
+  var res = document.getElementById('opcion_e');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_i').value;
+
+    	 if (entero != '') {
+  		     if (entero == 0.4 && seleccionado == 1) {
+    				     acierto();
+                 document.getElementById('opciones_e').style.display = 'none';
+                 document.getElementById('doce').style.display = 'inline-block';
+                 document.getElementById('opciones_f').style.display = 'inline-block';
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_j () {
+  var res = document.getElementById('opcion_f');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+  var entero = document.getElementById('entero_j').value;
+
+    	 if (entero != '') {
+  		     if (entero == 0.4 && seleccionado == 2) {
+    				     acierto();
+                 document.getElementById('opciones_f').style.display = 'none';
+                 document.getElementById('trece').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_k () {
+  var entero = document.getElementById('entero_k').value;
+
+    	 if (entero != '') {
+  		     if (entero == 3.4 ) {
+    				     acierto();
+                 document.getElementById('catorce').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function resultado_3_l () {
+  var entero = document.getElementById('entero_l').value;
+
+    	 if (entero != '') {
+  		     if (entero == -2.6 ) {
+    				     acierto();
+                 document.getElementById('once').style.display = 'none';
+                 document.getElementById('doce').style.display = 'none';
+
+                 document.getElementById('trece').style.display = 'none';
+                 document.getElementById('catorce').style.display = 'none';
+                 document.getElementById('quince').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
