@@ -526,3 +526,90 @@ function resultado_3_l () {
     		};
 
 }
+
+function resultado_4_a () {
+  var entero_a = document.getElementById('entero_a').value;
+  var entero_b = document.getElementById('entero_b').value;
+  var entero_c = document.getElementById('entero_c').value;
+  var entero_d = document.getElementById('entero_d').value;
+
+
+   if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+       if (entero_a == -3.375 && entero_b == -4 && entero_c == -4.625 && entero_d == -4) {
+             acierto();
+
+
+      }else{
+        error();
+      };
+    };
+
+}
+
+function resultado_4_b () {
+  var entero_a = document.getElementById('entero_e').value;
+  var entero_b = document.getElementById('entero_f').value;
+  var entero_c = document.getElementById('entero_g').value;
+  var entero_d = document.getElementById('entero_h').value;
+
+
+   if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+       if (entero_a == -0.556 && entero_b == -0.667 && entero_c == -0.778 && entero_d == -0.667) {
+             acierto();
+
+
+      }else{
+        error();
+      };
+    };
+
+}
+
+function resultado_4_c () {
+  var entero_a = document.getElementById('entero_i').value;
+  var entero_b = document.getElementById('entero_j').value;
+  var entero_c = document.getElementById('entero_k').value;
+  var entero_d = document.getElementById('entero_l').value;
+
+
+   if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+       if (entero_a == -0.093 && entero_b == 0 && entero_c == 0.093 && entero_d == 0) {
+             acierto();
+
+
+      }else{
+        error();
+      };
+    };
+
+}
+
+function resultado_5 () {
+  var res = document.getElementById('opcion');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+    if (seleccionado == 2) {
+    		acierto();
+        document.getElementById('valores').style.display = 'inline-block';
+    }else{
+    			error();
+    };
+}
+
+function puntos_5 () {
+  var entero_a = document.getElementById('entero_a').value;
+  var entero_b = document.getElementById('entero_b').value;
+  var entero_c = document.getElementById('entero_c').value;
+  var entero_d = document.getElementById('entero_d').value;
+
+
+   if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
+       if (entero_a == 35 && entero_b == 10 && entero_c == -15 && entero_d == 10) {
+             acierto();
+             document.getElementById('recta').style.display = 'inline-block';
+      }else{
+        error();
+      };
+    };
+
+}

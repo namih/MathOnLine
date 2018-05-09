@@ -4,10 +4,10 @@
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="left">Resuelvela siguiente ecuación: </p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mn>19</mn></math></p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mn>8</mn><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn><mo>)</mo></mrow></mfenced><mo>=</mo><mn>10</mn></math></p>
 				<table>
 						<tr align="center">
-							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo></math></td>
+							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -17,7 +17,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -34,7 +34,7 @@
 				<table>
 					<tr align="center">
 						<p align="left">y</p>
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -44,7 +44,7 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&gt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&lt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -55,6 +55,7 @@
 						</mi></h4></td>
 					</tr>
 				</table>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
 			</div>
 		<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
@@ -64,10 +65,10 @@
 	<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="left">Resuelvela siguiente ecuación: </p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mn>20</mn></math></p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mn>3</mn><mo>(</mo><mn>15</mn><mi>a</mi><mo>+</mo><mn>10</mn><mo>)</mo></mrow></mfenced><mo>=</mo><mn>5</mn></math></p>
 				<table>
 						<tr align="center">
-							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo></math></td>
+							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -77,7 +78,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&gt;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -94,7 +95,7 @@
 				<table>
 					<tr align="center">
 						<p align="left">y</p>
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -104,17 +105,18 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_h" placeholder="0" />
+									<input onchange="resultado_4_b ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_h" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
 					</tr>
 				</table>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
 			</div>
 		<div align="right">
 			 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
@@ -124,10 +126,10 @@
 	<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="left">Resuelvela siguiente ecuación: </p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mn>3</mn></math></p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>4</mn><mo>(</mo><mn>16</mn><mi>b</mi><mo>-</mo><mn>0</mn><mo>)</mo></mrow></mfenced><mo>=</mo><mn>6</mn></math></p>
 				<table>
 						<tr align="center">
-							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo></math></td>
+							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -137,7 +139,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&gt;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -154,7 +156,7 @@
 				<table>
 					<tr align="center">
 						<p align="left">y</p>
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -164,17 +166,18 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&gt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&lt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
+									<input onchange="resultado_4_c ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
 					</tr>
 				</table>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
 			</div>
 	</div>
 </div>
