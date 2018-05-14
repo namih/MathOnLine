@@ -225,10 +225,10 @@
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 
 		</div>
-	<div align="right">
-		 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+		<div align="right">
+			 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+		</div>
 	</div>
-			</div>
 
 			<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
 
