@@ -118,9 +118,9 @@
 				</table>
 				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
 			</div>
-		<div align="right">
-			 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
-		</div>
+			<div align="right">
+				 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
+			</div>
 	</div>
 
 	<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">

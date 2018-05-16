@@ -326,7 +326,7 @@
 
 	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="trece" style="display:none" >
 		<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>=</mo><mn>14</mn></math>.</p>
-		<p align="left">Resuelve la ecuación anterior, encuentra el valor de p:</p>
+		<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
 		<table align="center">
 				<tr align="center">
 					<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo></math></td>
@@ -345,8 +345,8 @@
 	</div>
 
 	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="catorce" style="display:none" >
-		<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&lt;</mo><mo>-</mo><mn>6</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>=</mo><mi>b</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>b</mn></math>.</p>
-		<p align="left">Resuelve la ecuación anterior, encuentra el valor de a:</p>
+		<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo><mo>&lt;</mo><mn>14</mn></math>.</p>
+		<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
 		<table align="center">
 				<tr align="center">
 					<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></td>
@@ -366,7 +366,7 @@
 
 	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 		<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
-		<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2208;</mo><mo>[</mo><mn>6</mn><mo>,</mo><mo>&#xA0;</mo><mn>24</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>12</mn><mo>,</mo><mn>6</mn><mo>)</mo></math></p>
+		<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2208;</mo><mo>[</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mn>23</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>p</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>)</mo></math></p>
 		<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 
 	</div>
