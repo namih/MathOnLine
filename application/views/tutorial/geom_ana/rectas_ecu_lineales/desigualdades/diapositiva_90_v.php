@@ -25,17 +25,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                     <div class="paso_0">
 						<p> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> 
-						<select id="input_1" onchange="validaOptSelect('0','input_1','1');">
+						<select id="input_1"  disabled="disabled" readonly="readonly" >
 							<option value="00" ></option>
-							<option value="01" > < </option>
+							<option value="01" selected="selected"> < </option>
 							<option value="11" > > </option>
 							<option value="10" > = </option>
-						</select> <input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('2000','input_2','000');" onkeypress="return validarSoloEntero(event);">
+						</select> <input class="n_float" type="text" name="input_2" id="input_2" disabled="disabled" readonly="readonly" value="2 000 000">
 						</p>
-                        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_1"></div>                        	
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_2"></div>                        	
-                        	</div>
+                    </div><br>
+                    <div class="paso_1">
+						<p> La primera opción resulta más conveniente.</p>
                     </div><br>
                 </div>				
 				<br>
@@ -44,17 +43,3 @@
 	</div>
 	<br><br>
   </div>
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Ayuda</h4>
-      </div>
-      <div class="modal-body">
-		<p>La desigualdad que debes resolver es <br> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo mathvariant="italic">&#xA0;</mo><mn mathvariant="italic">120</mn><mo mathvariant="italic">&#xA0;</mo><mn mathvariant="italic">000</mn><mo mathvariant="italic">&#xA0;</mo><mo mathvariant="italic">+</mo><mo mathvariant="italic">&#xA0;</mo><mn mathvariant="italic">0</mn><mo mathvariant="italic">.</mo><mn mathvariant="italic">02</mn><mo mathvariant="italic">&#xA0;</mo><mi>v</mi><mo mathvariant="italic">&#xA0;</mo><mo mathvariant="italic">&gt;</mo><mo mathvariant="italic">&#xA0;</mo><mn mathvariant="italic">0</mn><mo mathvariant="italic">.</mo><mn mathvariant="italic">08</mn><mo mathvariant="italic">&#xA0;</mo><mi>v</mi><mo mathvariant="italic">&#xA0;</mo></math></p>
-      </div>
-    </div>
-  </div>
-</div>

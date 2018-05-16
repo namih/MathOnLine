@@ -1,9 +1,7 @@
 
-<script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <div class="container-fluid">
- 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
 		<div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
 		</div>
@@ -82,16 +80,16 @@
                     </div><br>
                     <div class="paso_1">
                         <p>Ahora resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math> 
-                        	<select id="input_11" onchange="validaOptSelect('0','input_11','1');" >
+                        	<select id="input_11" disabled="disabled" readonly="readonly">
 								<option value="00" ></option>
-								<option value="01" > > </option>
+								<option value="01" selected="selected"> > </option>
 								<option value="10" > < </option>
 								<option value="11" > = </option>
-							</select> <input class="n_float" type="text" name="input_12" id="input_12" onchange="validaInputRelacion('1898','input_12','.73');" onkeypress="return validarSoloFlotante(event,'input_12');">
-                        	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_11"></div>                        	
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_12"></div>                        	
-                        	</div>							
+							</select> <input class="n_float" type="text" name="input_12" id="input_12" disabled="disabled" readonly="readonly" value="1898.73" >
+						</p>
+                    </div><br>
+                    <div class="paso_2">
+                        <p>Efectivamente rodrigo necesita ganar más de $1899
 						</p>
                     </div><br>
                 </div>				

@@ -20,11 +20,12 @@
 				<br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                     <div class="paso_0">
-						<p> <input class="n_float" type="text" name="input_1" id="input_1" onchange="validaInputRelacion('131','input_1','');" onkeypress="return validarSoloEntero(event);"> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo><mo>&#xA0;</mo><mi>p</mi><mo>&#xA0;</mo><mo>&lt;</mo></math> <input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('291','input_2','');" onkeypress="return validarSoloEntero(event);">
-						</p><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_1"></div>                        	
-								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left" id="error_input_2"></div>                        	
-                        	</div>
+						<p> <input class="n_float" type="text" name="input_1" id="input_1" disabled="disabled" readonly="readonly" value="131"> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&lt;</mo><mo>&#xA0;</mo><mi>p</mi><mo>&#xA0;</mo><mo>&lt;</mo></math> <input class="n_float" type="text" name="input_2" id="input_2" disabled="disabled" readonly="readonly" value="291">
+						</p>
+                    </div><br>
+                    <div class="paso_1">
+                        <p>El jugador debe sacar entre 131 y 291 puntos en la cuarta partida para que esté entre 140 y 180 puntos.
+						</p>
                     </div><br>
                 </div>				
 				<br>

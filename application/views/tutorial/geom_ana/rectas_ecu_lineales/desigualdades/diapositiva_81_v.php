@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/desigualdades/diapositiva_82.ggb","showToolbar":false, height: 100  }, true);
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/desigualdades/diapositiva_81.ggb","showToolbar":false, height: 100  }, true);
     window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 
@@ -46,40 +46,18 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                             <div class="paso_2"><br>
                                 <p>Ahora el lado derecho <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> 
-                                <select id="select_extremo_2" disabled="disabled" readonly >
+                                <select id="select_extremo_2" onchange="validaOptSelect('1','select_extremo_2','1');" >
                                     <option value="00" ></option>
                                     <option value="10" ><</option>
-                                    <option value="11" selected="selected">></option>
+                                    <option value="11" >></option>
                                     <option value="001" >=</option>
-                                </select>  <input class="n_float" type="text" name="input_valor_2" id="input_valor_2" value="-0.33" disabled="disabled" readonly>
+                                </select>  <input class="n_float" type="text" name="input_valor_2" id="input_valor_2" onchange="validaInputRelacion('-0','input_valor_2','.33');" onkeypress="return validarSoloFlotante(event,'input_valor_2');">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_select_extremo_2">
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_valor_2">
                                     </div>
                                 </p>
                                 <p>Arrastra el punto (b) al otro extremo de la solución</p>
-                            </div><br>
-                            <div class="paso_3">
-                                <p>Así que la solución es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mi>q</mi><mo>&#xA0;</mo><mo>&#x2208;</mo><mo>&#xA0;</mo><mo>(</mo><mo>&#xA0;</mo> 
-                                    <mi>
-                                        <semantics>
-                                            <annotation-xml encoding="application/xhtml+xml">
-                                                <input class="n_float" type="text" name="input_1" id="input_1" onchange="validaInputRelacion('-0','input_1','.33');" onkeypress="return validarSoloFlotante(event,'input_1');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
-                                            </annotation-xml>
-                                        </semantics>                                        
-                                    </mi><mo><mo>&#xA0;</mo><mo>&#xA0;</mo>,<mo>&#xA0;</mo><mo>&#xA0;</mo></mo>
-                                    <mi>
-                                        <semantics>
-                                            <annotation-xml encoding="application/xhtml+xml">
-                                                <input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('0','input_2','.36');" onkeypress="return validarSoloFlotante(event,'input_2');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
-                                            </annotation-xml>
-                                        </semantics>                                        
-                                    </mi>
-                                    <mo>&#xA0;</mo><mo>)</mo></math> </p>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_1">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_2">
-                                    </div>                               
                             </div><br>
                         </div>                        
                     </div>
