@@ -8,9 +8,9 @@
 </script>
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<p>Arrastra el punto de manera que el ángulo θ sea 0º, es decir, de 0 radianes</p>
-		<p>¿Cuánto vale el coseno de θ en este caso?</p>
-		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mi>o</mi><mi>s</mi><mo>&#xA0;</mo><mn>0</mn>
+		<p>Arrastra el punto del deslizador de manera que el ángulo θ sea 0º, es decir, de 0 radianes</p>
+		<p>¿Cuánto vale el coseno de θ en este caso? Arrastra el punto del deslizador.</p>
+		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mi>o</mi><mi>s</mi><mo>&#xA0;</mo><mfenced><mn>0</mn></mfenced>
 			<mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo>
 				<mi>a</mi><mi>d</mi><mi>y</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>e</mi></mrow><mrow>
 					<mi>H</mi><mi>i</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>a</mi></mrow></mfrac>

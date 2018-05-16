@@ -8,7 +8,7 @@
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
 		<div class="form-group has-feedback col-md-6  col-xs-12">
-			<p>Observa que, con el teorema de Pitágoras, obtenemos la medida del cateto adyacente, sin embargo, debido a la posición del triángulo en el plano cartesiano, el valor de x es negativo.</p>
+			<p>Observa que, con el teorema de Pitágoras, obtenemos la medida del cateto adyacente, sin embargo, debido a la posición del triángulo en el plano cartesiano, el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> es negativo.</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><msqrt><mn>2</mn></msqrt></mfrac></math></p>
 		</div>	
 		<div class="form-group has-feedback col-md-6  col-xs-12">

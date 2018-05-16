@@ -317,11 +317,12 @@ function correcto() {
 }
 	
 function incrementar_49_1() {
+	var applet = document.ggbApplet;
   	switch (ni) {
   		case -7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
+				applet.evalCommand("A = Point[{-11, 0}]");
 			
 			ni++;
 			break;
@@ -329,7 +330,7 @@ function incrementar_49_1() {
   		case -6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
+				applet.evalCommand("A = Point[{-9.42, -1}]");
 			
 			ni++;
 			break;
@@ -337,7 +338,7 @@ function incrementar_49_1() {
   		case -5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
+				applet.evalCommand("A = Point[{-7.85, 0}]");
 			
 			ni++;
 			break;
@@ -345,7 +346,7 @@ function incrementar_49_1() {
   		case -4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
+				applet.evalCommand("A = Point[{-6.28, 1}]");
 			
 			ni++;
 			break;
@@ -353,23 +354,23 @@ function incrementar_49_1() {
   		case -3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
-			
+				applet.evalCommand("A = Point[{-4.71, 0}]");
+				
 			ni++;
 			break;
   		
   		case -2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
-			
+				applet.evalCommand("A = Point[{-3.14, -1}]");
+				
 			ni++;
 			break;
   		
   		case -1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
+				applet.evalCommand("A = Point[{-1.57, 0}]");
 			
 			ni++;
 			break;
@@ -377,37 +378,36 @@ function incrementar_49_1() {
   		case 0:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
-			
+				applet.evalCommand("A = Point[{0, 1}]");
+				
 			ni++;
 			break;
   		
 		case 1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
-			
+				applet.evalCommand("A = Point[{1.57, 0}]");
+				
 			ni++;
 			break;
 		case 2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
-			
+				applet.evalCommand("A = Point[{3.14, -1}]");
+				
 			ni++;
 			break;
 		case 3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
-			
+				applet.evalCommand("A = Point[{4.71, 0}]");
 		
 			ni++;
 			break;
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
+				applet.evalCommand("A = Point[{6.28, 1}]");
 			
 			ni++;
 			break;
@@ -415,7 +415,7 @@ function incrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
+				applet.evalCommand("A = Point[{7.85, 0}]");
 			
 			ni++;
 			break;
@@ -423,7 +423,7 @@ function incrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
+				applet.evalCommand("A = Point[{9.42, -1}]");
 			
 			ni++;
 			break;
@@ -431,8 +431,7 @@ function incrementar_49_1() {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_14.png";
-			
+				applet.evalCommand("A = Point[{11, 0}]");
 		
 			break;
 		
@@ -444,11 +443,12 @@ function incrementar_49_1() {
 
 function decrementar_49_1() {
 	console.log(ni);
+	var applet = document.ggbApplet;
   	switch (ni) {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
+				applet.evalCommand("A = Point[{9.42, -1}]");
 		
 			ni--;
 			break;
@@ -456,7 +456,7 @@ function decrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
+				applet.evalCommand("A = Point[{7.85, 0}]");
 		
 			ni--;
 			break;
@@ -464,7 +464,7 @@ function decrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
+				applet.evalCommand("A = Point[{6.28, 1}]");
 		
 			ni--;
 			break;
@@ -472,78 +472,82 @@ function decrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
+				applet.evalCommand("A = Point[{4.71, 0}]");
 		
 			ni--;
 			break;
 		case 3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
-		
+				applet.evalCommand("A = Point[{3.14, -1}]");
+				
 			ni--;
 			break;	
 		case 2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
-		
+				applet.evalCommand("A = Point[{1.57, 0}]");
+				
 			ni--;
 			break;	
 		case 1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
+				applet.evalCommand("A = Point[{0, 1}]");
+				
 			ni--;
 			break;
 		
 		case 0:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
+				applet.evalCommand("A = Point[{-1.57, 0}]");
+				
 			ni--;
 			break;
 		
 		case -1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
+				applet.evalCommand("A = Point[{-3.14, -1}]");
+				
 			ni--;
 			break;
 		
 		case -2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
+				applet.evalCommand("A = Point[{-4.71, 0}]");
 			ni--;
 			break;
 		
 		case -3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
+				applet.evalCommand("A = Point[{-6.28, 1}]");
+				
 			ni--;
 			break;
 		
 		case -4:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
+				applet.evalCommand("A = Point[{-7.85, 0}]");
 			ni--;
 			break;
 		
 		case -5:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
+				applet.evalCommand("A = Point[{-9.42, -1}]");
 			ni--;
 			break;
 		
 		case -6:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
-			ni--;
+				applet.evalCommand("A = Point[{-11, 0}]");
+			
 			break;
 		
 		
