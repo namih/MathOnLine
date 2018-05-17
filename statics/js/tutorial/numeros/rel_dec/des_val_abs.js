@@ -393,7 +393,7 @@ function resultado_4_d () {
                  document.getElementById('tres').style.display = 'none';
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
-                 
+                 document.getElementById('recta_a').style.display = 'inline-block';
     			 }else{
     				     error();
     			};
