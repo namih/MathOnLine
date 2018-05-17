@@ -1,4 +1,11 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script type="text/javascript" charset="utf-8">
+	var applet = new GGBApplet({filename: base_url+"statics/ggb/circunferencia/circunferencia10_cos.ggb","showToolbar":false, height: 390, width: 480,"showMenuBar": false}, true);
+	window.addEventListener("load", function() {
+        applet.inject('applet_container');
+    });
+</script>
 
 <div class="container-fluid">
 
@@ -122,8 +129,11 @@
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mo>-</mo><mn>15</mn><mo>,</mo><mo>&#xA0;</mo><mo>-</mo><mn>4</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>)</mo></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
-
 		</div>
+
+
+
+
 		<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
 		</div>
