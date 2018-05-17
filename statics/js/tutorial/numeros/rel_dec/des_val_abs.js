@@ -394,6 +394,11 @@ function resultado_4_d () {
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
                  document.getElementById('recta_a').style.display = 'inline-block';
+                
+                /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                 var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_1.ggb","showToolbar":false, height: 150, "showMenuBar": false}, true);
+                 applet.inject('recta_a');
+
     			 }else{
     				     error();
     			};

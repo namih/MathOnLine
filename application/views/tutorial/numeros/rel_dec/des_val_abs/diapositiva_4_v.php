@@ -2,15 +2,8 @@
 
 <div class="container-fluid">
 
-
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 		<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_1.ggb","showToolbar":false, height: 100, width: 100,"showMenuBar": false}, true);
-			window.addEventListener("load", function() {
-		        applet.inject('recta_a');
-		    });
-		</script>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="uno">
 			<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mo>&#x2264;</mo><mn>11</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 			<p align="left">1. Analiza en primer lugar los valores que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced></math> de acuerdo al signo que puede tener <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>4</mn></math></p>
@@ -137,7 +130,7 @@
 		</div>
 
 
-		<div align="right">
+		<div class=" col-lg-12 col-md-12  col-xs-12" align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
 		</div>
 	</div>
