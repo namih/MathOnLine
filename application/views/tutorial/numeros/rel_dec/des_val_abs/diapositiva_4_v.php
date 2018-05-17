@@ -1,15 +1,16 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script type="text/javascript" charset="utf-8">
-	var applet = new GGBApplet({filename: base_url+"statics/ggb/circunferencia/circunferencia10_cos.ggb","showToolbar":false, height: 390, width: 480,"showMenuBar": false}, true);
-	window.addEventListener("load", function() {
-        applet.inject('applet_container');
-    });
-</script>
 
 <div class="container-fluid">
 
+
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
+		<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_1.ggb","showToolbar":false, height: 100, width: 100,"showMenuBar": false}, true);
+			window.addEventListener("load", function() {
+		        applet.inject('recta_a');
+		    });
+		</script>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="uno">
 			<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mo>&#x2264;</mo><mn>11</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 			<p align="left">1. Analiza en primer lugar los valores que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced></math> de acuerdo al signo que puede tener <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>4</mn></math></p>
@@ -131,7 +132,9 @@
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 		</div>
 
+		<div id="recta_a" class=" col-lg-6 col-md-6  col-xs-6" style="display:none">
 
+		</div>
 
 
 		<div align="right">
