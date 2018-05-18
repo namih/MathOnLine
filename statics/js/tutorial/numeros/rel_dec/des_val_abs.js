@@ -394,7 +394,7 @@ function resultado_4_d () {
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
                  document.getElementById('recta_a').style.display = 'inline-block';
-                
+
                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
                  var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_1.ggb","showToolbar":false, height: 150, "showMenuBar": false}, true);
                  applet.inject('recta_a');
@@ -413,7 +413,7 @@ function resultado_4_e () {
   var entero = document.getElementById('entero_e').value;
 
     	 if (entero != '') {
-  		     if (entero == 6 && seleccionado == 2) {
+  		     if (entero == 4 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('opciones_c').style.display = 'none';
                  document.getElementById('siete').style.display = 'inline-block';
@@ -432,7 +432,7 @@ function resultado_4_f () {
   var entero = document.getElementById('entero_f').value;
 
     	 if (entero != '') {
-  		     if (entero == 6 && seleccionado == 1) {
+  		     if (entero == 4 && seleccionado == 2) {
     				     acierto();
                  document.getElementById('opciones_d').style.display = 'none';
                  document.getElementById('ocho').style.display = 'inline-block';
@@ -450,7 +450,7 @@ function resultado_4_g () {
   var seleccionado = res.options[res.selectedIndex].value;
   var respuesta = res.options[res.selectedIndex].text;
     	 if (entero != '') {
-  		     if (entero == 24 && seleccionado == 3) {
+  		     if (entero == 15 && seleccionado == 3) {
     				     acierto();
                  document.getElementById('nueve').style.display = 'inline-block';
 
@@ -467,7 +467,7 @@ function resultado_4_h () {
   var seleccionado = res.options[res.selectedIndex].value;
   var respuesta = res.options[res.selectedIndex].text;
     	 if (entero != '') {
-  		     if (entero == -12 && seleccionado == 1) {
+  		     if (entero == -7 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('seis').style.display = 'none';
                  document.getElementById('siete').style.display = 'none';
@@ -475,6 +475,12 @@ function resultado_4_h () {
                  document.getElementById('ocho').style.display = 'none';
                  document.getElementById('nueve').style.display = 'none';
                  document.getElementById('diez').style.display = 'inline-block';
+                 document.getElementById('recta_b').style.display = 'inline-block';
+
+
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_1.ggb","showToolbar":false, height: 150, "showMenuBar": false}, true);
+                  applet.inject('recta_b');
 
     			 }else{
     				     error();
