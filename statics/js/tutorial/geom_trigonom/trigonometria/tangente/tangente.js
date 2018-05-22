@@ -270,11 +270,12 @@ function correcto() {
 }
 
 function incrementar_49_1() {
+	var applet = document.ggbApplet;
   	switch (ni) {
   		case -7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
@@ -282,7 +283,7 @@ function incrementar_49_1() {
   		case -6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_6.png";
+				applet.evalCommand("A = Point[{-9.42, 0}]");
 			
 			ni++;
 			break;
@@ -290,7 +291,7 @@ function incrementar_49_1() {
   		case -5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
@@ -298,7 +299,7 @@ function incrementar_49_1() {
   		case -4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_4.png";
+				applet.evalCommand("A = Point[{-6.28, 0}]");
 			
 			ni++;
 			break;
@@ -306,7 +307,7 @@ function incrementar_49_1() {
   		case -3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
@@ -314,7 +315,7 @@ function incrementar_49_1() {
   		case -2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_2.png";
+				applet.evalCommand("A = Point[{-3.14, 0}]");
 			
 			ni++;
 			break;
@@ -322,7 +323,7 @@ function incrementar_49_1() {
   		case -1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
@@ -330,7 +331,7 @@ function incrementar_49_1() {
   		case 0:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25.png";
+				applet.evalCommand("A = Point[{0, 0}]");
 			
 			ni++;
 			break;
@@ -338,21 +339,21 @@ function incrementar_49_1() {
 		case 1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
 		case 2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_9.png";
+				applet.evalCommand("A = Point[{3.14, 0}]");
 			
 			ni++;
 			break;
 		case 3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 		
 			ni++;
@@ -360,7 +361,7 @@ function incrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_11.png";
+				applet.evalCommand("A = Point[{6.28, 0}]");
 			
 			ni++;
 			break;
@@ -368,7 +369,7 @@ function incrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 			ni++;
 			break;
@@ -376,7 +377,7 @@ function incrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_13.png";
+				applet.evalCommand("A = Point[{9.42, 0}]");
 			
 			ni++;
 			break;
@@ -384,7 +385,7 @@ function incrementar_49_1() {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			
 		
 			break;
@@ -397,11 +398,12 @@ function incrementar_49_1() {
 
 function decrementar_49_1() {
 	console.log(ni);
+	var applet = document.ggbApplet;
   	switch (ni) {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_13.png";
+				applet.evalCommand("A = Point[{9.42, 0}]");
 		
 			ni--;
 			break;
@@ -409,7 +411,7 @@ function decrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 		
 			ni--;
 			break;
@@ -417,7 +419,7 @@ function decrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_11.png";
+				applet.evalCommand("A = Point[{6.28, 0}]");
 		
 			ni--;
 			break;
@@ -425,77 +427,78 @@ function decrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 		
 			ni--;
 			break;
 		case 3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_9.png";
+				applet.evalCommand("A = Point[{3.14, 0}]");
 		
 			ni--;
 			break;	
 		case 2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 		
 			ni--;
 			break;	
 		case 1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25.png";
+				applet.evalCommand("A = Point[{0, 0}]");
 			ni--;
 			break;
 		
 		case 0:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			ni--;
 			break;
 		
 		case -1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_2.png";
+				applet.evalCommand("A = Point[{-3.14, 0}]");
 			ni--;
 			break;
 		
 		case -2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			ni--;
 			break;
 		
 		case -3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_4.png";
+				applet.evalCommand("A = Point[{-6.28, 0}]");
 			ni--;
 			break;
 		
 		case -4:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
 			ni--;
 			break;
 		
 		case -5:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_6.png";
+				applet.evalCommand("A = Point[{-9.42, 0}]");
 			ni--;
 			break;
 		
 		case -6:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/tangente/diapositiva_25_1.png";
+				applet.evalCommand("A = Point[{a, 0}]");
+				
 			ni--;
 			break;
 		
