@@ -496,7 +496,7 @@ function resultado_4_i () {
   var entero = document.getElementById('entero_i').value;
 
     	 if (entero != '') {
-  		     if (entero == 9 && seleccionado == 2) {
+  		     if (entero == 7 && seleccionado == 2) {
     				     acierto();
                  document.getElementById('opciones_e').style.display = 'none';
                  document.getElementById('doce').style.display = 'inline-block';
@@ -515,7 +515,7 @@ function resultado_4_j () {
   var entero = document.getElementById('entero_j').value;
 
     	 if (entero != '') {
-  		     if (entero == 9 && seleccionado == 1) {
+  		     if (entero == 7 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('opciones_f').style.display = 'none';
                  document.getElementById('trece').style.display = 'inline-block';

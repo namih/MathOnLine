@@ -136,7 +136,6 @@
 	<div id="second" class=" col-lg-12 col-md-12  col-xs-12" style="display:none">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="seis">
 				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfenced><mo>&#x2264;</mo><mn>11</mn></math> siguiendo los pasos que a continuación se muestran.</p>
-				<br></br>
 				<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>-</mo><mn>4</mn></math>:</p>
 				<table>
 					<tr align="center">
@@ -264,16 +263,12 @@
 	</div>
 
 	<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
-
-			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="once">
-
-				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>&lt;</mo><mn>14</mn></math> siguiendo los pasos que a continuación se muestran.</p>
-				<br></br>
-
-			<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>:</p>
+		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="once">
+			<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced><mo>&#x2264;</mo><mn>15</mn></math> siguiendo los pasos que a continuación se muestran.</p>
+			<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>-</mo><mn>7</mn></math>:</p>
 			<table>
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_i">
@@ -282,12 +277,12 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>-</mo><mn>7</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2265;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_i ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_i" placeholder="0" />
+									<input onchange="resultado_4_i ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_i" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
@@ -296,14 +291,14 @@
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_e" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>7</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>-</mo><mn>7</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="doce" style="display:none" >
 			<p align="left">y</p>
 			<table align="center">
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_j">
@@ -312,12 +307,12 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn><mo>&lt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>-</mo><mn>7</mn><mo>&lt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_j ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_j" placeholder="0" />
+									<input onchange="resultado_4_j ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_j" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
@@ -325,20 +320,20 @@
 			</table>
 		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_f" style="display:none" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>7</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>-</mo><mn>7</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="trece" style="display:none" >
-			<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>=</mo><mn>14</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
+			<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2265;</mo><mn>7</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced><mo>=</mo><mi>a</mi><mo>-</mo><mn>7</mn><mo>&#x2265;</mo><mn>15</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de a:</p>
 			<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_k ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_k" placeholder="0" />
+									<input onchange="resultado_4_k ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_k" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
@@ -358,7 +353,7 @@
 						<td><h4><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_2_l ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
+									<input onchange="resultado_4_l ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi></h4></td>
