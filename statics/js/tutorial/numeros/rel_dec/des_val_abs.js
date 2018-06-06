@@ -529,9 +529,12 @@ function resultado_4_j () {
 
 function resultado_4_k () {
   var entero = document.getElementById('entero_k').value;
+  var res = document.getElementById('opcion_k');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+    	 if (entero != '' && seleccionado != '') {
+  		     if (entero == 22 && seleccionado == 3) {
 
-    	 if (entero != '') {
-  		     if (entero == 23 ) {
     				     acierto();
                  document.getElementById('catorce').style.display = 'inline-block';
 
@@ -539,14 +542,15 @@ function resultado_4_k () {
     				     error();
     			};
     		};
-
 }
 
 function resultado_4_l () {
   var entero = document.getElementById('entero_l').value;
-
-    	 if (entero != '') {
-  		     if (entero == -5 ) {
+  var res = document.getElementById('opcion_l');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+    	 if (entero != '' && seleccionado != '') {
+  		     if (entero == -8 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('once').style.display = 'none';
                  document.getElementById('doce').style.display = 'none';
@@ -554,6 +558,10 @@ function resultado_4_l () {
                  document.getElementById('trece').style.display = 'none';
                  document.getElementById('catorce').style.display = 'none';
                  document.getElementById('quince').style.display = 'inline-block';
+
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/des_val_abs/diapositiva_4_3.ggb","showToolbar":false, height: 500, "showMenuBar": false}, true);
+                  applet.inject('recta_c');
 
     			 }else{
     				     error();

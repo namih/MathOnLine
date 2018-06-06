@@ -328,7 +328,15 @@
 			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de a:</p>
 			<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td><span></span>
+						<select id="opcion_k">
+								<option value="0" id="r1"></a></option>
+								<option value="1" id="r1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2265;</mo></math></option>
+								<option value="2" id="r2">=</option>
+								<option value="3" id="r3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2264;</mo></math></option>
+						</select></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -338,38 +346,49 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo><mn>9</mn></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo><mn>4</mn></math></td>
 					</tr>
 			</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="catorce" style="display:none" >
-			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo><mo>&lt;</mo><mn>14</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
+			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mn>7</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mn>7</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>&lt;</mo><mn>15</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de a:</p>
 			<table align="center">
-					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td><h4><mi>
-							<semantics>
-								<annotation-xml encoding="application/xhtml+xml">
-									<input onchange="resultado_4_l ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
-								</annotation-xml>
-							</semantics>
-						</mi></h4></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>9</mn></math></td>
-					</tr>
-			</table>
+				<tr align="center">
+					<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+					<td><span></span>
+					<select id="opcion_l">
+							<option value="0" id="r1"></a></option>
+							<option value="1" id="r1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2265;</mo></math></option>
+							<option value="2" id="r2">=</option>
+							<option value="3" id="r3"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x2264;</mo></math></option>
+					</select></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td><h4><mi>
+						<semantics>
+							<annotation-xml encoding="application/xhtml+xml">
+								<input onchange="resultado_4_l ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_l" placeholder="0" />
+							</annotation-xml>
+						</semantics>
+					</mi></h4></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mn>7</mn></math></td>
+				</tr>
+		</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
-			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2208;</mo><mo>[</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mn>23</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>p</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>)</mo></math></p>
-			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2208;</mo><mo>[</mo><mn>7</mn><mo>,</mo><mo>&#xA0;</mo><mn>22</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>a</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>8</mn><mo>,</mo><mn></mn><mo>)</mo></math></p>
+			<p align="left">Coloca el punto rojo sobre el 22 que encontraste en la primera solución que encontraste.</p>
+			<h3>NOTA: Puedes deslizar la gráfica a la dirección que desees</h3>
+		</div>
+		<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
-		<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none"></div>
 	</div>
 
 </div>
