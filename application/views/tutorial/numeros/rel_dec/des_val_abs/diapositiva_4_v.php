@@ -123,6 +123,7 @@
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mo>-</mo><mn>15</mn><mo>,</mo><mo>&#xA0;</mo><mo>-</mo><mn>4</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>)</mo></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+			<h3>NOTA: Puedes deslizar la gráfica a la dirección que desees</h3>
 		</div>
 
 		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none"></div>
@@ -255,6 +256,7 @@
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>4</mn><mo>,</mo><mo>&#xA0;</mo><mn>15</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>7</mn><mo>,</mo><mn>4</mn><mo>)</mo></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+			<h3>NOTA: Puedes deslizar la gráfica a la dirección que desees</h3>
 		</div>
 		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none"></div>
 		<div align="right">
