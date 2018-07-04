@@ -700,7 +700,7 @@ function resultado_6_e () {
   var entero = document.getElementById('entero_e').value;
 
     	 if (entero != '') {
-  		     if (entero == 6 && seleccionado == 2) {
+  		     if (entero == -5 && seleccionado == 2) {
     				     acierto();
                  document.getElementById('opciones_c').style.display = 'none';
                  document.getElementById('siete').style.display = 'inline-block';
@@ -719,7 +719,7 @@ function resultado_6_f () {
   var entero = document.getElementById('entero_f').value;
 
     	 if (entero != '') {
-  		     if (entero == 6 && seleccionado == 1) {
+  		     if (entero == -5 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('opciones_d').style.display = 'none';
                  document.getElementById('ocho').style.display = 'inline-block';
@@ -737,7 +737,7 @@ function resultado_6_g () {
   var seleccionado = res.options[res.selectedIndex].value;
   var respuesta = res.options[res.selectedIndex].text;
     	 if (entero != '') {
-  		     if (entero == 24 && seleccionado == 3) {
+  		     if (entero == 6 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('nueve').style.display = 'inline-block';
 
@@ -754,7 +754,7 @@ function resultado_6_h () {
   var seleccionado = res.options[res.selectedIndex].value;
   var respuesta = res.options[res.selectedIndex].text;
     	 if (entero != '') {
-  		     if (entero == -12 && seleccionado == 1) {
+  		     if (entero == -16 && seleccionado == 3) {
     				     acierto();
                  document.getElementById('seis').style.display = 'none';
                  document.getElementById('siete').style.display = 'none';
@@ -777,7 +777,7 @@ function resultado_6_i () {
   var entero = document.getElementById('entero_i').value;
 
     	 if (entero != '') {
-  		     if (entero == 9 && seleccionado == 2) {
+  		     if (entero == -2 && seleccionado == 2) {
     				     acierto();
                  document.getElementById('opciones_e').style.display = 'none';
                  document.getElementById('doce').style.display = 'inline-block';
@@ -796,7 +796,7 @@ function resultado_6_j () {
   var entero = document.getElementById('entero_j').value;
 
     	 if (entero != '') {
-  		     if (entero == 9 && seleccionado == 1) {
+  		     if (entero == -2 && seleccionado == 1) {
     				     acierto();
                  document.getElementById('opciones_f').style.display = 'none';
                  document.getElementById('trece').style.display = 'inline-block';
@@ -810,9 +810,11 @@ function resultado_6_j () {
 
 function resultado_6_k () {
   var entero = document.getElementById('entero_k').value;
-
-    	 if (entero != '') {
-  		     if (entero == 23 ) {
+  var res = document.getElementById('opcion_k');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+    	 if (entero != '' && seleccionado != '') {
+  		     if (entero == 8 && seleccionado == 1 ) {
     				     acierto();
                  document.getElementById('catorce').style.display = 'inline-block';
 
@@ -825,9 +827,11 @@ function resultado_6_k () {
 
 function resultado_6_l () {
   var entero = document.getElementById('entero_l').value;
-
-    	 if (entero != '') {
-  		     if (entero == -5 ) {
+  var res = document.getElementById('opcion_l');
+  var seleccionado = res.options[res.selectedIndex].value;
+  var respuesta = res.options[res.selectedIndex].text;
+    	 if (entero != '' && seleccionado != '') {
+  		     if (entero == -12 && seleccionado == 3 ) {
     				     acierto();
                  document.getElementById('once').style.display = 'none';
                  document.getElementById('doce').style.display = 'none';
@@ -835,6 +839,51 @@ function resultado_6_l () {
                  document.getElementById('trece').style.display = 'none';
                  document.getElementById('catorce').style.display = 'none';
                  document.getElementById('quince').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function intervalo_7_a () {
+  var entero_a = document.getElementById('entero_a').value;
+  var entero_b = document.getElementById('entero_b').value;
+    	 if (entero_a != '' && entero_b != '') {
+  		     if (entero_a == -12.52 && entero_b == 2.48) {
+    				     acierto();
+                 document.getElementById('recta_a').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function intervalo_7_b () {
+  var entero_a = document.getElementById('entero_c').value;
+  var entero_b = document.getElementById('entero_d').value;
+    	 if (entero_a != '' && entero_b != '') {
+  		     if (entero_a == -17.75 && entero_b == 17.75) {
+    				     acierto();
+                 document.getElementById('recta_b').style.display = 'inline-block';
+
+    			 }else{
+    				     error();
+    			};
+    		};
+
+}
+
+function intervalo_7_c () {
+  var entero_a = document.getElementById('entero_e').value;
+  var entero_b = document.getElementById('entero_f').value;
+    	 if (entero_a != '' && entero_b != '') {
+  		     if (entero_a == -11.86 && entero_b == 11.53) {
+    				     acierto();
+                 document.getElementById('recta_c').style.display = 'inline-block';
 
     			 }else{
     				     error();

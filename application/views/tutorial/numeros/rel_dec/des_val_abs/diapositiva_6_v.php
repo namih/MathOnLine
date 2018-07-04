@@ -131,12 +131,12 @@
 
 		<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="seis">
-				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced><mo>&lt;</mo><mn>18</mn></math> siguiendo los pasos que a continuación se muestran.</p>
+				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>&gt;</mo><mn>11</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 				<br></br>
-				<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo><mn>6</mn></math>:</p>
+				<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>:</p>
 				<table>
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_e">
@@ -145,7 +145,7 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo><mn>6</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2265;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -159,14 +159,14 @@
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_c" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>y</mi><mo>-</mo><mn>6</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo><mn>6</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="siete" style="display:none" >
 			<p align="left">y</p>
 			<table align="center">
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_f">
@@ -175,7 +175,7 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo><mn>6</mn><mo>&lt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&lt;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn><mo>&lt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -188,15 +188,15 @@
 			</table>
 		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_d" style="display:none" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>y</mi><mo>-</mo><mn>6</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo><mn>6</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>+</mo><mn>5</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="ocho" style="display:none" >
-			<p align="left">2. Regresa a la desigualdad, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2265;</mo><mn>6</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced><mo>=</mo><mi>y</mi><mo>-</mo><mn>6</mn><mo>&lt;</mo><mn>18</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de y:</p>
+			<p align="left">2. Regresa a la desigualdad, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2265;</mo><mn>6</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>&gt;</mo><mn>11</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de x:</p>
 			<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_g">
@@ -214,17 +214,17 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2265;</mo><mn>6</mn></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo><mn>5</mn></math></td>
 					</tr>
 			</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="nueve" style="display:none" >
-			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&lt;</mo><mn>6</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>-</mo><mn>6</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>y</mi><mo>-</mo><mn>6</mn><mo>)</mo><mo>&lt;</mo><mn>18</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de y:</p>
+			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo><mn>5</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo><mo>&gt;</mo><mn>11</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de x:</p>
 				<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
 						<td><span></span>
@@ -243,14 +243,14 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&lt;</mo><mn>6</mn></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo><mn>5</mn></math></td>
 					</tr>
 			</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="diez" style="display:none" >
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
-			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2208;</mo><mo>[</mo><mn>6</mn><mo>,</mo><mo>&#xA0;</mo><mn>24</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>12</mn><mo>,</mo><mn>6</mn><mo>)</mo></math></p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2208;</mo><mo>[</mo><mn>-5</mn><mo>,</mo><mo>&#xA0;</mo><mn>6</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>16</mn><mo>,</mo><mo>-</mo><mn>5</mn><mo>)</mo></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 
 		</div>
@@ -263,13 +263,13 @@
 
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="once">
 
-				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>&lt;</mo><mn>14</mn></math> siguiendo los pasos que a continuación se muestran.</p>
+				<p align="left">Resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>&gt;</mo><mn>10</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 				<br></br>
 
-			<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>:</p>
+			<p align="left">1. Analiza en primer lugar los valores que puede tomar el valor absoluto <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced></math> de acuerdo al signo que puede tomar <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>+</mo><mn>2</mn></math>:</p>
 			<table>
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_i">
@@ -278,7 +278,7 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>+</mo><mn>2</mn><mo>&#x2265;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#x2265;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -292,14 +292,14 @@
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_e" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>b</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>+</mo><mn>2</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="doce" style="display:none" >
 			<p align="left">y</p>
 			<table align="center">
 					<tr align="center">
-						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo></math></h4></td>
+						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo></math></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><span></span>
 						<select id="opcion_j">
@@ -308,7 +308,7 @@
 								<option value="2" id="r2">b</option>
 
 						</select></td>
-						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn><mo>&lt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>+</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn></math>, es decir,  si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&gt;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -321,15 +321,23 @@
 			</table>
 		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_f" style="display:none" >
-			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>-</mo><mn>9</mn></math>  </p>
+			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mo>(</mo><mi>b</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>+</mo><mn>2</mn></math>  </p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="trece" style="display:none" >
-			<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>=</mo><mn>14</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
+			<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#x2265;</mo><mo>-</mo><mn>2</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mi>b</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>10</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de b:</p>
 			<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td><span></span>
+						<select id="opcion_k">
+								<option value="0" id="r1"></a></option>
+								<option value="1" id="r1">></option>
+								<option value="2" id="r2">=</option>
+								<option value="3" id="r3"><</option>
+						</select></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -339,17 +347,25 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo><mn>9</mn></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&gt;</mo><mn>2</mn></math></td>
 					</tr>
 			</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="catorce" style="display:none" >
-			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>9</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>p</mi><mo>-</mo><mn>9</mn><mo>)</mo><mo>&lt;</mo><mn>14</mn></math>.</p>
-			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de p:</p>
+			<p align="left">3. También sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&lt;</mo><mo>-</mo><mn>2</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mo>-</mo><mo>(</mo><mi>b</mi><mo>+</mo><mn>2</mn><mo>)</mo><mo>&lt;</mo><mn>10</mn></math>.</p>
+			<p align="left">Resuelve la desigualdad anterior, encuentra el valor de b:</p>
 			<table align="center">
 					<tr align="center">
-						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math></td>
+						<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td><span></span>
+						<select id="opcion_l">
+								<option value="0" id="r1"></a></option>
+								<option value="1" id="r1">></option>
+								<option value="2" id="r2">=</option>
+								<option value="3" id="r3"><</option>
+						</select></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -359,14 +375,14 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&lt;</mo><mn>9</mn></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&gt;</mo><mn>2</mn></math></td>
 					</tr>
 			</table>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
-			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2208;</mo><mo>[</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mn>23</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>p</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>)</mo></math></p>
+			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#x2208;</mo><mo>[</mo><mn>8</mn><mo>,</mo><mo>&#xA0;</mo><mn>2</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>b</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>12</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>)</mo></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 
 		</div>
