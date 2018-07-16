@@ -278,7 +278,7 @@ function entero_4_b () {
   		};
 }
 
-function fraccion_4_a () {
+function fraccion_4_c () {
   var numerador_a = document.getElementById('numerador_4a').value;
   var denominador_a = document.getElementById('denominador_4b').value;
   var numerador_b = document.getElementById('numerador_4c').value;
@@ -295,6 +295,90 @@ function fraccion_4_a () {
         error();
       };
     };
+
+}
+
+function val_abs_5a (){
+  var entero = document.getElementById('entero_5_a').value;
+  if (entero != '') {
+      if (entero == 4.8) {
+            acierto();
+
+     }else{
+       error();
+     };
+   };
+
+}
+
+function val_abs_5b (){
+  var entero = document.getElementById('entero_5_b').value;
+  if (entero != '') {
+      if (entero == 6.25) {
+            acierto();
+
+     }else{
+       error();
+     };
+   };
+
+}
+
+function val_abs_5c (){
+  var entero = document.getElementById('entero_5_c').value;
+  if (entero != '') {
+      if (entero == 5.82) {
+            acierto();
+
+     }else{
+       error();
+     };
+   };
+
+}
+
+function val_abs_6a (){
+  var entero = document.getElementById('entero_6_a').value;
+  if (entero != '') {
+      if (entero == 8) {
+            acierto();
+            /* hacer la carga de la grafica hasta que el resultado esté validado*/
+             var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_6_a.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+             applet.inject('recta_a');
+     }else{
+       error();
+     };
+   };
+
+}
+
+function val_abs_6b (){
+  var entero = document.getElementById('entero_6_b').value;
+  if (entero != '') {
+      if (entero == 4) {
+            acierto();
+            /* hacer la carga de la grafica hasta que el resultado esté validado*/
+             var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_6_b.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+             applet.inject('recta_b');
+     }else{
+       error();
+     };
+   };
+
+}
+
+function val_abs_6c (){
+  var entero = document.getElementById('entero_6_c').value;
+  if (entero != '') {
+      if (entero == 56) {
+            acierto();
+            /* hacer la carga de la grafica hasta que el resultado esté validado*/
+             var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_6_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+             applet.inject('recta_c');
+     }else{
+       error();
+     };
+   };
 
 }
 
