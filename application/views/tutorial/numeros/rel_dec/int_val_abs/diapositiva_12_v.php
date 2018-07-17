@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
@@ -48,9 +48,13 @@
 					</tr>
 				</table>
 		</div>
+		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
+		</div>
 		<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
 		</div>
+
 	</div>
 
 	<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
@@ -98,6 +102,9 @@
 						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mfenced open="|" close="|"><mn>3</mn></mfenced></math></h4></td>
 					</tr>
 				</table>
+		</div>
+		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
 		</div>
 		<div align="right">
 			 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
@@ -149,6 +156,9 @@
 						<td><h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>-</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mfenced open="|" close="|"><mn>5</mn></mfenced></math></h4></td>
 					</tr>
 				</table>
+		</div>
+		<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
 		</div>
 	</div>
 

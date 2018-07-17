@@ -1,5 +1,4 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/int_val_abs.js"></script>
-
 <div class="container-fluid">
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 		<div class=" col-lg-12 col-md-12  col-xs-12">
@@ -19,14 +18,14 @@
 						<td><mi>|
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_a" placeholder="0" />
+									<input onchange="entero_8_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_a" placeholder="0" />
 								</annotation-xml>
 							</semantics>|
 						</mi>=</td>
 						<td><mi>
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_b" placeholder="0" />
+									<input onchange="entero_8_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_b" placeholder="0" />
 								</annotation-xml>
 							</semantics>
 						</mi> </td>
@@ -41,7 +40,7 @@
 						<td><mi>|
 							<semantics>
 								<annotation-xml encoding="application/xhtml+xml">
-									<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_c" placeholder="0" />
+									<input onchange="entero_8_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="entero_c" placeholder="0" />
 								</annotation-xml>
 							</semantics>|
 						</mi>=</td>
@@ -55,9 +54,7 @@
 					</tr>
 			</table>
 		</div>
-			<div style="display:none" id="recta_a">
 
-			</div>
 		</div>
 		<div align="right">
 			<button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
@@ -118,10 +115,7 @@
 					</tr>
 			</table>
 		</div>
-			<div style="display:none" id="recta_b">
-
 			</div>
-		</div>
 		<div align="right">
 			<button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
 		</div>
@@ -181,9 +175,6 @@
 					</tr>
 			</table>
 		</div>
-			<div style="display:none" id="recta_c">
-
-			</div>
 		</div>
 	</div>
 

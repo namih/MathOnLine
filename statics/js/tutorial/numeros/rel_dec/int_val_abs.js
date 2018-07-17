@@ -390,7 +390,9 @@ function entero_8_a () {
   	 if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
 			   if (entero_a == -2.3 && entero_b == 2.3 && entero_c == 2.3 && entero_d == 2.3) {
   				     acierto();
-              document.getElementById('recta_a').style.display = 'inline-block';
+
+
+
   			}else{
   				error();
   			};
@@ -479,14 +481,14 @@ function operacion_11_a () {
   	var entero_a = document.getElementById('entero_a').value;
     var entero_b = document.getElementById('entero_b').value;
     var opcion = document.getElementById('opcion_a');
-
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
-
-
     if (entero_a != '' && entero_b !='' ) {
 		     if (entero_a == 4 && entero_b == 2 && seleccionado_a == 1) {
   				     acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_11_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_a');
   			 }else{
   				     error();
   			};
@@ -505,6 +507,9 @@ function operacion_11_b () {
     if (entero_a != '' && entero_b !='' ) {
 		     if (entero_a == 3 && entero_b == 15 && seleccionado_a == 1) {
   				     acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_11_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_b');
   			 }else{
   				     error();
   			};
@@ -523,6 +528,9 @@ function operacion_11_b () {
           if (entero_a != '' && entero_b !='' ) {
       		     if (entero_a == 3 && entero_b == 11 && seleccionado_a == 1) {
         				     acierto();
+                     /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                      var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_11_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                      applet.inject('recta_c');
         			 }else{
         				     error();
         			};
@@ -541,6 +549,9 @@ function operacion_12_a () {
     if (entero_a != '' && entero_b !='' ) {
 		     if (entero_a == 1 && entero_b == 13 && seleccionado_a == 1) {
   				     acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_12_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_a');
   			 }else{
   				     error();
   			};
@@ -559,6 +570,9 @@ function operacion_12_b () {
     if (entero_a != '' && entero_b !='' ) {
 		     if (entero_a == 2 && entero_b == 4 && seleccionado_a == 1) {
   				     acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_12_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_b');
   			 }else{
   				     error();
   			};
@@ -578,6 +592,9 @@ function operacion_12_b () {
         if (entero_a != '' && entero_b !='' ) {
              if (entero_a == 4 && entero_b == 6 && seleccionado_a == 1) {
                    acierto();
+                   /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                    var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_12_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                    applet.inject('recta_c');
              }else{
                    error();
             };
@@ -596,6 +613,9 @@ function operacion_12_b () {
         if (entero_a != '' && entero_b !='' ) {
     		     if (entero_a == 7 && entero_b == 7 && seleccionado_a == 2) {
       				     acierto();
+                   /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                    var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_13_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                    applet.inject('recta_a');
       			 }else{
       				     error();
       			};
@@ -614,6 +634,9 @@ function operacion_12_b () {
         if (entero_a != '' && entero_b !='' ) {
     		     if (entero_a == 10 && entero_b == 10 && seleccionado_a == 2) {
       				     acierto();
+                   /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                    var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_13_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                    applet.inject('recta_b');
       			 }else{
       				     error();
       			};
@@ -633,6 +656,9 @@ function operacion_13_c () {
   if (entero_a != '' && entero_b !='' ) {
       if (entero_a == 5 && entero_b == 5 && seleccionado_a == 2) {
           acierto();
+          /* hacer la carga de la grafica hasta que el resultado esté validado*/
+           var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_13_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+           applet.inject('recta_c');
       }else{
             error();
       };
@@ -645,6 +671,10 @@ function operacion_14_a () {
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
       if (seleccionado_a == 1) {
                acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_14_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_a');
+
          }else{
                error();
         };
@@ -657,6 +687,9 @@ function operacion_14_b () {
     var respuesta_b = opcion.options[opcion.selectedIndex].text;
       if (seleccionado_b == 2) {
                acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_14_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_b');
          }else{
                error();
         };
@@ -670,6 +703,9 @@ function operacion_14_c () {
       if (seleccionado_c == 2) {
                acierto();
                document.getElementById('info').style.display = 'inline-block';
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_14_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_c');
          }else{
                error();
         };
@@ -688,6 +724,9 @@ function operacion_15_a () {
     if (entero_a != '' && entero_b !='' ) {
          if (entero_a == 12 && entero_b == 12 && seleccionado_a == 2) {
                acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_a');
          }else{
                error();
         };
@@ -706,6 +745,9 @@ function operacion_15_b () {
     if (entero_a != '' && entero_b !='' ) {
          if (entero_a == 63 && entero_b == 63 && seleccionado_a == 2) {
                acierto();
+               /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+                applet.inject('recta_b');
          }else{
                error();
         };
@@ -724,6 +766,9 @@ function operacion_15_b () {
       if (entero_a != '' && entero_b !='' ) {
           if (entero_a == 14 && entero_b == 14 && seleccionado_a == 2) {
               acierto();
+              /* hacer la carga de la grafica hasta que el resultado esté validado*/
+               var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
+               applet.inject('recta_c');
           }else{
                 error();
           };
