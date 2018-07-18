@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/ec_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 
@@ -81,11 +81,13 @@
 						</tr>
 					</table>
 				</div>
+
+				<div id="recta" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
+				</div>
 		</div>
 
-		<div id="recta" align="center" class=" col-lg-12 col-md-12  col-xs-12" style="display:none">
 
-		</div>
 
 </div>
 

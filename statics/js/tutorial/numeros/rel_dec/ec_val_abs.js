@@ -44,6 +44,8 @@ function resultado_1_a () {
                  document.getElementById('opciones_a').style.display = 'none';
                  document.getElementById('dos').style.display = 'inline-block';
                  document.getElementById('opciones_b').style.display = 'inline-block';
+
+
     			 }else{
     				     error();
     			};
@@ -97,6 +99,9 @@ function resultado_1_d () {
                  document.getElementById('tres').style.display = 'none';
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_1_a.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+                  applet.inject('recta_a');
 
     			 }else{
     				     error();
@@ -170,6 +175,10 @@ function resultado_1_h () {
                  document.getElementById('ocho').style.display = 'none';
                  document.getElementById('nueve').style.display = 'none';
                  document.getElementById('diez').style.display = 'inline-block';
+
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_1_b.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+                  applet.inject('recta_b');
 
     			 }else{
     				     error();
@@ -350,7 +359,7 @@ function resultado_3_c () {
   var entero = document.getElementById('entero_c').value;
 
     	 if (entero != '') {
-  		     if (entero == -1.75 ) {
+  		     if (entero == -1.7) {
     				     acierto();
                  document.getElementById('cuatro').style.display = 'inline-block';
 
@@ -365,7 +374,7 @@ function resultado_3_d () {
   var entero = document.getElementById('entero_d').value;
 
     	 if (entero != '') {
-  		     if (entero == -3.25 ) {
+  		     if (entero == -3.2 ) {
     				     acierto();
                  document.getElementById('uno').style.display = 'none';
                  document.getElementById('dos').style.display = 'none';
@@ -373,6 +382,10 @@ function resultado_3_d () {
                  document.getElementById('tres').style.display = 'none';
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
+
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_3_a.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+                  applet.inject('recta_a');
 
     			 }else{
     				     error();
@@ -423,7 +436,7 @@ function resultado_3_g () {
   var entero = document.getElementById('entero_g').value;
 
     	 if (entero != '') {
-  		     if (entero == 1.05) {
+  		     if (entero == 1.0) {
     				     acierto();
                  document.getElementById('nueve').style.display = 'inline-block';
 
@@ -446,6 +459,10 @@ function resultado_3_h () {
                  document.getElementById('ocho').style.display = 'none';
                  document.getElementById('nueve').style.display = 'none';
                  document.getElementById('diez').style.display = 'inline-block';
+
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_3_b.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+                  applet.inject('recta_b');
 
     			 }else{
     				     error();
@@ -520,6 +537,10 @@ function resultado_3_l () {
                  document.getElementById('catorce').style.display = 'none';
                  document.getElementById('quince').style.display = 'inline-block';
 
+                 /* hacer la carga de la grafica hasta que el resultado esté validado*/
+                  var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_3_c.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+                  applet.inject('recta_c');
+
     			 }else{
     				     error();
     			};
@@ -591,6 +612,7 @@ function resultado_5 () {
     if (seleccionado == 2) {
     		acierto();
         document.getElementById('valores').style.display = 'inline-block';
+
     }else{
     			error();
     };
@@ -606,7 +628,10 @@ function puntos_5 () {
    if (entero_a != '' && entero_b != '' && entero_c != '' && entero_d != '') {
        if (entero_a == 35 && entero_b == 10 && entero_c == -15 && entero_d == 10) {
              acierto();
-             document.getElementById('recta').style.display = 'inline-block';
+             /* hacer la carga de la grafica hasta que el resultado esté validado*/
+              var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_5.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
+              applet.inject('recta');
+
       }else{
         error();
       };

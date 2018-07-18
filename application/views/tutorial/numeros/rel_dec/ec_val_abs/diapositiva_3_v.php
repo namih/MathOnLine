@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/ec_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="uno">
@@ -34,7 +34,7 @@
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_a" >
 				<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></math></p>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con un número decimal.</p>
 			</div>
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="dos" style="display:none" >
@@ -64,7 +64,7 @@
 			</div>
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_b" style="display:none" >
 				<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></math></p>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
 			</div>
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="tres" style="display:none" >
@@ -109,8 +109,10 @@
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="cinco" style="display:none" >
 				<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>.</mo><mn>75</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mo>-</mo><mn>3</mn><mo>.</mo><mn>25</mn></math></p>
-				<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mo>-</mo><mn>1</mn><mo>.</mo><mn>7</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mo>-</mo><mn>3</mn><mo>.</mo><mn>2</mn></math></p>
+			</div>
+
+			<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 			</div>
 		<div align="right">
@@ -150,7 +152,7 @@
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_c" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="siete" style="display:none" >
@@ -180,7 +182,7 @@
 		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_d" style="display:none" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="ocho" style="display:none" >
@@ -226,7 +228,9 @@
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="diez" style="display:none" >
 			<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>05</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>65</mn></math></p>
-			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+		</div>
+
+		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
 		<div align="right">
@@ -267,7 +271,7 @@
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_e" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta una cifra decimal.</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="doce" style="display:none" >
@@ -297,7 +301,7 @@
 		</div>
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_f" style="display:none" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="trece" style="display:none" >
@@ -343,9 +347,11 @@
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 			<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mn>3</mn><mo>.</mo><mn>4</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>-</mo><mn>2</mn><mo>.</mo><mn>6</mn></math></p>
-			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
-
 		</div>
+	</div>
+
+	<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
 	</div>
 
 </div>

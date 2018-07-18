@@ -1,4 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/ec_val_abs.js"></script>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 		<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="uno">
@@ -108,6 +109,9 @@
 					<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mn>5</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>-</mo><mn>7</mn></math></p>
 					<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+
+				</div>
+				<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 				</div>
 			<div align="right">
@@ -223,6 +227,9 @@
 			<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mn>9</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mo>-</mo><mn>11</mn></math></p>
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+
+		</div>
+		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
 		<div align="right">
