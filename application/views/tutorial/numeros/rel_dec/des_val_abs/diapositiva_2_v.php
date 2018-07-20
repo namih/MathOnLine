@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
@@ -121,9 +121,13 @@
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="cinco" style="display:none" >
 			<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2208;</mo><mo>[</mo><mn>5</mn><mo>,</mo><mo>&#xA0;</mo><mn>17</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo>)</mo></math></p>
-			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+		</div>
+
+		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
+
+
 		<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
 		</div>
@@ -251,9 +255,12 @@
 	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="diez" style="display:none" >
 		<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 		<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2208;</mo><mo>[</mo><mn>6</mn><mo>,</mo><mo>&#xA0;</mo><mn>24</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>12</mn><mo>,</mo><mn>6</mn><mo>)</mo></math></p>
-		<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+	</div>
+
+	<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 	</div>
+
 	<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
 	</div>
@@ -367,9 +374,12 @@
 	<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 		<p align="left">4. Has encontrado los intervalos para la solución de la desigualdad dada.</p>
 		<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2208;</mo><mo>[</mo><mn>9</mn><mo>,</mo><mo>&#xA0;</mo><mn>23</mn><mo>)</mo><mo>,</mo><mo>&#xA0;</mo><mi>y</mi><mi>p</mi><mo>&#x2208;</mo><mo>(</mo><mo>-</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>)</mo></math></p>
-		<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
+	</div>
+
+	<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 	</div>
+
 </div>
 
 

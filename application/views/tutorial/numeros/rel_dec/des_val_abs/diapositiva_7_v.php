@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 			<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
@@ -28,7 +28,7 @@
 					</table>
 				</div>
 
-				<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_a" style="display:none">
+				<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 				</div>
 				<div align="right">
@@ -62,7 +62,7 @@
 					</table>
 				</div>
 
-				<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_b" style="display:none">
+				<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 				</div>
 				<div align="right">
@@ -96,7 +96,7 @@
 					</table>
 				</div>
 
-				<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_c" style="display:none">
+				<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 				</div>
 		</div>

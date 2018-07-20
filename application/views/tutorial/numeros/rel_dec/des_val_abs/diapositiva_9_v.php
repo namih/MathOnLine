@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
@@ -126,7 +126,9 @@
 			<h3>NOTA: Puedes deslizar la gráfica a la dirección que desees</h3>
 		</div>
 
-		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none"></div>
+		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
+		</div>
 
 
 		<div class=" col-lg-12 col-md-12  col-xs-12" align="right">
@@ -258,7 +260,9 @@
 			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
 			<h3>NOTA: Puedes deslizar la gráfica a la dirección que desees</h3>
 		</div>
-		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none"></div>
+		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
+
+		</div>
 		<div align="right">
 			 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
 		</div>

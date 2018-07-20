@@ -1,5 +1,5 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/rel_dec/des_val_abs.js"></script>
-
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <div class="container-fluid">
 
 	<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
@@ -28,7 +28,7 @@
 				</table>
 			</div>
 
-			<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_a" style="display:none">
+			<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 			</div>
 			<div align="right">
@@ -39,7 +39,7 @@
 		<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="left">Resuelve la siguiente desigualdad:</p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>4p</mi><mo></mo><mn>5</mn><mo>.</mo><mn>02</mn></mrow></mfenced><mo>&#x2265;</mo><mn>6</mn><mo>.</mo><mn>62</mn></math><p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>4p</mi><mo>+</mo><mn>5</mn><mo>.</mo><mn>02</mn></mrow></mfenced><mo>&#x2265;</mo><mn>6</mn><mo>.</mo><mn>62</mn></math><p>
 					<table>
 							<tr align="center">
 
@@ -62,7 +62,7 @@
 					</table>
 			</div>
 
-			<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_b" style="display:none">
+			<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 			</div>
 			<div align="right">
@@ -73,7 +73,7 @@
 		<div id="third" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="left">Resuelve la siguiente desigualdad:</p>
-				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mo>+</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>7</mn><mo>.</mo><mn>56</mn></mrow></mfenced><mo>&#x2265;</mo><mn>6</mn><mo>.</mo><mn>2</mn></math><p>
+				<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mn>2</mn><mi>y</mi><mo>+</mo><mn>7</mn><mo>.</mo><mn>56</mn></mrow></mfenced><mo>&#x2265;</mo><mn>6</mn><mo>.</mo><mn>2</mn></math><p>
 					<table>
 							<tr align="center">
 
@@ -96,7 +96,7 @@
 					</table>
 			</div>
 
-			<div align="left" class=" col-lg-12 col-md-12  col-xs-12" id="recta_c" style="display:none">
+			<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 			</div>
 		</div>
