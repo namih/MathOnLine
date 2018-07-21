@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/log_exp/int_pow.js"></script>
+<script src="<?php echo base_url(); ?>statics/js/tutorial/numeros/log_exp/int_pow.js"></script>
 <div class="container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-justify">
         Finalmente utiliza también las propiedades 4 y 5 para simplificar:
