@@ -16,7 +16,7 @@
 		</div>
 		<div align="left" class=" col-lg-12 col-md-12  col-xs-12">
 				<p align="justify">Observa que <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow></mfenced><mo>=</mo><mfenced open="|" close="|"><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow></mfenced></math>.</p>
-				<p align="justify">Colocael punto en el número 5 de la recta numérica</p>
+				<p align="justify">Coloca el punto en el número 5 de la recta numérica</p>
 		</div>
 		<div id="recta" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 

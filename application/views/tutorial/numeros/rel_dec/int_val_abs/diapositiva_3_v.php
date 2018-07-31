@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-		<p align="justify">Considerando las caracterìsticas que se desea que tenga la distancia, en matemáteticas se define el valor absoluto de un número real como su distancia al origen.</p>
+		<p align="justify">Considerando las características que se desea que tenga la distancia, en matemáticas se define el valor absoluto de un número real como su distancia al origen.</p>
 		<p align="left">El <strong>valor absoluto</strong> de un número real <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> se denota por <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced></math>.</p>
 		<p align="left">Responde las preguntas.</p>
 		<div id="seccion" align="left" class=" col-lg-12 col-md-12  col-xs-12">
@@ -70,28 +70,18 @@
 		</div>
 
 		<div style="display:none" align="left" class=" col-lg-12 col-md-12  col-xs-12" id="seccion_4">
-			<table align="left">
+			<table>
 					<tr align="left">
 						<td>¿Cuánto vale el valor absoluto de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>3</mn></mfrac></math></mn></math>?</td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mfrac><mn>2</mn><mn>3</mn></mfrac></mfenced></math>=</td>
-						<td><h6>	<math xmlns="http://www.w3.org/1998/Math/MathML">
-							<mfrac>
-								<mi>
-									<semantics>
-										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_3a" placeholder="0" />
-										</annotation-xml>
-									</semantics>
-								</mi>
-								<mi>
-									<semantics>
-										<annotation-xml encoding="application/xhtml+xml">
-											<input onchange="fraccion_3_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_3b" placeholder="0" />
-										</annotation-xml>
-									</semantics>
-								</mi>
-							</mfrac>
-						</math></h6></td>
+						<td><h1><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi><semantics>
+									<annotation-xml encoding="application/xhtml+xml">
+										<input onchange="fraccion_3_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="numerador_a" placeholder="0" />
+									</annotation-xml></semantics></mi>
+								<mi><semantics>
+									<annotation-xml encoding="application/xhtml+xml">
+										<input onchange="fraccion_3_a ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_a" placeholder="0" />
+									</annotation-xml></semantics></mi></mfrac></math></h1></td>
 					</tr>
 			</table>
 		</div>
@@ -240,10 +230,6 @@
 					</tr>
 			</table>
 		</div>
-		<div id="indicador">
-			<p>Ejercicio:	<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac bevelled="true"><mn>1</mn><mn>6</mn></mfrac></math></p>
-		</div>
-
 	</div>
 </div>
 

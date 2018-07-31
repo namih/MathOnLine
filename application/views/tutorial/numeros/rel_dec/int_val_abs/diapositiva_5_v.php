@@ -12,7 +12,7 @@
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>=</mo><mo>-</mo><mi>a</mi><mo>&#xA0;</mo><mi>s</mi><mi>i</mi><mo>&#xA0;</mo><mi>a</mi><mo>&lt;</mo><mn>0</mn></math>, es decir, si a es negativo.</p>
 		</div>
 		<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-			<p align="left">Recuerda que <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math> representa un número negativo, ya que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> e negativo, su número simétrico, que es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math>, es positivo. </p>
+			<p align="left">Recuerda que <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math> representa un número negativo, ya que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> es negativo, su número simétrico, que es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mi>a</mi></math>, es positivo. </p>
 
 		</div>
 		<div style="margin-bottom: 20px" style="display:none" class=" col-lg-12 col-md-12  col-xs-12" id="recta_a">
