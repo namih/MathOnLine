@@ -22,6 +22,33 @@
 					</tr>
 				</table>
 		</div>
+
+		<div align="center"  class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" >
+			<button id="informacion_a"  type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" disabled><strong>NOTA: </strong></button>
+
+			 <!-- Modal -->
+			 <div class="modal fade" id="myModal" role="dialog">
+				 <div class="modal-dialog">
+
+					 <!-- Modal content-->
+					 <div class="modal-content">
+						 <div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						 </div>
+						 <div class="modal-body">
+							 <p>Los puntos en color azul representan los operandos, los puntos verdes representan los resultados. Además, puedes hacer zoom a la recta dando click sobre la misma.</p>
+						 </div>
+						 <div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						 </div>
+					 </div>
+
+				 </div>
+			 </div>
+		</div>
+
+
 		<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
@@ -51,6 +78,33 @@
 					</tr>
 				</table>
 		</div>
+
+		<div align="center" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" >
+			<button align="right" id="informacion_b" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" disabled><strong>NOTA: </strong></button>
+
+			 <!-- Modal -->
+			 <div class="modal fade" id="myModal" role="dialog">
+				 <div class="modal-dialog">
+
+					 <!-- Modal content-->
+					 <div class="modal-content">
+						 <div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						 </div>
+						 <div class="modal-body">
+							 <p>Los puntos en color azul representan los operandos, los puntos verdes representan los resultados. Además, puedes hacer zoom a la recta.</p>
+						 </div>
+						 <div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						 </div>
+					 </div>
+
+				 </div>
+			 </div>
+		 </div>
+
+
 		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
@@ -84,6 +138,33 @@
 				<p align="left" style="color:blue">y si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> tienen signos contrarios entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced><mo>&lt;</mo><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math><p>
 				<p align="left" style="color:blue">Y entonces, para <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi></math> arbitrarios se tiene <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfenced><mo>&#x2264;</mo><mfenced open="|" close="|"><mi>a</mi></mfenced><mo>+</mo><mfenced open="|" close="|"><mi>b</mi></mfenced></math></p>
 		</div>
+
+		<div align="center" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" >
+			<button id="informacion_c" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" disabled><strong>NOTA: </strong></button>
+
+			 <!-- Modal -->
+			 <div class="modal fade" id="myModal" role="dialog">
+				 <div class="modal-dialog">
+
+					 <!-- Modal content-->
+					 <div class="modal-content">
+						 <div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						 </div>
+						 <div class="modal-body">
+							 <p>Los puntos en color azul representan los operandos, los puntos verdes representan los resultados. Además, puedes hacer zoom a la recta.</p>
+						 </div>
+						 <div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						 </div>
+					 </div>
+
+				 </div>
+			 </div>
+		 </div>
+
+
 		<div id="recta_c" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>

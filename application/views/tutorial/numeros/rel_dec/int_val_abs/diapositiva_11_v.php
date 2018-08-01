@@ -156,6 +156,8 @@
 				 </div>
 			 </div>
 		 </div>
+
+		 
 		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>

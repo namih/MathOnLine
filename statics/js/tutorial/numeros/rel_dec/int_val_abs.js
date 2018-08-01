@@ -549,7 +549,7 @@ function operacion_12_a () {
   	var entero_a = document.getElementById('entero_a').value;
     var entero_b = document.getElementById('entero_b').value;
     var opcion = document.getElementById('opcion_a');
-
+    var boton =  document.getElementById('informacion_a');
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -571,7 +571,7 @@ function operacion_12_b () {
   	var entero_a = document.getElementById('entero_uno_a').value;
     var entero_b = document.getElementById('entero_uno_b').value;
     var opcion = document.getElementById('opcion_uno_a');
-
+    var boton =  document.getElementById('informacion_b');
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -594,7 +594,7 @@ function operacion_12_b () {
         var entero_a = document.getElementById('entero_dos_a').value;
         var entero_b = document.getElementById('entero_dos_b').value;
         var opcion = document.getElementById('opcion_dos_a');
-
+        var boton =  document.getElementById('informacion_c');
         var seleccionado_a = opcion.options[opcion.selectedIndex].value;
         var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -616,7 +616,7 @@ function operacion_12_b () {
       	var entero_a = document.getElementById('entero_a').value;
         var entero_b = document.getElementById('entero_b').value;
         var opcion = document.getElementById('opcion_a');
-
+        var boton =  document.getElementById('informacion_a');
         var seleccionado_a = opcion.options[opcion.selectedIndex].value;
         var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -638,7 +638,7 @@ function operacion_12_b () {
       	var entero_a = document.getElementById('entero_uno_a').value;
         var entero_b = document.getElementById('entero_uno_b').value;
         var opcion = document.getElementById('opcion_uno_a');
-
+        var boton =  document.getElementById('informacion_b');
         var seleccionado_a = opcion.options[opcion.selectedIndex].value;
         var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -661,7 +661,7 @@ function operacion_13_c () {
   var entero_a = document.getElementById('entero_dos_a').value;
   var entero_b = document.getElementById('entero_dos_b').value;
   var opcion = document.getElementById('opcion_dos_a');
-
+  var boton =  document.getElementById('informacion_c');
   var seleccionado_a = opcion.options[opcion.selectedIndex].value;
   var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -681,6 +681,7 @@ function operacion_13_c () {
 
 function operacion_14_a () {
     var opcion = document.getElementById('opcion_a');
+    var boton =  document.getElementById('informacion_a');
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
       if (seleccionado_a == 1) {
@@ -698,6 +699,7 @@ function operacion_14_a () {
 
 function operacion_14_b () {
     var opcion = document.getElementById('opcion_b');
+    var boton =  document.getElementById('informacion_b');
     var seleccionado_b = opcion.options[opcion.selectedIndex].value;
     var respuesta_b = opcion.options[opcion.selectedIndex].text;
       if (seleccionado_b == 2) {
@@ -714,10 +716,12 @@ function operacion_14_b () {
 
 function operacion_14_c () {
     var opcion = document.getElementById('opcion_c');
+    var boton =  document.getElementById('informacion_c');
     var seleccionado_c = opcion.options[opcion.selectedIndex].value;
     var respuesta_c = opcion.options[opcion.selectedIndex].text;
       if (seleccionado_c == 2) {
                acierto();
+               boton.disabled = false;
                document.getElementById('info').style.display = 'inline-block';
                /* hacer la carga de la grafica hasta que el resultado esté validado*/
                 var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_14_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
@@ -732,7 +736,7 @@ function operacion_15_a () {
     var entero_a = document.getElementById('entero_a').value;
     var entero_b = document.getElementById('entero_b').value;
     var opcion = document.getElementById('opcion_a');
-
+    var boton =  document.getElementById('informacion_a');
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -740,6 +744,7 @@ function operacion_15_a () {
     if (entero_a != '' && entero_b !='' ) {
          if (entero_a == 12 && entero_b == 12 && seleccionado_a == 2) {
                acierto();
+               boton.disabled = false;
                /* hacer la carga de la grafica hasta que el resultado esté validado*/
                 var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_a.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
                 applet.inject('recta_a');
@@ -753,7 +758,7 @@ function operacion_15_b () {
     var entero_a = document.getElementById('entero_uno_a').value;
     var entero_b = document.getElementById('entero_uno_b').value;
     var opcion = document.getElementById('opcion_b');
-
+    var boton =  document.getElementById('informacion_b');
     var seleccionado_a = opcion.options[opcion.selectedIndex].value;
     var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -761,6 +766,7 @@ function operacion_15_b () {
     if (entero_a != '' && entero_b !='' ) {
          if (entero_a == 63 && entero_b == 63 && seleccionado_a == 2) {
                acierto();
+               boton.disabled = false;
                /* hacer la carga de la grafica hasta que el resultado esté validado*/
                 var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_b.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
                 applet.inject('recta_b');
@@ -774,7 +780,7 @@ function operacion_15_b () {
       var entero_a = document.getElementById('entero_dos_a').value;
       var entero_b = document.getElementById('entero_dos_b').value;
       var opcion = document.getElementById('opcion_c');
-
+      var boton =  document.getElementById('informacion_c');
       var seleccionado_a = opcion.options[opcion.selectedIndex].value;
       var respuesta_a = opcion.options[opcion.selectedIndex].text;
 
@@ -782,6 +788,7 @@ function operacion_15_b () {
       if (entero_a != '' && entero_b !='' ) {
           if (entero_a == 14 && entero_b == 14 && seleccionado_a == 2) {
               acierto();
+              boton.disabled = false;
               /* hacer la carga de la grafica hasta que el resultado esté validado*/
                var applet = new GGBApplet({filename: base_url+"statics/ggb/int_val_abs/diapositiva_15_c.ggb","showToolbar":false, height:300, "showMenuBar": false}, true);
                applet.inject('recta_c');
