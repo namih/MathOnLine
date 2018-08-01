@@ -42,7 +42,7 @@
 									</semantics>
 								</mi></h4></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
+								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo></math></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td><h4><mi>
 									<semantics>

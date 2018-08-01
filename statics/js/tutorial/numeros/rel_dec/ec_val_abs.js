@@ -34,6 +34,7 @@ function mostrar_tercero () {
 
 function resultado_1_a () {
   var res = document.getElementById('opcion_a');
+
   var seleccionado = res.options[res.selectedIndex].value;
   var respuesta = res.options[res.selectedIndex].text;
   var entero = document.getElementById('entero_a').value;
@@ -89,7 +90,7 @@ function resultado_1_c () {
 
 function resultado_1_d () {
   var entero = document.getElementById('entero_d').value;
-
+  var boton =  document.getElementById('informacion_a');
     	 if (entero != '') {
   		     if (entero == -7 ) {
     				     acierto();
@@ -99,6 +100,7 @@ function resultado_1_d () {
                  document.getElementById('tres').style.display = 'none';
                  document.getElementById('cuatro').style.display = 'none';
                  document.getElementById('cinco').style.display = 'inline-block';
+                 boton.disabled = false;
                  /* hacer la carga de la grafica hasta que el resultado esté validado*/
                   var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_1_a.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
                   applet.inject('recta_a');
@@ -165,7 +167,7 @@ function resultado_1_g () {
 
 function resultado_1_h () {
   var entero = document.getElementById('entero_h').value;
-
+  var boton =  document.getElementById('informacion_b');
     	 if (entero != '') {
   		     if (entero == -11 ) {
     				     acierto();
@@ -175,7 +177,7 @@ function resultado_1_h () {
                  document.getElementById('ocho').style.display = 'none';
                  document.getElementById('nueve').style.display = 'none';
                  document.getElementById('diez').style.display = 'inline-block';
-
+                 boton.disabled = false;
                  /* hacer la carga de la grafica hasta que el resultado esté validado*/
                   var applet = new GGBApplet({filename: base_url+"statics/ggb/ec_val_abs/diapositiva_1_b.ggb","showToolbar":false, height: 300, "showMenuBar": false}, true);
                   applet.inject('recta_b');

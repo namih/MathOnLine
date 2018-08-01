@@ -34,7 +34,7 @@
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_a" >
 				<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></math></p>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con un número decimal.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a una cifra después del punto</p>
 			</div>
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="dos" style="display:none" >
@@ -64,12 +64,12 @@
 			</div>
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_b" style="display:none" >
 				<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></math></p>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a una cifra después del punto</p>
 			</div>
 
 			<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="tres" style="display:none" >
 				<p align="left">2. Regresa a la ecuación, ahora sabes que si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#x2265;</mo><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn></math> entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn></mrow></mfenced><mo>=</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>10</mn><mo>=</mo><mn>3</mn></math>.</p>
-				<p align="left">Resuelve la ecuación anterior, encuentra el valor de a:</p>
+				<p align="left">Resuelve la ecuación anterior, encuentra el valor de b:</p>
 				<table align="center">
 						<tr align="center">
 							<td><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo></math></td>
@@ -152,7 +152,7 @@
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_c" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>20</mn><mi>a</mi><mo>-</mo><mn>4</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con una cifra decimal.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a una cifra después del punto</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="siete" style="display:none" >
@@ -271,7 +271,7 @@
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="opciones_e" >
 			<p align="left">Elige la opción correcta: a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mfenced><mrow><mn>5</mn><mi>a</mi><mo>-</mo><mn>2</mn></mrow></mfenced></math></p>
-			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta una cifra decimal.</p>
+			<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a una cifra después del punto</p>
 		</div>
 
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="doce" style="display:none" >

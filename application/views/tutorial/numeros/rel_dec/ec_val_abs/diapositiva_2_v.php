@@ -5,7 +5,7 @@
 
 		<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-					<p align="left">Resuelvela siguiente ecuación: </p>
+					<p align="left">Resuelvela siguiente: </p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>-</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mn>19</mn></math></p>
 					<table>
 							<tr align="center">
@@ -19,7 +19,7 @@
 									</semantics>
 								</mi></h4></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&gt;</mo></math></td>
+								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2265;</mo></math></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td><h4><mi>
 									<semantics>
@@ -46,7 +46,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>&#x2264;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -65,7 +65,7 @@
 
 		<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-					<p align="left">Resuelvela siguiente ecuación: </p>
+					<p align="left">Resuelvela siguiente: </p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>x</mi><mo>-</mo><mn>9</mn></mrow></mfenced><mo>=</mo><mn>20</mn></math></p>
 					<table>
 							<tr align="center">
@@ -79,7 +79,7 @@
 									</semantics>
 								</mi></h4></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
+								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2265;</mo></math></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td><h4><mi>
 									<semantics>
@@ -106,7 +106,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2264;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>
@@ -125,7 +125,7 @@
 
 		<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12">
-					<p align="left">Resuelvela siguiente ecuación: </p>
+					<p align="left">Resuelvela siguiente: </p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>y</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mn>3</mn></math></p>
 					<table>
 							<tr align="center">
@@ -139,7 +139,7 @@
 									</semantics>
 								</mi></h4></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&gt;</mo></math></td>
+								<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2265;</mo></math></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td><h4><mi>
 									<semantics>
@@ -166,7 +166,7 @@
 								</semantics>
 							</mi></h4></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&gt;</mo></math></td>
+							<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#x2264;</mo></math></td>
 							<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 							<td><h4><mi>
 								<semantics>

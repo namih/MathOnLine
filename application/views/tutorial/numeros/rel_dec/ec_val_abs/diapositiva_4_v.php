@@ -44,7 +44,7 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&lt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#x2264;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -55,7 +55,7 @@
 						</mi></h4></td>
 					</tr>
 				</table>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a tres cifras después del punto</p>
 			</div>
 		<div align="right">
 		 <button type="button" class="btn btn-success" onclick="mostrar_segundo()">Más ejercicios</button>
@@ -105,7 +105,7 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#x2264;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -116,7 +116,7 @@
 						</mi></h4></td>
 					</tr>
 				</table>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a tres cifras después del punto</p>
 			</div>
 			<div align="right">
 				 <button type="button" class="btn btn-success" onclick="mostrar_tercero()">Más ejercicios</button>
@@ -166,7 +166,7 @@
 							</semantics>
 						</mi></h4></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&lt;</mo></math></td>
+						<td>si <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#x2264;</mo></math></td>
 						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						<td><h4><mi>
 							<semantics>
@@ -177,7 +177,7 @@
 						</mi></h4></td>
 					</tr>
 				</table>
-				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes colocar como resultado el número decimal correspondiente con hasta tres cifras decimales.</p>
+				<p align="left" style="color:red">En caso de que tu respuesta sea una fracción, puedes escribir el resultado en notación decimal truncando a tres cifras después del punto</p>
 			</div>
 	</div>
 </div>

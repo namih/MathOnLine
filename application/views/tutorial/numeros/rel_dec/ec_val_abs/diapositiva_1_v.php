@@ -3,7 +3,7 @@
 <div class="container-fluid">
 		<div id="first" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="uno">
-					<p align="left">Usa lo que has aprendido de valor absoluto para reolver  ecuaciones con valor absoluto.</p>
+					<p align="left">Usa lo que has aprendido de valor absoluto para resolver  ecuaciones con valor absoluto.</p>
 					<p align="left">Resuelve la ecuación <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>a</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>6</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 					<br></br>
 
@@ -108,9 +108,34 @@
 				<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="cinco" style="display:none" >
 					<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mn>5</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>-</mo><mn>7</mn></math></p>
-					<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
-
 				</div>
+
+				<div align="center"  class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" >
+					<button id="informacion_a"  type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" disabled><strong>NOTA: </strong></button>
+
+					 <!-- Modal -->
+					 <div class="modal fade" id="myModal" role="dialog">
+						 <div class="modal-dialog">
+
+							 <!-- Modal content-->
+							 <div class="modal-content">
+								 <div class="modal-header">
+									 <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+								 </div>
+								 <div class="modal-body">
+									 <p>Los puntos en color azul representan los operandos, los puntos verdes representan los resultados. Además, puedes hacer zoom a la recta dando click sobre la misma.</p>
+								 </div>
+								 <div class="modal-footer">
+									 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+								 </div>
+							 </div>
+
+						 </div>
+					 </div>
+				</div>
+
+
 				<div id="recta_a" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 				</div>
@@ -121,7 +146,7 @@
 
 		<div id="second" style="display:none" class=" col-lg-12 col-md-12  col-xs-12">
 			<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="seis">
-				<p align="left">Usa lo que has aprendido de valor absoluto para reolver  ecuaciones con valor absoluto.</p>
+				<p align="left">Usa lo que has aprendido de valor absoluto para resolver  ecuaciones con valor absoluto.</p>
 				<p align="left">Resuelve la ecuación <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>10</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 				<br></br>
 
@@ -226,9 +251,34 @@
 		<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="diez" style="display:none" >
 			<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 			<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mn>9</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi><mo>=</mo><mo>-</mo><mn>11</mn></math></p>
-			<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
-
 		</div>
+
+		<div align="center" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" >
+			<button align="right" id="informacion_b" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" disabled><strong>NOTA: </strong></button>
+
+			 <!-- Modal -->
+			 <div class="modal fade" id="myModal" role="dialog">
+				 <div class="modal-dialog">
+
+					 <!-- Modal content-->
+					 <div class="modal-content">
+						 <div class="modal-header">
+							 <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+						 </div>
+						 <div class="modal-body">
+							 <p>Los puntos en color azul representan los operandos, los puntos verdes representan los resultados. Además, puedes hacer zoom a la recta.</p>
+						 </div>
+						 <div class="modal-footer">
+							 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						 </div>
+					 </div>
+
+				 </div>
+			 </div>
+		 </div>
+
+
 		<div id="recta_b" class=" col-lg-12 col-md-12 col-xs-12" style="margin-bottom: 20px" style="display:none">
 
 		</div>
@@ -240,7 +290,7 @@
 			<div id="third" style="display:none"  class=" col-lg-12 col-md-12  col-xs-12">
 
 					<div  align="center" class=" col-lg-12 col-md-12  col-xs-12" id="once">
-						<p align="left">Usa lo que has aprendido de valor absoluto para reolver  ecuaciones con valor absoluto.</p>
+						<p align="left">Usa lo que has aprendido de valor absoluto para resolver  ecuaciones con valor absoluto.</p>
 						<p align="left">Resuelve la ecuación <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced open="|" close="|"><mrow><mi>b</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>=</mo><mn>1</mn></math> siguiendo los pasos que a continuación se muestran.</p>
 						<br></br>
 
@@ -345,8 +395,6 @@
 				<div  align="left" class=" col-lg-12 col-md-12  col-xs-12" id="quince" style="display:none" >
 					<p align="left">4. Has encontrado dos valores que satisfacen la ecuación dada.</p>
 					<p align="center"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mn>7</mn></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mo>-</mo><mn>7</mn></math></p>
-					<p align="left">Coloca el punto rojo sobre la primera solución que encontraste.</p>
-
 				</div>
 			</div>
 
