@@ -25,11 +25,14 @@
 				<img class="img-responsive" width="100%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_6.png" align="center"/>
 			</div>
 			<div style='display:none;' id="imagen2">
-				<img class="img-responsive" width="100%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_10.png" align="center"/>
+				<img class="img-responsive" width="100%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_10_1.png" align="center"/>
+			</div>
+			<div style='display:none;' id="imagen3">
+				<img class="img-responsive" width="100%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_10_2.png" align="center"/>
 			</div>
 		</div>
 	</div>
-	<p>Evaluamos la tangente de 3° usando una calculadora, teniendo cuidado que esté trabajando en grados y no en radianes. (Utiliza 4 decimales de precisión)</p>
+	<p>Evaluamos la tangente de 3° usando una calculadora, teniendo cuidado que esté trabajando en grados y no en radianes. (Utiliza 4 números después del punto decimal)</p>
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>10</mn><mi>
 			<semantics>
 				  <annotation-xml encoding="application/xhtml+xml">
@@ -38,7 +41,10 @@
 			</semantics>
 			</mi></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" /></p>
 	<div id="resultado" style='display:none;'>
-		<p>Así que el avión empieza a descender cuando está a 190.81 km del aeropuerto.</p>
+		<p>Así que el avión empieza a descender cuando está a 190.8113 km del aeropuerto.</p>
+	</div>
+	<div id="resultado2" style='display:none;'>
+		<p>Así que el avión empieza a descender cuando está a 190.8396 km del aeropuerto.</p>
 	</div>
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 	<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Cuanto más entreno, más suerte tengo.

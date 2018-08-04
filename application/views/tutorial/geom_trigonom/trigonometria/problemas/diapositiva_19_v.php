@@ -14,7 +14,7 @@
 				</select>
 			</div>
 			<div id="tangente">
-				<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tan</mi><mo>&#xA0;</mo><mn>51</mn><mo>.</mo><mn>83</mn><mo>&#xBA;</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+				<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>tan</mi><mo>&#xA0;</mo><mn>51</mn><mo>.</mo><mn>83</mn><mo>°</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 					<mfrac><mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo><mi>o</mi><mi>p</mi><mi>u</mi><mi>e</mi><mi>s</mi><mi>t</mi><mi>o</mi></mrow>
 					<mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo><mi>a</mi><mi>d</mi><mi>y</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>e</mi></mrow></mfrac>
 					<mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>a</mi><mn>115</mn></mfrac></math>
@@ -27,11 +27,14 @@
 				<img class="img-responsive" width="70%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_16.png" align="center"/>
 			</div>
 			<div style='display:none;' id="imagen2">
-				<img class="img-responsive" width="70%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_19.png" align="center"/>
+				<img class="img-responsive" width="70%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_19_1.png" align="center"/>
+			</div>
+			<div style='display:none;' id="imagen3">
+				<img class="img-responsive" width="70%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_19_2.png" align="center"/>
 			</div>
 		</div>
 	</div>
-	<p>Despejamos a y evaluamos la tangente de 51.83° usando una calculadora, teniendo cuidado que esté trabajando en grados y no en radianes. (Utiliza 4 decimales de precisión)</p>
+	<p>Despejamos a y evaluamos la tangente de 51.83° usando una calculadora, teniendo cuidado que esté trabajando en grados y no en radianes. (Utiliza 4 números después del punto decimal)</p>
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mo>(</mo><mn>115</mn><mo>)</mo><mo>&#xA0;</mo><mo>(</mo></math><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" />
 		<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>)</mo><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" />
 		</p>

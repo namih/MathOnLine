@@ -27,8 +27,8 @@
 		</div>
 	</div>
 	<div>
-		<p>Evaluamos la tangente</p>
-		<p>(*) <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" placeholder="0.06116" disabled/><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></math></p>
+		<p>Evaluamos la tangente:</p>
+		<p>(*) <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" placeholder="0.0611" disabled/><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></math></p>
 		<p>Ahora, en el triángulo DCB tenemos una situación similar.</p>
 		<p>¿Qué función trigonométrica relaciona el cateto adyacente y la hipotenusa en un triángulo rectángulo?
 			<div style="text-align:center;" id="triangulo">
@@ -40,7 +40,7 @@
 				<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mn>9°</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mi>x</mi></mfrac></math></p>
 			</div>
 		</p>
-		<p>Evaluamos la tangente</p>
+		<p>Evaluamos la tangente: (Utiliza 4 números después del punto decimal)</p>
 		<p><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="2" size="4" /><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi></mrow></mfrac></math></p>
 	</div>
 </div>

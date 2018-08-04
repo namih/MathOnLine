@@ -8,7 +8,7 @@
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><msup><mi>y</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math></p>
 		<p>Debemos tomar en cuenta que el triángulo que se forma en este caso es isósceles, ya que sus dos ángulos agudos son de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#x3C0;</mi><mn>4</mn></mfrac></math> radianes.</p>
 		<p>Esto quiere decir que <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mi>y</mi></math>, por lo tanto tenemos: <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><msup><mi>y</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>+</mo><mo>&#xA0;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mn>1</mn></math></p>
-		<p>Despeja para encontrar el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>.</p>
+		<p>Despeja para encontrar el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>. (Utiliza 4 números después del punto decimal)</p>
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>
 			<semantics>
 				<annotation-xml encoding="application/xhtml+xml">

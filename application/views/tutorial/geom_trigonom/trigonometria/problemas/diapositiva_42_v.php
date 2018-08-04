@@ -13,6 +13,7 @@
 			<p><b>Si una curva de una carretera está peraltada 10° y el radio de la curva es de 1.7 km, ¿para qué velocidad está diseñada la curva?</b></p>
 			<p>Conocemos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3B8;</mi><mo>=</mo><mn>10</mn><mo>,</mo><mo>&#xA0;</mo><mi>r</mi><mo>=</mo><mn>1700</mn><mi>m</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>g</mi><mo>=</mo><mn>9</mn><mo>.</mo><mn>8</mn><mi>m</mi><mo>/</mo><msup><mi>s</mi><mn>2</mn></msup></math>, sustituyéndolos en la ecuación anterior.</p>
 			<p>Haz las operaciones pertinentes y escribe los valores correctos en los cuadros de texto.</p>
+			<p>(Utiliza 4 números después del punto decimal)</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mn>10°</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>1700</mn><mo>)</mo><mo>(</mo><mn>9</mn><mo>.</mo><mn>8</mn><mo>)</mo></mrow></mfrac></math></p>
 			<p><input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" />
 				<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>

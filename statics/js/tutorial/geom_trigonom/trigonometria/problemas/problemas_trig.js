@@ -1,9 +1,15 @@
-function resultado() {
+function resultado(bandera) {
 	document.getElementById('imagen').style.display = 'none';
-	document.getElementById('imagen2').style.display = 'block';
 	document.getElementById("1").disabled = true;
 	document.getElementById("2").disabled = true;
-	document.getElementById('resultado').style.display = 'block';
+	if(bandera == 1){
+		document.getElementById('imagen2').style.display = 'block';
+		document.getElementById('resultado').style.display = 'block';
+	}
+	else{
+		document.getElementById('imagen3').style.display = 'block';
+		document.getElementById('resultado2').style.display = 'block';
+	}
 }
 
 function mostrar(bandera) {
@@ -35,7 +41,9 @@ function acierto(label1) {
 		var var2 = document.getElementById("2").value;
 		if(var1==0.9063){
 			if(var2==4.7127)
-				resultado();
+				resultado(1);
+			if(var2==4.7128)
+				resultado(2);
 			
 		}
         break;
@@ -49,8 +57,11 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.0524){
-			if(var2 >= 190.8113 && var2<=190.8396){
-				resultado();
+			if(var2 == 190.8113){
+				resultado(1);
+			}
+			if(var2==190.8396){
+				resultado(2);
 			}
 		}
         break;
@@ -65,7 +76,10 @@ function acierto(label1) {
 		var var2 = document.getElementById("2").value;
 		if(var1==0.3090){
 			if(var2==154.5084){
-				resultado();
+				resultado(1);
+			}
+			if(var2==154.5){
+				resultado(2);
 			}
 		}
         break;
@@ -78,13 +92,18 @@ function acierto(label1) {
 	case 19:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1.2723" && var2 == "146.31"){
-			resultado();
+		if(var1==1.2721){
+			if(var2==146.2964){
+				resultado(1);
+			}
+			if(var2==146.2915){
+				resultado(2);
+			}
 		}
         break;
 	case 21:
         var var1 = document.getElementById("1").value;
-		if(var1=="5"){
+		if(var1==5){
 			resultado();
 		}
         break;
@@ -98,8 +117,8 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.3090){
-			if(var2=="1.55"){
-				resultado();
+			if(var2==1.545){
+				resultado(1);
 			}
 		}
         break;
@@ -107,14 +126,17 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.3090){
-			if(var2 == "9.71"){
-				resultado();
+			if(var2 == 9.7087){
+				resultado(1);
+			}
+			if(var2 == 9.7082){
+				resultado(2);
 			}
 		}
         break;
     case 28:
 		var var3 = document.getElementById("3").value;
-		if(var3=="1.94"){
+		if(var3==1.942){
 			document.getElementById("3").disabled = true;
 			document.getElementById('resultado').style.display = 'block';
 		}
@@ -127,7 +149,7 @@ function acierto(label1) {
         break;
     case 32:
 		var var1 = document.getElementById("1").value;
-		if(var1==0.06116){
+		if(var1==0.0611){
 			document.getElementById("1").disabled = true;
 		}
         break;
@@ -139,21 +161,22 @@ function acierto(label1) {
         break;
     case 34:
 		var var1 = document.getElementById("2").value;
-		if(var1==0.15838){
+		if(var1==0.1583){
 			document.getElementById("2").disabled = true;
 		}
         break;
     case 40:
 		var var1 = document.getElementById("1").value;
-		if(var1=="1.295"){
-			resultado();
+		if(var1==1.2942){
+			document.getElementById('imagen').style.display = 'none';
+			document.getElementById('imagen2').style.display = 'block';
 		}
         break;
     case 42:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		if(var1==0.1763){
-			if(var2 == "16660"){
+			if(var2 == 16660){
 				document.getElementById("1").disabled = true;
 				document.getElementById("2").disabled = true;
 			}
@@ -161,19 +184,15 @@ function acierto(label1) {
         break;
     case 43:
 		var var3 = document.getElementById("3").value;
-		if(var3=="54.2"){
+		if(var3==54.1955){
 				document.getElementById("3").disabled = true;
 		}
         break;
     case 44:
 		var var4 = document.getElementById("4").value;
-		if(var4=="195.12"){
+		if(var4==195.1038){
 				document.getElementById("4").disabled = true;
 				correcto();
-		}
-		else{
-			if(var4!="195.12")
-			document.getElementById("4").value="";
 		}
         break;
 	}

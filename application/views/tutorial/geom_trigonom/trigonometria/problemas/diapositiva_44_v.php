@@ -34,11 +34,13 @@
 	<div>
 		<p>Despejamos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> y efectuamos las operaciones indicadas: 
 			<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msqrt><mo>(</mo><mn>0</mn><mo>.</mo><mn>1763</mn><mo>)</mo><mo>(</mo><mn>16660</mn><mo>)</mo></msqrt><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
-			<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="3" placeholder="54.2" disabled/>
+			<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="3" placeholder="54.1955" disabled/>
 			<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mi>m</mi><mo>/</mo><mi>s</mi></math>
 		</p>
-		<p>Si queremos la velocidad en Km/h, multiplicamos por 3.6: <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
-			<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="4" />
+		<p>Si queremos la velocidad en Km/h, multiplicamos por 3.6:</p>
+		<p>(Utiliza 4 números después del punto decimal)</p> 
+		<p> <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
+			<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="5" id="4" />
 		</p>
 	</div>
 	<div id="correcta" style="display: none" class="alert alert-success">

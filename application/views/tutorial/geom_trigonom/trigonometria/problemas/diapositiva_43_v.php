@@ -32,7 +32,9 @@
 		</div>
 	</div>
 	<div>
-		<p>Despejamos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> y efectuamos las operaciones indicadas: 
+		<p>Despejamos <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi></math> y efectuamos las operaciones indicadas: </p>
+		<p>(Utiliza 4 números después del punto decimal)</p>
+		<p>
 			<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>v</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msqrt><mo>(</mo><mn>0</mn><mo>.</mo><mn>1763</mn><mo>)</mo><mo>(</mo><mn>16660</mn><mo>)</mo></msqrt><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo></math>
 			<input onblur="acierto(<?php echo $paginador['actual']; ?>)" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="3" />
 			<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mi>m</mi><mo>/</mo><mi>s</mi></math>

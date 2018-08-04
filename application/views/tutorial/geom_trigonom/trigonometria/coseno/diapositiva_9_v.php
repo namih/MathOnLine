@@ -12,7 +12,7 @@
 		<div class="form-group has-feedback col-md-6  col-xs-12">
 			<p>Observa que el triángulo que tomamos en cuenta es el que se muestra en amarillo.</p>
 			<p>¿Cuánto vale el coseno de θ en este caso?</p>
-			<p>Encuentra el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> utilizando el teorema de Pitágoras</p>
+			<p>Encuentra el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> utilizando el teorema de Pitágoras. (Utiliza 4 números después del punto decimal)</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>
 				<semantics>
 					  <annotation-xml encoding="application/xhtml+xml">

@@ -8,7 +8,7 @@
 			</b></p>
 			<p>Despejamos c</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>3</mn><mrow><mi>s</mi><mi>e</mi><mi>n</mi><mo>&#xA0;</mo><mn>18</mn><mo>&#xB0;</mo></mrow></mfrac></math></p>
-			<p>Evaluamos el seno de 18° (Utiliza 4 decimales de precisión).</p>
+			<p>Evaluamos el seno de 18° (Utiliza 4 números después del punto decimal).</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>3</mn><mi>
 			<semantics>
 				  <annotation-xml encoding="application/xhtml+xml">
@@ -25,7 +25,10 @@
 				<img class="img-responsive" width="90%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_25.png" align="center"/>
 			</div>
 			<div style='display:none;' id="imagen2">
-				<img class="img-responsive" width="90%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_27.png" align="center"/>
+				<img class="img-responsive" width="90%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_27_1.png" align="center"/>
+			</div>
+			<div style='display:none;' id="imagen3">
+				<img class="img-responsive" width="90%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_27_2.png" align="center"/>
 			</div>
 		</div>
 	</div>

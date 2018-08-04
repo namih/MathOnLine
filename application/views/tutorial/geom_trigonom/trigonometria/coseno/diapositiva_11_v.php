@@ -10,7 +10,7 @@
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
 		<p>Sabemos ahora que, cuando θ vale <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>3</mn><mi>&#x3C0;</mi></mrow><mn>4</mn></mfrac></math>,</p>
 		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><msqrt><mn>2</mn></msqrt></mfrac></math></p>
-		<p>Arrastra el punto del deslizador.</p>
+		<p>Arrastra el punto del deslizador. (Utiliza 4 números después del punto decimal)</p>
 		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mi>o</mi><mi>s</mi><mo>&#xA0;</mo><mfenced><mfrac><mrow><mn>3</mn><mi>&#x3C0;</mi></mrow><mn>4</mn></mfrac></mfenced>
 			<mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 		<mfrac><mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo>

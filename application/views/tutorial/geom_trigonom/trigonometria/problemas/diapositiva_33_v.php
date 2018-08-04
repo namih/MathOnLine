@@ -27,8 +27,8 @@
 		</div>
 	</div>
 	<div>
-		<p>Evaluamos la tangente</p>
-		<p>(*) <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" placeholder="0.06116" disabled/><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></math></p>
+		<p>Evaluamos la tangente:</p>
+		<p>(*) <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4" placeholder="0.0611" disabled/><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></math></p>
 		<p>Ahora, en el triángulo DCB tenemos una situación similar.</p>
 		<p>¿Qué función trigonométrica relaciona el cateto adyacente y la hipotenusa en un triángulo rectángulo?
 

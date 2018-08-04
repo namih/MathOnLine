@@ -26,6 +26,6 @@
 			<img class="img-responsive" width="90%" src="<?php echo base_url(); ?>statics/img/tutorial/geom_trigonom/trigonometria/problemas/diapositiva_29.png" align="center"/>
 		</div>
 	</div>
-	<p>Evaluamos la tangente</p>
+	<p>Evaluamos la tangente: (Utiliza 4 números después del punto decimal)</p>
 		<p>(*) <input type="text" style="text-align: center" onblur="acierto(<?php echo $paginador['actual']; ?>)" id="1" size="4"/><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>h</mi><mrow><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></math></p>
 </div>
