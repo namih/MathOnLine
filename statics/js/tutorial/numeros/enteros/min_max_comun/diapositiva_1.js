@@ -48,7 +48,7 @@ function valida2(){
 function valida3(){	
 	var res  =  $('input[name="optradio"]:checked').val();
 	var num  = document.getElementById("base3").value;
-	var fact = document.getElementById("altura3").value;
+	var fact = document.getElementById("altura2").value;
 	var res1  = num/fact;
 	var trunk =this.trunc(res1,2);
 	if (res=='N' && trunk == 8.33) {
