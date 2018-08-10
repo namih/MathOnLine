@@ -4,6 +4,7 @@
 
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 		<p>Ahora preguntamos: ¿Es divisible el 25 entre 5?</p>
+		<p>Completa la tabla para verificar tu resultado.</p>
 		 <form method="post" action="#">
 			<table>
 				<td align="left">

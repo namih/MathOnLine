@@ -4,6 +4,7 @@
 
 	<div   class="col-md-6  col-xs-12" id="box" align="center">
 		<p>Ahora preguntamos: ¿Es divisible el 75 entre 3?</p>
+		<p>Completa la tabla para verificar tu resultado.</p>
 		 <form method="post" action="#">
 			<table>
 				<td align="left">
@@ -49,15 +50,23 @@
             			<input class="input-sm2" type="text" id="base3" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" readonly/>
+            			<input class="input-sm2" type="text" id="altura3" onblur="valida_factor(3,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base3" readonly/>
+            			<input class="input-sm2" type="text" id="base4" readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" readonly/>
+            			<input class="input-sm2" type="text" id="altura4" onblur="valida_factor(4,this)"/>
+            		</td>
+            	</tr>
+            	<tr>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="base5" readonly/>
+            		</td>
+            		<td class="modif">
+            			<input class="input-sm2" type="text" id="altura5" readonly/>
             		</td>
             	</tr>
             </tbody>

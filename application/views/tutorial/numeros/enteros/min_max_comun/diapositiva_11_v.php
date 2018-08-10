@@ -7,43 +7,46 @@
 		<p>Apóyate en la tabla si te es útil.</p>
 		<!-- <label> 28 = </label><input type="text" /> -->
 		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<mn>28</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
-			<msup>
-				<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas1" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp1" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-		</msup>
-			<mo>&#xA0;</mo>
-			<mi>x</mi>
-			<mo>&#xA0;</mo>
-			<msup>
-				<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas2" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp2" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			</msup>
-			</math>
+	<mn>28</mn>
+	<mo>=</mo>
+	<msup>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="bas1" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="exp1" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+	</msup>
+	<mo>&#xD7;</mo>
+	<msup>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="bas2" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="exp2" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+	</msup>
+</math>
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
@@ -181,63 +184,66 @@
 		<p>Expresa el siguiente número como producto de sus factores primos ordenándolos de menor a mayor y usando notación exponencial.</p>
 		<p>Apóyate en la tabla si te es útil.</p>
 		<!-- <label> 28 = </label><input type="text" /> -->
-		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<mn>78</mn><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
-			<msup>
-				<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas4" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp4" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-		</msup>
-			<mo>&#xA0;</mo>
-			<mi>x</mi>
-			<mo>&#xA0;</mo>
-			<msup>
-				<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas5" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp5" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			</msup>
-			<mo>&#xA0;</mo>
-			<mi>x</mi>
-			<mo>&#xA0;</mo>
-			<msup>
-				<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="bas6" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			<mi>
-				<semantics>
-				  <annotation-xml encoding="application/xhtml+xml">
-				  		<input  xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="2" id="exp6" />
-				  </annotation-xml>
-				</semantics>
-			</mi>
-			</msup>
-			</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mn>78</mn>
+	<mo>=</mo>
+	<msup>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="bas4" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="exp4" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+	</msup>
+	<mo>&#xD7;</mo>
+	<msup>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="bas5" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="exp5" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+	</msup>
+	<mo>&#xD7;</mo>
+	<msup>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="bas6" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+		<mi>
+			<semantics>
+				<annotation-xml encoding="application/xhtml+xml">
+					<input xmlns="http://www.w3.org/1999/xhtml" style="text-align:center"
+						type="text" size="2" id="exp6" />
+				</annotation-xml>
+			</semantics>
+		</mi>
+	</msup>
+</math>
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">

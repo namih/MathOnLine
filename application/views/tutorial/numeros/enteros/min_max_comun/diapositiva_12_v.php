@@ -3,7 +3,7 @@
 <div class="container-fluid">
 
 	<div   class="col-md-12  col-xs-12" id="box" align="center">
-		<p>Un carpintero quiere cortar una plancha de madera de 256 cm de largo y 96 cm de ancho, en cuadadros <b>lo más grandes posibles.</b> ¿De qué tamaño deberán ser los cuadros si queremos medidas enteras solamente?. ¿Cuántos cuadrados se obtendrán de la plancha de madera?</p>
+		<p>Un carpintero quiere cortar una plancha de madera de 256 cm de largo y 96 cm de ancho, en cuadrados <b>lo más grandes posibles.</b> ¿De qué tamaño deberán ser los cuadros si queremos medidas enteras solamente?. ¿Cuántos cuadrados se obtendrán de la plancha de madera?</p>
 		<!-- Colocar la imagen del rectangulo. ...... -->
 		<p>El lado del cuadrado es de <input class="input-sm input-top5 table-responsive" type="text" id="cm"/> cm. </p>
 		<p>El número de cuadrados que se obtiene es <input class="input-sm table-responsive" type="text" id="cuadros"/></p>

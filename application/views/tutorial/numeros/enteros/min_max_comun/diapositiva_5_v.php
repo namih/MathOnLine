@@ -68,13 +68,13 @@
         <p>Escribe el número como productos primos en el orden en el que fuiste obteniendo los factores.</p>
         <label>72=</label>
         <input class="input-sm input-top5" id="num1" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num2" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num3" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num4" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num5" size="5" />
 	</div>
 	<input type="button" class="btn btn-success btn-sm" onclick="valida5();" value="Verificar" />
@@ -126,7 +126,7 @@
         <p>Escribe el número como productos primos en el orden en el que fuiste obteniendo los factores.</p>
         <label>15=</label>
         <input class="input-sm input-top5" id="num21" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num22" size="5" /><label>
 	</div>
 	<input type="button" class="btn btn-success btn-sm" onclick="valida5_1();" value="Verificar" />
@@ -194,11 +194,11 @@
         <p>Escribe el número como productos primos en el orden en el que fuiste obteniendo los factores.</p>
         <label>24=</label>
         <input class="input-sm input-top5" id="num31" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num32" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num33" size="5" />
-        <label>X</label>
+        <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label>
         <input class="input-sm input-top5" id="num34" size="5" />
 	</div>
 	<input type="button" class="btn btn-success btn-sm" onclick="valida5_2();" value="Verificar" />

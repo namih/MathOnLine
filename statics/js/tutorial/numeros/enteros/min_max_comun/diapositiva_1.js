@@ -4,7 +4,7 @@
 function valida1(){	
 	var res  =  $('input[name="optradio"]:checked').val();
 	var num  = document.getElementById("base1").value;
-	var fact = document.getElementById("altura1").value;
+	var fact = 2;
 	var res1  = num/fact;
 	if (res=='S' && res1 == 75) {
 		correcto("Correcto");
@@ -26,7 +26,7 @@ function valida1(){
 function valida2(){	
 	var res  =  $('input[name="optradio"]:checked').val();
 	var num  = document.getElementById("base2").value;
-	var fact = document.getElementById("altura2").value;
+	var fact = 3;
 	var res1  = num/fact;
 	if (res=='S' && res1 == 25) {
 		correcto("Correcto");
@@ -48,7 +48,7 @@ function valida2(){
 function valida3(){	
 	var res  =  $('input[name="optradio"]:checked').val();
 	var num  = document.getElementById("base3").value;
-	var fact = document.getElementById("altura2").value;
+	var fact = 3;
 	var res1  = num/fact;
 	var trunk =this.trunc(res1,2);
 	if (res=='N' && trunk == 8.33) {
@@ -71,7 +71,7 @@ function valida3(){
 function valida4(){	
 	var res  =  $('input[name="optradio"]:checked').val();
 	var num  = document.getElementById("base3").value;
-	var fact = document.getElementById("altura3").value;
+	var fact = 5;
 	var res1  = num/fact;
 	if (res=='S' && res1 == 5) {
 		correcto("Correcto");
