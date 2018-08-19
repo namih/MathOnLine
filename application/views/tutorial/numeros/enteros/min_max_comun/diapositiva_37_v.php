@@ -7,19 +7,15 @@
 	</p>
 	<p>Esto quiere decir</p>
 	<div class="table-responsive div-border0">
-		<input class="input-sm input-top5" size="10" type="text" id="num1" /> <label> X </label><input class="input-sm input-top5" size="10"  type="text" id="num2" /> <label> X 1296 = 5184. </label>
+		<input class="input-sm input-top5" size="10" type="text" id="num1" /> <label> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math> </label><input class="input-sm input-top5" size="10"  type="text" id="num2" /> <label> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math> 1296 = 5184. </label>
 		<br /><br />
-		<input class="input-sm input-top5" size="10"  type="text" id="num3" /> <label> X 1296 = 5184. </label>
+		<input class="input-sm input-top5" size="10"  type="text" id="num3" /> <label> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math> 1296 = 5184. </label>
 		<br /> <br />
 		<p>Entonces podemos escribir</p>
-		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<msqrt><mn>5184</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><msqrt><mn>1296</mn><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mn>4</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msqrt><mn>1296</mn></msqrt><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><msqrt><mn>4</mn></msqrt><mo>&#xA0;</mo>
-		</math>
+		<math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>5184</mn></msqrt><mo>=</mo><msqrt><mn>1296</mn><mo>&#xD7;</mo><mn>4</mn></msqrt><mo>=</mo><msqrt><mn>1296</mn></msqrt><mo>&#xD7;</mo><msqrt><mn>4</mn></msqrt></math>
 		<br /><br />
 		<p>Como sabemos que <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>1296</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><mn>36</mn><mo>,</mo></math> entonces:</p>
-		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<msqrt><mn>5184</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><msqrt><mn>1296</mn><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mn>4</mn></msqrt><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><msqrt><mn>1296</mn></msqrt><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><msqrt><mn>4</mn></msqrt><mo>&#xA0;</mo><mo>&#x2009;</mo><mo>=</mo>
-		</math> <input class="input-sm input-top5" size="5"  type="text" id="ra1"/> <label> X </label> <input class="input-sm input-top5" size="5" type="text" id="ra2"/><label> = </label> <input class="input-sm input-top5" size="5" type="text" id="ra3"/>
+		<math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>5184</mn></msqrt><mo>=</mo><msqrt><mn>1296</mn><mo>&#xD7;</mo><mn>4</mn></msqrt><mo>=</mo><msqrt><mn>1296</mn></msqrt><mo>&#xD7;</mo><msqrt><mn>4</mn></msqrt><mo>=</mo></math> <input class="input-sm input-top5" size="5"  type="text" id="ra1"/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label> <input class="input-sm input-top5" size="5" type="text" id="ra2"/><label> = </label> <input class="input-sm input-top5" size="5" type="text" id="ra3"/>
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">

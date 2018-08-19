@@ -4,6 +4,8 @@
 
 	<div   class="col-md-6  col-xs-12 table-responsive div-border0" id="box" align="center">
 		<p>Completa la tabla de múltiplos de 12 y 15 hasta encontrar su mínimo común múltiplo.</p>
+		<p>Nota:Presiona el botón verificar al terminar de llenar la tabla.</p>
+		<p>Si los números aparecen en rojo es incorrecta la respuesta.</p>
 	</div>	
 	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">

@@ -111,7 +111,7 @@
 		<input class="input-sm input-top5" type="text" id="num2" />
 		<!-- <input type="text" id="fact3"/> -->
 		<p>Si algún  número se repite  en ambos casos, debes escribirlo el número de veces que se repita.</p>
-	<label>2 X 2 X 3 =</label><input class="input-sm input-top5" id="mcd_1" size="5" />
+	<label><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#xD7;</mo><mn>2</mn><mo>&#xD7;</mo><mn>3</mn><mo>=</mo></math></label><input class="input-sm input-top5" id="mcd_1" size="5" />
 	</div>
 	<br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar_17();" value="Verificar" />

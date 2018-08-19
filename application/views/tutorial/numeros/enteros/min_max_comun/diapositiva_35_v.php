@@ -4,13 +4,9 @@
 	<p>¿Cuál es la raíz cúbica de 216?</p>
 	<p>Encuentra los factores primos de 216 y escribe la cantidad como producto:</p>
 	<div class="table-responsive div-border0">
-		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<mroot><mn>216</mn><mn>3</mn></mroot><mo>=</mo><mroot><mrow><mn>2</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>2</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>2</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>3</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>3</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>3</mn></mrow><mn>3</mn></mroot><mo>=</mo><mo>&#xA0;</mo><mn>2</mn><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mn>3</mn>
-		</math>
+		<math xmlns="http://www.w3.org/1998/Math/MathML"><mroot><mn>216</mn><mn>3</mn></mroot><mo>=</mo><mroot><mrow><mn>2</mn><mo>&#xD7;</mo><mn>2</mn><mo>&#xD7;</mo><mn>2</mn><mo>&#xD7;</mo><mn>3</mn><mo>&#xD7;</mo><mn>3</mn><mo>&#xD7;</mo><mn>3</mn></mrow><mn>3</mn></mroot><mo>=</mo><mn>2</mn><mo>&#xD7;</mo><mn>3</mn></math>
 		<br /><br />
-		<math xmlns="http://www.w3.org/1998/Math/MathML">
-			<mo>&#xA0;</mo><msup><mn>2</mn><mn>3</mn></msup><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mi>X</mi><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><msup><mn>3</mn><mn>3</mn></msup>
-		</math>
+		<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>2</mn><mn>3</mn></msup><mo>&#xD7;</mo><msup><mn>3</mn><mn>3</mn></msup></math>
 	</div>
 	<br /><br />
 	 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:20%; margin:0 auto;">
@@ -80,7 +76,7 @@
             </tbody>
         </table>
         <br /><br />
-	<label>La raíz cúbica de 216 es de 2 X 3 =</label> <input class="input-sm input-top5" size="15" type="text" id="1"/>
+	<label>La raíz cúbica de 216 es de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#xD7;</mo><mn>3</mn><mo>=</mo></math></label> <input class="input-sm input-top5" size="15" type="text" id="1"/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar35();" value="Verificar" />
 	<br />

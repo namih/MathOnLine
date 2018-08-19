@@ -4,7 +4,7 @@
 	<p>Encuentra el número que al multiplicarse por si mismo de 49.</p>
 	<input class="input-sm input-top5" size="5" type="text" id="1"/>
 	<br /><br /><br /> 
-	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="2" readonly=""/> <label> X </label><input class="input-sm input-top5" size="5" type="text" id="3" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="4" readonly/>
+	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="2" readonly=""/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label><input class="input-sm input-top5" size="5" type="text" id="3" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="4" readonly/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar28();" value="Verificar" />
 		<input type="button" class="btn btn-success btn-sm" onclick="ejercicio2();" value="Más ejercicios" />
@@ -14,7 +14,7 @@
 	<p>Encuentra el número que al multiplicarse por si mismo de 144.</p>
 	<input class="input-sm input-top5" size="5" type="text" id="5"/>
 	<br /><br /><br /> 
-	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="6" readonly=""/> <label> X </label><input class="input-sm input-top5" size="5" type="text" id="7" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="8" readonly/>
+	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="6" readonly=""/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label><input class="input-sm input-top5" size="5" type="text" id="7" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="8" readonly/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar28_1();" value="Verificar" />
 		<input type="button" class="btn btn-success btn-sm" onclick="ejercicio3();" value="Más ejercicios" />
@@ -24,7 +24,7 @@
 	<p>Encuentra el número que al multiplicarse por si mismo de 36.</p>
 	<input class="input-sm input-top5" size="5" type="text" id="9"/>
 	<br /><br /><br /> 
-	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="10" readonly=""/> <label> X </label><input class="input-sm input-top5" size="5" type="text" id="11" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="12" readonly/>
+	<label>Comprueba el resultado: </label><input class="input-sm input-top5" size="5" type="text" id="10" readonly=""/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label><input class="input-sm input-top5" size="5" type="text" id="11" readonly/> <label> = </label><input class="input-sm input-top5" size="5" type="text" id="12" readonly/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar28_2();" value="Verificar" />
 	<br />

@@ -4,6 +4,7 @@
       <div>
             <p>Observa que, para resolver el problema anterior tuvimos que encontrar un número que fuera <b>divisor tanto de 256 como de 96</b>. Debe dividir a ambos números para que se obtengan cuadrados al dividir. </p>
             <p>Completa las tablas para encontrar los factores o divisores de 256 y de 96.</p>
+            <p style="color:#1F618D";>Nota: Presiona el botón verificar para comprobar tus resultados.</p>
       </div>
       <br />
       <label> Factores de 256</label>

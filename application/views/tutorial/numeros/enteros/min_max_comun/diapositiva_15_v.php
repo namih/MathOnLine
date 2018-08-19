@@ -101,7 +101,7 @@
 	<input class="input-sm input-top5" type="text" id="num1" />
 	<input class="input-sm input-top5" type="text" id="num2"/>
 	<p>El MCD de 12 y 18 se obtiene multiplicando los factores primos comunes que acabas de encontrar:</p>
-	<label>2 X 3 =</label><input class="input-sm input-top5" id="mcd" size="5" />
+	<label><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>&#xD7;</mo><mn>3</mn><mo>=</mo></math></label><input class="input-sm input-top5" id="mcd" size="5" />
 	<br /><br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
