@@ -2,11 +2,11 @@
 <div class="container-fluid">
 	<div id="ejercicio1">
 		<p>¿Son semejantes los siguientes términos?</p>
-		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math> ; <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math></p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="1">Si<br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="1">Sí<br />
 		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="2">No<br />
   				</td>
   			</table>
@@ -15,11 +15,11 @@
 	</div>
 	<div id="ejercicio2" style='display:none;'>
 		<p>¿Son semejantes los siguientes términos?</p>
-		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi></math> ; <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>4</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup></math></p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="3">Si<br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="3">Sí<br />
 		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="4">No<br />
   				</td>
   			</table>
@@ -28,11 +28,11 @@
 	</div>
 	<div id="ejercicio3" style='display:none;'>
 		<p>¿Son semejantes los siguientes términos?</p>
-		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>x</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>y</mi></math></p>
+		<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>x</mi></math> ; <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>5</mn><mi>y</mi></math></p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">
-					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="5">Si<br />
+					<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="5">Sí<br />
 		  			<input type="radio" onclick="acierto(<?php echo $paginador['actual']; ?>)" name="diapositiva21" id="6">No<br />
   				</td>
   			</table>

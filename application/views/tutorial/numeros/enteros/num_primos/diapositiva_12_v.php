@@ -4,9 +4,9 @@
 	<div>
 		<p>¿Cuál crees que es el número primo mas pequeño que tiene 3 dígitos?</p>
 	</div>
-	<br/><br/><br />
-	<input  type="text"  id="primo12" value=""/>
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar12();" value="Verificar" />
+
+	<input class="input-sm input-top5"  type="text"  id="primo12" value=""/>
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar12();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

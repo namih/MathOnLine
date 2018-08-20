@@ -1,28 +1,14 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
+ <script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
+
 <script type="text/javascript" charset="utf-8">
-	var applet0 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300	}, true);
+	var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/recta_al_origen/diapositiva_32.ggb","showToolbar":false, height: 300	}, true);
 	window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 
 <div class="container-fluid">
-	<style type="text/css">
-		.tema{
-			color: #224EB5;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.pregunta{
-			color: #2e75b6;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.instruccion{
-			color: #000000;
-			text-align: justify;
-			font-weight: normal;
-		}
-	</style>
+ 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
 		<div class="tema"><p>La recta - Ecuación de la recta que pasa por el origen.</p>
 		</div>
@@ -41,11 +27,44 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
 							<div class="pregunta paso_0">
-								<p>1. Encuentra Ia ecuación de Ia recta pasa por el origen y por el punto P( 6, -9 )</p>
-								<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>&#xA0;</mo><mo>=</mo><mfrac><mn><input type="number" name="numerador"/> </mn><mn><input type="number" name="denominador"/></mn></mfrac><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><input type="number" name="resultado"/><mi>x</mi></math></p>
+								<p>2. Encuentra la ecuación de la recta pasa por el origen y por el punto <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mo>(</mo><mo>&#xA0;</mo><mn>6</mn><mo>,</mo><mo>&#xA0;</mo><mo>-</mo><mn>9</mn><mo>&#xA0;</mo><mo>)</mo></math></p>
+							</div><br>
+							<div class="paso_1">
+								<p>
+									<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>=</mo><mfrac>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input class="n_float" type="text" name="input_1" id="input_1" onchange="validaInputRelacion('-9','input_1','');" onkeypress="return validarSoloFlotante(event,'input_1');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="5"/>
+											</annotation-xml>
+										</semantics>			
+									</mi>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('6','input_2','');" onkeypress="return validarSoloFlotante(event,'input_2');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="5"/>
+											</annotation-xml>
+										</semantics>	
+									</mi>
+									</mfrac><mi>x</mi><mo>=</mo>
+									<mi>
+										<semantics>
+											<annotation-xml encoding="application/xhtml+xml">
+												<input class="n_float" type="text" name="input_3" id="input_3" onchange="validaInputRelacion('-1','input_3','.5');" onkeypress="return validarSoloFlotante(event,'input_3');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
+											</annotation-xml>
+										</semantics>		
+									</mi>
+									<mi>x</mi></math>
+								</p>
 							</div><br>
 
-						</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_1">
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_2">
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_3">
+							</div>
+						</div>						
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
 							<div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
 						</div>

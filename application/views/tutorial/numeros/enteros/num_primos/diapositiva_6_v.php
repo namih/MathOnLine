@@ -80,8 +80,7 @@
 	<p><b>Reflexiona:</b></p> 
 	<p>¿Por qué nos detuvimos en el número 7?</p>
 	<p>	¿Por qué no pedimos que marcaras los números que tienen el 4 o el 6 como factor?</p>
-	<br /><br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="VERIFICAR" />
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar();" value="VERIFICAR" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

@@ -1,0 +1,23 @@
+		.tema{
+			color: #224EB5;
+			text-align: justify;
+			font-weight: bold;
+		}
+		.pregunta{
+			color: #2e75b6;
+			text-align: justify;
+			font-weight: bold;
+		}
+		.instruccion{
+			color: #000000;
+			text-align: justify;
+			font-weight: normal;
+		}
+
+		.cont_graph{
+			border: 1px solid; padding: 0px !important; margin:0px !important;
+		}
+
+		.graphic{
+			display: block; padding: 0px !important; margin:0px !important;
+		}

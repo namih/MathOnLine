@@ -151,7 +151,7 @@
 					</math>
 				</h3></td>
 				<td><h1>&nbsp;=&nbsp;</h1></td>
-				<td><h3 id="fraccion">
+				<td><h3 id="fraccion_2">
 						<math xmlns="http://www.w3.org/1998/Math/MathML">
 							<mfrac>
 							<mi>
@@ -171,7 +171,7 @@
 						</mfrac>
 					</math>
 				</h3></td>
-				<td><h4 style="display: none" id="mixto">
+				<td><h4 style="display: none" id="mixto_2">
 							
 							<math xmlns="http://www.w3.org/1998/Math/MathML">
 								<mi>
@@ -190,7 +190,7 @@
 									</mi>
 									<mi><semantics>
 											<annotation-xml encoding="application/xhtml+xml">
-												<input onchange="fraccion_mixta_42 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_h" placeholder="0" />
+												<input onchange="fraccion_mixta_42 ()" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" type="text" size="3" id="denominador_dos_h" placeholder="0" />
 											</annotation-xml>
 										</semantics>
 									</mi>
@@ -198,10 +198,10 @@
 				</tr>
 			</table>
 		</div>
-		<div align="center" id="mix">
+		<div align="center" id="mix_2">
 			<button type="button" class="btn btn-success" onclick="mostrar_mixto_42()">Mixto</button>
    	 	</div>
-   	 	<div align="center" id="frac" style="display: none">
+   	 	<div align="center" id="frac_2" style="display: none">
 			<button type="button" class="btn btn-success" onclick="mostrar_fraccion_42 ()">Fracción</button>
    	 	</div>
    	 	<div align="right">

@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_lin_una_var/variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cuanto mide el perímetro del cuadrado?</p>
+		<p>¿Cuánto mide el perímetro del cuadrado?</p>
 		<p>Recuerda que para obtener el perímetro debes sumar los lados.</p>
 		<p>Elige todas las opciones que sean correctas.</p>
 		<form method="post" action="#">
@@ -10,8 +10,8 @@
 					<input type="checkbox" id="1" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>+</mo><mn>4</mn></math><br />
 					<input type="checkbox" id="2" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>+</mo><mn>6</mn></math><br />
 					<input type="checkbox" id="3" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>6</mn></math><br />
-					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mi>x</mi><mn>4</mn></math><br />
-					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mn>6</mn><mo>+</mo><mn>2</mn><mi>x</mi><mn>6</mn></math><br />
+					<input type="checkbox" id="4" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>6</mn><mi>×</mi><mn>4</mn></math><br />
+					<input type="checkbox" id="5" /> <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>×</mi><mn>6</mn><mo>+</mo><mn>2</mn><mi>×</mi><mn>6</mn></math><br />
 				</td>
 		  	</table>
 		</form>

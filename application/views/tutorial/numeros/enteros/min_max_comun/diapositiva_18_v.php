@@ -7,7 +7,7 @@
 	</div>
 	<br /> <br />
 	<label>10</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 			 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -81,7 +81,7 @@
         <br />
 	</div>
 	 <br />
-	<label>El MCD 10 y 15 es :</label> <input type="text" id="num1"/>
+	<label>El MCD 10 y 15 es :</label> <input class="input-sm input-top5" type="text" id="num1"/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar18();" value="Verificar" />
 	<input type="button" class="btn btn-success btn-sm" onclick="ejercicio2();" value="Más ejercicios" />
@@ -93,7 +93,7 @@
 	</div>
 	<br /> <br />
 	<label>24</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 			 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -200,7 +200,7 @@
 	</div>
 	
 	<br />
-	<label>El MCD 24 y 54 es :</label> <input type="text" id="num2"/>
+	<label>El MCD 24 y 54 es :</label> <input class="input-sm input-top5" type="text" id="num2"/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar18_1();" value="Verificar" />
 	<input type="button" class="btn btn-success btn-sm" onclick="ejercicio3();" value="Más ejercicios" />
@@ -212,7 +212,7 @@
 	</div>
 	<br /> <br />
 	<label>42</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 			 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -303,7 +303,7 @@
 	</div>
 	
 	<br />
-	<label>El MCD 42 y 98 es :</label> <input type="text" id="num3"/>
+	<label>El MCD 42 y 98 es :</label> <input class="input-sm input-top5" type="text" id="num3"/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar18_2();" value="Verificar" />
 </div>

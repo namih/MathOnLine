@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_no_lin_var_var/no_var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cuanto mide el area del rectangulo azul?</p>
+		<p>¿Cuánto mide el área del rectangulo azul?</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">

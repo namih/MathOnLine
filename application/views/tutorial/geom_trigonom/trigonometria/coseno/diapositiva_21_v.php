@@ -8,8 +8,8 @@
 </script>
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<p>Arrastra el punto. Observa que el ángulo θ se vuelve negativo. ¿Cuánto vale el coseno de θ cuando θ vale <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mi>&#x3C0;</mi></math>?</p>
-		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mi>o</mi><mi>s</mi><mo>&#xA0;</mo><mo>-</mo><mn>2</mn><mi>&#x3C0;</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+		<p>Arrastra el punto del deslizador. Observa que el ángulo θ se vuelve negativo. ¿Cuánto vale el coseno de θ cuando θ vale <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mi>&#x3C0;</mi></math>?</p>
+		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mi>o</mi><mi>s</mi><mo>&#xA0;</mo><mfenced><mrow><mo>-</mo><mn>2</mn><mi>&#x3C0;</mi></mrow></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 			<mfrac><mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo>
 				<mi>a</mi><mi>d</mi><mi>y</mi><mi>a</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>e</mi></mrow><mrow>
 					<mi>H</mi><mi>i</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>a</mi></mrow></mfrac>

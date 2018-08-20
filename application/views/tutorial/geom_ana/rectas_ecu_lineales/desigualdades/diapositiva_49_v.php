@@ -1,31 +1,9 @@
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
-<script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300  }, true);
-    window.addEventListener("load", function() { applet0.inject('applet_container0'); });
-</script>
+<script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <div class="container-fluid">
-    <style type="text/css">
-        .tema{
-            color: #224EB5;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .pregunta{
-            color: #2e75b6;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .instruccion{
-            color: #000000;
-            text-align: justify;
-            font-weight: normal;
-        }
-    </style>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-        <div class="tema"><p>Desigualdades.</p>
-            <p> Operaciones con desigualdades lineales de una variable</p>
+        <div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
         </div>
         <div class="instruccion">
             <p></p>
@@ -40,18 +18,23 @@
                 <div class="row">
                     <div align="left"><p><label>Ejercicio</label></p></div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
                             <div class="paso_0">
                                 <p>(a) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mi>b</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&gt;</mo><mn>0</mn></math>, entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>c</mi><mo>&lt;</mo><mi>b</mi><mi>c</mi></math></p>
                                 <p>(b) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mi>b</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&gt;</mo><mn>0</mn></math>, entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>c</mi><mo>&gt;</mo><mi>b</mi><mi>c</mi></math></p>
-                                <p>(c) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mi>b</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&gt;</mo><mn>0</mn></math>, entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>c</mi><mo>=</mo><mi>b</mi><mi>c</mi></math></p>
-                                <p>
-                                    <select>
-                                        <option></option>
-                                        <option>a</option>
-                                        <option>b</option>
-                                        <option>c</option>
-                                    </select>
+                                <p>(c) <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>&lt;</mo><mi>b</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>c</mi><mo>&gt;</mo><mn>0</mn></math>, entonces <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mi>c</mi><mo>=</mo><mi>b</mi><mi>c</mi></math></p>                         
+                                <p><br>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <select class="form-control" id="select_tipo_rango" onchange="validaOptSelect('1','select_tipo_rango','0');">
+                                            <option value="00">Seleccione una opción</option>
+                                            <option value="10">a</option>
+                                            <option value="01">b</option>
+                                            <option value="11">c</option>
+                                            <option value="001">d</option>
+                                        </select><br>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_select_tipo_rango">
+                                </div>
                                 </p>                                 
                             </div><br>
                         </div>                        

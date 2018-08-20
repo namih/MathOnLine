@@ -1,28 +1,14 @@
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
+ <script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
+
 <script type="text/javascript" charset="utf-8">
-    var applet0 = new GGBApplet({filename: base_url+"statics/example.ggb","showToolbar":false, height: 300  }, true);
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/distancia_punto_a_recta/diapositiva_1.ggb","showToolbar":false, height: 300  }, true);
     window.addEventListener("load", function() { applet0.inject('applet_container0'); });
 </script>
 
 <div class="container-fluid">
-    <style type="text/css">
-        .tema{
-            color: #224EB5;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .pregunta{
-            color: #2e75b6;
-            text-align: justify;
-            font-weight: bold;
-        }
-        .instruccion{
-            color: #000000;
-            text-align: justify;
-            font-weight: normal;
-        }
-    </style>
+
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
         <div class="tema"><p>Distancia punto a recta.</p>
         </div>
@@ -45,31 +31,21 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="justify">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
                             <label>¿Cómo son las dos rectas cuando la distancia en más corta?</label>
-                            <select id="tipo_grafica">
-                                <option>Seleccione una opción</option>
-                                <option>Paraletas</option>
-                                <option>Perpendiculares</option>
-                                <option>Ninguna</option>
+                            <select id="select_tipo_grafica" onchange="validaOptSelect('0','select_tipo_grafica','1');">
+                                <option value="00">Seleccione una opción</option>
+                                <option value="10" >Paralelas</option>
+                                <option value="01">Perpendiculares</option>
+                                <option value="11">Ninguna</option>                                
                             </select><br>
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_select_tipo_grafica">
+                            </div>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" align="center" style="border: 1px solid;">
                             <div style="display: block" align="center" class="col-xs-12 col-sm-12 col-lg-12" id="applet_container0"></div>
                         </div>
                     </div>
                 </div><br>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="justify">
-                        <p>En este tutorial aprenderás a obtener la distancia de un punto <b><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi></math></b> a una recta <b><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>l</mi></math></b></p>
-                        <p>Para obtenerla: </p>
-                        <p>
-                            <ul style="list-style: decimal;">
-                                <li>Encontraremos las ecuaciones de la recta y de la recta perpendicular a ésta que pasa por <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi></math></li>
-                                <li>Después encontraremos el punto de intersección de las dos rectas.</li>
-                                <li>Finalmente la distancia entre el último punto y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi></math></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
             </div><br><br>
         </div>
     </div>

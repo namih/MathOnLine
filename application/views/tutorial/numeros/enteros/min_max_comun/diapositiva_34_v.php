@@ -3,9 +3,9 @@
 <div class="container-fluid">
 	<p>El identificar los factores primos de un entero nos puede ayudar a encontrar raíces sin utilizar calculadora. ¿cuál es la raíz de 125</p>
 	<p>Encuentra los factores primos de 125 y escribe la cantidad como producto:</p>
-	<div class="table_responsive"><label>125 = </label> <input type="text" id="num1" /> <label> X </label><input type="text" id="num2" /> <label> X </label><input type="text" id="num3" /></div>
+	<div class="table_responsive div-border0"><label>125 = </label> <input class="input-sm input-top5" size="2" type="text" id="num1" /> <label> <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label><input class="input-sm input-top5" size="2" type="text" id="num2" /> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label><input class="input-sm input-top5" size="2" type="text" id="num3" /></div>
 	<p>Podemos entonces escribir la cantidad en forma de producto:</p>
-	<div class="table-responsive">
+	<div class="table-responsive div-border0">
 	<math xmlns="http://www.w3.org/1998/Math/MathML">
 		<mroot>
 			<mn>125</mn><mn>3</mn>

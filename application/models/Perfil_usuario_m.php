@@ -1,19 +1,40 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Perfil_usuario_m extends CI_Model {
-			
+
 		public function __construct()
 		{
 			parent::__construct();
 		}
-		
+
 		public function datos_usuario($id_usuario = null)
 		{
 			if ($id_usuario != null){
 				$datos = $this->db
-								->SELECT('user.id_user, user.user_name, user.password, user.type_user, avatar.id_avatar, avatar.location, user.name, user.last_name, user.sex, user.year_birthday, user.email, user.id_degree, user.uam_identifier, user.is_student, user.is_employed, user.registration_date, user.total_score, user.league, user.status')
+								->SELECT('user.id_user,
+													user.user_name,
+													user.password,
+													user.type_user,
+													avatar.id_avatar,
+													avatar.location,
+													user.name,
+													user.last_name,
+													user.sex,
+													user.year_birthday,
+													user.email,
+													user.id_degree,
+													unit_uam.id_unit_uam,
+													user.uam_identifier,
+													user.is_student,
+													user.is_employed,
+													user.registration_date,
+													user.total_score,
+													user.league,
+													user.status')
 								->FROM('user')
 								->JOIN('avatar', 'avatar.id_avatar = user.id_avatar')
+								->JOIN('degree', 'degree.id_degree = user.id_degree')
+								->JOIN('unit_uam', 'unit_uam.id_unit_uam = degree.id_unit_uam')
 								->WHERE('user.id_user', $id_usuario)
 								->GET();
 				if ($datos->num_rows() == 1) {
@@ -47,17 +68,17 @@
 		public function actualizar_perfil($usuario_nuevo = null,$user=null)
 		{
 			if ($usuario_nuevo != null){
-				
+
 				$avatar = $this->db -> select('avatar.location')
 							->FROM('avatar')
 							->WHERE('avatar.id_avatar',$usuario_nuevo['id_avatar'])
 							->GET()->row();
-				
+
 				$usuario_nuevo['type_user']=$user['type_user'];
 				$usuario_nuevo['total_score']=$user['total_score'];
 				$usuario_nuevo['location']=$avatar->location;
 				var_dump($user['email']==$usuario_nuevo['email']);
-				
+
 				if($user['email']==$usuario_nuevo['email']){
 					if($usuario_nuevo['password']==''){
 						$usuario_nuevo['status']=$user['status'];
@@ -77,17 +98,17 @@
 					}
 					return $usuario_nuevo;
 				}
-			} 
+			}
 			else {
 				return NULL;
 			}
-			
+
 		}
-		
+
 		private function _setUsuario($usuario)
 		{
 			$set_usuario = array();
-			
+
 			if (isset($usuario['user_name'])) {
 				$set_usuario['user_name'] =  $usuario['user_name'];
 			};
@@ -115,14 +136,26 @@
 			if (isset($usuario['status'])) {
 				$set_usuario['status'] = $usuario['status'];
 			};
-			
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
+			if (isset($usuario['uam_identifier'])) {
+				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
+			};
+			if (isset($usuario['is_student'])) {
+				$set_usuario['is_student'] = $usuario['is_student'];
+			};
+			if (isset($usuario['is_employed'])) {
+				$set_usuario['is_employed'] = $usuario['is_employed'];
+			};
+
 			return $set_usuario;
 		}
-		
+
 		private function sinpassUsuario($usuario)
 		{
 			$set_usuario = array();
-			
+
 			if (isset($usuario['user_name'])) {
 				$set_usuario['user_name'] =  $usuario['user_name'];
 			};
@@ -147,8 +180,20 @@
 			if (isset($usuario['status'])) {
 				$set_usuario['status'] = $usuario['status'];
 			};
-			
+			if (isset($usuario['id_degree'])) {
+				$set_usuario['id_degree'] = $usuario['id_degree'];
+			};
+			if (isset($usuario['uam_identifier'])) {
+				$set_usuario['uam_identifier'] = $usuario['uam_identifier'];
+			};
+			if (isset($usuario['is_student'])) {
+				$set_usuario['is_student'] = $usuario['is_student'];
+			};
+			if (isset($usuario['is_employed'])) {
+				$set_usuario['is_employed'] = $usuario['is_employed'];
+			};
+
 			return $set_usuario;
 		}
-			
+
 }

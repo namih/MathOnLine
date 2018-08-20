@@ -3,10 +3,10 @@
 <div class="container-fluid">
 	<p>Adivina cuáles son los 4 números mayores de 120 y menores de 200,
 		que son pares, que tiene al 3 como factor, pero el 4 y el 9 no son sus factores. (de menor a mayor)</p>
-	<input type="text" id="1"/>
-	<input type="text" id="2"/>
-	<input type="text" id="3"/>
-	<input type="text" id="4"/>
+	<input class="input-sm input-top5" size="10"  type="text" id="1"/>
+	<input class="input-sm input-top5" size="10"  type="text" id="2"/>
+	<input class="input-sm input-top5" size="10"  type="text" id="3"/>
+	<input class="input-sm input-top5" size="10"  type="text" id="4"/>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar27();" value="Verificar" />
 	<br /><br /><br />

@@ -60,7 +60,7 @@
 			</div>
 			<div  class=" col-lg-4 col-md-4  col-xs-12">
 				<div class=" col-lg-12 col-md-12  col-xs-12">
-					<img class="img-responsive" id="medios" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos.png"/>
+					<img class="img-responsive" id="medios" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/ocho_octavos.png"/>
 				</div>
 				<div class=" col-lg-12 col-md-12  col-xs-12">
 					<h1 id="total1"><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>0</mn><mn>2</mn></mfrac></math></h1>
@@ -82,7 +82,7 @@
 		<div style="margin-bottom: 20px"  class=" col-lg-12 col-md-12  col-xs-12">
 			<div class=" col-lg-4 col-md-4  col-xs-12">
 				<div class=" col-lg-12 col-md-12  col-xs-12">
-					<img class="img-responsive" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_blue_6.png"/>
+					<img class="img-responsive" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/7_8_azul_c.png"/>
 				</div>
 				<div class=" col-lg-12 col-md-12  col-xs-12">
 					<h1 style="color: blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</h1>
@@ -90,7 +90,7 @@
 			</div>
 			<div class=" col-lg-4 col-md-4  col-xs-12">
 				<div class=" col-lg-12 col-md-12  col-xs-12">
-					<img class="img-responsive" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/doceavos_green_4.png"/>
+					<img class="img-responsive" width="50%" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/fracc_pct_rzns_pro/1_8_verde_c.png"/>
 				</div>
 				<div class=" col-lg-12 col-md-12  col-xs-12">
 					<h1 style="color: green">&nbsp;&nbsp;<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>8</mn></mfrac></math>&nbsp;&nbsp;&nbsp;&nbsp;=</h1>

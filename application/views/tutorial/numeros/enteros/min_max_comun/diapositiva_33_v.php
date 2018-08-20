@@ -6,11 +6,11 @@
 		<mroot>
 			<mn>8</mn><mn>3</mn>
 		</mroot>
-	</math> <label>=</label> <input type="text" id="1" />
+	</math> <label>=</label> <input class="input-sm input-top5" size="10" type="text" id="1" />
 	<p>Comprueba tu resultado :</p>
 	
-	<div class="table-responsive">
-	<input type="text" id="2" readonly=""/> <label> X </label> <input type="text" id="3" readonly=""/>  <label> X </label> <input type="text" id="4" readonly=""/><label>  = </label> <input type="text" id="5" />
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" size="5" type="text" id="2" readonly=""/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label> <input class="input-sm input-top5" size="5" type="text" id="3" readonly=""/>  <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label> <input class="input-sm input-top5" size="5" type="text" id="4" readonly=""/><label>  = </label> <input class="input-sm input-top5" size="3" type="text" id="5" />
 	</div>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar33();" value="Verificar" />

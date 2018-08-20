@@ -7,14 +7,14 @@
 	</div>
 	<br /> <br />
 	<label>12</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0" id="tab" align="center">
 			 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
             <thead>
                 <tr class="success">
                     <th>Número 1</th>
-                    <th>  </th>
+                    <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th>Número 2</th>
-                    <th>  </th>
+                    <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th>Resultado</th>
                 </tr>
             </thead>
@@ -78,9 +78,9 @@
 		 	 <thead>
                 <tr class="success">
                     <th>Número 1</th>
-                    <th>  </th>
+                    <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th>Número 2</th>
-                    <th>  </th>
+                    <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
                     <th>Resultado</th>
                 </tr>
             </thead>
@@ -141,9 +141,10 @@
 	</div>
 	
 	<br /><br />
-	<label>Escribe los factores comunes (en orden ascendente):</label> <input type="text" id="factores" placeholder="a,b,c.." />
+	<label>Escribe los factores comunes (en orden ascendente):</label> 
+	<input class="input-sm input-top5" type="text" id="factores" size="15" placeholder="a,b,c.." />
 	<br />
-	<label>Escribe el mayor de estos números, es decir, el máximo común divisor (MCD): </label><input type="text" id="maximo"/>
+	<label>Escribe el mayor de estos números, es decir, el máximo común divisor (MCD): </label><input class="input-sm input-top5" size="15" type="text" id="maximo"/>
 	<br /><br /><br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">

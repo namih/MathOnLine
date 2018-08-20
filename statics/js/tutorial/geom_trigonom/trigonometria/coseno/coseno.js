@@ -13,238 +13,124 @@ function acierto(label1) {
     case 2:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 3:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1==1 && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 4:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
+		if(var1==-1 && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 5:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 6:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1==1 && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 7:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
+		if(var1==1 && var2 == 1.4142){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
 		}
         break;
     case 8:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0.707" || var1 == ".707"){
-			if(var2 == "1")
+		if(var1==0.7071){
+			if(var2 == 1)
 				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="0.707" || var1!=".707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 9:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
+		if(var1==-1 && var2 == 1.4142){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
 		}
         break;
     case 11:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
+		if(var1==-0.7071){
+			if(var2 == 1)
 				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="-0.707" || var1!="-.707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 12:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
+		if(var1==-1 && var2 == 1.4142){
 			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
 		}
         break;
     case 14:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
+		if(var1==-0.7071){
+			if(var2 == 1)
 				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="-0.707" || var1!="-.707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 15:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
+		if(var1==1 && var2 == 1.4142){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1.414")
-				document.getElementById("2").value="";
 		}
         break;
     case 16:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0.707" || var1 == ".707"){
-			if(var2 == "1")
+		if(var1==0.7071){
+			if(var2 == 1)
 				correcto();
-			else
-				if(var2!="1")
-					document.getElementById("2").value="";
-		}
-		else{
-			if(var1!="0.707" || var1!=".707")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 18:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 19:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
+		if(var1==-1 && var2 == 1){
 			correcto();
 		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-		}
-        break;
+		break;
 	case 20:
         var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
     case 21:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1==1 && var2 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
 		}
         break;
 	case 24:
@@ -254,22 +140,8 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
+		if(var1==1 && var2 == -1 && var3==1 && var4 == "0" && var5=="0" && var6 == "0"){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="-1")
-				document.getElementById("2").value="";
-			if(var3!="1")
-				document.getElementById("3").value="";
-			if(var4!="0")
-				document.getElementById("4").value="";
-			if(var5!="0")
-				document.getElementById("5").value="";
-			if(var6!="0")
-				document.getElementById("6").value="";
 		}
         break;
 	case 25:
@@ -279,22 +151,8 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="1" && var2 == "-1" && var3=="1" && var4 == "0" && var5=="0" && var6 == "0"){
+		if(var1==1 && var2 == -1 && var3==1 && var4 == "0" && var5=="0" && var6 == "0"){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="-1")
-				document.getElementById("2").value="";
-			if(var3!="1")
-				document.getElementById("3").value="";
-			if(var4!="0")
-				document.getElementById("4").value="";
-			if(var5!="0")
-				document.getElementById("5").value="";
-			if(var6!="0")
-				document.getElementById("6").value="";
 		}
         break;
 	case 26:
@@ -307,38 +165,14 @@ function acierto(label1) {
 		if(var1=="0" && var2 == "0" && var3=="0" && var4 == "0" && var5=="0" && var6 == "0"){
 			correcto();
 		}
-		else{
-			if(var1!="0")
-				document.getElementById("1").value="";
-			if(var2!="0")
-				document.getElementById("2").value="";
-			if(var3!="0")
-				document.getElementById("3").value="";
-			if(var4!="0")
-				document.getElementById("4").value="";
-			if(var5!="0")
-				document.getElementById("5").value="";
-			if(var6!="0")
-				document.getElementById("6").value="";
-		}
         break;
     case 27:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
-		if(var1=="1" && var2 == "1" && var3=="1" && var4 == "1"){
+		if(var1==1 && var2 == 1 && var3==1 && var4 == 1){
 			correcto();
-		}
-		else{
-			if(var1!="1")
-				document.getElementById("1").value="";
-			if(var2!="1")
-				document.getElementById("2").value="";
-			if(var3!="1")
-				document.getElementById("3").value="";
-			if(var4!="1")
-				document.getElementById("4").value="";
 		}
         break;
 	case 28:
@@ -346,39 +180,19 @@ function acierto(label1) {
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
-		if(var1=="-1" && var2 == "-1" && var3=="-1" && var4 == "-1"){
+		if(var1==-1 && var2 == -1 && var3==-1 && var4 == -1){
 			correcto();
-		}
-		else{
-			if(var1!="-1")
-				document.getElementById("1").value="";
-			if(var2!="-1")
-				document.getElementById("2").value="";
-			if(var3!="-1")
-				document.getElementById("3").value="";
-			if(var4!="-1")
-				document.getElementById("4").value="";
 		}
         break;
     case 29:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="2"){
+		if(var1==2){
 			mostrar();
 		}
-		else{
-			if(var1!="2")
-				document.getElementById("1").value="";
-		}
-		if(var2=="1" && var3=="-1"){
+		if(var2==1 && var3==-1){
 			correcto();
-		}
-		else{
-			if(var2!="1")
-				document.getElementById("2").value="";
-			if(var3!="-1")
-				document.getElementById("3").value="";
 		}
         break;
     case 30:
@@ -398,11 +212,12 @@ function correcto() {
 }
 	
 function incrementar_49_1() {
+	var applet = document.ggbApplet;
   	switch (ni) {
   		case -7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
+				applet.evalCommand("A = Point[{-11, 0}]");
 			
 			ni++;
 			break;
@@ -410,7 +225,7 @@ function incrementar_49_1() {
   		case -6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
+				applet.evalCommand("A = Point[{-9.42, -1}]");
 			
 			ni++;
 			break;
@@ -418,7 +233,7 @@ function incrementar_49_1() {
   		case -5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
+				applet.evalCommand("A = Point[{-7.85, 0}]");
 			
 			ni++;
 			break;
@@ -426,7 +241,7 @@ function incrementar_49_1() {
   		case -4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
+				applet.evalCommand("A = Point[{-6.28, 1}]");
 			
 			ni++;
 			break;
@@ -434,23 +249,23 @@ function incrementar_49_1() {
   		case -3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
-			
+				applet.evalCommand("A = Point[{-4.71, 0}]");
+				
 			ni++;
 			break;
   		
   		case -2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
-			
+				applet.evalCommand("A = Point[{-3.14, -1}]");
+				
 			ni++;
 			break;
   		
   		case -1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
+				applet.evalCommand("A = Point[{-1.57, 0}]");
 			
 			ni++;
 			break;
@@ -458,37 +273,36 @@ function incrementar_49_1() {
   		case 0:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
-			
+				applet.evalCommand("A = Point[{0, 1}]");
+				
 			ni++;
 			break;
   		
 		case 1:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
-			
+				applet.evalCommand("A = Point[{1.57, 0}]");
+				
 			ni++;
 			break;
 		case 2:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
-			
+				applet.evalCommand("A = Point[{3.14, -1}]");
+				
 			ni++;
 			break;
 		case 3:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
-			
+				applet.evalCommand("A = Point[{4.71, 0}]");
 		
 			ni++;
 			break;
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
+				applet.evalCommand("A = Point[{6.28, 1}]");
 			
 			ni++;
 			break;
@@ -496,7 +310,7 @@ function incrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
+				applet.evalCommand("A = Point[{7.85, 0}]");
 			
 			ni++;
 			break;
@@ -504,7 +318,7 @@ function incrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
+				applet.evalCommand("A = Point[{9.42, -1}]");
 			
 			ni++;
 			break;
@@ -512,8 +326,7 @@ function incrementar_49_1() {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_14.png";
-			
+				applet.evalCommand("A = Point[{11, 0}]");
 		
 			break;
 		
@@ -525,11 +338,12 @@ function incrementar_49_1() {
 
 function decrementar_49_1() {
 	console.log(ni);
+	var applet = document.ggbApplet;
   	switch (ni) {
 		case 7:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_13.png";
+				applet.evalCommand("A = Point[{9.42, -1}]");
 		
 			ni--;
 			break;
@@ -537,7 +351,7 @@ function decrementar_49_1() {
 		case 6:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_12.png";
+				applet.evalCommand("A = Point[{7.85, 0}]");
 		
 			ni--;
 			break;
@@ -545,7 +359,7 @@ function decrementar_49_1() {
 		case 5:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_11.png";
+				applet.evalCommand("A = Point[{6.28, 1}]");
 		
 			ni--;
 			break;
@@ -553,78 +367,82 @@ function decrementar_49_1() {
 		case 4:
 			
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_10.png";
+				applet.evalCommand("A = Point[{4.71, 0}]");
 		
 			ni--;
 			break;
 		case 3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_9.png";
-		
+				applet.evalCommand("A = Point[{3.14, -1}]");
+				
 			ni--;
 			break;	
 		case 2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_8.png";
-		
+				applet.evalCommand("A = Point[{1.57, 0}]");
+				
 			ni--;
 			break;	
 		case 1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23.png";
+				applet.evalCommand("A = Point[{0, 1}]");
+				
 			ni--;
 			break;
 		
 		case 0:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_1.png";
+				applet.evalCommand("A = Point[{-1.57, 0}]");
+				
 			ni--;
 			break;
 		
 		case -1:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_2.png";
+				applet.evalCommand("A = Point[{-3.14, -1}]");
+				
 			ni--;
 			break;
 		
 		case -2:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_3.png";
+				applet.evalCommand("A = Point[{-4.71, 0}]");
 			ni--;
 			break;
 		
 		case -3:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_4.png";
+				applet.evalCommand("A = Point[{-6.28, 1}]");
+				
 			ni--;
 			break;
 		
 		case -4:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>2</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_5.png";
+				applet.evalCommand("A = Point[{-7.85, 0}]");
 			ni--;
 			break;
 		
 		case -5:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_6.png";
+				applet.evalCommand("A = Point[{-9.42, -1}]");
 			ni--;
 			break;
 		
 		case -6:
 		
 				document.getElementById("n").innerHTML ='<math xmlns="http://www.w3.org/1998/Math/MathML"><mo>-</mo><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#xA0;</mo><mi>&#x3C0;</mi></math>';
-				document.getElementById("uno").src = base_url+"statics/img/tutorial/geom_trigonom/trigonometria/coseno/diapositiva_23_7.png";
-			ni--;
+				applet.evalCommand("A = Point[{-11, 0}]");
+			
 			break;
 		
 		

@@ -72,9 +72,8 @@
 		</section>
 	</div>
 	<p>Escribe los números primos mayores que 50 y menores que 100 (de menor a mayor)</p>
-	<br /><br /><br />
-	<input type="text" id="primos" value="" placeholder="1,2,3,4"/>
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input class="input-sm input-top5" type="text" id="primos" value="" placeholder="1,2,3,4"/>
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>

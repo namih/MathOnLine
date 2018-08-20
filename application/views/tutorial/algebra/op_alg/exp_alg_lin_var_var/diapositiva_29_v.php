@@ -1,7 +1,7 @@
 <script src="<?php echo base_url(); ?>statics/js/tutorial/algebra/op_alg/exp_alg_lin_var_var/var_variables.js"></script>
 <div class="container-fluid">
 	<div>
-		<p>¿Cual es el valor de las figuras juntas? Elige todas las respuestas que sean correctas.</p>
+		<p>¿Cuál es el valor de las figuras juntas? Elige todas las respuestas que sean correctas.</p>
 		<form method="post" action="#">
 			<table>
 				<td align="left">

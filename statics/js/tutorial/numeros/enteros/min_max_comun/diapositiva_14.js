@@ -48,7 +48,7 @@ function verificar(){
 	
 	arr_valida_96=this.valida_area(area_96,18);
 	arr_valida_256=this.valida_area(area_256,12);
-	if(arr_valida_96.length > 1 || arr_valida_256.length > 1 ){
+	if(arr_valida_96.length > 1 || arr_valida_256.length > 1 && factor==null && maximo==null){
 		
 		for(var j =1;j<arr_valida_96.length;j++){
 			var text="ar"+arr_valida_96[j];
@@ -61,6 +61,9 @@ function verificar(){
 		error("Favor de repetir el ejercicio.");
 	}else if(arr_valida_96.length == 1 && arr_valida_256.length == 1 && factor==6 && maximo==6){
 		correcto("El ejercicio se realizo exitosamente.");
+		//this.clean_imput();
+	}else if(arr_valida_96.length == 1 && arr_valida_256.length == 1 && factor=='' || maximo==''){
+		error("Favor de repetir el ejercicio.");
 		//this.clean_imput();
 	}
 	

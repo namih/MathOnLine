@@ -7,8 +7,18 @@
 	</div>
 	<br />
 	<label>Múltiplos de 4</label>
-	<div   class="col-md-12  col-xs-12 table-responsive" id="tab" align="center">
-		<table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
+	<div   class="col-md-12  col-xs-12 table-responsive div-border0 input-top5" id="tab" align="center">
+		<table class="table table-striped table-condensed" id="myTable" style="width:30%; margin:0 auto;">
+
+            <thead>
+                <tr class="">
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+            </thead>
             <tbody>
             	  	<tr>
             		<td class="modif">
@@ -165,9 +175,18 @@
             	</tr>
             </tbody>
         </table>
-        <br /><br />
+        <br />
         <label>Múltiplos de 6</label>
-		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:30%; margin:0 auto;">
+		 <table class="table table-striped table-condensed" id="myTable" style="width:30%; margin:0 auto;">
+            <thead>
+                <tr class="">
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                      <th class="col-xs-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+            </thead>
             <tbody>
             	<tr>
             		<td class="modif">

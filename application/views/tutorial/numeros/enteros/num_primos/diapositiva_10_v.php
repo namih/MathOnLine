@@ -5,7 +5,7 @@
 		<p>Usa el método anterior <b>(la coladera de Eratóstenes)</b> para encontrar todos los números primos desde 51 hasta 100.</p>
 	 	
 	</div>
-	<br/><br/>
+	<br/>
 	<div id="seccion" >
 		<section>
 			<div class="tablaDiv" id="51" onclick="color(51)">51</div>
@@ -74,8 +74,7 @@
 	</div>
 	<p>Empezamos marcando los múltiplos de 2</p>
 	<p>¿Hasta qué número debes considerar como factores en este caso?</p>
-	<br /><br /><br />
-	<input type="button" class="btn btn-success btn-sm" onclick="verificar();" value="Verificar" />
+	<input type="button" class="btn btn-success btn-sm input-top5" onclick="verificar();" value="Verificar" />
 	<div id="correcta" style="display: none" class="alert alert-success">
 	 		<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> 
 	</div>
