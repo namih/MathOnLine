@@ -1,51 +1,91 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
+<script type="text/javascript" charset="utf-8">
+    var applet0 = new GGBApplet({filename: base_url+"statics/ggb/tutorial/geom_ana/rectas_ecu_lineales/desigualdades/diapositiva_82.ggb","showToolbar":false, height: 100  }, true);
+    window.addEventListener("load", function() { applet0.inject('applet_container0'); });
+</script>
 
 <div class="container-fluid">
-	<style type="text/css">
-		.tema{
-			color: #224EB5;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.pregunta{
-			color: #2e75b6;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.instruccion{
-			color: #000000;
-			text-align: justify;
-			font-weight: normal;
-		}
-	</style>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-		<div class="tema"><p>Desigualdades</p>
-			<p> Operaciones con desigualdades lineales de una variable</p>
-		</div>
-		<div class="instruccion">
-			<p>	Regresemos al problema inicial del interactivo de desigualdades: </p>
-		</div>
-		<div id="boxEjemplos_1">
-			<div id="box_1_ejemplo_0">
-				<div class="pregunta">
-					<p>Juan quiere comparar lo que cuesta comprar y rentar un automóvil para decidir qué hacer.<br>
-					<ul style="list-style: decimal;">
-						<li>El puede <b>rentar</b> un automóvil por $72000 anuales: además. para ese auto calcula que, el costo adicional por kilómetro recorrido es de $15, que incluye la compra de gasolina y aceite.</li>
-						<li>Si <b>comprara</b> el auto, calcula que el costo fijo anual sería de $45000 para los pagos de la compra y el costo en el consumo de gasolina, aceite y mantenimiento sería de $27 por kilómetro recorrido.</li>
-					</ul> <br>
-					Juan quiere calcular cuántos kilómetros deberá conducir por año para que la renta sea más barata que la compra.</p>
-				</div>
-				<div class="instruccion">
-					<p>Escribe una expresión algebraica que represente la opción de <br>renta</p>.<br> Utiliza la letra <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> para indicar el número de kilómetros que recorre Juan al año. No dejes espacios entre Ias letras, símbolos y números.</p>
-				</div>
-				<br>
-				<div>
-					<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mo>&#xA0;</mo></math><input type="number" name=""></p>
-				</div>
-				<br>
-			</div><br><br>
-		</div>
-	</div>
-	<br><br>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
+        </div>
+        <div class="instruccion">
+            <p></p>
+        </div>
+        <div id="boxEjemplos_1">
+            <div id="box_1_ejemplo_0">
+                <div class="pregunta"><p></p>
+                </div>
+                <div class="instruccion">
+                <p></p>
+                </div>
+                <div class="row">
+                    <div align="left"><p><label>Ejercicio</label></p></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
+                            <div class="paso_0">
+                                <p>Resuelve la siguiente desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>11</mn><mi>n</mi><mo>-</mo><mn>1</mn><mo>&#xA0;</mo><mo>&lt;</mo><mo>&#xA0;</mo><mo>-</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>4</mn><mo>&#xA0;</mo><mo>&lt;</mo><mo>&#xA0;</mo><mn>9</mn><mi>n</mi><mo>+</mo><mn>8</mn></math></p>
+                                <p>Resuelve primero el lado izquierdo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> 
+                                <select  id="select_extremo" disabled="disabled" readonly >
+                                    <option value="00" ></option>
+                                    <option value="10" selected="selected"><</option>
+                                    <option value="11" >></option>
+                                    <option  value="001">=</option>
+                                </select> <input class="n_float" type="text" name="input_valor" id="input_valor" value="0.36" disabled="disabled" readonly >
+                                </p>
+                            </div><br>
+                            <div class="paso_1">
+                                <p>Arrastra el punto (a) al extremo de la solución</p>
+                            </div><br>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cont_graph" align="center">
+                            <div align="center" class="col-xs-12 col-sm-12 col-lg-12 graphic" id="applet_container0"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
+                            <div class="paso_2"><br>
+                                <p>Ahora el lado derecho <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math> 
+                                <select id="select_extremo_2" disabled="disabled" readonly >
+                                    <option value="00" ></option>
+                                    <option value="10" ><</option>
+                                    <option value="11" selected="selected">></option>
+                                    <option value="001" >=</option>
+                                </select>  <input class="n_float" type="text" name="input_valor_2" id="input_valor_2" value="-0.33" disabled="disabled" readonly>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_select_extremo_2">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_valor_2">
+                                    </div>
+                                </p>
+                                <p>Arrastra el punto (b) al otro extremo de la solución</p>
+                            </div><br>
+                            <div class="paso_3">
+                                <p>Así que la solución es <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mi>q</mi><mo>&#xA0;</mo><mo>&#x2208;</mo><mo>&#xA0;</mo><mo>(</mo><mo>&#xA0;</mo> 
+                                    <mi>
+                                        <semantics>
+                                            <annotation-xml encoding="application/xhtml+xml">
+                                                <input class="n_float" type="text" name="input_1" id="input_1" onchange="validaInputRelacion('-0','input_1','.33');" onkeypress="return validarSoloFlotante(event,'input_1');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
+                                            </annotation-xml>
+                                        </semantics>                                        
+                                    </mi><mo><mo>&#xA0;</mo><mo>&#xA0;</mo>,<mo>&#xA0;</mo><mo>&#xA0;</mo></mo>
+                                    <mi>
+                                        <semantics>
+                                            <annotation-xml encoding="application/xhtml+xml">
+                                                <input class="n_float" type="text" name="input_2" id="input_2" onchange="validaInputRelacion('0','input_2','.36');" onkeypress="return validarSoloFlotante(event,'input_2');" xmlns="http://www.w3.org/1999/xhtml" style="text-align:center" size="3"/>
+                                            </annotation-xml>
+                                        </semantics>                                        
+                                    </mi>
+                                    <mo>&#xA0;</mo><mo>)</mo></math> </p>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_1">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_2">
+                                    </div>                               
+                            </div><br>
+                        </div>                        
+                    </div>
+                </div><br>
+            </div><br><br>
+        </div>
+    </div>
+    <br><br>
   </div>

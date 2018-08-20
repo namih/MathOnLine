@@ -4,7 +4,7 @@
 	<p>Una prisión tiene faros giratorios a los lados de la entrada principal. Al faro A le toma 30 segs, completar una revolución de 360°.
 		Al faro B le toma 25 segs.En algún momento, los dos faros iluminan el punto C. ¿En cuánto tiempo volverán a iluminar simultáneamente el punto C?</p>
 	<img class="img-responsive" src="<?php echo base_url(); ?>statics/img/tutorial/numeros/enteros/min_max_comun/diapositiva_24.png" align="center"/>
-	<label>En </label> <input id="seg" type="text" /><label>segs.</label> 
+	<label>En </label> <input class="input-sm input-top5" size="15" id="seg" type="text" /><label>segs.</label> 
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar25();" value="Verificar" />
 	<br /><br /><br />

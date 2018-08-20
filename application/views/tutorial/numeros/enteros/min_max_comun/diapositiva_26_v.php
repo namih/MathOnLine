@@ -4,7 +4,7 @@
 	<p>Inés tiene 3 listones que miden 84 cm, 140 cm y 308 cm. Ella quiere cortar
 		los 3 listones de tal modo que obtenga pedazos del mismo tamaño sin desperdiciar listón.¿Cúal es el 
 		tamaño más grande de listón que Inés puede obtener?¿Cuántos pedazos obtendrán?</p>
-	<input type="text" id="cm" /><label> cm y</label> <input id="pedazos" type="text"/><label>pedazos. </label>
+	<input class="input-sm input-top5" size="15"  type="text" id="cm" /><label> cm y</label> <input class="input-sm input-top5" size="15"  id="pedazos" type="text"/><label>pedazos. </label>
 	<br /><br />
 	<input type="button" class="btn btn-success btn-sm" onclick="verificar26();" value="Verificar" />
 	<br /><br /><br />

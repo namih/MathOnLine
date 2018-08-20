@@ -17,9 +17,13 @@
 			
 				if ($id_user != null){
 					$datos['user_log'] = $this->Perfil_usuario_m->datos_usuario($id_user);
+					//print_r($datos);
 				} else {
 					$datos['user_log']= false;
 				}
+
+				$datos['unidades'] = $this->Registro_usuario_m->obtener_unidades_uam();
+				$datos['licenciaturas'] = $this->Registro_usuario_m->obtener_licenciaturas($user_log[0]['id_unit_uam']);
 	
 		    	$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        	$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
@@ -44,6 +48,7 @@
 					$registro['password']=$encrypted;
 				}
 				$user = $this->session->userdata('user');
+				print_r($registro);
 				print_r($user);
 				$id_registro = $this->Perfil_usuario_m->actualizar_perfil($registro,$user);
 				if ($id_registro['status']==0) {

@@ -34,7 +34,7 @@
 	}
 	.active{
 		background: #c4e5c0;
-	}	
+	}
 </style>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/Registro_usuario.js"></script>
 		<script src="<?php echo base_url(); ?>statics/js/registro_usuario/actualizar_usuario.js"></script>
@@ -58,22 +58,22 @@
 						              <li><label>Sexo: </label> <span> <?php echo $user_log[0]['perfil_sexo']; ?></span></li>
 						              <li><label>Email: </label> <span> <?php echo $user_log[0]['email']; ?></span></li>
 						              <li><label>Miembro desde: </label> <span> <?php echo $user_log[0]['fecha']; ?></span></li>
-						            </ul> 
-						            <a class="btn btn-success" href="#" onclick="$('#infoGral').show(); $('#cambia_avatar').show(); $('#info_user').hide();"><span>Editar información general</span></a>	
+						            </ul>
+						            <a class="btn btn-success" href="#" onclick="$('#infoGral').show(); $('#cambia_avatar').show(); $('#info_user').hide();"><span>Editar información general</span></a>
 								</div>
-							<br> 
+							<br>
 							<div class="col-sm-12 col-md-12 col-lg-12" id="cambia_avatar" align="center" style="display: none">
 								<label>Seleccionar nuevo avatar</label>
-								<?php //if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){ 
+								<?php //if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){
 				                  //foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { ?>
 								<table class="paginated" style="margin: 5px auto;">
 								    <tbody>
-										<?php $i=0; if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){ 
-								          foreach ($user_log[0]['avatares_disponibles'] as $key => $value) { 
+										<?php $i=0; if(isset($user_log[0]['avatares_disponibles']) && $user_log[0]['avatares_disponibles']!=false){
+								          foreach ($user_log[0]['avatares_disponibles'] as $key => $value) {
 											if($i%4==0){ ?>
 												<tr>
-								    		<?php } $i++; ?>	
-								    		<td style="padding: 3px;">          
+								    		<?php } $i++; ?>
+								    		<td style="padding: 3px;">
 									            <div align="center">
 											    	<a href="#id_avatar_user" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
 											    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0; border: solid 1px; padding: 3px;" class="img-responsive avr_opt <?php if($user_log[0]['id_avatar']==$value['id_avatar']) echo "active"; ?>" >
@@ -89,12 +89,12 @@
 													<?php } ?>
 												</tr>
 												<?php } ?>
-											<?php } ?>				
-								        <?php } }?>    
+											<?php } ?>
+								        <?php } }?>
 
-								               
+
 								    </tbody>
-								</table>				                  
+								</table>
 					                <!--<div>
 								    	<a href="#" class="avatar" id="<?php echo $value['id_avatar']; ?>" >
 								    		<img id="img_avatar_<?php echo $value['id_avatar']; ?>" src="<?php echo base_url().$value['location']; ?>" style="width:100%; max-height: 50px; max-width: 50px; 	position: relative; float: left; margin: 0;	padding: 0;" class="img-responsive">
@@ -103,10 +103,10 @@
 				                <?php// } }?>
 				                <br>
 				            </div>
-							<br>								
+							<br>
 							</div>
 			          </div><br>
-						<div id="infoGral" style="display: none;">							
+						<div id="infoGral" style="display: none;">
 							<div class="input-group col-lg-12 col-md-12 col-xs-12"><br>
 								<div class="form-group has-feedback col-md-6  col-xs-12" id="usuario">
 									<label>Nombre de usuario: </label>
@@ -154,12 +154,39 @@
 									<option value="2" <?php if(isset($user_log[0]['sex']) && $user_log[0]['sex']==2) echo 'selected="selected"' ?> >Mujer</option>
 								</select>
 							</div>
+
+							<div class="form-group col-md-6 col-xs-12">
+								<label>Unidad UAM: </label>
+								<select onchange="seleccionar_unidad()" class="form-control" id ="uam">
+									<?php for ($i=0; $i < count($unidades) ; $i++) { ?>
+										<option <?php if(isset($user_log[0]['id_unit_uam']) && $user_log[0]['id_unit_uam']==$unidades[$i]['id_unit_uam']) echo 'selected="selected"' ?> value="<?php echo $unidades[$i]['id_unit_uam']; ?>"><?php echo $unidades[$i]['name']?></option>
+									<?php } ?>
+								</select>
+							</div>
+							<div class="form-group col-md-6 col-xs-12">
+								<label>Licenciatura: </label>
+								<select  class="form-control" id ="carrera" disabled>
+									<?php if(isset($licenciaturas)) {
+										foreach ($licenciaturas as $key => $value) { ?>
+										<option <?php if(isset($user_log[0]['id_degree']) && $user_log[0]['id_degree']==$value['id_degree']) echo 'selected="selected"' ?> value="<?php echo $value['id_degree']; ?>"><?php echo $value['degree'];?></option>
+									<?php } }?>
+								</select>
+							</div>
+							<div class="form-group col-md-6  col-xs-12">
+								<label>Matricula: </label>
+								<input onblur="validar_matricula()" type="text" class="form-control" id="mat" placeholder="Matrícula" value="<?php echo $user_log[0]['uam_identifier']; ?>" disabled>
+							</div>
+							<div class="form-group checkbox col-md-6  col-xs-12">
+			      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="estudia" <?php if(isset($user_log[0]['is_student']) && $user_log[0]['is_student']==1) echo 'checked' ?> >Estudia</label>
+			      				<label class="col-md-6  col-xs-6"><input type="checkbox" value="" id="trabaja" <?php if(isset($user_log[0]['is_employed']) && $user_log[0]['is_employed']==1) echo 'checked' ?> >Trabaja</label>
+			    			</div>
+
 			    			<div class="input-group col-lg-12 col-md-12 col-xs-12">
 								<div class="form-group col-md-6  col-xs-12">
 									<button type="button" onclick="actualizar()" class="btn btn-primary">Guardar Cambios</button>
 									<button type="button" class="btn btn-danger" onclick="$('#infoGral').hide(); $('#cambia_avatar').hide(); $('#info_user').show();">Cancelar</button>
 								</div>
-							</div>							
+							</div>
 						</div><br>
 			        </div><br>
 			        <script type="text/javascript">
@@ -175,7 +202,7 @@
 			            $('#img_avatar_'+this.id).addClass('active');
 
 			          });
-			        </script>   
+			        </script>
 		      	</div>
 		    </div>
 	  	</div>

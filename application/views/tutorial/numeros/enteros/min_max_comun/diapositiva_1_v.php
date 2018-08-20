@@ -20,7 +20,7 @@
 		  	</table>
 		</form>
 	</div>	
-	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
+	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
              <thead>
                 <tr class="success">
@@ -39,18 +39,18 @@
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base2" />
+            			<input class="input-sm2" type="text" id="base2" readonly/>
             		</td>
             		<td class="modif"> 
-            			<input class="input-sm2" type="text" id="altura2" readonly/>
+            			<input class="input-sm2" type="text" id="altura2" onblur="valida_factor(2,this)"/>
             		</td>
             	</tr>
             	<tr>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="base3"  />
+            			<input class="input-sm2" type="text" id="base3"  readonly/>
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura3" readonly />
+            			<input class="input-sm2" type="text" id="altura3" onblur="valida_factor(3,this)" />
             		</td>
             	</tr>
             	<tr>
@@ -58,7 +58,7 @@
             			<input class="input-sm2" type="text" id="base4" readonly />
             		</td>
             		<td class="modif">
-            			<input class="input-sm2" type="text" id="altura4" readonly=""/>
+            			<input class="input-sm2" type="text" id="altura4" onblur="valida_factor(4,this)"/>
             		</td>
             	</tr>
             </tbody>

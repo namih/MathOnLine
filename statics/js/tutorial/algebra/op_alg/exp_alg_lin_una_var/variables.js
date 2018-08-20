@@ -65,13 +65,13 @@ function acierto(label1) {
 	switch (label1) {
     case 2:
         var var1 = document.getElementById("1").value;
-		if(var1=="7"){
+		if(var1==7){
 			correcto();
 		}
         break;
     case 3:
 		var var1 = document.getElementById("1").value;
-		if(var1=="13"){
+		if(var1==13){
 			correcto();
 		}
         break;
@@ -341,13 +341,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="3"){
+		if(var1==3){
 			correcto();
 		}
-		if(var2=="5"){
+		if(var2==5){
 			correcto();
 		}
-		if(var3=="8"){
+		if(var3==8){
 			correcto();
 		}
         break;
@@ -371,13 +371,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="9"){
+		if(var1==9){
 			correcto();
 		}
-		if(var2=="25"){
+		if(var2==25){
 			correcto();
 		}
-		if(var3=="35"){
+		if(var3==35){
 			correcto();
 		}
         break;
@@ -385,13 +385,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="13"){
+		if(var1==13){
 			correcto();
 		}
-		if(var2=="14"){
+		if(var2==14){
 			correcto();
 		}
-		if(var3=="19"){
+		if(var3==19){
 			correcto();
 		}
         break;
@@ -399,13 +399,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="13"){
+		if(var1==13){
 			correcto();
 		}
-		if(var2=="14"){
+		if(var2==14){
 			correcto();
 		}
-		if(var3=="16"){
+		if(var3==16){
 			correcto();
 		}
         break;
@@ -416,13 +416,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="13" && var2 == "17"){
+		if(var1==13 && var2 == 17){
 			correcto();
 		}
-		if(var3=="9" && var4 == "10"){
+		if(var3==9 && var4 == 10){
 			correcto();
 		}
-		if(var5=="16" && var6=="0"){
+		if(var5==16 && var6==0){
 			correcto();
 			
 		}    
@@ -479,13 +479,13 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="9/4" || var1 == "2.25"){
+		if(var1 == 2.25){
 			correcto();
 		}
-		if(var2=="14"){
+		if(var2==14){
 			correcto();
 		}
-		if(var3=="14/4" || var3 == "3.5"){
+		if(var3 == 3.5){
 			correcto();
 		}
         break;
@@ -493,13 +493,13 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="5/4" || var1 == "1.25"){
+		if(var1 == 1.25){
 			correcto();
 		}
-		if(var2=="11"){
+		if(var2==11){
 			correcto();
 		}
-		if(var3=="10/4" || var3 == "2.5"){
+		if(var3 == 2.5){
 			correcto();
 		}
         break;
@@ -510,13 +510,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="13" && var2 == "17"){
+		if(var1==13 && var2 == 17){
 			correcto();
 		}
-		if(var3=="9" && var4 == "7"){
+		if(var3==9 && var4 == 7){
 			correcto();
 		}
-		if(var5=="10" && var6=="1" ){
+		if(var5==10 && var6==1 ){
 			correcto();
 		}
 		break;
@@ -527,13 +527,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="-1" && var2 == "17"){
+		if(var1==-1 && var2 == 17){
 			correcto();
 		}
-		if(var3=="1" && var4 == "7"){
+		if(var3==1 && var4 == 7){
 			correcto();
 		}
-		if(var5=="4" && var6=="1" ){
+		if(var5==4 && var6==1 ){
 			correcto();
 		}
         break;
@@ -544,13 +544,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="3" && var2 == "17"){
+		if(var1==3 && var2 == 17){
 			correcto();
 		}
-		if(var3=="1" && var4 == "10"){
+		if(var3==1 && var4 == 10){
 			correcto();
 		}
-		if(var5=="4" && var6 == "0"){
+		if(var5==4 && var6 == 0){
 			correcto();
 		}
         break;    
@@ -561,13 +561,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="-9" && var2 == "17"){
+		if(var1==-9 && var2 == 17){
 			correcto();
 		}
-		if(var3=="-9" && var4 == "10"){
+		if(var3==-9 && var4 == 10){
 			correcto();
 		}
-		if(var5=="-16" && var6 == "0"){
+		if(var5==-16 && var6 == 0){
 			correcto();
 		}
         break;
@@ -578,13 +578,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="4" && var2 == "-6"){
+		if(var1==4 && var2 == -6){
 			correcto();
 		}
-		if(var3=="2" && var4 == "-1"){
+		if(var3==2 && var4 == -1){
 			correcto();
 		}
-		if(var5=="0" && var6 == "10"){
+		if(var5==0 && var6 == 10){
 			correcto();
 		}
         break;
@@ -615,13 +615,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="6"){
+		if(var1==6){
 			correcto();
 		}
-		if(var2=="10"){
+		if(var2==10){
 			correcto();
 		}
-		if(var3=="5"){
+		if(var3==5){
 			correcto();
 		}
         break;
@@ -629,13 +629,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
         var var3 = document.getElementById("3").value;
-		if(var1=="5"){
+		if(var1==5){
 			correcto();
 		}
-		if(var2=="9"){
+		if(var2==9){
 			correcto();
 		}
-		if(var3=="4"){
+		if(var3==4){
 			correcto();
 		}
         break;
@@ -649,13 +649,13 @@ function acierto(label1) {
 		var var7 = document.getElementById("7").value;
 		var var8 = document.getElementById("8").value;
 		var var9 = document.getElementById("9").value;
-		if(var1=="4" && var2 == "8" && var3 == "9"){
+		if(var1==4 && var2 == 8 && var3 == 9){
 			correcto();
 		}
-		if(var4=="8" && var5 == "16" && var6 == "17"){
+		if(var4==8 && var5 == 16 && var6 == 17){
 			correcto();
 		}
-		if(var7=="3" && var8 == "6" && var9 == "7"){
+		if(var7==3 && var8 == 6 && var9 == 7){
 			correcto();
 		}
         break;
@@ -669,13 +669,13 @@ function acierto(label1) {
 		var var7 = document.getElementById("7").value;
 		var var8 = document.getElementById("8").value;
 		var var9 = document.getElementById("9").value;
-		if(var1=="4" && var2 == "12" && var3 == "13"){
+		if(var1==4 && var2 == 12 && var3 == 13){
 			correcto();
 		}
-		if(var4=="8" && var5 == "24" && var6 == "25"){
+		if(var4==8 && var5 == 24 && var6 == 25){
 			correcto();
 		}
-		if(var7=="3" && var8 == "9" && var9 == "10"){
+		if(var7==3 && var8 == 9 && var9 == 10){
 			correcto();
 		}      
         break;
@@ -683,13 +683,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="7"){
+		if(var1==7){
 			correcto();
 		}
-		if(var2=="11"){
+		if(var2==11){
 			correcto();
 		}
-		if(var3=="6"){
+		if(var3==6){
 			correcto();
 		}
         break;
@@ -697,13 +697,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="10"){
+		if(var1==10){
 			correcto();
 		}
-		if(var2=="18"){
+		if(var2==18){
 			correcto();
 		}
-		if(var3=="8"){
+		if(var3==8){
 			correcto();
 		}
         break;
@@ -711,13 +711,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="15"){
+		if(var1==15){
 			correcto();
 		}
-		if(var2=="27"){
+		if(var2==27){
 			correcto();
 		}
-		if(var3=="12"){
+		if(var3==12){
 			correcto();
 		}
         break;
@@ -725,13 +725,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="6"){
+		if(var1==6){
 			correcto();
 		}
-		if(var2=="12"){
+		if(var2==12){
 			correcto();
 		}
-		if(var3=="9/2" || var3 == "4.5"){
+		if(var3 == 4.5){
 			correcto();
 		}
         break;
@@ -739,13 +739,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="10"){
+		if(var1==10){
 			correcto();
 		}
-		if(var2=="20"){
+		if(var2==20){
 			correcto();
 		}
-		if(var3=="15/2" || var3 == "7.5"){
+		if(var3 == 7.5){
 			correcto();
 		}
         break;
@@ -753,13 +753,13 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="16/3" || var1 == "5.33"){
+		if(var1 == 5.3333){
 			correcto();
 		}
-		if(var2=="32/3" || var2 == "10.66"){
+		if(var2 == 10.6666){
 			correcto();
 		}
-		if(var3=="4"){
+		if(var3==4){
 			correcto();
 		}
         break;
@@ -767,13 +767,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="16"){
+		if(var1==16){
 			correcto();
 		}
-		if(var2=="20"){
+		if(var2==20){
 			correcto();
 		}
-		if(var3=="28"){
+		if(var3==28){
 			correcto();
 		}
         break;
@@ -781,13 +781,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="32"){
+		if(var1==32){
 			correcto();
 		}
-		if(var2=="24"){
+		if(var2==24){
 			correcto();
 		}
-		if(var3=="28"){
+		if(var3==28){
 			correcto();
 		}
         break;
@@ -795,13 +795,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="32"){
+		if(var1==32){
 			correcto();
 		}
-		if(var2=="80"){
+		if(var2==80){
 			correcto();
 		}
-		if(var3=="100"){
+		if(var3==100){
 			correcto();
 		}
 		break;
@@ -809,13 +809,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="40"){
+		if(var1==40){
 			correcto();
 		}
-		if(var2=="100"){
+		if(var2==100){
 			correcto();
 		}
-		if(var3=="125"){
+		if(var3==125){
 			correcto();
 		}
         break;
@@ -823,13 +823,13 @@ function acierto(label1) {
         var var1 = document.getElementById("1").value;
         var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="40"){
+		if(var1==40){
 			correcto();
 		}
-		if(var2=="15"){
+		if(var2==15){
 			correcto();
 		}
-		if(var3=="-30"){
+		if(var3==-30){
 			correcto();
 		}
         break;

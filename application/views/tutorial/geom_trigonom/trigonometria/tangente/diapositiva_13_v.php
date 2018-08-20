@@ -7,11 +7,11 @@
     });
 </script>
 <div class="container-fluid">
-	<p>Arrastra el punto de manera que el ángulo θ sea 225º, es decir de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mi>&#x3C0;</mi></mrow><mn>4</mn></mfrac></math> radianes.</p>
+	<p>Arrastra el punto del deslizador de manera que el ángulo θ sea 225º, es decir de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>5</mn><mi>&#x3C0;</mi></mrow><mn>4</mn></mfrac></math> radianes.</p>
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
 		<div class="form-group has-feedback col-md-6  col-xs-12">
 			<p>¿Cuánto vale la tangente de θ en este caso?</p>
-			<p>Encuentra el valor de <b>x</b> y <b>y</b> utilizando el teorema de Pitágoras</p>
+			<p>Encuentra el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> utilizando el teorema de Pitágoras</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>
 				<semantics>
 					  <annotation-xml encoding="application/xhtml+xml">

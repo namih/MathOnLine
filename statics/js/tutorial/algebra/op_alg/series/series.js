@@ -29,13 +29,13 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="12" && var2 == "4"){
+		if(var1==12 && var2 == 4){
 			correcto();
 		}
-		if(var3=="2" && var4 == "5"){
+		if(var3==2 && var4 == 5){
 			correcto();
 		}
-		if(var5=="25" && var6 == "-4"){
+		if(var5==25 && var6 == -4){
 			correcto();
 		}
         break;
@@ -43,13 +43,13 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="120"){
+		if(var1==120){
 			correcto();
 		}
-        if(var2=="-165"){
+        if(var2==-165){
 			correcto();
 		}
-		if(var3=="678.5"){
+		if(var3==678.5){
 			correcto();
 		}
         break;
@@ -57,51 +57,51 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="48" && var2 == "72" && var3=="47"){
+		if(var1==48 && var2 == 72 && var3==47){
 			correcto();
 		}      
         break;
     case 12:
 		var var1 = document.getElementById("1").value;
-		if(var1=="-250"){
+		if(var1==-250){
 			correcto();
 		}
         break;
     case 13:
 		var var1 = document.getElementById("1").value;
-		if(var1=="1035"){
+		if(var1==1035){
 			correcto();
 		}
         break;
     case 14:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="7" && var2 == "31"){
+		if(var1==7 && var2 == 31){
 			correcto();
 		}       
         break;
     case 15:
 		var var1 = document.getElementById("1").value;
-		if(var1=="867"){
+		if(var1==867){
 			correcto();
 		}        
         break;
     case 16:
 		var var1 = document.getElementById("1").value;
-		if(var1=="1942"){
+		if(var1==1942){
 			correcto();
 		}       
         break;
     case 17:
 		var var1 = document.getElementById("1").value;
-		if(var1=="725"){
+		if(var1==725){
 			correcto();
 		}        
         break;
     case 18:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="41800" && var2 == "39200"){
+		if(var1==41800 && var2 == 39200){
 			correcto();
 		}       
         break;
@@ -115,14 +115,13 @@ function acierto(label1) {
 		var var7 = document.getElementById("7").value;
 		var var8 = document.getElementById("8").value;
 		var var9 = document.getElementById("9").value;
-		if(var1=="3" && var2 == "-1.5"){
-			if(var3==0.75 || var3==.75)
+		if(var1==3 && var2 == -1.5 && var3==0.75){
 				correcto();
 		}   
-		if(var4=="10" && var5=="20" && var6=="40"){
+		if(var4==10 && var5==20 && var6==40){
 			correcto();
 		}
-		if(var7=="6" && var8 == "12" && var9=="24"){
+		if(var7==6 && var8 == 12 && var9==24){
 			correcto();
 		}
         break;
@@ -130,31 +129,31 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="50.097"){
+		if(var1==19.9804){
 			correcto();
 		}
-		if(var2=="100"){
+		if(var2==100){
 			correcto();
 		}
-		if(var3=="110"){
+		if(var3==110){
 			correcto();
 		}        
         break;
     case 25:
 		var var1 = document.getElementById("1").value;
-		if(var1=="9223372036854770000"){
+		if(var1==9223372036854770000){
 			correcto();
 		}        
         break;
     case 26:
 		var var1 = document.getElementById("1").value;
-		if(var1=="42949.667"){
+		if(var1==42949.67296){
 			correcto();
 		}       
         break;
     case 27:
 		var var1 = document.getElementById("1").value;
-		if(var1=="1048576"){
+		if(var1==1048576){
 			correcto();
 		}       
         break;

@@ -5,8 +5,8 @@
 		multiplicado por si mismo cierto número de veces, nos da una determinada cantidad, se llama <b>raíz</b></p>
 	<p>Cuando buscamos un número que multiplicado por si mismo nos dé otro, se le llama <b> raíz cuadrada:</b></p>
 	<p>Encuentra un número que multiplicado por si mismo nos de 25:</p>
-	<div class="table-responsive">
-	<input type="text" id="num1"/> <label> X </label> <input type="text" id="num2"/> <label> = 25</label>
+	<div class="table-responsive div-border0">
+	<input class="input-sm input-top5" size="10" type="text" id="num1"/> <label><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#xD7;</mo></math></label> <input class="input-sm input-top5" size="10" type="text" id="num2"/> <label> = 25</label>
 	<br />
 	<div id="tex" style="display: none">
 	<p>Decimos que 5 es la <b>la raíz cuadrada</b> de 25, que se expresa como: </p>

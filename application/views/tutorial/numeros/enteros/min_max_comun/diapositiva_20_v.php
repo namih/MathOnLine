@@ -2,18 +2,18 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/numeros/enteros/factorizacion/styles_numeros2.css">
 <div class="container-fluid">
 
-	<div   class="col-md-6  col-xs-12 table-responsive" id="box" align="center">
+	<div   class="col-md-6  col-xs-12 table-responsive div-border0" id="box" align="center">
 		<p>La tabla muestra los múltiplos de 10 y 6 </p>
 		<p>Encuentra el mínimo común múltiplo de estos dos números</p>
-		<input type="text" size="7" id="minimo"  />
+		<input class="input-sm input-top5" type="text" size="7" id="minimo"  />
 	</div>	
-	<div class="col-md-6  col-xs-12 table-responsive" id="tab" align="center">
+	<div class="col-md-6  col-xs-12 table-responsive div-border0" id="tab" align="center">
 		 <table class="table table-striped table-bordered table-condensed" id="myTable" style="width:50%; margin:0 auto;">
 		 	<thead>
                 <tr class="success">
-                    <th> X </th>
-                    <th><b> 10 </b></th>
-                    <th><b> 6 </b></th>
+                    <th>&nbsp;&nbsp;X&nbsp;&nbsp;</th>
+                    <th><b>&nbsp;&nbsp;10&nbsp;&nbsp;</b></th>
+                    <th><b>&nbsp;&nbsp;6&nbsp;&nbsp;</b></th>
                 </tr>
             </thead>
             <tbody>

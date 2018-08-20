@@ -1,66 +1,34 @@
-<script src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas_ecu_lineales/rectas_ecu_lineales.js"></script>
 
+<script type="text/javascript" src="<?php echo base_url(); ?>statics/js/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/tutorial/geom_ana/rectas _ecu_lineales/rectas_ecuaciones_lineales.css">
 
 <div class="container-fluid">
-	<style type="text/css">
-		.tema{
-			color: #224EB5;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.pregunta{
-			color: #2e75b6;
-			text-align: justify;
-			font-weight: bold;
-		}
-		.instruccion{
-			color: #000000;
-			text-align: justify;
-			font-weight: normal;
-		}
-	</style>
+ 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-		<div class="tema"><p>Desigualdades</p>
-			<p> Operaciones con desigualdades lineales de una variable</p>
+		<div class="tema"><p>Desigualdades - Operaciones con desigualdades lineales de una variable</p>
 		</div>
 		<div class="instruccion">
-			<p></p>
+			<p>	Regresemos al problema inicial del interactivo de desigualdades: </p>
 		</div>
 		<div id="boxEjemplos_1">
 			<div id="box_1_ejemplo_0">
-				<div class="pregunta">
-					<p>En las semanas anteriores, Rodrigo ahorró <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>2</mn><mn>5</mn></mfrac></math> partes de su sueldo la primera semana, <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math> de su sueldo la segunda y <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> de su sueldo la tercera. Si la semana próxima ahorra <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>3</mn></mfrac></math> de su sueldo tendrá en su cuenta más de $2500. ¿cuándo puede ser su sueldo semanal?</p>
-					<p>Usa la letra <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math> para representar el sueldo de Rodrigo.</p>
+				<div class="pregunta" style="font-weight: normal;">
+					<p>Juan quiere comparar lo que cuesta comprar y rentar un automóvil para decidir qué hacer.<br>
+					<ul style="list-style: decimal;">
+						<li>El puede <b>rentar</b> un automóvil por $72000 anuales: además, para ese auto calcula que, el costo adicional por kilómetro recorrido es de $15, que incluye la compra de gasolina y aceite.</li>
+						<li>Si <b>comprara</b> el auto, calcula que el costo fijo anual sería de $45000 para los pagos de la compra y el costo en el consumo de gasolina, aceite y mantenimiento sería de $27 por kilómetro recorrido.</li>
+					</ul>
+					Juan quiere calcular cuántos kilómetros deberá conducir por año para que la renta sea más barata que la compra.</p>
 				</div>
 				<div class="instruccion">
-					<p>Escribe la desigualdad que representa al problema. Escribe las fracciones en el mismo orden en el que aparecen en el texto.</p>
+					<p>Escribe una expresión algebraica que represente la opción de <b>renta</b>.<br> Utiliza la letra <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> para indicar el número de kilómetros que recorre Juan al año. No dejes espacios entre Ias letras, símbolos y números.</p>
 				</div>
 				<br>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left">
-                    <div class="paso_0">
-						<p>
-							<input type="number" name="">/<input type="number" name=""><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo>+</mo></math><input type="number" name="">/<input type="number" name=""><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo>+</mo></math><input type="number" name="">/<input type="number" name=""><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo>+</mo></math><input type="number" name="">/<input type="number" name=""><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo>+</mo></math><select>
-								<option></option>
-								<option> > </option>
-								<option> < </option>
-								<option> = </option>
-							</select> <input type="number" name="">
-						</p>
-                    </div><br>
-                    <div class="paso_1">
-                        <p>Ahora resuelve la desigualdad <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math> <select>
-								<option></option>
-								<option> > </option>
-								<option> < </option>
-								<option> = </option>
-							</select> <input type="number" name="">
-						</p>
-                    </div><br>
-                    <div class="paso_2">
-                        <p>Efectivamente rodrigo necesita ganar más de $1899
-						</p>
-                    </div><br>
-                </div>				
+				<div align="left">
+					<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mo>&#xA0;</mo></math><input class="n_float" type="text" name="input_valor_2" id="input_valor_2" onchange="validaInputRelacion('15x+','input_valor_2','7200');" >
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="left" id="error_input_valor_2"></div>
+                    </p>
+				</div>
 				<br>
 			</div><br><br>
 		</div>

@@ -8,9 +8,9 @@
 </script>
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<p>Arrastra el punto de manera que el ángulo θ sea 90º, es decir, de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></math> radianes</p>
+		<p>Arrastra el punto del deslizador de manera que el ángulo θ sea 90º, es decir, de <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></math> radianes</p>
 		<p>¿Cuánto vale el seno de θ en este caso?</p>
-		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mi>e</mi><mi>n</mi><mo>&#xA0;</mo><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac>
+		<h3><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mi>e</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></mfenced>
 			<mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mrow><mi>C</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>t</mi><mi>o</mi><mo>&#xA0;</mo>
 				<mi>o</mi><mi>p</mi><mi>u</mi><mi>e</mi><mi>s</mi><mi>t</mi><mi>o</mi></mrow><mrow><mi>H</mi><mi>i</mi><mi>p</mi><mi>o</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>u</mi><mi>s</mi><mi>a</mi></mrow></mfrac>
 				<mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>y</mi><mi>r</mi></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>

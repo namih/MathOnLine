@@ -6,11 +6,20 @@
 		border:1px solid #ccc;
 }
 
+
 .input-sm2{
 	width: 100%;
 	text-align: center;
 }
 
+.input-top5{
+	margin-top:5px;
+}
+
+.input-sm1{
+	width: 300%;
+	text-align: center;
+}
 
 .tabla_rec{
 		width:50px;
@@ -21,4 +30,7 @@
 		padding:10px;
 		margin:10px;
 		border:1px solid #ccc;
+}
+.div-border0{
+	border: 0px solid #ddd;
 }
