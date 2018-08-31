@@ -8,7 +8,7 @@
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
 		<p>Antes de resolver el problema, necesitamos estudiar algunos conceptos de trigonometría:</p>
-		<p>Desliza el punto del deslizador.</p>
+		<p>Arrastra el punto del deslizador.</p>
 		<p>Observe cómo se forma un triángulo rectángulo (en amarillo).</p>
 	</div>
 	<div align="center" id="applet_container" >

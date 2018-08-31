@@ -13,123 +13,123 @@ function acierto(label1) {
     case 6:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1==1 && var2 == 1){
 			correcto();
 		}
         break;
     case 7:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
 		}
         break;
     case 8:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
 		}
         break;
     case 9:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
+		if(var1==-1 && var2 == 1){
 			correcto();
 		}
         break;
     case 11:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
 		}
         break;
     case 12:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "2"){
+		if(var1==1 && var2 == 2){
 			correcto();
 		}
         break;
     case 13:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1==0.707){
-			if(var2 == "1")
+		if(var1==0.7071){
+			if(var2 == 1)
 				correcto();
 		}
         break;
     case 14:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1.414"){
+		if(var1==1 && var2 == 1.4142){
 			correcto();
 		}
         break;
     case 15:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1==0.707){
-			if(var2 == "1")
+		if(var1==0.7071){
+			if(var2 == 1)
 				correcto();
 		}
         break;
     case 16:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
+		if(var1==-1 && var2 == 1.4142){
 			correcto();
 		}
         break;
     case 18:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1==-0.707){
-			if(var2 == "1")
+		if(var1==-0.7071){
+			if(var2 == 1)
 				correcto();
 		}
         break;
     case 19:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1.414"){
+		if(var1==-1 && var2 == 1.4142){
 			correcto();
 		}
         break;
     case 21:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-0.707" || var1 == "-.707"){
-			if(var2 == "1")
+		if(var1==-0.7071 || var1 == -.7071){
+			if(var2 == 1)
 				correcto();
 		}
         break;
     case 23:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="-1" && var2 == "1"){
+		if(var1==-1 && var2 == 1){
 			correcto();
 		}
         break;
     case 24:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
 		}
         break;
 	case 25:
         var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="1" && var2 == "1"){
+		if(var1==1 && var2 == 1){
 			correcto();
 		}
         break;
     case 26:
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
-		if(var1=="0" && var2 == "1"){
+		if(var1=="0" && var2 == 1){
 			correcto();
 		}
         break;
@@ -140,7 +140,7 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="0" && var2 == "1" && var3=="0" && var4 == "0" && var5=="-1" && var6 == "1"){
+		if(var1=="0" && var2 == 1 && var3=="0" && var4 == "0" && var5==-1 && var6 == 1){
 			correcto();
 		}
         break;
@@ -151,7 +151,7 @@ function acierto(label1) {
 		var var4 = document.getElementById("4").value;
 		var var5 = document.getElementById("5").value;
 		var var6 = document.getElementById("6").value;
-		if(var1=="0" && var2 == "-1" && var3=="0" && var4 == "0" && var5=="1" && var6 == "-1"){
+		if(var1=="0" && var2 == -1 && var3=="0" && var4 == "0" && var5==1 && var6 == -1){
 			correcto();
 		}
         break;
@@ -173,7 +173,7 @@ function acierto(label1) {
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
-		if(var1=="1" && var2 == "1" && var3=="1" && var4 == "1"){
+		if(var1==1 && var2 == 1 && var3==1 && var4 == 1){
 			correcto();
 		}
         break;
@@ -182,7 +182,7 @@ function acierto(label1) {
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
 		var var4 = document.getElementById("4").value;
-		if(var1=="-1" && var2 == "-1" && var3=="-1" && var4 == "-1"){
+		if(var1==-1 && var2 == -1 && var3==-1 && var4 == -1){
 			correcto();
 		}
         break;
@@ -190,10 +190,10 @@ function acierto(label1) {
 		var var1 = document.getElementById("1").value;
 		var var2 = document.getElementById("2").value;
 		var var3 = document.getElementById("3").value;
-		if(var1=="2"){
+		if(var1==2){
 			mostrar();
 		}
-		if(var2=="1" && var3=="-1"){
+		if(var2==1 && var3==-1){
 			correcto();
 		}
         break;

@@ -7,7 +7,7 @@
 </script>
 <div class="container-fluid">
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
-		<p>Supongamos que llamamos a la base del triángulo rectángulo amarillo x y a su altura y</p>
+		<p>Supongamos que llamamos a la base del triángulo rectángulo amarillo <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> y a su altura <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>.</p>
 		<p>Al ángulo cuyo vértice está en el centro del círculo lo llamamos θ</p>
 	</div>
 	<div align="center" id="applet_container" >
