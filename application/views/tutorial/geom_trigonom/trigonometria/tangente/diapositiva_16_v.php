@@ -11,7 +11,7 @@
 	<div class="input-group col-lg-12 col-md-12 col-xs-12">
 		<div class="form-group has-feedback col-md-6  col-xs-12">
 			<p>¿Cuánto vale la tangente de θ en este caso?</p>
-			<p>Encuentra el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> utilizando el teorema de Pitágoras</p>
+			<p>Encuentra el valor de <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> y <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math> utilizando el teorema de Pitágoras. (Utiliza 4 números después del punto decimal)</p>
 			<p><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mn>
 				<semantics>
 					  <annotation-xml encoding="application/xhtml+xml">

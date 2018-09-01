@@ -39,7 +39,7 @@
 				</div>	
 				<div class="form-group has-feedback col-md-6  col-xs-12">
 					<br />
-					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mi>&#x3C0;</mi><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 						<mfrac><mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
@@ -55,7 +55,7 @@
 						</mi></mfrac></math>
 						<h6><label><input type="checkbox" id="definido4" > No está definido</label></h6>
 					</h4>
-					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mrow><mn>3</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mrow><mn>3</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 						<mfrac><mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
@@ -71,7 +71,7 @@
 						</mi></mfrac></math>
 						<h6><label><input type="checkbox" id="definido5" > No está definido</label></h6>
 					</h4>
-					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mrow><mn>5</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
+					<h4><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>t</mi><mi>a</mi><mi>n</mi><mo>&#xA0;</mo><mfenced><mfrac><mrow><mn>5</mn><mi>&#x3C0;</mi></mrow><mn>2</mn></mfrac></mfenced><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>&#xA0;</mo><mo>=</mo><mo>&#xA0;</mo>
 						<mfrac><mi>
 							<semantics>
 							  <annotation-xml encoding="application/xhtml+xml">
