@@ -6,8 +6,7 @@ class Home_c extends CI_Controller
     public function __construct()
     {
 		parent::__construct();
-        $this->load->model('Home_m');
-        $this->load->model('Home_student_m');
+        $this->load->model(array('Home_m','Perfil_usuario_m','Home_student_m'));
         $this->load->library('encrypt');
         $this->load->helper('session_helper');
     }
@@ -163,6 +162,10 @@ class Home_c extends CI_Controller
         $login = $this->session->userdata('logged_in');
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
+            $user_ = $this->Perfil_usuario_m->datos_usuario($datos["user_log"][0]['id_user']);
+            /*actualizar score*/
+            $datos["user_log"][0]['total_score']=$user_[0]['total_score'];
+
             $menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 

@@ -46,17 +46,11 @@
               <img width="50%" src="<?php echo base_url();?>statics/img/logo_uam/variacion3Izt.png">
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-8 col-md-8">
             <div style="margin-left: 20px;">
-              <label>@2017 División de CBI UAM-I Todos los derechos reservados<br>  
+              <label>@2018 División de CBI UAM-I Todos los derechos reservados<br>  
               	<a href="#" data-toggle="modal" data-target="#contacto" style="text-decoration: none; color: #000000;"><i class="fa fa-envelope" aria-hidden="true"></i> Contactanos</a> 
               </label>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <div style="margin-left: 20px;">
-              <label>Desarrollado por: </label>
-              <img width="50%" src="<?php echo base_url();?>statics/img/logo_sb/Sis-256.png">
             </div>
           </div>
         </div>

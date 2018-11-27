@@ -25,24 +25,17 @@
 	      <div id="bibliografia" class="tab-pane fade">
 	        <?php if(isset($bibliografia) && $bibliografia!=false){ 
 	          foreach ($bibliografia as $key => $value) { ?>
-	            <div class="row">
-	              <div class="col-md-10 col-md-offset-1" style="border: solid 1px;">
-	                <center><h2 style="text-decoration: underline;"><?php echo $value['title']; ?></h2></center>
-	                <div class="col-md-3" align="right" style="margin-bottom: 10px;">
-	                	<?php if(isset($value['book_image']) && trim($value['book_image'])!=''){ ?>
-	                  		<img class="img-responsive" src="<?php echo base_url().$value['book_image']; ?>">
-	                  	<?php }else{ ?>
-	                  		<i class="fa fa-book" aria-hidden="true" style="font-size: 12em; color: #cccccc;"></i>
-	                  	<?php } ?>	                
-	                </div>
-	                <div class="col-md-9" align="left"><br> 
-	                  <ul style="list-style: circle; font-size: 20px;">
-	                    <li><label class="for">Autor: </label> <span> <?php echo $value['author']; ?></span></li>
-	                    <li><label>Lugar: </label> <span> <?php echo $value['place_publication']; ?></span></li>
-	                    <li><label>Editorial: </label> <span> <?php echo $value['editorial']; ?></span></li>
-	                    <li><label>Año: </label> <span> <?php echo $value['year']; ?></span></li>
-	                  </ul> 
-	                </div>
+	            <div class="row link">
+	              <div class="col-md-10 col-md-offset-1">
+	              	<a href="#" style="text-decoration: none;"><h4><?php echo $value['title']; ?></h4>
+	                </a>
+	                <p align="justify" style="text-decoration: none; color: #000000;"><?php if(isset($value['description'])) echo $value['description']; ?> </p>
+	                <p>
+	                    <label>Autor: </label> <span> <?php echo $value['author']; ?></span><br>
+	                    <label>Lugar: </label> <span> <?php echo $value['place_publication']; ?></span><br>
+	                    <label>Editorial: </label> <span> <?php echo $value['editorial']; ?></span><br>
+	                    <label>Año: </label> <span> <?php echo $value['year']; ?></span><br>
+	                </p>
 	              </div>
 	            </div>
 	            <br>

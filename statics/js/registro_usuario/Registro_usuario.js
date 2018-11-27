@@ -151,6 +151,15 @@ function longitud_contrasenia() {
 		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
 		//document.getElementById('pwd').select();
 	}
+	/*else{
+		if(validarFormatoPassword()==0){
+			longi_2.value = "";
+			longi_2.placeholder = "Tu contraseña debe tener al menos 1 letra MAYÚSCULA, 1 letra minúscula y un número";
+			longi_2.focus();
+			document.getElementById('pwd').value = "";
+			document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 1 letra MAYÚSCULA, 1 letra minúscula y un número";			
+		}
+	}*/
 
 }
 
@@ -346,7 +355,7 @@ function validar_correo() {
 	var datos = {
 		email : correo
 	};
-	if (correo != '') {
+	if (correo != '' && validarFormatoEmail(correo)==1 ) {
 		var url_correo = base_url + 'Registro_usuario_c/correo_usuario_disponible';
 		$.ajax({
 			type : 'post',
@@ -373,7 +382,41 @@ function validar_correo() {
 			}
 		});
 
+	}else{
+		if (validarFormatoEmail(correo)!=1 ) {
+			var usuario = document.getElementById("email");
+			usuario.className += " has-error";
+			document.getElementById("error_email").style.display = 'inline';
+			document.getElementById('correo').value = '';
+			document.getElementById('correo').placeholder = 'Correo invalido';
+		}
+
 	}
+}
+
+
+function validarFormatoEmail( email ) {
+    expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!expr.test(email)){
+        valido=0;}
+    else{
+    	valido=1;
+    }
+    return valido;
+}
+
+function validarFormatoPassword( pwd ) {
+    expr = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
+
+
+    if (!expr.test(pwd)){
+    	alert(0);
+        valido=0;}
+    else{
+    	alert(1);
+    	valido=1;
+    }
+    return valido;
 }
 
 /**
@@ -417,6 +460,29 @@ function validar_anio() {
 	};
 
 }
+
+	function validarSoloNumero(elEvento){
+		  // Variables que definen los caracteres permitidos
+	  var permitidos = "0123456789";
+	  var teclas_especiales = [8, 37, 39]; // 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
+	  // Obtener la tecla pulsada 
+	  var evento = elEvento || window.event;
+	  var codigoCaracter = evento.charCode || evento.keyCode;
+	  var caracter = String.fromCharCode(codigoCaracter);
+	 
+	 // Comprobar si la tecla pulsada es alguna de las teclas especiales
+	// (teclas de borrado y flechas horizontales)
+	var tecla_especial = false;
+	for(var i in teclas_especiales) {
+		if(codigoCaracter == teclas_especiales[i]) {tecla_especial = true;break;}
+	}
+
+	
+	// Comprobar si la tecla pulsada se encuentra en los caracteres permitidos o si es una tecla especial
+	return permitidos.indexOf(caracter) != -1 || tecla_especial;
+
+	}
+
 
 /**
  * La función validar_matricula verifica que la cadena ingresada sea de números con la función es_numero, la matricula no puede estar vacía

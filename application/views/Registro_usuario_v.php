@@ -52,7 +52,7 @@
 		</div>
 		
 		<div class="form-group has-feedback col-md-6  col-xs-12" id="error_vacio_anio">
-			<input onblur="validar_anio()" type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
+			<input onblur="validar_anio()" onkeypress="return validarSoloNumero(event);" type="text" class="form-control" id="anio" placeholder="Año de Nacimiento*" required="">
 			<span id="error_anio" class="glyphicon glyphicon-exclamation-sign form-control-feedback" style="display: none"></span>
 		</div>
 		

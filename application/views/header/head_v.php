@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mate en línea</title>
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url();?>statics/img/logo_uam/img_head_uam.jpg"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/css/bootstrap-3.3.7/dist/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>statics/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     
