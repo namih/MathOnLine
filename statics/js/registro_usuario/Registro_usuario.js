@@ -115,7 +115,7 @@ function comparar_contrasenia() {
 	var contrasenia1 = document.getElementById('pwd').value;
 	var contrasenia2 = document.getElementById('rpwd').value;
 
-	if (contrasenia1 != "") {
+	if (contrasenia1 != "" && contrasenia2 != "") {
 		if (contrasenia2 == contrasenia1) {
 			return true;
 		} else {
@@ -141,7 +141,7 @@ function longitud_contrasenia() {
 	var longi_2 = document.getElementById('rpwd');
 	var pwd = document.getElementById('pwd');
 	var longi_cadena = 8;
-	//alert(longi_cadena);
+	
 	if (longi.length < longi_cadena) {
 
 		longi_2.value = "";
@@ -151,15 +151,15 @@ function longitud_contrasenia() {
 		document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 8 caracteres";
 		//document.getElementById('pwd').select();
 	}
-	/*else{
-		if(validarFormatoPassword()==0){
+	else{
+		if(validarFormatoPassword(longi)==0){
 			longi_2.value = "";
-			longi_2.placeholder = "Tu contraseña debe tener al menos 1 letra MAYÚSCULA, 1 letra minúscula y un número";
+			longi_2.placeholder = "Tu contraseña debe incluir una letra MAYÚSCULA, una letra minúscula,un número y un símbolo";
 			longi_2.focus();
 			document.getElementById('pwd').value = "";
-			document.getElementById('pwd').placeholder = "Tu contraseña debe tener al menos 1 letra MAYÚSCULA, 1 letra minúscula y un número";			
+			document.getElementById('pwd').placeholder = "Tu contraseña debe incluir una letra MAYÚSCULA, una letra minúscula,un número y un símbolo";			
 		}
-	}*/
+	}
 
 }
 
@@ -406,14 +406,11 @@ function validarFormatoEmail( email ) {
 }
 
 function validarFormatoPassword( pwd ) {
-    expr = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/;
-
+    expr = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 
     if (!expr.test(pwd)){
-    	alert(0);
         valido=0;}
     else{
-    	alert(1);
     	valido=1;
     }
     return valido;
