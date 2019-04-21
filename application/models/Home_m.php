@@ -1,17 +1,17 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Home_m extends CI_Model {
-			
+
 		public function __construct()
 		{
 			parent::__construct();
-			$this->load->library('encrypt');
+			$this->load->library('encryption');
 		}
-		
-		
+
+
 		/**
 		 * Verifica que el nombre de usuario y contraseña sean correctas y que la cuenta este activa.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
 		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
@@ -21,24 +21,24 @@
 		{
 			if ($credencial != NULL) {
 				$usuario = $this->db
-								->SELECT(	'user.id_user, 
-											user.user_name, 
-											user.password, 
-											user.type_user, 
-											avatar.id_avatar, 
-											avatar.location, 
-											user.name, 
-											user.last_name, 
-											user.sex, 
-											user.year_birthday, 
-											user.email, 
-											user.id_degree, 
-											user.uam_identifier, 
-											user.is_student, 
-											user.is_employed, 
-											user.registration_date, 
-											user.total_score, 
-											user.league, 
+								->SELECT(	'user.id_user,
+											user.user_name,
+											user.password,
+											user.type_user,
+											avatar.id_avatar,
+											avatar.location,
+											user.name,
+											user.last_name,
+											user.sex,
+											user.year_birthday,
+											user.email,
+											user.id_degree,
+											user.uam_identifier,
+											user.is_student,
+											user.is_employed,
+											user.registration_date,
+											user.total_score,
+											user.league,
 											user.status')
 								->FROM('user')
 								->JOIN('avatar', 'avatar.id_avatar = user.id_avatar')
@@ -47,7 +47,7 @@
 				if ($usuario->num_rows() === 1) {
 					$datos = $usuario->result_array();
 					if ($datos[0]['status'] == 1) {
-						$pass_decode = $this->encrypt->decode($datos[0]['password']);
+						$pass_decode = $this->encryption->decrypt($datos[0]['password']);
 						if ($pass_decode == $credencial['password']) {
 							return $usuario->result_array();
 						} else {
@@ -56,7 +56,7 @@
 					} else {
 						return 4;
 					}
-					
+
 				} else {
 					return 2;
 				}
@@ -64,14 +64,14 @@
 				return NULL;
 			}
 		}
-		
-		
+
+
 		/**
 		 * Verifica que el nombre de usuario exista en la base de datos.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return BOOL TRUE si existe en el nombre de usuario FALSE si no existe.
-		 * @param String $user_name Nombre de usuario 
+		 * @param String $user_name Nombre de usuario
 		 * @version 1.0
 		 */
 		public function existe_usuario($user_name)
@@ -83,10 +83,10 @@
 				return FALSE;
 			}
 		}
-		
+
 		/**
 		 * Verifica que el estatus de la cuenta este activa por nombre de usuario.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return BOOL TRUE si la cuenta esta activada y FALSE si la cuenta esta inactiva
 		 * @param String $user_name Nombre de usuario
@@ -96,17 +96,17 @@
 		{
 			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('user_name', $user_name)->GET();
 			$estatus = $usuario->row_array();
-			
+
 			if ($estatus['status'] == 1) {
 				return TRUE;
 			} else {
 				return FALSE;
 			}
 		}
-		
+
 		/**
 		 * Verifica que el estatus de la cuenta este activa por correo electronico.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return BOOL TRUE si la cuenta esta activada y FALSE si la cuenta esta inactiva
 		 * @param String $email Cuenta de correo electrónico del usuario.
@@ -116,17 +116,17 @@
 		{
 			$usuario = $this->db->SELECT('status')->FROM('user')->WHERE('email', $email)->GET();
 			$estatus = $usuario->row_array();
-			
+
 			if ($estatus['status'] == 1) {
 				return TRUE;
 			} else {
 				return FALSE;
 			}
 		}
-		
+
 		/**
 		 * Obtiene la contraseña registrada por el usuario unicamente si la cuenta esta activa.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return STRING Contraseña dada por el usuario en su registro.
 		 * @param String $email Cuenta de correo electrónico del usuario.
@@ -145,12 +145,12 @@
 				}
 			} else {
 				return NULL;
-			}	
+			}
 		}
-		
+
 		/**
 		 * Obtiene los temas del mes del actual, anterior y siguiente.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return Array Información de los temas de mes actual, anterior y siguiente.
 		 * @param String $email Cuenta de correo electrónico del usuario.
@@ -172,12 +172,12 @@
 				}
 			} else {
 				return NULL;
-			}				
+			}
 		}
-		
+
 		/**
 		 * Pregunta aleatoria.
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return Array Pregunta con sus respctivas respuestas.
 		 * @param NA
@@ -186,9 +186,9 @@
 		public function pregunta_semanal()
 		{
 			$this->db->order_by('id_evaluation','RANDOM');
-			$this->db->limit(1); 
+			$this->db->limit(1);
 			$query = $this->db->get('evaluation');
-			
+
 			if ($query->num_rows() === 1) {
 				$aux_array = $query->result_array();
 				$out_array[0] = str_replace('src="../', 'src="', $aux_array[0]);
@@ -197,7 +197,7 @@
 				return FALSE;
 			}
 		}
-		
+
 }
 
 /* End of file Home_m.php */

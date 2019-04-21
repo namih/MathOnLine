@@ -7,7 +7,7 @@
         {
             parent::__construct();
             $this->load->model(array('Perfil_usuario_m','Tutorial_m'));//cambiar modelo
-            $this->load->library('encrypt');
+            $this->load->library('encryption');
         }
 
 
@@ -24,12 +24,12 @@
                 $datos['id_blog_actual']= $this->start_tutorial($id_tutorial);
             }else{
                 $datos['id_blog_actual']=$id_blog;
-            } 
+            }
 
             //guardar avance
             if($btn_navegacion==2){
                 $save= $this->tutorial_progress($datos['id_blog_actual'], $num_diapositiva);
-            }           
+            }
 
             // consulta en base el contenido tutorial
 
@@ -38,10 +38,10 @@
                 foreach ($tutorials as $key => $value) {
                   $datos['tutorial_content']['theme'] =$value['theme'];
                   $datos['tutorial_content']['subtopic'] = $value['subtopic'];
-                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['num_diapositiva'] = $value['view_number']; 
-                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['id_tutorial'] = $value['id_tutorial']; 
-                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];               
-                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];               
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['num_diapositiva'] = $value['view_number'];
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['id_tutorial'] = $value['id_tutorial'];
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['titulo'] = $value['tutorial'];
+                  $datos['tutorial_content']['diapositivas'][$value['view_number']]['vista'] = $value['name_view'];
                 }
                 $last_diapo = end($datos['tutorial_content']['diapositivas']);
                 $last_diapo_number=$last_diapo['num_diapositiva'];
@@ -65,7 +65,7 @@
                 }
                 $datos['paginador']=array(
                 'anterior'=>$anterior,
-                'actual'=>$actual, 
+                'actual'=>$actual,
                 'siguiente'=>$siguiente
                 );
 
@@ -146,9 +146,9 @@
             if ($tutorial != NULL) {
                 date_default_timezone_set('America/Mexico_City');
                 $format = 'Y-m-d h:i:s';
-                
+
                 $tutorial['start_date'] = date($format);
-                                
+
                 $create = $this->Tutorial_m->create_tutorial($tutorial);
                 if ($create != null) {
                     return $create;
@@ -195,11 +195,11 @@
             if ($id_blog_tutorial != NULL) {
                 date_default_timezone_set('America/Mexico_City');
                 $format = 'Y-m-d h:i:s';
-                
+
                 $tutorial['id_blog_tutorials'] = $id_blog_tutorial;
                 $tutorial['finish_date'] = date($format);
                 $tutorial['status'] = 2;
-                
+
                 $create = $this->Tutorial_m->finish_tutorial($tutorial);
                 if ($create != null) {
                     //return $create;
@@ -210,7 +210,7 @@
             } else {
                 return NULL;
             }
-        }        
+        }
 
 }
 ?>

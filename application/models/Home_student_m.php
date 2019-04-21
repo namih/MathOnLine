@@ -1,16 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class Home_student_m extends CI_Model {
-			
+
 		public function __construct()
 		{
 			parent::__construct();
-			$this->load->library('encrypt');
+			$this->load->library('encryption');
 		}
-		
+
 		/**
 		 * Funcion temporal para registrar avance de tutoriales para usuario Dummy
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
 		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
@@ -29,11 +29,11 @@
 				return NULL;
 			}
 		}
-				
-		
+
+
 		/**
 		 * Descripcion
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return Array Arreglo con la lista de todos los tutoriales activos del sistema.
 		 * @param NA
@@ -56,7 +56,7 @@
 
 		/**
 		 * Descripcion
-		 * 
+		 *
 		 * @author Julio Cesar Padilla Dorantes
 		 * @return INT 1 Acceso concedido, 2 Nombre de usuario incorrecto, 3 Contraseña incorrecto, 4 Cuenta de usuario desactivada
 		 * @param Array $credencial Arreglo con el nombre de usuario y contraseña para el inicio de sesión.
@@ -65,7 +65,7 @@
 		public function tutoriales_usuario($id_user = NULL)
 		{
 			if ($id_user != NULL) {
-				
+
 				$query = $this->db->query("SELECT * FROM blog_tutorials WHERE id_blog_tutorials IN (SELECT MAX(id_blog_tutorials) FROM blog_tutorials GROUP BY id_tutorial) AND id_user =".$id_user.";");
 				if ($query->num_rows() > 0) {
 					return $query->result_array();

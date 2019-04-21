@@ -7,7 +7,7 @@ class Home_c extends CI_Controller
     {
 		parent::__construct();
         $this->load->model(array('Home_m','Perfil_usuario_m','Home_student_m'));
-        $this->load->library('encrypt');
+        $this->load->library('encryption');
         $this->load->helper('session_helper');
     }
 
@@ -36,19 +36,19 @@ class Home_c extends CI_Controller
                 echo $error_recover_pass;
             }else{
             	$user["password"] = $this->decode_pass($user["password"]);
-               
+
                 $datos_email = array(
                     "user_name" => $user["user_name"],
                     "password" => $user["password"]
                 );
                 $configuracion = $this->conf_email->configuracion_email();
                 $this->email->initialize($configuracion);
-                
+
                 $this->email->from('Mate en Linea');
                 $this->email->to($email);
                 $this->email->subject('Recuperar password');
                 $this->email->message($this->load->view('/email/recovery_password',$datos_email,TRUE));
-                
+
                 if($this->email->send()) {
                 	echo '  Su informacion fue enviada a su correo';
 				} else {
@@ -113,7 +113,7 @@ class Home_c extends CI_Controller
                     echo "No existe";
                     break;
                 case 4:
-                    echo "Cuenta inactiva";                    
+                    echo "Cuenta inactiva";
             }
         }
     }
@@ -127,12 +127,12 @@ class Home_c extends CI_Controller
      * @version 1.0
      */
     private function decode_pass($pass){
-        return $this->encrypt->decode($pass);
+        return $this->encryption->decrypt($pass);
     }
 
     public function encode_pass(){
-        print_r($this->encrypt->encode('123456'));
-        return $this->encrypt->encode('123456');
+        print_r($this->encryption->encrypt('123456'));
+        return $this->encryption->encrypt('123456');
     }
 
     /**
@@ -158,7 +158,7 @@ class Home_c extends CI_Controller
      * @param Recibe un arreglo que contiene la informacion del usuario
      * @version 1.0
      */
-    public function goHomeUser(){    
+    public function goHomeUser(){
         $login = $this->session->userdata('logged_in');
         if($login != null && $login == true){
             $datos["user_log"][0] = $this->session->userdata('user');
@@ -170,12 +170,12 @@ class Home_c extends CI_Controller
             $datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 
             $all_themes = $this->Home_student_m->lista_tutoriales();
-            for ($i=0; $i < count($all_themes); $i++) { 
+            for ($i=0; $i < count($all_themes); $i++) {
                 $all_themes[$i]['status'] = 0;
                 $all_themes[$i]['progress'] = 1;
                 $all_themes[$i]['id_blog_tutorials'] = 0;
             }
-            
+
             $themes_student = $this->Home_student_m->tutoriales_usuario($this->session->userdata("user_id"));
 
             $i = 0;
@@ -189,7 +189,7 @@ class Home_c extends CI_Controller
                 if (is_array($themes_student) || is_object($themes_student))
                 {
                     foreach ($themes_student as $student){
-                        $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));        
+                        $key_student = array_search($student['id_tutorial'], array_column($all_themes, 'id_tutorial'));
                         if(is_int($key_student)){
 
                             $all_themes[$key_student]['status'] = $student['status'];
@@ -200,7 +200,7 @@ class Home_c extends CI_Controller
                 }
             }
 
-            foreach ($all_themes as $theme){                
+            foreach ($all_themes as $theme){
                 if(!isset($theme['progress'])){
 
                     $theme['status'] = 0;
@@ -229,10 +229,10 @@ class Home_c extends CI_Controller
                 if($theme["tutorial"] != $aux_tutorial){
                     $aux_tutorial = $theme["tutorial"];
                     $key_tutorial = array_search($aux_tutorial, array_column($all_themes, 'tutorial'));
-                
+
                     if(count($themes_student)>1){
                         $ket_tutorial_studen = array_search($all_themes[$key_tutorial]["id_tutorial"], array_column($themes_student, 'id_tutorial'));
-                        
+
                     }else{
                         $ket_tutorial_studen = null;
                     }
@@ -243,7 +243,7 @@ class Home_c extends CI_Controller
                         $concluido = 1;
                     }*/
 
-                    
+
                     $themes_aux[$i]["subtemas"][$j]["tutoriales"][] = array(
                         "nombre" => $all_themes[$key_tutorial]["tutorial"],
                         "id_tutorial" => $all_themes[$key_tutorial]["id_tutorial"],
@@ -267,4 +267,3 @@ class Home_c extends CI_Controller
         }
     }
 }
-

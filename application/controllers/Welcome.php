@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
     {
 		parent::__construct();
         $this->load->model('Home_m');
-        $this->load->library('encrypt');
+        $this->load->library('encryption');
     }
 
 	function index(){

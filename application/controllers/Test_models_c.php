@@ -15,7 +15,7 @@
 			$this->load->model("Evaluation_m");
 			$this->load->model("Tutorial_m");
 			$this->load->library('email');
-			$this->load->library('encrypt');
+			$this->load->library('encryption');
 			$this->load->library('etiquetas');
         }
 
@@ -60,7 +60,7 @@
 		public function pass_encrypt()
 		{
 			$pass = '123456';
-			$pass_encode = $this->encrypt->encode($pass);
+			$pass_encode = $this->encryption->encrypt($pass);
 			echo $pass_encode;
 		}
 

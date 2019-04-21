@@ -7,14 +7,14 @@
 	    {
 			parent::__construct();
 			$this->load->model('Perfil_usuario_m');
-			$this->load->library('encrypt');
+			$this->load->library('encryption');
 			$this -> load -> model('Registro_usuario_m');
 			$this->load->helper('session_helper');
 	    }
 		public function Perfil_usuario($id_user = null){
 			$login = $this->session->userdata('logged_in');
 	        if($login != null && $login == true){
-			
+
 				if ($id_user != null){
 					$datos['user_log'] = $this->Perfil_usuario_m->datos_usuario($id_user);
 					//print_r($datos);
@@ -24,7 +24,7 @@
 
 				$datos['unidades'] = $this->Registro_usuario_m->obtener_unidades_uam();
 				$datos['licenciaturas'] = $this->Registro_usuario_m->obtener_licenciaturas($user_log[0]['id_unit_uam']);
-	
+
 		    	$menu = $this->etiquetas->menu_user($datos["user_log"][0]['id_user']);
 	        	$datos['menu_user'] = $menu[$datos["user_log"][0]['type_user']];
 	        	$datos['opt_menu_active']='opt_usuario';
@@ -35,16 +35,16 @@
 			} else{
 	            	redirect(base_url());
 	        	}
-			
+
 		}
-		
+
 		public function actualizar_perfil()
 		{
 			$login = $this->session->userdata('logged_in');
         	if($login != null && $login == true){
 				$registro = $this->input->post('datos');
 				if($registro['password']!=""){
-					$encrypted = $this->encrypt->encode($registro['password']);
+					$encrypted = $this->encryption->encrypt($registro['password']);
 					$registro['password']=$encrypted;
 				}
 				$user = $this->session->userdata('user');
@@ -54,7 +54,7 @@
 				if ($id_registro['status']==0) {
 					$this->envio_email($id_registro['id_user'], $id_registro['user_name'], $id_registro['email']);
 					header('Location: ../home_c/logout');
-				} 
+				}
     		}
 			else{
             	redirect(base_url());
@@ -63,15 +63,15 @@
 			$data_session = update_session($id_registro);
 			$this->session->set_userdata($data_session);
     	}
-		
+
 		function envio_email($id_usuario,$usuario,$email){
-		
+
 			$configuracion = $this->conf_email->configuracion_email();
-		    
+
 			$datos_email = array('url' =>  base_url().'Registro_usuario_c/activar_cuenta?id_usuario='.$id_usuario,
 							   'user_name' =>$usuario);
-			
-			echo "<pre>"; 
+
+			echo "<pre>";
 			print_r(base_url().'Perfil_usuario_c?id_usuario='.$usuario);
 			echo "</pre>";
 			$this->email->initialize($configuracion);
@@ -79,7 +79,7 @@
 		   	$this->email->to($email);
 		   	$this->email->subject('Activacion de la cuenta Mathonline');
 		   	$this->email->message($this -> load -> view('/email/activacion_cuenta',$datos_email,TRUE)); //$datos enviar a vista
-		   
+
 		   	if($this->email->send()){
 	       	    return TRUE;
 	            echo "Email enviado correctamente";

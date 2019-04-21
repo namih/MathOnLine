@@ -10,7 +10,7 @@ class Evaluation_c extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Evaluation_m');
-        $this->load->library('encrypt');
+        $this->load->library('encryption');
     }
 
     public function index()
@@ -142,10 +142,10 @@ class Evaluation_c extends CI_Controller
     }
 
     public function get_current_responses(){
-    	
+
 		date_default_timezone_set('America/Mexico_City');
 		$format = 'Y-m-d h:i:s';
-		
+
         $responses = $this->input->post('arrayResultado');
         $time = $responses['tiempo'];
         $evaluations = $responses["evaluacion"];
@@ -157,16 +157,16 @@ class Evaluation_c extends CI_Controller
         $this->evaluation['time_finish'] = $time;
         $this->evaluation['score'] = $total;
         $this->evaluation['evaluation_date'] = date($format);
-        
+
         $response_evaluation = $this->Evaluation_m->guardar_evaluacion($this->evaluation);
-        
+
         if($response_evaluation != FALSE || $response_evaluation != NULL){
             foreach ($evaluations as $evaluation) {
                 $data[] = array(
                         'id_evaluation_test_log' => $response_evaluation ,
                         'id_evaluation' => $evaluation['id_evaluation'],
                         'answer' => $evaluation['answer_select']
-                    );  
+                    );
             }
             $response = $this->Evaluation_m->guardar_respuestas($data);
             if($response){
@@ -175,7 +175,7 @@ class Evaluation_c extends CI_Controller
                     'total_score' => $this->evaluation['score']
                 );
                 $response = $this->Evaluation_m->actualiza_escore($data);
-                
+
                 if($response){
                     $data['total'] = $total;
                     $data['time'] = $time;
@@ -183,7 +183,7 @@ class Evaluation_c extends CI_Controller
                     print_r(json_encode($data));
                     //echo "todo un exito";
                 }else{
-                    
+
                     echo "fracaso total :(";
                 }
             }else{
@@ -192,11 +192,11 @@ class Evaluation_c extends CI_Controller
         }
         // id user y id de la evaluacion para obterner score mas alto
         //regresar un json con su puntuacion actual, el numero de preguntas correctas y las erroneas
-        
+
     }
 
     private function calculate_results($evaluations){
-    	
+
         $data["total"] = 0;
         $data["number_corrects"] = 0;
         foreach ($evaluations as $evaluation){
